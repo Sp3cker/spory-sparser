@@ -6,13 +6,16 @@ function stripComments(src: string): string {
   return src.replace(/\/\*[^]*?\*\//g, "").replace(/\/\/.*$/gm, "");
 }
 
+/** Checks if trainer pic exists ELSE it returns C constant name
+ * MAKE SURE YOU HAVE THE FRONT PICS!!
+ */
 function formatTrainerPicName(
   CVarName: string,
   frontPicDir: string
 ): string | null {
   if (!CVarName.startsWith("TRAINER_PIC_")) return null;
   const base = CVarName.replace("TRAINER_PIC_", "").toLowerCase();
-  const fname = `${base}.png`;
+  const fname = `${base}.webp`;
   const full = path.join(frontPicDir, fname);
   return fs.existsSync(full) ? fname : null;
 }
@@ -31,6 +34,7 @@ function parseTrainerEntry(
   if (picMatch) {
     const constant = picMatch[1];
     const fname = formatTrainerPicName(constant, frontPicDir);
+
     rec.battlePic = fname ?? constant; // fallback to constant
   }
 
@@ -81,23 +85,26 @@ function parseTrainerEntry(
 /**
  * Extract trainers from trainers.h and return a flat mapping.
  *
- * @param rootDir   Root directory of the pokeemerald decomp (contains trainers.h etc.)
+ * @param dataDir   Root directory of the pokeemerald decomp (contains trainers.h etc.)
  * @param parties   Mapping produced by `extractTrainerParties`. If omitted, the
  *                  function will attempt to read `generated/trainer_parties.json`
  *                  under `rootDir`.
  */
 export function extractTrainers(
-  rootDir: string,
-  parties?: Record<string, any[]>
+  dataDir: string,
+  parties: Record<string, any[]>,
+  battlePics: string,
+  outputDir: string
 ): Record<string, TrainerRecord> {
-  const TRAINERS_HEADER = path.join(rootDir, "data/trainers.h");
-  const FRONT_PIC_DIR = path.join(
-    rootDir,
-    "upscaled",
-    "trainers",
-    "front_pics"
-  );
-  const PARTIES_JSON = path.join(rootDir, "generated", "trainer_parties.json");
+  const TRAINERS_HEADER = path.join(dataDir, "trainers.h");
+  // const FRONT_PIC_DIR = path.join(
+  //   dataDir,
+  //   "upscaled",
+  //   "trainers",
+  //   "front_pics"
+  // );
+  const FRONT_PIC_DIR = battlePics;
+  const PARTIES_JSON = path.join(outputDir, "trainer_parties.json");
 
   // If parties not provided, try to load it from JSON on disk.
   if (!parties) {
@@ -181,35 +188,35 @@ function getStarterFromId(id: string): string | undefined {
 }
 
 // ----------------- CLI wrapper ----------------- //
-function main() {
-  const args = process.argv.slice(2);
-  const root =
-    args[0] ||
-    path.resolve(
-      path.dirname(decodeURI(new URL(import.meta.url).pathname)),
-      "../../"
-    );
+// function main() {
+//   const args = process.argv.slice(2);
+//   const root =
+//     args[0] ||
+//     path.resolve(
+//       path.dirname(decodeURI(new URL(import.meta.url).pathname)),
+//       "../../"
+//     );
 
-  // Attempt to load parties from disk; if not present, exit with message.
-  let parties: Record<string, any[]>;
-  try {
-    const partyJsonPath = path.join(root, "generated", "trainer_parties.json");
-    parties = JSON.parse(fs.readFileSync(partyJsonPath, "utf8"));
-  } catch (err) {
-    console.error(
-      "Unable to read trainer_parties.json – run extractTrainerParties first or supply root path"
-    );
-    process.exit(1);
-  }
+//   // Attempt to load parties from disk; if not present, exit with message.
+//   let parties: Record<string, any[]>;
+//   try {
+//     const partyJsonPath = path.join(root, "generated", "trainer_parties.json");
+//     parties = JSON.parse(fs.readFileSync(partyJsonPath, "utf8"));
+//   } catch (err) {
+//     console.error(
+//       "Unable to read trainer_parties.json – run extractTrainerParties first or supply root path"
+//     );
+//     process.exit(1);
+//   }
 
-  const data = extractTrainers(root, parties);
-  const outPath = path.join(root, "generated", "trainers_flat.json");
-  fs.mkdirSync(path.dirname(outPath), { recursive: true });
-  fs.writeFileSync(outPath, JSON.stringify(data, null, 2));
-  console.log("Wrote", outPath);
-}
+//   const data = extractTrainers(root, parties);
+//   const outPath = path.join(root, "generated", "trainers_flat.json");
+//   fs.mkdirSync(path.dirname(outPath), { recursive: true });
+//   fs.writeFileSync(outPath, JSON.stringify(data, null, 2));
+//   console.log("Wrote", outPath);
+// }
 
-// Execute only when run directly (not when imported)
-if (import.meta.url === `file://${process.argv[1]}`) {
-  main();
-}
+// // Execute only when run directly (not when imported)
+// if (import.meta.url === `file://${process.argv[1]}`) {
+//   main();
+// }

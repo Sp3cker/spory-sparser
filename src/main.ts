@@ -1,3 +1,6 @@
+import path from "path";
+import { mkdirSync } from "fs";
+import { writeFile, readFile } from "fs/promises";
 import { findMartSectionsByLevel, Mart, MartEntry } from "./parseMarts.ts";
 import {
   findGiveItemsByLevel,
@@ -6,15 +9,13 @@ import {
   ScriptedGive,
 } from "./parseMaps/index.ts";
 import { main } from "./parseMapEvents.ts";
-import path from "path";
-import { writeFile, readFile } from "fs/promises";
 import { extractTrainerParties } from "./parseMaps/extractTrainerParties.ts";
 import { extractTrainers } from "./parseMaps/extractTrainers.ts";
-import { mkdirSync } from "fs";
 import { generateSpriteFromScript } from "./parseMaps/generateSpriteFromScript.ts";
 import { getLevelLabel } from "./helpers.ts";
 import { TrainerRecord, MapEventPlace } from "./validators/index.ts";
 
+import { Config } from "./configReader.ts";
 // Load encounters data from the project's data directory
 const encountersData = JSON.parse(
   await readFile(
@@ -23,7 +24,6 @@ const encountersData = JSON.parse(
   )
 );
 // Helper function for pretty printing JSON
-const prettyPrint = (data: any): string => JSON.stringify(data, null, 2);
 
 /**
  * Combined trainer data from maps.json and trainers_flat.json
@@ -63,6 +63,8 @@ interface MergeDataParams {
   trainersFlat: Record<string, TrainerRecord>;
   encountersMap: Map<string, any>;
 }
+
+const prettyPrint = (data: any): string => JSON.stringify(data, null, 2);
 const sset = new Set();
 
 const mergeDataByLevelsID = async ({
@@ -247,48 +249,50 @@ const mergeDataByLevelsID = async ({
 (async () => {
   // Call the functions here as needed
   try {
-    const rootDir = process.cwd();
-    const directoryPath = path.join(rootDir, "maps");
+    // const rootDir = process.cwd();
+    // const directoryPath = path.join(rootDir, "maps");
 
-    if (!directoryPath) {
-      console.error("Usage: ts-node main.ts <directory-path>");
-      process.exit(1);
-    }
+    // if (!directoryPath) {
+    //   console.error("Usage: ts-node main.ts <directory-path>");
+    //   process.exit(1);
+    // }
 
+    const config = new Config();
     // Load encounters data
 
     const encountersMap = new Map<string, any>(
       encountersData.map((enc: any) => [enc.map, enc])
     );
-
     // --- Trainer & party extraction ----------------------------------
-    const trainerParties = extractTrainerParties(rootDir);
+    const trainerParties = extractTrainerParties(config.dataDir);
     const trainersFlat: Record<string, TrainerRecord> = extractTrainers(
-      rootDir,
-      trainerParties
+      config.dataDir,
+      trainerParties,
+      config.battlePics,
+      config.outputDir
     );
 
     // Ensure output directory exists
-    mkdirSync(path.join(rootDir, "generated"), { recursive: true });
+    mkdirSync(path.join(config.outputDir), { recursive: true });
 
     // Optionally persist to disk for inspection
     await writeFile(
-      path.join(rootDir, "generated", "trainer_parties.json"),
+      path.join(config.outputDir, "trainer_parties.json"),
       prettyPrint(trainerParties)
     );
     await writeFile(
-      path.join(rootDir, "generated", "trainers_flat.json"),
+      path.join(config.outputDir, "trainers_flat.json"),
       prettyPrint(trainersFlat)
     );
 
     // Find and log mart sections
-    const martSections = await findMartSectionsByLevel(directoryPath);
+    const martSections = await findMartSectionsByLevel(config.mapsDir);
 
     // Find and log give items by level
-    const scriptedGives = await findGiveItemsByLevel(directoryPath);
+    const scriptedGives = await findGiveItemsByLevel(config.mapsDir);
 
     // Parse map events
-    const mapEvents = await main(directoryPath);
+    const mapEvents = await main(config.mapsDir);
 
     // Merge all data in memory
     const { groupedData, groupedTrainers } = await mergeDataByLevelsID({

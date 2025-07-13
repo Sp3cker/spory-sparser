@@ -2,7 +2,7 @@
   "MAP_ABANDONED_SHIP": [
     {
       "id": "TRAINER_CHARLIE",
-      "battlePic": "tuber_m.png",
+      "battlePic": "tuber_m.webp",
       "trainerName": "Charlie",
       "doubleBattle": false,
       "aiFlags": [
@@ -28,7 +28,7 @@
     },
     {
       "id": "TRAINER_DUNCAN",
-      "battlePic": "sailor.png",
+      "battlePic": "sailor.webp",
       "trainerName": "Duncan",
       "doubleBattle": false,
       "aiFlags": [
@@ -54,7 +54,7 @@
     },
     {
       "id": "TRAINER_KIRA_AND_DAN_1",
-      "battlePic": "young_couple.png",
+      "battlePic": "young_couple.webp",
       "trainerName": "Kira & Dan",
       "doubleBattle": true,
       "aiFlags": [
@@ -80,7 +80,7 @@
     },
     {
       "id": "TRAINER_JANI",
-      "battlePic": "tuber_f.png",
+      "battlePic": "tuber_f.webp",
       "trainerName": "Jani",
       "doubleBattle": false,
       "aiFlags": [
@@ -106,7 +106,7 @@
     },
     {
       "id": "TRAINER_GARRISON",
-      "battlePic": "ruin_maniac.png",
+      "battlePic": "ruin_maniac.webp",
       "trainerName": "Garrison",
       "doubleBattle": false,
       "aiFlags": [
@@ -132,7 +132,7 @@
     },
     {
       "id": "TRAINER_DEMETRIUS",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Demetrius",
       "doubleBattle": false,
       "aiFlags": [
@@ -158,7 +158,7 @@
     },
     {
       "id": "TRAINER_THALIA_1",
-      "battlePic": "beauty.png",
+      "battlePic": "beauty.webp",
       "trainerName": "Thalia",
       "doubleBattle": false,
       "aiFlags": [
@@ -187,7 +187,7 @@
   "MAP_AQUA_HIDEOUT": [
     {
       "id": "TRAINER_GRUNT_AQUA_HIDEOUT_1",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt 1",
       "doubleBattle": false,
       "aiFlags": [
@@ -209,7 +209,7 @@
     },
     {
       "id": "TRAINER_GRUNT_AQUA_HIDEOUT_2",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt 2",
       "doubleBattle": false,
       "aiFlags": [
@@ -235,7 +235,7 @@
     },
     {
       "id": "TRAINER_GRUNT_AQUA_HIDEOUT_3",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt 3",
       "doubleBattle": false,
       "aiFlags": [
@@ -257,7 +257,7 @@
     },
     {
       "id": "TRAINER_GRUNT_AQUA_HIDEOUT_5",
-      "battlePic": "aqua_grunt_f.png",
+      "battlePic": "aqua_grunt_f.webp",
       "trainerName": "Grunt 5",
       "doubleBattle": false,
       "aiFlags": [
@@ -279,7 +279,7 @@
     },
     {
       "id": "TRAINER_GRUNT_AQUA_HIDEOUT_7",
-      "battlePic": "aqua_grunt_f.png",
+      "battlePic": "aqua_grunt_f.webp",
       "trainerName": "Grunt 7",
       "doubleBattle": false,
       "aiFlags": [
@@ -305,7 +305,7 @@
     },
     {
       "id": "TRAINER_ARCHIE_HIDEOUT",
-      "battlePic": "aqua_leader_archie.png",
+      "battlePic": "aqua_leader_archie.webp",
       "trainerName": "Archie",
       "doubleBattle": false,
       "aiFlags": [
@@ -457,7 +457,7 @@
         }
       ],
       "script": "AquaHideout_B2F_EventScript_Archie",
-      "sprite": "archie.webp",
+      "sprite": "aqua_leader_archie.webp",
       "coords": [
         0,
         0
@@ -466,7 +466,7 @@
     },
     {
       "id": "TRAINER_GRUNT_AQUA_HIDEOUT_4",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt 4",
       "doubleBattle": false,
       "aiFlags": [
@@ -488,7 +488,7 @@
     },
     {
       "id": "TRAINER_GRUNT_AQUA_HIDEOUT_6",
-      "battlePic": "aqua_grunt_f.png",
+      "battlePic": "aqua_grunt_f.webp",
       "trainerName": "Grunt 6",
       "doubleBattle": false,
       "aiFlags": [
@@ -510,7 +510,7 @@
     },
     {
       "id": "TRAINER_GRUNT_AQUA_HIDEOUT_8",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt 8",
       "doubleBattle": false,
       "aiFlags": [
@@ -534,7 +534,7 @@
   "MAP_DEWFORD_TOWN": [
     {
       "id": "TRAINER_BRAWLY_1",
-      "battlePic": "leader_brawly.png",
+      "battlePic": "leader_brawly.webp",
       "trainerName": "Brawly",
       "doubleBattle": false,
       "aiFlags": [
@@ -623,7 +623,7 @@
         }
       ],
       "script": "DewfordTown_Gym_EventScript_Brawly",
-      "sprite": "brawly.webp",
+      "sprite": "leader_brawly.webp",
       "coords": [
         0,
         0
@@ -632,7 +632,7 @@
     },
     {
       "id": "TRAINER_TAKAO",
-      "battlePic": "black_belt.png",
+      "battlePic": "black_belt.webp",
       "trainerName": "Takao",
       "doubleBattle": false,
       "aiFlags": [
@@ -658,7 +658,7 @@
     },
     {
       "id": "TRAINER_JOCELYN",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Jocelyn",
       "doubleBattle": false,
       "aiFlags": [
@@ -684,7 +684,7 @@
     },
     {
       "id": "TRAINER_LAURA",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Laura",
       "doubleBattle": false,
       "aiFlags": [
@@ -706,7 +706,7 @@
     },
     {
       "id": "TRAINER_BRENDEN",
-      "battlePic": "sailor.png",
+      "battlePic": "sailor.webp",
       "trainerName": "Brenden",
       "doubleBattle": false,
       "aiFlags": [
@@ -728,7 +728,7 @@
     },
     {
       "id": "TRAINER_CRISTIAN",
-      "battlePic": "black_belt.png",
+      "battlePic": "black_belt.webp",
       "trainerName": "Cristian",
       "doubleBattle": false,
       "aiFlags": [
@@ -750,7 +750,7 @@
     },
     {
       "id": "TRAINER_LILITH",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Lilith",
       "doubleBattle": false,
       "aiFlags": [
@@ -774,7 +774,7 @@
   "MAP_EVER_GRANDE_CITY": [
     {
       "id": "TRAINER_MAY_EVERGRANDE_TREECKO",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -936,7 +936,7 @@
     },
     {
       "id": "TRAINER_MAY_EVERGRANDE_TORCHIC",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -1099,7 +1099,7 @@
     },
     {
       "id": "TRAINER_MAY_EVERGRANDE_MUDKIP",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -1261,7 +1261,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_EVERGRANDE_TREECKO",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -1423,7 +1423,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_EVERGRANDE_TORCHIC",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -1586,7 +1586,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_EVERGRANDE_MUDKIP",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -1748,7 +1748,7 @@
     },
     {
       "id": "TRAINER_DAWN_EVERGRANDE",
-      "battlePic": "dawn.png",
+      "battlePic": "dawn.webp",
       "trainerName": "Dawn",
       "doubleBattle": false,
       "aiFlags": [
@@ -1909,7 +1909,7 @@
     },
     {
       "id": "TRAINER_VOLKNER",
-      "battlePic": "volkner.png",
+      "battlePic": "volkner.webp",
       "trainerName": "Volkner",
       "doubleBattle": false,
       "aiFlags": [
@@ -2163,7 +2163,7 @@
     },
     {
       "id": "TRAINER_CYNTHIA",
-      "battlePic": "cynthia.png",
+      "battlePic": "cynthia.webp",
       "trainerName": "Cynthia",
       "doubleBattle": false,
       "aiFlags": [
@@ -2324,7 +2324,7 @@
     },
     {
       "id": "TRAINER_GLACIA2",
-      "battlePic": "elite_four_glacia.png",
+      "battlePic": "elite_four_glacia.webp",
       "trainerName": "Glacia",
       "doubleBattle": false,
       "aiFlags": [
@@ -2476,7 +2476,7 @@
         }
       ],
       "script": "EverGrandeCity_GlaciasRoom_EventScript_Glacia",
-      "sprite": "glacia.webp",
+      "sprite": "elite_four_glacia.webp",
       "coords": [
         0,
         0
@@ -2485,7 +2485,7 @@
     },
     {
       "id": "TRAINER_GLACIA1",
-      "battlePic": "elite_four_glacia.png",
+      "battlePic": "elite_four_glacia.webp",
       "trainerName": "Glacia",
       "doubleBattle": false,
       "aiFlags": [
@@ -2646,7 +2646,7 @@
     },
     {
       "id": "TRAINER_PHOEBE2",
-      "battlePic": "elite_four_phoebe.png",
+      "battlePic": "elite_four_phoebe.webp",
       "trainerName": "Phoebe",
       "doubleBattle": false,
       "aiFlags": [
@@ -2798,7 +2798,7 @@
         }
       ],
       "script": "EverGrandeCity_PhoebesRoom_EventScript_Phoebe",
-      "sprite": "phoebe.webp",
+      "sprite": "elite_four_phoebe.webp",
       "coords": [
         0,
         0
@@ -2807,7 +2807,7 @@
     },
     {
       "id": "TRAINER_PHOEBE1",
-      "battlePic": "elite_four_phoebe.png",
+      "battlePic": "elite_four_phoebe.webp",
       "trainerName": "Phoebe",
       "doubleBattle": false,
       "aiFlags": [
@@ -2968,7 +2968,7 @@
     },
     {
       "id": "TRAINER_SIDNEY2",
-      "battlePic": "elite_four_sidney.png",
+      "battlePic": "elite_four_sidney.webp",
       "trainerName": "Sidney",
       "doubleBattle": false,
       "aiFlags": [
@@ -3121,7 +3121,7 @@
         }
       ],
       "script": "EverGrandeCity_SidneysRoom_EventScript_Sidney",
-      "sprite": "sidney.webp",
+      "sprite": "elite_four_sidney.webp",
       "coords": [
         0,
         0
@@ -3130,7 +3130,7 @@
     },
     {
       "id": "TRAINER_SIDNEY1",
-      "battlePic": "elite_four_sidney.png",
+      "battlePic": "elite_four_sidney.webp",
       "trainerName": "Sidney",
       "doubleBattle": false,
       "aiFlags": [
@@ -3294,7 +3294,7 @@
   "MAP_FORTREE_CITY": [
     {
       "id": "TRAINER_IRIV24",
-      "battlePic": "collector.png",
+      "battlePic": "collector.webp",
       "trainerName": "iriv24",
       "doubleBattle": false,
       "aiFlags": [
@@ -3455,7 +3455,7 @@
     },
     {
       "id": "TRAINER_CAP",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Cap",
       "doubleBattle": false,
       "aiFlags": [
@@ -3617,7 +3617,7 @@
     },
     {
       "id": "TRAINER_X",
-      "battlePic": "camper.png",
+      "battlePic": "camper.webp",
       "trainerName": "X",
       "doubleBattle": false,
       "aiFlags": [
@@ -3769,7 +3769,7 @@
         }
       ],
       "script": "FortreeCity_CreatorHouse_EventScript_BattleX",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         0,
         0
@@ -3778,7 +3778,7 @@
     },
     {
       "id": "TRAINER_WINONA_1",
-      "battlePic": "leader_winona.png",
+      "battlePic": "leader_winona.webp",
       "trainerName": "Winona",
       "doubleBattle": false,
       "aiFlags": [
@@ -3931,7 +3931,7 @@
         }
       ],
       "script": "FortreeCity_Gym_EventScript_Winona",
-      "sprite": "winona.webp",
+      "sprite": "leader_winona.webp",
       "coords": [
         0,
         0
@@ -3940,7 +3940,7 @@
     },
     {
       "id": "TRAINER_JARED",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Jared",
       "doubleBattle": false,
       "aiFlags": [
@@ -3966,7 +3966,7 @@
     },
     {
       "id": "TRAINER_EDWARDO",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Edwardo",
       "doubleBattle": false,
       "aiFlags": [
@@ -3992,7 +3992,7 @@
     },
     {
       "id": "TRAINER_FLINT",
-      "battlePic": "camper.png",
+      "battlePic": "camper.webp",
       "trainerName": "Flint",
       "doubleBattle": false,
       "aiFlags": [
@@ -4018,7 +4018,7 @@
     },
     {
       "id": "TRAINER_ASHLEY",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Ashley",
       "doubleBattle": false,
       "aiFlags": [
@@ -4044,7 +4044,7 @@
     },
     {
       "id": "TRAINER_HUMBERTO",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Humberto",
       "doubleBattle": false,
       "aiFlags": [
@@ -4066,7 +4066,7 @@
     },
     {
       "id": "TRAINER_DARIUS",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Darius",
       "doubleBattle": false,
       "aiFlags": [
@@ -4092,7 +4092,7 @@
   "MAP_JAGGED_PASS": [
     {
       "id": "TRAINER_GRUNT_JAGGED_PASS",
-      "battlePic": "magma_grunt_m.png",
+      "battlePic": "magma_grunt_m.webp",
       "trainerName": "Grunt",
       "doubleBattle": false,
       "aiFlags": [
@@ -4109,7 +4109,7 @@
         }
       ],
       "script": "JaggedPass_EventScript_MagmaHideoutGuard",
-      "sprite": "magma_grunt_m.png",
+      "sprite": "magma_grunt_m.webp",
       "coords": [
         0,
         0
@@ -4118,7 +4118,7 @@
     },
     {
       "id": "TRAINER_ERIC",
-      "battlePic": "hiker.png",
+      "battlePic": "hiker.webp",
       "trainerName": "Eric",
       "doubleBattle": false,
       "aiFlags": [
@@ -4144,7 +4144,7 @@
     },
     {
       "id": "TRAINER_DIANA_1",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Diana",
       "doubleBattle": false,
       "aiFlags": [
@@ -4171,7 +4171,7 @@
     },
     {
       "id": "TRAINER_ETHAN_1",
-      "battlePic": "camper.png",
+      "battlePic": "camper.webp",
       "trainerName": "Ethan",
       "doubleBattle": false,
       "aiFlags": [
@@ -4194,7 +4194,7 @@
     },
     {
       "id": "TRAINER_AUTUMN",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Autumn",
       "doubleBattle": false,
       "aiFlags": [
@@ -4216,7 +4216,7 @@
     },
     {
       "id": "TRAINER_MAYLENE",
-      "battlePic": "maylene.png",
+      "battlePic": "maylene.webp",
       "trainerName": "Maylene",
       "doubleBattle": false,
       "aiFlags": [
@@ -4380,7 +4380,7 @@
   "MAP_LAVARIDGE_TOWN": [
     {
       "id": "TRAINER_FLANNERY_1",
-      "battlePic": "leader_flannery.png",
+      "battlePic": "leader_flannery.webp",
       "trainerName": "Flannery",
       "doubleBattle": false,
       "aiFlags": [
@@ -4533,7 +4533,7 @@
         }
       ],
       "script": "LavaridgeTown_Gym_1F_EventScript_Flannery",
-      "sprite": "flannery.webp",
+      "sprite": "leader_flannery.webp",
       "coords": [
         0,
         0
@@ -4544,7 +4544,7 @@
   "MAP_LILYCOVE_CITY": [
     {
       "id": "TRAINER_DAWN_LILYCOVE",
-      "battlePic": "dawn.png",
+      "battlePic": "dawn.webp",
       "trainerName": "Dawn",
       "doubleBattle": false,
       "aiFlags": [
@@ -4708,7 +4708,7 @@
   "MAP_MAGMA_HIDEOUT": [
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_1",
-      "battlePic": "magma_grunt_m.png",
+      "battlePic": "magma_grunt_m.webp",
       "trainerName": "Grunt 1",
       "doubleBattle": false,
       "aiFlags": [
@@ -4730,7 +4730,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_2",
-      "battlePic": "magma_grunt_m.png",
+      "battlePic": "magma_grunt_m.webp",
       "trainerName": "Grunt 2",
       "doubleBattle": false,
       "aiFlags": [
@@ -4752,7 +4752,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_14",
-      "battlePic": "magma_grunt_f.png",
+      "battlePic": "magma_grunt_f.webp",
       "trainerName": "Grunt 4",
       "doubleBattle": false,
       "aiFlags": [
@@ -4774,7 +4774,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_3",
-      "battlePic": "magma_grunt_m.png",
+      "battlePic": "magma_grunt_m.webp",
       "trainerName": "Grunt 3",
       "doubleBattle": false,
       "aiFlags": [
@@ -4796,7 +4796,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_4",
-      "battlePic": "magma_grunt_m.png",
+      "battlePic": "magma_grunt_m.webp",
       "trainerName": "Grunt 4",
       "doubleBattle": false,
       "aiFlags": [
@@ -4818,7 +4818,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_5",
-      "battlePic": "magma_grunt_m.png",
+      "battlePic": "magma_grunt_m.webp",
       "trainerName": "Grunt 5",
       "doubleBattle": false,
       "aiFlags": [
@@ -4840,7 +4840,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_15",
-      "battlePic": "magma_grunt_f.png",
+      "battlePic": "magma_grunt_f.webp",
       "trainerName": "Grunt 5",
       "doubleBattle": false,
       "aiFlags": [
@@ -4862,7 +4862,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_6",
-      "battlePic": "magma_grunt_m.png",
+      "battlePic": "magma_grunt_m.webp",
       "trainerName": "Grunt 6",
       "doubleBattle": false,
       "aiFlags": [
@@ -4884,7 +4884,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_7",
-      "battlePic": "magma_grunt_m.png",
+      "battlePic": "magma_grunt_m.webp",
       "trainerName": "Grunt 7",
       "doubleBattle": false,
       "aiFlags": [
@@ -4906,7 +4906,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_8",
-      "battlePic": "magma_grunt_m.png",
+      "battlePic": "magma_grunt_m.webp",
       "trainerName": "Grunt 8",
       "doubleBattle": false,
       "aiFlags": [
@@ -4928,7 +4928,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_9",
-      "battlePic": "magma_grunt_m.png",
+      "battlePic": "magma_grunt_m.webp",
       "trainerName": "Grunt 9",
       "doubleBattle": false,
       "aiFlags": [
@@ -4950,7 +4950,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_16",
-      "battlePic": "magma_grunt_f.png",
+      "battlePic": "magma_grunt_f.webp",
       "trainerName": "Grunt 6",
       "doubleBattle": false,
       "aiFlags": [
@@ -4972,7 +4972,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MAGMA_HIDEOUT_10",
-      "battlePic": "magma_grunt_m.png",
+      "battlePic": "magma_grunt_m.webp",
       "trainerName": "Grunt 0",
       "doubleBattle": false,
       "aiFlags": [
@@ -4994,7 +4994,7 @@
     },
     {
       "id": "TRAINER_MAXIE_MAGMA_HIDEOUT",
-      "battlePic": "magma_leader_maxie.png",
+      "battlePic": "magma_leader_maxie.webp",
       "trainerName": "Maxie",
       "doubleBattle": true,
       "aiFlags": [
@@ -5147,7 +5147,7 @@
         }
       ],
       "script": "MagmaHideout_4F_EventScript_Maxie",
-      "sprite": "maxie.webp",
+      "sprite": "magma_leader_maxie.webp",
       "coords": [
         0,
         0
@@ -5156,7 +5156,7 @@
     },
     {
       "id": "TRAINER_COURTNEY",
-      "battlePic": "courtney.png",
+      "battlePic": "courtney.webp",
       "trainerName": "Courtney",
       "doubleBattle": false,
       "aiFlags": [
@@ -5272,7 +5272,7 @@
     },
     {
       "id": "TRAINER_TABITHA_MAGMA_HIDEOUT",
-      "battlePic": "magma_admin.png",
+      "battlePic": "magma_admin.webp",
       "trainerName": "Tabitha",
       "doubleBattle": false,
       "aiFlags": [
@@ -5389,7 +5389,7 @@
   "MAP_MAUVILLE_CITY": [
     {
       "id": "TRAINER_WALLY_MAUVILLE",
-      "battlePic": "wally.png",
+      "battlePic": "wally.webp",
       "trainerName": "Wally",
       "doubleBattle": false,
       "aiFlags": [
@@ -5480,7 +5480,7 @@
     },
     {
       "id": "TRAINER_WATTSON_1",
-      "battlePic": "leader_wattson.png",
+      "battlePic": "leader_wattson.webp",
       "trainerName": "Wattson",
       "doubleBattle": false,
       "aiFlags": [
@@ -5609,7 +5609,7 @@
         }
       ],
       "script": "MauvilleCity_Gym_EventScript_Wattson",
-      "sprite": "wattson.webp",
+      "sprite": "leader_wattson.webp",
       "coords": [
         0,
         0
@@ -5618,7 +5618,7 @@
     },
     {
       "id": "TRAINER_KIRK",
-      "battlePic": "guitarist.png",
+      "battlePic": "guitarist.webp",
       "trainerName": "Kirk",
       "doubleBattle": false,
       "aiFlags": [
@@ -5644,7 +5644,7 @@
     },
     {
       "id": "TRAINER_SHAWN",
-      "battlePic": "guitarist.png",
+      "battlePic": "guitarist.webp",
       "trainerName": "Shawn",
       "doubleBattle": false,
       "aiFlags": [
@@ -5670,7 +5670,7 @@
     },
     {
       "id": "TRAINER_BEN",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Ben",
       "doubleBattle": false,
       "aiFlags": [
@@ -5696,7 +5696,7 @@
     },
     {
       "id": "TRAINER_VIVIAN",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Vivian",
       "doubleBattle": false,
       "aiFlags": [
@@ -5722,7 +5722,7 @@
     },
     {
       "id": "TRAINER_ANGELO",
-      "battlePic": "bug_maniac.png",
+      "battlePic": "bug_maniac.webp",
       "trainerName": "Angelo",
       "doubleBattle": false,
       "aiFlags": [
@@ -5752,7 +5752,7 @@
   "MAP_METEOR_FALLS": [
     {
       "id": "TRAINER_NICOLAS_1",
-      "battlePic": "dragon_tamer.png",
+      "battlePic": "dragon_tamer.webp",
       "trainerName": "Nicolas",
       "doubleBattle": false,
       "aiFlags": [
@@ -5779,7 +5779,7 @@
     },
     {
       "id": "TRAINER_JOHN_AND_JAY_1",
-      "battlePic": "old_couple.png",
+      "battlePic": "old_couple.webp",
       "trainerName": "John & Jay",
       "doubleBattle": true,
       "aiFlags": [
@@ -5809,7 +5809,7 @@
   "MAP_MOSSDEEP_CITY": [
     {
       "id": "TRAINER_SUNBIRD",
-      "battlePic": "beauty_firered.png",
+      "battlePic": "beauty_firered.webp",
       "trainerName": "Sunbird",
       "doubleBattle": false,
       "aiFlags": [
@@ -5982,7 +5982,7 @@
     },
     {
       "id": "TRAINER_SUNEAL",
-      "battlePic": "TRAINER_PIC_SUPERNERD_FIRERED",
+      "battlePic": "supernerd_firered.webp",
       "trainerName": "Suneal",
       "doubleBattle": false,
       "aiFlags": [
@@ -6144,7 +6144,7 @@
     },
     {
       "id": "TRAINER_DOLLAMIKE",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "DollaMike",
       "doubleBattle": false,
       "aiFlags": [
@@ -6305,7 +6305,7 @@
     },
     {
       "id": "TRAINER_TATE",
-      "battlePic": "tate.png",
+      "battlePic": "tate.webp",
       "trainerName": "Tate",
       "doubleBattle": false,
       "aiFlags": [
@@ -6397,7 +6397,7 @@
     },
     {
       "id": "TRAINER_PRESTON",
-      "battlePic": "psychic_m.png",
+      "battlePic": "psychic_m.webp",
       "trainerName": "Preston",
       "doubleBattle": false,
       "aiFlags": [
@@ -6419,7 +6419,7 @@
     },
     {
       "id": "TRAINER_VIRGIL",
-      "battlePic": "psychic_m.png",
+      "battlePic": "psychic_m.webp",
       "trainerName": "Virgil",
       "doubleBattle": false,
       "aiFlags": [
@@ -6441,7 +6441,7 @@
     },
     {
       "id": "TRAINER_BLAKE",
-      "battlePic": "psychic_m.png",
+      "battlePic": "psychic_m.webp",
       "trainerName": "Blake",
       "doubleBattle": false,
       "aiFlags": [
@@ -6463,7 +6463,7 @@
     },
     {
       "id": "TRAINER_HANNAH",
-      "battlePic": "psychic_f.png",
+      "battlePic": "psychic_f.webp",
       "trainerName": "Hannah",
       "doubleBattle": false,
       "aiFlags": [
@@ -6485,7 +6485,7 @@
     },
     {
       "id": "TRAINER_SAMANTHA",
-      "battlePic": "psychic_f.png",
+      "battlePic": "psychic_f.webp",
       "trainerName": "Samantha",
       "doubleBattle": false,
       "aiFlags": [
@@ -6507,7 +6507,7 @@
     },
     {
       "id": "TRAINER_MAURA",
-      "battlePic": "psychic_f.png",
+      "battlePic": "psychic_f.webp",
       "trainerName": "Maura",
       "doubleBattle": false,
       "aiFlags": [
@@ -6529,7 +6529,7 @@
     },
     {
       "id": "TRAINER_SYLVIA",
-      "battlePic": "hex_maniac.png",
+      "battlePic": "hex_maniac.webp",
       "trainerName": "Sylvia",
       "doubleBattle": false,
       "aiFlags": [
@@ -6551,7 +6551,7 @@
     },
     {
       "id": "TRAINER_NATE",
-      "battlePic": "gentleman.png",
+      "battlePic": "gentleman.webp",
       "trainerName": "Nate",
       "doubleBattle": false,
       "aiFlags": [
@@ -6573,7 +6573,7 @@
     },
     {
       "id": "TRAINER_MACEY",
-      "battlePic": "psychic_f.png",
+      "battlePic": "psychic_f.webp",
       "trainerName": "Macey",
       "doubleBattle": false,
       "aiFlags": [
@@ -6595,7 +6595,7 @@
     },
     {
       "id": "TRAINER_CLIFFORD",
-      "battlePic": "gentleman.png",
+      "battlePic": "gentleman.webp",
       "trainerName": "Clifford",
       "doubleBattle": false,
       "aiFlags": [
@@ -6617,7 +6617,7 @@
     },
     {
       "id": "TRAINER_NICHOLAS",
-      "battlePic": "psychic_m.png",
+      "battlePic": "psychic_m.webp",
       "trainerName": "Nicholas",
       "doubleBattle": false,
       "aiFlags": [
@@ -6639,7 +6639,7 @@
     },
     {
       "id": "TRAINER_KATHLEEN",
-      "battlePic": "hex_maniac.png",
+      "battlePic": "hex_maniac.webp",
       "trainerName": "Kathleen",
       "doubleBattle": false,
       "aiFlags": [
@@ -6663,7 +6663,7 @@
   "MAP_MT_CHIMNEY": [
     {
       "id": "TRAINER_MAXIE_MT_CHIMNEY",
-      "battlePic": "magma_leader_maxie.png",
+      "battlePic": "magma_leader_maxie.webp",
       "trainerName": "Maxie",
       "doubleBattle": false,
       "aiFlags": [
@@ -6815,7 +6815,7 @@
         }
       ],
       "script": "MtChimney_EventScript_Maxie",
-      "sprite": "maxie.webp",
+      "sprite": "magma_leader_maxie.webp",
       "coords": [
         0,
         0
@@ -6824,7 +6824,7 @@
     },
     {
       "id": "TRAINER_TABITHA_MT_CHIMNEY",
-      "battlePic": "magma_admin.png",
+      "battlePic": "magma_admin.webp",
       "trainerName": "Tabitha",
       "doubleBattle": false,
       "aiFlags": [
@@ -6962,7 +6962,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MT_CHIMNEY_2",
-      "battlePic": "magma_grunt_m.png",
+      "battlePic": "magma_grunt_m.webp",
       "trainerName": "Grunt 2",
       "doubleBattle": false,
       "aiFlags": [
@@ -7054,7 +7054,7 @@
     },
     {
       "id": "TRAINER_SHELBY_1",
-      "battlePic": "expert_f.png",
+      "battlePic": "expert_f.webp",
       "trainerName": "Shelby",
       "doubleBattle": false,
       "aiFlags": [
@@ -7083,7 +7083,7 @@
     },
     {
       "id": "TRAINER_MELISSA",
-      "battlePic": "beauty.png",
+      "battlePic": "beauty.webp",
       "trainerName": "Melissa",
       "doubleBattle": false,
       "aiFlags": [
@@ -7105,7 +7105,7 @@
     },
     {
       "id": "TRAINER_SHEILA",
-      "battlePic": "beauty.png",
+      "battlePic": "beauty.webp",
       "trainerName": "Sheila",
       "doubleBattle": false,
       "aiFlags": [
@@ -7127,7 +7127,7 @@
     },
     {
       "id": "TRAINER_SHIRLEY",
-      "battlePic": "beauty.png",
+      "battlePic": "beauty.webp",
       "trainerName": "Shirley",
       "doubleBattle": false,
       "aiFlags": [
@@ -7149,7 +7149,7 @@
     },
     {
       "id": "TRAINER_COURTNEY_MT_CHIMNEY",
-      "battlePic": "courtney.png",
+      "battlePic": "courtney.webp",
       "trainerName": "Courtney",
       "doubleBattle": false,
       "aiFlags": [
@@ -7241,7 +7241,7 @@
     },
     {
       "id": "TRAINER_SAWYER_1",
-      "battlePic": "hiker.png",
+      "battlePic": "hiker.webp",
       "trainerName": "Sawyer",
       "doubleBattle": false,
       "aiFlags": [
@@ -7268,7 +7268,7 @@
   "MAP_MT_PYRE": [
     {
       "id": "TRAINER_MARK",
-      "battlePic": "pokemaniac.png",
+      "battlePic": "pokemaniac.webp",
       "trainerName": "Mark",
       "doubleBattle": false,
       "aiFlags": [
@@ -7290,7 +7290,7 @@
     },
     {
       "id": "TRAINER_DEZ_AND_LUKE",
-      "battlePic": "young_couple.png",
+      "battlePic": "young_couple.webp",
       "trainerName": "Dez & Luke",
       "doubleBattle": true,
       "aiFlags": [
@@ -7316,7 +7316,7 @@
     },
     {
       "id": "TRAINER_LEAH",
-      "battlePic": "hex_maniac.png",
+      "battlePic": "hex_maniac.webp",
       "trainerName": "Leah",
       "doubleBattle": false,
       "aiFlags": [
@@ -7338,7 +7338,7 @@
     },
     {
       "id": "TRAINER_ZANDER",
-      "battlePic": "black_belt.png",
+      "battlePic": "black_belt.webp",
       "trainerName": "Zander",
       "doubleBattle": false,
       "aiFlags": [
@@ -7360,7 +7360,7 @@
     },
     {
       "id": "TRAINER_WILLIAM",
-      "battlePic": "psychic_m.png",
+      "battlePic": "psychic_m.webp",
       "trainerName": "William",
       "doubleBattle": false,
       "aiFlags": [
@@ -7386,7 +7386,7 @@
     },
     {
       "id": "TRAINER_KAYLA",
-      "battlePic": "psychic_f.png",
+      "battlePic": "psychic_f.webp",
       "trainerName": "Kayla",
       "doubleBattle": false,
       "aiFlags": [
@@ -7412,7 +7412,7 @@
     },
     {
       "id": "TRAINER_GABRIELLE_1",
-      "battlePic": "pokemon_breeder_f.png",
+      "battlePic": "pokemon_breeder_f.webp",
       "trainerName": "Gabrielle",
       "doubleBattle": false,
       "aiFlags": [
@@ -7439,7 +7439,7 @@
     },
     {
       "id": "TRAINER_ATSUSHI",
-      "battlePic": "black_belt.png",
+      "battlePic": "black_belt.webp",
       "trainerName": "Atsushi",
       "doubleBattle": false,
       "aiFlags": [
@@ -7456,7 +7456,7 @@
         }
       ],
       "script": "MtPyre_5F_EventScript_Atsushi",
-      "sprite": "black_belt.png",
+      "sprite": "black_belt.webp",
       "coords": [
         0,
         0
@@ -7465,7 +7465,7 @@
     },
     {
       "id": "TRAINER_TASHA",
-      "battlePic": "hex_maniac.png",
+      "battlePic": "hex_maniac.webp",
       "trainerName": "Tasha",
       "doubleBattle": false,
       "aiFlags": [
@@ -7478,7 +7478,7 @@
         }
       ],
       "script": "MtPyre_4F_EventScript_Tasha",
-      "sprite": "maniac.webp",
+      "sprite": "hex_maniac.webp",
       "coords": [
         0,
         0
@@ -7487,7 +7487,7 @@
     },
     {
       "id": "TRAINER_VALERIE_1",
-      "battlePic": "hex_maniac.png",
+      "battlePic": "hex_maniac.webp",
       "trainerName": "Valerie",
       "doubleBattle": false,
       "aiFlags": [
@@ -7516,7 +7516,7 @@
     },
     {
       "id": "TRAINER_CEDRIC",
-      "battlePic": "psychic_m.png",
+      "battlePic": "psychic_m.webp",
       "trainerName": "Cedric",
       "doubleBattle": false,
       "aiFlags": [
@@ -7546,7 +7546,7 @@
   "MAP_PETALBURG_CITY": [
     {
       "id": "TRAINER_NORMAN_1",
-      "battlePic": "leader_norman.png",
+      "battlePic": "leader_norman.webp",
       "trainerName": "Norman",
       "doubleBattle": false,
       "aiFlags": [
@@ -7709,7 +7709,7 @@
     },
     {
       "id": "TRAINER_GEORGE",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "George",
       "doubleBattle": false,
       "aiFlags": [
@@ -7739,7 +7739,7 @@
     },
     {
       "id": "TRAINER_BERKE",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Berke",
       "doubleBattle": false,
       "aiFlags": [
@@ -7768,7 +7768,7 @@
     },
     {
       "id": "TRAINER_MARY",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Mary",
       "doubleBattle": false,
       "aiFlags": [
@@ -7797,7 +7797,7 @@
     },
     {
       "id": "TRAINER_ALEXIA",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Alexia",
       "doubleBattle": false,
       "aiFlags": [
@@ -7827,7 +7827,7 @@
     },
     {
       "id": "TRAINER_JODY",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Jody",
       "doubleBattle": false,
       "aiFlags": [
@@ -7858,7 +7858,7 @@
   "MAP_PETALBURG_WOODS": [
     {
       "id": "TRAINER_GRUNT_PETALBURG_WOODS",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt",
       "doubleBattle": false,
       "aiFlags": [
@@ -7905,7 +7905,7 @@
     },
     {
       "id": "TRAINER_LYLE",
-      "battlePic": "bug_catcher.png",
+      "battlePic": "bug_catcher.webp",
       "trainerName": "Lyle",
       "doubleBattle": false,
       "aiFlags": [
@@ -7939,7 +7939,7 @@
     },
     {
       "id": "TRAINER_JAMES_1",
-      "battlePic": "bug_catcher.png",
+      "battlePic": "bug_catcher.webp",
       "trainerName": "James",
       "doubleBattle": false,
       "aiFlags": [
@@ -7966,7 +7966,7 @@
     },
     {
       "id": "TRAINER_GARDENIA",
-      "battlePic": "gardenia.png",
+      "battlePic": "gardenia.webp",
       "trainerName": "Gardenia",
       "doubleBattle": false,
       "aiFlags": [
@@ -8064,7 +8064,7 @@
     },
     {
       "id": "TRAINER_GARDENIA2",
-      "battlePic": "gardenia.png",
+      "battlePic": "gardenia.webp",
       "trainerName": "Gardenia",
       "doubleBattle": false,
       "aiFlags": [
@@ -8204,7 +8204,7 @@
   "MAP_ROUTE102": [
     {
       "id": "TRAINER_CALVIN_1",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Calvin",
       "doubleBattle": false,
       "aiFlags": [
@@ -8227,7 +8227,7 @@
     },
     {
       "id": "TRAINER_RICK",
-      "battlePic": "bug_catcher.png",
+      "battlePic": "bug_catcher.webp",
       "trainerName": "Rick",
       "doubleBattle": false,
       "aiFlags": [
@@ -8253,7 +8253,7 @@
     },
     {
       "id": "TRAINER_TIANA",
-      "battlePic": "lass.png",
+      "battlePic": "lass.webp",
       "trainerName": "Tiana",
       "doubleBattle": false,
       "aiFlags": [
@@ -8279,7 +8279,7 @@
     },
     {
       "id": "TRAINER_ALLEN",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Allen",
       "doubleBattle": false,
       "aiFlags": [
@@ -8307,7 +8307,7 @@
   "MAP_ROUTE103": [
     {
       "id": "TRAINER_MAY_ROUTE_103_TREECKO",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -8332,7 +8332,7 @@
     },
     {
       "id": "TRAINER_MAY_ROUTE_103_TORCHIC",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -8357,7 +8357,7 @@
     },
     {
       "id": "TRAINER_MAY_ROUTE_103_MUDKIP",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -8382,7 +8382,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_ROUTE_103_TREECKO",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -8407,7 +8407,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_ROUTE_103_TORCHIC",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -8432,7 +8432,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_ROUTE_103_MUDKIP",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -8457,7 +8457,7 @@
     },
     {
       "id": "TRAINER_DAISY",
-      "battlePic": "aroma_lady.png",
+      "battlePic": "aroma_lady.webp",
       "trainerName": "Daisy",
       "doubleBattle": false,
       "aiFlags": [
@@ -8483,7 +8483,7 @@
     },
     {
       "id": "TRAINER_AMY_AND_LIV_1",
-      "battlePic": "twins.png",
+      "battlePic": "twins.webp",
       "trainerName": "Amy & Liv",
       "doubleBattle": true,
       "aiFlags": [
@@ -8509,7 +8509,7 @@
     },
     {
       "id": "TRAINER_MIGUEL_1",
-      "battlePic": "pokefan_m.png",
+      "battlePic": "pokefan_m.webp",
       "trainerName": "Miguel",
       "doubleBattle": false,
       "aiFlags": [
@@ -8536,7 +8536,7 @@
     },
     {
       "id": "TRAINER_MARCOS",
-      "battlePic": "guitarist.png",
+      "battlePic": "guitarist.webp",
       "trainerName": "Marcos",
       "doubleBattle": false,
       "aiFlags": [
@@ -8562,7 +8562,7 @@
     },
     {
       "id": "TRAINER_RHETT",
-      "battlePic": "black_belt.png",
+      "battlePic": "black_belt.webp",
       "trainerName": "Rhett",
       "doubleBattle": false,
       "aiFlags": [
@@ -8588,7 +8588,7 @@
     },
     {
       "id": "TRAINER_PETE",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Pete",
       "doubleBattle": false,
       "aiFlags": [
@@ -8610,7 +8610,7 @@
     },
     {
       "id": "TRAINER_ISABELLE",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Isabelle",
       "doubleBattle": false,
       "aiFlags": [
@@ -8634,7 +8634,7 @@
   "MAP_ROUTE104": [
     {
       "id": "TRAINER_IVAN",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Ivan",
       "doubleBattle": false,
       "aiFlags": [
@@ -8664,7 +8664,7 @@
     },
     {
       "id": "TRAINER_BILLY",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Billy",
       "doubleBattle": false,
       "aiFlags": [
@@ -8690,7 +8690,7 @@
     },
     {
       "id": "TRAINER_HALEY_1",
-      "battlePic": "lass.png",
+      "battlePic": "lass.webp",
       "trainerName": "Haley",
       "doubleBattle": false,
       "aiFlags": [
@@ -8729,7 +8729,7 @@
     },
     {
       "id": "TRAINER_WINSTON_1",
-      "battlePic": "rich_boy.png",
+      "battlePic": "rich_boy.webp",
       "trainerName": "Winston",
       "doubleBattle": false,
       "aiFlags": [
@@ -8753,7 +8753,7 @@
     },
     {
       "id": "TRAINER_CINDY_1",
-      "battlePic": "lady.png",
+      "battlePic": "lady.webp",
       "trainerName": "Cindy",
       "doubleBattle": false,
       "aiFlags": [
@@ -8777,7 +8777,7 @@
     },
     {
       "id": "TRAINER_GINA_AND_MIA_1",
-      "battlePic": "twins.png",
+      "battlePic": "twins.webp",
       "trainerName": "Gina & Mia",
       "doubleBattle": true,
       "aiFlags": [
@@ -8803,7 +8803,7 @@
     },
     {
       "id": "TRAINER_DARIAN",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Darian",
       "doubleBattle": false,
       "aiFlags": [
@@ -8825,7 +8825,7 @@
     },
     {
       "id": "TRAINER_DAWN_ROUTE_104",
-      "battlePic": "dawn.png",
+      "battlePic": "dawn.webp",
       "trainerName": "Dawn",
       "doubleBattle": false,
       "aiFlags": [
@@ -8893,7 +8893,7 @@
   "MAP_ROUTE105": [
     {
       "id": "TRAINER_FOSTER",
-      "battlePic": "ruin_maniac.png",
+      "battlePic": "ruin_maniac.webp",
       "trainerName": "Foster",
       "doubleBattle": false,
       "aiFlags": [
@@ -8919,7 +8919,7 @@
     },
     {
       "id": "TRAINER_LUIS",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Luis",
       "doubleBattle": false,
       "aiFlags": [
@@ -8945,7 +8945,7 @@
     },
     {
       "id": "TRAINER_DOMINIK",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Dominik",
       "doubleBattle": false,
       "aiFlags": [
@@ -8967,7 +8967,7 @@
     },
     {
       "id": "TRAINER_BEVERLY",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Beverly",
       "doubleBattle": false,
       "aiFlags": [
@@ -8993,7 +8993,7 @@
     },
     {
       "id": "TRAINER_IMANI",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Imani",
       "doubleBattle": false,
       "aiFlags": [
@@ -9015,7 +9015,7 @@
     },
     {
       "id": "TRAINER_JOSUE",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Josue",
       "doubleBattle": false,
       "aiFlags": [
@@ -9041,7 +9041,7 @@
     },
     {
       "id": "TRAINER_ANDRES_1",
-      "battlePic": "ruin_maniac.png",
+      "battlePic": "ruin_maniac.webp",
       "trainerName": "Andres",
       "doubleBattle": false,
       "aiFlags": [
@@ -9070,7 +9070,7 @@
   "MAP_ROUTE106": [
     {
       "id": "TRAINER_DOUGLAS",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Douglas",
       "doubleBattle": false,
       "aiFlags": [
@@ -9096,7 +9096,7 @@
     },
     {
       "id": "TRAINER_KYLA",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Kyla",
       "doubleBattle": false,
       "aiFlags": [
@@ -9118,7 +9118,7 @@
     },
     {
       "id": "TRAINER_ELLIOT_1",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Elliot",
       "doubleBattle": false,
       "aiFlags": [
@@ -9149,7 +9149,7 @@
     },
     {
       "id": "TRAINER_NED",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Ned",
       "doubleBattle": false,
       "aiFlags": [
@@ -9181,7 +9181,7 @@
   "MAP_ROUTE107": [
     {
       "id": "TRAINER_DARRIN",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Darrin",
       "doubleBattle": false,
       "aiFlags": [
@@ -9211,7 +9211,7 @@
     },
     {
       "id": "TRAINER_TONY_1",
-      "battlePic": "camper.png",
+      "battlePic": "camper.webp",
       "trainerName": "Tony",
       "doubleBattle": false,
       "aiFlags": [
@@ -9234,7 +9234,7 @@
     },
     {
       "id": "TRAINER_DENISE",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Denise",
       "doubleBattle": false,
       "aiFlags": [
@@ -9260,7 +9260,7 @@
     },
     {
       "id": "TRAINER_BETH",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Beth",
       "doubleBattle": false,
       "aiFlags": [
@@ -9286,7 +9286,7 @@
     },
     {
       "id": "TRAINER_LISA_AND_RAY",
-      "battlePic": "sis_and_bro.png",
+      "battlePic": "sis_and_bro.webp",
       "trainerName": "Lisa & Ray",
       "doubleBattle": true,
       "aiFlags": [
@@ -9312,7 +9312,7 @@
     },
     {
       "id": "TRAINER_CAMRON",
-      "battlePic": "swimming_triathlete_m.png",
+      "battlePic": "swimming_triathlete_m.webp",
       "trainerName": "Camron",
       "doubleBattle": false,
       "aiFlags": [
@@ -9340,7 +9340,7 @@
   "MAP_ROUTE108": [
     {
       "id": "TRAINER_JEROME",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Jerome",
       "doubleBattle": false,
       "aiFlags": [
@@ -9366,7 +9366,7 @@
     },
     {
       "id": "TRAINER_MATTHEW",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Matthew",
       "doubleBattle": false,
       "aiFlags": [
@@ -9392,7 +9392,7 @@
     },
     {
       "id": "TRAINER_TARA",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Tara",
       "doubleBattle": false,
       "aiFlags": [
@@ -9418,7 +9418,7 @@
     },
     {
       "id": "TRAINER_MISSY",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Missy",
       "doubleBattle": false,
       "aiFlags": [
@@ -9448,7 +9448,7 @@
     },
     {
       "id": "TRAINER_CAROLINA",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Carolina",
       "doubleBattle": false,
       "aiFlags": [
@@ -9476,7 +9476,7 @@
     },
     {
       "id": "TRAINER_CORY_1",
-      "battlePic": "sailor.png",
+      "battlePic": "sailor.webp",
       "trainerName": "Cory",
       "doubleBattle": false,
       "aiFlags": [
@@ -9505,7 +9505,7 @@
   "MAP_ROUTE109": [
     {
       "id": "TRAINER_DAVID",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "David",
       "doubleBattle": false,
       "aiFlags": [
@@ -9531,7 +9531,7 @@
     },
     {
       "id": "TRAINER_ALICE",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Alice",
       "doubleBattle": false,
       "aiFlags": [
@@ -9561,7 +9561,7 @@
     },
     {
       "id": "TRAINER_HUEY",
-      "battlePic": "sailor.png",
+      "battlePic": "sailor.webp",
       "trainerName": "Huey",
       "doubleBattle": false,
       "aiFlags": [
@@ -9587,7 +9587,7 @@
     },
     {
       "id": "TRAINER_EDMOND",
-      "battlePic": "sailor.png",
+      "battlePic": "sailor.webp",
       "trainerName": "Edmond",
       "doubleBattle": false,
       "aiFlags": [
@@ -9609,7 +9609,7 @@
     },
     {
       "id": "TRAINER_RICKY_1",
-      "battlePic": "tuber_m.png",
+      "battlePic": "tuber_m.webp",
       "trainerName": "Ricky",
       "doubleBattle": false,
       "aiFlags": [
@@ -9635,7 +9635,7 @@
     },
     {
       "id": "TRAINER_LOLA_1",
-      "battlePic": "tuber_f.png",
+      "battlePic": "tuber_f.webp",
       "trainerName": "Lola",
       "doubleBattle": false,
       "aiFlags": [
@@ -9662,7 +9662,7 @@
     },
     {
       "id": "TRAINER_AUSTINA",
-      "battlePic": "tuber_f.png",
+      "battlePic": "tuber_f.webp",
       "trainerName": "Austina",
       "doubleBattle": false,
       "aiFlags": [
@@ -9684,7 +9684,7 @@
     },
     {
       "id": "TRAINER_GWEN",
-      "battlePic": "tuber_f.png",
+      "battlePic": "tuber_f.webp",
       "trainerName": "Gwen",
       "doubleBattle": false,
       "aiFlags": [
@@ -9706,7 +9706,7 @@
     },
     {
       "id": "TRAINER_CARTER",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Carter",
       "doubleBattle": false,
       "aiFlags": [
@@ -9732,7 +9732,7 @@
     },
     {
       "id": "TRAINER_MEL_AND_PAUL",
-      "battlePic": "young_couple.png",
+      "battlePic": "young_couple.webp",
       "trainerName": "Mel & Paul",
       "doubleBattle": true,
       "aiFlags": [
@@ -9766,7 +9766,7 @@
     },
     {
       "id": "TRAINER_CHANDLER",
-      "battlePic": "tuber_m.png",
+      "battlePic": "tuber_m.webp",
       "trainerName": "Chandler",
       "doubleBattle": false,
       "aiFlags": [
@@ -9792,7 +9792,7 @@
     },
     {
       "id": "TRAINER_HAILEY",
-      "battlePic": "tuber_f.png",
+      "battlePic": "tuber_f.webp",
       "trainerName": "Hailey",
       "doubleBattle": false,
       "aiFlags": [
@@ -9814,7 +9814,7 @@
     },
     {
       "id": "TRAINER_ELIJAH",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Elijah",
       "doubleBattle": false,
       "aiFlags": [
@@ -9840,7 +9840,7 @@
     },
     {
       "id": "TRAINER_DWAYNE",
-      "battlePic": "sailor.png",
+      "battlePic": "sailor.webp",
       "trainerName": "Dwayne",
       "doubleBattle": false,
       "aiFlags": [
@@ -9908,7 +9908,7 @@
     },
     {
       "id": "TRAINER_JOHANNA",
-      "battlePic": "beauty.png",
+      "battlePic": "beauty.webp",
       "trainerName": "Johanna",
       "doubleBattle": false,
       "aiFlags": [
@@ -9976,7 +9976,7 @@
     },
     {
       "id": "TRAINER_SIMON",
-      "battlePic": "tuber_m.png",
+      "battlePic": "tuber_m.webp",
       "trainerName": "Simon",
       "doubleBattle": false,
       "aiFlags": [
@@ -10046,7 +10046,7 @@
   "MAP_ROUTE110": [
     {
       "id": "TRAINER_EDWARD",
-      "battlePic": "psychic_m.png",
+      "battlePic": "psychic_m.webp",
       "trainerName": "Edward",
       "doubleBattle": false,
       "aiFlags": [
@@ -10114,7 +10114,7 @@
     },
     {
       "id": "TRAINER_JACLYN",
-      "battlePic": "psychic_f.png",
+      "battlePic": "psychic_f.webp",
       "trainerName": "Jaclyn",
       "doubleBattle": false,
       "aiFlags": [
@@ -10136,7 +10136,7 @@
     },
     {
       "id": "TRAINER_EDWIN_1",
-      "battlePic": "collector.png",
+      "battlePic": "collector.webp",
       "trainerName": "Edwin",
       "doubleBattle": false,
       "aiFlags": [
@@ -10205,7 +10205,7 @@
     },
     {
       "id": "TRAINER_DALE",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Dale",
       "doubleBattle": false,
       "aiFlags": [
@@ -10239,7 +10239,7 @@
     },
     {
       "id": "TRAINER_JACOB",
-      "battlePic": "cycling_triathlete_m.png",
+      "battlePic": "cycling_triathlete_m.webp",
       "trainerName": "Jacob",
       "doubleBattle": false,
       "aiFlags": [
@@ -10273,7 +10273,7 @@
     },
     {
       "id": "TRAINER_ANTHONY",
-      "battlePic": "cycling_triathlete_m.png",
+      "battlePic": "cycling_triathlete_m.webp",
       "trainerName": "Anthony",
       "doubleBattle": false,
       "aiFlags": [
@@ -10303,7 +10303,7 @@
     },
     {
       "id": "TRAINER_BENJAMIN_1",
-      "battlePic": "cycling_triathlete_m.png",
+      "battlePic": "cycling_triathlete_m.webp",
       "trainerName": "Benjamin",
       "doubleBattle": false,
       "aiFlags": [
@@ -10334,7 +10334,7 @@
     },
     {
       "id": "TRAINER_JASMINE",
-      "battlePic": "cycling_triathlete_f.png",
+      "battlePic": "cycling_triathlete_f.webp",
       "trainerName": "Jasmine",
       "doubleBattle": false,
       "aiFlags": [
@@ -10364,7 +10364,7 @@
     },
     {
       "id": "TRAINER_ABIGAIL_1",
-      "battlePic": "cycling_triathlete_f.png",
+      "battlePic": "cycling_triathlete_f.webp",
       "trainerName": "Abigail",
       "doubleBattle": false,
       "aiFlags": [
@@ -10391,7 +10391,7 @@
     },
     {
       "id": "TRAINER_ISABEL_1",
-      "battlePic": "pokefan_f.png",
+      "battlePic": "pokefan_f.webp",
       "trainerName": "Isabel",
       "doubleBattle": false,
       "aiFlags": [
@@ -10445,7 +10445,7 @@
     },
     {
       "id": "TRAINER_TIMMY",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Timmy",
       "doubleBattle": false,
       "aiFlags": [
@@ -10475,7 +10475,7 @@
     },
     {
       "id": "TRAINER_KALEB",
-      "battlePic": "pokefan_m.png",
+      "battlePic": "pokefan_m.webp",
       "trainerName": "Kaleb",
       "doubleBattle": false,
       "aiFlags": [
@@ -10528,7 +10528,7 @@
     },
     {
       "id": "TRAINER_JOSEPH",
-      "battlePic": "guitarist.png",
+      "battlePic": "guitarist.webp",
       "trainerName": "Joseph",
       "doubleBattle": false,
       "aiFlags": [
@@ -10611,7 +10611,7 @@
     },
     {
       "id": "TRAINER_ALYSSA",
-      "battlePic": "cycling_triathlete_f.png",
+      "battlePic": "cycling_triathlete_f.webp",
       "trainerName": "Alyssa",
       "doubleBattle": false,
       "aiFlags": [
@@ -10694,7 +10694,7 @@
     },
     {
       "id": "TRAINER_MAY_ROUTE_110_TREECKO",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -10801,7 +10801,7 @@
     },
     {
       "id": "TRAINER_MAY_ROUTE_110_TORCHIC",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -10908,7 +10908,7 @@
     },
     {
       "id": "TRAINER_MAY_ROUTE_110_MUDKIP",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -11015,7 +11015,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_ROUTE_110_TREECKO",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -11122,7 +11122,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_ROUTE_110_TORCHIC",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -11229,7 +11229,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_ROUTE_110_MUDKIP",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -11336,7 +11336,7 @@
     },
     {
       "id": "TRAINER_WALLY_ROUTE_110",
-      "battlePic": "wally.png",
+      "battlePic": "wally.webp",
       "trainerName": "Wally",
       "doubleBattle": false,
       "aiFlags": [
@@ -11497,7 +11497,7 @@
     },
     {
       "id": "TRAINER_SALLY",
-      "battlePic": "lass.png",
+      "battlePic": "lass.webp",
       "trainerName": "Sally",
       "doubleBattle": false,
       "aiFlags": [
@@ -11635,7 +11635,7 @@
     },
     {
       "id": "TRAINER_EDDIE",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Eddie",
       "doubleBattle": false,
       "aiFlags": [
@@ -11774,7 +11774,7 @@
     },
     {
       "id": "TRAINER_ROBIN",
-      "battlePic": "lass.png",
+      "battlePic": "lass.webp",
       "trainerName": "Robin",
       "doubleBattle": false,
       "aiFlags": [
@@ -11935,7 +11935,7 @@
     },
     {
       "id": "TRAINER_TED",
-      "battlePic": "school_kid_m.png",
+      "battlePic": "school_kid_m.webp",
       "trainerName": "Ted",
       "doubleBattle": false,
       "aiFlags": [
@@ -12073,7 +12073,7 @@
     },
     {
       "id": "TRAINER_RACHEL",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Rachel",
       "doubleBattle": false,
       "aiFlags": [
@@ -12211,7 +12211,7 @@
     },
     {
       "id": "TRAINER_GEORGIA",
-      "battlePic": "school_kid_f.png",
+      "battlePic": "school_kid_f.webp",
       "trainerName": "Georgia",
       "doubleBattle": false,
       "aiFlags": [
@@ -12349,7 +12349,7 @@
     },
     {
       "id": "TRAINER_RUSTY",
-      "battlePic": "camper.png",
+      "battlePic": "camper.webp",
       "trainerName": "Rusty",
       "doubleBattle": false,
       "aiFlags": [
@@ -12487,7 +12487,7 @@
     },
     {
       "id": "TRAINER_MARTHA",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Martha",
       "doubleBattle": false,
       "aiFlags": [
@@ -12625,7 +12625,7 @@
     },
     {
       "id": "TRAINER_ALAN",
-      "battlePic": "hiker.png",
+      "battlePic": "hiker.webp",
       "trainerName": "Alan",
       "doubleBattle": false,
       "aiFlags": [
@@ -12763,7 +12763,7 @@
     },
     {
       "id": "TRAINER_CORA",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Cora",
       "doubleBattle": false,
       "aiFlags": [
@@ -12785,7 +12785,7 @@
     },
     {
       "id": "TRAINER_YUJI",
-      "battlePic": "black_belt.png",
+      "battlePic": "black_belt.webp",
       "trainerName": "Yuji",
       "doubleBattle": false,
       "aiFlags": [
@@ -12811,7 +12811,7 @@
     },
     {
       "id": "TRAINER_PAULA",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Paula",
       "doubleBattle": false,
       "aiFlags": [
@@ -12833,7 +12833,7 @@
     },
     {
       "id": "TRAINER_SOPHIA",
-      "battlePic": "pokemon_ranger_f.png",
+      "battlePic": "pokemon_ranger_f.webp",
       "trainerName": "Sophia",
       "doubleBattle": false,
       "aiFlags": [
@@ -12861,7 +12861,7 @@
     },
     {
       "id": "TRAINER_BENNY",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Benny",
       "doubleBattle": false,
       "aiFlags": [
@@ -12891,7 +12891,7 @@
     },
     {
       "id": "TRAINER_SEBASTIAN",
-      "battlePic": "pokemon_ranger_m.png",
+      "battlePic": "pokemon_ranger_m.webp",
       "trainerName": "Sebastian",
       "doubleBattle": false,
       "aiFlags": [
@@ -12915,7 +12915,7 @@
     },
     {
       "id": "TRAINER_JOSHUA",
-      "battlePic": "psychic_m.png",
+      "battlePic": "psychic_m.webp",
       "trainerName": "Joshua",
       "doubleBattle": false,
       "aiFlags": [
@@ -12941,7 +12941,7 @@
     },
     {
       "id": "TRAINER_PATRICIA",
-      "battlePic": "hex_maniac.png",
+      "battlePic": "hex_maniac.webp",
       "trainerName": "Patricia",
       "doubleBattle": false,
       "aiFlags": [
@@ -12967,7 +12967,7 @@
     },
     {
       "id": "TRAINER_ALEXIS",
-      "battlePic": "psychic_f.png",
+      "battlePic": "psychic_f.webp",
       "trainerName": "Alexis",
       "doubleBattle": false,
       "aiFlags": [
@@ -12993,7 +12993,7 @@
     },
     {
       "id": "TRAINER_MARIELA",
-      "battlePic": "psychic_f.png",
+      "battlePic": "psychic_f.webp",
       "trainerName": "Mariela",
       "doubleBattle": false,
       "aiFlags": [
@@ -13015,7 +13015,7 @@
     },
     {
       "id": "TRAINER_ALVARO",
-      "battlePic": "psychic_m.png",
+      "battlePic": "psychic_m.webp",
       "trainerName": "Alvaro",
       "doubleBattle": false,
       "aiFlags": [
@@ -13041,7 +13041,7 @@
     },
     {
       "id": "TRAINER_EVERETT",
-      "battlePic": "gentleman.png",
+      "battlePic": "gentleman.webp",
       "trainerName": "Everett",
       "doubleBattle": false,
       "aiFlags": [
@@ -13063,7 +13063,7 @@
     },
     {
       "id": "TRAINER_VINCENT",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Vincent",
       "doubleBattle": false,
       "aiFlags": [
@@ -13095,7 +13095,7 @@
     },
     {
       "id": "TRAINER_KEIRA",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Keira",
       "doubleBattle": false,
       "aiFlags": [
@@ -13123,7 +13123,7 @@
     },
     {
       "id": "TRAINER_LEROY",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Leroy",
       "doubleBattle": false,
       "aiFlags": [
@@ -13153,7 +13153,7 @@
   "MAP_ROUTE111": [
     {
       "id": "TRAINER_VICTOR",
-      "battlePic": "pokefan_m.png",
+      "battlePic": "pokefan_m.webp",
       "trainerName": "Victor",
       "doubleBattle": false,
       "aiFlags": [
@@ -13213,7 +13213,7 @@
         }
       ],
       "script": "Route111_EventScript_BattleWinstrates",
-      "sprite": "pokefan_m.png",
+      "sprite": "pokefan_m.webp",
       "coords": [
         0,
         0
@@ -13222,7 +13222,7 @@
     },
     {
       "id": "TRAINER_VICTORIA",
-      "battlePic": "pokefan_f.png",
+      "battlePic": "pokefan_f.webp",
       "trainerName": "Victoria",
       "doubleBattle": false,
       "aiFlags": [
@@ -13282,7 +13282,7 @@
         }
       ],
       "script": "Route111_EventScript_BattleWinstrates",
-      "sprite": "pokefan_f.png",
+      "sprite": "pokefan_f.webp",
       "coords": [
         0,
         0
@@ -13291,7 +13291,7 @@
     },
     {
       "id": "TRAINER_VIVI",
-      "battlePic": "lass.png",
+      "battlePic": "lass.webp",
       "trainerName": "Vivi",
       "doubleBattle": false,
       "aiFlags": [
@@ -13351,7 +13351,7 @@
         }
       ],
       "script": "Route111_EventScript_BattleWinstrates",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         0,
         0
@@ -13360,7 +13360,7 @@
     },
     {
       "id": "TRAINER_VICKY",
-      "battlePic": "expert_f.png",
+      "battlePic": "expert_f.webp",
       "trainerName": "Vicky",
       "doubleBattle": false,
       "aiFlags": [
@@ -13420,7 +13420,7 @@
         }
       ],
       "script": "Route111_EventScript_BattleWinstrates",
-      "sprite": "expert_f.png",
+      "sprite": "expert_f.webp",
       "coords": [
         0,
         0
@@ -13429,7 +13429,7 @@
     },
     {
       "id": "TRAINER_DREW",
-      "battlePic": "camper.png",
+      "battlePic": "camper.webp",
       "trainerName": "Drew",
       "doubleBattle": false,
       "aiFlags": [
@@ -13521,7 +13521,7 @@
     },
     {
       "id": "TRAINER_HEIDI",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Heidi",
       "doubleBattle": false,
       "aiFlags": [
@@ -13547,7 +13547,7 @@
     },
     {
       "id": "TRAINER_BEAU",
-      "battlePic": "camper.png",
+      "battlePic": "camper.webp",
       "trainerName": "Beau",
       "doubleBattle": false,
       "aiFlags": [
@@ -13573,7 +13573,7 @@
     },
     {
       "id": "TRAINER_BECKY",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Becky",
       "doubleBattle": false,
       "aiFlags": [
@@ -13599,7 +13599,7 @@
     },
     {
       "id": "TRAINER_DUSTY_1",
-      "battlePic": "ruin_maniac.png",
+      "battlePic": "ruin_maniac.webp",
       "trainerName": "Dusty",
       "doubleBattle": false,
       "aiFlags": [
@@ -13715,7 +13715,7 @@
     },
     {
       "id": "TRAINER_TRAVIS",
-      "battlePic": "camper.png",
+      "battlePic": "camper.webp",
       "trainerName": "Travis",
       "doubleBattle": false,
       "aiFlags": [
@@ -13745,7 +13745,7 @@
     },
     {
       "id": "TRAINER_IRENE",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Irene",
       "doubleBattle": false,
       "aiFlags": [
@@ -13771,7 +13771,7 @@
     },
     {
       "id": "TRAINER_WILTON_1",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Wilton",
       "doubleBattle": false,
       "aiFlags": [
@@ -13804,7 +13804,7 @@
     },
     {
       "id": "TRAINER_BROOKE_1",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Brooke",
       "doubleBattle": false,
       "aiFlags": [
@@ -13833,7 +13833,7 @@
     },
     {
       "id": "TRAINER_HAYDEN",
-      "battlePic": "kindler.png",
+      "battlePic": "kindler.webp",
       "trainerName": "Hayden",
       "doubleBattle": false,
       "aiFlags": [
@@ -13859,7 +13859,7 @@
     },
     {
       "id": "TRAINER_BIANCA",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Bianca",
       "doubleBattle": false,
       "aiFlags": [
@@ -13885,7 +13885,7 @@
     },
     {
       "id": "TRAINER_TYRON",
-      "battlePic": "camper.png",
+      "battlePic": "camper.webp",
       "trainerName": "Tyron",
       "doubleBattle": false,
       "aiFlags": [
@@ -13911,7 +13911,7 @@
     },
     {
       "id": "TRAINER_CELINA",
-      "battlePic": "aroma_lady.png",
+      "battlePic": "aroma_lady.webp",
       "trainerName": "Celina",
       "doubleBattle": false,
       "aiFlags": [
@@ -13937,7 +13937,7 @@
     },
     {
       "id": "TRAINER_CELIA",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Celia",
       "doubleBattle": false,
       "aiFlags": [
@@ -14052,7 +14052,7 @@
     },
     {
       "id": "TRAINER_BRANDEN",
-      "battlePic": "camper.png",
+      "battlePic": "camper.webp",
       "trainerName": "Branden",
       "doubleBattle": false,
       "aiFlags": [
@@ -14144,7 +14144,7 @@
     },
     {
       "id": "TRAINER_DAWN_ROUTE_111",
-      "battlePic": "dawn.png",
+      "battlePic": "dawn.webp",
       "trainerName": "Dawn",
       "doubleBattle": false,
       "aiFlags": [
@@ -14284,7 +14284,7 @@
     },
     {
       "id": "TRAINER_DAISUKE",
-      "battlePic": "black_belt.png",
+      "battlePic": "black_belt.webp",
       "trainerName": "Daisuke",
       "doubleBattle": false,
       "aiFlags": [
@@ -14413,7 +14413,7 @@
         }
       ],
       "script": "Route111_EventScript_BattleDaisuke",
-      "sprite": "black_belt.png",
+      "sprite": "black_belt.webp",
       "coords": [
         0,
         0
@@ -14424,7 +14424,7 @@
   "MAP_ROUTE112": [
     {
       "id": "TRAINER_TRENT_1",
-      "battlePic": "hiker.png",
+      "battlePic": "hiker.webp",
       "trainerName": "Trent",
       "doubleBattle": false,
       "aiFlags": [
@@ -14540,7 +14540,7 @@
     },
     {
       "id": "TRAINER_LARRY",
-      "battlePic": "camper.png",
+      "battlePic": "camper.webp",
       "trainerName": "Larry",
       "doubleBattle": false,
       "aiFlags": [
@@ -14566,7 +14566,7 @@
     },
     {
       "id": "TRAINER_CAROL",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Carol",
       "doubleBattle": false,
       "aiFlags": [
@@ -14596,7 +14596,7 @@
     },
     {
       "id": "TRAINER_BRYANT",
-      "battlePic": "kindler.png",
+      "battlePic": "kindler.webp",
       "trainerName": "Bryant",
       "doubleBattle": false,
       "aiFlags": [
@@ -14626,7 +14626,7 @@
     },
     {
       "id": "TRAINER_SHAYLA",
-      "battlePic": "aroma_lady.png",
+      "battlePic": "aroma_lady.webp",
       "trainerName": "Shayla",
       "doubleBattle": false,
       "aiFlags": [
@@ -14658,7 +14658,7 @@
   "MAP_ROUTE113": [
     {
       "id": "TRAINER_JAYLEN",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Jaylen",
       "doubleBattle": false,
       "aiFlags": [
@@ -14684,7 +14684,7 @@
     },
     {
       "id": "TRAINER_DILLON",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Dillon",
       "doubleBattle": false,
       "aiFlags": [
@@ -14710,7 +14710,7 @@
     },
     {
       "id": "TRAINER_MADELINE_1",
-      "battlePic": "parasol_lady.png",
+      "battlePic": "parasol_lady.webp",
       "trainerName": "Madeline",
       "doubleBattle": false,
       "aiFlags": [
@@ -14826,7 +14826,7 @@
     },
     {
       "id": "TRAINER_LAO_1",
-      "battlePic": "ninja_boy.png",
+      "battlePic": "ninja_boy.webp",
       "trainerName": "Lao",
       "doubleBattle": false,
       "aiFlags": [
@@ -14857,7 +14857,7 @@
     },
     {
       "id": "TRAINER_LUNG",
-      "battlePic": "ninja_boy.png",
+      "battlePic": "ninja_boy.webp",
       "trainerName": "Lung",
       "doubleBattle": false,
       "aiFlags": [
@@ -14887,7 +14887,7 @@
     },
     {
       "id": "TRAINER_TORI_AND_TIA",
-      "battlePic": "twins.png",
+      "battlePic": "twins.webp",
       "trainerName": "Tori & Tia",
       "doubleBattle": true,
       "aiFlags": [
@@ -15003,7 +15003,7 @@
     },
     {
       "id": "TRAINER_SOPHIE",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Sophie",
       "doubleBattle": false,
       "aiFlags": [
@@ -15029,7 +15029,7 @@
     },
     {
       "id": "TRAINER_COBY",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Coby",
       "doubleBattle": false,
       "aiFlags": [
@@ -15057,7 +15057,7 @@
   "MAP_ROUTE114": [
     {
       "id": "TRAINER_LENNY",
-      "battlePic": "hiker.png",
+      "battlePic": "hiker.webp",
       "trainerName": "Lenny",
       "doubleBattle": false,
       "aiFlags": [
@@ -15083,7 +15083,7 @@
     },
     {
       "id": "TRAINER_LUCAS_1",
-      "battlePic": "hiker.png",
+      "battlePic": "hiker.webp",
       "trainerName": "Lucas",
       "doubleBattle": false,
       "aiFlags": [
@@ -15221,7 +15221,7 @@
     },
     {
       "id": "TRAINER_SHANE",
-      "battlePic": "camper.png",
+      "battlePic": "camper.webp",
       "trainerName": "Shane",
       "doubleBattle": false,
       "aiFlags": [
@@ -15247,7 +15247,7 @@
     },
     {
       "id": "TRAINER_NANCY",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Nancy",
       "doubleBattle": false,
       "aiFlags": [
@@ -15277,7 +15277,7 @@
     },
     {
       "id": "TRAINER_STEVE_1",
-      "battlePic": "pokemaniac.png",
+      "battlePic": "pokemaniac.webp",
       "trainerName": "Steve",
       "doubleBattle": false,
       "aiFlags": [
@@ -15308,7 +15308,7 @@
     },
     {
       "id": "TRAINER_BERNIE_1",
-      "battlePic": "kindler.png",
+      "battlePic": "kindler.webp",
       "trainerName": "Bernie",
       "doubleBattle": false,
       "aiFlags": [
@@ -15335,7 +15335,7 @@
     },
     {
       "id": "TRAINER_CLAUDE",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Claude",
       "doubleBattle": false,
       "aiFlags": [
@@ -15450,7 +15450,7 @@
     },
     {
       "id": "TRAINER_NOLAN",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Nolan",
       "doubleBattle": false,
       "aiFlags": [
@@ -15480,7 +15480,7 @@
     },
     {
       "id": "TRAINER_TYRA_AND_IVY",
-      "battlePic": "sr_and_jr.png",
+      "battlePic": "sr_and_jr.webp",
       "trainerName": "Tyra & Ivy",
       "doubleBattle": true,
       "aiFlags": [
@@ -15508,7 +15508,7 @@
     },
     {
       "id": "TRAINER_CHARLOTTE",
-      "battlePic": "picnicker.png",
+      "battlePic": "picnicker.webp",
       "trainerName": "Charlotte",
       "doubleBattle": false,
       "aiFlags": [
@@ -15647,7 +15647,7 @@
     },
     {
       "id": "TRAINER_KAI",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Kai",
       "doubleBattle": false,
       "aiFlags": [
@@ -15764,7 +15764,7 @@
   "MAP_ROUTE115": [
     {
       "id": "TRAINER_TIMOTHY_1",
-      "battlePic": "expert_m.png",
+      "battlePic": "expert_m.webp",
       "trainerName": "Timothy",
       "doubleBattle": false,
       "aiFlags": [
@@ -15789,7 +15789,7 @@
     },
     {
       "id": "TRAINER_KOICHI",
-      "battlePic": "black_belt.png",
+      "battlePic": "black_belt.webp",
       "trainerName": "Koichi",
       "doubleBattle": false,
       "aiFlags": [
@@ -15815,7 +15815,7 @@
     },
     {
       "id": "TRAINER_NOB_1",
-      "battlePic": "black_belt.png",
+      "battlePic": "black_belt.webp",
       "trainerName": "Nob",
       "doubleBattle": false,
       "aiFlags": [
@@ -15838,7 +15838,7 @@
     },
     {
       "id": "TRAINER_CYNDY_1",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Cyndy",
       "doubleBattle": false,
       "aiFlags": [
@@ -15865,7 +15865,7 @@
     },
     {
       "id": "TRAINER_HECTOR",
-      "battlePic": "collector.png",
+      "battlePic": "collector.webp",
       "trainerName": "Hector",
       "doubleBattle": false,
       "aiFlags": [
@@ -15891,7 +15891,7 @@
     },
     {
       "id": "TRAINER_KYRA",
-      "battlePic": "running_triathlete_f.png",
+      "battlePic": "running_triathlete_f.webp",
       "trainerName": "Kyra",
       "doubleBattle": false,
       "aiFlags": [
@@ -15917,7 +15917,7 @@
     },
     {
       "id": "TRAINER_JAIDEN",
-      "battlePic": "ninja_boy.png",
+      "battlePic": "ninja_boy.webp",
       "trainerName": "Jaiden",
       "doubleBattle": false,
       "aiFlags": [
@@ -15943,7 +15943,7 @@
     },
     {
       "id": "TRAINER_ALIX",
-      "battlePic": "psychic_f.png",
+      "battlePic": "psychic_f.webp",
       "trainerName": "Alix",
       "doubleBattle": false,
       "aiFlags": [
@@ -15965,7 +15965,7 @@
     },
     {
       "id": "TRAINER_HELENE",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Helene",
       "doubleBattle": false,
       "aiFlags": [
@@ -15987,7 +15987,7 @@
     },
     {
       "id": "TRAINER_MARLENE",
-      "battlePic": "psychic_f.png",
+      "battlePic": "psychic_f.webp",
       "trainerName": "Marlene",
       "doubleBattle": false,
       "aiFlags": [
@@ -16015,7 +16015,7 @@
   "MAP_ROUTE116": [
     {
       "id": "TRAINER_JOEY",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Joey",
       "doubleBattle": false,
       "aiFlags": [
@@ -16037,7 +16037,7 @@
     },
     {
       "id": "TRAINER_JOSE",
-      "battlePic": "bug_catcher.png",
+      "battlePic": "bug_catcher.webp",
       "trainerName": "Jose",
       "doubleBattle": false,
       "aiFlags": [
@@ -16063,7 +16063,7 @@
     },
     {
       "id": "TRAINER_JERRY_1",
-      "battlePic": "school_kid_m.png",
+      "battlePic": "school_kid_m.webp",
       "trainerName": "Jerry",
       "doubleBattle": false,
       "aiFlags": [
@@ -16086,7 +16086,7 @@
     },
     {
       "id": "TRAINER_CLARK",
-      "battlePic": "hiker.png",
+      "battlePic": "hiker.webp",
       "trainerName": "Clark",
       "doubleBattle": false,
       "aiFlags": [
@@ -16108,7 +16108,7 @@
     },
     {
       "id": "TRAINER_JANICE",
-      "battlePic": "lass.png",
+      "battlePic": "lass.webp",
       "trainerName": "Janice",
       "doubleBattle": false,
       "aiFlags": [
@@ -16130,7 +16130,7 @@
     },
     {
       "id": "TRAINER_KAREN_1",
-      "battlePic": "school_kid_f.png",
+      "battlePic": "school_kid_f.webp",
       "trainerName": "Karen",
       "doubleBattle": false,
       "aiFlags": [
@@ -16153,7 +16153,7 @@
     },
     {
       "id": "TRAINER_SARAH",
-      "battlePic": "lady.png",
+      "battlePic": "lady.webp",
       "trainerName": "Sarah",
       "doubleBattle": false,
       "aiFlags": [
@@ -16181,7 +16181,7 @@
     },
     {
       "id": "TRAINER_DAWSON",
-      "battlePic": "rich_boy.png",
+      "battlePic": "rich_boy.webp",
       "trainerName": "Dawson",
       "doubleBattle": false,
       "aiFlags": [
@@ -16209,7 +16209,7 @@
     },
     {
       "id": "TRAINER_DEVAN",
-      "battlePic": "hiker.png",
+      "battlePic": "hiker.webp",
       "trainerName": "Devan",
       "doubleBattle": false,
       "aiFlags": [
@@ -16235,7 +16235,7 @@
     },
     {
       "id": "TRAINER_JOHNSON",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Johnson",
       "doubleBattle": false,
       "aiFlags": [
@@ -16261,7 +16261,7 @@
     },
     {
       "id": "TRAINER_ROARK",
-      "battlePic": "roark.png",
+      "battlePic": "roark.webp",
       "trainerName": "Roark",
       "doubleBattle": false,
       "aiFlags": [
@@ -16328,7 +16328,7 @@
   "MAP_ROUTE117": [
     {
       "id": "TRAINER_EZEKIEL_1",
-      "battlePic": "pokemon_breeder_m.png",
+      "battlePic": "pokemon_breeder_m.webp",
       "trainerName": "Ezekiel",
       "doubleBattle": false,
       "aiFlags": [
@@ -16467,7 +16467,7 @@
     },
     {
       "id": "TRAINER_LYDIA_1",
-      "battlePic": "pokemon_breeder_f.png",
+      "battlePic": "pokemon_breeder_f.webp",
       "trainerName": "Lydia",
       "doubleBattle": false,
       "aiFlags": [
@@ -16606,7 +16606,7 @@
     },
     {
       "id": "TRAINER_DYLAN_1",
-      "battlePic": "running_triathlete_m.png",
+      "battlePic": "running_triathlete_m.webp",
       "trainerName": "Dylan",
       "doubleBattle": false,
       "aiFlags": [
@@ -16633,7 +16633,7 @@
     },
     {
       "id": "TRAINER_MARIA_1",
-      "battlePic": "running_triathlete_f.png",
+      "battlePic": "running_triathlete_f.webp",
       "trainerName": "Maria",
       "doubleBattle": false,
       "aiFlags": [
@@ -16660,7 +16660,7 @@
     },
     {
       "id": "TRAINER_ANNA_AND_MEG_1",
-      "battlePic": "sr_and_jr.png",
+      "battlePic": "sr_and_jr.webp",
       "trainerName": "Anna & Meg",
       "doubleBattle": true,
       "aiFlags": [
@@ -16694,7 +16694,7 @@
     },
     {
       "id": "TRAINER_BRANDI",
-      "battlePic": "psychic_f.png",
+      "battlePic": "psychic_f.webp",
       "trainerName": "Brandi",
       "doubleBattle": false,
       "aiFlags": [
@@ -16720,7 +16720,7 @@
     },
     {
       "id": "TRAINER_AISHA",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Aisha",
       "doubleBattle": false,
       "aiFlags": [
@@ -16746,7 +16746,7 @@
     },
     {
       "id": "TRAINER_FANTINA",
-      "battlePic": "fantina.png",
+      "battlePic": "fantina.webp",
       "trainerName": "Fantina",
       "doubleBattle": false,
       "aiFlags": [
@@ -16888,7 +16888,7 @@
   "MAP_ROUTE118": [
     {
       "id": "TRAINER_ROSE_1",
-      "battlePic": "aroma_lady.png",
+      "battlePic": "aroma_lady.webp",
       "trainerName": "Rose",
       "doubleBattle": false,
       "aiFlags": [
@@ -16915,7 +16915,7 @@
     },
     {
       "id": "TRAINER_BARNY",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Barny",
       "doubleBattle": false,
       "aiFlags": [
@@ -16941,7 +16941,7 @@
     },
     {
       "id": "TRAINER_WADE",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Wade",
       "doubleBattle": false,
       "aiFlags": [
@@ -16963,7 +16963,7 @@
     },
     {
       "id": "TRAINER_DALTON_1",
-      "battlePic": "guitarist.png",
+      "battlePic": "guitarist.webp",
       "trainerName": "Dalton",
       "doubleBattle": false,
       "aiFlags": [
@@ -16998,7 +16998,7 @@
     },
     {
       "id": "TRAINER_PERRY",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Perry",
       "doubleBattle": false,
       "aiFlags": [
@@ -17020,7 +17020,7 @@
     },
     {
       "id": "TRAINER_CHESTER",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Chester",
       "doubleBattle": false,
       "aiFlags": [
@@ -17046,7 +17046,7 @@
     },
     {
       "id": "TRAINER_DEANDRE",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Deandre",
       "doubleBattle": false,
       "aiFlags": [
@@ -17076,7 +17076,7 @@
     },
     {
       "id": "TRAINER_WAKE",
-      "battlePic": "wake.png",
+      "battlePic": "wake.webp",
       "trainerName": "Wake",
       "doubleBattle": false,
       "aiFlags": [
@@ -17239,7 +17239,7 @@
   "MAP_ROUTE119": [
     {
       "id": "TRAINER_MAY_ROUTE_119_TREECKO",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -17401,7 +17401,7 @@
     },
     {
       "id": "TRAINER_MAY_ROUTE_119_TORCHIC",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -17563,7 +17563,7 @@
     },
     {
       "id": "TRAINER_MAY_ROUTE_119_MUDKIP",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -17724,7 +17724,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_ROUTE_119_TREECKO",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -17886,7 +17886,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_ROUTE_119_TORCHIC",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -18048,7 +18048,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_ROUTE_119_MUDKIP",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -18210,7 +18210,7 @@
     },
     {
       "id": "TRAINER_BRENT",
-      "battlePic": "bug_maniac.png",
+      "battlePic": "bug_maniac.webp",
       "trainerName": "Brent",
       "doubleBattle": false,
       "aiFlags": [
@@ -18232,7 +18232,7 @@
     },
     {
       "id": "TRAINER_DONALD",
-      "battlePic": "bug_maniac.png",
+      "battlePic": "bug_maniac.webp",
       "trainerName": "Donald",
       "doubleBattle": false,
       "aiFlags": [
@@ -18262,7 +18262,7 @@
     },
     {
       "id": "TRAINER_TAYLOR",
-      "battlePic": "bug_maniac.png",
+      "battlePic": "bug_maniac.webp",
       "trainerName": "Taylor",
       "doubleBattle": false,
       "aiFlags": [
@@ -18288,7 +18288,7 @@
     },
     {
       "id": "TRAINER_DOUG",
-      "battlePic": "bug_catcher.png",
+      "battlePic": "bug_catcher.webp",
       "trainerName": "Doug",
       "doubleBattle": false,
       "aiFlags": [
@@ -18314,7 +18314,7 @@
     },
     {
       "id": "TRAINER_GREG",
-      "battlePic": "bug_catcher.png",
+      "battlePic": "bug_catcher.webp",
       "trainerName": "Greg",
       "doubleBattle": false,
       "aiFlags": [
@@ -18340,7 +18340,7 @@
     },
     {
       "id": "TRAINER_KENT",
-      "battlePic": "bug_catcher.png",
+      "battlePic": "bug_catcher.webp",
       "trainerName": "Kent",
       "doubleBattle": false,
       "aiFlags": [
@@ -18362,7 +18362,7 @@
     },
     {
       "id": "TRAINER_JACKSON_1",
-      "battlePic": "pokemon_ranger_m.png",
+      "battlePic": "pokemon_ranger_m.webp",
       "trainerName": "Jackson",
       "doubleBattle": false,
       "aiFlags": [
@@ -18387,7 +18387,7 @@
     },
     {
       "id": "TRAINER_CATHERINE_1",
-      "battlePic": "pokemon_ranger_f.png",
+      "battlePic": "pokemon_ranger_f.webp",
       "trainerName": "Catherine",
       "doubleBattle": false,
       "aiFlags": [
@@ -18416,7 +18416,7 @@
     },
     {
       "id": "TRAINER_HUGH",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Hugh",
       "doubleBattle": false,
       "aiFlags": [
@@ -18438,7 +18438,7 @@
     },
     {
       "id": "TRAINER_PHIL",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Phil",
       "doubleBattle": false,
       "aiFlags": [
@@ -18460,7 +18460,7 @@
     },
     {
       "id": "TRAINER_YASU",
-      "battlePic": "ninja_boy.png",
+      "battlePic": "ninja_boy.webp",
       "trainerName": "Yasu",
       "doubleBattle": false,
       "aiFlags": [
@@ -18483,7 +18483,7 @@
     },
     {
       "id": "TRAINER_TAKASHI",
-      "battlePic": "ninja_boy.png",
+      "battlePic": "ninja_boy.webp",
       "trainerName": "Takashi",
       "doubleBattle": false,
       "aiFlags": [
@@ -18510,7 +18510,7 @@
     },
     {
       "id": "TRAINER_HIDEO",
-      "battlePic": "ninja_boy.png",
+      "battlePic": "ninja_boy.webp",
       "trainerName": "Hideo",
       "doubleBattle": false,
       "aiFlags": [
@@ -18537,7 +18537,7 @@
     },
     {
       "id": "TRAINER_CHRIS",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Chris",
       "doubleBattle": false,
       "aiFlags": [
@@ -18563,7 +18563,7 @@
     },
     {
       "id": "TRAINER_FABIAN",
-      "battlePic": "guitarist.png",
+      "battlePic": "guitarist.webp",
       "trainerName": "Fabian",
       "doubleBattle": false,
       "aiFlags": [
@@ -18585,7 +18585,7 @@
     },
     {
       "id": "TRAINER_DAYTON",
-      "battlePic": "kindler.png",
+      "battlePic": "kindler.webp",
       "trainerName": "Dayton",
       "doubleBattle": false,
       "aiFlags": [
@@ -18611,7 +18611,7 @@
     },
     {
       "id": "TRAINER_RAQUEL",
-      "battlePic": "parasol_lady.png",
+      "battlePic": "parasol_lady.webp",
       "trainerName": "Raquel",
       "doubleBattle": false,
       "aiFlags": [
@@ -18633,7 +18633,7 @@
     },
     {
       "id": "TRAINER_GRUNT_WEATHER_INST_1",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt 1",
       "doubleBattle": false,
       "aiFlags": [
@@ -18659,7 +18659,7 @@
     },
     {
       "id": "TRAINER_GRUNT_WEATHER_INST_4",
-      "battlePic": "aqua_grunt_f.png",
+      "battlePic": "aqua_grunt_f.webp",
       "trainerName": "Grunt 4",
       "doubleBattle": false,
       "aiFlags": [
@@ -18681,7 +18681,7 @@
     },
     {
       "id": "TRAINER_GRUNT_WEATHER_INST_5",
-      "battlePic": "aqua_grunt_f.png",
+      "battlePic": "aqua_grunt_f.webp",
       "trainerName": "Grunt 5",
       "doubleBattle": false,
       "aiFlags": [
@@ -18773,7 +18773,7 @@
     },
     {
       "id": "TRAINER_MATT_WEATHER_INST",
-      "battlePic": "aqua_admin_m.png",
+      "battlePic": "aqua_admin_m.webp",
       "trainerName": "Matt",
       "doubleBattle": false,
       "aiFlags": [
@@ -18865,7 +18865,7 @@
     },
     {
       "id": "TRAINER_GRUNT_WEATHER_INST_3",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt 3",
       "doubleBattle": false,
       "aiFlags": [
@@ -18891,7 +18891,7 @@
     },
     {
       "id": "TRAINER_SHELLY_WEATHER_INSTITUTE",
-      "battlePic": "aqua_admin_f.png",
+      "battlePic": "aqua_admin_f.webp",
       "trainerName": "Shelly",
       "doubleBattle": false,
       "aiFlags": [
@@ -19054,7 +19054,7 @@
   "MAP_ROUTE120": [
     {
       "id": "TRAINER_COLIN",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Colin",
       "doubleBattle": false,
       "aiFlags": [
@@ -19080,7 +19080,7 @@
     },
     {
       "id": "TRAINER_ROBERT_1",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Robert",
       "doubleBattle": false,
       "aiFlags": [
@@ -19103,7 +19103,7 @@
     },
     {
       "id": "TRAINER_LORENZO",
-      "battlePic": "pokemon_ranger_m.png",
+      "battlePic": "pokemon_ranger_m.webp",
       "trainerName": "Lorenzo",
       "doubleBattle": false,
       "aiFlags": [
@@ -19135,7 +19135,7 @@
     },
     {
       "id": "TRAINER_JENNA",
-      "battlePic": "pokemon_ranger_f.png",
+      "battlePic": "pokemon_ranger_f.webp",
       "trainerName": "Jenna",
       "doubleBattle": false,
       "aiFlags": [
@@ -19167,7 +19167,7 @@
     },
     {
       "id": "TRAINER_JEFFREY_1",
-      "battlePic": "bug_maniac.png",
+      "battlePic": "bug_maniac.webp",
       "trainerName": "Jeffrey",
       "doubleBattle": false,
       "aiFlags": [
@@ -19190,7 +19190,7 @@
     },
     {
       "id": "TRAINER_JENNIFER",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Jennifer",
       "doubleBattle": false,
       "aiFlags": [
@@ -19214,7 +19214,7 @@
     },
     {
       "id": "TRAINER_CLARISSA",
-      "battlePic": "parasol_lady.png",
+      "battlePic": "parasol_lady.webp",
       "trainerName": "Clarissa",
       "doubleBattle": false,
       "aiFlags": [
@@ -19240,7 +19240,7 @@
     },
     {
       "id": "TRAINER_ANGELICA",
-      "battlePic": "parasol_lady.png",
+      "battlePic": "parasol_lady.webp",
       "trainerName": "Angelica",
       "doubleBattle": false,
       "aiFlags": [
@@ -19262,7 +19262,7 @@
     },
     {
       "id": "TRAINER_KEIGO",
-      "battlePic": "ninja_boy.png",
+      "battlePic": "ninja_boy.webp",
       "trainerName": "Keigo",
       "doubleBattle": false,
       "aiFlags": [
@@ -19289,7 +19289,7 @@
     },
     {
       "id": "TRAINER_RILEY",
-      "battlePic": "ninja_boy.png",
+      "battlePic": "ninja_boy.webp",
       "trainerName": "Riley",
       "doubleBattle": false,
       "aiFlags": [
@@ -19316,7 +19316,7 @@
     },
     {
       "id": "TRAINER_LEONEL",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Leonel",
       "doubleBattle": false,
       "aiFlags": [
@@ -19340,7 +19340,7 @@
     },
     {
       "id": "TRAINER_CALLIE",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Callie",
       "doubleBattle": false,
       "aiFlags": [
@@ -19368,7 +19368,7 @@
   "MAP_ROUTE121": [
     {
       "id": "TRAINER_VANESSA",
-      "battlePic": "pokefan_f.png",
+      "battlePic": "pokefan_f.webp",
       "trainerName": "Vanessa",
       "doubleBattle": false,
       "aiFlags": [
@@ -19460,7 +19460,7 @@
     },
     {
       "id": "TRAINER_WALTER_1",
-      "battlePic": "gentleman.png",
+      "battlePic": "gentleman.webp",
       "trainerName": "Walter",
       "doubleBattle": false,
       "aiFlags": [
@@ -19553,7 +19553,7 @@
     },
     {
       "id": "TRAINER_TAMMY",
-      "battlePic": "hex_maniac.png",
+      "battlePic": "hex_maniac.webp",
       "trainerName": "Tammy",
       "doubleBattle": false,
       "aiFlags": [
@@ -19668,7 +19668,7 @@
     },
     {
       "id": "TRAINER_KATE_AND_JOY",
-      "battlePic": "sr_and_jr.png",
+      "battlePic": "sr_and_jr.webp",
       "trainerName": "Kate & Joy",
       "doubleBattle": true,
       "aiFlags": [
@@ -19694,7 +19694,7 @@
     },
     {
       "id": "TRAINER_JESSICA_1",
-      "battlePic": "beauty.png",
+      "battlePic": "beauty.webp",
       "trainerName": "Jessica",
       "doubleBattle": false,
       "aiFlags": [
@@ -19811,7 +19811,7 @@
     },
     {
       "id": "TRAINER_CALE",
-      "battlePic": "bug_maniac.png",
+      "battlePic": "bug_maniac.webp",
       "trainerName": "Cale",
       "doubleBattle": false,
       "aiFlags": [
@@ -19926,7 +19926,7 @@
     },
     {
       "id": "TRAINER_MYLES",
-      "battlePic": "pokemon_breeder_m.png",
+      "battlePic": "pokemon_breeder_m.webp",
       "trainerName": "Myles",
       "doubleBattle": false,
       "aiFlags": [
@@ -19952,7 +19952,7 @@
     },
     {
       "id": "TRAINER_PAT",
-      "battlePic": "pokemon_breeder_f.png",
+      "battlePic": "pokemon_breeder_f.webp",
       "trainerName": "Pat",
       "doubleBattle": false,
       "aiFlags": [
@@ -19974,7 +19974,7 @@
     },
     {
       "id": "TRAINER_MARCEL",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Marcel",
       "doubleBattle": false,
       "aiFlags": [
@@ -20002,7 +20002,7 @@
     },
     {
       "id": "TRAINER_CRISTIN_1",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Cristin",
       "doubleBattle": false,
       "aiFlags": [
@@ -20031,7 +20031,7 @@
     },
     {
       "id": "TRAINER_BYRON",
-      "battlePic": "byron.png",
+      "battlePic": "byron.webp",
       "trainerName": "Byron",
       "doubleBattle": false,
       "aiFlags": [
@@ -20195,7 +20195,7 @@
   "MAP_ROUTE123": [
     {
       "id": "TRAINER_WENDY",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Wendy",
       "doubleBattle": false,
       "aiFlags": [
@@ -20227,7 +20227,7 @@
     },
     {
       "id": "TRAINER_BRAXTON",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Braxton",
       "doubleBattle": false,
       "aiFlags": [
@@ -20259,7 +20259,7 @@
     },
     {
       "id": "TRAINER_VIOLET",
-      "battlePic": "aroma_lady.png",
+      "battlePic": "aroma_lady.webp",
       "trainerName": "Violet",
       "doubleBattle": false,
       "aiFlags": [
@@ -20285,7 +20285,7 @@
     },
     {
       "id": "TRAINER_CAMERON_1",
-      "battlePic": "psychic_m.png",
+      "battlePic": "psychic_m.webp",
       "trainerName": "Cameron",
       "doubleBattle": false,
       "aiFlags": [
@@ -20312,7 +20312,7 @@
     },
     {
       "id": "TRAINER_JACKI_1",
-      "battlePic": "psychic_f.png",
+      "battlePic": "psychic_f.webp",
       "trainerName": "Jacki",
       "doubleBattle": false,
       "aiFlags": [
@@ -20339,7 +20339,7 @@
     },
     {
       "id": "TRAINER_MIU_AND_YUKI",
-      "battlePic": "twins.png",
+      "battlePic": "twins.webp",
       "trainerName": "Miu & Yuki",
       "doubleBattle": true,
       "aiFlags": [
@@ -20365,7 +20365,7 @@
     },
     {
       "id": "TRAINER_KINDRA",
-      "battlePic": "hex_maniac.png",
+      "battlePic": "hex_maniac.webp",
       "trainerName": "Kindra",
       "doubleBattle": false,
       "aiFlags": [
@@ -20391,7 +20391,7 @@
     },
     {
       "id": "TRAINER_FREDRICK",
-      "battlePic": "expert_m.png",
+      "battlePic": "expert_m.webp",
       "trainerName": "Fredrick",
       "doubleBattle": false,
       "aiFlags": [
@@ -20419,7 +20419,7 @@
     },
     {
       "id": "TRAINER_ALBERTO",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Alberto",
       "doubleBattle": false,
       "aiFlags": [
@@ -20445,7 +20445,7 @@
     },
     {
       "id": "TRAINER_ED",
-      "battlePic": "collector.png",
+      "battlePic": "collector.webp",
       "trainerName": "Ed",
       "doubleBattle": false,
       "aiFlags": [
@@ -20471,7 +20471,7 @@
     },
     {
       "id": "TRAINER_KAYLEY",
-      "battlePic": "parasol_lady.png",
+      "battlePic": "parasol_lady.webp",
       "trainerName": "Kayley",
       "doubleBattle": false,
       "aiFlags": [
@@ -20497,7 +20497,7 @@
     },
     {
       "id": "TRAINER_JONAS",
-      "battlePic": "ninja_boy.png",
+      "battlePic": "ninja_boy.webp",
       "trainerName": "Jonas",
       "doubleBattle": false,
       "aiFlags": [
@@ -20525,7 +20525,7 @@
     },
     {
       "id": "TRAINER_JAZMYN",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Jazmyn",
       "doubleBattle": false,
       "aiFlags": [
@@ -20549,7 +20549,7 @@
     },
     {
       "id": "TRAINER_DAVIS",
-      "battlePic": "bug_catcher.png",
+      "battlePic": "bug_catcher.webp",
       "trainerName": "Davis",
       "doubleBattle": false,
       "aiFlags": [
@@ -20571,7 +20571,7 @@
     },
     {
       "id": "TRAINER_FERNANDO_1",
-      "battlePic": "guitarist.png",
+      "battlePic": "guitarist.webp",
       "trainerName": "Fernando",
       "doubleBattle": false,
       "aiFlags": [
@@ -20600,7 +20600,7 @@
   "MAP_ROUTE124": [
     {
       "id": "TRAINER_SPENCER",
-      "battlePic": "kindler.png",
+      "battlePic": "kindler.webp",
       "trainerName": "Spencer",
       "doubleBattle": false,
       "aiFlags": [
@@ -20715,7 +20715,7 @@
     },
     {
       "id": "TRAINER_ROLAND",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Roland",
       "doubleBattle": false,
       "aiFlags": [
@@ -20737,7 +20737,7 @@
     },
     {
       "id": "TRAINER_JENNY_1",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Jenny",
       "doubleBattle": false,
       "aiFlags": [
@@ -20876,7 +20876,7 @@
     },
     {
       "id": "TRAINER_GRACE",
-      "battlePic": "running_triathlete_f.png",
+      "battlePic": "running_triathlete_f.webp",
       "trainerName": "Grace",
       "doubleBattle": false,
       "aiFlags": [
@@ -20991,7 +20991,7 @@
     },
     {
       "id": "TRAINER_CHAD",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Chad",
       "doubleBattle": false,
       "aiFlags": [
@@ -21013,7 +21013,7 @@
     },
     {
       "id": "TRAINER_LILA_AND_ROY_1",
-      "battlePic": "sis_and_bro.png",
+      "battlePic": "sis_and_bro.webp",
       "trainerName": "Lila & Roy",
       "doubleBattle": true,
       "aiFlags": [
@@ -21039,7 +21039,7 @@
     },
     {
       "id": "TRAINER_DECLAN",
-      "battlePic": "running_triathlete_m.png",
+      "battlePic": "running_triathlete_m.webp",
       "trainerName": "Declan",
       "doubleBattle": false,
       "aiFlags": [
@@ -21154,7 +21154,7 @@
     },
     {
       "id": "TRAINER_ISABELLA",
-      "battlePic": "tuber_f.png",
+      "battlePic": "tuber_f.webp",
       "trainerName": "Isabella",
       "doubleBattle": false,
       "aiFlags": [
@@ -21178,7 +21178,7 @@
   "MAP_ROUTE125": [
     {
       "id": "TRAINER_NOLEN",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Nolen",
       "doubleBattle": false,
       "aiFlags": [
@@ -21200,7 +21200,7 @@
     },
     {
       "id": "TRAINER_STAN",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Stan",
       "doubleBattle": false,
       "aiFlags": [
@@ -21222,7 +21222,7 @@
     },
     {
       "id": "TRAINER_TANYA",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Tanya",
       "doubleBattle": false,
       "aiFlags": [
@@ -21244,7 +21244,7 @@
     },
     {
       "id": "TRAINER_SHARON",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Sharon",
       "doubleBattle": false,
       "aiFlags": [
@@ -21266,7 +21266,7 @@
     },
     {
       "id": "TRAINER_ERNEST_1",
-      "battlePic": "sailor.png",
+      "battlePic": "sailor.webp",
       "trainerName": "Ernest",
       "doubleBattle": false,
       "aiFlags": [
@@ -21293,7 +21293,7 @@
     },
     {
       "id": "TRAINER_KIM_AND_IRIS",
-      "battlePic": "sr_and_jr.png",
+      "battlePic": "sr_and_jr.webp",
       "trainerName": "Kim & Iris",
       "doubleBattle": true,
       "aiFlags": [
@@ -21319,7 +21319,7 @@
     },
     {
       "id": "TRAINER_PRESLEY",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Presley",
       "doubleBattle": false,
       "aiFlags": [
@@ -21345,7 +21345,7 @@
     },
     {
       "id": "TRAINER_AURON",
-      "battlePic": "expert_m.png",
+      "battlePic": "expert_m.webp",
       "trainerName": "Auron",
       "doubleBattle": false,
       "aiFlags": [
@@ -21371,7 +21371,7 @@
     },
     {
       "id": "TRAINER_CANDICE",
-      "battlePic": "candice.png",
+      "battlePic": "candice.webp",
       "trainerName": "Candice",
       "doubleBattle": false,
       "aiFlags": [
@@ -21535,7 +21535,7 @@
   "MAP_ROUTE126": [
     {
       "id": "TRAINER_BARRY",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Barry",
       "doubleBattle": false,
       "aiFlags": [
@@ -21561,7 +21561,7 @@
     },
     {
       "id": "TRAINER_DEAN",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Dean",
       "doubleBattle": false,
       "aiFlags": [
@@ -21591,7 +21591,7 @@
     },
     {
       "id": "TRAINER_NIKKI",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Nikki",
       "doubleBattle": false,
       "aiFlags": [
@@ -21617,7 +21617,7 @@
     },
     {
       "id": "TRAINER_BRENDA",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Brenda",
       "doubleBattle": false,
       "aiFlags": [
@@ -21639,7 +21639,7 @@
     },
     {
       "id": "TRAINER_LEONARDO",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Leonardo",
       "doubleBattle": false,
       "aiFlags": [
@@ -21661,7 +21661,7 @@
     },
     {
       "id": "TRAINER_ISOBEL",
-      "battlePic": "swimming_triathlete_f.png",
+      "battlePic": "swimming_triathlete_f.webp",
       "trainerName": "Isobel",
       "doubleBattle": false,
       "aiFlags": [
@@ -21683,7 +21683,7 @@
     },
     {
       "id": "TRAINER_SIENNA",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Sienna",
       "doubleBattle": false,
       "aiFlags": [
@@ -21709,7 +21709,7 @@
     },
     {
       "id": "TRAINER_PABLO_1",
-      "battlePic": "swimming_triathlete_m.png",
+      "battlePic": "swimming_triathlete_m.webp",
       "trainerName": "Pablo",
       "doubleBattle": false,
       "aiFlags": [
@@ -21738,7 +21738,7 @@
   "MAP_ROUTE127": [
     {
       "id": "TRAINER_CAMDEN",
-      "battlePic": "swimming_triathlete_m.png",
+      "battlePic": "swimming_triathlete_m.webp",
       "trainerName": "Camden",
       "doubleBattle": false,
       "aiFlags": [
@@ -21764,7 +21764,7 @@
     },
     {
       "id": "TRAINER_DONNY",
-      "battlePic": "swimming_triathlete_f.png",
+      "battlePic": "swimming_triathlete_f.webp",
       "trainerName": "Donny",
       "doubleBattle": false,
       "aiFlags": [
@@ -21790,7 +21790,7 @@
     },
     {
       "id": "TRAINER_JONAH",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Jonah",
       "doubleBattle": false,
       "aiFlags": [
@@ -21820,7 +21820,7 @@
     },
     {
       "id": "TRAINER_HENRY",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Henry",
       "doubleBattle": false,
       "aiFlags": [
@@ -21846,7 +21846,7 @@
     },
     {
       "id": "TRAINER_ROGER",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Roger",
       "doubleBattle": false,
       "aiFlags": [
@@ -21876,7 +21876,7 @@
     },
     {
       "id": "TRAINER_AIDAN",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Aidan",
       "doubleBattle": false,
       "aiFlags": [
@@ -21902,7 +21902,7 @@
     },
     {
       "id": "TRAINER_ATHENA",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Athena",
       "doubleBattle": false,
       "aiFlags": [
@@ -21930,7 +21930,7 @@
     },
     {
       "id": "TRAINER_KOJI_1",
-      "battlePic": "black_belt.png",
+      "battlePic": "black_belt.webp",
       "trainerName": "Koji",
       "doubleBattle": false,
       "aiFlags": [
@@ -21955,7 +21955,7 @@
   "MAP_ROUTE128": [
     {
       "id": "TRAINER_ISAIAH_1",
-      "battlePic": "swimming_triathlete_m.png",
+      "battlePic": "swimming_triathlete_m.webp",
       "trainerName": "Isaiah",
       "doubleBattle": false,
       "aiFlags": [
@@ -21982,7 +21982,7 @@
     },
     {
       "id": "TRAINER_KATELYN_1",
-      "battlePic": "swimming_triathlete_f.png",
+      "battlePic": "swimming_triathlete_f.webp",
       "trainerName": "Katelyn",
       "doubleBattle": false,
       "aiFlags": [
@@ -22005,7 +22005,7 @@
     },
     {
       "id": "TRAINER_ALEXA",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Alexa",
       "doubleBattle": false,
       "aiFlags": [
@@ -22037,7 +22037,7 @@
     },
     {
       "id": "TRAINER_RUBEN",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Ruben",
       "doubleBattle": false,
       "aiFlags": [
@@ -22065,7 +22065,7 @@
     },
     {
       "id": "TRAINER_WAYNE",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Wayne",
       "doubleBattle": false,
       "aiFlags": [
@@ -22095,7 +22095,7 @@
     },
     {
       "id": "TRAINER_HARRISON",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Harrison",
       "doubleBattle": false,
       "aiFlags": [
@@ -22117,7 +22117,7 @@
     },
     {
       "id": "TRAINER_CARLEE",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Carlee",
       "doubleBattle": false,
       "aiFlags": [
@@ -22141,7 +22141,7 @@
   "MAP_ROUTE129": [
     {
       "id": "TRAINER_CHASE",
-      "battlePic": "swimming_triathlete_m.png",
+      "battlePic": "swimming_triathlete_m.webp",
       "trainerName": "Chase",
       "doubleBattle": false,
       "aiFlags": [
@@ -22167,7 +22167,7 @@
     },
     {
       "id": "TRAINER_ALLISON",
-      "battlePic": "swimming_triathlete_f.png",
+      "battlePic": "swimming_triathlete_f.webp",
       "trainerName": "Allison",
       "doubleBattle": false,
       "aiFlags": [
@@ -22193,7 +22193,7 @@
     },
     {
       "id": "TRAINER_REED",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Reed",
       "doubleBattle": false,
       "aiFlags": [
@@ -22219,7 +22219,7 @@
     },
     {
       "id": "TRAINER_TISHA",
-      "battlePic": "lass.png",
+      "battlePic": "lass.webp",
       "trainerName": "Tisha",
       "doubleBattle": false,
       "aiFlags": [
@@ -22245,7 +22245,7 @@
     },
     {
       "id": "TRAINER_CLARENCE",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Clarence",
       "doubleBattle": false,
       "aiFlags": [
@@ -22273,7 +22273,7 @@
   "MAP_ROUTE130": [
     {
       "id": "TRAINER_RODNEY",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Rodney",
       "doubleBattle": false,
       "aiFlags": [
@@ -22299,7 +22299,7 @@
     },
     {
       "id": "TRAINER_KATIE",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Katie",
       "doubleBattle": false,
       "aiFlags": [
@@ -22325,7 +22325,7 @@
     },
     {
       "id": "TRAINER_SANTIAGO",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Santiago",
       "doubleBattle": false,
       "aiFlags": [
@@ -22353,7 +22353,7 @@
   "MAP_ROUTE131": [
     {
       "id": "TRAINER_RICHARD",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Richard",
       "doubleBattle": false,
       "aiFlags": [
@@ -22379,7 +22379,7 @@
     },
     {
       "id": "TRAINER_HERMAN",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Herman",
       "doubleBattle": false,
       "aiFlags": [
@@ -22405,7 +22405,7 @@
     },
     {
       "id": "TRAINER_SUSIE",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Susie",
       "doubleBattle": false,
       "aiFlags": [
@@ -22431,7 +22431,7 @@
     },
     {
       "id": "TRAINER_KARA",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Kara",
       "doubleBattle": false,
       "aiFlags": [
@@ -22457,7 +22457,7 @@
     },
     {
       "id": "TRAINER_RELI_AND_IAN",
-      "battlePic": "sis_and_bro.png",
+      "battlePic": "sis_and_bro.webp",
       "trainerName": "Reli & Ian",
       "doubleBattle": true,
       "aiFlags": [
@@ -22483,7 +22483,7 @@
     },
     {
       "id": "TRAINER_TALIA",
-      "battlePic": "swimming_triathlete_f.png",
+      "battlePic": "swimming_triathlete_f.webp",
       "trainerName": "Talia",
       "doubleBattle": false,
       "aiFlags": [
@@ -22509,7 +22509,7 @@
     },
     {
       "id": "TRAINER_KEVIN",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Kevin",
       "doubleBattle": false,
       "aiFlags": [
@@ -22537,7 +22537,7 @@
   "MAP_ROUTE132": [
     {
       "id": "TRAINER_GILBERT",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Gilbert",
       "doubleBattle": false,
       "aiFlags": [
@@ -22563,7 +22563,7 @@
     },
     {
       "id": "TRAINER_DANA",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Dana",
       "doubleBattle": false,
       "aiFlags": [
@@ -22589,7 +22589,7 @@
     },
     {
       "id": "TRAINER_RONALD",
-      "battlePic": "fisherman.png",
+      "battlePic": "fisherman.webp",
       "trainerName": "Ronald",
       "doubleBattle": false,
       "aiFlags": [
@@ -22615,7 +22615,7 @@
     },
     {
       "id": "TRAINER_KIYO",
-      "battlePic": "black_belt.png",
+      "battlePic": "black_belt.webp",
       "trainerName": "Kiyo",
       "doubleBattle": false,
       "aiFlags": [
@@ -22641,7 +22641,7 @@
     },
     {
       "id": "TRAINER_PAXTON",
-      "battlePic": "expert_m.png",
+      "battlePic": "expert_m.webp",
       "trainerName": "Paxton",
       "doubleBattle": false,
       "aiFlags": [
@@ -22669,7 +22669,7 @@
     },
     {
       "id": "TRAINER_DARCY",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Darcy",
       "doubleBattle": false,
       "aiFlags": [
@@ -22697,7 +22697,7 @@
     },
     {
       "id": "TRAINER_JONATHAN",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Jonathan",
       "doubleBattle": false,
       "aiFlags": [
@@ -22725,7 +22725,7 @@
     },
     {
       "id": "TRAINER_MAKAYLA",
-      "battlePic": "expert_f.png",
+      "battlePic": "expert_f.webp",
       "trainerName": "Makayla",
       "doubleBattle": false,
       "aiFlags": [
@@ -22755,7 +22755,7 @@
   "MAP_ROUTE133": [
     {
       "id": "TRAINER_FRANKLIN",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Franklin",
       "doubleBattle": false,
       "aiFlags": [
@@ -22781,7 +22781,7 @@
     },
     {
       "id": "TRAINER_DEBRA",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Debra",
       "doubleBattle": false,
       "aiFlags": [
@@ -22807,7 +22807,7 @@
     },
     {
       "id": "TRAINER_LINDA",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Linda",
       "doubleBattle": false,
       "aiFlags": [
@@ -22833,7 +22833,7 @@
     },
     {
       "id": "TRAINER_WARREN",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Warren",
       "doubleBattle": false,
       "aiFlags": [
@@ -22861,7 +22861,7 @@
     },
     {
       "id": "TRAINER_BECK",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Beck",
       "doubleBattle": false,
       "aiFlags": [
@@ -22887,7 +22887,7 @@
     },
     {
       "id": "TRAINER_MOLLIE",
-      "battlePic": "expert_f.png",
+      "battlePic": "expert_f.webp",
       "trainerName": "Mollie",
       "doubleBattle": false,
       "aiFlags": [
@@ -22913,7 +22913,7 @@
     },
     {
       "id": "TRAINER_CONOR",
-      "battlePic": "expert_m.png",
+      "battlePic": "expert_m.webp",
       "trainerName": "Conor",
       "doubleBattle": false,
       "aiFlags": [
@@ -22941,7 +22941,7 @@
   "MAP_ROUTE134": [
     {
       "id": "TRAINER_JACK",
-      "battlePic": "swimmer_m.png",
+      "battlePic": "swimmer_m.webp",
       "trainerName": "Jack",
       "doubleBattle": false,
       "aiFlags": [
@@ -22963,7 +22963,7 @@
     },
     {
       "id": "TRAINER_LAUREL",
-      "battlePic": "swimmer_f.png",
+      "battlePic": "swimmer_f.webp",
       "trainerName": "Laurel",
       "doubleBattle": false,
       "aiFlags": [
@@ -22989,7 +22989,7 @@
     },
     {
       "id": "TRAINER_ALEX",
-      "battlePic": "bird_keeper.png",
+      "battlePic": "bird_keeper.webp",
       "trainerName": "Alex",
       "doubleBattle": false,
       "aiFlags": [
@@ -23011,7 +23011,7 @@
     },
     {
       "id": "TRAINER_AARON",
-      "battlePic": "dragon_tamer.png",
+      "battlePic": "dragon_tamer.webp",
       "trainerName": "Aaron",
       "doubleBattle": false,
       "aiFlags": [
@@ -23033,7 +23033,7 @@
     },
     {
       "id": "TRAINER_HITOSHI",
-      "battlePic": "black_belt.png",
+      "battlePic": "black_belt.webp",
       "trainerName": "Hitoshi",
       "doubleBattle": false,
       "aiFlags": [
@@ -23059,7 +23059,7 @@
     },
     {
       "id": "TRAINER_HUDSON",
-      "battlePic": "sailor.png",
+      "battlePic": "sailor.webp",
       "trainerName": "Hudson",
       "doubleBattle": false,
       "aiFlags": [
@@ -23085,7 +23085,7 @@
     },
     {
       "id": "TRAINER_REYNA",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Reyna",
       "doubleBattle": false,
       "aiFlags": [
@@ -23111,7 +23111,7 @@
     },
     {
       "id": "TRAINER_MARLEY",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Marley",
       "doubleBattle": false,
       "aiFlags": [
@@ -23135,7 +23135,7 @@
     },
     {
       "id": "TRAINER_KELVIN",
-      "battlePic": "sailor.png",
+      "battlePic": "sailor.webp",
       "trainerName": "Kelvin",
       "doubleBattle": false,
       "aiFlags": [
@@ -23159,7 +23159,7 @@
   "MAP_RUSTBORO_CITY": [
     {
       "id": "TRAINER_MAY_RUSTBORO_TREECKO",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -23243,7 +23243,7 @@
     },
     {
       "id": "TRAINER_MAY_RUSTBORO_TORCHIC",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -23327,7 +23327,7 @@
     },
     {
       "id": "TRAINER_MAY_RUSTBORO_MUDKIP",
-      "battlePic": "may.png",
+      "battlePic": "may.webp",
       "trainerName": "May",
       "doubleBattle": false,
       "aiFlags": [
@@ -23411,7 +23411,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_RUSTBORO_TREECKO",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -23495,7 +23495,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_RUSTBORO_TORCHIC",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -23579,7 +23579,7 @@
     },
     {
       "id": "TRAINER_BRENDAN_RUSTBORO_MUDKIP",
-      "battlePic": "brendan.png",
+      "battlePic": "brendan.webp",
       "trainerName": "Brendan",
       "doubleBattle": false,
       "aiFlags": [
@@ -23663,7 +23663,7 @@
     },
     {
       "id": "TRAINER_ROXANNE_1",
-      "battlePic": "leader_roxanne.png",
+      "battlePic": "leader_roxanne.webp",
       "trainerName": "Roxanne",
       "doubleBattle": false,
       "aiFlags": [
@@ -23736,7 +23736,7 @@
         }
       ],
       "script": "RustboroCity_Gym_EventScript_Roxanne",
-      "sprite": "roxanne.webp",
+      "sprite": "leader_roxanne.webp",
       "coords": [
         0,
         0
@@ -23745,7 +23745,7 @@
     },
     {
       "id": "TRAINER_JOSH",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Josh",
       "doubleBattle": false,
       "aiFlags": [
@@ -23767,7 +23767,7 @@
     },
     {
       "id": "TRAINER_TOMMY",
-      "battlePic": "youngster.png",
+      "battlePic": "youngster.webp",
       "trainerName": "Tommy",
       "doubleBattle": false,
       "aiFlags": [
@@ -23793,7 +23793,7 @@
     },
     {
       "id": "TRAINER_MARC",
-      "battlePic": "hiker.png",
+      "battlePic": "hiker.webp",
       "trainerName": "Marc",
       "doubleBattle": false,
       "aiFlags": [
@@ -23821,7 +23821,7 @@
   "MAP_RUSTURF_TUNNEL": [
     {
       "id": "TRAINER_GRUNT_RUSTURF_TUNNEL",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt",
       "doubleBattle": false,
       "aiFlags": [
@@ -23880,7 +23880,7 @@
         }
       ],
       "script": "RusturfTunnel_EventScript_Grunt",
-      "sprite": "aqua_grunt_m.png",
+      "sprite": "aqua_grunt_m.webp",
       "coords": [
         0,
         0
@@ -23889,7 +23889,7 @@
     },
     {
       "id": "TRAINER_MIKE_2",
-      "battlePic": "hiker.png",
+      "battlePic": "hiker.webp",
       "trainerName": "Mike",
       "doubleBattle": false,
       "aiFlags": [
@@ -23921,7 +23921,7 @@
   "MAP_S_S_TIDAL_LOWER_DECK": [
     {
       "id": "TRAINER_PHILLIP",
-      "battlePic": "sailor.png",
+      "battlePic": "sailor.webp",
       "trainerName": "Phillip",
       "doubleBattle": false,
       "aiFlags": [
@@ -23947,7 +23947,7 @@
     },
     {
       "id": "TRAINER_LEONARD",
-      "battlePic": "sailor.png",
+      "battlePic": "sailor.webp",
       "trainerName": "Leonard",
       "doubleBattle": false,
       "aiFlags": [
@@ -23979,7 +23979,7 @@
   "MAP_S_S_TIDAL_ROOMS": [
     {
       "id": "TRAINER_COLTON",
-      "battlePic": "pokefan_m.png",
+      "battlePic": "pokefan_m.webp",
       "trainerName": "Colton",
       "doubleBattle": false,
       "aiFlags": [
@@ -24063,7 +24063,7 @@
     },
     {
       "id": "TRAINER_MICAH",
-      "battlePic": "gentleman.png",
+      "battlePic": "gentleman.webp",
       "trainerName": "Micah",
       "doubleBattle": false,
       "aiFlags": [
@@ -24089,7 +24089,7 @@
     },
     {
       "id": "TRAINER_THOMAS",
-      "battlePic": "gentleman.png",
+      "battlePic": "gentleman.webp",
       "trainerName": "Thomas",
       "doubleBattle": false,
       "aiFlags": [
@@ -24111,7 +24111,7 @@
     },
     {
       "id": "TRAINER_LEA_AND_JED",
-      "battlePic": "young_couple.png",
+      "battlePic": "young_couple.webp",
       "trainerName": "Lea & Jed",
       "doubleBattle": true,
       "aiFlags": [
@@ -24137,7 +24137,7 @@
     },
     {
       "id": "TRAINER_GARRET",
-      "battlePic": "rich_boy.png",
+      "battlePic": "rich_boy.webp",
       "trainerName": "Garret",
       "doubleBattle": false,
       "aiFlags": [
@@ -24160,7 +24160,7 @@
     },
     {
       "id": "TRAINER_NAOMI",
-      "battlePic": "lady.png",
+      "battlePic": "lady.webp",
       "trainerName": "Naomi",
       "doubleBattle": false,
       "aiFlags": [
@@ -24185,7 +24185,7 @@
   "MAP_SEAFLOOR_CAVERN": [
     {
       "id": "TRAINER_GRUNT_SEAFLOOR_CAVERN_1",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt 1",
       "doubleBattle": false,
       "aiFlags": [
@@ -24215,7 +24215,7 @@
     },
     {
       "id": "TRAINER_GRUNT_SEAFLOOR_CAVERN_5",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt 5",
       "doubleBattle": false,
       "aiFlags": [
@@ -24241,7 +24241,7 @@
     },
     {
       "id": "TRAINER_GRUNT_SEAFLOOR_CAVERN_3",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt 3",
       "doubleBattle": false,
       "aiFlags": [
@@ -24267,7 +24267,7 @@
     },
     {
       "id": "TRAINER_GRUNT_SEAFLOOR_CAVERN_4",
-      "battlePic": "aqua_grunt_f.png",
+      "battlePic": "aqua_grunt_f.webp",
       "trainerName": "Grunt 4",
       "doubleBattle": false,
       "aiFlags": [
@@ -24293,7 +24293,7 @@
     },
     {
       "id": "TRAINER_ARCHIE",
-      "battlePic": "aqua_leader_archie.png",
+      "battlePic": "aqua_leader_archie.webp",
       "trainerName": "Archie",
       "doubleBattle": true,
       "aiFlags": [
@@ -24446,7 +24446,7 @@
         }
       ],
       "script": "SeafloorCavern_EventScript_Archie",
-      "sprite": "archie.webp",
+      "sprite": "aqua_leader_archie.webp",
       "coords": [
         0,
         0
@@ -24455,7 +24455,7 @@
     },
     {
       "id": "TRAINER_SHELLY_SEAFLOOR_CAVERN",
-      "battlePic": "aqua_admin_f.png",
+      "battlePic": "aqua_admin_f.webp",
       "trainerName": "Shelly",
       "doubleBattle": false,
       "aiFlags": [
@@ -24570,7 +24570,7 @@
     },
     {
       "id": "TRAINER_MATT_SEAFLOOR_CAVERN",
-      "battlePic": "aqua_admin_m.png",
+      "battlePic": "aqua_admin_m.webp",
       "trainerName": "Matt",
       "doubleBattle": false,
       "aiFlags": [
@@ -24687,7 +24687,7 @@
   "MAP_SKY_PILLAR": [
     {
       "id": "TRAINER_DRAKE",
-      "battlePic": "elite_four_drake.png",
+      "battlePic": "elite_four_drake.webp",
       "trainerName": "Drake",
       "doubleBattle": true,
       "aiFlags": [
@@ -24851,7 +24851,7 @@
   "MAP_SLATEPORT_CITY": [
     {
       "id": "TRAINER_GRUNT_MUSEUM_1",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt",
       "doubleBattle": false,
       "aiFlags": [
@@ -24904,7 +24904,7 @@
     },
     {
       "id": "TRAINER_GRUNT_MUSEUM_2",
-      "battlePic": "aqua_grunt_m.png",
+      "battlePic": "aqua_grunt_m.webp",
       "trainerName": "Grunt",
       "doubleBattle": false,
       "aiFlags": [
@@ -24974,7 +24974,7 @@
   "MAP_SOOTOPOLIS_CITY": [
     {
       "id": "TRAINER_DANNI",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Danni",
       "doubleBattle": false,
       "aiFlags": [
@@ -25132,7 +25132,7 @@
         }
       ],
       "script": "SootopolisCity_ChampHouse_EventScript_BattleDanni",
-      "sprite": "cooltrainer_f.png",
+      "sprite": "cooltrainer_f.webp",
       "coords": [
         0,
         0
@@ -25141,7 +25141,7 @@
     },
     {
       "id": "TRAINER_MASTA_JANES",
-      "battlePic": "TRAINER_PIC_SUPERNERD_FIRERED",
+      "battlePic": "supernerd_firered.webp",
       "trainerName": "MastaJanes",
       "doubleBattle": false,
       "aiFlags": [
@@ -25294,7 +25294,7 @@
         }
       ],
       "script": "SootopolisCity_ChampHouse_EventScript_BattleMastaJanes",
-      "sprite": "TRAINER_PIC_SUPERNERD_FIRERED",
+      "sprite": "supernerd_firered.webp",
       "coords": [
         0,
         0
@@ -25303,7 +25303,7 @@
     },
     {
       "id": "TRAINER_BEFOOLS",
-      "battlePic": "psychic_m.png",
+      "battlePic": "psychic_m.webp",
       "trainerName": "Befools",
       "doubleBattle": false,
       "aiFlags": [
@@ -25455,7 +25455,7 @@
         }
       ],
       "script": "SootopolisCity_ChampHouse_EventScript_BattleBefools",
-      "sprite": "psychic_m.png",
+      "sprite": "psychic_m.webp",
       "coords": [
         0,
         0
@@ -25464,7 +25464,7 @@
     },
     {
       "id": "TRAINER_JUAN_1",
-      "battlePic": "leader_juan.png",
+      "battlePic": "leader_juan.webp",
       "trainerName": "Juan",
       "doubleBattle": false,
       "aiFlags": [
@@ -25617,7 +25617,7 @@
         }
       ],
       "script": "SootopolisCity_Gym_1F_EventScript_Juan",
-      "sprite": "juan.webp",
+      "sprite": "leader_juan.webp",
       "coords": [
         0,
         0
@@ -25626,7 +25626,7 @@
     },
     {
       "id": "TRAINER_ANDREA",
-      "battlePic": "lass.png",
+      "battlePic": "lass.webp",
       "trainerName": "Andrea",
       "doubleBattle": false,
       "aiFlags": [
@@ -25648,7 +25648,7 @@
     },
     {
       "id": "TRAINER_CRISSY",
-      "battlePic": "lass.png",
+      "battlePic": "lass.webp",
       "trainerName": "Crissy",
       "doubleBattle": false,
       "aiFlags": [
@@ -25674,7 +25674,7 @@
     },
     {
       "id": "TRAINER_BRIANNA",
-      "battlePic": "lady.png",
+      "battlePic": "lady.webp",
       "trainerName": "Brianna",
       "doubleBattle": false,
       "aiFlags": [
@@ -25700,7 +25700,7 @@
     },
     {
       "id": "TRAINER_CONNIE",
-      "battlePic": "beauty.png",
+      "battlePic": "beauty.webp",
       "trainerName": "Connie",
       "doubleBattle": false,
       "aiFlags": [
@@ -25722,7 +25722,7 @@
     },
     {
       "id": "TRAINER_BRIDGET",
-      "battlePic": "beauty.png",
+      "battlePic": "beauty.webp",
       "trainerName": "Bridget",
       "doubleBattle": false,
       "aiFlags": [
@@ -25744,7 +25744,7 @@
     },
     {
       "id": "TRAINER_OLIVIA",
-      "battlePic": "beauty.png",
+      "battlePic": "beauty.webp",
       "trainerName": "Olivia",
       "doubleBattle": false,
       "aiFlags": [
@@ -25770,7 +25770,7 @@
     },
     {
       "id": "TRAINER_TIFFANY",
-      "battlePic": "beauty.png",
+      "battlePic": "beauty.webp",
       "trainerName": "Tiffany",
       "doubleBattle": false,
       "aiFlags": [
@@ -25796,7 +25796,7 @@
     },
     {
       "id": "TRAINER_BETHANY",
-      "battlePic": "pokefan_f.png",
+      "battlePic": "pokefan_f.webp",
       "trainerName": "Bethany",
       "doubleBattle": false,
       "aiFlags": [
@@ -25826,7 +25826,7 @@
     },
     {
       "id": "TRAINER_ANNIKA",
-      "battlePic": "pokefan_f.png",
+      "battlePic": "pokefan_f.webp",
       "trainerName": "Annika",
       "doubleBattle": false,
       "aiFlags": [
@@ -25852,7 +25852,7 @@
     },
     {
       "id": "TRAINER_DAPHNE",
-      "battlePic": "lady.png",
+      "battlePic": "lady.webp",
       "trainerName": "Daphne",
       "doubleBattle": false,
       "aiFlags": [
@@ -25878,7 +25878,7 @@
     },
     {
       "id": "TRAINER_NATN",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Natn",
       "doubleBattle": false,
       "aiFlags": [
@@ -26031,7 +26031,7 @@
         }
       ],
       "script": "SootopolisCity_House5_EventScript_BattleNatn",
-      "sprite": "cooltrainer_m.png",
+      "sprite": "cooltrainer_m.webp",
       "coords": [
         0,
         0
@@ -26040,7 +26040,7 @@
     },
     {
       "id": "TRAINER_MASTER_POUCINE",
-      "battlePic": "dragon_tamer.png",
+      "battlePic": "dragon_tamer.webp",
       "trainerName": "Poucine",
       "doubleBattle": false,
       "aiFlags": [
@@ -26192,7 +26192,7 @@
         }
       ],
       "script": "SootopolisCity_House5_EventScript_BattleMasterPoucine",
-      "sprite": "dragon_tamer.png",
+      "sprite": "dragon_tamer.webp",
       "coords": [
         0,
         0
@@ -26201,7 +26201,7 @@
     },
     {
       "id": "TRAINER_OBLIVION_WING",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Oblivion",
       "doubleBattle": false,
       "aiFlags": [
@@ -26353,7 +26353,7 @@
         }
       ],
       "script": "SootopolisCity_House5_EventScript_BattleOblivionWing",
-      "sprite": "cooltrainer_m.png",
+      "sprite": "cooltrainer_m.webp",
       "coords": [
         0,
         0
@@ -26364,7 +26364,7 @@
   "MAP_VERDANTURF_TOWN": [
     {
       "id": "TRAINER_URSULA",
-      "battlePic": "elite_four_phoebe.png",
+      "battlePic": "elite_four_phoebe.webp",
       "trainerName": "Ursula",
       "doubleBattle": true,
       "aiFlags": [
@@ -26481,7 +26481,7 @@
   "MAP_VICTORY_ROAD": [
     {
       "id": "TRAINER_WALLY_VR_1",
-      "battlePic": "wally.png",
+      "battlePic": "wally.webp",
       "trainerName": "Wally",
       "doubleBattle": false,
       "aiFlags": [
@@ -26642,7 +26642,7 @@
     },
     {
       "id": "TRAINER_WALLY_VR_2",
-      "battlePic": "wally.png",
+      "battlePic": "wally.webp",
       "trainerName": "Wally",
       "doubleBattle": false,
       "aiFlags": [
@@ -26804,7 +26804,7 @@
     },
     {
       "id": "TRAINER_EDGAR",
-      "battlePic": "gentleman.png",
+      "battlePic": "gentleman.webp",
       "trainerName": "Edgar",
       "doubleBattle": false,
       "aiFlags": [
@@ -26832,7 +26832,7 @@
     },
     {
       "id": "TRAINER_ALBERT",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Albert",
       "doubleBattle": false,
       "aiFlags": [
@@ -26970,7 +26970,7 @@
     },
     {
       "id": "TRAINER_HOPE",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Hope",
       "doubleBattle": false,
       "aiFlags": [
@@ -27108,7 +27108,7 @@
     },
     {
       "id": "TRAINER_QUINCY",
-      "battlePic": "kindler.png",
+      "battlePic": "kindler.webp",
       "trainerName": "Quincy",
       "doubleBattle": false,
       "aiFlags": [
@@ -27136,7 +27136,7 @@
     },
     {
       "id": "TRAINER_KATELYNN",
-      "battlePic": "aroma_lady.png",
+      "battlePic": "aroma_lady.webp",
       "trainerName": "Katelynn",
       "doubleBattle": false,
       "aiFlags": [
@@ -27168,7 +27168,7 @@
     },
     {
       "id": "TRAINER_SAMUEL",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Samuel",
       "doubleBattle": false,
       "aiFlags": [
@@ -27306,7 +27306,7 @@
     },
     {
       "id": "TRAINER_SHANNON",
-      "battlePic": "battle_girl.png",
+      "battlePic": "battle_girl.webp",
       "trainerName": "Shannon",
       "doubleBattle": false,
       "aiFlags": [
@@ -27338,7 +27338,7 @@
     },
     {
       "id": "TRAINER_MICHELLE",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Michelle",
       "doubleBattle": false,
       "aiFlags": [
@@ -27476,7 +27476,7 @@
     },
     {
       "id": "TRAINER_MITCHELL",
-      "battlePic": "pokemon_breeder_m.png",
+      "battlePic": "pokemon_breeder_m.webp",
       "trainerName": "Mitchell",
       "doubleBattle": false,
       "aiFlags": [
@@ -27504,7 +27504,7 @@
     },
     {
       "id": "TRAINER_HALLE",
-      "battlePic": "lass.png",
+      "battlePic": "lass.webp",
       "trainerName": "Halle",
       "doubleBattle": false,
       "aiFlags": [
@@ -27532,7 +27532,7 @@
     },
     {
       "id": "TRAINER_VITO",
-      "battlePic": "expert_m.png",
+      "battlePic": "expert_m.webp",
       "trainerName": "Vito",
       "doubleBattle": false,
       "aiFlags": [
@@ -27564,7 +27564,7 @@
     },
     {
       "id": "TRAINER_OWEN",
-      "battlePic": "psychic_m.png",
+      "battlePic": "psychic_m.webp",
       "trainerName": "Owen",
       "doubleBattle": false,
       "aiFlags": [
@@ -27596,7 +27596,7 @@
     },
     {
       "id": "TRAINER_CAROLINE",
-      "battlePic": "cooltrainer_f.png",
+      "battlePic": "cooltrainer_f.webp",
       "trainerName": "Caroline",
       "doubleBattle": false,
       "aiFlags": [
@@ -27735,7 +27735,7 @@
     },
     {
       "id": "TRAINER_JULIE",
-      "battlePic": "cycling_triathlete_f.png",
+      "battlePic": "cycling_triathlete_f.webp",
       "trainerName": "Julie",
       "doubleBattle": false,
       "aiFlags": [
@@ -27767,7 +27767,7 @@
     },
     {
       "id": "TRAINER_FELIX",
-      "battlePic": "cooltrainer_m.png",
+      "battlePic": "cooltrainer_m.webp",
       "trainerName": "Felix",
       "doubleBattle": false,
       "aiFlags": [
@@ -27905,7 +27905,7 @@
     },
     {
       "id": "TRAINER_DIANNE",
-      "battlePic": "hex_maniac.png",
+      "battlePic": "hex_maniac.webp",
       "trainerName": "Dianne",
       "doubleBattle": false,
       "aiFlags": [

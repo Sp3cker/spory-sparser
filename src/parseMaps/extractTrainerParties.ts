@@ -264,8 +264,8 @@ function splitEntries(body: string): string[] {
   return entries;
 }
 
-function extractTrainerParties(rootDir: string): Record<string, PartyMon[]> {
-  const src = fs.readFileSync(path.join(rootDir, "data","trainer_parties.h"), "utf8");
+function extractTrainerParties(dataDir: string): Record<string, PartyMon[]> {
+  const src = fs.readFileSync(path.join(dataDir,"trainer_parties.h"), "utf8");
   const clean = stripComments(src);
   const regex =
     /static const struct TrainerMon\s+(sParty_\w+)\[\]\s*=\s*\{([^]*?)\};/g;
@@ -280,26 +280,26 @@ function extractTrainerParties(rootDir: string): Record<string, PartyMon[]> {
   return result;
 }
 
-function main() {
-  const args = process.argv.slice(2);
-  const root =
-    args[0] ??
-    path.resolve(
-      path.dirname(decodeURI(new URL(import.meta.url).pathname)),
-      "../../"
-    );
-  const result = extractTrainerParties(root);
-  fs.mkdirSync(path.join(root, "generated"), { recursive: true });
-  fs.writeFileSync(
-    path.join(root, "generated", "trainer_parties.json"),
-    JSON.stringify(result, null, 2)
-  );
-  console.log("Wrote", path.join(root, "generated", "trainer_parties.json"));
-}
+// function main() {
+//   const args = process.argv.slice(2);
+//   const root =
+//     args[0] ??
+//     path.resolve(
+//       path.dirname(decodeURI(new URL(import.meta.url).pathname)),
+//       "../../"
+//     );
+//   const result = extractTrainerParties(root);
+//   fs.mkdirSync(path.join(root, "generated"), { recursive: true });
+//   fs.writeFileSync(
+//     path.join(root, "generated", "trainer_parties.json"),
+//     JSON.stringify(result, null, 2)
+//   );
+//   console.log("Wrote", path.join(root, "generated", "trainer_parties.json"));
+// }
 
 // Run as CLI if executed directly
-if (import.meta.url === `file://${process.argv[1]}`) {
-  main();
-}
+// if (import.meta.url === `file://${process.argv[1]}`) {
+//   main();
+// }
 
 export { extractTrainerParties, PartyMon };
