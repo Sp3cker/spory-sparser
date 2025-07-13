@@ -1,4 +1,4 @@
-# Spory-SparerTS
+# Spory-Sparser
 Named so to prevent further diluding the branding of the `Pory...` brand of products.
 ## About
 This library primarily parses `.inc` files from a Pokémon Decompilation Project repository and produces JSON describing the locations and methods of obtaining items & gift pokémon.
