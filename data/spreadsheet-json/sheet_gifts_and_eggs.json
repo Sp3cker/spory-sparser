@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "sheetName": "Gifts and Eggs",
+    "extractedAt": "2025-06-09T01:31:45.473Z",
+    "rowCount": 26,
+    "columnCount": 8,
+    "headers": [
+      "LOCATION",
+      "GIFT",
+      "FLAVOR",
+      "Column_4",
+      "Column_5",
+      "Column_6",
+      "Column_7",
+      "Column_8"
+    ]
+  },
+  "data": [
+    {
+      "LOCATION": "RUSTBORO CITY",
+      "GIFT": "Togepi Egg",
+      "FLAVOR": "in pokemon center",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "ROUTE111",
+      "GIFT": "Riolu egg",
+      "FLAVOR": "in old mans house",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "FALLARBOUR TOWN",
+      "GIFT": "Starter eggs for shards",
+      "FLAVOR": "Old man inside house",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "LAVARIDGE TOWN",
+      "GIFT": "Eevee egg",
+      "FLAVOR": "Old woman by hot springs",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Lilycove City",
+      "GIFT": "Type-Null egg",
+      "FLAVOR": "Old man inside house",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "ROUTE109",
+      "GIFT": "Charcadet",
+      "FLAVOR": "Gift after beating all Beach House trainers",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Mauville City",
+      "GIFT": "Costume Pikachu",
+      "FLAVOR": "Man in Pokemon Center",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "ROUTE111",
+      "GIFT": "Tyrogue",
+      "FLAVOR": "Gift after beating Daisuke",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "ROUTE121",
+      "GIFT": "Meltan",
+      "FLAVOR": "Gift after beating Byron",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Mossdeep City",
+      "GIFT": "Celebi",
+      "FLAVOR": "Gift after beaing Sunbird",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Mossdeep City",
+      "GIFT": "Darkrai",
+      "FLAVOR": "Gift after beating Suneal",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Mossdeep City",
+      "GIFT": "Victini",
+      "FLAVOR": "Gift after beatin Dollamike",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Sootopolis City",
+      "GIFT": "Genesect",
+      "FLAVOR": "Gift after beating Danni",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Sootopolis City",
+      "GIFT": "Shiny DItto",
+      "FLAVOR": "Gift after beating Mastajanes",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Sootopolis City",
+      "GIFT": "Hoopa",
+      "FLAVOR": "Gift after beating Befools",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Sootopolis City",
+      "GIFT": null,
+      "FLAVOR": "Gift after beating natn",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": null,
+      "GIFT": "Meloetta",
+      "FLAVOR": null,
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Sootopolis City",
+      "GIFT": null,
+      "FLAVOR": "Gift after beating MasterPoucine",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": null,
+      "GIFT": "Marshadow",
+      "FLAVOR": null,
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Sootopolis City",
+      "GIFT": null,
+      "FLAVOR": "Gift after beating Oblivion wing",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": null,
+      "GIFT": "Zarude",
+      "FLAVOR": null,
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Evergrande City",
+      "GIFT": "Zeraora",
+      "FLAVOR": "Gift after beating Volkner",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "Evergrande City",
+      "GIFT": "Kubfu",
+      "FLAVOR": "Gift after beating Dawn and Rival",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "RUSTBORO CITY",
+      "GIFT": "Mime Jr.",
+      "FLAVOR": "Trade for Ralts",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "FORTREE CITY",
+      "GIFT": "Fidough",
+      "FLAVOR": "Trade for Maschiff",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    },
+    {
+      "LOCATION": "PACIFIDLOG TOWN",
+      "GIFT": "Iron Bundle",
+      "FLAVOR": "Trade for Delibird",
+      "Column_4": null,
+      "Column_5": null,
+      "Column_6": null,
+      "Column_7": null,
+      "Column_8": null
+    }
+  ]
+}

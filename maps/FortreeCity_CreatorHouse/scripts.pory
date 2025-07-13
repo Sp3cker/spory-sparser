@@ -1,0 +1,385 @@
+raw `
+FortreeCity_CreatorHouse_MapScripts::
+	.byte 0
+
+
+FortreeCity_CreatorHouse_EventScript_Iriv24PC::
+	msgbox FortreeCity_CreatorHouse_Iriv24sComputer, MSGBOX_SIGN
+	end
+
+FortreeCity_CreatorHouse_Iriv24sComputer:
+	.string "Hey, it's the creator's computer! Wait,\n"
+	.string "he's making Drake do WHAT?$"
+
+FortreeCity_CreatorHouse_EventScript_Iriv24PCTwo::
+	msgbox FortreeCity_CreatorHouse_Iriv24sComputerTwo, MSGBOX_SIGN
+	end
+
+FortreeCity_CreatorHouse_Iriv24sComputerTwo:
+	.string "Is that me? Is this all scripted?$"
+
+
+FortreeCity_CreatorHouse_EventScript_CapPC::
+	msgbox FortreeCity_CreatorHouse_CapsComputer, MSGBOX_SIGN
+	end
+
+FortreeCity_CreatorHouse_CapsComputer:
+	.string "Man, he's really got this guy editing\n"
+	.string "normal trainers, wild encounters, and\l"
+	.string "manually copying data from RRDex.\l"
+	.string "That's crazy.$"
+
+FortreeCity_CreatorHouse_EventScript_XPC::
+	msgbox FortreeCity_CreatorHouse_XsComputer, MSGBOX_SIGN
+	end
+
+FortreeCity_CreatorHouse_XsComputer:
+	.string "So that's how they made the Mega\n"
+	.string "Torterra sprite.$"
+
+FortreeCity_CreatorHouse_EventScript_Empoleon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_EMPOLEON, CRY_MODE_NORMAL
+	msgbox FortreeCity_CreatorHouse_Text_Empoleon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+FortreeCity_CreatorHouse_Text_Empoleon:
+	.string "Empoleon: Brrrrrrrebrrreey!$"
+
+FortreeCity_CreatorHouse_EventScript_Torterra::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TORTERRA, CRY_MODE_NORMAL
+	msgbox FortreeCity_CreatorHouse_Text_Torterra, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+FortreeCity_CreatorHouse_Text_Torterra:
+	.string "Torterra: Truhhhheeruhhhhhhh!$"
+
+FortreeCity_CreatorHouse_EventScript_Lanturn::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LANTURN, CRY_MODE_NORMAL
+	msgbox FortreeCity_CreatorHouse_Text_Lanturn, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+FortreeCity_CreatorHouse_Text_Lanturn:
+	.string "Lanturn: Bzzzdoooo!$"
+
+`
+
+script FortreeCity_CreatorHouse_EventScript_Iriv24{
+	lockall
+	applymovement(3, Common_Movement_FacePlayer)
+	goto_if_defeated(TRAINER_IRIV24, FortreeCity_CreatorHouse_EventScript_Iriv24Defeated)
+	goto_if_set(FLAG_TEMP_1, FortreeCity_CreatorHouse_EventScript_Iriv24RequestBattleAgain)
+	msgbox(Iriv24_Greeting, MSGBOX_YESNO)
+	goto(FortreeCity_CreatorHouse_EventScript_BattleIriv24Prompt)
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_Iriv24RequestBattleAgain{
+	msgbox(Iriv24_ReadyYet, MSGBOX_YESNO)
+	goto(FortreeCity_CreatorHouse_EventScript_BattleIriv24Prompt)
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_BattleIriv24Prompt{
+	call_if_eq(VAR_RESULT, YES, FortreeCity_CreatorHouse_EventScript_BattleIriv24)
+	goto_if_eq(VAR_RESULT, NO, FortreeCity_CreatorHouse_EventScript_DeclineIriv24Battle)
+	closemessage
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_DeclineIriv24Battle {
+	setflag(FLAG_TEMP_1)
+	msgbox(Iriv24_ComeBackWhenReady, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_BattleIriv24{
+	msgbox("Alright, let's do this.", MSGBOX_DEFAULT)
+	trainerbattle_no_intro(TRAINER_IRIV24, Iriv24_Outro)
+	goto(FortreeCity_CreatorHouse_EventScript_Iriv24GiveItems)
+	return
+}
+	
+
+script FortreeCity_CreatorHouse_EventScript_Iriv24Defeated{
+	msgbox(PostBattle_Iriv24, MSGBOX_DEFAULT)
+	releaseall
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_Iriv24GiveItems{
+	giveitem(ITEM_EMPOLEONITE_O)
+	giveitem(ITEM_BLASTOISINITE)
+	giveitem(ITEM_SWAMPERTITE)
+	giveitem(ITEM_TM_SUBSTITUTE)
+	giveitem(ITEM_CHOICE_SCARF)
+	msgbox(Iriv24_ExplainItems)
+	release
+	end
+}
+
+
+text Iriv24_Greeting{
+	"Hi there, {PLAYER}, I am the creator of\n"
+	"this hack.\l"
+	"I hope you are enjoying it so far.\p"
+	"Since you've made it to here, I would\n"
+	"like to offer my sincere appreciation\l"
+	"to you for playing this game.\p"
+	"It was a lot of fun to make, and I\n"
+	"hope I succeeded in making it very\l"
+	"challenging, but not unbeatable.\p"
+	"Now to business: I've got a team of my\n"
+	"favorite Pokémon here and am ready to\l"
+	"battle.\p"
+	"If you win, I'll give you the Mega\n"
+	"Stones for the Water starters,\l"
+	"including Empoleon's 2nd Mega form.\p"
+	"I'll also give you the TM for Substitute\n"
+	"(broken move btw) and a Choice Scarf.\p"
+	"If those rewards are worth it to you,\n"
+	"then say the word and we can battle.\l"
+	"What do you say?"
+}
+
+text Iriv24_ReadyYet{
+	"Want to battle now?"
+}
+
+text Iriv24_ComeBackWhenReady{
+	"Let me know when you want to battle."
+}
+
+text Iriv24_ExplainItems{
+	"There you go, as promised. Now, keep\n"
+	"moving forward! There are still plenty\l"
+	"of tough battles ahead, but if you've\l"
+	"made it this far, I believe you can beat\l"
+	"the game.\p"
+	"Thanks again for playing,\n"
+	"good luck out there, {PLAYER}!"
+}
+
+text Iriv24_Outro{
+	"Looks like you've got a pretty good\n"
+	"team over there!"
+}
+
+text PostBattle_Iriv24{
+	"Can't believe I got beat in my own game,\n"
+	"definitely gonna give myself a cracked\l"
+	"team in the next version."
+}
+
+
+
+
+script FortreeCity_CreatorHouse_EventScript_Cap{
+	lockall
+	applymovement(2, Common_Movement_FacePlayer)
+	goto_if_defeated(TRAINER_CAP, FortreeCity_CreatorHouse_EventScript_CapDefeated)
+	goto_if_set(FLAG_TEMP_2, FortreeCity_CreatorHouse_EventScript_CapRequestBattleAgain)
+	msgbox(Cap_Greeting, MSGBOX_YESNO)
+	goto(FortreeCity_CreatorHouse_EventScript_BattleCapPrompt)
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_CapRequestBattleAgain{
+	msgbox(Cap_ReadyYet, MSGBOX_YESNO)
+	goto(FortreeCity_CreatorHouse_EventScript_BattleCapPrompt)
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_BattleCapPrompt{
+	call_if_eq(VAR_RESULT, YES, FortreeCity_CreatorHouse_EventScript_BattleCap)
+	goto_if_eq(VAR_RESULT, NO, FortreeCity_CreatorHouse_EventScript_DeclineCapBattle)
+	closemessage
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_DeclineCapBattle {
+	setflag(FLAG_TEMP_2)
+	msgbox(Cap_ComeBackWhenReady, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_BattleCap{
+	msgbox("You're cooked buddy.", MSGBOX_DEFAULT)
+	trainerbattle_no_intro(TRAINER_CAP, Cap_Outro)
+	goto(FortreeCity_CreatorHouse_EventScript_CapGiveItems)
+	return
+}
+	
+
+script FortreeCity_CreatorHouse_EventScript_CapDefeated{
+	msgbox(PostBattle_Cap, MSGBOX_DEFAULT)
+	releaseall
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_CapGiveItems{
+	giveitem(ITEM_CHARIZARDITE_X)
+	giveitem(ITEM_CHARIZARDITE_Y)
+	giveitem(ITEM_BLAZIKENITE)
+	giveitem(ITEM_TM_DRAGON_DANCE)
+	giveitem(ITEM_CHOICE_SPECS)
+	msgbox(Cap_ExplainItems)
+	release
+	end
+}
+
+text Cap_Greeting{
+	"I was too lazy to send the creator a\n"
+	"script, so this is the nonsense I have\l"
+	"to say instead!\p"
+	"If you lose to me, it means you're a\n"
+	"literal gerber baby because this game\l"
+	"is easy.\p"
+	"If you manage to beat me, I'll give you\n"
+	"the Mega Stones for the Fire starters,\l"
+	"the TM for Dragon Dance, and a set of\l"
+	"Choice Specs.\p" 
+	"So we battling or what?"
+}
+
+text Cap_ReadyYet{
+	"Ready or what?"
+}
+
+text Cap_ComeBackWhenReady{
+	"Lame."
+}
+
+text Cap_ExplainItems{
+	"Honestly the rewards for beating me\n"
+	"are goated, this was probably worth the\l"
+	"hassle."
+}
+
+text Cap_Outro{
+	"Looks like the team I constructed was\n"
+	"trash, better luck next hack I guess."
+}
+
+
+text PostBattle_Cap{
+	"Back to.. doing nothing really."
+}
+
+
+
+
+script FortreeCity_CreatorHouse_EventScript_X{
+	lockall
+	applymovement(1, Common_Movement_FacePlayer)
+	goto_if_defeated(TRAINER_X, FortreeCity_CreatorHouse_EventScript_XDefeated)
+	goto_if_set(FLAG_TEMP_3, FortreeCity_CreatorHouse_EventScript_XRequestBattleAgain)
+	msgbox(X_Greeting, MSGBOX_YESNO)
+	goto(FortreeCity_CreatorHouse_EventScript_BattleXPrompt)
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_XRequestBattleAgain{
+	msgbox(X_ReadyYet, MSGBOX_YESNO)
+	goto(FortreeCity_CreatorHouse_EventScript_BattleXPrompt)
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_BattleXPrompt{
+	call_if_eq(VAR_RESULT, YES, FortreeCity_CreatorHouse_EventScript_BattleX)
+	goto_if_eq(VAR_RESULT, NO, FortreeCity_CreatorHouse_EventScript_DeclineXBattle)
+	closemessage
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_DeclineXBattle {
+	setflag(FLAG_TEMP_3)
+	msgbox(X_ComeBackWhenReady, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_BattleX{
+	msgbox("You're on!", MSGBOX_DEFAULT)
+	trainerbattle_no_intro(TRAINER_X, X_Outro)
+	goto(FortreeCity_CreatorHouse_EventScript_XGiveItems)
+	return
+}
+	
+
+script FortreeCity_CreatorHouse_EventScript_XDefeated{
+	msgbox(PostBattle_X, MSGBOX_DEFAULT)
+	releaseall
+	end
+}
+
+script FortreeCity_CreatorHouse_EventScript_XGiveItems{
+	giveitem(ITEM_TORTERRITE)
+	giveitem(ITEM_VENUSAURITE)
+	giveitem(ITEM_SCEPTILITE)
+	giveitem(ITEM_TM_EARTHQUAKE)
+	giveitem(ITEM_CHOICE_BAND)
+	msgbox(X_ExplainItems)
+	release
+	end
+}
+
+text X_Greeting{
+	"Yo! I was just about to have lunch on\n"
+	"my Torterra's back, but I guess that\l"
+	"can wait. Do you want to battle in the\l"
+	"mean time?\p"
+	"If you can beat me, I'll give you the\n"
+	"Mega Stones for the Grass starters,\l"
+	"the TM for Earthquake, and a Choice\l"
+	"Band. You in?"
+}
+
+text X_ReadyYet{
+	"You in now?"
+}
+
+text X_ComeBackWhenReady{
+	"You know where to find me if you change\n"
+	"your mind."
+}
+
+text X_ExplainItems{
+	"This move Earthquake carried me\n"
+	"through many a Pearl run back in the\l"
+	"day.\p"
+	"Though, this should game be a biiiit\n"
+	"more challenging (unless you use\l"
+	"Torterra because he's the GOAT, don't\l"
+	"let anyone else tell you otherwise).\p"
+    "What could be better than a picnic on\n"
+    "his back? Maybe a Starly in the tree.\p"
+    "Anyways, hope you like the Mega sprite,\n"
+    "I designed it myself!"
+}
+	
+text X_Outro{
+	"Well now you've gone and spoiled my\n"
+    "appetite..."
+}
+
+
+text PostBattle_X{
+	"... don't even deserve this sandwich..."
+}

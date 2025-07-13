@@ -1,0 +1,136 @@
+{
+  "extractedAt": "2025-06-09T02:33:22.654Z",
+  "count": 26,
+  "entries": [
+    {
+      "location": "RUSTBORO CITY",
+      "pokemon": "Togepi Egg",
+      "flavor": "in pokemon center"
+    },
+    {
+      "location": "ROUTE111",
+      "pokemon": "Riolu egg",
+      "flavor": "in old mans house"
+    },
+    {
+      "location": "FALLARBOUR TOWN",
+      "pokemon": "Starter eggs for shards",
+      "flavor": "Old man inside house"
+    },
+    {
+      "location": "LAVARIDGE TOWN",
+      "pokemon": "Eevee egg",
+      "flavor": "Old woman by hot springs"
+    },
+    {
+      "location": "Lilycove City",
+      "pokemon": "Type-Null egg",
+      "flavor": "Old man inside house"
+    },
+    {
+      "location": "ROUTE109",
+      "pokemon": "Charcadet",
+      "flavor": "Gift after beating all Beach House trainers"
+    },
+    {
+      "location": "Mauville City",
+      "pokemon": "Costume Pikachu",
+      "flavor": "Man in Pokemon Center"
+    },
+    {
+      "location": "ROUTE111",
+      "pokemon": "Tyrogue",
+      "flavor": "Gift after beating Daisuke"
+    },
+    {
+      "location": "ROUTE121",
+      "pokemon": "Meltan",
+      "flavor": "Gift after beating Byron"
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Celebi",
+      "flavor": "Gift after beaing Sunbird"
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Darkrai",
+      "flavor": "Gift after beating Suneal"
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Victini",
+      "flavor": "Gift after beatin Dollamike"
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Genesect",
+      "flavor": "Gift after beating Danni"
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Shiny DItto",
+      "flavor": "Gift after beating Mastajanes"
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Hoopa",
+      "flavor": "Gift after beating Befools"
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Unknown Pokemon",
+      "flavor": "Gift after beating natn"
+    },
+    {
+      "location": "Unknown Location",
+      "pokemon": "Meloetta",
+      "flavor": ""
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Unknown Pokemon",
+      "flavor": "Gift after beating MasterPoucine"
+    },
+    {
+      "location": "Unknown Location",
+      "pokemon": "Marshadow",
+      "flavor": ""
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Unknown Pokemon",
+      "flavor": "Gift after beating Oblivion wing"
+    },
+    {
+      "location": "Unknown Location",
+      "pokemon": "Zarude",
+      "flavor": ""
+    },
+    {
+      "location": "Evergrande City",
+      "pokemon": "Zeraora",
+      "flavor": "Gift after beating Volkner"
+    },
+    {
+      "location": "Evergrande City",
+      "pokemon": "Kubfu",
+      "flavor": "Gift after beating Dawn and Rival"
+    },
+    {
+      "location": "RUSTBORO CITY",
+      "pokemon": "Mime Jr.",
+      "flavor": "Trade for Ralts"
+    },
+    {
+      "location": "FORTREE CITY",
+      "pokemon": "Fidough",
+      "flavor": "Trade for Maschiff"
+    },
+    {
+      "location": "PACIFIDLOG TOWN",
+      "pokemon": "Iron Bundle",
+      "flavor": "Trade for Delibird"
+    }
+  ]
+}

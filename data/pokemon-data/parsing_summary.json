@@ -1,0 +1,20 @@
+{
+  "extractedAt": "2025-06-09T02:33:22.654Z",
+  "summary": {
+    "gifts": 26,
+    "legendaries": 136,
+    "total": 162
+  },
+  "sampleEntries": {
+    "gift": {
+      "location": "RUSTBORO CITY",
+      "pokemon": "Togepi Egg",
+      "flavor": "in pokemon center"
+    },
+    "legendary": {
+      "location": "Hoenn",
+      "pokemon": "Articuno",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    }
+  }
+}

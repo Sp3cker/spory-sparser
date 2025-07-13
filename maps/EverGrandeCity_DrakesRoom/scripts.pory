@@ -1,0 +1,110 @@
+raw `
+EverGrandeCity_DrakesRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, EverGrandeCity_DrakesRoom_OnFrame
+	map_script MAP_SCRIPT_ON_LOAD, EverGrandeCity_DrakesRoom_OnLoad
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_SidneysRoom_OnWarp
+	.byte 0
+
+@ Unused, Drake uses Sidneys identical OnWarp for some reason
+EverGrandeCity_DrakesRoom_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_DrakesRoom_EventScript_PlayerTurnNorth
+	.2byte 0
+
+EverGrandeCity_DrakesRoom_EventScript_PlayerTurnNorth::
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	end
+
+EverGrandeCity_DrakesRoom_OnFrame:
+	map_script_2 VAR_ELITE_4_STATE, 3, EverGrandeCity_DrakesRoom_EventScript_WalkInCloseDoor
+	.2byte 0
+
+EverGrandeCity_DrakesRoom_EventScript_WalkInCloseDoor::
+	lockall
+	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
+	setvar VAR_ELITE_4_STATE, 4
+	releaseall
+	end
+
+EverGrandeCity_DrakesRoom_OnLoad:
+	call_if_set FLAG_DEFEATED_ELITE_4_CYNTHIA, EverGrandeCity_DrakesRoom_EventScript_ResetAdvanceToNextRoom
+	call_if_eq VAR_ELITE_4_STATE, 4, EverGrandeCity_DrakesRoom_EventScript_CloseDoor
+	end
+
+EverGrandeCity_DrakesRoom_EventScript_ResetAdvanceToNextRoom::
+	call PokemonLeague_EliteFour_EventScript_ResetAdvanceToNextRoom
+	return
+
+EverGrandeCity_DrakesRoom_EventScript_CloseDoor::
+	call PokemonLeague_EliteFour_EventScript_CloseDoor
+	return
+
+EverGrandeCity_DrakesRoom_EventScript_Cynthia::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_ELITE_4_CYNTHIA, EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech
+	playbgm MUS_DP_ENCOUNTER_CHAMPION, FALSE
+	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_CYNTHIA, EverGrandeCity_DrakesRoom_Text_Defeat
+	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
+	end
+
+EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech::
+	msgbox EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	release
+	end
+
+EverGrandeCity_DrakesRoom_EventScript_Defeated::
+	setvar VAR_0x8004, FANCOUNTER_DEFEATED_DRAKE
+	special Script_TryGainNewFanFromCounter
+	setflag FLAG_DEFEATED_ELITE_4_CYNTHIA
+	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+	msgbox EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	release
+	end
+
+EverGrandeCity_DrakesRoom_Text_IntroSpeech:
+	.string "Well, well, well. You must be {PLAYER}.\n"
+	.string "I've heard a lot about you from Dawn,\l"
+	.string "Steven, and Wallace.\p"
+	.string "Dawn called me some time ago when that\n"
+	.string "crisis broke out here in Hoenn, but you\l"
+	.string "had already taken care of everything\l"
+	.string "by the time I arrived.\p"
+	.string "However, since I was here and since\n"
+	.string "Drake fled after his plan failed, they\l"
+	.string "asked me to stand in as the fourth\l"
+	.string "Elite Four member, temporarily.\p"
+	.string "It's really quite unfortunate for you,\n"
+	.string "you've already faced Drake separately,\l"
+	.string "and now you're facing possibly the\l"
+	.string "strongest Elite Four of any region…\p"
+	.string "You know what they say, no good deed\n"
+	.string "goes unpunished!\p"
+	.string "Don't worry though, I won't let my\n"
+	.string "feelings of pity stop me from going all\l"
+	.string "out against you.\p"
+	.string "Get ready, by the time I'm through with\n"
+	.string "you, I promise you'll wish it was Drake\l"
+	.string "here instead.$"
+
+EverGrandeCity_DrakesRoom_Text_Defeat:
+	.string "I'm impressed, and that's saying\n"
+	.string "something. It seems all the things I've\l"
+	.string "heard about you were true after all.$"
+
+EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
+	.string "It seems all the trials you've faced\n"
+	.string "have made you a strong trainer indeed.\p"
+	.string "But what's more impressive to me is the\n"
+	.string "bond you share with your Pokémon.\p"
+	.string "I may seem tough and harsh on my\n"
+	.string "exterior, but inside I know that true\l"
+	.string "strength comes from the bond forged\l"
+	.string "with your Pokémon.\p"
+	.string "It seems you know this as well, and for\n"
+	.string "that more than anything, you have my\l"
+	.string "respect.\p"
+	.string "Now go forth, the Champion is waiting!\n"
+	.string "Or should I say, “Champions”?$"
+
+`

@@ -1,0 +1,818 @@
+{
+  "extractedAt": "2025-06-09T02:33:22.654Z",
+  "gifts": [
+    {
+      "location": "RUSTBORO CITY",
+      "pokemon": "Togepi Egg",
+      "flavor": "in pokemon center"
+    },
+    {
+      "location": "ROUTE111",
+      "pokemon": "Riolu egg",
+      "flavor": "in old mans house"
+    },
+    {
+      "location": "FALLARBOUR TOWN",
+      "pokemon": "Starter eggs for shards",
+      "flavor": "Old man inside house"
+    },
+    {
+      "location": "LAVARIDGE TOWN",
+      "pokemon": "Eevee egg",
+      "flavor": "Old woman by hot springs"
+    },
+    {
+      "location": "Lilycove City",
+      "pokemon": "Type-Null egg",
+      "flavor": "Old man inside house"
+    },
+    {
+      "location": "ROUTE109",
+      "pokemon": "Charcadet",
+      "flavor": "Gift after beating all Beach House trainers"
+    },
+    {
+      "location": "Mauville City",
+      "pokemon": "Costume Pikachu",
+      "flavor": "Man in Pokemon Center"
+    },
+    {
+      "location": "ROUTE111",
+      "pokemon": "Tyrogue",
+      "flavor": "Gift after beating Daisuke"
+    },
+    {
+      "location": "ROUTE121",
+      "pokemon": "Meltan",
+      "flavor": "Gift after beating Byron"
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Celebi",
+      "flavor": "Gift after beaing Sunbird"
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Darkrai",
+      "flavor": "Gift after beating Suneal"
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Victini",
+      "flavor": "Gift after beatin Dollamike"
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Genesect",
+      "flavor": "Gift after beating Danni"
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Shiny DItto",
+      "flavor": "Gift after beating Mastajanes"
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Hoopa",
+      "flavor": "Gift after beating Befools"
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Unknown Pokemon",
+      "flavor": "Gift after beating natn"
+    },
+    {
+      "location": "Unknown Location",
+      "pokemon": "Meloetta",
+      "flavor": ""
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Unknown Pokemon",
+      "flavor": "Gift after beating MasterPoucine"
+    },
+    {
+      "location": "Unknown Location",
+      "pokemon": "Marshadow",
+      "flavor": ""
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Unknown Pokemon",
+      "flavor": "Gift after beating Oblivion wing"
+    },
+    {
+      "location": "Unknown Location",
+      "pokemon": "Zarude",
+      "flavor": ""
+    },
+    {
+      "location": "Evergrande City",
+      "pokemon": "Zeraora",
+      "flavor": "Gift after beating Volkner"
+    },
+    {
+      "location": "Evergrande City",
+      "pokemon": "Kubfu",
+      "flavor": "Gift after beating Dawn and Rival"
+    },
+    {
+      "location": "RUSTBORO CITY",
+      "pokemon": "Mime Jr.",
+      "flavor": "Trade for Ralts"
+    },
+    {
+      "location": "FORTREE CITY",
+      "pokemon": "Fidough",
+      "flavor": "Trade for Maschiff"
+    },
+    {
+      "location": "PACIFIDLOG TOWN",
+      "pokemon": "Iron Bundle",
+      "flavor": "Trade for Delibird"
+    }
+  ],
+  "legendaries": [
+    {
+      "location": "Hoenn",
+      "pokemon": "Articuno",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Route 114",
+      "pokemon": "Articuno-Galar",
+      "flavor": "Badge 8 - Lv. 70 - Climb the waterfall on Route 114."
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Zapdos",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Route 119",
+      "pokemon": "Zapdos-Galar",
+      "flavor": "Badge 8 - Lv. 70 - Climb a Waterfall ln Route 119, near Weather Institute."
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Moltres",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Granite Cave",
+      "pokemon": "Moltres-Galar",
+      "flavor": "Badge 8 - Lv. 70 - Granite Cave, at the end of the Mach Bike path."
+    },
+    {
+      "location": "Meteor Falls",
+      "pokemon": "Mewtwo",
+      "flavor": "Postgame - Lv. 70 - Meteor Falls, in the room full of Metagross line encounters."
+    },
+    {
+      "location": "Faraway Island",
+      "pokemon": "Mew",
+      "flavor": "Postgame - Lv. 30 - Faraway Island after you obtain the Old Sea Map in the room where Lugia is (follow Lugia's guide to know where you can find that Pokémon)."
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Raikou",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Entei",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Suicune",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Route 134",
+      "pokemon": "Lugia",
+      "flavor": "Postgame - Lv. 70 - Route 134: solve the strong current puzzle just west of Pacifidlog Town, and dive there. Go to the surface in front of the braille tablet, then open a door by using Dig in front of the braille tablet north of that new room."
+    },
+    {
+      "location": "Route 130",
+      "pokemon": "Ho-Oh",
+      "flavor": "Postgame - Lv. 70 - Route 130, Mirage Island."
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Celebi",
+      "flavor": "Badge 6 - Lv. 50 - Mossdeep City, as a gift after defeating Sunbird"
+    },
+    {
+      "location": "Route 111",
+      "pokemon": "Regirock",
+      "flavor": "Badge 6 - Lv. 70 - Route 111, in a little cave southmost area in the desert."
+    },
+    {
+      "location": "Route 105",
+      "pokemon": "Regice",
+      "flavor": "Badge 6 - Lv. 70 - Route 105, in a little cave west of the route."
+    },
+    {
+      "location": "Route 120",
+      "pokemon": "Registeel",
+      "flavor": "Badge 6 - Lv. 70 - Route 120, in the little cave accessible by the stairs in the southmost area of the route."
+    },
+    {
+      "location": "Southern Island",
+      "pokemon": "Latias",
+      "flavor": "Postgame - Lv. 70 - Southern Island."
+    },
+    {
+      "location": "Southern Island",
+      "pokemon": "Latios",
+      "flavor": "Postgame - Lv. 70 - Southern Island."
+    },
+    {
+      "location": "Go to Weather Institute",
+      "pokemon": "Kyogre",
+      "flavor": "Postgame - Lv. 70 - Go to Weather Institute, then ask the Scientist upstairs to tell where the current rainfall is in Hoenn. Go find the diving spot on the Route mentioned."
+    },
+    {
+      "location": "Go to Weather Institute",
+      "pokemon": "Groudon",
+      "flavor": "Postgame - Lv. 70 - Go to Weather Institute, then ask the Scientist upstairs to tell where the current drought is in Hoenn. Go find the cave on the Route mentioned."
+    },
+    {
+      "location": "Sky Pillar",
+      "pokemon": "Rayquaza",
+      "flavor": "Postgame - Lv. 70 - At the top of Sky Pillar."
+    },
+    {
+      "location": "Meteor Falls",
+      "pokemon": "Jirachi",
+      "flavor": "Badge 8 - Lv. 50-55 - Meteor Falls, in any zone that's accessible via the waterfall, 1% encounter"
+    },
+    {
+      "location": "Birth Island",
+      "pokemon": "Deoxys",
+      "flavor": "Postgame - Lv. 30 - Birth Island."
+    },
+    {
+      "location": "Mt. Chimney",
+      "pokemon": "Deoxys-A",
+      "flavor": "If you have Deoxys or any of its forms - Grab the Meteorite Key Item on Mt. Chimney if you haven't already, then use it on the Deoxys in your party."
+    },
+    {
+      "location": "Unknown Location",
+      "pokemon": "Deoxys-D",
+      "flavor": ""
+    },
+    {
+      "location": "Unknown Location",
+      "pokemon": "Deoxys-S",
+      "flavor": ""
+    },
+    {
+      "location": "Route 115",
+      "pokemon": "Uxie",
+      "flavor": "Badge 6 - Lv. 70 - Route 115, surf up from Rustboro City."
+    },
+    {
+      "location": "Route 103",
+      "pokemon": "Mesprit",
+      "flavor": "Badge 6 - Lv. 70 - Route 103, in a little cave you can surf to in-between the left side and the right side of the surf area."
+    },
+    {
+      "location": "Route 120",
+      "pokemon": "Azelf",
+      "flavor": "Badge 6 - Lv. 70 - Route 120, in the little cave right next to Fortree City."
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Dialga",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Dialga-Origin",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Palkia",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Palkia-Origin",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Heatran",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Victory Road",
+      "pokemon": "Regigigas",
+      "flavor": "Badge 8 - Lv. 70 - Victory Road, not too far from the exit."
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Giratina",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Giratina-O",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Cresselia",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Route 130",
+      "pokemon": "Phione",
+      "flavor": "Badge 5 - Lv. 40-45 - From Super Rod fishing on Route 130 or 131, 1% encounter OR Hatch an Egg obtained from a Manaphy parent and a Ditto."
+    },
+    {
+      "location": "Route 132",
+      "pokemon": "Manaphy",
+      "flavor": "Badge 6 - Lv. 40-45 - From Super Rod fishing on Route 132 or 133, 1% encounter."
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Darkrai",
+      "flavor": "Badge 6 - Lv. 50 - Mossdeep City, as a gift after defeating Suneal."
+    },
+    {
+      "location": "Sky Pillar",
+      "pokemon": "Shaymin",
+      "flavor": "Badge 6 - Lv. 60-65 - Sky Pillar, 1% encounter"
+    },
+    {
+      "location": "Route 124",
+      "pokemon": "Shaymin-Sky",
+      "flavor": "If you have Shaymin - Use Gracidea Key Item on Shaymin. To obtain this item, claim it on Route 124, in the Form Changer' house. Use the Gracidea again to revert to normal form."
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Arceus",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Victini",
+      "flavor": "Badge 6 - Lv. 50 - Mossdeep City, as a gift after defeating DollaMike."
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Cobalion",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Terrakion",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Virizion",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Tornadus-I",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Route 124",
+      "pokemon": "Tornadus-T",
+      "flavor": "If you have Tornadus - Use Reveal Glass Key Item on Tornadus-I. To obtain this item, claim it on Route 124, in the Form Changer' house. Use the Reveal Glass again to revert to Incarnate form."
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Thundurus-I",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Route 124",
+      "pokemon": "Thundurus-T",
+      "flavor": "If you have Thundurus - Use Reveal Glass Key Item on Thundurus-I. To obtain this item, claim it on Route 124, in the Form Changer' house. Use the Reveal Glass again to revert to Incarnate form."
+    },
+    {
+      "location": "Navel Rock",
+      "pokemon": "Reshiram",
+      "flavor": "Postgame - Lv. 70 - Navel Rock. Claim the Mysticticket from Winstrate Family first."
+    },
+    {
+      "location": "Navel Rock",
+      "pokemon": "Zekrom",
+      "flavor": "Postgame - Lv. 70 - Navel Rock. Claim the Mysticticket from Winstrate Family first."
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Landorus-I",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Route 124",
+      "pokemon": "Landorus-T",
+      "flavor": "If you have Thundurus - Use Reveal Glass Key Item on Landorus-I. To obtain this item, claim it on Route 124, in the Form Changer' house. Use the Reveal Glass again to revert to Incarnate form."
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Kyurem",
+      "flavor": "Badge 6 - Lv. 70 - Shoal Cave above Mossdeep City, when the tide is low and allows you to walk to access the icy cave area (tide changes every 6 hours)."
+    },
+    {
+      "location": "Devon Corporation",
+      "pokemon": "Kyurem-B",
+      "flavor": "Postgame - Use DNA Splicer Key Item on Kyurem then Reshiram/Zekrom. To obtain this item, go to the Devon Corporation after obtaining 8 Badges and show one of the researchers on the 2nd floor a Kyurem. You can use the DNA Splicers to unfuse them as well."
+    },
+    {
+      "location": "Unknown Location",
+      "pokemon": "Kyurem-W",
+      "flavor": ""
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Keldeo",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Meloetta",
+      "flavor": "Badge 7 - Lv. 50 - Sootopolis City, as a gift after defeating Natn."
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Genesect",
+      "flavor": "Badge 7 - Lv. 50 - Sootopolis City, as a gift after defeating Danni."
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Xerneas",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Yveltal",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Zygarde-10",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Zygarde",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Victory Road",
+      "pokemon": "Diancie",
+      "flavor": "Badge 8 - Lv. 60-65 - Victory Road, 1% encounter."
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Hoopa",
+      "flavor": "Badge 7 - Lv. 50 - Sootopolis City, as a gift after defeating Befools."
+    },
+    {
+      "location": "Route 124",
+      "pokemon": "Hoopa-U",
+      "flavor": "If you have Hoopa - Use Prison Bottle Key Item on Hoopa. To obtain this item, claim it on Route 124, in the Form Changer' house. Use the Prison Bottle again to revert to normal form."
+    },
+    {
+      "location": "Route 133",
+      "pokemon": "Volcanion",
+      "flavor": "Badge 6 - Lv. 40-45 - Route 133, 2% encounter on land."
+    },
+    {
+      "location": "Lilycove City",
+      "pokemon": "Type: Null",
+      "flavor": "Badge 6 - Lilycove City, inside an Egg given by an old man with a Kecleon, in the house just right of the Egg Move Tutor's house."
+    },
+    {
+      "location": "Lilycove City",
+      "pokemon": "Silvally",
+      "flavor": "If you have Type:Null - Evolve Type: Null (Level-Up with 220+ Happiness). You can change Silvally's form by making it hold a Memory of the corresponding type. They are given by a man in Lilycove City, in the house right next to the beach."
+    },
+    {
+      "location": "Route 126",
+      "pokemon": "Tapu Koko",
+      "flavor": "Badge 7 - Lv. 70 - Use Dive on Route 126 on the left of a male Swimmer trainer, just next to the Form Changer's house."
+    },
+    {
+      "location": "Route 124",
+      "pokemon": "Tapu Lele",
+      "flavor": "Badge 7 - Lv. 70 - Use Dive on Route 124, just a bit to the right of the Tuber girl trainer that's alone. Then go to the surface in the first marked area where you can, not the second one."
+    },
+    {
+      "location": "Rusturf Tunnel",
+      "pokemon": "Tapu Bulu",
+      "flavor": "Badge 7 - Lv. 70 - Inside Rusturf Tunnel, in the little sub-area south of the cave, left of the Verdanturf Town exit."
+    },
+    {
+      "location": "Abandoned Ship",
+      "pokemon": "Tapu Fini",
+      "flavor": "Badge 7 - Lv. 70 - Abandoned Ship, in the area accessible by diving in the water in the cabin right below the Sailor trainer."
+    },
+    {
+      "location": "Artisan Cave",
+      "pokemon": "Cosmog",
+      "flavor": "Postgame - Lv. 40 - Artisan Cave 1F, 40% encounter."
+    },
+    {
+      "location": "Evolve Cosmog.",
+      "pokemon": "Cosmoem",
+      "flavor": "Postgame - Evolve Cosmog."
+    },
+    {
+      "location": "Evolve Cosmoem.",
+      "pokemon": "Solgaleo",
+      "flavor": "Postgame - Evolve Cosmoem."
+    },
+    {
+      "location": "Evolve Cosmoem.",
+      "pokemon": "Lunala",
+      "flavor": "Postgame - Evolve Cosmoem."
+    },
+    {
+      "location": "Route 115",
+      "pokemon": "Nihilego",
+      "flavor": "Badge 5 - Lv. 28-33 - Route 115, 1% encounter in the grass OR Lv. 45-50 - Route 128, 1% encounter in the grass."
+    },
+    {
+      "location": "Route 115",
+      "pokemon": "Buzzwole",
+      "flavor": "Badge 5 - Lv. 28-33 - Route 115, 1% encounter in the grass."
+    },
+    {
+      "location": "Route 119",
+      "pokemon": "Pheromosa",
+      "flavor": "Badge 5 - Lv. 30-35 - Route 119, 1% encounter in the grass."
+    },
+    {
+      "location": "Route 121",
+      "pokemon": "Xurkitree",
+      "flavor": "Badge 6 - Lv. 38-42 - Route 121, 1% encounter in the grass."
+    },
+    {
+      "location": "Safari Zone",
+      "pokemon": "Celesteela",
+      "flavor": "Badge 6 - Lv. 40-45 - Safari Zone southeast area, 1% encounter in the grass."
+    },
+    {
+      "location": "Route 119",
+      "pokemon": "Kartana",
+      "flavor": "Badge 5 - Lv. 30-35 - Route 119, 1% encounter in the grass."
+    },
+    {
+      "location": "Safari Zone",
+      "pokemon": "Guzzlord",
+      "flavor": "Badge 6 - Lv. 40-45 - Safari Zone southwest area, 1% encounter in the grass."
+    },
+    {
+      "location": "Artisan Cave",
+      "pokemon": "Necrozma",
+      "flavor": "Postgame - Lv. 40 - Artisan Cave B1F, 10% encounter."
+    },
+    {
+      "location": "Devon Corporation",
+      "pokemon": "Necrozma Forms",
+      "flavor": "Postgame - Use N-Lunarizer/N-Solarizer Key Items on Necrozma then Solgaleo/Lunala. To obtain this item, go to the Devon Corporation after obtaining 8 Badges and show one of the researchers on the 2nd floor a Necrozma. You can use the N-Lunarizer/N-Solarizer to unfuse them as well."
+    },
+    {
+      "location": "Evergrande City",
+      "pokemon": "Magearna",
+      "flavor": "Badge 8 - Lv. 60-65 - Evergrande City, 2% encounter."
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Marshadow",
+      "flavor": "Badge 7 - Lv. 50 - Sootopolis City, as a gift after defeating MasterPoucine."
+    },
+    {
+      "location": "Safari Zone",
+      "pokemon": "Poipole",
+      "flavor": "Badge 6 - Lv. 40-45 - Safari Zone south area, 1% encounter in the grass."
+    },
+    {
+      "location": "Evolve Poipole (Level-Up while knowing Dragon Pulse).",
+      "pokemon": "Naganadel",
+      "flavor": "If you have Poipole - Evolve Poipole (Level-Up while knowing Dragon Pulse)."
+    },
+    {
+      "location": "Safari Zone",
+      "pokemon": "Stakataka",
+      "flavor": "Badge 6 - Lv. 40-45 - Safari Zone southeast area, 1% encounter in the grass."
+    },
+    {
+      "location": "Route 121",
+      "pokemon": "Blacephalon",
+      "flavor": "Badge 6 - Lv. 38-42 - Route 121, 1% encounter in the grass."
+    },
+    {
+      "location": "Evergrande City",
+      "pokemon": "Zeraora",
+      "flavor": "Badge 8 - Lv. 50 - Evergrande City, as a gift after defeating Volkner."
+    },
+    {
+      "location": "Route 121",
+      "pokemon": "Meltan",
+      "flavor": "Badge 6 - Lv. 30 - Route 121, as a gift after defeating Byron."
+    },
+    {
+      "location": "Evolve Meltan (Use Metal Coat).",
+      "pokemon": "Melmetal",
+      "flavor": "If you have Meltan - Evolve Meltan (Use Metal Coat)."
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Zacian",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Zamazenta",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Eternatus",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Victory Road",
+      "pokemon": "Kubfu",
+      "flavor": "Badge 8 - Lv. 40 - Evergrande City, as a gift after defeating Dawn and Brendan right before Victory Road."
+    },
+    {
+      "location": "Evolve Kubfu (Use Dusk Stone).",
+      "pokemon": "Urshifu-Single",
+      "flavor": "If you have Kubfu - Evolve Kubfu (Use Dusk Stone)."
+    },
+    {
+      "location": "Evolve Kubfu (Use Water Stone).",
+      "pokemon": "Urshifu-Rapid",
+      "flavor": "If you have Kubfu - Evolve Kubfu (Use Water Stone)."
+    },
+    {
+      "location": "Sootopolis City",
+      "pokemon": "Zarude",
+      "flavor": "Badge 7 - Lv. 50 - Sootopolis City, as a gift after defeating OblivionWing."
+    },
+    {
+      "location": "New Mauville",
+      "pokemon": "Regieleki",
+      "flavor": "Badge 6 - Lv. 70 - New Mauville, on the generator button."
+    },
+    {
+      "location": "Route 114",
+      "pokemon": "Regidrago",
+      "flavor": "Badge 6 - Lv. 70 - Route 114, in a little cave on the left side of the wooden bridge."
+    },
+    {
+      "location": "Artisan Cave",
+      "pokemon": "Glastrier",
+      "flavor": "Postgame - Lv. 40 - Artisan Cave B1F, 20% encounter."
+    },
+    {
+      "location": "Artisan Cave",
+      "pokemon": "Spectrier",
+      "flavor": "Postgame - Lv. 40 - Artisan Cave B1F, 20% encounter."
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Calyrex",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Devon Corporation",
+      "pokemon": "Calyrex-Ice",
+      "flavor": "Postgame - Use Reins of Unity Key Item on Calyrex then Glastrier/Spectrier. To obtain this item, go to the Devon Corporation after obtaining 8 Badges and show one of the researchers on the 2nd floor a Calyrex. You can use the Reins of Unity to unfuse them as well."
+    },
+    {
+      "location": "Devon Corporation",
+      "pokemon": "Calyrex-Shadow",
+      "flavor": "Postgame - Use Reins of Unity Key Item on Calyrex then Glastrier/Spectrier. To obtain this item, go to the Devon Corporation after obtaining 8 Badges and show one of the researchers on the 2nd floor a Calyrex. You can use the Reins of Unity to unfuse them as well."
+    },
+    {
+      "location": "Hoenn",
+      "pokemon": "Enamorus-I",
+      "flavor": "Victory Road - Lv. 50 - Roams around Hoenn (Roamers are unlocked after you exit Victory Road and get close to the League entrance)"
+    },
+    {
+      "location": "Route 124",
+      "pokemon": "Enamorus-T",
+      "flavor": "If you have Enamorus - Use Reveal Glass Key Item on Enamorus-I. To obtain this item, claim it on Route 124, in the Form Changer' house. Use the Reveal Glass again to revert to Incarnate form."
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Walking Wake",
+      "flavor": "Badge 6 - Lv. 50-60 - Shoal Cave above Mossdeep City, in the high tide areas, 5% encounter (tide changes every 6 hours)."
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Gouging Fire",
+      "flavor": "Badge 6 - Lv. 50-60 - Shoal Cave above Mossdeep City, in the high tide areas, 5% encounter (tide changes every 6 hours)."
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Raging Bolt",
+      "flavor": "Badge 6 - Lv. 50-60 - Shoal Cave above Mossdeep City, in the high tide areas, 5% encounter (tide changes every 6 hours)."
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Iron Leaves",
+      "flavor": "Badge 6 - Lv. 50-60 - Shoal Cave above Mossdeep City, in areas only accessible when the tide is low, 5% encounter (tide changes every 6 hours)."
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Iron Boulder",
+      "flavor": "Badge 6 - Lv. 50-60 - Shoal Cave above Mossdeep City, in areas only accessible when the tide is low, 5% encounter (tide changes every 6 hours)."
+    },
+    {
+      "location": "Mossdeep City",
+      "pokemon": "Iron Crown",
+      "flavor": "Badge 6 - Lv. 50-60 - Shoal Cave above Mossdeep City, in areas only accessible when the tide is low, 5% encounter (tide changes every 6 hours)."
+    },
+    {
+      "location": "Magma Hideout",
+      "pokemon": "Ting-Lu",
+      "flavor": "Badge 7 - Lv. 40-50 - Magma Hideout, 1% encounter."
+    },
+    {
+      "location": "Seafloor Cavern",
+      "pokemon": "Chien-Pao",
+      "flavor": "Badge 7 - Lv. 40-50 - Seafloor Cavern, 1% encounter."
+    },
+    {
+      "location": "Seafloor Cavern",
+      "pokemon": "Wo-Chien",
+      "flavor": "Badge 7 - Lv. 40-50 - Seafloor Cavern, 1% encounter."
+    },
+    {
+      "location": "Magma Hideout",
+      "pokemon": "Chi-Yu",
+      "flavor": "Badge 7 - Lv. 40-50 - Magma Hideout, 1% encounter."
+    },
+    {
+      "location": "Safari Zone",
+      "pokemon": "Okidogi",
+      "flavor": "Badge 6 - Lv. 40-45 - Safari Zone north area, 1% encounter in the grass."
+    },
+    {
+      "location": "Safari Zone",
+      "pokemon": "Munkidori",
+      "flavor": "Badge 6 - Lv. 40-45 - Safari Zone southwest area, 1% encounter in the grass."
+    },
+    {
+      "location": "Safari Zone",
+      "pokemon": "Fezandipiti",
+      "flavor": "Badge 6 - Lv. 40-45 - Safari Zone northeast area, 1% encounter in the grass."
+    },
+    {
+      "location": "Safari Zone",
+      "pokemon": "Ogerpon",
+      "flavor": "Badge 6 - Lv. 40-45 - Safari Zone northwest area, 2% encounter in the grass."
+    },
+    {
+      "location": "Safari Zone",
+      "pokemon": "Ogerpon-Wellspring",
+      "flavor": "If you have Ogerpon - Make Ogerpon hold a Cornerstone Mask in battle, which can be found in Safari Zone's north west area."
+    },
+    {
+      "location": "Safari Zone",
+      "pokemon": "Ogerpon-Hearthflame",
+      "flavor": "If you have Ogerpon - Make Ogerpon hold a Cornerstone Mask in battle, which can be found in Safari Zone's south east area."
+    },
+    {
+      "location": "Safari Zone",
+      "pokemon": "Ogerpon-Cornerstone",
+      "flavor": "If you have Ogerpon - Make Ogerpon hold a Cornerstone Mask in battle, which can be found in Safari Zone's north east area."
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Terapagos",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Mt. Pyre",
+      "pokemon": "Pecharunt",
+      "flavor": "Badge 6 - Lv. 35-45 - Mt. Pyre, 2% encounter."
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Koraidon",
+      "flavor": "- - Unavailable"
+    },
+    {
+      "location": "Unavailable",
+      "pokemon": "Miraidon",
+      "flavor": "- - Unavailable"
+    }
+  ],
+  "totalEntries": 162
+}

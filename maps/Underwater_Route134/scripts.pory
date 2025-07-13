@@ -1,0 +1,32 @@
+raw `
+Underwater_Route134_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, Underwater_Route134_OnResume
+	.byte 0
+
+Underwater_Route134_OnResume:
+	setdivewarp MAP_ROUTE134, 60, 31
+	end
+
+`
+
+script Underwater_Route134_Trigger_BlockCavernEntrance{
+	lockall
+	msgbox(PowerfulAura)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, StopPlayerUp)
+	waitmovement(0)
+	releaseall
+	end
+}
+
+text PowerfulAura{
+	"You feel an extremely powerful\n"
+	"aura radiating from something\l"
+	"further ahead.\p"
+	"It's probably best to come back once\n"
+	"you've become stronger."
+}
+
+movement StopPlayerUp {
+	walk_up
+}

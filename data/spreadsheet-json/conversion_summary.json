@@ -1,0 +1,38 @@
+{
+  "fileName": "emerald_imperium_giftmons.xlsx",
+  "extractedAt": "2025-06-09T01:31:45.473Z",
+  "totalSheets": 2,
+  "sheets": [
+    {
+      "name": "Gifts and Eggs",
+      "rows": 26,
+      "columns": 8,
+      "headers": [
+        "LOCATION",
+        "GIFT",
+        "FLAVOR",
+        "Column_4",
+        "Column_5",
+        "Column_6",
+        "Column_7",
+        "Column_8"
+      ]
+    },
+    {
+      "name": "LegendariesMythicals",
+      "rows": 136,
+      "columns": 9,
+      "headers": [
+        "Column_1",
+        "Column_2",
+        "POKEMON",
+        "Column_4",
+        "REQUIRED",
+        "Column_6",
+        "LOCATION",
+        "Column_8",
+        "Column_9"
+      ]
+    }
+  ]
+}

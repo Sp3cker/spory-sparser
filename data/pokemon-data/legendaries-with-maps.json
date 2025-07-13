@@ -1,0 +1,1064 @@
+[
+  {
+    "Pokémon": "Articuno",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_ARTICUNO",
+    "nameKey": "Articuno",
+    "index": 144
+  },
+  {
+    "Pokémon": "Articuno-Galarian",
+    "Location": "Route 114 Waterfall",
+    "Flavor": "Lv. 70, climb waterfall after Badge 8.",
+    "mapBasename": "MAP_ROUTE114",
+    "speciesName": "SPECIES_ARTICUNO_GALAR",
+    "nameKey": "Articuno-Galar",
+    "index": 982
+  },
+  {
+    "Pokémon": "Zapdos",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_ZAPDOS",
+    "nameKey": "Zapdos",
+    "index": 145
+  },
+  {
+    "Pokémon": "Zapdos-Galarian",
+    "Location": "Route 119 Waterfall",
+    "Flavor": "Lv. 70, climb waterfall near Weather Institute after Badge 8.",
+    "mapBasename": "MAP_ROUTE119",
+    "speciesName": "SPECIES_ZAPDOS_GALAR",
+    "nameKey": "Zapdos-Galar",
+    "index": 983
+  },
+  {
+    "Pokémon": "Moltres",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_MOLTRES",
+    "nameKey": "Moltres",
+    "index": 146
+  },
+  {
+    "Pokémon": "Moltres-Galarian",
+    "Location": "Granite Cave (Mach Bike Path)",
+    "Flavor": "Lv. 70, at end of Mach Bike path after Badge 8.",
+    "mapBasename": "MAP_GRANITE_CAVE",
+    "speciesName": "SPECIES_MOLTRES_GALAR",
+    "nameKey": "Moltres-Galar",
+    "index": 984
+  },
+  {
+    "Pokémon": "Mewtwo",
+    "Location": "Meteor Falls (Metagross Room)",
+    "Flavor": "Lv. 70, postgame in room with Metagross line encounters.",
+    "mapBasename": "MAP_METEOR_FALLS",
+    "speciesName": "SPECIES_MEWTWO",
+    "nameKey": "Mewtwo",
+    "index": 150
+  },
+  {
+    "Pokémon": "Mew",
+    "Location": "Faraway Island",
+    "Flavor": "Lv. 30, postgame after obtaining Old Sea Map in Lugia's room.",
+    "mapBasename": "MAP_FARAWAY_ISLAND",
+    "speciesName": "SPECIES_MEW",
+    "nameKey": "Mew",
+    "index": 151
+  },
+  {
+    "Pokémon": "Raikou",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_RAIKOU",
+    "nameKey": "Raikou",
+    "index": 243
+  },
+  {
+    "Pokémon": "Entei",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_ENTEI",
+    "nameKey": "Entei",
+    "index": 244
+  },
+  {
+    "Pokémon": "Suicune",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_SUICUNE",
+    "nameKey": "Suicune",
+    "index": 245
+  },
+  {
+    "Pokémon": "Lugia",
+    "Location": "Route 134",
+    "Flavor": "Lv. 70, postgame. Solve strong current puzzle west of Pacifidlog Town, dive, surface at braille tablet, use Dig at northern tablet.",
+    "mapBasename": "MAP_ROUTE134",
+    "speciesName": "SPECIES_LUGIA",
+    "nameKey": "Lugia",
+    "index": 249
+  },
+  {
+    "Pokémon": "Ho-Oh",
+    "Location": "Route 130 (Mirage Island)",
+    "Flavor": "Lv. 70, postgame on Mirage Island.",
+    "mapBasename": "MAP_ROUTE130",
+    "speciesName": "SPECIES_HO_OH",
+    "nameKey": "Ho-Oh",
+    "index": 250
+  },
+  {
+    "Pokémon": "Celebi",
+    "Location": "Mossdeep City",
+    "Flavor": "Lv. 50, gift after defeating Sunbird (Badge 6).",
+    "mapBasename": "MAP_MOSSDEEP_CITY",
+    "speciesName": "SPECIES_CELEBI",
+    "nameKey": "Celebi",
+    "index": 251
+  },
+  {
+    "Pokémon": "Regirock",
+    "Location": "Route 111 (Desert Cave)",
+    "Flavor": "Lv. 70, in southmost desert cave after Badge 6.",
+    "mapBasename": "MAP_ROUTE111",
+    "speciesName": "SPECIES_REGIROCK",
+    "nameKey": "Regirock",
+    "index": 377
+  },
+  {
+    "Pokémon": "Regice",
+    "Location": "Route 105 (Cave)",
+    "Flavor": "Lv. 70, in cave west of route after Badge 6.",
+    "mapBasename": "MAP_ROUTE105",
+    "speciesName": "SPECIES_REGICE",
+    "nameKey": "Regice",
+    "index": 378
+  },
+  {
+    "Pokémon": "Registeel",
+    "Location": "Route 120 (Cave)",
+    "Flavor": "Lv. 70, in cave accessible by southmost stairs after Badge 6.",
+    "mapBasename": "MAP_ROUTE120",
+    "speciesName": "SPECIES_REGISTEEL",
+    "nameKey": "Registeel",
+    "index": 379
+  },
+  {
+    "Pokémon": "Latias",
+    "Location": "Southern Island",
+    "Flavor": "Lv. 70, postgame.",
+    "mapBasename": "MAP_SOUTHERN_ISLAND",
+    "speciesName": "SPECIES_LATIAS",
+    "nameKey": "Latias",
+    "index": 380
+  },
+  {
+    "Pokémon": "Latios",
+    "Location": "Southern Island",
+    "Flavor": "Lv. 70, postgame.",
+    "mapBasename": "MAP_SOUTHERN_ISLAND",
+    "speciesName": "SPECIES_LATIOS",
+    "nameKey": "Latios",
+    "index": 381
+  },
+  {
+    "Pokémon": "Kyogre",
+    "Location": "Hoenn (Diving Spot)",
+    "Flavor": "Lv. 70, postgame. Ask Scientist at Weather Institute for rainfall Route, then dive at specified spot.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_KYOGRE",
+    "nameKey": "Kyogre",
+    "index": 382
+  },
+  {
+    "Pokémon": "Groudon",
+    "Location": "Hoenn (Cave)",
+    "Flavor": "Lv. 70, postgame. Ask Scientist at Weather Institute for drought Route, then find cave.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_GROUDON",
+    "nameKey": "Groudon",
+    "index": 383
+  },
+  {
+    "Pokémon": "Rayquaza",
+    "Location": "Sky Pillar (Top)",
+    "Flavor": "Lv. 70, postgame at top of Sky Pillar.",
+    "mapBasename": "MAP_SKY_PILLAR",
+    "speciesName": "SPECIES_RAYQUAZA",
+    "nameKey": "Rayquaza",
+    "index": 384
+  },
+  {
+    "Pokémon": "Jirachi",
+    "Location": "Meteor Falls (Waterfall Zones)",
+    "Flavor": "Lv. 50-55, 1% encounter in any waterfall-accessible zone after Badge 8.",
+    "mapBasename": "MAP_METEOR_FALLS",
+    "speciesName": "SPECIES_JIRACHI",
+    "nameKey": "Jirachi",
+    "index": 385
+  },
+  {
+    "Pokémon": "Deoxys",
+    "Location": "Birth Island",
+    "Flavor": "Lv. 30, postgame.",
+    "mapBasename": "MAP_BIRTH_ISLAND",
+    "speciesName": "SPECIES_DEOXYS_NORMAL",
+    "nameKey": "Deoxys-Normal",
+    "index": 386
+  },
+  {
+    "Pokémon": "Deoxys-A",
+    "Location": "Mt. Chimney",
+    "Flavor": "Use Meteorite Key Item on Deoxys if in party.",
+    "mapBasename": "MAP_MT_CHIMNEY",
+    "speciesName": "SPECIES_DEOXYS_ATTACK",
+    "nameKey": "Deoxys-Attack",
+    "index": 1054
+  },
+  {
+    "Pokémon": "Deoxys-D",
+    "Location": "Mt. Chimney",
+    "Flavor": "Use Meteorite Key Item on Deoxys if in party.",
+    "mapBasename": "MAP_MT_CHIMNEY",
+    "speciesName": "SPECIES_DEOXYS_DEFENSE",
+    "nameKey": "Deoxys-Defense",
+    "index": 1055
+  },
+  {
+    "Pokémon": "Deoxys-S",
+    "Location": "Mt. Chimney",
+    "Flavor": "Use Meteorite Key Item on Deoxys if in party.",
+    "mapBasename": "MAP_MT_CHIMNEY",
+    "speciesName": "SPECIES_DEOXYS_SPEED",
+    "nameKey": "Deoxys-Speed",
+    "index": 1056
+  },
+  {
+    "Pokémon": "Uxie",
+    "Location": "Route 115",
+    "Flavor": "Lv. 70, surf up from Rustboro City after Badge 6.",
+    "mapBasename": "MAP_ROUTE115",
+    "speciesName": "SPECIES_UXIE",
+    "nameKey": "Uxie",
+    "index": 480
+  },
+  {
+    "Pokémon": "Mesprit",
+    "Location": "Route 103 (Cave)",
+    "Flavor": "Lv. 70, surf to cave between left and right surf areas after Badge 6.",
+    "mapBasename": "MAP_ROUTE103",
+    "speciesName": "SPECIES_MESPRIT",
+    "nameKey": "Mesprit",
+    "index": 481
+  },
+  {
+    "Pokémon": "Azelf",
+    "Location": "Route 120 (Cave)",
+    "Flavor": "Lv. 70, in cave next to Fortree City after Badge 6.",
+    "mapBasename": "MAP_ROUTE120",
+    "speciesName": "SPECIES_AZELF",
+    "nameKey": "Azelf",
+    "index": 482
+  },
+  {
+    "Pokémon": "Regigigas",
+    "Location": "Victory Road",
+    "Flavor": "Lv. 70, near exit after Badge 8.",
+    "mapBasename": "MAP_VICTORY_ROAD",
+    "speciesName": "SPECIES_REGIGIGAS",
+    "nameKey": "Regigigas",
+    "index": 486
+  },
+  {
+    "Pokémon": "Cresselia",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_CRESSELIA",
+    "nameKey": "Cresselia",
+    "index": 488
+  },
+  {
+    "Pokémon": "Phione",
+    "Location": "Route 130 or 131",
+    "Flavor": "Lv. 40-45, 1% encounter with Super Rod or hatch Egg from Manaphy and Ditto (Badge 5).",
+    "mapBasename": "MAP_ROUTE130",
+    "speciesName": "SPECIES_PHIONE",
+    "nameKey": "Phione",
+    "index": 489
+  },
+  {
+    "Pokémon": "Manaphy",
+    "Location": "Route 132 or 133",
+    "Flavor": "Lv. 40-45, 1% encounter with Super Rod (Badge 6).",
+    "mapBasename": "MAP_ROUTE132",
+    "speciesName": "SPECIES_MANAPHY",
+    "nameKey": "Manaphy",
+    "index": 490
+  },
+  {
+    "Pokémon": "Darkrai",
+    "Location": "Mossdeep City",
+    "Flavor": "Lv. 50, gift after defeating Suneal (Badge 6).",
+    "mapBasename": "MAP_MOSSDEEP_CITY",
+    "speciesName": "SPECIES_DARKRAI",
+    "nameKey": "Darkrai",
+    "index": 491
+  },
+  {
+    "Pokémon": "Shaymin",
+    "Location": "Sky Pillar",
+    "Flavor": "Lv. 60-65, 1% encounter (Badge 6).",
+    "mapBasename": "MAP_SKY_PILLAR",
+    "speciesName": "SPECIES_SHAYMIN_LAND",
+    "nameKey": "Shaymin-Land",
+    "index": 492
+  },
+  {
+    "Pokémon": "Shaymin-Sky",
+    "Location": "Route 124",
+    "Flavor": "Use Gracidea Key Item on Shaymin (obtained from Form Changer's house).",
+    "mapBasename": "MAP_ROUTE124",
+    "speciesName": "SPECIES_SHAYMIN_SKY",
+    "nameKey": "Shaymin-Sky",
+    "index": 1072
+  },
+  {
+    "Pokémon": "Victini",
+    "Location": "Mossdeep City",
+    "Flavor": "Lv. 50, gift after defeating DollaMike (Badge 6).",
+    "mapBasename": "MAP_MOSSDEEP_CITY",
+    "speciesName": "SPECIES_VICTINI",
+    "nameKey": "Victini",
+    "index": 494
+  },
+  {
+    "Pokémon": "Cobalion",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_COBALION",
+    "nameKey": "Cobalion",
+    "index": 638
+  },
+  {
+    "Pokémon": "Terrakion",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_TERRAKION",
+    "nameKey": "Terrakion",
+    "index": 639
+  },
+  {
+    "Pokémon": "Virizion",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_VIRIZION",
+    "nameKey": "Virizion",
+    "index": 640
+  },
+  {
+    "Pokémon": "Tornadus-I",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_TORNADUS_INCARNATE",
+    "nameKey": "Tornadus-Incarnate",
+    "index": 641
+  },
+  {
+    "Pokémon": "Tornadus-T",
+    "Location": "Route 124",
+    "Flavor": "Use Reveal Glass Key Item on Tornadus-I (obtained from Form Changer's house).",
+    "mapBasename": "MAP_ROUTE124",
+    "speciesName": "SPECIES_TORNADUS_THERIAN",
+    "nameKey": "Tornadus-Therian",
+    "index": 1100
+  },
+  {
+    "Pokémon": "Thundurus-I",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_THUNDURUS_INCARNATE",
+    "nameKey": "Thundurus-Incarnate",
+    "index": 642
+  },
+  {
+    "Pokémon": "Thundurus-T",
+    "Location": "Route 124",
+    "Flavor": "Use Reveal Glass Key Item on Thundurus-I (obtained from Form Changer's house).",
+    "mapBasename": "MAP_ROUTE124",
+    "speciesName": "SPECIES_THUNDURUS_THERIAN",
+    "nameKey": "Thundurus-Therian",
+    "index": 1101
+  },
+  {
+    "Pokémon": "Reshiram",
+    "Location": "Navel Rock",
+    "Flavor": "Lv. 70, postgame. Claim Mysticticket from Winstrate Family.",
+    "mapBasename": "MAP_NAVEL_ROCK",
+    "speciesName": "SPECIES_RESHIRAM",
+    "nameKey": "Reshiram",
+    "index": 643
+  },
+  {
+    "Pokémon": "Zekrom",
+    "Location": "Navel Rock",
+    "Flavor": "Lv. 70, postgame. Claim Mysticticket from Winstrate Family.",
+    "mapBasename": "MAP_NAVEL_ROCK",
+    "speciesName": "SPECIES_ZEKROM",
+    "nameKey": "Zekrom",
+    "index": 644
+  },
+  {
+    "Pokémon": "Landorus-I",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_LANDORUS_INCARNATE",
+    "nameKey": "Landorus-Incarnate",
+    "index": 645
+  },
+  {
+    "Pokémon": "Landorus-T",
+    "Location": "Route 124",
+    "Flavor": "Use Reveal Glass Key Item on Landorus-I (obtained from Form Changer's house).",
+    "mapBasename": "MAP_ROUTE124",
+    "speciesName": "SPECIES_LANDORUS_THERIAN",
+    "nameKey": "Landorus-Therian",
+    "index": 1102
+  },
+  {
+    "Pokémon": "Kyurem",
+    "Location": "Shoal Cave (Icy Area)",
+    "Flavor": "Lv. 70, low tide in icy cave area after Badge 6 (tide changes every 6 hours).",
+    "mapBasename": "MAP_SHOAL_CAVE",
+    "speciesName": "SPECIES_KYUREM",
+    "nameKey": "Kyurem",
+    "index": 646
+  },
+  {
+    "Pokémon": "Kyurem-B",
+    "Location": "Devon Corporation",
+    "Flavor": "Use DNA Splicer Key Item on Kyurem and Reshiram/Zekrom after showing Kyurem to researcher on 2nd floor post-Badge 8.",
+    "mapBasename": "MAP_DEVON_CORP",
+    "speciesName": "SPECIES_KYUREM_BLACK",
+    "nameKey": "Kyurem-Black",
+    "index": 1105
+  },
+  {
+    "Pokémon": "Kyurem-W",
+    "Location": "Devon Corporation",
+    "Flavor": "Use DNA Splicer Key Item on Kyurem and Reshiram/Zekrom after showing Kyurem to researcher on 2nd floor post-Badge 8.",
+    "mapBasename": "MAP_DEVON_CORP",
+    "speciesName": "SPECIES_KYUREM_WHITE",
+    "nameKey": "Kyurem-White",
+    "index": 1104
+  },
+  {
+    "Pokémon": "Keldeo",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_KELDEO_ORDINARY",
+    "nameKey": "Keldeo-Ordinary",
+    "index": 647
+  },
+  {
+    "Pokémon": "Meloetta",
+    "Location": "Sootopolis City",
+    "Flavor": "Lv. 50, gift after defeating Natn (Badge 7).",
+    "mapBasename": "MAP_SOOTOPOLIS_CITY",
+    "speciesName": "SPECIES_MELOETTA_ARIA",
+    "nameKey": "Meloetta-Aria",
+    "index": 648
+  },
+  {
+    "Pokémon": "Genesect",
+    "Location": "Sootopolis City",
+    "Flavor": "Lv. 50, gift after defeating Danni (Badge 7).",
+    "mapBasename": "MAP_SOOTOPOLIS_CITY",
+    "speciesName": "SPECIES_GENESECT",
+    "nameKey": "Genesect",
+    "index": 649
+  },
+  {
+    "Pokémon": "Hoopa",
+    "Location": "Sootopolis City",
+    "Flavor": "Lv. 50, gift after defeating Befools (Badge 7).",
+    "mapBasename": "MAP_SOOTOPOLIS_CITY",
+    "speciesName": "SPECIES_HOOPA_CONFINED",
+    "nameKey": "Hoopa-Confined",
+    "index": 720
+  },
+  {
+    "Pokémon": "Hoopa-U",
+    "Location": "Route 124",
+    "Flavor": "Use Prison Bottle Key Item on Hoopa (obtained from Form Changer's house).",
+    "mapBasename": "MAP_ROUTE124",
+    "speciesName": "SPECIES_HOOPA_UNBOUND",
+    "nameKey": "Hoopa-Unbound",
+    "index": 1168
+  },
+  {
+    "Pokémon": "Volcanion",
+    "Location": "Route 133",
+    "Flavor": "Lv. 40-45, 2% encounter on land (Badge 6).",
+    "mapBasename": "MAP_ROUTE133",
+    "speciesName": "SPECIES_VOLCANION",
+    "nameKey": "Volcanion",
+    "index": 721
+  },
+  {
+    "Pokémon": "Type: Null",
+    "Location": "Lilycove City",
+    "Flavor": "Egg from old man with Kecleon, right of Egg Move Tutor's house (Badge 6).",
+    "mapBasename": "MAP_LILYCOVE_CITY",
+    "speciesName": "SPECIES_TYPE:_NULL",
+    "nameKey": "Type: Null",
+    "index": 772
+  },
+  {
+    "Pokémon": "Silvally",
+    "Location": "Lilycove City",
+    "Flavor": "Evolve Type: Null (Lv. up with 220+ Happiness). Change forms with Memory from man near beach.",
+    "mapBasename": "MAP_LILYCOVE_CITY",
+    "speciesName": "SPECIES_SILVALLY_NORMAL",
+    "nameKey": "Silvally-Normal",
+    "index": 773
+  },
+  {
+    "Pokémon": "Tapu Koko",
+    "Location": "Route 126",
+    "Flavor": "Lv. 70, dive on left of male Swimmer trainer next to Form Changer's house (Badge 7).",
+    "mapBasename": "MAP_ROUTE126",
+    "speciesName": "SPECIES_TAPU_KOKO",
+    "nameKey": "Tapu Koko",
+    "index": 785
+  },
+  {
+    "Pokémon": "Tapu Lele",
+    "Location": "Route 124",
+    "Flavor": "Lv. 70, dive right of lone Tuber girl trainer, surface at first marked area (Badge 7).",
+    "mapBasename": "MAP_ROUTE124",
+    "speciesName": "SPECIES_TAPU_LELE",
+    "nameKey": "Tapu Lele",
+    "index": 786
+  },
+  {
+    "Pokémon": "Tapu Bulu",
+    "Location": "Rusturf Tunnel",
+    "Flavor": "Lv. 70, in sub-area south of cave, left of Verdanturf Town exit (Badge 7).",
+    "mapBasename": "MAP_RUSTURF_TUNNEL",
+    "speciesName": "SPECIES_TAPU_BULU",
+    "nameKey": "Tapu Bulu",
+    "index": 787
+  },
+  {
+    "Pokémon": "Tapu Fini",
+    "Location": "Abandoned Ship",
+    "Flavor": "Lv. 70, in area accessible by diving in cabin below Sailor trainer (Badge 7).",
+    "mapBasename": "MAP_ABANDONED_SHIP",
+    "speciesName": "SPECIES_TAPU_FINI",
+    "nameKey": "Tapu Fini",
+    "index": 788
+  },
+  {
+    "Pokémon": "Cosmog",
+    "Location": "Artisan Cave 1F",
+    "Flavor": "Lv. 40, 40% encounter postgame.",
+    "mapBasename": "MAP_ARTISAN_CAVE",
+    "speciesName": "SPECIES_COSMOG",
+    "nameKey": "Cosmog",
+    "index": 789
+  },
+  {
+    "Pokémon": "Cosmoem",
+    "Location": "-",
+    "Flavor": "Evolve Cosmog.",
+    "mapBasename": null,
+    "speciesName": "SPECIES_COSMOEM",
+    "nameKey": "Cosmoem",
+    "index": 790
+  },
+  {
+    "Pokémon": "Solgaleo",
+    "Location": "-",
+    "Flavor": "Evolve Cosmoem.",
+    "mapBasename": null,
+    "speciesName": "SPECIES_SOLGALEO",
+    "nameKey": "Solgaleo",
+    "index": 791
+  },
+  {
+    "Pokémon": "Lunala",
+    "Location": "-",
+    "Flavor": "Evolve Cosmoem.",
+    "mapBasename": null,
+    "speciesName": "SPECIES_LUNALA",
+    "nameKey": "Lunala",
+    "index": 792
+  },
+  {
+    "Pokémon": "Nihilego",
+    "Location": "Route 115 or 128",
+    "Flavor": "Lv. 28-33, 1% encounter in grass (Route 115, Badge 5) or Lv. 45-50, 1% encounter in grass (Route 128, Badge 6).",
+    "mapBasename": "MAP_ROUTE115",
+    "speciesName": "SPECIES_NIHILEGO",
+    "nameKey": "Nihilego",
+    "index": 793
+  },
+  {
+    "Pokémon": "Buzzwole",
+    "Location": "Route 115",
+    "Flavor": "Lv. 28-33, 1% encounter in grass (Badge 5).",
+    "mapBasename": "MAP_ROUTE115",
+    "speciesName": "SPECIES_BUZZWOLE",
+    "nameKey": "Buzzwole",
+    "index": 794
+  },
+  {
+    "Pokémon": "Pheromosa",
+    "Location": "Route 119",
+    "Flavor": "Lv. 30-35, 1% encounter in grass (Badge 5).",
+    "mapBasename": "MAP_ROUTE119",
+    "speciesName": "SPECIES_PHEROMOSA",
+    "nameKey": "Pheromosa",
+    "index": 795
+  },
+  {
+    "Pokémon": "Xurkitree",
+    "Location": "Route 121",
+    "Flavor": "Lv. 38-42, 1% encounter in grass (Badge 6).",
+    "mapBasename": "MAP_ROUTE121",
+    "speciesName": "SPECIES_XURKITREE",
+    "nameKey": "Xurkitree",
+    "index": 796
+  },
+  {
+    "Pokémon": "Celesteela",
+    "Location": "Safari Zone Southeast",
+    "Flavor": "Lv. 40-45, 1% encounter in grass (Badge 6).",
+    "mapBasename": "MAP_SAFARI_ZONE",
+    "speciesName": "SPECIES_CELESTEELA",
+    "nameKey": "Celesteela",
+    "index": 797
+  },
+  {
+    "Pokémon": "Kartana",
+    "Location": "Route 119",
+    "Flavor": "Lv. 30-35, 1% encounter in grass (Badge 5).",
+    "mapBasename": "MAP_ROUTE119",
+    "speciesName": "SPECIES_KARTANA",
+    "nameKey": "Kartana",
+    "index": 798
+  },
+  {
+    "Pokémon": "Guzzlord",
+    "Location": "Safari Zone Southwest",
+    "Flavor": "Lv. 40-45, 1% encounter in grass (Badge 6).",
+    "mapBasename": "MAP_SAFARI_ZONE",
+    "speciesName": "SPECIES_GUZZLORD",
+    "nameKey": "Guzzlord",
+    "index": 799
+  },
+  {
+    "Pokémon": "Necrozma",
+    "Location": "Artisan Cave B1F",
+    "Flavor": "Lv. 40, 10% encounter postgame.",
+    "mapBasename": "MAP_ARTISAN_CAVE",
+    "speciesName": "SPECIES_NECROZMA",
+    "nameKey": "Necrozma",
+    "index": 800
+  },
+  {
+    "Pokémon": "Necrozma-Dusk Mane",
+    "Location": "Devon Corporation",
+    "Flavor": "Use N-Solarizer Key Item on Necrozma and Solgaleo after showing Necrozma to researcher on 2nd floor post-Badge 8.",
+    "mapBasename": "MAP_DEVON_CORP",
+    "speciesName": "SPECIES_NECROZMA_DUSK_MANE",
+    "nameKey": "Necrozma-Dusk-Mane",
+    "index": 1207
+  },
+  {
+    "Pokémon": "Necrozma-Dawn Wings",
+    "Location": "Devon Corporation",
+    "Flavor": "Use N-Lunarizer Key Item on Necrozma and Lunala after showing Necrozma to researcher on 2nd floor post-Badge 8.",
+    "mapBasename": "MAP_DEVON_CORP",
+    "speciesName": "SPECIES_NECROZMA_DAWN_WINGS",
+    "nameKey": "Necrozma-Dawn-Wings",
+    "index": 1208
+  },
+  {
+    "Pokémon": "Magearna",
+    "Location": "Evergrande City",
+    "Flavor": "Lv. 60-65, 2% encounter (Badge 8).",
+    "mapBasename": "MAP_EVERGRANDE_CITY",
+    "speciesName": "SPECIES_MAGEARNA",
+    "nameKey": "Magearna",
+    "index": 801
+  },
+  {
+    "Pokémon": "Marshadow",
+    "Location": "Sootopolis City",
+    "Flavor": "Lv. 50, gift after defeating MasterPoucine (Badge 7).",
+    "mapBasename": "MAP_SOOTOPOLIS_CITY",
+    "speciesName": "SPECIES_MARSHADOW",
+    "nameKey": "Marshadow",
+    "index": 802
+  },
+  {
+    "Pokémon": "Poipole",
+    "Location": "Safari Zone South",
+    "Flavor": "Lv. 40-45, 1% encounter in grass (Badge 6).",
+    "mapBasename": "MAP_SAFARI_ZONE",
+    "speciesName": "SPECIES_POIPOLE",
+    "nameKey": "Poipole",
+    "index": 803
+  },
+  {
+    "Pokémon": "Naganadel",
+    "Location": "-",
+    "Flavor": "Evolve Poipole (Lv. up while knowing Dragon Pulse).",
+    "mapBasename": null,
+    "speciesName": "SPECIES_NAGANADEL",
+    "nameKey": "Naganadel",
+    "index": 804
+  },
+  {
+    "Pokémon": "Stakataka",
+    "Location": "Safari Zone Southeast",
+    "Flavor": "Lv. 40-45, 1% encounter in grass (Badge 6).",
+    "mapBasename": "MAP_SAFARI_ZONE",
+    "speciesName": "SPECIES_STAKATAKA",
+    "nameKey": "Stakataka",
+    "index": 805
+  },
+  {
+    "Pokémon": "Blacephalon",
+    "Location": "Route 121",
+    "Flavor": "Lv. 38-42, 1% encounter in grass (Badge 6).",
+    "mapBasename": "MAP_ROUTE121",
+    "speciesName": "SPECIES_BLACEPHALON",
+    "nameKey": "Blacephalon",
+    "index": 806
+  },
+  {
+    "Pokémon": "Zeraora",
+    "Location": "Evergrande City",
+    "Flavor": "Lv. 50, gift after defeating Volkner (Badge 8).",
+    "mapBasename": "MAP_EVERGRANDE_CITY",
+    "speciesName": "SPECIES_ZERAORA",
+    "nameKey": "Zeraora",
+    "index": 807
+  },
+  {
+    "Pokémon": "Meltan",
+    "Location": "Route 121",
+    "Flavor": "Lv. 30, gift after defeating Byron (Badge 6).",
+    "mapBasename": "MAP_ROUTE121",
+    "speciesName": "SPECIES_MELTAN",
+    "nameKey": "Meltan",
+    "index": 808
+  },
+  {
+    "Pokémon": "Melmetal",
+    "Location": "-",
+    "Flavor": "Evolve Meltan (Use Metal Coat).",
+    "mapBasename": null,
+    "speciesName": "SPECIES_MELMETAL",
+    "nameKey": "Melmetal",
+    "index": 809
+  },
+  {
+    "Pokémon": "Kubfu",
+    "Location": "Evergrande City",
+    "Flavor": "Lv. 40, gift after defeating Dawn and Brendan before Victory Road (Badge 8).",
+    "mapBasename": "MAP_EVERGRANDE_CITY",
+    "speciesName": "SPECIES_KUBFU",
+    "nameKey": "Kubfu",
+    "index": 891
+  },
+  {
+    "Pokémon": "Urshifu-Single",
+    "Location": "-",
+    "Flavor": "Evolve Kubfu (Use Dusk Stone).",
+    "mapBasename": null,
+    "speciesName": "SPECIES_URSHIFU_SINGLE_STRIKE",
+    "nameKey": "Urshifu-Single-Strike",
+    "index": 892
+  },
+  {
+    "Pokémon": "Urshifu-Rapid",
+    "Location": "-",
+    "Flavor": "Evolve Kubfu (Use Water Stone).",
+    "mapBasename": null,
+    "speciesName": "SPECIES_URSHIFU_RAPID_STRIKE",
+    "nameKey": "Urshifu-Rapid-Strike",
+    "index": 1230
+  },
+  {
+    "Pokémon": "Zarude",
+    "Location": "Sootopolis City",
+    "Flavor": "Lv. 50, gift after defeating OblivionWing (Badge 7).",
+    "mapBasename": "MAP_SOOTOPOLIS_CITY",
+    "speciesName": "SPECIES_ZARUDE",
+    "nameKey": "Zarude",
+    "index": 893
+  },
+  {
+    "Pokémon": "Regieleki",
+    "Location": "New Mauville",
+    "Flavor": "Lv. 70, on generator button (Badge 6).",
+    "mapBasename": "MAP_NEW_MAUVILLE",
+    "speciesName": "SPECIES_REGIELEKI",
+    "nameKey": "Regieleki",
+    "index": 894
+  },
+  {
+    "Pokémon": "Regidrago",
+    "Location": "Route 114",
+    "Flavor": "Lv. 70, in cave left of wooden bridge (Badge 6).",
+    "mapBasename": "MAP_ROUTE114",
+    "speciesName": "SPECIES_REGIDRAGO",
+    "nameKey": "Regidrago",
+    "index": 895
+  },
+  {
+    "Pokémon": "Glastrier",
+    "Location": "Artisan Cave B1F",
+    "Flavor": "Lv. 40, 20% encounter postgame.",
+    "mapBasename": "MAP_ARTISAN_CAVE",
+    "speciesName": "SPECIES_GLASTRIER",
+    "nameKey": "Glastrier",
+    "index": 896
+  },
+  {
+    "Pokémon": "Spectrier",
+    "Location": "Artisan Cave B1F",
+    "Flavor": "Lv. 40, 20% encounter postgame.",
+    "mapBasename": "MAP_ARTISAN_CAVE",
+    "speciesName": "SPECIES_SPECTRIER",
+    "nameKey": "Spectrier",
+    "index": 897
+  },
+  {
+    "Pokémon": "Calyrex",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_CALYREX",
+    "nameKey": "Calyrex",
+    "index": 898
+  },
+  {
+    "Pokémon": "Calyrex-Ice",
+    "Location": "Devon Corporation",
+    "Flavor": "Use Reins of Unity Key Item on Calyrex and Glastrier after showing Calyrex to researcher on 2nd floor post-Badge 8.",
+    "mapBasename": "MAP_DEVON_CORP",
+    "speciesName": "SPECIES_CALYREX_ICE",
+    "nameKey": "Calyrex-Ice",
+    "index": 1232
+  },
+  {
+    "Pokémon": "Calyrex-Shadow",
+    "Location": "Devon Corporation",
+    "Flavor": "Use Reins of Unity Key Item on Calyrex and Spectrier after showing Calyrex to researcher on 2nd floor post-Badge 8.",
+    "mapBasename": "MAP_DEVON_CORP",
+    "speciesName": "SPECIES_CALYREX_SHADOW",
+    "nameKey": "Calyrex-Shadow",
+    "index": 1233
+  },
+  {
+    "Pokémon": "Enamorus-I",
+    "Location": "Hoenn (Roaming)",
+    "Flavor": "Lv. 50, roams after exiting Victory Road near League entrance. Use Pokédex to track.",
+    "mapBasename": "MAP_HOENN",
+    "speciesName": "SPECIES_ENAMORUS_INCARNATE",
+    "nameKey": "Enamorus-Incarnate",
+    "index": 905
+  },
+  {
+    "Pokémon": "Enamorus-T",
+    "Location": "Route 124",
+    "Flavor": "Use Reveal Glass Key Item on Enamorus-I (obtained from Form Changer's house).",
+    "mapBasename": "MAP_ROUTE124",
+    "speciesName": "SPECIES_ENAMORUS_THERIAN",
+    "nameKey": "Enamorus-Therian",
+    "index": 1103
+  },
+  {
+    "Pokémon": "Walking Wake",
+    "Location": "Shoal Cave (High Tide)",
+    "Flavor": "Lv. 50-60, 5% encounter in high tide areas (Badge 6, tide changes every 6 hours).",
+    "mapBasename": "MAP_SHOAL_CAVE",
+    "speciesName": "SPECIES_WALKING_WAKE",
+    "nameKey": "Walking Wake",
+    "index": 1406
+  },
+  {
+    "Pokémon": "Gouging Fire",
+    "Location": "Shoal Cave (High Tide)",
+    "Flavor": "Lv. 50-60, 5% encounter in high tide areas (Badge 6, tide changes every 6 hours).",
+    "mapBasename": "MAP_SHOAL_CAVE",
+    "speciesName": "SPECIES_GOUGING_FIRE",
+    "nameKey": "Gouging Fire",
+    "index": 1427
+  },
+  {
+    "Pokémon": "Raging Bolt",
+    "Location": "Shoal Cave (High Tide)",
+    "Flavor": "Lv. 50-60, 5% encounter in high tide areas (Badge 6, tide changes every 6 hours).",
+    "mapBasename": "MAP_SHOAL_CAVE",
+    "speciesName": "SPECIES_RAGING_BOLT",
+    "nameKey": "Raging Bolt",
+    "index": 1428
+  },
+  {
+    "Pokémon": "Iron Leaves",
+    "Location": "Shoal Cave (Low Tide)",
+    "Flavor": "Lv. 50-60, 5% encounter in low tide areas (Badge 6, tide changes every 6 hours).",
+    "mapBasename": "MAP_SHOAL_CAVE",
+    "speciesName": "SPECIES_IRON_LEAVES",
+    "nameKey": "Iron Leaves",
+    "index": 1407
+  },
+  {
+    "Pokémon": "Iron Boulder",
+    "Location": "Shoal Cave (Low Tide)",
+    "Flavor": "Lv. 50-60, 5% encounter in low tide areas (Badge 6, tide changes every 6 hours).",
+    "mapBasename": "MAP_SHOAL_CAVE",
+    "speciesName": "SPECIES_IRON_BOULDER",
+    "nameKey": "Iron Boulder",
+    "index": 1429
+  },
+  {
+    "Pokémon": "Iron Crown",
+    "Location": "Shoal Cave (Low Tide)",
+    "Flavor": "Lv. 50-60, 5% encounter in low tide areas (Badge 6, tide changes every 6 hours).",
+    "mapBasename": "MAP_SHOAL_CAVE",
+    "speciesName": "SPECIES_IRON_CROWN",
+    "nameKey": "Iron Crown",
+    "index": 1430
+  },
+  {
+    "Pokémon": "Ting-Lu",
+    "Location": "Magma Hideout",
+    "Flavor": "Lv. 40-50, 1% encounter (Badge 7).",
+    "mapBasename": "MAP_MAGMA_HIDEOUT",
+    "speciesName": "SPECIES_TING_LU",
+    "nameKey": "Ting-Lu",
+    "index": 1396
+  },
+  {
+    "Pokémon": "Chien-Pao",
+    "Location": "Seafloor Cavern",
+    "Flavor": "Lv. 40-50, 1% encounter (Badge 7).",
+    "mapBasename": "MAP_SEAFLOOR_CAVERN",
+    "speciesName": "SPECIES_CHIEN_PAO",
+    "nameKey": "Chien-Pao",
+    "index": 1395
+  },
+  {
+    "Pokémon": "Wo-Chien",
+    "Location": "Seafloor Cavern",
+    "Flavor": "Lv. 40-50, 1% encounter (Badge 7).",
+    "mapBasename": "MAP_SEAFLOOR_CAVERN",
+    "speciesName": "SPECIES_WO_CHIEN",
+    "nameKey": "Wo-Chien",
+    "index": 1394
+  },
+  {
+    "Pokémon": "Chi-Yu",
+    "Location": "Magma Hideout",
+    "Flavor": "Lv. 40-50, 1% encounter (Badge 7).",
+    "mapBasename": "MAP_MAGMA_HIDEOUT",
+    "speciesName": "SPECIES_CHI_YU",
+    "nameKey": "Chi-Yu",
+    "index": 1397
+  },
+  {
+    "Pokémon": "Okidogi",
+    "Location": "Safari Zone North",
+    "Flavor": "Lv. 40-45, 1% encounter in grass (Badge 6).",
+    "mapBasename": "MAP_SAFARI_ZONE",
+    "speciesName": "SPECIES_OKIDOGI",
+    "nameKey": "Okidogi",
+    "index": 1413
+  },
+  {
+    "Pokémon": "Munkidori",
+    "Location": "Safari Zone Southwest",
+    "Flavor": "Lv. 40-45, 1% encounter in grass (Badge 6).",
+    "mapBasename": "MAP_SAFARI_ZONE",
+    "speciesName": "SPECIES_MUNKIDORI",
+    "nameKey": "Munkidori",
+    "index": 1414
+  },
+  {
+    "Pokémon": "Fezandipiti",
+    "Location": "Safari Zone Northeast",
+    "Flavor": "Lv. 40-45, 1% encounter in grass (Badge 6).",
+    "mapBasename": "MAP_SAFARI_ZONE",
+    "speciesName": "SPECIES_FEZANDIPITI",
+    "nameKey": "Fezandipiti",
+    "index": 1415
+  },
+  {
+    "Pokémon": "Ogerpon",
+    "Location": "Safari Zone Northwest",
+    "Flavor": "Lv. 40-45, 2% encounter in grass (Badge 6).",
+    "mapBasename": "MAP_SAFARI_ZONE",
+    "speciesName": "SPECIES_OGERPON",
+    "nameKey": "Ogerpon",
+    "index": 1423
+  },
+  {
+    "Pokémon": "Ogerpon-Wellspring",
+    "Location": "Safari Zone Northwest",
+    "Flavor": "Make Ogerpon hold Cornerstone Mask in battle (found in Safari Zone northwest).",
+    "mapBasename": "MAP_SAFARI_ZONE",
+    "speciesName": "SPECIES_OGERPON",
+    "nameKey": "Ogerpon",
+    "index": 1423
+  },
+  {
+    "Pokémon": "Ogerpon-Hearthflame",
+    "Location": "Safari Zone Southeast",
+    "Flavor": "Make Ogerpon hold Cornerstone Mask in battle (found in Safari Zone southeast).",
+    "mapBasename": "MAP_SAFARI_ZONE",
+    "speciesName": "SPECIES_OGERPON",
+    "nameKey": "Ogerpon",
+    "index": 1423
+  },
+  {
+    "Pokémon": "Ogerpon-Cornerstone",
+    "Location": "Safari Zone Northeast",
+    "Flavor": "Make Ogerpon hold Cornerstone Mask in battle (found in Safari Zone northeast).",
+    "mapBasename": "MAP_SAFARI_ZONE",
+    "speciesName": "SPECIES_OGERPON",
+    "nameKey": "Ogerpon",
+    "index": 1423
+  },
+  {
+    "Pokémon": "Pecharunt",
+    "Location": "Mt. Pyre",
+    "Flavor": "Lv. 35-45, 2% encounter (Badge 6).",
+    "mapBasename": "MAP_MT_PYRE",
+    "speciesName": "SPECIES_PECHARUNT",
+    "nameKey": "Pecharunt",
+    "index": 1434
+  }
+]

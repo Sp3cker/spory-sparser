@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    // Project options
+    "target": "ES2020", // Modern JS target
+    "module": "NodeNext", // Use ES modules for better tree-shaking
+    "lib": ["ES2020"], // Include modern JS and DOM APIs
+    "outDir": "./build", // Output directory for compiled files
+    "rootDir": "./src", // Source directory for TS files
+    // "moduleResolution": "nodenext", // Node.js-style module resolution
+
+    // Strict type-checking
+    "strict": true, // Enable all strict type-checking options
+    "noImplicitAny": true, // Disallow implicit `any` types
+    "strictNullChecks": true, // Enforce strict null checks
+    "strictFunctionTypes": true, // Strict function type checking
+    "strictBindCallApply": true, // Strict bind/call/apply checking
+    "noImplicitThis": true, // Disallow implicit `this`
+    "alwaysStrict": true, // Enforce strict mode in compiled JS
+    "allowJs": true,
+    // Additional checks
+    "noUnusedLocals": true, // Report unused local variables
+    "noUnusedParameters": true, // Report unused function parameters
+    "noImplicitReturns": true, // Ensure all code paths return a value
+    "noFallthroughCasesInSwitch": true, // Prevent switch case fallthrough
+    // Source maps and declarations
+    "sourceMap": true, // Generate source maps for debugging
+    "declaration": true, // Generate .d.ts files
+    "declarationMap": true, // Generate source maps for .d.ts files
+    "rewriteRelativeImportExtensions": true, // Ensures .js extensions are added to imports,
+    // Interoperability
+    "resolveJsonModule": true,
+    "esModuleInterop": true, // Better CommonJS interop
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true // Enforce consistent file name casing
+  },
+  "include": ["src/**/*", "src/h-files/**.ts"], // Include all files in src/
+  "exclude": ["node_modules", "build", "src/rando/index.ts"] // Exclude node_modules and build/
+}

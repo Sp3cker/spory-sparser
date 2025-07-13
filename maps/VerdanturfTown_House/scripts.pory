@@ -1,0 +1,163 @@
+raw `
+VerdanturfTown_House_MapScripts::
+	.byte 0
+
+VerdanturfTown_House_EventScript_Man1::
+	msgbox VerdanturfTown_House_Text_MorePassion, MSGBOX_NPC
+	end
+
+VerdanturfTown_House_EventScript_Woman1::
+	msgbox VerdanturfTown_House_Text_ImproveFootwork, MSGBOX_NPC
+	end
+
+VerdanturfTown_House_EventScript_LittleBoyDancing::
+	msgbox VerdanturfTown_House_Text_LittleBoyDancing, MSGBOX_NPC
+	end
+
+VerdanturfTown_House_EventScript_MomDancing::
+	msgbox VerdanturfTown_House_Text_MomDancing, MSGBOX_NPC
+	end
+
+VerdanturfTown_House_EventScript_DadDancing::
+	msgbox VerdanturfTown_House_Text_DadDancing, MSGBOX_NPC
+	end
+
+VerdanturfTown_House_EventScript_LittleGirlDancing::
+	msgbox VerdanturfTown_House_Text_LittleGirlDancing, MSGBOX_NPC
+	end
+
+VerdanturfTown_House_EventScript_Oricorio::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ORICORIO, CRY_MODE_NORMAL
+	msgbox VerdanturfTown_House_Text_Oricorio, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VerdanturfTown_House_Text_Oricorio:
+	.string "Oricorio: Tweeeeeeeet tweet!$"
+
+VerdanturfTown_House_Text_MorePassion:
+	.string "More passion! More passion! More\n"
+	.string "passion! More energy! More energy!$"
+
+VerdanturfTown_House_Text_ImproveFootwork:
+	.string "I've got to improve my footwork!$"
+
+VerdanturfTown_House_Text_LittleBoyDancing:
+	.string "Whew! I'm pooped!$"
+
+VerdanturfTown_House_Text_MomDancing:
+	.string "He's becoming such a good little dancer,\n"
+	.string "I'm so proud of him!$"
+
+VerdanturfTown_House_Text_DadDancing:
+	.string "Where does she get all this energy?$"
+
+VerdanturfTown_House_Text_LittleGirlDancing:
+	.string "Look at my twirls daddy!!!$"
+
+`
+
+script VerdanturfTown_House_EventScript_Ursula{
+	lockall
+	applymovement(3, Common_Movement_FacePlayer)
+	goto_if_set(FLAG_RECEIVED_SETUP_TMS, VerdanturfTown_EventScript_UrsulaDefeated)
+	goto_if_set(FLAG_DECLINED_DANCE_BATTLE, VerdanturfTown_EventScript_UrsulaRequestBattleAgain)
+	msgbox(UrsulaGreeting, MSGBOX_DEFAULT)
+	waitmessage
+	msgbox(WillYouDance, MSGBOX_YESNO)
+	goto(VerdanturfTown_EventScript_BattleUrsulaPrompt)
+	end
+}
+
+script VerdanturfTown_EventScript_UrsulaRequestBattleAgain{
+	msgbox(Ready_Dance_Yet, MSGBOX_YESNO)
+	goto(VerdanturfTown_EventScript_BattleUrsulaPrompt)
+	end
+}
+
+script VerdanturfTown_EventScript_BattleUrsulaPrompt{
+	call_if_eq(VAR_RESULT, YES, VerdanturfTown_EventScript_BattleUrsula)
+	goto_if_eq(VAR_RESULT, NO, VerdanturfTown_EventScript_DeclineUrsulaBattle)
+	closemessage
+	end
+}
+
+script VerdanturfTown_EventScript_DeclineUrsulaBattle {
+	setflag(FLAG_DECLINED_DANCE_BATTLE)
+	msgbox(Come_Back_When_Ready, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script VerdanturfTown_EventScript_BattleUrsula{
+	msgbox("Let's boogie!", MSGBOX_DEFAULT)
+	trainerbattle_no_intro(TRAINER_URSULA, UrsulaDefeat)
+	goto(VerdanturfTown_EventScript_UrsulaGiveItems)
+	return
+}
+	
+
+script VerdanturfTown_EventScript_UrsulaDefeated{
+	msgbox(VerdanturfTown_House_Text_UrsulaPostBattle, MSGBOX_DEFAULT)
+	releaseall
+	end
+}
+
+script VerdanturfTown_EventScript_UrsulaGiveItems{
+	giveitem(ITEM_TM_CALM_MIND)
+	giveitem(ITEM_TM_BULK_UP)
+	giveitem(ITEM_TM_POWER_UP_PUNCH)
+	giveitem(ITEM_TM_CHARGE_BEAM)
+	giveitem(ITEM_TM_ROCK_POLISH)
+	giveitem(ITEM_TM_FLAME_CHARGE)
+	giveitem(ITEM_TM_TRAILBLAZE)
+	giveitem(ITEM_TM_WORK_UP)
+	setflag(FLAG_RECEIVED_SETUP_TMS)
+	msgbox(VerdanturfTown_House_Text_ExplainTms)
+	release
+	end
+}
+
+text UrsulaGreeting {
+	"Welcome to my dance studio! I see you\n"
+	"have the Dynamo Badge now, not too\l"
+	"shabby!\p"
+	"You may be a good at Pokémon\n"
+	"battles, but let's see how you fare in\l"
+	"a dance battle!\p"
+	"And by the way, this is going to be\n"
+	"a double battle, so I'd recommend \l"
+	"bringing more than one Pokémon\l"
+	"to dance!"
+}
+	
+
+text UrsulaDefeat{
+	"Nice moves! Now I've got some nice\n"
+	"moves for you to take!"
+}
+
+text VerdanturfTown_House_Text_ExplainTms{
+	"Now THOSE are some nice moves! Good\n"
+	"luck against my sister, if you ever make\l"
+	"it far enough to meet her!"
+}
+	
+
+text VerdanturfTown_House_Text_UrsulaPostBattle{
+	"Back to dancing for me!"
+}
+
+text WillYouDance{
+	"So what do you say, want to\n"
+	"dance?"
+}
+
+text Ready_Dance_Yet{
+	"Ready for a dance?"
+}
+	

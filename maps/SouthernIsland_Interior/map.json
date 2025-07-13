@@ -1,0 +1,99 @@
+{
+  "id": "MAP_SOUTHERN_ISLAND_INTERIOR",
+  "name": "SouthernIsland_Interior",
+  "layout": "LAYOUT_SOUTHERN_ISLAND_INTERIOR",
+  "music": "MUS_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_SOUTHERN_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LATIOS)",
+      "x": 11,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SouthernIsland_Interior_EventScript_Latios",
+      "flag": "FLAG_HIDE_LATIOS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LATIAS)",
+      "x": 15,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SouthernIsland_Interior_EventScript_Latias",
+      "flag": "FLAG_HIDE_LATIAS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 11,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_LATIOSITE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SOUTHERN_ISLAND_LATIOSITE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 15,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_LATIASITE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SOUTHERN_ISLAND_LATIASITE"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 13,
+      "y": 18,
+      "elevation": 3,
+      "dest_map": "MAP_SOUTHERN_ISLAND_EXTERIOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 18,
+      "elevation": 3,
+      "dest_map": "MAP_SOUTHERN_ISLAND_EXTERIOR",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SouthernIsland_Interior_EventScript_Sign"
+    }
+  ]
+}

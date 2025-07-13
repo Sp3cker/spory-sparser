@@ -1,0 +1,39 @@
+{
+  "type": "module",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "tsc",
+    "build-cjs": "tsup src/*.ts --format cjs --outDir build-cjs",
+    "build-pokemon": "tsup src/spreadsheet/pokemon-parser.ts --format cjs --outDir build-cjs",
+    "start": "node build/index.js",
+    "dev": "tsc --watch",
+    "clean": "rimraf build build-cjs",
+    "prebuild": "npm run clean",
+    "main": "node build/main.js",
+    "excel-to-json": "npm run build-cjs && node build-cjs/excel-parser.cjs \"./data/emerald_imperium_giftmons.xlsx\"",
+    "parse-pokemon": "npm run build-pokemon && node build-cjs/pokemon-parser.cjs \"./data/emerald_imperium_giftmons.xlsx\"",
+    "lint:explainers": "tsx src/parseMaps/incLinter.ts",
+    "testinc": "node build/parseMaps/justOne.js maps/Route104/scripts.inc",
+    "sprites": "node build/sprites/itemSpriteGenerator.js",
+    "genTrainerSprites": "node build/newSpriteGenerator/generateTrainerSprites.js"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/node": "^22.15.30",
+    "@types/png-chunks-encode": "^1.0.2",
+    "@types/png-chunks-extract": "^1.0.2",
+    "@types/pngjs": "^6.0.5",
+    "jascpal": "^0.1.4",
+    "jimp": "^1.6.0",
+    "png-chunks-encode": "^1.0.0",
+    "png-chunks-extract": "^1.0.0",
+    "pngjs": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "xlsx": "^0.18.5",
+    "zod": "^3.25.73"
+  }
+}

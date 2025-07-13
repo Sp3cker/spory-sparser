@@ -1,0 +1,424 @@
+raw `
+.set LOCALID_DAYCARE_MAN, 3
+.set LOCALID_DAYCARE_MON_0, 25
+.set LOCALID_DAYCARE_MON_1, 26
+
+Route117_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route117_OnTransition
+	.byte 0
+
+Route117_OnTransition:
+	call Route117_EventScript_TryMoveDayCareMan
+	@ set flags for OW daycare mons
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	getdaycaregfx VAR_OBJ_GFX_ID_0, VAR_OBJ_GFX_ID_1, VAR_TEMP_0, VAR_TEMP_1
+	switch VAR_RESULT
+	case 2, Route117_EventScript_ShowDaycareMon1
+	case 1, Route117_EventScript_ShowDaycareMon0
+	end
+
+Route117_EventScript_ShowDaycareMon1:
+	@ set pokemon movement type based on compatibility
+	special SetDaycareCompatibilityString
+	call_if_eq VAR_RESULT, PARENTS_INCOMPATIBLE, Route117_EventScript_DaycareMonIncompatible
+	@ Don't do anything if PARENTS_LOW_COMPATIBILITY
+	call_if_eq VAR_RESULT, PARENTS_MED_COMPATIBILITY, Route117_EventScript_DaycareMonMedCompatibility
+	call_if_eq VAR_RESULT, PARENTS_MAX_COMPATIBILITY, Route117_EventScript_DaycareMonMaxCompatibility
+	clearflag FLAG_TEMP_2
+Route117_EventScript_ShowDaycareMon0:
+	clearflag FLAG_TEMP_1
+	end
+
+Route117_EventScript_DaycareMonIncompatible: @ mons never face each other
+	setobjectmovementtype LOCALID_DAYCARE_MON_0, MOVEMENT_TYPE_FACE_DOWN_UP_AND_LEFT
+	setobjectmovementtype LOCALID_DAYCARE_MON_1, MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT
+	return
+
+Route117_EventScript_DaycareMonMedCompatibility: @ down and towards each other
+	setobjectmovementtype LOCALID_DAYCARE_MON_0, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT
+	setobjectmovementtype LOCALID_DAYCARE_MON_1, MOVEMENT_TYPE_FACE_DOWN_AND_LEFT
+	return
+
+Route117_EventScript_DaycareMonMaxCompatibility: @ facing; walk in place
+	setobjectmovementtype LOCALID_DAYCARE_MON_0, MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT
+	setobjectmovementtype LOCALID_DAYCARE_MON_1, MOVEMENT_TYPE_WALK_IN_PLACE_LEFT
+	return
+
+Route117_EventScript_TryMoveDayCareMan::
+	goto_if_unset FLAG_PENDING_DAYCARE_EGG, Route117_EventScript_StopMoveDayCareMan
+	setobjectxyperm LOCALID_DAYCARE_MAN, 47, 6
+Route117_EventScript_StopMoveDayCareMan::
+	return
+
+Route117_EventScript_Woman::
+	msgbox Route117_Text_ArentTheseFlowersPretty, MSGBOX_NPC
+	end
+
+Route117_EventScript_LittleBoyDancing::
+	msgbox Route117_Text_LittleBoyDancing, MSGBOX_NPC
+	end
+
+Route117_EventScript_MomDancing::
+	msgbox Route117_Text_MomDancing, MSGBOX_NPC
+	end
+
+Route117_EventScript_DadDancing::
+	msgbox Route117_Text_DadDancing, MSGBOX_NPC
+	end
+
+Route117_EventScript_LittleGirlDancing::
+	msgbox Route117_Text_LittleGirlDancing, MSGBOX_NPC
+	end
+
+Route117_EventScript_DanceInstructorDancing::
+	msgbox Route117_Text_DanceInstructor, MSGBOX_NPC
+	end
+
+Route117_EventScript_Girl::
+	msgbox Route117_Text_DayCarePokemonHadNewMove, MSGBOX_NPC
+	end
+
+Route117_EventScript_RouteSignVerdanturf::
+	msgbox Route117_Text_RouteSignVerdanturf, MSGBOX_SIGN
+	end
+
+Route117_EventScript_RouteSignMauville::
+	msgbox Route117_Text_RouteSignMauville, MSGBOX_SIGN
+	end
+
+Route117_EventScript_DayCareSign::
+	msgbox Route117_Text_DayCareSign, MSGBOX_SIGN
+	end
+
+Route117_EventScript_Ezekiel::
+	trainerbattle_single TRAINER_EZEKIEL_1, Route117_Text_EzekielIntro, Route117_Text_EzekielDefeat, Route117_EventScript_RegisterEzekiel
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchEzekiel
+	msgbox Route117_Text_EzekielPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route117_EventScript_RegisterEzekiel::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox Route117_Text_EzekielRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_EZEKIEL_1
+	release
+	end
+
+Route117_EventScript_RematchEzekiel::
+	trainerbattle_rematch TRAINER_EZEKIEL_1, Route117_Text_EzekielRematchIntro, Route117_Text_EzekielRematchDefeat
+	msgbox Route117_Text_EzekielPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route117_EventScript_Lydia::
+	trainerbattle_single TRAINER_LYDIA_1, Route117_Text_LydiaIntro, Route117_Text_LydiaDefeat, Route117_EventScript_RegisterLydia
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchLydia
+	msgbox Route117_Text_LydiaPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route117_EventScript_RegisterLydia::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox Route117_Text_LydiaRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_LYDIA_1
+	release
+	end
+
+Route117_EventScript_RematchLydia::
+	trainerbattle_rematch TRAINER_LYDIA_1, Route117_Text_LydiaRematchIntro, Route117_Text_LydiaRematchDefeat
+	msgbox Route117_Text_LydiaPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route117_EventScript_Dylan::
+	trainerbattle_single TRAINER_DYLAN_1, Route117_Text_DylanIntro, Route117_Text_DylanDefeat, Route117_EventScript_RegisterDylan
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchDylan
+	msgbox Route117_Text_DylanPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route117_EventScript_RegisterDylan::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox Route117_Text_DylanRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_DYLAN_1
+	release
+	end
+
+Route117_EventScript_RematchDylan::
+	trainerbattle_rematch TRAINER_DYLAN_1, Route117_Text_DylanRematchIntro, Route117_Text_DylanRematchDefeat
+	msgbox Route117_Text_DylanPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route117_EventScript_Maria::
+	trainerbattle_single TRAINER_MARIA_1, Route117_Text_MariaIntro, Route117_Text_MariaDefeat, Route117_EventScript_RegisterMaria
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMaria
+	msgbox Route117_Text_MariaPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route117_EventScript_RegisterMaria::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox Route117_Text_MariaRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_MARIA_1
+	release
+	end
+
+Route117_EventScript_RematchMaria::
+	trainerbattle_rematch TRAINER_MARIA_1, Route117_Text_MariaRematchIntro, Route117_Text_MariaRematchDefeat
+	msgbox Route117_Text_MariaPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route117_EventScript_Derek::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_TM_HIDDEN_POWER, Route114_EventScript_ReceivedHP
+	msgbox Route117_Text_DerekYouFoundMe, MSGBOX_DEFAULT
+	giveitem ITEM_TM_HIDDEN_POWER
+	setflag FLAG_RECEIVED_TM_HIDDEN_POWER
+	msgbox Route117_Text_ExplainHP, MSGBOX_DEFAULT
+	release
+	end
+
+Route114_EventScript_ReceivedHP::
+	msgbox Route117_Text_ExplainHP, MSGBOX_DEFAULT
+	release
+	end
+
+Route117_EventScript_Anna::
+	trainerbattle_double TRAINER_ANNA_AND_MEG_1, Route117_Text_AnnaIntro, Route117_Text_AnnaDefeat, Route117_Text_AnnaNotEnoughMons, Route117_EventScript_RegisterAnna
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchAnna
+	msgbox Route117_Text_AnnaPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route117_EventScript_RegisterAnna::
+	msgbox Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_ANNA_AND_MEG_1
+	release
+	end
+
+Route117_EventScript_RematchAnna::
+	trainerbattle_rematch_double TRAINER_ANNA_AND_MEG_1, Route117_Text_AnnaRematchIntro, Route117_Text_AnnaRematchDefeat, Route117_Text_AnnaRematchNotEnoughMons
+	msgbox Route117_Text_AnnaPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route117_EventScript_Meg::
+	trainerbattle_double TRAINER_ANNA_AND_MEG_1, Route117_Text_MegIntro, Route117_Text_MegDefeat, Route117_Text_MegNotEnoughMons, Route117_EventScript_RegisterMeg
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMeg
+	msgbox Route117_Text_MegPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route117_EventScript_RegisterMeg::
+	msgbox Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_ANNA_AND_MEG_1
+	release
+	end
+
+Route117_EventScript_RematchMeg::
+	trainerbattle_rematch_double TRAINER_ANNA_AND_MEG_1, Route117_Text_MegRematchIntro, Route117_Text_MegRematchDefeat, Route117_Text_MegRematchNotEnoughMons
+	msgbox Route117_Text_MegPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route117_EventScript_Melina::
+	msgbox Route117_Text_MelinaDaycare, MSGBOX_NPC
+	end
+
+Route117_EventScript_Brandi::
+	trainerbattle_single TRAINER_BRANDI, Route117_Text_BrandiIntro, Route117_Text_BrandiDefeat
+	msgbox Route117_Text_BrandiPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route117_EventScript_Aisha::
+	trainerbattle_single TRAINER_AISHA, Route117_Text_AishaIntro, Route117_Text_AishaDefeat
+	msgbox Route117_Text_AishaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route117_Text_MelinaDaycare:
+	.string "Yo I actually don't know if the eggs out\n"
+	.string "of the day care will have perfect IVs,\l"
+	.string "you sure can try though.$"
+
+Route117_Text_DerekYouFoundMe:
+	.string "Wow, you found me! I didn't think anyone\n"
+	.string "ever would! I guess I don't have Hidden\l"
+	.string "Power anymore, so you should have it!$"
+
+Route117_Text_ExplainHP:
+	.string "TM10 contains Hidden Power. That\n"
+	.string "move's type can change depending on\l"
+	.string "how your IVs are set. There's a guy\l"
+	.string "somewhere who can change your IVs for\l"
+	.string "that, I think he's further ahead\l"
+	.string "though.$"
+
+Route117_Text_DayCarePokemonHadNewMove:
+	.string "I left my Pokémon at the DAY CARE.\p"
+	.string "When I got it back, it had a new move\n"
+	.string "that I didn't teach it.\l"
+	.string "I was really, really surprised.$"
+
+Route117_Text_ArentTheseFlowersPretty:
+	.string "What do you think?\n"
+	.string "Aren't these flowers pretty?\p"
+	.string "I planted them all!$"
+
+Route117_Text_LittleBoyDancing:
+	.string "Weeee! This dance is so fun!$"
+
+Route117_Text_MomDancing:
+	.string "I hope we get to do outdoor lessons\n"
+	.string "more often!$"
+
+Route117_Text_DadDancing:
+	.string "I have no idea what I'm doing, but I'm\n"
+	.string "glad my daughter is having fun.$"
+
+Route117_Text_LittleGirlDancing:
+	.string "I love spinning!! Thanks for taking me\n"
+	.string "dancing, dad!$"
+
+Route117_Text_DanceInstructor:
+	.string "It's such a beautiful day that I\n"
+	.string "thought we'd have class outside!\p"
+	.string "Oh, you must be wondering what the\n"
+	.string "Elite Four member Phoebe is doing way\l"
+	.string "out here…\p"
+	.string "… … …\p"
+	.string "Surprise! I'm her twin sister, Ursula! I\n"
+	.string "may not be as good a battler as Phoebe,\l"
+	.string "but I'm a way better dancer!\p"
+	.string "Tell you what, if you can beat Wattson,\n"
+	.string "come see me in Verdanturf Town and I'll\l"
+	.string "give you a lesson!$"
+
+Route117_Text_RouteSignVerdanturf:
+	.string "ROUTE 117\n"
+	.string "{LEFT_ARROW} VERDANTURF TOWN$"
+
+Route117_Text_RouteSignMauville:
+	.string "ROUTE 117\n"
+	.string "{RIGHT_ARROW} MAUVILLE CITY$"
+
+Route117_Text_DayCareSign:
+	.string "Pokémon DAY CARE\n"
+	.string "“Let us raise your Pokémon.”$"
+
+`
+
+script Route117_EventScript_Fantina{
+	lockall
+	applymovement(29, Common_Movement_FacePlayer)
+	goto_if_defeated(TRAINER_FANTINA, Route117_EventScript_FantinaDefeated)
+	goto_if_set(FLAG_TEMP_3, Route117_EventScript_FantinaRequestBattleAgain)
+	msgbox(Fantina_Greeting, MSGBOX_YESNO)
+	goto(Route117_EventScript_BattleFantinaPrompt)
+	end
+}
+
+script Route117_EventScript_FantinaRequestBattleAgain{
+	msgbox(Fantina_ReadyYet, MSGBOX_YESNO)
+	goto(Route117_EventScript_BattleFantinaPrompt)
+	end
+}
+
+script Route117_EventScript_BattleFantinaPrompt{
+	call_if_eq(VAR_RESULT, YES, Route117_EventScript_BattleFantina)
+	goto_if_eq(VAR_RESULT, NO, Route117_EventScript_DeclineFantinaBattle)
+	closemessage
+	end
+}
+
+script Route117_EventScript_DeclineFantinaBattle {
+	setflag(FLAG_TEMP_3)
+	msgbox(Fantina_ComeBackWhenReady, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+script Route117_EventScript_BattleFantina{
+	msgbox("Let us begin then!", MSGBOX_DEFAULT)
+	trainerbattle_no_intro(TRAINER_FANTINA, Fantina_Outro)
+	goto(Route117_EventScript_FantinaGiveItems)
+	return
+}
+	
+
+script Route117_EventScript_FantinaDefeated{
+	msgbox(PostBattle_Fantina, MSGBOX_DEFAULT)
+	releaseall
+	end
+}
+
+script Route117_EventScript_FantinaGiveItems{
+	giveitem(ITEM_TM_PSYCHIC)
+	giveitem(ITEM_TM_SHADOW_BALL)
+	giveitem(ITEM_TM_BRICK_BREAK)
+	giveitem(ITEM_BANETTITE)
+	giveitem(ITEM_SABLENITE)
+	giveitem(ITEM_GENGARITE)
+	giveitem(ITEM_DUSKNOIRITE)
+	giveitem(ITEM_METRONOME)
+	giveitem(ITEM_LEFTOVERS)
+	msgbox(Fantina_ExplainItems)
+	release
+	end
+}
+
+text Fantina_Greeting{
+	"Oh, hello there, my name is Fantina.\n"
+	"Did you come here to enjoy the\l"
+	"flowers too?\p"
+	"I've heard tales of the wonderful\n"
+	"flower patches here in the Hoenn\l"
+	"region, so I had to come see them\l"
+	"for myself!\p"
+	"Oh, you didn't come to admire the\n"
+	"flowers? That's fine, I also came here\l"
+	"to battle new trainers.\p"
+	"Is that what you came here for?"
+}
+
+text Fantina_ReadyYet{
+	"Hm? Is it time for our battle?"
+}
+
+text Fantina_ComeBackWhenReady{
+	"I'll just enjoy the flowers until\n"
+	"you're ready."
+}
+
+text Fantina_ExplainItems{
+	"Those three are some very\n"
+	"powerful moves. In addition, I had\l"
+	"a few spare Mega Stones for some\l"
+	"Ghost-type Pokémon, though you'll need\l"
+	"a Mega Ring if you want to use them.\p"
+	"Finally, the Metronome is used for\n"
+	"boosting moves that are used multiple\l"
+	"times in succession.\p"
+	"I'm, sure you'll put it to\n"
+	"good use. Best of luck!"
+}
+	
+text Fantina_Outro{
+	"My my! To think, there are such strong\n"
+	"trainers here in the Hoenn region. I\l"
+	"think you can make good use of these."
+}
+
+
+text PostBattle_Fantina{
+	"Maybe I'll head to Ever Grande City\n"
+	"after this, I've heard the flowers\l"
+	"there are extraordinary."
+}
