@@ -19,7 +19,7 @@
         }
       ],
       "script": "AbandonedShip_Corridors_1F_EventScript_Charlie",
-      "sprite": "tuber_m.png",
+      "sprite": "tuber_m.webp",
       "coords": [
         5,
         10
@@ -45,7 +45,7 @@
         }
       ],
       "script": "AbandonedShip_Corridors_B1F_EventScript_Duncan",
-      "sprite": "sailor.png",
+      "sprite": "sailor.webp",
       "coords": [
         9,
         6
@@ -71,7 +71,7 @@
         }
       ],
       "script": "AbandonedShip_Rooms2_1F_EventScript_Dan",
-      "sprite": "man_4.png",
+      "sprite": "man_4.webp",
       "coords": [
         7,
         13
@@ -97,7 +97,7 @@
         }
       ],
       "script": "AbandonedShip_Rooms2_1F_EventScript_Jani",
-      "sprite": "tuber_f.png",
+      "sprite": "tuber_f.webp",
       "coords": [
         7,
         2
@@ -123,7 +123,7 @@
         }
       ],
       "script": "AbandonedShip_Rooms2_1F_EventScript_Garrison",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         3,
         2
@@ -149,7 +149,7 @@
         }
       ],
       "script": "AbandonedShip_Rooms_1F_EventScript_Demetrius",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         10,
         16
@@ -175,7 +175,7 @@
         }
       ],
       "script": "AbandonedShip_Rooms_1F_EventScript_ThaliaRematch",
-      "sprite": "beauty.png",
+      "sprite": "beauty.webp",
       "coords": [
         0,
         0
@@ -200,7 +200,7 @@
         }
       ],
       "script": "AquaHideout_1F_EventScript_Grunt1",
-      "sprite": "aqua_member_m.png",
+      "sprite": "aqua_member_m.webp",
       "coords": [
         20,
         4
@@ -226,7 +226,7 @@
         }
       ],
       "script": "AquaHideout_B1F_EventScript_Grunt2",
-      "sprite": "aqua_member_m.png",
+      "sprite": "aqua_member_m.webp",
       "coords": [
         28,
         16
@@ -248,7 +248,7 @@
         }
       ],
       "script": "AquaHideout_B1F_EventScript_Grunt3",
-      "sprite": "aqua_member_m.png",
+      "sprite": "aqua_member_m.webp",
       "coords": [
         6,
         6
@@ -270,7 +270,7 @@
         }
       ],
       "script": "AquaHideout_B1F_EventScript_Grunt5",
-      "sprite": "aqua_member_f.png",
+      "sprite": "aqua_member_f.webp",
       "coords": [
         20,
         18
@@ -296,7 +296,7 @@
         }
       ],
       "script": "AquaHideout_B1F_EventScript_Grunt7",
-      "sprite": "aqua_member_f.png",
+      "sprite": "aqua_member_f.webp",
       "coords": [
         28,
         21
@@ -479,7 +479,7 @@
         }
       ],
       "script": "AquaHideout_B2F_EventScript_Grunt4",
-      "sprite": "aqua_member_m.png",
+      "sprite": "aqua_member_m.webp",
       "coords": [
         23,
         10
@@ -501,7 +501,7 @@
         }
       ],
       "script": "AquaHideout_B2F_EventScript_Grunt6",
-      "sprite": "aqua_member_f.png",
+      "sprite": "aqua_member_f.webp",
       "coords": [
         7,
         5
@@ -523,7 +523,7 @@
         }
       ],
       "script": "AquaHideout_B2F_EventScript_Grunt8",
-      "sprite": "aqua_member_m.png",
+      "sprite": "aqua_member_m.webp",
       "coords": [
         13,
         5
@@ -649,7 +649,7 @@
         }
       ],
       "script": "DewfordTown_Gym_EventScript_Takao",
-      "sprite": "black_belt.png",
+      "sprite": "black_belt.webp",
       "coords": [
         2,
         18
@@ -675,7 +675,7 @@
         }
       ],
       "script": "DewfordTown_Gym_EventScript_Jocelyn",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         15,
         3
@@ -697,7 +697,7 @@
         }
       ],
       "script": "DewfordTown_Gym_EventScript_Laura",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         12,
         25
@@ -719,7 +719,7 @@
         }
       ],
       "script": "DewfordTown_Gym_EventScript_Brenden",
-      "sprite": "sailor.png",
+      "sprite": "sailor.webp",
       "coords": [
         14,
         12
@@ -741,7 +741,7 @@
         }
       ],
       "script": "DewfordTown_Gym_EventScript_Cristian",
-      "sprite": "black_belt.png",
+      "sprite": "black_belt.webp",
       "coords": [
         7,
         8
@@ -763,7 +763,7 @@
         }
       ],
       "script": "DewfordTown_Gym_EventScript_Lilith",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         16,
         9
@@ -2108,7 +2108,7 @@
         },
         {
           "lvl": 85,
-          "id": 1529,
+          "id": 1069,
           "nature": "timid",
           "ability": [
             140
@@ -3957,7 +3957,7 @@
         }
       ],
       "script": "FortreeCity_Gym_EventScript_Jared",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         4,
         14
@@ -3983,7 +3983,7 @@
         }
       ],
       "script": "FortreeCity_Gym_EventScript_Edwardo",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         9,
         8
@@ -4009,7 +4009,7 @@
         }
       ],
       "script": "FortreeCity_Gym_EventScript_Flint",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         10,
         10
@@ -4035,7 +4035,7 @@
         }
       ],
       "script": "FortreeCity_Gym_EventScript_Ashley",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         5,
         17
@@ -4057,7 +4057,7 @@
         }
       ],
       "script": "FortreeCity_Gym_EventScript_Humberto",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         4,
         23
@@ -4081,7 +4081,7 @@
         }
       ],
       "script": "FortreeCity_Gym_EventScript_Darius",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         1,
         10
@@ -4135,7 +4135,7 @@
         }
       ],
       "script": "JaggedPass_EventScript_Eric",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         19,
         22
@@ -4161,7 +4161,7 @@
         }
       ],
       "script": "JaggedPass_EventScript_DianaRematch",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         0,
         0
@@ -4184,7 +4184,7 @@
         }
       ],
       "script": "JaggedPass_EventScript_EthanRematch",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         0,
         0
@@ -4207,7 +4207,7 @@
         }
       ],
       "script": "JaggedPass_EventScript_Autumn",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         14,
         25
@@ -4721,7 +4721,7 @@
         }
       ],
       "script": "MagmaHideout_1F_EventScript_Grunt1",
-      "sprite": "magma_member_m.png",
+      "sprite": "magma_member_m.webp",
       "coords": [
         4,
         5
@@ -4743,7 +4743,7 @@
         }
       ],
       "script": "MagmaHideout_1F_EventScript_Grunt2",
-      "sprite": "magma_member_m.png",
+      "sprite": "magma_member_m.webp",
       "coords": [
         30,
         20
@@ -4765,7 +4765,7 @@
         }
       ],
       "script": "MagmaHideout_2F_1R_EventScript_Grunt14",
-      "sprite": "magma_member_f.png",
+      "sprite": "magma_member_f.webp",
       "coords": [
         8,
         8
@@ -4787,7 +4787,7 @@
         }
       ],
       "script": "MagmaHideout_2F_1R_EventScript_Grunt3",
-      "sprite": "magma_member_m.png",
+      "sprite": "magma_member_m.webp",
       "coords": [
         21,
         11
@@ -4809,7 +4809,7 @@
         }
       ],
       "script": "MagmaHideout_2F_1R_EventScript_Grunt4",
-      "sprite": "magma_member_m.png",
+      "sprite": "magma_member_m.webp",
       "coords": [
         18,
         19
@@ -4831,7 +4831,7 @@
         }
       ],
       "script": "MagmaHideout_2F_1R_EventScript_Grunt5",
-      "sprite": "magma_member_m.png",
+      "sprite": "magma_member_m.webp",
       "coords": [
         12,
         14
@@ -4853,7 +4853,7 @@
         }
       ],
       "script": "MagmaHideout_2F_2R_EventScript_Grunt15",
-      "sprite": "magma_member_f.png",
+      "sprite": "magma_member_f.webp",
       "coords": [
         7,
         13
@@ -4875,7 +4875,7 @@
         }
       ],
       "script": "MagmaHideout_2F_2R_EventScript_Grunt6",
-      "sprite": "magma_member_m.png",
+      "sprite": "magma_member_m.webp",
       "coords": [
         8,
         9
@@ -4897,7 +4897,7 @@
         }
       ],
       "script": "MagmaHideout_2F_2R_EventScript_Grunt7",
-      "sprite": "magma_member_m.png",
+      "sprite": "magma_member_m.webp",
       "coords": [
         25,
         11
@@ -4919,7 +4919,7 @@
         }
       ],
       "script": "MagmaHideout_2F_2R_EventScript_Grunt8",
-      "sprite": "magma_member_m.png",
+      "sprite": "magma_member_m.webp",
       "coords": [
         29,
         8
@@ -4941,7 +4941,7 @@
         }
       ],
       "script": "MagmaHideout_3F_1R_EventScript_Grunt9",
-      "sprite": "magma_member_m.png",
+      "sprite": "magma_member_m.webp",
       "coords": [
         2,
         7
@@ -4963,7 +4963,7 @@
         }
       ],
       "script": "MagmaHideout_3F_1R_EventScript_Grunt16",
-      "sprite": "magma_member_f.png",
+      "sprite": "magma_member_f.webp",
       "coords": [
         21,
         21
@@ -4985,7 +4985,7 @@
         }
       ],
       "script": "MagmaHideout_3F_2R_EventScript_Grunt10",
-      "sprite": "magma_member_m.png",
+      "sprite": "magma_member_m.webp",
       "coords": [
         16,
         3
@@ -5123,7 +5123,7 @@
         },
         {
           "lvl": 80,
-          "id": 955,
+          "id": 383,
           "nature": "jolly",
           "ability": [
             70
@@ -5217,7 +5217,7 @@
         },
         {
           "lvl": 80,
-          "id": 1482,
+          "id": 784,
           "nature": "timid",
           "ability": [
             142
@@ -5563,7 +5563,7 @@
         },
         {
           "lvl": 34,
-          "id": 1478,
+          "id": 738,
           "nature": "modest",
           "ability": [
             26
@@ -5635,7 +5635,7 @@
         }
       ],
       "script": "MauvilleCity_Gym_EventScript_Kirk",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         1,
         13
@@ -5661,7 +5661,7 @@
         }
       ],
       "script": "MauvilleCity_Gym_EventScript_Shawn",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         7,
         8
@@ -5687,7 +5687,7 @@
         }
       ],
       "script": "MauvilleCity_Gym_EventScript_Ben",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         6,
         15
@@ -5705,7 +5705,7 @@
       "party": [
         {
           "lvl": 27,
-          "id": 1486
+          "id": 777
         },
         {
           "lvl": 27,
@@ -5713,7 +5713,7 @@
         }
       ],
       "script": "MauvilleCity_Gym_EventScript_Vivian",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         1,
         16
@@ -5741,7 +5741,7 @@
         }
       ],
       "script": "MauvilleCity_Gym_EventScript_Angelo",
-      "sprite": "maniac.png",
+      "sprite": "maniac.webp",
       "coords": [
         7,
         10
@@ -5769,7 +5769,7 @@
         }
       ],
       "script": "MeteorFalls_1F_2R_EventScript_RematchNicolas",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         0,
         0
@@ -5798,7 +5798,7 @@
         }
       ],
       "script": "MeteorFalls_1F_2R_EventScript_John",
-      "sprite": "expert_m.png",
+      "sprite": "expert_m.webp",
       "coords": [
         6,
         12
@@ -6410,7 +6410,7 @@
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Preston",
-      "sprite": "psychic_m.png",
+      "sprite": "psychic_m.webp",
       "coords": [
         1,
         30
@@ -6432,7 +6432,7 @@
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Virgil",
-      "sprite": "psychic_m.png",
+      "sprite": "psychic_m.webp",
       "coords": [
         4,
         9
@@ -6454,7 +6454,7 @@
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Blake",
-      "sprite": "psychic_m.png",
+      "sprite": "psychic_m.webp",
       "coords": [
         5,
         20
@@ -6476,7 +6476,7 @@
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Hannah",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         4,
         3
@@ -6498,7 +6498,7 @@
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Samantha",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         4,
         23
@@ -6520,7 +6520,7 @@
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Maura",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         4,
         29
@@ -6542,7 +6542,7 @@
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Sylvia",
-      "sprite": "hex_maniac.png",
+      "sprite": "hex_maniac.webp",
       "coords": [
         5,
         5
@@ -6564,7 +6564,7 @@
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Nate",
-      "sprite": "gentleman.png",
+      "sprite": "gentleman.webp",
       "coords": [
         7,
         8
@@ -6586,7 +6586,7 @@
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Macey",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         25,
         25
@@ -6608,7 +6608,7 @@
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Clifford",
-      "sprite": "gentleman.png",
+      "sprite": "gentleman.webp",
       "coords": [
         22,
         25
@@ -6630,7 +6630,7 @@
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Nicholas",
-      "sprite": "psychic_m.png",
+      "sprite": "psychic_m.webp",
       "coords": [
         25,
         22
@@ -6652,7 +6652,7 @@
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Kathleen",
-      "sprite": "hex_maniac.png",
+      "sprite": "hex_maniac.webp",
       "coords": [
         22,
         23
@@ -6907,7 +6907,7 @@
         },
         {
           "lvl": 43,
-          "id": 1480,
+          "id": 758,
           "nature": "timid",
           "ability": [
             212
@@ -6953,7 +6953,7 @@
         }
       ],
       "script": "MtChimney_EventScript_Tabitha",
-      "sprite": "magma_member_m.png",
+      "sprite": "magma_member_m.webp",
       "coords": [
         12,
         11
@@ -7045,7 +7045,7 @@
         }
       ],
       "script": "MtChimney_EventScript_Grunt2",
-      "sprite": "magma_member_m.png",
+      "sprite": "magma_member_m.webp",
       "coords": [
         9,
         16
@@ -7073,7 +7073,7 @@
         }
       ],
       "script": "MtChimney_EventScript_RematchShelby",
-      "sprite": "expert_f.png",
+      "sprite": "expert_f.webp",
       "coords": [
         0,
         0
@@ -7096,7 +7096,7 @@
         }
       ],
       "script": "MtChimney_EventScript_Melissa",
-      "sprite": "beauty.png",
+      "sprite": "beauty.webp",
       "coords": [
         14,
         7
@@ -7118,7 +7118,7 @@
         }
       ],
       "script": "MtChimney_EventScript_Sheila",
-      "sprite": "beauty.png",
+      "sprite": "beauty.webp",
       "coords": [
         29,
         7
@@ -7140,7 +7140,7 @@
         }
       ],
       "script": "MtChimney_EventScript_Shirley",
-      "sprite": "beauty.png",
+      "sprite": "beauty.webp",
       "coords": [
         27,
         17
@@ -7232,7 +7232,7 @@
         }
       ],
       "script": "MtChimney_EventScript_Grunt1",
-      "sprite": "magma_member_f.png",
+      "sprite": "magma_member_f.webp",
       "coords": [
         14,
         16
@@ -7256,7 +7256,7 @@
         }
       ],
       "script": "MtChimney_EventScript_SawyerRematch",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         0,
         0
@@ -7281,7 +7281,7 @@
         }
       ],
       "script": "MtPyre_2F_EventScript_Mark",
-      "sprite": "maniac.png",
+      "sprite": "maniac.webp",
       "coords": [
         3,
         6
@@ -7307,7 +7307,7 @@
         }
       ],
       "script": "MtPyre_2F_EventScript_Luke",
-      "sprite": "man_4.png",
+      "sprite": "man_4.webp",
       "coords": [
         3,
         9
@@ -7329,7 +7329,7 @@
         }
       ],
       "script": "MtPyre_2F_EventScript_Leah",
-      "sprite": "hex_maniac.png",
+      "sprite": "hex_maniac.webp",
       "coords": [
         6,
         6
@@ -7351,7 +7351,7 @@
         }
       ],
       "script": "MtPyre_2F_EventScript_Zander",
-      "sprite": "black_belt.png",
+      "sprite": "black_belt.webp",
       "coords": [
         6,
         9
@@ -7377,7 +7377,7 @@
         }
       ],
       "script": "MtPyre_3F_EventScript_William",
-      "sprite": "psychic_m.png",
+      "sprite": "psychic_m.webp",
       "coords": [
         1,
         4
@@ -7403,7 +7403,7 @@
         }
       ],
       "script": "MtPyre_3F_EventScript_Kayla",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         11,
         4
@@ -7421,7 +7421,7 @@
       "party": [
         {
           "lvl": 64,
-          "id": 1483
+          "id": 973
         },
         {
           "lvl": 64,
@@ -7429,7 +7429,7 @@
         }
       ],
       "script": "MtPyre_3F_EventScript_RematchGabrielle",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         0,
         0
@@ -7506,7 +7506,7 @@
         }
       ],
       "script": "MtPyre_6F_EventScript_RematchValerie",
-      "sprite": "hex_maniac.png",
+      "sprite": "hex_maniac.webp",
       "coords": [
         0,
         0
@@ -7535,7 +7535,7 @@
         }
       ],
       "script": "MtPyre_6F_EventScript_Cedric",
-      "sprite": "psychic_m.png",
+      "sprite": "psychic_m.webp",
       "coords": [
         10,
         3
@@ -7730,7 +7730,7 @@
         }
       ],
       "script": "PetalburgCity_Gym_EventScript_George",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         4,
         68
@@ -7759,7 +7759,7 @@
         }
       ],
       "script": "PetalburgCity_Gym_EventScript_Berke",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         4,
         29
@@ -7788,7 +7788,7 @@
         }
       ],
       "script": "PetalburgCity_Gym_EventScript_Mary",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         4,
         94
@@ -7818,7 +7818,7 @@
         }
       ],
       "script": "PetalburgCity_Gym_EventScript_Alexia",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         4,
         55
@@ -7847,7 +7847,7 @@
         }
       ],
       "script": "PetalburgCity_Gym_EventScript_Jody",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         4,
         16
@@ -7930,7 +7930,7 @@
         }
       ],
       "script": "PetalburgWoods_EventScript_Lyle",
-      "sprite": "bug_catcher.png",
+      "sprite": "bug_catcher.webp",
       "coords": [
         7,
         32
@@ -7956,7 +7956,7 @@
         }
       ],
       "script": "PetalburgWoods_EventScript_JamesRematch",
-      "sprite": "bug_catcher.png",
+      "sprite": "bug_catcher.webp",
       "coords": [
         0,
         0
@@ -8217,7 +8217,7 @@
         }
       ],
       "script": "Route102_EventScript_CalvinRematch",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         0,
         0
@@ -8244,7 +8244,7 @@
         }
       ],
       "script": "Route102_EventScript_Rick",
-      "sprite": "bug_catcher.png",
+      "sprite": "bug_catcher.webp",
       "coords": [
         25,
         15
@@ -8270,7 +8270,7 @@
         }
       ],
       "script": "Route102_EventScript_Tiana",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         8,
         7
@@ -8296,7 +8296,7 @@
         }
       ],
       "script": "Route102_EventScript_Allen",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         19,
         4
@@ -8474,7 +8474,7 @@
         }
       ],
       "script": "Route103_EventScript_Daisy",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         71,
         11
@@ -8500,7 +8500,7 @@
         }
       ],
       "script": "Route103_EventScript_Amy",
-      "sprite": "twin.png",
+      "sprite": "twin.webp",
       "coords": [
         64,
         12
@@ -8526,7 +8526,7 @@
         }
       ],
       "script": "Route103_EventScript_MiguelRematch",
-      "sprite": "pokefan_m.png",
+      "sprite": "pokefan_m.webp",
       "coords": [
         0,
         0
@@ -8553,7 +8553,7 @@
         }
       ],
       "script": "Route103_EventScript_Marcos",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         67,
         9
@@ -8579,7 +8579,7 @@
         }
       ],
       "script": "Route103_EventScript_Rhett",
-      "sprite": "black_belt.png",
+      "sprite": "black_belt.webp",
       "coords": [
         67,
         5
@@ -8601,7 +8601,7 @@
         }
       ],
       "script": "Route103_EventScript_Pete",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         28,
         10
@@ -8623,7 +8623,7 @@
         }
       ],
       "script": "Route103_EventScript_Isabelle",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         42,
         10
@@ -8655,7 +8655,7 @@
         }
       ],
       "script": "Route104_EventScript_Ivan",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         29,
         8
@@ -8681,7 +8681,7 @@
         }
       ],
       "script": "Route104_EventScript_Billy",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         18,
         67
@@ -8719,7 +8719,7 @@
         }
       ],
       "script": "Route104_EventScript_RematchHaley",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         0,
         0
@@ -8743,7 +8743,7 @@
         }
       ],
       "script": "Route104_EventScript_RematchWinston",
-      "sprite": "rich_boy.png",
+      "sprite": "rich_boy.webp",
       "coords": [
         0,
         0
@@ -8767,7 +8767,7 @@
         }
       ],
       "script": "Route104_EventScript_RematchCindy",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         0,
         0
@@ -8794,7 +8794,7 @@
         }
       ],
       "script": "Route104_EventScript_Gina",
-      "sprite": "twin.png",
+      "sprite": "twin.webp",
       "coords": [
         27,
         15
@@ -8816,7 +8816,7 @@
         }
       ],
       "script": "Route104_EventScript_Darian",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         15,
         59
@@ -8910,7 +8910,7 @@
         }
       ],
       "script": "Route105_EventScript_Foster",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         17,
         48
@@ -8936,7 +8936,7 @@
         }
       ],
       "script": "Route105_EventScript_Luis",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         19,
         60
@@ -8958,7 +8958,7 @@
         }
       ],
       "script": "Route105_EventScript_Dominik",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         27,
         36
@@ -8984,7 +8984,7 @@
         }
       ],
       "script": "Route105_EventScript_Beverly",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         8,
         45
@@ -9006,7 +9006,7 @@
         }
       ],
       "script": "Route105_EventScript_Imani",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         19,
         9
@@ -9032,7 +9032,7 @@
         }
       ],
       "script": "Route105_EventScript_Josue",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         4,
         54
@@ -9058,7 +9058,7 @@
         }
       ],
       "script": "Route105_EventScript_AndresRematch",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         0,
         0
@@ -9087,7 +9087,7 @@
         }
       ],
       "script": "Route106_EventScript_Douglas",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         18,
         5
@@ -9109,7 +9109,7 @@
         }
       ],
       "script": "Route106_EventScript_Kyla",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         29,
         10
@@ -9139,7 +9139,7 @@
         }
       ],
       "script": "Route106_EventScript_ElliotRematch",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         0,
         0
@@ -9170,7 +9170,7 @@
         }
       ],
       "script": "Route106_EventScript_Ned",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         65,
         14
@@ -9202,7 +9202,7 @@
         }
       ],
       "script": "Route107_EventScript_Darrin",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         41,
         10
@@ -9224,7 +9224,7 @@
         }
       ],
       "script": "Route107_EventScript_TonyRematch",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         0,
         0
@@ -9251,7 +9251,7 @@
         }
       ],
       "script": "Route107_EventScript_Denise",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         21,
         4
@@ -9277,7 +9277,7 @@
         }
       ],
       "script": "Route107_EventScript_Beth",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         50,
         11
@@ -9303,7 +9303,7 @@
         }
       ],
       "script": "Route107_EventScript_Lisa",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         46,
         5
@@ -9329,7 +9329,7 @@
         }
       ],
       "script": "Route107_EventScript_Camron",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         54,
         5
@@ -9357,7 +9357,7 @@
         }
       ],
       "script": "Route108_EventScript_Jerome",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         52,
         13
@@ -9383,7 +9383,7 @@
         }
       ],
       "script": "Route108_EventScript_Matthew",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         13,
         13
@@ -9409,7 +9409,7 @@
         }
       ],
       "script": "Route108_EventScript_Tara",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         35,
         12
@@ -9439,7 +9439,7 @@
         }
       ],
       "script": "Route108_EventScript_Missy",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         8,
         7
@@ -9467,7 +9467,7 @@
         }
       ],
       "script": "Route108_EventScript_Carolina",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         41,
         5
@@ -9493,7 +9493,7 @@
         }
       ],
       "script": "Route108_EventScript_CoryRematch",
-      "sprite": "sailor.png",
+      "sprite": "sailor.webp",
       "coords": [
         0,
         0
@@ -9522,7 +9522,7 @@
         }
       ],
       "script": "Route109_EventScript_David",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         12,
         36
@@ -9552,7 +9552,7 @@
         }
       ],
       "script": "Route109_EventScript_Alice",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         25,
         39
@@ -9578,7 +9578,7 @@
         }
       ],
       "script": "Route109_EventScript_Huey",
-      "sprite": "sailor.png",
+      "sprite": "sailor.webp",
       "coords": [
         15,
         17
@@ -9600,7 +9600,7 @@
         }
       ],
       "script": "Route109_EventScript_Edmond",
-      "sprite": "sailor.png",
+      "sprite": "sailor.webp",
       "coords": [
         24,
         13
@@ -9625,7 +9625,7 @@
         }
       ],
       "script": "Route109_EventScript_RickyRematch",
-      "sprite": "tuber_m.png",
+      "sprite": "tuber_m.webp",
       "coords": [
         0,
         0
@@ -9652,7 +9652,7 @@
         }
       ],
       "script": "Route109_EventScript_LolaRematch",
-      "sprite": "tuber_f.png",
+      "sprite": "tuber_f.webp",
       "coords": [
         0,
         0
@@ -9675,7 +9675,7 @@
         }
       ],
       "script": "Route109_EventScript_Austina",
-      "sprite": "tuber_f.png",
+      "sprite": "tuber_f.webp",
       "coords": [
         28,
         31
@@ -9697,7 +9697,7 @@
         }
       ],
       "script": "Route109_EventScript_Gwen",
-      "sprite": "tuber_f.png",
+      "sprite": "tuber_f.webp",
       "coords": [
         29,
         32
@@ -9723,7 +9723,7 @@
         }
       ],
       "script": "Route109_EventScript_Carter",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         21,
         56
@@ -9757,7 +9757,7 @@
         }
       ],
       "script": "Route109_EventScript_Paul",
-      "sprite": "man_4.png",
+      "sprite": "man_4.webp",
       "coords": [
         9,
         41
@@ -9783,7 +9783,7 @@
         }
       ],
       "script": "Route109_EventScript_Chandler",
-      "sprite": "tuber_m.png",
+      "sprite": "tuber_m.webp",
       "coords": [
         27,
         7
@@ -9805,7 +9805,7 @@
         }
       ],
       "script": "Route109_EventScript_Hailey",
-      "sprite": "tuber_f.png",
+      "sprite": "tuber_f.webp",
       "coords": [
         17,
         13
@@ -9831,7 +9831,7 @@
         }
       ],
       "script": "Route109_EventScript_Elijah",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         17,
         56
@@ -9899,7 +9899,7 @@
         }
       ],
       "script": "Route109_SeashoreHouse_EventScript_Dwayne",
-      "sprite": "sailor.png",
+      "sprite": "sailor.webp",
       "coords": [
         2,
         3
@@ -9967,7 +9967,7 @@
         }
       ],
       "script": "Route109_SeashoreHouse_EventScript_Johanna",
-      "sprite": "beauty.png",
+      "sprite": "beauty.webp",
       "coords": [
         10,
         5
@@ -10035,7 +10035,7 @@
         }
       ],
       "script": "Route109_SeashoreHouse_EventScript_Simon",
-      "sprite": "tuber_m.png",
+      "sprite": "tuber_m.webp",
       "coords": [
         14,
         9
@@ -10105,7 +10105,7 @@
         }
       ],
       "script": "Route110_EventScript_Edward",
-      "sprite": "psychic_m.png",
+      "sprite": "psychic_m.webp",
       "coords": [
         3,
         36
@@ -10127,7 +10127,7 @@
         }
       ],
       "script": "Route110_EventScript_Jaclyn",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         33,
         15
@@ -10195,7 +10195,7 @@
         }
       ],
       "script": "Route110_EventScript_EdwinRematch",
-      "sprite": "maniac.png",
+      "sprite": "maniac.webp",
       "coords": [
         0,
         0
@@ -10230,7 +10230,7 @@
         }
       ],
       "script": "Route110_EventScript_Dale",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         10,
         19
@@ -10264,7 +10264,7 @@
         }
       ],
       "script": "Route110_EventScript_Jacob",
-      "sprite": "cycling_triathlete_m.png",
+      "sprite": "cycling_triathlete_m.webp",
       "coords": [
         21,
         78
@@ -10294,7 +10294,7 @@
         }
       ],
       "script": "Route110_EventScript_Anthony",
-      "sprite": "cycling_triathlete_m.png",
+      "sprite": "cycling_triathlete_m.webp",
       "coords": [
         19,
         31
@@ -10324,7 +10324,7 @@
         }
       ],
       "script": "Route110_EventScript_BenjaminRematch",
-      "sprite": "cycling_triathlete_m.png",
+      "sprite": "cycling_triathlete_m.webp",
       "coords": [
         0,
         0
@@ -10355,7 +10355,7 @@
         }
       ],
       "script": "Route110_EventScript_Jasmine",
-      "sprite": "cycling_triathlete_f.png",
+      "sprite": "cycling_triathlete_f.webp",
       "coords": [
         16,
         73
@@ -10381,7 +10381,7 @@
         }
       ],
       "script": "Route110_EventScript_AbigailRematch",
-      "sprite": "cycling_triathlete_f.png",
+      "sprite": "cycling_triathlete_f.webp",
       "coords": [
         0,
         0
@@ -10435,7 +10435,7 @@
         }
       ],
       "script": "Route110_EventScript_IsabelRematch",
-      "sprite": "pokefan_f.png",
+      "sprite": "pokefan_f.webp",
       "coords": [
         0,
         0
@@ -10466,7 +10466,7 @@
         }
       ],
       "script": "Route110_EventScript_Timmy",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         33,
         69
@@ -10519,7 +10519,7 @@
         }
       ],
       "script": "Route110_EventScript_Kaleb",
-      "sprite": "pokefan_m.png",
+      "sprite": "pokefan_m.webp",
       "coords": [
         7,
         76
@@ -10602,7 +10602,7 @@
         }
       ],
       "script": "Route110_EventScript_Joseph",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         36,
         43
@@ -10685,7 +10685,7 @@
         }
       ],
       "script": "Route110_EventScript_Alyssa",
-      "sprite": "cycling_triathlete_f.png",
+      "sprite": "cycling_triathlete_f.webp",
       "coords": [
         5,
         32
@@ -11626,7 +11626,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle1_EventScript_Sally",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         14,
         20
@@ -11765,7 +11765,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle1_EventScript_Eddie",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         14,
         8
@@ -11926,7 +11926,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle1_EventScript_Robin",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         2,
         15
@@ -12064,7 +12064,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle2_EventScript_Ted",
-      "sprite": "school_kid_m.png",
+      "sprite": "school_kid_m.webp",
       "coords": [
         13,
         10
@@ -12202,7 +12202,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle2_EventScript_Rachel",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         10,
         17
@@ -12340,7 +12340,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle2_EventScript_Georgia",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         11,
         9
@@ -12478,7 +12478,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle3_EventScript_Rusty",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         7,
         19
@@ -12616,7 +12616,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle3_EventScript_Martha",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         14,
         2
@@ -12754,7 +12754,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle3_EventScript_Alan",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         14,
         5
@@ -12776,7 +12776,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle4_EventScript_Cora",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         2,
         2
@@ -12802,7 +12802,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle4_EventScript_Yuji",
-      "sprite": "black_belt.png",
+      "sprite": "black_belt.webp",
       "coords": [
         2,
         14
@@ -12824,7 +12824,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle4_EventScript_Paula",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         14,
         7
@@ -12852,7 +12852,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle6_EventScript_Sophia",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         7,
         9
@@ -12882,7 +12882,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle6_EventScript_Benny",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         11,
         10
@@ -12906,7 +12906,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle6_EventScript_Sebastian",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         4,
         5
@@ -12932,7 +12932,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle7_EventScript_Joshua",
-      "sprite": "psychic_m.png",
+      "sprite": "psychic_m.webp",
       "coords": [
         9,
         20
@@ -12958,7 +12958,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle7_EventScript_Patricia",
-      "sprite": "hex_maniac.png",
+      "sprite": "hex_maniac.webp",
       "coords": [
         8,
         17
@@ -12984,7 +12984,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle7_EventScript_Alexis",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         10,
         2
@@ -13006,7 +13006,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle7_EventScript_Mariela",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         8,
         13
@@ -13032,7 +13032,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle7_EventScript_Alvaro",
-      "sprite": "psychic_m.png",
+      "sprite": "psychic_m.webp",
       "coords": [
         9,
         2
@@ -13054,7 +13054,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle7_EventScript_Everett",
-      "sprite": "gentleman.png",
+      "sprite": "gentleman.webp",
       "coords": [
         9,
         12
@@ -13086,7 +13086,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle8_EventScript_Vincent",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         1,
         10
@@ -13114,7 +13114,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle8_EventScript_Keira",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         8,
         17
@@ -13142,7 +13142,7 @@
         }
       ],
       "script": "Route110_TrickHousePuzzle8_EventScript_Leroy",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         4,
         2
@@ -13512,7 +13512,7 @@
         }
       ],
       "script": "Route111_EventScript_Drew",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         30,
         99
@@ -13538,7 +13538,7 @@
         }
       ],
       "script": "Route111_EventScript_Heidi",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         28,
         51
@@ -13564,7 +13564,7 @@
         }
       ],
       "script": "Route111_EventScript_Beau",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         21,
         47
@@ -13590,7 +13590,7 @@
         }
       ],
       "script": "Route111_EventScript_Becky",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         32,
         66
@@ -13705,7 +13705,7 @@
         }
       ],
       "script": "Route111_EventScript_RematchDusty",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         0,
         0
@@ -13736,7 +13736,7 @@
         }
       ],
       "script": "Route111_EventScript_Travis",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         11,
         71
@@ -13762,7 +13762,7 @@
         }
       ],
       "script": "Route111_EventScript_Irene",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         14,
         95
@@ -13794,7 +13794,7 @@
         }
       ],
       "script": "Route111_EventScript_RematchWilton",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         0,
         0
@@ -13823,7 +13823,7 @@
         }
       ],
       "script": "Route111_EventScript_RematchBrooke",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         0,
         0
@@ -13850,7 +13850,7 @@
         }
       ],
       "script": "Route111_EventScript_Hayden",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         16,
         119
@@ -13876,7 +13876,7 @@
         }
       ],
       "script": "Route111_EventScript_Bianca",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         19,
         121
@@ -13902,7 +13902,7 @@
         }
       ],
       "script": "Route111_EventScript_Tyron",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         26,
         132
@@ -13928,7 +13928,7 @@
         }
       ],
       "script": "Route111_EventScript_Celina",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         20,
         132
@@ -14043,7 +14043,7 @@
         }
       ],
       "script": "Route111_EventScript_Celia",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         29,
         94
@@ -14135,7 +14135,7 @@
         }
       ],
       "script": "Route111_EventScript_Branden",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         32,
         99
@@ -14530,7 +14530,7 @@
         }
       ],
       "script": "Route112_EventScript_RematchTrent",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         0,
         0
@@ -14557,7 +14557,7 @@
         }
       ],
       "script": "Route112_EventScript_Larry",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         29,
         49
@@ -14587,7 +14587,7 @@
         }
       ],
       "script": "Route112_EventScript_Carol",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         22,
         46
@@ -14617,7 +14617,7 @@
         }
       ],
       "script": "Route112_EventScript_Bryant",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         31,
         7
@@ -14647,7 +14647,7 @@
         }
       ],
       "script": "Route112_EventScript_Shayla",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         27,
         12
@@ -14675,7 +14675,7 @@
         }
       ],
       "script": "Route113_EventScript_Jaylen",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         62,
         8
@@ -14701,7 +14701,7 @@
         }
       ],
       "script": "Route113_EventScript_Dillon",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         21,
         11
@@ -14816,7 +14816,7 @@
         }
       ],
       "script": "Route113_EventScript_RematchMadeline",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         0,
         0
@@ -14847,7 +14847,7 @@
         }
       ],
       "script": "Route113_EventScript_RematchLao",
-      "sprite": "ninja_boy.png",
+      "sprite": "ninja_boy.webp",
       "coords": [
         0,
         0
@@ -14878,7 +14878,7 @@
         }
       ],
       "script": "Route113_EventScript_Lung",
-      "sprite": "ninja_boy.png",
+      "sprite": "ninja_boy.webp",
       "coords": [
         71,
         2
@@ -14947,7 +14947,7 @@
         },
         {
           "lvl": 203,
-          "id": 1484,
+          "id": 743,
           "nature": "timid",
           "ability": [
             19
@@ -14970,7 +14970,7 @@
         },
         {
           "lvl": 203,
-          "id": 1477,
+          "id": 735,
           "nature": "adamant",
           "ability": [
             91
@@ -14994,7 +14994,7 @@
         }
       ],
       "script": "Route113_EventScript_Tori",
-      "sprite": "twin.png",
+      "sprite": "twin.webp",
       "coords": [
         46,
         7
@@ -15020,7 +15020,7 @@
         }
       ],
       "script": "Route113_EventScript_Sophie",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         7,
         6
@@ -15046,7 +15046,7 @@
         }
       ],
       "script": "Route113_EventScript_Coby",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         7,
         13
@@ -15074,7 +15074,7 @@
         }
       ],
       "script": "Route114_EventScript_Lenny",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         18,
         65
@@ -15212,7 +15212,7 @@
         }
       ],
       "script": "Route114_EventScript_Lucas",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         22,
         28
@@ -15238,7 +15238,7 @@
         }
       ],
       "script": "Route114_EventScript_Shane",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         22,
         50
@@ -15268,7 +15268,7 @@
         }
       ],
       "script": "Route114_EventScript_Nancy",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         24,
         39
@@ -15298,7 +15298,7 @@
         }
       ],
       "script": "Route114_EventScript_RematchSteve",
-      "sprite": "maniac.png",
+      "sprite": "maniac.webp",
       "coords": [
         0,
         0
@@ -15325,7 +15325,7 @@
         }
       ],
       "script": "Route114_EventScript_RematchBernie",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         0,
         0
@@ -15418,7 +15418,7 @@
         },
         {
           "lvl": 202,
-          "id": 1485,
+          "id": 752,
           "nature": "adamant",
           "ability": [
             199
@@ -15441,7 +15441,7 @@
         }
       ],
       "script": "Route114_EventScript_Claude",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         19,
         25
@@ -15471,7 +15471,7 @@
         }
       ],
       "script": "Route114_EventScript_Nolan",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         25,
         6
@@ -15499,7 +15499,7 @@
         }
       ],
       "script": "Route114_EventScript_Tyra",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         15,
         38
@@ -15638,7 +15638,7 @@
         }
       ],
       "script": "Route114_EventScript_Charlotte",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         13,
         48
@@ -15753,7 +15753,7 @@
         }
       ],
       "script": "Route114_EventScript_Kai",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         22,
         22
@@ -15779,7 +15779,7 @@
         }
       ],
       "script": "Route115_EventScript_RematchTimothy",
-      "sprite": "expert_m.png",
+      "sprite": "expert_m.webp",
       "coords": [
         0,
         0
@@ -15806,7 +15806,7 @@
         }
       ],
       "script": "Route115_EventScript_Koichi",
-      "sprite": "black_belt.png",
+      "sprite": "black_belt.webp",
       "coords": [
         19,
         15
@@ -15828,7 +15828,7 @@
         }
       ],
       "script": "Route115_EventScript_RematchNob",
-      "sprite": "black_belt.png",
+      "sprite": "black_belt.webp",
       "coords": [
         0,
         0
@@ -15855,7 +15855,7 @@
         }
       ],
       "script": "Route115_EventScript_RematchCyndy",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         0,
         0
@@ -15882,7 +15882,7 @@
         }
       ],
       "script": "Route115_EventScript_Hector",
-      "sprite": "maniac.png",
+      "sprite": "maniac.webp",
       "coords": [
         24,
         62
@@ -15908,7 +15908,7 @@
         }
       ],
       "script": "Route115_EventScript_Kyra",
-      "sprite": "running_triathlete_f.png",
+      "sprite": "running_triathlete_f.webp",
       "coords": [
         10,
         15
@@ -15934,7 +15934,7 @@
         }
       ],
       "script": "Route115_EventScript_Jaiden",
-      "sprite": "ninja_boy.png",
+      "sprite": "ninja_boy.webp",
       "coords": [
         11,
         12
@@ -15956,7 +15956,7 @@
         }
       ],
       "script": "Route115_EventScript_Alix",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         10,
         7
@@ -15978,7 +15978,7 @@
         }
       ],
       "script": "Route115_EventScript_Helene",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         15,
         7
@@ -16004,7 +16004,7 @@
         }
       ],
       "script": "Route115_EventScript_Marlene",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         28,
         62
@@ -16028,7 +16028,7 @@
         }
       ],
       "script": "Route116_EventScript_Joey",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         12,
         7
@@ -16054,7 +16054,7 @@
         }
       ],
       "script": "Route116_EventScript_Jose",
-      "sprite": "bug_catcher.png",
+      "sprite": "bug_catcher.webp",
       "coords": [
         13,
         17
@@ -16076,7 +16076,7 @@
         }
       ],
       "script": "Route116_EventScript_RematchJerry",
-      "sprite": "school_kid_m.png",
+      "sprite": "school_kid_m.webp",
       "coords": [
         0,
         0
@@ -16099,7 +16099,7 @@
         }
       ],
       "script": "Route116_EventScript_Clark",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         36,
         17
@@ -16121,7 +16121,7 @@
         }
       ],
       "script": "Route116_EventScript_Janice",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         26,
         6
@@ -16143,7 +16143,7 @@
         }
       ],
       "script": "Route116_EventScript_RematchKaren",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         0,
         0
@@ -16172,7 +16172,7 @@
         }
       ],
       "script": "Route116_EventScript_Sarah",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         33,
         8
@@ -16200,7 +16200,7 @@
         }
       ],
       "script": "Route116_EventScript_Dawson",
-      "sprite": "boy_2.png",
+      "sprite": "boy_2.webp",
       "coords": [
         33,
         5
@@ -16226,7 +16226,7 @@
         }
       ],
       "script": "Route116_EventScript_Devan",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         42,
         13
@@ -16252,7 +16252,7 @@
         }
       ],
       "script": "Route116_EventScript_Johnson",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         36,
         13
@@ -16457,7 +16457,7 @@
         }
       ],
       "script": "Route117_EventScript_RematchEzekiel",
-      "sprite": "man_4.png",
+      "sprite": "man_4.webp",
       "coords": [
         0,
         0
@@ -16596,7 +16596,7 @@
         }
       ],
       "script": "Route117_EventScript_RematchLydia",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         0,
         0
@@ -16623,7 +16623,7 @@
         }
       ],
       "script": "Route117_EventScript_RematchDylan",
-      "sprite": "running_triathlete_m.png",
+      "sprite": "running_triathlete_m.webp",
       "coords": [
         0,
         0
@@ -16650,7 +16650,7 @@
         }
       ],
       "script": "Route117_EventScript_RematchMaria",
-      "sprite": "running_triathlete_f.png",
+      "sprite": "running_triathlete_f.webp",
       "coords": [
         0,
         0
@@ -16685,7 +16685,7 @@
         }
       ],
       "script": "Route117_EventScript_Anna",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         42,
         6
@@ -16711,7 +16711,7 @@
         }
       ],
       "script": "Route117_EventScript_Brandi",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         15,
         4
@@ -16737,7 +16737,7 @@
         }
       ],
       "script": "Route117_EventScript_Aisha",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         21,
         4
@@ -16905,7 +16905,7 @@
         }
       ],
       "script": "Route118_EventScript_RematchRose",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         0,
         0
@@ -16932,7 +16932,7 @@
         }
       ],
       "script": "Route118_EventScript_Barny",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         39,
         15
@@ -16954,7 +16954,7 @@
         }
       ],
       "script": "Route118_EventScript_Wade",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         28,
         8
@@ -16988,7 +16988,7 @@
         }
       ],
       "script": "Route118_EventScript_RematchDalton",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         0,
         0
@@ -17011,7 +17011,7 @@
         }
       ],
       "script": "Route118_EventScript_Perry",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         64,
         10
@@ -17037,7 +17037,7 @@
         }
       ],
       "script": "Route118_EventScript_Chester",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         56,
         7
@@ -17067,7 +17067,7 @@
         }
       ],
       "script": "Route118_EventScript_Deandre",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         7,
         7
@@ -18223,7 +18223,7 @@
         }
       ],
       "script": "Route119_EventScript_Brent",
-      "sprite": "maniac.png",
+      "sprite": "maniac.webp",
       "coords": [
         28,
         116
@@ -18245,7 +18245,7 @@
         },
         {
           "lvl": 57,
-          "id": 1484
+          "id": 743
         },
         {
           "lvl": 57,
@@ -18253,7 +18253,7 @@
         }
       ],
       "script": "Route119_EventScript_Donald",
-      "sprite": "maniac.png",
+      "sprite": "maniac.webp",
       "coords": [
         5,
         125
@@ -18279,7 +18279,7 @@
         }
       ],
       "script": "Route119_EventScript_Taylor",
-      "sprite": "maniac.png",
+      "sprite": "maniac.webp",
       "coords": [
         26,
         123
@@ -18305,7 +18305,7 @@
         }
       ],
       "script": "Route119_EventScript_Doug",
-      "sprite": "bug_catcher.png",
+      "sprite": "bug_catcher.webp",
       "coords": [
         34,
         122
@@ -18331,7 +18331,7 @@
         }
       ],
       "script": "Route119_EventScript_Greg",
-      "sprite": "bug_catcher.png",
+      "sprite": "bug_catcher.webp",
       "coords": [
         12,
         123
@@ -18353,7 +18353,7 @@
         }
       ],
       "script": "Route119_EventScript_Kent",
-      "sprite": "bug_catcher.png",
+      "sprite": "bug_catcher.webp",
       "coords": [
         17,
         128
@@ -18377,7 +18377,7 @@
         }
       ],
       "script": "Route119_EventScript_RematchJackson",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         0,
         0
@@ -18406,7 +18406,7 @@
         }
       ],
       "script": "Route119_EventScript_RematchCatherine",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         0,
         0
@@ -18429,7 +18429,7 @@
         }
       ],
       "script": "Route119_EventScript_Hugh",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         10,
         50
@@ -18451,7 +18451,7 @@
         }
       ],
       "script": "Route119_EventScript_Phil",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         8,
         63
@@ -18474,7 +18474,7 @@
         }
       ],
       "script": "Route119_EventScript_Yasu",
-      "sprite": "ninja_boy.png",
+      "sprite": "ninja_boy.webp",
       "coords": [
         28,
         14
@@ -18501,7 +18501,7 @@
         }
       ],
       "script": "Route119_EventScript_Takashi",
-      "sprite": "ninja_boy.png",
+      "sprite": "ninja_boy.webp",
       "coords": [
         19,
         49
@@ -18528,7 +18528,7 @@
         }
       ],
       "script": "Route119_EventScript_Hideo",
-      "sprite": "ninja_boy.png",
+      "sprite": "ninja_boy.webp",
       "coords": [
         29,
         6
@@ -18554,7 +18554,7 @@
         }
       ],
       "script": "Route119_EventScript_Chris",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         13,
         104
@@ -18576,7 +18576,7 @@
         }
       ],
       "script": "Route119_EventScript_Fabian",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         32,
         15
@@ -18602,7 +18602,7 @@
         }
       ],
       "script": "Route119_EventScript_Dayton",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         16,
         52
@@ -18624,7 +18624,7 @@
         }
       ],
       "script": "Route119_EventScript_Raquel",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         8,
         68
@@ -18650,7 +18650,7 @@
         }
       ],
       "script": "Route119_WeatherInstitute_1F_EventScript_Grunt1",
-      "sprite": "aqua_member_m.png",
+      "sprite": "aqua_member_m.webp",
       "coords": [
         15,
         3
@@ -18672,7 +18672,7 @@
         }
       ],
       "script": "Route119_WeatherInstitute_1F_EventScript_Grunt4",
-      "sprite": "aqua_member_f.png",
+      "sprite": "aqua_member_f.webp",
       "coords": [
         10,
         5
@@ -18764,7 +18764,7 @@
         }
       ],
       "script": "Route119_WeatherInstitute_2F_EventScript_Grunt5",
-      "sprite": "aqua_member_f.png",
+      "sprite": "aqua_member_f.webp",
       "coords": [
         19,
         6
@@ -18856,7 +18856,7 @@
         }
       ],
       "script": "Route119_WeatherInstitute_2F_EventScript_AdminMatt",
-      "sprite": "aqua_member_m.png",
+      "sprite": "aqua_member_m.webp",
       "coords": [
         14,
         6
@@ -18882,7 +18882,7 @@
         }
       ],
       "script": "Route119_WeatherInstitute_2F_EventScript_Grunt3",
-      "sprite": "aqua_member_m.png",
+      "sprite": "aqua_member_m.webp",
       "coords": [
         10,
         8
@@ -19043,7 +19043,7 @@
         }
       ],
       "script": "Route119_WeatherInstitute_2F_EventScript_Shelly",
-      "sprite": "aqua_member_f.png",
+      "sprite": "aqua_member_f.webp",
       "coords": [
         4,
         6
@@ -19071,7 +19071,7 @@
         }
       ],
       "script": "Route120_EventScript_Colin",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         5,
         22
@@ -19093,7 +19093,7 @@
         }
       ],
       "script": "Route120_EventScript_RematchRobert",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         0,
         0
@@ -19126,7 +19126,7 @@
         }
       ],
       "script": "Route120_EventScript_Lorenzo",
-      "sprite": "camper.png",
+      "sprite": "camper.webp",
       "coords": [
         27,
         51
@@ -19154,11 +19154,11 @@
         },
         {
           "lvl": 62,
-          "id": 1479
+          "id": 754
         }
       ],
       "script": "Route120_EventScript_Jenna",
-      "sprite": "picnicker.png",
+      "sprite": "picnicker.webp",
       "coords": [
         36,
         45
@@ -19180,7 +19180,7 @@
         }
       ],
       "script": "Route120_EventScript_RematchJeffrey",
-      "sprite": "maniac.png",
+      "sprite": "maniac.webp",
       "coords": [
         0,
         0
@@ -19205,7 +19205,7 @@
         }
       ],
       "script": "Route120_EventScript_Jennifer",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         31,
         37
@@ -19231,7 +19231,7 @@
         }
       ],
       "script": "Route120_EventScript_Clarissa",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         16,
         6
@@ -19253,7 +19253,7 @@
         }
       ],
       "script": "Route120_EventScript_Angelica",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         18,
         34
@@ -19280,7 +19280,7 @@
         }
       ],
       "script": "Route120_EventScript_Keigo",
-      "sprite": "ninja_boy.png",
+      "sprite": "ninja_boy.webp",
       "coords": [
         10,
         72
@@ -19307,7 +19307,7 @@
         }
       ],
       "script": "Route120_EventScript_Riley",
-      "sprite": "ninja_boy.png",
+      "sprite": "ninja_boy.webp",
       "coords": [
         19,
         28
@@ -19331,7 +19331,7 @@
         }
       ],
       "script": "Route120_EventScript_Leonel",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         14,
         34
@@ -19357,7 +19357,7 @@
         }
       ],
       "script": "Route120_EventScript_Callie",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         19,
         32
@@ -19451,7 +19451,7 @@
         }
       ],
       "script": "Route121_EventScript_Vanessa",
-      "sprite": "pokefan_f.png",
+      "sprite": "pokefan_f.webp",
       "coords": [
         59,
         6
@@ -19543,7 +19543,7 @@
         }
       ],
       "script": "Route121_EventScript_RematchWalter",
-      "sprite": "gentleman.png",
+      "sprite": "gentleman.webp",
       "coords": [
         0,
         0
@@ -19659,7 +19659,7 @@
         }
       ],
       "script": "Route121_EventScript_Tammy",
-      "sprite": "hex_maniac.png",
+      "sprite": "hex_maniac.webp",
       "coords": [
         20,
         8
@@ -19685,7 +19685,7 @@
         }
       ],
       "script": "Route121_EventScript_Kate",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         42,
         8
@@ -19801,7 +19801,7 @@
         }
       ],
       "script": "Route121_EventScript_RematchJessica",
-      "sprite": "beauty.png",
+      "sprite": "beauty.webp",
       "coords": [
         0,
         0
@@ -19917,7 +19917,7 @@
         }
       ],
       "script": "Route121_EventScript_Cale",
-      "sprite": "maniac.png",
+      "sprite": "maniac.webp",
       "coords": [
         18,
         5
@@ -19935,7 +19935,7 @@
       "party": [
         {
           "lvl": 65,
-          "id": 1477
+          "id": 735
         },
         {
           "lvl": 65,
@@ -19943,7 +19943,7 @@
         }
       ],
       "script": "Route121_EventScript_Myles",
-      "sprite": "man_4.png",
+      "sprite": "man_4.webp",
       "coords": [
         60,
         12
@@ -19965,7 +19965,7 @@
         }
       ],
       "script": "Route121_EventScript_Pat",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         49,
         13
@@ -19993,7 +19993,7 @@
         }
       ],
       "script": "Route121_EventScript_Marcel",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         67,
         3
@@ -20021,7 +20021,7 @@
         }
       ],
       "script": "Route121_EventScript_RematchCristin",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         0,
         0
@@ -20218,7 +20218,7 @@
         }
       ],
       "script": "Route123_EventScript_Wendy",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         70,
         12
@@ -20250,7 +20250,7 @@
         }
       ],
       "script": "Route123_EventScript_Braxton",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         58,
         7
@@ -20276,7 +20276,7 @@
         }
       ],
       "script": "Route123_EventScript_Violet",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         18,
         9
@@ -20302,7 +20302,7 @@
         }
       ],
       "script": "Route123_EventScript_RematchCameron",
-      "sprite": "psychic_m.png",
+      "sprite": "psychic_m.webp",
       "coords": [
         0,
         0
@@ -20329,7 +20329,7 @@
         }
       ],
       "script": "Route123_EventScript_RematchJacki",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         0,
         0
@@ -20356,7 +20356,7 @@
         }
       ],
       "script": "Route123_EventScript_Miu",
-      "sprite": "twin.png",
+      "sprite": "twin.webp",
       "coords": [
         37,
         13
@@ -20382,7 +20382,7 @@
         }
       ],
       "script": "Route123_EventScript_Kindra",
-      "sprite": "hex_maniac.png",
+      "sprite": "hex_maniac.webp",
       "coords": [
         87,
         12
@@ -20410,7 +20410,7 @@
         }
       ],
       "script": "Route123_EventScript_Frederick",
-      "sprite": "expert_m.png",
+      "sprite": "expert_m.webp",
       "coords": [
         49,
         19
@@ -20436,7 +20436,7 @@
         }
       ],
       "script": "Route123_EventScript_Alberto",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         66,
         19
@@ -20462,7 +20462,7 @@
         }
       ],
       "script": "Route123_EventScript_Ed",
-      "sprite": "maniac.png",
+      "sprite": "maniac.webp",
       "coords": [
         87,
         17
@@ -20488,7 +20488,7 @@
         }
       ],
       "script": "Route123_EventScript_Kayley",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         138,
         16
@@ -20516,7 +20516,7 @@
         }
       ],
       "script": "Route123_EventScript_Jonas",
-      "sprite": "ninja_boy.png",
+      "sprite": "ninja_boy.webp",
       "coords": [
         138,
         14
@@ -20540,7 +20540,7 @@
         }
       ],
       "script": "Route123_EventScript_Jazmyn",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         14,
         16
@@ -20562,7 +20562,7 @@
         }
       ],
       "script": "Route123_EventScript_Davis",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         14,
         12
@@ -20588,7 +20588,7 @@
         }
       ],
       "script": "Route123_EventScript_RematchFernando",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         0,
         0
@@ -20706,7 +20706,7 @@
         }
       ],
       "script": "Route124_EventScript_Spencer",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         9,
         23
@@ -20728,7 +20728,7 @@
         }
       ],
       "script": "Route124_EventScript_Roland",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         67,
         73
@@ -20866,7 +20866,7 @@
         }
       ],
       "script": "Route124_EventScript_RematchJenny",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         0,
         0
@@ -20982,7 +20982,7 @@
         }
       ],
       "script": "Route124_EventScript_Grace",
-      "sprite": "running_triathlete_f.png",
+      "sprite": "running_triathlete_f.webp",
       "coords": [
         7,
         23
@@ -21004,7 +21004,7 @@
         }
       ],
       "script": "Route124_EventScript_Chad",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         58,
         58
@@ -21030,7 +21030,7 @@
         }
       ],
       "script": "Route124_EventScript_Lila",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         52,
         32
@@ -21145,7 +21145,7 @@
         }
       ],
       "script": "Route124_EventScript_Declan",
-      "sprite": "running_triathlete_m.png",
+      "sprite": "running_triathlete_m.webp",
       "coords": [
         8,
         28
@@ -21167,7 +21167,7 @@
         }
       ],
       "script": "Route124_EventScript_Isabella",
-      "sprite": "tuber_f.png",
+      "sprite": "tuber_f.webp",
       "coords": [
         23,
         25
@@ -21191,7 +21191,7 @@
         }
       ],
       "script": "Route125_EventScript_Nolen",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         7,
         31
@@ -21213,7 +21213,7 @@
         }
       ],
       "script": "Route125_EventScript_Stan",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         45,
         9
@@ -21235,7 +21235,7 @@
         }
       ],
       "script": "Route125_EventScript_Tanya",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         38,
         24
@@ -21257,7 +21257,7 @@
         }
       ],
       "script": "Route125_EventScript_Sharon",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         30,
         28
@@ -21283,7 +21283,7 @@
         }
       ],
       "script": "Route125_EventScript_RematchErnest",
-      "sprite": "sailor.png",
+      "sprite": "sailor.webp",
       "coords": [
         0,
         0
@@ -21310,7 +21310,7 @@
         }
       ],
       "script": "Route125_EventScript_Kim",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         7,
         26
@@ -21336,7 +21336,7 @@
         }
       ],
       "script": "Route125_EventScript_Presley",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         43,
         19
@@ -21362,7 +21362,7 @@
         }
       ],
       "script": "Route125_EventScript_Auron",
-      "sprite": "expert_m.png",
+      "sprite": "expert_m.webp",
       "coords": [
         48,
         19
@@ -21552,7 +21552,7 @@
         }
       ],
       "script": "Route126_EventScript_Barry",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         51,
         65
@@ -21582,7 +21582,7 @@
         }
       ],
       "script": "Route126_EventScript_Dean",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         56,
         22
@@ -21608,7 +21608,7 @@
         }
       ],
       "script": "Route126_EventScript_Nikki",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         63,
         43
@@ -21630,7 +21630,7 @@
         }
       ],
       "script": "Route126_EventScript_Brenda",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         9,
         48
@@ -21652,7 +21652,7 @@
         }
       ],
       "script": "Route126_EventScript_Leonardo",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         56,
         5
@@ -21674,7 +21674,7 @@
         }
       ],
       "script": "Route126_EventScript_Isobel",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         64,
         5
@@ -21700,7 +21700,7 @@
         }
       ],
       "script": "Route126_EventScript_Sienna",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         15,
         66
@@ -21726,7 +21726,7 @@
         }
       ],
       "script": "Route126_EventScript_RematchPablo",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         0,
         0
@@ -21755,7 +21755,7 @@
         }
       ],
       "script": "Route127_EventScript_Camden",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         45,
         42
@@ -21781,7 +21781,7 @@
         }
       ],
       "script": "Route127_EventScript_Donny",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         18,
         68
@@ -21811,7 +21811,7 @@
         }
       ],
       "script": "Route127_EventScript_Jonah",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         42,
         21
@@ -21837,7 +21837,7 @@
         }
       ],
       "script": "Route127_EventScript_Henry",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         54,
         14
@@ -21867,7 +21867,7 @@
         }
       ],
       "script": "Route127_EventScript_Roger",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         64,
         19
@@ -21893,7 +21893,7 @@
         }
       ],
       "script": "Route127_EventScript_Aidan",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         15,
         23
@@ -21921,7 +21921,7 @@
         }
       ],
       "script": "Route127_EventScript_Athena",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         12,
         23
@@ -21943,7 +21943,7 @@
         }
       ],
       "script": "Route127_EventScript_RematchKoji",
-      "sprite": "black_belt.png",
+      "sprite": "black_belt.webp",
       "coords": [
         0,
         0
@@ -21972,7 +21972,7 @@
         }
       ],
       "script": "Route128_EventScript_RematchIsaiah",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         0,
         0
@@ -21995,7 +21995,7 @@
         }
       ],
       "script": "Route128_EventScript_RematchKatelyn",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         0,
         0
@@ -22028,7 +22028,7 @@
         }
       ],
       "script": "Route128_EventScript_Alexa",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         24,
         8
@@ -22056,7 +22056,7 @@
         }
       ],
       "script": "Route128_EventScript_Ruben",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         104,
         16
@@ -22086,7 +22086,7 @@
         }
       ],
       "script": "Route128_EventScript_Wayne",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         63,
         28
@@ -22108,7 +22108,7 @@
         }
       ],
       "script": "Route128_EventScript_Harrison",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         101,
         22
@@ -22130,7 +22130,7 @@
         }
       ],
       "script": "Route128_EventScript_Carlee",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         101,
         29
@@ -22158,7 +22158,7 @@
         }
       ],
       "script": "Route129_EventScript_Chase",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         28,
         16
@@ -22184,7 +22184,7 @@
         }
       ],
       "script": "Route129_EventScript_Allison",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         22,
         22
@@ -22210,7 +22210,7 @@
         }
       ],
       "script": "Route129_EventScript_Reed",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         35,
         9
@@ -22236,7 +22236,7 @@
         }
       ],
       "script": "Route129_EventScript_Tisha",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         12,
         7
@@ -22262,7 +22262,7 @@
         }
       ],
       "script": "Route129_EventScript_Clarence",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         13,
         27
@@ -22290,7 +22290,7 @@
         }
       ],
       "script": "Route130_EventScript_Rodney",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         70,
         21
@@ -22316,7 +22316,7 @@
         }
       ],
       "script": "Route130_EventScript_Katie",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         7,
         21
@@ -22342,7 +22342,7 @@
         }
       ],
       "script": "Route130_EventScript_Santiago",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         7,
         30
@@ -22370,7 +22370,7 @@
         }
       ],
       "script": "Route131_EventScript_Richard",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         41,
         32
@@ -22396,7 +22396,7 @@
         }
       ],
       "script": "Route131_EventScript_Herman",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         18,
         19
@@ -22422,7 +22422,7 @@
         }
       ],
       "script": "Route131_EventScript_Susie",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         10,
         22
@@ -22448,7 +22448,7 @@
         }
       ],
       "script": "Route131_EventScript_Kara",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         31,
         25
@@ -22474,7 +22474,7 @@
         }
       ],
       "script": "Route131_EventScript_Reli",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         9,
         16
@@ -22500,7 +22500,7 @@
         }
       ],
       "script": "Route131_EventScript_Talia",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         52,
         27
@@ -22526,7 +22526,7 @@
         }
       ],
       "script": "Route131_EventScript_Kevin",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         52,
         20
@@ -22554,7 +22554,7 @@
         }
       ],
       "script": "Route132_EventScript_Gilbert",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         40,
         13
@@ -22580,7 +22580,7 @@
         }
       ],
       "script": "Route132_EventScript_Dana",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         10,
         6
@@ -22606,7 +22606,7 @@
         }
       ],
       "script": "Route132_EventScript_Ronald",
-      "sprite": "fisherman.png",
+      "sprite": "fisherman.webp",
       "coords": [
         49,
         28
@@ -22632,7 +22632,7 @@
         }
       ],
       "script": "Route132_EventScript_Kiyo",
-      "sprite": "black_belt.png",
+      "sprite": "black_belt.webp",
       "coords": [
         9,
         15
@@ -22660,7 +22660,7 @@
         }
       ],
       "script": "Route132_EventScript_Paxton",
-      "sprite": "expert_m.png",
+      "sprite": "expert_m.webp",
       "coords": [
         33,
         26
@@ -22688,7 +22688,7 @@
         }
       ],
       "script": "Route132_EventScript_Darcy",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         33,
         31
@@ -22716,7 +22716,7 @@
         }
       ],
       "script": "Route132_EventScript_Jonathan",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         21,
         25
@@ -22744,7 +22744,7 @@
         }
       ],
       "script": "Route132_EventScript_Makayla",
-      "sprite": "expert_f.png",
+      "sprite": "expert_f.webp",
       "coords": [
         21,
         30
@@ -22772,7 +22772,7 @@
         }
       ],
       "script": "Route133_EventScript_Franklin",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         68,
         27
@@ -22798,7 +22798,7 @@
         }
       ],
       "script": "Route133_EventScript_Debra",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         68,
         28
@@ -22824,7 +22824,7 @@
         }
       ],
       "script": "Route133_EventScript_Linda",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         13,
         3
@@ -22852,7 +22852,7 @@
         }
       ],
       "script": "Route133_EventScript_Warren",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         37,
         15
@@ -22878,7 +22878,7 @@
         }
       ],
       "script": "Route133_EventScript_Beck",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         7,
         14
@@ -22904,7 +22904,7 @@
         }
       ],
       "script": "Route133_EventScript_Mollie",
-      "sprite": "expert_f.png",
+      "sprite": "expert_f.webp",
       "coords": [
         56,
         11
@@ -22930,7 +22930,7 @@
         }
       ],
       "script": "Route133_EventScript_Conor",
-      "sprite": "expert_m.png",
+      "sprite": "expert_m.webp",
       "coords": [
         56,
         15
@@ -22954,7 +22954,7 @@
         }
       ],
       "script": "Route134_EventScript_Jack",
-      "sprite": "swimmer_m.png",
+      "sprite": "swimmer_m.webp",
       "coords": [
         49,
         9
@@ -22980,7 +22980,7 @@
         }
       ],
       "script": "Route134_EventScript_Laurel",
-      "sprite": "swimmer_f.png",
+      "sprite": "swimmer_f.webp",
       "coords": [
         58,
         7
@@ -23002,7 +23002,7 @@
         }
       ],
       "script": "Route134_EventScript_Alex",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         24,
         23
@@ -23020,11 +23020,11 @@
       "party": [
         {
           "lvl": 72,
-          "id": 1482
+          "id": 784
         }
       ],
       "script": "Route134_EventScript_Aaron",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         41,
         23
@@ -23050,7 +23050,7 @@
         }
       ],
       "script": "Route134_EventScript_Hitoshi",
-      "sprite": "black_belt.png",
+      "sprite": "black_belt.webp",
       "coords": [
         49,
         16
@@ -23076,7 +23076,7 @@
         }
       ],
       "script": "Route134_EventScript_Hudson",
-      "sprite": "sailor.png",
+      "sprite": "sailor.webp",
       "coords": [
         63,
         14
@@ -23102,7 +23102,7 @@
         }
       ],
       "script": "Route134_EventScript_Reyna",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         50,
         16
@@ -23126,7 +23126,7 @@
         }
       ],
       "script": "Route134_EventScript_Marley",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         43,
         23
@@ -23148,7 +23148,7 @@
         }
       ],
       "script": "Route134_EventScript_Kelvin",
-      "sprite": "sailor.png",
+      "sprite": "sailor.webp",
       "coords": [
         24,
         30
@@ -23758,7 +23758,7 @@
         }
       ],
       "script": "RustboroCity_Gym_EventScript_Josh",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         5,
         13
@@ -23784,7 +23784,7 @@
         }
       ],
       "script": "RustboroCity_Gym_EventScript_Tommy",
-      "sprite": "youngster.png",
+      "sprite": "youngster.webp",
       "coords": [
         3,
         9
@@ -23810,7 +23810,7 @@
         }
       ],
       "script": "RustboroCity_Gym_EventScript_Marc",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         1,
         6
@@ -23910,7 +23910,7 @@
         }
       ],
       "script": "RusturfTunnel_EventScript_Mike",
-      "sprite": "hiker.png",
+      "sprite": "hiker.webp",
       "coords": [
         32,
         13
@@ -23938,7 +23938,7 @@
         }
       ],
       "script": "SSTidalLowerDeck_EventScript_Phillip",
-      "sprite": "sailor.png",
+      "sprite": "sailor.webp",
       "coords": [
         10,
         4
@@ -23968,7 +23968,7 @@
         }
       ],
       "script": "SSTidalLowerDeck_EventScript_Leonard",
-      "sprite": "sailor.png",
+      "sprite": "sailor.webp",
       "coords": [
         7,
         4
@@ -24054,7 +24054,7 @@
         }
       ],
       "script": "SSTidalRooms_EventScript_Colton",
-      "sprite": "pokefan_m.png",
+      "sprite": "pokefan_m.webp",
       "coords": [
         4,
         7
@@ -24080,7 +24080,7 @@
         }
       ],
       "script": "SSTidalRooms_EventScript_Micah",
-      "sprite": "gentleman.png",
+      "sprite": "gentleman.webp",
       "coords": [
         34,
         11
@@ -24102,7 +24102,7 @@
         }
       ],
       "script": "SSTidalRooms_EventScript_Thomas",
-      "sprite": "gentleman.png",
+      "sprite": "gentleman.webp",
       "coords": [
         21,
         5
@@ -24128,7 +24128,7 @@
         }
       ],
       "script": "SSTidalRooms_EventScript_Jed",
-      "sprite": "man_4.png",
+      "sprite": "man_4.webp",
       "coords": [
         5,
         14
@@ -24151,7 +24151,7 @@
         }
       ],
       "script": "SSTidalRooms_EventScript_Garret",
-      "sprite": "rich_boy.png",
+      "sprite": "rich_boy.webp",
       "coords": [
         22,
         11
@@ -24174,7 +24174,7 @@
         }
       ],
       "script": "SSTidalRooms_EventScript_Naomi",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         15,
         6
@@ -24206,7 +24206,7 @@
         }
       ],
       "script": "SeafloorCavern_Room1_EventScript_Grunt1",
-      "sprite": "aqua_member_m.png",
+      "sprite": "aqua_member_m.webp",
       "coords": [
         8,
         6
@@ -24232,7 +24232,7 @@
         }
       ],
       "script": "SeafloorCavern_Room3_EventScript_Grunt5",
-      "sprite": "aqua_member_m.png",
+      "sprite": "aqua_member_m.webp",
       "coords": [
         5,
         5
@@ -24258,7 +24258,7 @@
         }
       ],
       "script": "SeafloorCavern_Room4_EventScript_Grunt3",
-      "sprite": "aqua_member_m.png",
+      "sprite": "aqua_member_m.webp",
       "coords": [
         5,
         8
@@ -24284,7 +24284,7 @@
         }
       ],
       "script": "SeafloorCavern_Room4_EventScript_Grunt4",
-      "sprite": "aqua_member_f.png",
+      "sprite": "aqua_member_f.webp",
       "coords": [
         5,
         12
@@ -24422,7 +24422,7 @@
         },
         {
           "lvl": 80,
-          "id": 954,
+          "id": 382,
           "nature": "timid",
           "ability": [
             2
@@ -25639,7 +25639,7 @@
         }
       ],
       "script": "SootopolisCity_Gym_B1F_EventScript_Andrea",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         7,
         17
@@ -25665,7 +25665,7 @@
         }
       ],
       "script": "SootopolisCity_Gym_B1F_EventScript_Crissy",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         4,
         8
@@ -25691,7 +25691,7 @@
         }
       ],
       "script": "SootopolisCity_Gym_B1F_EventScript_Brianna",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         12,
         7
@@ -25713,7 +25713,7 @@
         }
       ],
       "script": "SootopolisCity_Gym_B1F_EventScript_Connie",
-      "sprite": "beauty.png",
+      "sprite": "beauty.webp",
       "coords": [
         9,
         19
@@ -25735,7 +25735,7 @@
         }
       ],
       "script": "SootopolisCity_Gym_B1F_EventScript_Bridget",
-      "sprite": "beauty.png",
+      "sprite": "beauty.webp",
       "coords": [
         11,
         9
@@ -25761,7 +25761,7 @@
         }
       ],
       "script": "SootopolisCity_Gym_B1F_EventScript_Olivia",
-      "sprite": "beauty.png",
+      "sprite": "beauty.webp",
       "coords": [
         9,
         7
@@ -25787,7 +25787,7 @@
         }
       ],
       "script": "SootopolisCity_Gym_B1F_EventScript_Tiffany",
-      "sprite": "beauty.png",
+      "sprite": "beauty.webp",
       "coords": [
         5,
         6
@@ -25817,7 +25817,7 @@
         }
       ],
       "script": "SootopolisCity_Gym_B1F_EventScript_Bethany",
-      "sprite": "pokefan_f.png",
+      "sprite": "pokefan_f.webp",
       "coords": [
         7,
         8
@@ -25843,7 +25843,7 @@
         }
       ],
       "script": "SootopolisCity_Gym_B1F_EventScript_Annika",
-      "sprite": "pokefan_f.png",
+      "sprite": "pokefan_f.webp",
       "coords": [
         10,
         13
@@ -25869,7 +25869,7 @@
         }
       ],
       "script": "SootopolisCity_Gym_B1F_EventScript_Daphne",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         6,
         13
@@ -26823,7 +26823,7 @@
         }
       ],
       "script": "VictoryRoad_1F_EventScript_Edgar",
-      "sprite": "gentleman.png",
+      "sprite": "gentleman.webp",
       "coords": [
         15,
         30
@@ -26961,7 +26961,7 @@
         }
       ],
       "script": "VictoryRoad_1F_EventScript_Albert",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         2,
         18
@@ -27099,7 +27099,7 @@
         }
       ],
       "script": "VictoryRoad_1F_EventScript_Hope",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         5,
         16
@@ -27127,7 +27127,7 @@
         }
       ],
       "script": "VictoryRoad_1F_EventScript_Quincy",
-      "sprite": "man_5.png",
+      "sprite": "man_5.webp",
       "coords": [
         33,
         15
@@ -27159,7 +27159,7 @@
         }
       ],
       "script": "VictoryRoad_1F_EventScript_Katelynn",
-      "sprite": "woman_2.png",
+      "sprite": "woman_2.webp",
       "coords": [
         32,
         24
@@ -27297,7 +27297,7 @@
         }
       ],
       "script": "VictoryRoad_B1F_EventScript_Samuel",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         33,
         27
@@ -27329,7 +27329,7 @@
         }
       ],
       "script": "VictoryRoad_B1F_EventScript_Shannon",
-      "sprite": "girl_3.png",
+      "sprite": "girl_3.webp",
       "coords": [
         26,
         14
@@ -27467,7 +27467,7 @@
         }
       ],
       "script": "VictoryRoad_B1F_EventScript_Michelle",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         17,
         25
@@ -27495,7 +27495,7 @@
         }
       ],
       "script": "VictoryRoad_B1F_EventScript_Mitchell",
-      "sprite": "man_4.png",
+      "sprite": "man_4.webp",
       "coords": [
         14,
         16
@@ -27523,7 +27523,7 @@
         }
       ],
       "script": "VictoryRoad_B1F_EventScript_Halle",
-      "sprite": "lass.png",
+      "sprite": "lass.webp",
       "coords": [
         15,
         21
@@ -27555,7 +27555,7 @@
         }
       ],
       "script": "VictoryRoad_B2F_EventScript_Vito",
-      "sprite": "expert_m.png",
+      "sprite": "expert_m.webp",
       "coords": [
         15,
         6
@@ -27587,7 +27587,7 @@
         }
       ],
       "script": "VictoryRoad_B2F_EventScript_Owen",
-      "sprite": "psychic_m.png",
+      "sprite": "psychic_m.webp",
       "coords": [
         2,
         13
@@ -27726,7 +27726,7 @@
         }
       ],
       "script": "VictoryRoad_B2F_EventScript_Caroline",
-      "sprite": "woman_5.png",
+      "sprite": "woman_5.webp",
       "coords": [
         36,
         24
@@ -27758,7 +27758,7 @@
         }
       ],
       "script": "VictoryRoad_B2F_EventScript_Julie",
-      "sprite": "running_triathlete_f.png",
+      "sprite": "running_triathlete_f.webp",
       "coords": [
         13,
         25
@@ -27896,7 +27896,7 @@
         }
       ],
       "script": "VictoryRoad_B2F_EventScript_Felix",
-      "sprite": "man_3.png",
+      "sprite": "man_3.webp",
       "coords": [
         33,
         22
@@ -27922,7 +27922,7 @@
         }
       ],
       "script": "VictoryRoad_B2F_EventScript_Dianne",
-      "sprite": "hex_maniac.png",
+      "sprite": "hex_maniac.webp",
       "coords": [
         23,
         20

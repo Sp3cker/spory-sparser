@@ -84,7 +84,7 @@ function extractMapData(mapObj: any): { trainers: any[]; pickupitems: any[] } {
         trainers.push({
           coords: [obj.x, obj.y],
           script: obj.script,
-          graphics_id: obj.graphics_id.split("GFX_")[1].toLowerCase() + ".png",
+          graphics_id: obj.graphics_id.split("GFX_")[1].toLowerCase() + ".webp",
         });
       }
       if (

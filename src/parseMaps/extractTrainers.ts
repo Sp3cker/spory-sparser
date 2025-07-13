@@ -54,7 +54,8 @@ function parseTrainerEntry(
   }
 
   // boolean/dword fields we simply regex generically
-  const simpleFields = ["doubleBattle", "aiFlags", "isBossTrainer"];
+  // isBossTrainer doesnt mean anything.
+  const simpleFields = ["doubleBattle", "aiFlags"];
   for (const field of simpleFields) {
     const m = entry.match(new RegExp(`\\.${field}\\s*=\\s*([^,\n]+)`));
     if (!m) continue;
@@ -97,12 +98,7 @@ export function extractTrainers(
   outputDir: string
 ): Record<string, TrainerRecord> {
   const TRAINERS_HEADER = path.join(dataDir, "trainers.h");
-  // const FRONT_PIC_DIR = path.join(
-  //   dataDir,
-  //   "upscaled",
-  //   "trainers",
-  //   "front_pics"
-  // );
+
   const FRONT_PIC_DIR = battlePics;
   const PARTIES_JSON = path.join(outputDir, "trainer_parties.json");
 

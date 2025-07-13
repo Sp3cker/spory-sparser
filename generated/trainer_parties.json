@@ -60,7 +60,7 @@
   "sParty_Gabrielle1": [
     {
       "lvl": 64,
-      "id": 1483
+      "id": 973
     },
     {
       "lvl": 64,
@@ -1147,7 +1147,7 @@
     },
     {
       "lvl": 80,
-      "id": 954,
+      "id": 382,
       "nature": "timid",
       "ability": [
         2
@@ -5006,7 +5006,7 @@
     },
     {
       "lvl": 57,
-      "id": 1484
+      "id": 743
     },
     {
       "lvl": 57,
@@ -7055,7 +7055,7 @@
     },
     {
       "lvl": 34,
-      "id": 1478,
+      "id": 738,
       "nature": "modest",
       "ability": [
         26
@@ -9182,7 +9182,7 @@
     },
     {
       "lvl": 85,
-      "id": 1530,
+      "id": 1070,
       "nature": "timid",
       "ability": [
         140
@@ -9254,7 +9254,7 @@
     },
     {
       "lvl": 85,
-      "id": 1529,
+      "id": 1069,
       "nature": "timid",
       "ability": [
         140
@@ -9385,7 +9385,7 @@
     },
     {
       "lvl": 202,
-      "id": 1485,
+      "id": 752,
       "nature": "adamant",
       "ability": [
         199
@@ -10034,7 +10034,7 @@
   "sParty_Aaron": [
     {
       "lvl": 72,
-      "id": 1482
+      "id": 784
     }
   ],
   "sParty_Perry": [
@@ -14771,7 +14771,7 @@
     },
     {
       "lvl": 62,
-      "id": 1479
+      "id": 754
     }
   ],
   "sParty_Sophia": [
@@ -15199,7 +15199,7 @@
     },
     {
       "lvl": 43,
-      "id": 1480,
+      "id": 758,
       "nature": "timid",
       "ability": [
         212
@@ -15434,7 +15434,7 @@
     },
     {
       "lvl": 80,
-      "id": 955,
+      "id": 383,
       "nature": "jolly",
       "ability": [
         70
@@ -17165,7 +17165,7 @@
   "sParty_Vivian": [
     {
       "lvl": 27,
-      "id": 1486
+      "id": 777
     },
     {
       "lvl": 27,
@@ -18160,7 +18160,7 @@
     },
     {
       "lvl": 203,
-      "id": 1484,
+      "id": 743,
       "nature": "timid",
       "ability": [
         19
@@ -18183,7 +18183,7 @@
     },
     {
       "lvl": 203,
-      "id": 1477,
+      "id": 735,
       "nature": "adamant",
       "ability": [
         91
@@ -19011,7 +19011,7 @@
     },
     {
       "lvl": 80,
-      "id": 1482,
+      "id": 784,
       "nature": "timid",
       "ability": [
         142
@@ -19672,7 +19672,7 @@
   "sParty_Myles": [
     {
       "lvl": 65,
-      "id": 1477
+      "id": 735
     },
     {
       "lvl": 65,
@@ -20731,7 +20731,7 @@
     },
     {
       "lvl": 34,
-      "id": 1478,
+      "id": 738,
       "nature": "modest",
       "ability": [
         26
@@ -20848,7 +20848,7 @@
     },
     {
       "lvl": 34,
-      "id": 1478,
+      "id": 738,
       "nature": "modest",
       "ability": [
         26
@@ -20965,7 +20965,7 @@
     },
     {
       "lvl": 34,
-      "id": 1478,
+      "id": 738,
       "nature": "modest",
       "ability": [
         26
@@ -21082,7 +21082,7 @@
     },
     {
       "lvl": 34,
-      "id": 1478,
+      "id": 738,
       "nature": "modest",
       "ability": [
         26
@@ -24025,7 +24025,7 @@
   "sParty_Gabrielle2": [
     {
       "lvl": 64,
-      "id": 1483
+      "id": 973
     },
     {
       "lvl": 64,
@@ -24035,7 +24035,7 @@
   "sParty_Gabrielle3": [
     {
       "lvl": 64,
-      "id": 1483
+      "id": 973
     },
     {
       "lvl": 64,
@@ -24045,7 +24045,7 @@
   "sParty_Gabrielle4": [
     {
       "lvl": 64,
-      "id": 1483
+      "id": 973
     },
     {
       "lvl": 64,
@@ -24055,7 +24055,7 @@
   "sParty_Gabrielle5": [
     {
       "lvl": 64,
-      "id": 1483
+      "id": 973
     },
     {
       "lvl": 64,
@@ -25184,13 +25184,13 @@
   "sParty_BrendanLinkPlaceholder": [
     {
       "lvl": 5,
-      "id": 955
+      "id": 383
     }
   ],
   "sParty_MayLinkPlaceholder": [
     {
       "lvl": 5,
-      "id": 954
+      "id": 382
     }
   ],
   "sParty_DawnRoute104": [

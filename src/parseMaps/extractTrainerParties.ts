@@ -25,15 +25,11 @@ const Evs: Record<
 
 // Build a lookup map from normalized key => speciesId.
 const SPECIES_NAME_TO_ID: Map<string, number> = new Map();
-
+const excludedForms = new Set(["mega", "gigantamax", "tera", "ultraburst", "primal", "eternamax", "totem"]);
 for (const key of Object.keys(speciesData)){
-  const p = (speciesData as any)[key];
-  if (p.forms){
-    if (p.forms.includes("mega") || p.forms.includes("gigantamax") || p.forms.includes("tera") || p.forms.includes("ultraburst")) {
-      continue
-
-  } 
-    //@ts-ignore
+  const p = (speciesData as any)[key] ;
+  if (p.forms && p.forms.some((form: string) => excludedForms.has(form))) {
+    continue;
   };
   if (p?.speciesName) {
     SPECIES_NAME_TO_ID.set(normalizeName(p.speciesName), p.speciesId);
@@ -197,33 +193,33 @@ function parseMon(block: string): PartyMon {
   }
 
   // Check if this mon is holding a mega stone and transform to mega form
-  if (mon.item && mon.id) {
-    // Get the species data for this mon
-    const currentSpecies = (speciesData as any)[mon.id.toString()];
-    if (currentSpecies && currentSpecies.speciesName) {
-      const speciesName = currentSpecies.speciesName.toUpperCase();
+  // if (mon.item && mon.id) {
+  //   // Get the species data for this mon
+  //   const currentSpecies = (speciesData as any)[mon.id.toString()];
+  //   if (currentSpecies && currentSpecies.speciesName) {
+  //     const speciesName = currentSpecies.speciesName.toUpperCase();
       
-      // Check if held item matches the pattern SPECIESNAME + (N?)ITE
-      const itemName = mon.item.replace("ITEM_", "");
-      const megaStonePattern = new RegExp(`^${speciesName}(N?)ITE$`);
+  //     // Check if held item matches the pattern SPECIESNAME + (N?)ITE
+  //     const itemName = mon.item.replace("ITEM_", "");
+  //     const megaStonePattern = new RegExp(`^${speciesName}(N?)ITE$`);
       
-      if (megaStonePattern.test(itemName)) {
-        // Find the mega form through siblings
-        if (currentSpecies.siblings && Array.isArray(currentSpecies.siblings)) {
-          for (const siblingId of currentSpecies.siblings) {
-            const sibling = (speciesData as any)[siblingId.toString()];
-            if (sibling && sibling.forms && sibling.forms.includes("mega")) {
-              // Found the mega form, update the mon's ID
-              mon.id = siblingId;
-              // Optionally remove the item since it's consumed for mega evolution
-              // delete mon.item;
-              break;
-            }
-          }
-        }
-      }
-    }
-  }
+  //     if (megaStonePattern.test(itemName)) {
+  //       // Find the mega form through siblings
+  //       if (currentSpecies.siblings && Array.isArray(currentSpecies.siblings)) {
+  //         for (const siblingId of currentSpecies.siblings) {
+  //           const sibling = (speciesData as any)[siblingId.toString()];
+  //           if (sibling && sibling.forms && sibling.forms.includes("mega")) {
+  //             // Found the mega form, update the mon's ID
+  //             mon.id = siblingId;
+  //             // Optionally remove the item since it's consumed for mega evolution
+  //             // delete mon.item;
+  //             break;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
   // Simple mega evolution check: if mon has held item and has mega form, use mega ID
   if (mon.item && mon.id) {
