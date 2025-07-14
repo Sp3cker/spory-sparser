@@ -342,7 +342,7 @@
         },
         {
           "lvl": 74,
-          "id": 902,
+          "id": 1234,
           "nature": "adamant",
           "ability": [
             91
@@ -548,7 +548,7 @@
       "party": [
         {
           "lvl": 23,
-          "id": 1014,
+          "id": 1487,
           "nature": "timid",
           "ability": [
             31
@@ -811,7 +811,7 @@
         },
         {
           "lvl": 84,
-          "id": 943,
+          "id": 376,
           "nature": "adamant",
           "ability": [
             181
@@ -857,7 +857,7 @@
         },
         {
           "lvl": 84,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -1020,7 +1020,7 @@
         },
         {
           "lvl": 84,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -1043,7 +1043,7 @@
         },
         {
           "lvl": 84,
-          "id": 1418,
+          "id": 1419,
           "nature": "jolly",
           "ability": [
             104
@@ -1182,7 +1182,7 @@
         },
         {
           "lvl": 84,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -1298,7 +1298,7 @@
         },
         {
           "lvl": 84,
-          "id": 943,
+          "id": 376,
           "nature": "adamant",
           "ability": [
             181
@@ -1344,7 +1344,7 @@
         },
         {
           "lvl": 84,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -1507,7 +1507,7 @@
         },
         {
           "lvl": 84,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -1530,7 +1530,7 @@
         },
         {
           "lvl": 84,
-          "id": 1418,
+          "id": 1419,
           "nature": "jolly",
           "ability": [
             104
@@ -1669,7 +1669,7 @@
         },
         {
           "lvl": 84,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -2131,7 +2131,7 @@
         },
         {
           "lvl": 85,
-          "id": 943,
+          "id": 376,
           "nature": "jolly",
           "ability": [
             181
@@ -2246,7 +2246,7 @@
         },
         {
           "lvl": 85,
-          "id": 889,
+          "id": 1228,
           "nature": "jolly",
           "ability": [
             235
@@ -2384,7 +2384,7 @@
         },
         {
           "lvl": 85,
-          "id": 1093,
+          "id": 1528,
           "nature": "jolly",
           "ability": [
             161
@@ -2545,7 +2545,7 @@
         },
         {
           "lvl": 85,
-          "id": 1093,
+          "id": 1528,
           "nature": "jolly",
           "ability": [
             161
@@ -3006,7 +3006,7 @@
         },
         {
           "lvl": 85,
-          "id": 940,
+          "id": 359,
           "nature": "brave",
           "ability": [
             105
@@ -3168,7 +3168,7 @@
         },
         {
           "lvl": 85,
-          "id": 1521,
+          "id": 861,
           "nature": "jolly",
           "ability": [
             158
@@ -3331,7 +3331,7 @@
         },
         {
           "lvl": 200,
-          "id": 912,
+          "id": 65,
           "nature": "timid",
           "ability": [
             39
@@ -3354,7 +3354,7 @@
         },
         {
           "lvl": 200,
-          "id": 926,
+          "id": 248,
           "nature": "adamant",
           "ability": [
             45
@@ -3377,7 +3377,7 @@
         },
         {
           "lvl": 200,
-          "id": 921,
+          "id": 181,
           "nature": "modest",
           "ability": [
             9
@@ -3700,7 +3700,7 @@
         },
         {
           "lvl": 200,
-          "id": 778,
+          "id": 1206,
           "nature": "jolly",
           "ability": [
             209
@@ -3815,7 +3815,7 @@
         },
         {
           "lvl": 68,
-          "id": 933,
+          "id": 306,
           "nature": "adamant",
           "ability": [
             69
@@ -4127,7 +4127,7 @@
       "party": [
         {
           "lvl": 39,
-          "id": 1059
+          "id": 1060
         },
         {
           "lvl": 39,
@@ -4463,7 +4463,7 @@
         },
         {
           "lvl": 47,
-          "id": 1064,
+          "id": 1068,
           "nature": "bold",
           "ability": [
             26
@@ -4558,7 +4558,7 @@
       "party": [
         {
           "lvl": 71,
-          "id": 946,
+          "id": 428,
           "nature": "jolly",
           "ability": [
             7
@@ -5403,7 +5403,7 @@
       "party": [
         {
           "lvl": 30,
-          "id": 1513,
+          "id": 834,
           "nature": "adamant",
           "ability": [
             173
@@ -5448,7 +5448,7 @@
         },
         {
           "lvl": 32,
-          "id": 930,
+          "id": 282,
           "nature": "timid",
           "ability": [
             36
@@ -6020,7 +6020,7 @@
         },
         {
           "lvl": 200,
-          "id": 928,
+          "id": 257,
           "nature": "adamant",
           "ability": [
             66
@@ -6181,7 +6181,7 @@
         },
         {
           "lvl": 200,
-          "id": 928,
+          "id": 257,
           "nature": "jolly",
           "ability": [
             311
@@ -6227,7 +6227,7 @@
         },
         {
           "lvl": 200,
-          "id": 929,
+          "id": 260,
           "nature": "impish",
           "ability": [
             67
@@ -6273,7 +6273,7 @@
         },
         {
           "lvl": 200,
-          "id": 773,
+          "id": 1192,
           "nature": "jolly",
           "ability": [
             225
@@ -6582,7 +6582,7 @@
       "party": [
         {
           "lvl": 66,
-          "id": 678
+          "id": 1155
         }
       ],
       "script": "MossdeepCity_Gym_EventScript_Macey",
@@ -6723,7 +6723,7 @@
         },
         {
           "lvl": 44,
-          "id": 1514,
+          "id": 839,
           "nature": "relaxed",
           "ability": [
             243
@@ -7209,7 +7209,7 @@
         },
         {
           "lvl": 43,
-          "id": 1403,
+          "id": 1404,
           "nature": "jolly",
           "ability": [
             22
@@ -7980,7 +7980,7 @@
       "party": [
         {
           "lvl": 200,
-          "id": 1531,
+          "id": 407,
           "nature": "timid",
           "ability": [
             30
@@ -9884,7 +9884,7 @@
         },
         {
           "lvl": 200,
-          "id": 916,
+          "id": 127,
           "nature": "jolly",
           "ability": [
             104
@@ -9990,7 +9990,7 @@
       "party": [
         {
           "lvl": 202,
-          "id": 924,
+          "id": 214,
           "nature": "jolly",
           "ability": [
             62
@@ -10542,7 +10542,7 @@
       "party": [
         {
           "lvl": 203,
-          "id": 913,
+          "id": 978,
           "nature": "modest",
           "ability": [
             259
@@ -11580,7 +11580,7 @@
         },
         {
           "lvl": 202,
-          "id": 914,
+          "id": 94,
           "nature": "timid",
           "ability": [
             26
@@ -11857,7 +11857,7 @@
         },
         {
           "lvl": 202,
-          "id": 1518,
+          "id": 1213,
           "nature": "timid",
           "ability": [
             244
@@ -13586,7 +13586,7 @@
         },
         {
           "lvl": 55,
-          "id": 1059
+          "id": 1060
         }
       ],
       "script": "Route111_EventScript_Becky",
@@ -14159,7 +14159,7 @@
       "party": [
         {
           "lvl": 202,
-          "id": 946,
+          "id": 428,
           "nature": "jolly",
           "ability": [
             7
@@ -15120,7 +15120,7 @@
         },
         {
           "lvl": 202,
-          "id": 875,
+          "id": 1224,
           "nature": "jolly",
           "ability": [
             248
@@ -16388,7 +16388,7 @@
         },
         {
           "lvl": 204,
-          "id": 1512,
+          "id": 826,
           "nature": "calm",
           "ability": [
             68
@@ -16807,7 +16807,7 @@
         },
         {
           "lvl": 201,
-          "id": 950,
+          "id": 475,
           "nature": "jolly",
           "ability": [
             154
@@ -17113,7 +17113,7 @@
         },
         {
           "lvl": 201,
-          "id": 917,
+          "id": 130,
           "nature": "jolly",
           "ability": [
             153
@@ -17276,7 +17276,7 @@
         },
         {
           "lvl": 64,
-          "id": 943,
+          "id": 376,
           "nature": "adamant",
           "ability": [
             181
@@ -17322,7 +17322,7 @@
         },
         {
           "lvl": 64,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -17484,7 +17484,7 @@
         },
         {
           "lvl": 64,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -17645,7 +17645,7 @@
         },
         {
           "lvl": 64,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -17761,7 +17761,7 @@
         },
         {
           "lvl": 64,
-          "id": 943,
+          "id": 376,
           "nature": "adamant",
           "ability": [
             181
@@ -17807,7 +17807,7 @@
         },
         {
           "lvl": 64,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -17969,7 +17969,7 @@
         },
         {
           "lvl": 64,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -18131,7 +18131,7 @@
         },
         {
           "lvl": 64,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -18810,7 +18810,7 @@
         },
         {
           "lvl": 64,
-          "id": 1417,
+          "id": 1419,
           "nature": "jolly",
           "ability": [
             11
@@ -20115,7 +20115,7 @@
         },
         {
           "lvl": 201,
-          "id": 923,
+          "id": 212,
           "nature": "jolly",
           "ability": [
             101
@@ -20484,7 +20484,7 @@
         },
         {
           "lvl": 56,
-          "id": 1402
+          "id": 1404
         }
       ],
       "script": "Route123_EventScript_Kayley",
@@ -20683,7 +20683,7 @@
         },
         {
           "lvl": 201,
-          "id": 907,
+          "id": 6,
           "nature": "timid",
           "ability": [
             94
@@ -21570,7 +21570,7 @@
       "party": [
         {
           "lvl": 59,
-          "id": 902
+          "id": 1234
         },
         {
           "lvl": 59,
@@ -22180,7 +22180,7 @@
         },
         {
           "lvl": 67,
-          "id": 902
+          "id": 1234
         }
       ],
       "script": "Route129_EventScript_Allison",
@@ -24701,7 +24701,7 @@
       "party": [
         {
           "lvl": 82,
-          "id": 942,
+          "id": 373,
           "nature": "hasty",
           "ability": [
             22
@@ -24816,7 +24816,7 @@
         },
         {
           "lvl": 82,
-          "id": 953,
+          "id": 384,
           "nature": "naive",
           "ability": [
             76
@@ -25202,7 +25202,7 @@
         },
         {
           "lvl": 200,
-          "id": 912,
+          "id": 65,
           "nature": "modest",
           "ability": [
             98
@@ -25939,7 +25939,7 @@
         },
         {
           "lvl": 200,
-          "id": 1518,
+          "id": 1213,
           "nature": "timid",
           "ability": [
             244
@@ -25985,7 +25985,7 @@
         },
         {
           "lvl": 200,
-          "id": 950,
+          "id": 475,
           "nature": "jolly",
           "ability": [
             292
@@ -26146,7 +26146,7 @@
         },
         {
           "lvl": 200,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -26215,7 +26215,7 @@
       "party": [
         {
           "lvl": 200,
-          "id": 917,
+          "id": 130,
           "nature": "jolly",
           "ability": [
             22
@@ -26261,7 +26261,7 @@
         },
         {
           "lvl": 200,
-          "id": 928,
+          "id": 257,
           "nature": "adamant",
           "ability": [
             311
@@ -26307,7 +26307,7 @@
         },
         {
           "lvl": 200,
-          "id": 892,
+          "id": 1230,
           "nature": "jolly",
           "ability": [
             260
@@ -26378,30 +26378,7 @@
       "party": [
         {
           "lvl": 201,
-          "id": 741,
-          "nature": "timid",
-          "ability": [
-            216
-          ],
-          "item": "ITEM_CHARTI_BERRY",
-          "moves": [
-            651,
-            485,
-            314,
-            355
-          ],
-          "ev": [
-            6,
-            0,
-            0,
-            252,
-            0,
-            252
-          ]
-        },
-        {
-          "lvl": 201,
-          "id": 1170,
+          "id": 1171,
           "nature": "timid",
           "ability": [
             216
@@ -26447,7 +26424,30 @@
         },
         {
           "lvl": 201,
-          "id": 1169,
+          "id": 1171,
+          "nature": "timid",
+          "ability": [
+            216
+          ],
+          "item": "ITEM_CHARTI_BERRY",
+          "moves": [
+            651,
+            485,
+            314,
+            355
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 201,
+          "id": 1171,
           "nature": "timid",
           "ability": [
             216
@@ -27205,7 +27205,7 @@
         },
         {
           "lvl": 83,
-          "id": 1515,
+          "id": 841,
           "nature": "adamant",
           "ability": [
             55
@@ -27421,7 +27421,7 @@
         },
         {
           "lvl": 83,
-          "id": 1490,
+          "id": 389,
           "nature": "impish",
           "ability": [
             321

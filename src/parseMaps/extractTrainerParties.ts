@@ -34,9 +34,9 @@ for (const key of Object.keys(speciesData)){
   if (p?.speciesName) {
     SPECIES_NAME_TO_ID.set(normalizeName(p.speciesName), p.speciesId);
   }
-  if (p?.nameKey) {
-    SPECIES_NAME_TO_ID.set(normalizeName(p.nameKey), p.speciesId);
-  }
+  // if (p?.nameKey) {
+  //   SPECIES_NAME_TO_ID.set(normalizeName(p.nameKey), p.speciesId);
+  // }
 
 }
 
@@ -221,15 +221,17 @@ function parseMon(block: string): PartyMon {
   //   }
   // }
 
-  // Simple mega evolution check: if mon has held item and has mega form, use mega ID
-  if (mon.item && mon.id) {
-    const currentSpecies = (speciesData as any)[mon.id.toString()];
+  // Simple mega evolution check: only if holding a mega stone
+  // Simple mega evolution check: only if holding a mega stone
+  if (mon.item && mon.id && mon.item.slice(-5).includes("ITE")) {
+    const currentSpecies = (speciesData as any)[mon.id.toString()]
     if (currentSpecies?.siblings) {
       for (const siblingId of currentSpecies.siblings) {
-        const sibling = (speciesData as any)[siblingId.toString()];
+        //@ts-ignore
+        const sibling = speciesData[siblingId.toString()]
         if (sibling?.forms?.includes("mega")) {
-          mon.id = siblingId;
-          break;
+          mon.id = siblingId
+          break
         }
       }
     }

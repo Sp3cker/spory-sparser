@@ -310,7 +310,7 @@
     },
     {
       "lvl": 64,
-      "id": 1417,
+      "id": 1419,
       "nature": "jolly",
       "ability": [
         11
@@ -581,7 +581,7 @@
     },
     {
       "lvl": 74,
-      "id": 902,
+      "id": 1234,
       "nature": "adamant",
       "ability": [
         91
@@ -1977,7 +1977,7 @@
   "sParty_Simon": [
     {
       "lvl": 202,
-      "id": 924,
+      "id": 214,
       "nature": "jolly",
       "ability": [
         62
@@ -2295,7 +2295,7 @@
     },
     {
       "lvl": 83,
-      "id": 1515,
+      "id": 841,
       "nature": "adamant",
       "ability": [
         55
@@ -2757,7 +2757,7 @@
     },
     {
       "lvl": 83,
-      "id": 1490,
+      "id": 389,
       "nature": "impish",
       "ability": [
         321
@@ -3888,7 +3888,7 @@
     },
     {
       "lvl": 43,
-      "id": 1403,
+      "id": 1404,
       "nature": "jolly",
       "ability": [
         22
@@ -4114,7 +4114,7 @@
     },
     {
       "lvl": 201,
-      "id": 907,
+      "id": 6,
       "nature": "timid",
       "ability": [
         94
@@ -4167,7 +4167,7 @@
   "sParty_Dean": [
     {
       "lvl": 59,
-      "id": 902
+      "id": 1234
     },
     {
       "lvl": 59,
@@ -5750,7 +5750,7 @@
     },
     {
       "lvl": 85,
-      "id": 1521,
+      "id": 861,
       "nature": "jolly",
       "ability": [
         158
@@ -5890,7 +5890,7 @@
     },
     {
       "lvl": 85,
-      "id": 940,
+      "id": 359,
       "nature": "brave",
       "ability": [
         105
@@ -6333,7 +6333,7 @@
     },
     {
       "lvl": 85,
-      "id": 1093,
+      "id": 1528,
       "nature": "jolly",
       "ability": [
         161
@@ -6473,7 +6473,7 @@
     },
     {
       "lvl": 85,
-      "id": 1093,
+      "id": 1528,
       "nature": "jolly",
       "ability": [
         161
@@ -6636,7 +6636,7 @@
     },
     {
       "lvl": 85,
-      "id": 889,
+      "id": 1228,
       "nature": "jolly",
       "ability": [
         235
@@ -6707,7 +6707,7 @@
   "sParty_Drake": [
     {
       "lvl": 82,
-      "id": 942,
+      "id": 373,
       "nature": "hasty",
       "ability": [
         22
@@ -6822,7 +6822,7 @@
     },
     {
       "lvl": 82,
-      "id": 953,
+      "id": 384,
       "nature": "naive",
       "ability": [
         76
@@ -6909,7 +6909,7 @@
   "sParty_Brawly1": [
     {
       "lvl": 23,
-      "id": 1014,
+      "id": 1487,
       "nature": "timid",
       "ability": [
         31
@@ -7172,7 +7172,7 @@
     },
     {
       "lvl": 47,
-      "id": 1064,
+      "id": 1068,
       "nature": "bold",
       "ability": [
         26
@@ -7409,7 +7409,7 @@
     },
     {
       "lvl": 68,
-      "id": 933,
+      "id": 306,
       "nature": "adamant",
       "ability": [
         69
@@ -9277,7 +9277,7 @@
     },
     {
       "lvl": 85,
-      "id": 943,
+      "id": 376,
       "nature": "jolly",
       "ability": [
         181
@@ -9954,7 +9954,7 @@
     },
     {
       "lvl": 67,
-      "id": 902
+      "id": 1234
     }
   ],
   "sParty_Katelyn2": [
@@ -11755,7 +11755,7 @@
     },
     {
       "lvl": 55,
-      "id": 1059
+      "id": 1060
     }
   ],
   "sParty_Carol": [
@@ -12124,7 +12124,7 @@
     },
     {
       "lvl": 200,
-      "id": 916,
+      "id": 127,
       "nature": "jolly",
       "ability": [
         104
@@ -12251,7 +12251,7 @@
     },
     {
       "lvl": 56,
-      "id": 1402
+      "id": 1404
     }
   ],
   "sParty_Auron": [
@@ -12964,7 +12964,7 @@
     },
     {
       "lvl": 64,
-      "id": 892,
+      "id": 1230,
       "nature": "jolly",
       "ability": [
         260
@@ -13149,7 +13149,7 @@
     },
     {
       "lvl": 64,
-      "id": 943,
+      "id": 376,
       "nature": "adamant",
       "ability": [
         181
@@ -13195,7 +13195,7 @@
     },
     {
       "lvl": 64,
-      "id": 892,
+      "id": 1230,
       "nature": "jolly",
       "ability": [
         260
@@ -13426,7 +13426,7 @@
     },
     {
       "lvl": 64,
-      "id": 892,
+      "id": 1230,
       "nature": "jolly",
       "ability": [
         260
@@ -13543,7 +13543,7 @@
     },
     {
       "lvl": 204,
-      "id": 1512,
+      "id": 826,
       "nature": "calm",
       "ability": [
         68
@@ -13676,7 +13676,7 @@
     },
     {
       "lvl": 204,
-      "id": 1512,
+      "id": 826,
       "nature": "calm",
       "ability": [
         68
@@ -13793,7 +13793,7 @@
     },
     {
       "lvl": 204,
-      "id": 1512,
+      "id": 826,
       "nature": "calm",
       "ability": [
         68
@@ -13910,7 +13910,7 @@
     },
     {
       "lvl": 204,
-      "id": 1512,
+      "id": 826,
       "nature": "calm",
       "ability": [
         68
@@ -14027,7 +14027,7 @@
     },
     {
       "lvl": 204,
-      "id": 1512,
+      "id": 826,
       "nature": "calm",
       "ability": [
         68
@@ -15078,7 +15078,7 @@
     },
     {
       "lvl": 56,
-      "id": 917,
+      "id": 130,
       "item": "ITEM_NONE",
       "moves": [
         349,
@@ -15108,7 +15108,7 @@
   "sParty_Macey": [
     {
       "lvl": 66,
-      "id": 678
+      "id": 1155
     }
   ],
   "sParty_Paxton": [
@@ -15506,7 +15506,7 @@
     },
     {
       "lvl": 44,
-      "id": 1514,
+      "id": 839,
       "nature": "relaxed",
       "ability": [
         243
@@ -15843,7 +15843,7 @@
     },
     {
       "lvl": 202,
-      "id": 914,
+      "id": 94,
       "nature": "timid",
       "ability": [
         26
@@ -15960,7 +15960,7 @@
     },
     {
       "lvl": 202,
-      "id": 1518,
+      "id": 1213,
       "nature": "timid",
       "ability": [
         244
@@ -16288,7 +16288,7 @@
     },
     {
       "lvl": 202,
-      "id": 875,
+      "id": 1224,
       "nature": "jolly",
       "ability": [
         248
@@ -16505,7 +16505,7 @@
   "sParty_Eric": [
     {
       "lvl": 39,
-      "id": 1059
+      "id": 1060
     },
     {
       "lvl": 39,
@@ -16538,7 +16538,7 @@
     },
     {
       "lvl": 202,
-      "id": 875,
+      "id": 1224,
       "nature": "jolly",
       "ability": [
         248
@@ -17231,7 +17231,7 @@
   "sParty_WallyMauville": [
     {
       "lvl": 30,
-      "id": 1513,
+      "id": 834,
       "nature": "adamant",
       "ability": [
         173
@@ -17276,7 +17276,7 @@
     },
     {
       "lvl": 32,
-      "id": 930,
+      "id": 282,
       "nature": "timid",
       "ability": [
         36
@@ -17650,7 +17650,7 @@
     },
     {
       "lvl": 84,
-      "id": 892,
+      "id": 1230,
       "nature": "jolly",
       "ability": [
         260
@@ -17744,7 +17744,7 @@
     },
     {
       "lvl": 84,
-      "id": 943,
+      "id": 376,
       "nature": "adamant",
       "ability": [
         181
@@ -17790,7 +17790,7 @@
     },
     {
       "lvl": 84,
-      "id": 892,
+      "id": 1230,
       "nature": "jolly",
       "ability": [
         260
@@ -17931,7 +17931,7 @@
     },
     {
       "lvl": 84,
-      "id": 892,
+      "id": 1230,
       "nature": "jolly",
       "ability": [
         260
@@ -17954,7 +17954,7 @@
     },
     {
       "lvl": 84,
-      "id": 1418,
+      "id": 1419,
       "nature": "jolly",
       "ability": [
         104
@@ -18457,7 +18457,7 @@
   "sParty_Joseph": [
     {
       "lvl": 203,
-      "id": 913,
+      "id": 978,
       "nature": "modest",
       "ability": [
         259
@@ -20194,7 +20194,7 @@
   "sParty_Brawly2": [
     {
       "lvl": 23,
-      "id": 1014,
+      "id": 1487,
       "nature": "timid",
       "ability": [
         31
@@ -20311,7 +20311,7 @@
   "sParty_Brawly3": [
     {
       "lvl": 23,
-      "id": 1014,
+      "id": 1487,
       "nature": "timid",
       "ability": [
         31
@@ -20428,7 +20428,7 @@
   "sParty_Brawly4": [
     {
       "lvl": 23,
-      "id": 1014,
+      "id": 1487,
       "nature": "timid",
       "ability": [
         31
@@ -20545,7 +20545,7 @@
   "sParty_Brawly5": [
     {
       "lvl": 23,
-      "id": 1014,
+      "id": 1487,
       "nature": "timid",
       "ability": [
         31
@@ -21199,7 +21199,7 @@
     },
     {
       "lvl": 47,
-      "id": 1064,
+      "id": 1068,
       "nature": "bold",
       "ability": [
         26
@@ -21340,7 +21340,7 @@
     },
     {
       "lvl": 47,
-      "id": 1064,
+      "id": 1068,
       "nature": "bold",
       "ability": [
         26
@@ -21481,7 +21481,7 @@
     },
     {
       "lvl": 47,
-      "id": 1064,
+      "id": 1068,
       "nature": "bold",
       "ability": [
         26
@@ -21622,7 +21622,7 @@
     },
     {
       "lvl": 47,
-      "id": 1064,
+      "id": 1068,
       "nature": "bold",
       "ability": [
         26
@@ -22285,7 +22285,7 @@
     },
     {
       "lvl": 68,
-      "id": 933,
+      "id": 306,
       "nature": "adamant",
       "ability": [
         69
@@ -22426,7 +22426,7 @@
     },
     {
       "lvl": 68,
-      "id": 933,
+      "id": 306,
       "nature": "adamant",
       "ability": [
         69
@@ -22567,7 +22567,7 @@
     },
     {
       "lvl": 68,
-      "id": 933,
+      "id": 306,
       "nature": "adamant",
       "ability": [
         69
@@ -22708,7 +22708,7 @@
     },
     {
       "lvl": 68,
-      "id": 933,
+      "id": 306,
       "nature": "adamant",
       "ability": [
         69
@@ -23689,7 +23689,7 @@
     },
     {
       "lvl": 76,
-      "id": 933,
+      "id": 306,
       "item": "ITEM_NONE",
       "moves": [
         87,
@@ -23722,7 +23722,7 @@
     },
     {
       "lvl": 78,
-      "id": 943,
+      "id": 376,
       "item": "ITEM_SITRUS_BERRY",
       "moves": [
         89,
@@ -24171,7 +24171,7 @@
   "sParty_Gardenia": [
     {
       "lvl": 200,
-      "id": 1531,
+      "id": 407,
       "nature": "timid",
       "ability": [
         30
@@ -24411,7 +24411,7 @@
     },
     {
       "lvl": 201,
-      "id": 950,
+      "id": 475,
       "nature": "jolly",
       "ability": [
         154
@@ -24646,7 +24646,7 @@
     },
     {
       "lvl": 201,
-      "id": 917,
+      "id": 130,
       "nature": "jolly",
       "ability": [
         153
@@ -24832,7 +24832,7 @@
     },
     {
       "lvl": 201,
-      "id": 923,
+      "id": 212,
       "nature": "jolly",
       "ability": [
         101
@@ -25241,7 +25241,7 @@
   "sParty_DawnRoute111": [
     {
       "lvl": 202,
-      "id": 946,
+      "id": 428,
       "nature": "jolly",
       "ability": [
         7
@@ -25359,7 +25359,7 @@
   "sParty_DawnLilycove": [
     {
       "lvl": 71,
-      "id": 946,
+      "id": 428,
       "nature": "jolly",
       "ability": [
         7
@@ -25640,30 +25640,7 @@
   "sParty_Ursula": [
     {
       "lvl": 201,
-      "id": 741,
-      "nature": "timid",
-      "ability": [
-        216
-      ],
-      "item": "ITEM_CHARTI_BERRY",
-      "moves": [
-        651,
-        485,
-        314,
-        355
-      ],
-      "ev": [
-        6,
-        0,
-        0,
-        252,
-        0,
-        252
-      ]
-    },
-    {
-      "lvl": 201,
-      "id": 1170,
+      "id": 1171,
       "nature": "timid",
       "ability": [
         216
@@ -25709,7 +25686,30 @@
     },
     {
       "lvl": 201,
-      "id": 1169,
+      "id": 1171,
+      "nature": "timid",
+      "ability": [
+        216
+      ],
+      "item": "ITEM_CHARTI_BERRY",
+      "moves": [
+        651,
+        485,
+        314,
+        355
+      ],
+      "ev": [
+        6,
+        0,
+        0,
+        252,
+        0,
+        252
+      ]
+    },
+    {
+      "lvl": 201,
+      "id": 1171,
       "nature": "timid",
       "ability": [
         216
@@ -25803,7 +25803,7 @@
     },
     {
       "lvl": 200,
-      "id": 778,
+      "id": 1206,
       "nature": "jolly",
       "ability": [
         209
@@ -25897,7 +25897,7 @@
     },
     {
       "lvl": 200,
-      "id": 912,
+      "id": 65,
       "nature": "timid",
       "ability": [
         39
@@ -25920,7 +25920,7 @@
     },
     {
       "lvl": 200,
-      "id": 926,
+      "id": 248,
       "nature": "adamant",
       "ability": [
         45
@@ -25943,7 +25943,7 @@
     },
     {
       "lvl": 200,
-      "id": 921,
+      "id": 181,
       "nature": "modest",
       "ability": [
         9
@@ -26330,7 +26330,7 @@
     },
     {
       "lvl": 200,
-      "id": 928,
+      "id": 257,
       "nature": "adamant",
       "ability": [
         66
@@ -26470,7 +26470,7 @@
     },
     {
       "lvl": 200,
-      "id": 928,
+      "id": 257,
       "nature": "jolly",
       "ability": [
         311
@@ -26516,7 +26516,7 @@
     },
     {
       "lvl": 200,
-      "id": 929,
+      "id": 260,
       "nature": "impish",
       "ability": [
         67
@@ -26562,7 +26562,7 @@
     },
     {
       "lvl": 200,
-      "id": 773,
+      "id": 1192,
       "nature": "jolly",
       "ability": [
         225
@@ -26780,7 +26780,7 @@
     },
     {
       "lvl": 200,
-      "id": 912,
+      "id": 65,
       "nature": "modest",
       "ability": [
         98
@@ -27061,7 +27061,7 @@
     },
     {
       "lvl": 200,
-      "id": 1518,
+      "id": 1213,
       "nature": "timid",
       "ability": [
         244
@@ -27107,7 +27107,7 @@
     },
     {
       "lvl": 200,
-      "id": 950,
+      "id": 475,
       "nature": "jolly",
       "ability": [
         292
@@ -27247,7 +27247,7 @@
     },
     {
       "lvl": 200,
-      "id": 892,
+      "id": 1230,
       "nature": "jolly",
       "ability": [
         260
@@ -27295,7 +27295,7 @@
   "sParty_OblivionWing": [
     {
       "lvl": 200,
-      "id": 917,
+      "id": 130,
       "nature": "jolly",
       "ability": [
         22
@@ -27341,7 +27341,7 @@
     },
     {
       "lvl": 200,
-      "id": 928,
+      "id": 257,
       "nature": "adamant",
       "ability": [
         311
@@ -27387,7 +27387,7 @@
     },
     {
       "lvl": 200,
-      "id": 892,
+      "id": 1230,
       "nature": "jolly",
       "ability": [
         260
