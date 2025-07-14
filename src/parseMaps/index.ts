@@ -2,14 +2,14 @@ import { Dirent, existsSync, readFileSync, readdirSync } from "fs";
 import * as path from "path";
 import { getLevelLabel, getBasemapID, getMapJsonId } from "../helpers.ts";
 import { incParser, IncScriptEvent } from "./incParser.ts";
-import { parseTrainerBattles, TrainerReference } from "./trainerInc.ts";
+import {
+  parseTrainerBattles,
+  TrainerReference,
+} from "./Trainers/trainerInc.ts";
 import {
   LevelIncDataSchema,
   LevelIncData,
 } from "../validators/levelIncData.js";
-
-export type LevelIncBattle = TrainerReference;
-export type ScriptedGive = IncScriptEvent;
 
 export const processIncFile = async (
   fullPath: string
@@ -110,7 +110,7 @@ export async function findGiveItemsByLevel(
 
       scriptedGives: [] as IncScriptEvent[],
 
-      trainerRefs: [] as LevelIncBattle[],
+      trainerRefs: [] as TrainerReference[],
     };
 
     obj.scriptedGives = level.scriptedGives;

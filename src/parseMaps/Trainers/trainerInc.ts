@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { LevelIncBattleSchema } from "../validators/levelIncData.ts";
+import { LevelIncBattleSchema } from "../../validators/levelIncData.ts";
 
 export type TrainerReference = z.infer<typeof LevelIncBattleSchema>;
 

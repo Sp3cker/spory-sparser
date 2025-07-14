@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { TrainerRecord } from "../validators/trainerRecord.js";
+import { TrainerRecord } from "../../validators/trainerRecord.ts";
 
 function stripComments(src: string): string {
   return src.replace(/\/\*[^]*?\*\//g, "").replace(/\/\/.*$/gm, "");

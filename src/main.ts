@@ -2,20 +2,17 @@ import path from "path";
 import { mkdirSync } from "fs";
 import { writeFile, readFile } from "fs/promises";
 import { findMartSectionsByLevel, Mart, MartEntry } from "./parseMarts.ts";
-import {
-  findGiveItemsByLevel,
-  LevelIncBattle,
-  LevelIncData,
-  ScriptedGive,
-} from "./parseMaps/index.ts";
+import { findGiveItemsByLevel, LevelIncData } from "./parseMaps/index.ts";
 import { main } from "./parseMapEvents.ts";
-import { extractTrainerParties } from "./parseMaps/extractTrainerParties.ts";
-import { extractTrainers } from "./parseMaps/extractTrainers.ts";
+import { extractTrainerParties } from "./parseMaps/Trainers/extractTrainerPartiesfromHeaderFile.ts";
+import { extractTrainers } from "./parseMaps/Trainers/extractTrainersFromHeaderFile.ts";
 import { generateSpriteFromScript } from "./parseMaps/generateSpriteFromScript.ts";
 import { getLevelLabel } from "./helpers.ts";
 import { TrainerRecord, MapEventPlace } from "./validators/index.ts";
 
 import { Config } from "./configReader.ts";
+import { IncScriptEvent } from "./parseMaps/incParser.ts";
+import { TrainerReference } from "./parseMaps/Trainers/trainerInc.ts";
 // Load encounters data from the project's data directory
 const encountersData = JSON.parse(
   await readFile(
@@ -44,7 +41,7 @@ interface MergedData {
   levelLabel: string;
   shopItems: Mart[];
   pickupItems: any[]; // Define more specific type if possible
-  scriptedGives: ScriptedGive[];
+  scriptedGives: IncScriptEvent[];
   image: string;
   trainers?: Trainer[];
   trainerRefs?: { id: string; script: string }[];
@@ -113,7 +110,7 @@ const mergeDataByLevelsID = async ({
        * We also move the `rematch` prop from `trainerRefs` to the trainer object
        * */
       const trainersResolved = mapEntry.trainerRefs
-        .map((ref: LevelIncBattle) => {
+        .map((ref: TrainerReference) => {
           const rawBase = trainersFlat[ref.id];
           if (!rawBase) return null;
           const base = { ...rawBase }; // clone to avoid mutating source
@@ -258,7 +255,6 @@ const mergeDataByLevelsID = async ({
     // }
 
     const config = new Config();
-    // Load encounters data
 
     const encountersMap = new Map<string, any>(
       encountersData.map((enc: any) => [enc.map, enc])

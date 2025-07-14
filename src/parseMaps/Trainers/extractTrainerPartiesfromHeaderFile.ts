@@ -1,9 +1,9 @@
 import * as fs from "fs";
 import * as path from "path";
-import { PartyMonSchema, PartyMon } from "../validators/partyMon.js";
-import moveData from "../../data/moves.json" with { type: "json" }; // dont touch
-import speciesData from "../../data/speciesData.json" with { type: "json" };
-import abilities from "../../data/abilities.json" with { type: "json" }; // ability name to ID mapping
+import { PartyMonSchema, PartyMon } from "../../validators/partyMon.ts";
+import moveData from "../../../data/moves.json" with { type: "json" }; // dont touch
+import speciesData from "../../../data/speciesData.json" with { type: "json" };
+import abilities from "../../../data/abilities.json" with { type: "json" }; // ability name to ID mapping
 
 const Evs: Record<
   string,
