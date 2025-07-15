@@ -12,7 +12,8 @@
     "testinc": "node build/parseMaps/justOne.js maps/Route104/scripts.inc",
     "sprites": "node build/sprites/itemSpriteGenerator.js",
     "genTrainerSprites": "node build/newSpriteGenerator/generateTrainerSprites.js",
-    "objects":"node build/newSpriteGenerator/processIcons.js"
+    "objects":"node  build/newSpriteGenerator/processIcons.js",
+    "trainers": "tsx src/util/findNonTrainerTrainers.ts"
   },
   "devDependencies": {
     "rimraf": "^5.0.5",
