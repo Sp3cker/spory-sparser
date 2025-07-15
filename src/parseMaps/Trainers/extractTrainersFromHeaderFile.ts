@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { TrainerRecord } from "../../validators/trainerRecord.ts";
+import { TrainerStruct } from "../../validators/trainerRecord.ts";
 
 function stripComments(src: string): string {
   return src.replace(/\/\*[^]*?\*\//g, "").replace(/\/\/.*$/gm, "");
@@ -23,11 +23,11 @@ function formatTrainerPicName(
 function parseTrainerEntry(
   entry: string,
   frontPicDir: string
-): { record: TrainerRecord; partySymbol?: string } | null {
+): { record: TrainerStruct; partySymbol?: string } | null {
   const idMatch = entry.match(/^\s*\[(\w+)\]/m);
   if (!idMatch) return null;
   const id = idMatch[1];
-  const rec: TrainerRecord = { id, battlePic: "" };
+  const rec: TrainerStruct = { id, battlePic: "" };
 
   // battlePic
   const picMatch = entry.match(/\.trainerPic\s*=\s*(\w+)/);
@@ -96,7 +96,7 @@ export function extractTrainers(
   parties: Record<string, any[]>,
   battlePics: string,
   outputDir: string
-): Record<string, TrainerRecord> {
+): Record<string, TrainerStruct> {
   const TRAINERS_HEADER = path.join(dataDir, "trainers.h");
 
   const FRONT_PIC_DIR = battlePics;
@@ -115,7 +115,7 @@ export function extractTrainers(
   const src = fs.readFileSync(TRAINERS_HEADER, "utf8");
   const clean = stripComments(src);
 
-  const result: Record<string, TrainerRecord> = {};
+  const result: Record<string, TrainerStruct> = {};
 
   let i = 0;
   while (i < clean.length) {
@@ -182,37 +182,3 @@ function getStarterFromId(id: string): string | undefined {
   }
   return undefined;
 }
-
-// ----------------- CLI wrapper ----------------- //
-// function main() {
-//   const args = process.argv.slice(2);
-//   const root =
-//     args[0] ||
-//     path.resolve(
-//       path.dirname(decodeURI(new URL(import.meta.url).pathname)),
-//       "../../"
-//     );
-
-//   // Attempt to load parties from disk; if not present, exit with message.
-//   let parties: Record<string, any[]>;
-//   try {
-//     const partyJsonPath = path.join(root, "generated", "trainer_parties.json");
-//     parties = JSON.parse(fs.readFileSync(partyJsonPath, "utf8"));
-//   } catch (err) {
-//     console.error(
-//       "Unable to read trainer_parties.json – run extractTrainerParties first or supply root path"
-//     );
-//     process.exit(1);
-//   }
-
-//   const data = extractTrainers(root, parties);
-//   const outPath = path.join(root, "generated", "trainers_flat.json");
-//   fs.mkdirSync(path.dirname(outPath), { recursive: true });
-//   fs.writeFileSync(outPath, JSON.stringify(data, null, 2));
-//   console.log("Wrote", outPath);
-// }
-
-// // Execute only when run directly (not when imported)
-// if (import.meta.url === `file://${process.argv[1]}`) {
-//   main();
-// }

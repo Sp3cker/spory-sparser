@@ -1,14 +1,11 @@
-import { z } from "zod";
-import { LevelIncBattleSchema } from "../../validators/levelIncData.ts";
-
-export type TrainerReference = z.infer<typeof LevelIncBattleSchema>;
+import { IncTrainer, IncTrainerSchema } from "../../validators/levelIncData.ts";
 
 /**
  * Extract trainer battle references from .inc script content.
  * Returns array of { script, trainerId }.
  */
-export function parseTrainerBattles(content: string): TrainerReference[] {
-  const refs: TrainerReference[] = [];
+export function parseTrainerBattles(content: string): IncTrainer[] {
+  const refs: IncTrainer[] = [];
   const lines = content.split(/\n/);
 
   let currentLabel: string | null = null;
@@ -32,7 +29,7 @@ export function parseTrainerBattles(content: string): TrainerReference[] {
       const isRematch = line.includes("trainerbattle_rematch");
 
       // Validate and create the trainer reference
-      const trainerRef = LevelIncBattleSchema.parse({
+      const trainerRef = IncTrainerSchema.parse({
         script: currentLabel!,
         id: trainerId,
         rematch: isRematch,

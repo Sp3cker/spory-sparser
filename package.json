@@ -12,10 +12,13 @@
     "testinc": "node build/parseMaps/justOne.js maps/Route104/scripts.inc",
     "sprites": "node build/sprites/itemSpriteGenerator.js",
     "genTrainerSprites": "node build/newSpriteGenerator/generateTrainerSprites.js",
-    "objects":"node  build/newSpriteGenerator/processIcons.js",
-    "trainers": "tsx src/util/findNonTrainerTrainers.ts"
+    "objects": "node  build/newSpriteGenerator/processIcons.js",
+    "trainers": "tsx src/util/findNonTrainerTrainers.ts",
+    "test": "ava"
   },
   "devDependencies": {
+    "@ava/typescript": "^6.0.0",
+    "ava": "^6.4.1",
     "rimraf": "^5.0.5",
     "typescript": "^5.3.3"
   },
@@ -34,5 +37,19 @@
     "tsx": "^4.20.3",
     "xlsx": "^0.18.5",
     "zod": "^3.25.73"
+  },
+  "ava": {
+    "nodeArguments": [
+      "--loader=ts-node/esm"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "typescript": {
+      "rewritePaths": {
+        "src/": "build/"
+      },
+      "compile": "tsc"
+    }
   }
 }

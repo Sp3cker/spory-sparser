@@ -1,6 +1,4 @@
 import { notneededLabels } from "../removeSimilarLocations.ts";
-import { LevelIncBattleSchema } from "../validators/levelIncData.ts";
-import z from "zod";
 
 export interface IncItemEntry {
   name: string;
@@ -12,17 +10,12 @@ export interface IncPokemonEntry {
   level: number;
   isRandom: boolean;
 }
-export type IncTrainerEntry = z.infer<typeof LevelIncBattleSchema>;
 
 export class IncScriptEvent {
   public scriptName: string;
   public items: IncItemEntry[] = [];
   public pokemon: IncPokemonEntry[] = [];
-  public trainers: IncTrainerEntry[] = [];
-  // public variables: string[] = []; // Not used in this version, but could b
   public explanation: string = "";
-
-  // public rawContent: string = "";
 
   constructor(name: string) {
     this.scriptName = name;
@@ -294,7 +287,7 @@ export function parseScriptedEvents(content: string): IncScriptEvent[] {
   const neededScripts = results.filter((section: IncScriptEvent) => {
     return notneededLabels.includes(section.scriptName) === false;
   });
-
+  // Remove the first bit of scropt name before first underscore (?)
   for (const script of neededScripts) {
     try {
       const splitScriptName = script.scriptName.split("_");
