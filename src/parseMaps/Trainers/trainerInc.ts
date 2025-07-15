@@ -4,9 +4,9 @@ import { IncTrainer, IncTrainerSchema } from "../../validators/levelIncData.ts";
  * Extract trainer battle references from .inc script content.
  * Returns array of { script, trainerId }.
  */
-export function parseTrainerBattles(content: string): IncTrainer[] {
+export function parseTrainerBattles(incFileData: string): IncTrainer[] {
   const refs: IncTrainer[] = [];
-  const lines = content.split(/\n/);
+  const lines = incFileData.split(/\n/);
 
   let currentLabel: string | null = null;
 

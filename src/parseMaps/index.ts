@@ -6,15 +6,16 @@ import { parseTrainerBattles } from "./Trainers/trainerInc.ts";
 import {
   LevelIncDataSchema,
   LevelIncData,
+  IncData,
+  IncDataSchema,
 } from "../validators/levelIncData.js";
 
 export const processIncFile = async (
-  fullPath: string
-): Promise<LevelIncData> => {
+  incFileContent: string
+): Promise<IncData> => {
   try {
-    const content = readFileSync(fullPath, "utf8");
-    const scriptedGiveEvents = parseScriptedEvents(content);
-    const trainerBattles = parseTrainerBattles(content);
+    const scriptedGiveEvents = parseScriptedEvents(incFileContent);
+    const trainerBattles = parseTrainerBattles(incFileContent);
 
     // Post-process the Pikachu man
     const pikachuSection = scriptedGiveEvents.find(
@@ -40,29 +41,23 @@ export const processIncFile = async (
       }));
     }
 
-    // if (scriptsWithoutExplanation.length > 0 ){
-    //   throw "Unexplained Scripts!"
-    // }
+    // console.warn(
+    //   `maps/${level.thisLevelsId}/scripts.inc ${giveevent.items
+    //     .flatMap((i) => i.name)
+    //     .join(",")}`
+    // );
 
-    const levelLabel = getLevelLabel(path.basename(path.dirname(fullPath)));
-    const parentFolderPath = path.dirname(fullPath);
-    const baseMap = await getBasemapID(parentFolderPath);
-    const thisLevelsId = await getMapJsonId(
-      path.join(parentFolderPath, "map.json")
-    );
+    // scriptedGives: scriptedGiveEvents,
+    // trainerRefs: trainerBattles,
 
-    const obj = {
-      levelLabel,
-      baseMap,
-      thisLevelsId,
+    return IncDataSchema.parse({
       scriptedGives: scriptedGiveEvents,
       trainerRefs: trainerBattles,
-    };
-
-    return LevelIncDataSchema.parse(obj);
+    });
   } catch (error) {
-    console.error(`Error processing file ${fullPath}:`, error);
-    throw new Error(`Error processing file ${fullPath}`);
+    throw new Error(
+      `Error processing file ${incFileContent.slice(30)}: ${error}`
+    );
   }
 };
 
@@ -75,8 +70,40 @@ async function processDirectory(
     const fullPath = path.join(mapPath, folder.name, "scripts.inc");
     if (!existsSync(fullPath)) continue;
     try {
-      const result = await processIncFile(fullPath);
-      results.push(LevelIncDataSchema.parse(result));
+      const content = readFileSync(fullPath, "utf8");
+      const parentFolderPath = path.dirname(fullPath);
+      const thisLevelsId = await getMapJsonId(
+        path.join(parentFolderPath, "map.json")
+      );
+      const result = await processIncFile(content);
+      if (result.scriptedGives.length > 0) {
+        // We have to map over the ScriptedEvents
+        // and assign an explanation to
+        // all the scripts in Birch's Lab
+        // because Birch's Lab has so many
+        // dynmultipushes in DIFFERENT SCRIPTS
+        
+        for (const giveevent of result.scriptedGives) {
+          if (thisLevelsId === "MAP_NEW_BIRCHS_LAB") {
+            if (!giveevent.explanation) {
+              giveevent.explanation = "Choose a starter";
+            }
+          }
+          if (giveevent.explanation) {
+            continue;
+          }
+        }
+      }
+      const baseMap = await getBasemapID(parentFolderPath);
+      const levelLabel = getLevelLabel(path.basename(path.dirname(fullPath)));
+      const toPush = {
+        ...result,
+        baseMap,
+        thisLevelsId,
+        levelLabel,
+      };
+      LevelIncDataSchema.parse(toPush);
+      results.push(toPush);
     } catch (e) {
       console.error(`Failed to process directory for ${fullPath}:`, e);
     }
@@ -87,16 +114,13 @@ async function processDirectory(
 export async function findGiveItemsByLevel(
   mapsPath: string
 ): Promise<LevelIncData[]> {
-  const folders = readdirSync(mapsPath, { withFileTypes: true }).filter(
-    (entry) => entry.isDirectory()
+  const folders = readdirSync(mapsPath, { withFileTypes: true }).filter((entry) =>
+    entry.isDirectory()
   );
   const levels = await processDirectory(mapsPath, folders);
-  // We have to map over the ScriptedEvents
-  // and assign an explanation to
-  // all the scripts in Birch's Lab
-  // because Birch's Lab has so many
-  // dynmultipushes in DIFFERENT SCRIPTS
+
   return levels.map((level: LevelIncData) => {
+    
     const obj = {
       baseMap: level.baseMap,
       levelLabel: level.levelLabel,
@@ -105,21 +129,6 @@ export async function findGiveItemsByLevel(
       trainerRefs: level.trainerRefs,
     };
 
-    for (const giveevent of obj.scriptedGives) {
-      if (level.thisLevelsId === "MAP_NEW_BIRCHS_LAB") {
-        if (!giveevent.explanation) {
-          giveevent.explanation = "Choose a starter";
-        }
-      }
-      if (giveevent.explanation) {
-        continue;
-      }
-      // console.warn(
-      //   `maps/${level.thisLevelsId}/scripts.inc ${giveevent.items
-      //     .flatMap((i) => i.name)
-      //     .join(",")}`
-      // );
-    }
     return obj;
   }); /** map */
 }

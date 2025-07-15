@@ -6,13 +6,16 @@ export const IncTrainerSchema = z.object({
   rematch: z.boolean().optional(),
 });
 
-export const LevelIncDataSchema = z.object({
-  levelLabel: z.string(),
-  baseMap: z.string(),
-  thisLevelsId: z.string(),
+export const IncDataSchema = z.object({
   scriptedGives: z.array(z.any()), // Could be refined if IncScriptEvent is available
   trainerRefs: z.array(IncTrainerSchema),
 });
-export type IncTrainer = z.infer<typeof IncTrainerSchema>;
 
+export const LevelIncDataSchema = IncDataSchema.extend({
+  levelLabel: z.string(),
+  baseMap: z.string(),
+  thisLevelsId: z.string(),
+});
+export type IncTrainer = z.infer<typeof IncTrainerSchema>;
+export type IncData = z.infer<typeof IncDataSchema>;
 export type LevelIncData = z.infer<typeof LevelIncDataSchema>;

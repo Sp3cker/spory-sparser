@@ -536,7 +536,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Collect all Silver Badges in Battle Frontier",
           "scriptName": "Scott's House"
         },
@@ -548,7 +547,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Collect all gold symbols in Battle Frontier",
           "scriptName": "Scott's House"
         }
@@ -650,7 +648,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Based on your selection in Desert Ruins",
           "scriptName": "Event Script"
         }
@@ -702,7 +699,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Whoop Brawly's lil' ass",
           "scriptName": "Gym"
         }
@@ -763,7 +759,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Dawn",
           "scriptName": "Event Script"
         },
@@ -776,7 +771,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Say goodbye to your rival",
           "scriptName": "Event Script"
         },
@@ -796,7 +790,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Volkner",
           "scriptName": "Event Script"
         },
@@ -809,7 +802,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Gift from Volkner",
           "scriptName": "Event Script"
         }
@@ -1158,7 +1150,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Talk to the Move Tutor",
           "scriptName": "Move Relearner's House"
         },
@@ -1178,7 +1169,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Trade these for a Starter Egg",
           "scriptName": "Move Relearner's House"
         },
@@ -1191,7 +1181,6 @@
               "isRandom": false
             }
           ],
-          "trainers": [],
           "explanation": "Give Move Relearner a Red Shard",
           "scriptName": "Move Relearner's House"
         },
@@ -1204,7 +1193,6 @@
               "isRandom": false
             }
           ],
-          "trainers": [],
           "explanation": "Give Move Relearner a Blue Shard",
           "scriptName": "Move Relearner's House"
         },
@@ -1217,7 +1205,6 @@
               "isRandom": false
             }
           ],
-          "trainers": [],
           "explanation": "Give Move Relearner a Green Shard",
           "scriptName": "Move Relearner's House"
         }
@@ -1291,7 +1278,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat The Creator",
           "scriptName": "Creator House"
         },
@@ -1319,7 +1305,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Cap",
           "scriptName": "Creator House"
         },
@@ -1347,7 +1332,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat X (the trainer)",
           "scriptName": "Creator House"
         }
@@ -1402,7 +1386,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Fortree Gym Leader",
           "scriptName": "Gym"
         }
@@ -1461,7 +1444,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Guess which hand he has the coin in 4 times",
           "scriptName": "House2"
         }
@@ -1484,7 +1466,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Wait for Wingull to return",
           "scriptName": "House4"
         }
@@ -1548,7 +1529,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Talk to the Hiker",
           "scriptName": "1F"
         }
@@ -1677,7 +1657,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Give Steven the letter",
           "scriptName": "Steven's Room"
         }
@@ -1780,7 +1759,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Maylene",
           "scriptName": "Event Script"
         }
@@ -1879,7 +1857,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Gift from Rival",
           "scriptName": "Event Script"
         },
@@ -1892,7 +1869,6 @@
               "isRandom": false
             }
           ],
-          "trainers": [],
           "explanation": "Talk to the lady by the Hot Springs",
           "scriptName": "Event Script"
         }
@@ -1935,7 +1911,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Whoop Flannery's ass",
           "scriptName": "Gym"
         }
@@ -1981,7 +1956,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Peruse the traditional Herbal Medicene",
           "scriptName": "Herb Shop"
         }
@@ -2064,7 +2038,6 @@
         {
           "items": [],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Talk to Berryman to receive a berry",
           "scriptName": "Event Script"
         },
@@ -2076,7 +2049,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Dawn",
           "scriptName": "Event Script"
         }
@@ -2256,7 +2228,6 @@
               "isRandom": false
             }
           ],
-          "trainers": [],
           "explanation": "Speak to Man in House 1",
           "scriptName": "House1"
         }
@@ -2343,7 +2314,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Talk to Fat Man in his house",
           "scriptName": "House2"
         }
@@ -2368,7 +2338,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "A humble gift from Iriv (it's blue raspberry flavor).",
           "scriptName": "Event Script"
         }
@@ -2391,7 +2360,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Produce a Birth Island Ticket",
           "scriptName": "Professor Birch's Lab"
         },
@@ -2404,7 +2372,6 @@
               "isRandom": false
             }
           ],
-          "trainers": [],
           "explanation": "Choose Cyndaquil as a starter",
           "scriptName": "Professor Birch's Lab"
         },
@@ -2417,7 +2384,6 @@
               "isRandom": false
             }
           ],
-          "trainers": [],
           "explanation": "Choose Totodile as a starter",
           "scriptName": "Professor Birch's Lab"
         },
@@ -2430,7 +2396,6 @@
               "isRandom": false
             }
           ],
-          "trainers": [],
           "explanation": "Choose Chikorita as a starter",
           "scriptName": "Professor Birch's Lab"
         },
@@ -2558,7 +2523,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Receive your Pokédex",
           "scriptName": "Professor Birch's Lab"
         }
@@ -2822,7 +2786,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Talk to Wattson",
           "scriptName": "Event Script"
         },
@@ -2834,7 +2797,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Clear New Mauville",
           "scriptName": "Event Script"
         }
@@ -2867,7 +2829,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Choose a bike",
           "scriptName": "Bike Shop"
         }
@@ -2942,7 +2903,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Whoop Wattson in his ass",
           "scriptName": "Gym"
         }
@@ -2996,7 +2956,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to Rock Smash Dude",
           "scriptName": "House1"
         }
@@ -3019,7 +2978,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Talk to the lady in House 2",
           "scriptName": "House2"
         }
@@ -3100,7 +3058,6 @@
               "isRandom": false
             }
           ],
-          "trainers": [],
           "explanation": "PikachuMan (1st Floor of Pokemon Center).",
           "scriptName": "Pokemon Center"
         }
@@ -3270,7 +3227,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Pickup the Root Fossil",
           "scriptName": "4F"
         },
@@ -3282,7 +3238,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Pick up the Claw Fossil",
           "scriptName": "4F"
         }
@@ -3316,7 +3271,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Talk to Kings Rock Boy",
           "scriptName": "Event Script"
         }
@@ -3340,7 +3294,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat Sunbird",
           "scriptName": "Beta Tester House"
         },
@@ -3353,7 +3306,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat Suneal",
           "scriptName": "Beta Tester House"
         },
@@ -3366,7 +3318,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat DollaMike",
           "scriptName": "Beta Tester House"
         }
@@ -3409,7 +3360,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat bratty twins",
           "scriptName": "Gym"
         }
@@ -3498,7 +3448,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Talk to the fisherman",
           "scriptName": "House3"
         }
@@ -3549,7 +3498,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Do sumn with the Sun Stone man",
           "scriptName": "Space Center"
         }
@@ -3572,7 +3520,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Save the Space Center",
           "scriptName": "Space Center"
         }
@@ -3595,7 +3542,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Enter Steven's Domicile",
           "scriptName": "Steven's House"
         },
@@ -3608,7 +3554,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat Elite Four, return to Steven",
           "scriptName": "Steven's House"
         }
@@ -3633,7 +3578,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "After defeating Team Magma, puruse Old Hag's wares",
           "scriptName": "Event Script"
         },
@@ -3645,7 +3589,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Collect after defeating Environmental Terrorists",
           "scriptName": "Event Script"
         }
@@ -3726,7 +3669,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Commune with priestess on 1F",
           "scriptName": "1F"
         }
@@ -3975,7 +3917,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Environmental Terrorists, save Mt. Pyre",
           "scriptName": "Summit"
         }
@@ -4041,7 +3982,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose Squirtle as a starter",
           "scriptName": "Event Script"
         },
@@ -4054,7 +3994,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4067,7 +4006,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4080,7 +4018,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4093,7 +4030,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4106,7 +4042,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4119,7 +4054,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4132,7 +4066,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4145,7 +4078,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4158,7 +4090,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4171,7 +4102,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4184,7 +4114,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4197,7 +4126,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4210,7 +4138,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4223,7 +4150,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4236,7 +4162,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4249,7 +4174,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4262,7 +4186,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4275,7 +4198,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4288,7 +4210,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4301,7 +4222,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4314,7 +4234,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4327,7 +4246,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4340,7 +4258,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4353,7 +4270,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4366,7 +4282,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         },
@@ -4379,7 +4294,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Choose a starter",
           "scriptName": "Event Script"
         }
@@ -4451,7 +4365,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Talk to shopkeep in PokeMart",
           "scriptName": "Event Script"
         }
@@ -4521,7 +4434,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to man in House 1",
           "scriptName": "House1"
         }
@@ -4571,7 +4483,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to Scott (dude with sunglasses).",
           "scriptName": "Event Script"
         },
@@ -4583,7 +4494,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to fisherman by pond",
           "scriptName": "Event Script"
         }
@@ -4606,7 +4516,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Unclear to me when you get this (sorry!)",
           "scriptName": "Gym"
         },
@@ -4630,7 +4539,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Whoop your father's ass",
           "scriptName": "Gym"
         }
@@ -4730,7 +4638,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Received from Wally's dad",
           "scriptName": "Wally's House"
         }
@@ -4820,7 +4727,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Save the Devon Researcher from the Environmental Terrorist",
           "scriptName": "Event Script"
         },
@@ -4832,7 +4738,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Talk to the girl in the woods (Must know Cut to pass trees)",
           "scriptName": "Event Script"
         },
@@ -4852,7 +4757,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Gardinia (Must know Cut to pass trees)",
           "scriptName": "Event Script"
         }
@@ -5146,7 +5050,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Florist that gives you berries",
           "scriptName": "Event Script"
         },
@@ -5158,7 +5061,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Hidden before Badge 3. Speak to her after defeating Watson",
           "scriptName": "Event Script"
         },
@@ -5170,7 +5072,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to the boy on the beach",
           "scriptName": "Event Script"
         },
@@ -5282,7 +5183,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Dawn in a battle.",
           "scriptName": "Event Script"
         }
@@ -5366,7 +5266,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to shopkeep in P.P. Flower Shop",
           "scriptName": "Pretty Petal Flower Shop"
         }
@@ -5723,7 +5622,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to little girl on the beach",
           "scriptName": "Event Script"
         }
@@ -5828,7 +5726,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat the trainers in Seashore House",
           "scriptName": "Seashore House"
         },
@@ -5840,7 +5737,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Make purchase at Seashore House",
           "scriptName": "Seashore House"
         }
@@ -5930,7 +5826,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Rival",
           "scriptName": "Event Script"
         },
@@ -6050,7 +5945,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat your Rival",
           "scriptName": "Event Script"
         }
@@ -6226,7 +6120,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Solve puzzle 1",
           "scriptName": "Trick House Entrance"
         },
@@ -6274,7 +6167,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Solve puzzle 2",
           "scriptName": "Trick House Entrance"
         },
@@ -6298,7 +6190,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Solve puzzle 3",
           "scriptName": "Trick House Entrance"
         },
@@ -6310,7 +6201,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Solve puzzle 4",
           "scriptName": "Trick House Entrance"
         },
@@ -6322,7 +6212,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Solve puzzle 5",
           "scriptName": "Trick House Entrance"
         },
@@ -6334,7 +6223,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Solve puzzle 6",
           "scriptName": "Trick House Entrance"
         },
@@ -6346,7 +6234,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Solve puzzle 7",
           "scriptName": "Trick House Entrance"
         }
@@ -6688,7 +6575,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Receive your daily berry from berry girl",
           "scriptName": "Event Script"
         },
@@ -6716,7 +6602,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Dawn",
           "scriptName": "Event Script"
         },
@@ -6740,7 +6625,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Black Belt Daisuke.",
           "scriptName": "Event Script"
         },
@@ -6753,7 +6637,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat Black Belt Diasuke",
           "scriptName": "Event Script"
         }
@@ -6898,7 +6781,6 @@
               "isRandom": false
             }
           ],
-          "trainers": [],
           "explanation": "Speak to Old Lady in Rest Stop",
           "scriptName": "Old Lady's Rest Stop"
         }
@@ -6921,7 +6803,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "(Post Game) Speak to the Winstrate Family",
           "scriptName": "Winstrate Family's House"
         },
@@ -7037,7 +6918,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Victoria at the Winstrate Family House",
           "scriptName": "Winstrate Family's House"
         }
@@ -7221,7 +7101,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to Glass worker in Workshop",
           "scriptName": "Glas's Workshop"
         }
@@ -7279,7 +7158,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to man in nice suit",
           "scriptName": "Event Script"
         }
@@ -7373,7 +7251,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Enter Fossil Maniac's house, talk to him (HE CRAZY)",
           "scriptName": "Fossil Maniac's House"
         }
@@ -7582,7 +7459,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Encounter Devon Worker outside Rustboro City",
           "scriptName": "Event Script"
         },
@@ -7598,7 +7474,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Roark",
           "scriptName": "Event Script"
         }
@@ -7714,7 +7589,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Find sneaky-deaky Derek",
           "scriptName": "Event Script"
         },
@@ -7758,7 +7632,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Fantina",
           "scriptName": "Event Script"
         }
@@ -7874,7 +7747,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to fisherman outside Mauville City",
           "scriptName": "Event Script"
         },
@@ -7898,7 +7770,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Wake",
           "scriptName": "Event Script"
         }
@@ -8091,7 +7962,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Rival outside Fortree City",
           "scriptName": "Event Script"
         }
@@ -8262,7 +8132,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Save Weather Institute from Environmental Terrorists",
           "scriptName": "Weather Institute"
         }
@@ -8381,7 +8250,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to Steven outside Fortree City",
           "scriptName": "Event Script"
         }
@@ -8548,7 +8416,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat Byron outside Lilycove City",
           "scriptName": "Event Script"
         }
@@ -8860,7 +8727,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Part of Berry Master Quest",
           "scriptName": "Berry Master's House"
         },
@@ -8872,7 +8738,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Part of Berry Master quest",
           "scriptName": "Berry Master's House"
         }
@@ -8987,7 +8852,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "House on island. Speak to lady inside house",
           "scriptName": "Diving Treasure Hunter's House"
         }
@@ -9025,7 +8889,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Candice",
           "scriptName": "Event Script"
         }
@@ -9676,7 +9539,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Return stolen Devon Goods to Mr. Devon",
           "scriptName": "Event Script"
         }
@@ -9730,7 +9592,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to Mr. Cutter in Cutter's House",
           "scriptName": "Cutter's House"
         }
@@ -9754,7 +9615,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "after giving researcher fossil",
           "scriptName": "Devon Corp"
         },
@@ -9767,7 +9627,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "After giving researcher fossil",
           "scriptName": "Devon Corp"
         }
@@ -9790,7 +9649,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Talk to Mr. Devon for the first time.",
           "scriptName": "Devon Corp"
         },
@@ -9814,7 +9672,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Deliver Stephen's letter to Devon Corp",
           "scriptName": "Devon Corp"
         }
@@ -9837,7 +9694,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to boy in ninja garb on 2F of apartments",
           "scriptName": "Flat2"
         }
@@ -9860,7 +9716,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Whoops Roxanne's ass",
           "scriptName": "Gym"
         }
@@ -9934,7 +9789,6 @@
               "isRandom": false
             }
           ],
-          "trainers": [],
           "explanation": "Speak to the Egg Man on 1F of the Pokemon Center",
           "scriptName": "Pokemon Center"
         }
@@ -9957,7 +9811,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to the teacher in Pokemon School",
           "scriptName": "Pokemon School"
         }
@@ -9991,7 +9844,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Save the relationship in Rusturf Tunnel",
           "scriptName": "Event Script"
         },
@@ -10003,7 +9855,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Take Devon Goods back from Environmental Terrorist",
           "scriptName": "Event Script"
         }
@@ -10071,7 +9922,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Find Snatch Giver in rooms",
           "scriptName": "Event Script"
         }
@@ -10463,7 +10313,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to old Man during low tide",
           "scriptName": "Low Tide Entrance Room"
         }
@@ -10522,7 +10371,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Pickup from ground",
           "scriptName": "Low Tide Inner Room"
         },
@@ -10538,7 +10386,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Pick up from ground",
           "scriptName": "Low Tide Inner Room"
         }
@@ -10561,7 +10408,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Pickup from ground",
           "scriptName": "Low Tide Lower Room"
         },
@@ -10573,7 +10419,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to trainer in Lower Room during Low Tide",
           "scriptName": "Low Tide Lower Room"
         }
@@ -10605,7 +10450,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Pick up from ground",
           "scriptName": "Low Tide Stair's Room"
         }
@@ -10746,7 +10590,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to clerk in Market",
           "scriptName": "Event Script"
         }
@@ -10769,7 +10612,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to trainer in Battle Tent",
           "scriptName": "Battle Tent Lobby"
         }
@@ -10796,7 +10638,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Trade for a Scanner with Cpt. Stern",
           "scriptName": "Harbor"
         }
@@ -10848,7 +10689,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Speak to Familiar Grunt in the Oceanic Museum",
           "scriptName": "Oceanic Museum"
         }
@@ -10892,7 +10732,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "In PkmnFan Club, show the player a Red Scarf for their lead Pokémon",
           "scriptName": "Pokemon Fan Club"
         },
@@ -10904,7 +10743,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "PkmnFan Club, Blue Scarf for their lead Pokémon",
           "scriptName": "Pokemon Fan Club"
         },
@@ -10916,7 +10754,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "PkmnFan Club a Pink Scarf for their lead Pokémon",
           "scriptName": "Pokemon Fan Club"
         },
@@ -10928,7 +10765,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "PkmnFan Club, a Green Scarf for their lead Pokémon",
           "scriptName": "Pokemon Fan Club"
         },
@@ -10940,7 +10776,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "PkmnFan Club, a Yellow Scarf for their lead Pokémon",
           "scriptName": "Pokemon Fan Club"
         },
@@ -10952,7 +10787,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "PkmnFan Club, show pokemon with high friendship (> 150)",
           "scriptName": "Pokemon Fan Club"
         }
@@ -10977,7 +10811,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Daily berry from Kiri, sometimes Figy",
           "scriptName": "Event Script"
         },
@@ -10989,7 +10822,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Daily berry from Kiri, sometimes Iapapa",
           "scriptName": "Event Script"
         },
@@ -11001,7 +10833,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Leave Cave of Origin and go to the Gym (part of quest)",
           "scriptName": "Event Script"
         }
@@ -11025,7 +10856,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat Danni in the Champ's house",
           "scriptName": "Champ House"
         },
@@ -11038,7 +10868,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat Masta Janes in the Champ's house",
           "scriptName": "Champ House"
         },
@@ -11051,7 +10880,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat Befools",
           "scriptName": "Champ House"
         }
@@ -11094,7 +10922,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Juan (aka whoop his ass)",
           "scriptName": "Gym"
         }
@@ -11248,7 +11075,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Trade Arceus Plates with Expert F",
           "scriptName": "House2"
         }
@@ -11272,7 +11098,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat Natn",
           "scriptName": "House5"
         },
@@ -11285,7 +11110,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat Master Poucine",
           "scriptName": "House5"
         },
@@ -11298,7 +11122,6 @@
               "isRandom": true
             }
           ],
-          "trainers": [],
           "explanation": "Defeat Oblivion Wing in House %",
           "scriptName": "House5"
         }
@@ -11337,7 +11160,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Show Zacian to receive the Rusted Sword",
           "scriptName": "Lotad And Seedot House"
         },
@@ -11349,7 +11171,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Show Zamazenta to receive the Rusted Shield",
           "scriptName": "Lotad And Seedot House"
         }
@@ -11677,7 +11498,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "NPC in Battle Tent gives this",
           "scriptName": "Battle Tent Lobby"
         }
@@ -11728,7 +11548,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Ursula.",
           "scriptName": "Event Script"
         }
@@ -11834,7 +11653,6 @@
             }
           ],
           "pokemon": [],
-          "trainers": [],
           "explanation": "Defeat Wally at the entrance of Victory Road",
           "scriptName": "1F"
         }
