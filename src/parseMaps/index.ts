@@ -1,11 +1,8 @@
 import { Dirent, existsSync, readFileSync, readdirSync } from "fs";
 import * as path from "path";
 import { getLevelLabel, getBasemapID, getMapJsonId } from "../helpers.ts";
-import { incParser, IncScriptEvent } from "./incParser.ts";
-import {
-  parseTrainerBattles,
-  TrainerReference,
-} from "./Trainers/trainerInc.ts";
+import { parseScriptedEvents } from "./incParser.ts";
+import { parseTrainerBattles } from "./Trainers/trainerInc.ts";
 import {
   LevelIncDataSchema,
   LevelIncData,
@@ -16,14 +13,10 @@ export const processIncFile = async (
 ): Promise<LevelIncData> => {
   try {
     const content = readFileSync(fullPath, "utf8");
-    const scriptedGiveEvents = incParser(content);
-    const trainerRefsRaw = parseTrainerBattles(content);
+    const scriptedGiveEvents = parseScriptedEvents(content);
+    const trainerBattles = parseTrainerBattles(content);
 
-    // console.log(
-    //   `[Debug] Output from poryParser for ${fullPath}:`,
-    //   JSON.stringify(scriptedGiveEvents, null, 2)
-    // );
-
+    // Post-process the Pikachu man
     const pikachuSection = scriptedGiveEvents.find(
       (section) =>
         section.scriptName ===
@@ -63,11 +56,7 @@ export const processIncFile = async (
       baseMap,
       thisLevelsId,
       scriptedGives: scriptedGiveEvents,
-      trainerRefs: trainerRefsRaw.map((r) => ({
-        id: r.id,
-        script: r.script,
-        rematch: r.rematch,
-      })),
+      trainerRefs: trainerBattles,
     };
 
     return LevelIncDataSchema.parse(obj);
@@ -102,19 +91,20 @@ export async function findGiveItemsByLevel(
     (entry) => entry.isDirectory()
   );
   const levels = await processDirectory(mapsPath, folders);
+  // We have to map over the ScriptedEvents
+  // and assign an explanation to
+  // all the scripts in Birch's Lab
+  // because Birch's Lab has so many
+  // dynmultipushes in DIFFERENT SCRIPTS
   return levels.map((level: LevelIncData) => {
     const obj = {
       baseMap: level.baseMap,
       levelLabel: level.levelLabel,
       thisLevelsId: level.thisLevelsId,
-
-      scriptedGives: [] as IncScriptEvent[],
-
-      trainerRefs: [] as TrainerReference[],
+      scriptedGives: level.scriptedGives,
+      trainerRefs: level.trainerRefs,
     };
 
-    obj.scriptedGives = level.scriptedGives;
-    obj.trainerRefs = level.trainerRefs;
     for (const giveevent of obj.scriptedGives) {
       if (level.thisLevelsId === "MAP_NEW_BIRCHS_LAB") {
         if (!giveevent.explanation) {
@@ -124,11 +114,11 @@ export async function findGiveItemsByLevel(
       if (giveevent.explanation) {
         continue;
       }
-      console.warn(
-        `maps/${level.thisLevelsId}/scripts.inc ${giveevent.items
-          .flatMap((i) => i.name)
-          .join(",")}`
-      );
+      // console.warn(
+      //   `maps/${level.thisLevelsId}/scripts.inc ${giveevent.items
+      //     .flatMap((i) => i.name)
+      //     .join(",")}`
+      // );
     }
     return obj;
   }); /** map */

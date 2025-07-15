@@ -118,6 +118,9 @@ function extractMapData(mapObj: any): { trainers: any[]; pickupitems: any[] } {
 export async function main(mapsDir: string): Promise<MapEventPlace[]> {
   const folders = (await fs.readdir(mapsDir, { withFileTypes: true }))
     .filter((entry) => entry.isDirectory())
+    .filter((entry) => {
+      entry.name !== "_scripts";
+    })
     .map((entry) => entry.name);
 
   const baseMapToLevels: Record<string, MapEventPlace> = {};

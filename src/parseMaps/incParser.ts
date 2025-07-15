@@ -1,4 +1,6 @@
 import { notneededLabels } from "../removeSimilarLocations.ts";
+import { LevelIncBattleSchema } from "../validators/levelIncData.ts";
+import z from "zod";
 
 export interface IncItemEntry {
   name: string;
@@ -10,12 +12,14 @@ export interface IncPokemonEntry {
   level: number;
   isRandom: boolean;
 }
+export type IncTrainerEntry = z.infer<typeof LevelIncBattleSchema>;
 
 export class IncScriptEvent {
   public scriptName: string;
   public items: IncItemEntry[] = [];
   public pokemon: IncPokemonEntry[] = [];
-
+  public trainers: IncTrainerEntry[] = [];
+  // public variables: string[] = []; // Not used in this version, but could b
   public explanation: string = "";
 
   // public rawContent: string = "";
@@ -62,7 +66,9 @@ export class IncScriptEvent {
     if (giveItemMatch) {
       const itemName = giveItemMatch[2];
       const quantity = giveItemMatch[3] ? parseInt(giveItemMatch[3], 10) : 1;
-      const existingIndex = this.items.findIndex(item => item.name === itemName);
+      const existingIndex = this.items.findIndex(
+        (item) => item.name === itemName
+      );
       if (existingIndex !== -1) {
         this.items[existingIndex].quantity += quantity;
         return;
@@ -208,7 +214,7 @@ function extractIncScriptBlocks(
 ): Array<{ name: string; content: string }> {
   const lines = content.split("\n");
   const sections: Array<{ name: string; content: string }> = [];
-  let currentSection: string | null = null;
+  let currentScriptName: string | null = null;
   let currentContent: string[] = [];
 
   for (let i = 0; i < lines.length; i++) {
@@ -217,36 +223,39 @@ function extractIncScriptBlocks(
     // Check if this line defines a script label (ends with ::)
     if (line.endsWith("::")) {
       // Save previous section if it exists and has content
-      if (currentSection && currentContent.length > 0) {
+      if (currentScriptName && currentContent.length > 0) {
         sections.push({
-          name: currentSection,
+          name: currentScriptName,
           content: currentContent.join("\n"),
         });
       }
 
       // Start new section
-      currentSection = line;
+      currentScriptName = line;
       currentContent = [];
-    } else if (currentSection) {
-      // Add line to current section
+    } else if (currentScriptName) {
+      // Since this line didn't end with ::
+      // AND we haven't encountered another line ending with ::
+      // we assume this line is the body of the previously found
+      // script name.
       currentContent.push(line);
 
       // Stop at 'end' keyword
       if (line === "end") {
         sections.push({
-          name: currentSection,
+          name: currentScriptName,
           content: currentContent.join("\n"),
         });
-        currentSection = null;
+        currentScriptName = null;
         currentContent = [];
       }
     }
   }
 
   // Save the last section if it exists
-  if (currentSection && currentContent.length > 0) {
+  if (currentScriptName && currentContent.length > 0) {
     sections.push({
-      name: currentSection,
+      name: currentScriptName,
       content: currentContent.join("\n"),
     });
   }
@@ -265,7 +274,7 @@ function prettifyLabel(raw: string): string {
  * Main parser function for .inc files
  * Pass a file path.
  */
-export function incParser(content: string): IncScriptEvent[] {
+export function parseScriptedEvents(content: string): IncScriptEvent[] {
   // console.log("[incParser] Starting to parse .inc content");
 
   const scriptBlocks = extractIncScriptBlocks(content);
@@ -312,20 +321,24 @@ export function incParser(content: string): IncScriptEvent[] {
         // Merge items and pokemon into the first script found with this explanation
         // Merge items with quantity consolidation
         for (const newItem of script.items) {
-          const existingItemIndex = existingScript.items.findIndex(item => item.name === newItem.name);
+          const existingItemIndex = existingScript.items.findIndex(
+            (item) => item.name === newItem.name
+          );
           if (existingItemIndex !== -1) {
-            existingScript.items[existingItemIndex].quantity += newItem.quantity;
+            existingScript.items[existingItemIndex].quantity +=
+              newItem.quantity;
           } else {
             existingScript.items.push(newItem);
           }
         }
-        
+
         // Merge pokemon (avoid duplicates)
         for (const newPokemon of script.pokemon) {
           const alreadyExists = existingScript.pokemon.some(
-            p => p.species === newPokemon.species && 
-                 p.level === newPokemon.level && 
-                 p.isRandom === newPokemon.isRandom
+            (p) =>
+              p.species === newPokemon.species &&
+              p.level === newPokemon.level &&
+              p.isRandom === newPokemon.isRandom
           );
           if (!alreadyExists) {
             existingScript.pokemon.push(newPokemon);
@@ -341,14 +354,18 @@ export function incParser(content: string): IncScriptEvent[] {
     }
   }
 
-  const finalResults = [...groupedByExplanation.values(), ...scriptsWithoutExplanation];
-  
+  const finalResults = [
+    ...groupedByExplanation.values(),
+    ...scriptsWithoutExplanation,
+  ];
 
   for (const script of finalResults) {
     // Consolidate items within each script (in case there are still duplicates)
     const consolidatedItems: IncItemEntry[] = [];
     for (const item of script.items) {
-      const existingIndex = consolidatedItems.findIndex(i => i.name === item.name);
+      const existingIndex = consolidatedItems.findIndex(
+        (i) => i.name === item.name
+      );
       if (existingIndex !== -1) {
         consolidatedItems[existingIndex].quantity += item.quantity;
       } else {
