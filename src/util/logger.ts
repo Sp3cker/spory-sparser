@@ -38,7 +38,7 @@ class Logger {
     }
     
     // Also output to console
-    console.log(formattedMessage.trim());
+    // console.log(formattedMessage.trim());
   }
 
   info(message: string, ...args: any[]): void {

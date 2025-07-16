@@ -105,7 +105,7 @@ const mergeDataByLevelsID = async ({
       // }
       /** Here we match up trainers from the .inc file
        * with trainers from the header file.
-       * We also get their overworld sprite here.
+       * We also get their overworld sprite here from the map.json.
        * We also move the `rematch` prop from `trainerRefs` to the trainer object
        * */
       const trainersAlsoInMapJson = mapEntry.trainerRefs

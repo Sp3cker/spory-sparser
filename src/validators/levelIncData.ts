@@ -1,13 +1,32 @@
 import { z } from "zod";
-
+/**
+This is a trainerbattle we find in an .inc file.
+ */
 export const IncTrainerSchema = z.object({
   id: z.string(),
   script: z.string(),
   rematch: z.boolean().optional(),
 });
+/** Item given to player in .inc file */
+export const IncItemEntrySchema = z.object({
+  name: z.string(),
+  quantity: z.number(),
+});
+/** Pokemon species given to player */
+export const IncPokemonEntrySchema = z.object({
+  species: z.string(),
+  level: z.number(),
+  isRandom: z.boolean(), // if `givemonrandom`
+});
 
+export const IncScriptedEventSchema = z.object({
+  scriptName: z.string(),
+  explanation: z.string().optional(),
+  items: z.array(IncItemEntrySchema).optional(),
+  pokemon: z.array(IncPokemonEntrySchema).optional(),
+});
 export const IncDataSchema = z.object({
-  scriptedGives: z.array(z.any()), // Could be refined if IncScriptEvent is available
+  scriptedGives: z.array(IncScriptedEventSchema),
   trainerRefs: z.array(IncTrainerSchema),
 });
 
@@ -16,6 +35,11 @@ export const LevelIncDataSchema = IncDataSchema.extend({
   baseMap: z.string(),
   thisLevelsId: z.string(),
 });
+
 export type IncTrainer = z.infer<typeof IncTrainerSchema>;
 export type IncData = z.infer<typeof IncDataSchema>;
 export type LevelIncData = z.infer<typeof LevelIncDataSchema>;
+
+export type IncScriptEvent = z.infer<typeof IncScriptedEventSchema>;
+export type IncItemEntry = z.infer<typeof IncItemEntrySchema>;
+export type IncPokemonEntry = z.infer<typeof IncPokemonEntrySchema>;

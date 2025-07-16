@@ -1,15 +1,15 @@
 import { notneededLabels } from "../removeSimilarLocations.ts";
+import {
+  IncItemEntry,
+  IncScriptedEventSchema,
+  IncPokemonEntry,
+} from "../validators/levelIncData.ts";
 
-export interface IncItemEntry {
-  name: string;
-  quantity: number;
-}
-
-export interface IncPokemonEntry {
-  species: string;
-  level: number;
-  isRandom: boolean;
-}
+// export interface IncPokemonEntry {
+//   species: string;
+//   level: number;
+//   isRandom: boolean;
+// }
 
 export class IncScriptEvent {
   public scriptName: string;
@@ -178,25 +178,25 @@ export class IncScriptEvent {
     );
   }
 
-  getSummary(): string {
-    const parts: string[] = [];
+  // getSummary(): string {
+  //   const parts: string[] = [];
 
-    if (this.items.length > 0) {
-      parts.push(
-        `${this.items.length} item${this.items.length !== 1 ? "s" : ""}`
-      );
-    }
+  //   if (this.items.length > 0) {
+  //     parts.push(
+  //       `${this.items.length} item${this.items.length !== 1 ? "s" : ""}`
+  //     );
+  //   }
 
-    if (this.pokemon.length > 0) {
-      parts.push(`${this.pokemon.length} Pokémon`);
-    }
+  //   if (this.pokemon.length > 0) {
+  //     parts.push(`${this.pokemon.length} Pokémon`);
+  //   }
 
-    if (this.explanation) {
-      parts.push(`explanation: "${this.explanation}"`);
-    }
+  //   if (this.explanation) {
+  //     parts.push(`explanation: "${this.explanation}"`);
+  //   }
 
-    return parts.join(", ") || "no content";
-  }
+  //   return parts.join(", ") || "no content";
+  // }
 }
 
 /**
@@ -278,7 +278,7 @@ export function parseScriptedEvents(content: string): IncScriptEvent[] {
   for (const block of scriptBlocks) {
     const event = new IncScriptEvent(block.name);
     event.parseFromContent(block.content);
-
+    IncScriptedEventSchema.parse(event); // Validate the event structure
     // Only include sections that have give events
     if (event.hasContent()) {
       results.push(event);
@@ -318,8 +318,7 @@ export function parseScriptedEvents(content: string): IncScriptEvent[] {
             (item) => item.name === newItem.name
           );
           if (existingItemIndex !== -1) {
-            existingScript.items[existingItemIndex].quantity +=
-              newItem.quantity;
+            existingScript.items[existingItemIndex].quantity += newItem.quantity;
           } else {
             existingScript.items.push(newItem);
           }
