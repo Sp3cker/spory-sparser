@@ -4,11 +4,11 @@ export const PartyMonSchema = z
   .object({
     lvl: z.number(),
     id: z.number(),
-    iv: z.literal("perfect").optional(),
+    iv: z.boolean().optional(),
     nature: z.string().optional(),
     ability: z.array(z.number()).optional(),
     item: z.string().optional(),
-    moves: z.array(z.number()).optional(),
+    moves: z.array(z.string()).optional(),
     ev: z.array(z.number()).readonly().optional(),
   })
   .catchall(z.any());

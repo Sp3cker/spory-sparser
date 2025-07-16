@@ -529,7 +529,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Scott's House",
+          "scriptName": "Scotts House",
           "explanation": "Collect all Silver Badges in Battle Frontier",
           "items": [
             {
@@ -540,7 +540,7 @@
           "pokemon": []
         },
         {
-          "scriptName": "Scott's House",
+          "scriptName": "Scotts House",
           "explanation": "Collect all gold symbols in Battle Frontier",
           "items": [
             {
@@ -1031,7 +1031,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Move Relearner's House",
+          "scriptName": "Move Relearners House",
           "explanation": "Talk to the Move Tutor",
           "items": [
             {
@@ -1154,7 +1154,7 @@
           "pokemon": []
         },
         {
-          "scriptName": "Move Relearner's House",
+          "scriptName": "Move Relearners House",
           "explanation": "Trade these for a Starter Egg",
           "items": [
             {
@@ -1173,7 +1173,7 @@
           "pokemon": []
         },
         {
-          "scriptName": "Move Relearner's House",
+          "scriptName": "Move Relearners House",
           "explanation": "Give Move Relearner a Red Shard",
           "items": [],
           "pokemon": [
@@ -1185,7 +1185,7 @@
           ]
         },
         {
-          "scriptName": "Move Relearner's House",
+          "scriptName": "Move Relearners House",
           "explanation": "Give Move Relearner a Blue Shard",
           "items": [],
           "pokemon": [
@@ -1197,7 +1197,7 @@
           ]
         },
         {
-          "scriptName": "Move Relearner's House",
+          "scriptName": "Move Relearners House",
           "explanation": "Give Move Relearner a Green Shard",
           "items": [],
           "pokemon": [
@@ -1598,7 +1598,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Steven's Room",
+          "scriptName": "Stevens Room",
           "explanation": "Give Steven the letter",
           "items": [
             {
@@ -2353,7 +2353,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Professor Birch's Lab",
+          "scriptName": "Professor Birchs Lab",
           "explanation": "Produce a Birth Island Ticket",
           "items": [
             {
@@ -2364,7 +2364,7 @@
           "pokemon": []
         },
         {
-          "scriptName": "Professor Birch's Lab",
+          "scriptName": "Professor Birchs Lab",
           "explanation": "Choose Cyndaquil as a starter",
           "items": [],
           "pokemon": [
@@ -2376,7 +2376,7 @@
           ]
         },
         {
-          "scriptName": "Professor Birch's Lab",
+          "scriptName": "Professor Birchs Lab",
           "explanation": "Choose Totodile as a starter",
           "items": [],
           "pokemon": [
@@ -2388,7 +2388,7 @@
           ]
         },
         {
-          "scriptName": "Professor Birch's Lab",
+          "scriptName": "Professor Birchs Lab",
           "explanation": "Choose Chikorita as a starter",
           "items": [],
           "pokemon": [
@@ -2400,7 +2400,7 @@
           ]
         },
         {
-          "scriptName": "Professor Birch's Lab",
+          "scriptName": "Professor Birchs Lab",
           "explanation": "Receive your Pokédex",
           "items": [
             {
@@ -3535,7 +3535,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Steven's House",
+          "scriptName": "Stevens House",
           "explanation": "Enter Steven's Domicile",
           "items": [
             {
@@ -3546,7 +3546,7 @@
           "pokemon": []
         },
         {
-          "scriptName": "Steven's House",
+          "scriptName": "Stevens House",
           "explanation": "Defeat Elite Four, return to Steven",
           "items": [],
           "pokemon": [
@@ -4615,7 +4615,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Wally's House",
+          "scriptName": "Wallys House",
           "explanation": "Received from Wally's dad",
           "items": [
             {
@@ -6773,7 +6773,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Old Lady's Rest Stop",
+          "scriptName": "Old Ladys Rest Stop",
           "explanation": "Speak to Old Lady in Rest Stop",
           "items": [],
           "pokemon": [
@@ -6796,7 +6796,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Winstrate Family's House",
+          "scriptName": "Winstrate Familys House",
           "explanation": "(Post Game) Speak to the Winstrate Family",
           "items": [
             {
@@ -6807,7 +6807,7 @@
           "pokemon": []
         },
         {
-          "scriptName": "Winstrate Family's House",
+          "scriptName": "Winstrate Familys House",
           "explanation": "Defeat Victoria at the Winstrate Family House",
           "items": [
             {
@@ -7094,7 +7094,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Glas's Workshop",
+          "scriptName": "Glass Workshop",
           "explanation": "Speak to Glass worker in Workshop",
           "items": [
             {
@@ -7244,7 +7244,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Fossil Maniac's House",
+          "scriptName": "Fossil Maniacs House",
           "explanation": "Enter Fossil Maniac's house, talk to him (HE CRAZY)",
           "items": [
             {
@@ -8708,7 +8708,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Berry Master's House",
+          "scriptName": "Berry Masters House",
           "explanation": "Part of Berry Master Quest",
           "items": [
             {
@@ -8731,7 +8731,7 @@
           "pokemon": []
         },
         {
-          "scriptName": "Berry Master's House",
+          "scriptName": "Berry Masters House",
           "explanation": "Part of Berry Master quest",
           "items": [
             {
@@ -8833,7 +8833,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Diving Treasure Hunter's House",
+          "scriptName": "Diving Treasure Hunters House",
           "explanation": "House on island. Speak to lady inside house",
           "items": [
             {
@@ -9585,7 +9585,7 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Cutter's House",
+          "scriptName": "Cutters House",
           "explanation": "Speak to Mr. Cutter in Cutter's House",
           "items": [
             {
@@ -10443,7 +10443,7 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Low Tide Stair's Room",
+          "scriptName": "Low Tide Stairs Room",
           "explanation": "Pick up from ground",
           "items": [
             {

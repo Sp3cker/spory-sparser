@@ -1,7 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
 import { PartyMonSchema, PartyMon } from "../../validators/partyMon.ts";
-import moveData from "../../../data/moves.json" with { type: "json" }; // dont touch
 import speciesData from "../../../data/speciesData.json" with { type: "json" };
 import abilities from "../../../data/abilities.json" with { type: "json" }; // ability name to ID mapping
 
@@ -26,17 +25,23 @@ const Evs: Record<
 // Build a lookup map from normalized key => speciesId.
 const SPECIES_NAME_TO_ID: Map<string, number> = new Map();
 const excludedForms = new Set(["mega", "gigantamax", "tera", "ultraburst", "primal", "eternamax", "totem"]);
+
+// First pass: Add base forms and forms without excluded types
 for (const key of Object.keys(speciesData)){
   const p = (speciesData as any)[key] ;
   if (p.forms && p.forms.some((form: string) => excludedForms.has(form))) {
     continue;
   };
   if (p?.speciesName) {
-    SPECIES_NAME_TO_ID.set(normalizeName(p.speciesName), p.speciesId);
+    const normalizedName = normalizeName(p.speciesName);
+    // Only add if not already present (prioritizes base forms)
+    if (!SPECIES_NAME_TO_ID.has(normalizedName)) {
+      SPECIES_NAME_TO_ID.set(normalizedName, p.speciesId);
+    }
   }
-  // if (p?.nameKey) {
-  //   SPECIES_NAME_TO_ID.set(normalizeName(p.nameKey), p.speciesId);
-  // }
+  if (p?.nameKey) {
+    SPECIES_NAME_TO_ID.set(normalizeName(p.nameKey), p.speciesId);
+  }
 
 }
 
@@ -116,13 +121,8 @@ function stripComments(src: string): string {
   return src.replace(/\/\*[^]*?\*\//g, "").replace(/\/\/.*$/gm, "");
 }
 
-function ivPerfect(raw: string): "perfect" | undefined {
-  const m = raw.match(/TRAINER_PARTY_IVS\(([^)]*)\)/);
-  if (!m) return undefined;
-  const nums = m[1].split(",").map((s) => s.trim());
-  return nums.length === 6 && nums.every((n) => n === "31")
-    ? "perfect"
-    : undefined;
+function hasIVs(raw: string): boolean {
+  return /TRAINER_PARTY_IVS\s*\(/.test(raw);
 }
 
 function extractMoves(block: string): string[] | undefined {
@@ -137,7 +137,7 @@ function extractMoves(block: string): string[] | undefined {
 
 function parseMon(block: string): PartyMon {
   const mon: Partial<PartyMon> = {};
-  const lineRegex = /\.(\w+)\s*=\s*([^,\n{}]+)/g;
+  const lineRegex = /\.(\w+)\s*=\s*([^,\n{}]+(?:\([^)]*\))?)/g;
   let lm: RegExpExecArray | null;
   while ((lm = lineRegex.exec(block)) !== null) {
     const key = lm[1];
@@ -151,8 +151,9 @@ function parseMon(block: string): PartyMon {
         mon.id = constantToSpeciesId(raw);
         break;
       case "iv":
-        const iv = ivPerfect(raw);
-        if (iv) mon.iv = iv;
+        if (hasIVs(raw)) {
+          mon.iv = true;
+        }
         break;
       case "nature":
         const n = raw.match(/NATURE_([A-Z]+)/);
@@ -172,18 +173,15 @@ function parseMon(block: string): PartyMon {
         mon.item = raw.replace(/[,}]/g, "").trim();
         break;
       case "ev":
-        mon.ev = parseTrainerPartyEVs(block);
+        const evs = parseTrainerPartyEVs(block);
+        if (evs) {
+          mon.ev = evs;
+        }
         break;
       case "moves":
         const parsedMoves = extractMoves(block);
         if (parsedMoves) {
-          mon.moves = parsedMoves.filter(m => m !== 'MOVE_NONE').map(M_Name => {
-            const moveEntry = moveData.find((m: Record<string, any>) => m.constant === M_Name);
-            if (moveEntry === undefined) {
-              throw new Error("Cannot find move ID from MOVE_NAME: " + M_Name + "parsing" + parsedMoves)
-            }
-            return moveEntry.id
-          });
+          mon.moves = parsedMoves;
         }
         break;
       default:
@@ -261,9 +259,7 @@ function splitEntries(body: string): string[] {
   }
   return entries;
 }
-
-function extractTrainerParties(dataDir: string): Record<string, PartyMon[]> {
-  const src = fs.readFileSync(path.join(dataDir,"trainer_parties.h"), "utf8");
+function extractParties(src:string) {
   const clean = stripComments(src);
   const regex =
     /static const struct TrainerMon\s+(sParty_\w+)\[\]\s*=\s*\{([^]*?)\};/g;
@@ -278,26 +274,10 @@ function extractTrainerParties(dataDir: string): Record<string, PartyMon[]> {
   return result;
 }
 
-// function main() {
-//   const args = process.argv.slice(2);
-//   const root =
-//     args[0] ??
-//     path.resolve(
-//       path.dirname(decodeURI(new URL(import.meta.url).pathname)),
-//       "../../"
-//     );
-//   const result = extractTrainerParties(root);
-//   fs.mkdirSync(path.join(root, "generated"), { recursive: true });
-//   fs.writeFileSync(
-//     path.join(root, "generated", "trainer_parties.json"),
-//     JSON.stringify(result, null, 2)
-//   );
-//   console.log("Wrote", path.join(root, "generated", "trainer_parties.json"));
-// }
+function extractTrainerParties(dataDir: string): Record<string, PartyMon[]> {
+  const src = fs.readFileSync(path.join(dataDir,"trainer_parties.h"), "utf8");
+  return extractParties(src);
+}
+  
 
-// Run as CLI if executed directly
-// if (import.meta.url === `file://${process.argv[1]}`) {
-//   main();
-// }
-
-export { extractTrainerParties, PartyMon };
+export { extractTrainerParties,extractParties, PartyMon };
