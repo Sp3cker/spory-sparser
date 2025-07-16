@@ -6,13 +6,13 @@ import { parseTrainerBattles } from "./Trainers/trainerInc.ts";
 import {
   LevelIncDataSchema,
   LevelIncData,
-  IncData,
+  IncTrainerAndEventData,
   IncDataSchema,
 } from "../validators/levelIncData.js";
 
 export const processIncFile = async (
   incFileContent: string
-): Promise<IncData> => {
+): Promise<IncTrainerAndEventData> => {
   try {
     const scriptedGiveEvents = parseScriptedEvents(incFileContent);
     const trainerBattles = parseTrainerBattles(incFileContent);
@@ -82,7 +82,7 @@ async function processDirectory(
         // all the scripts in Birch's Lab
         // because Birch's Lab has so many
         // dynmultipushes in DIFFERENT SCRIPTS
-        
+
         for (const giveevent of result.scriptedGives) {
           if (thisLevelsId === "MAP_NEW_BIRCHS_LAB") {
             if (!giveevent.explanation) {
@@ -120,7 +120,6 @@ export async function findGiveItemsByLevel(
   const levels = await processDirectory(mapsPath, folders);
 
   return levels.map((level: LevelIncData) => {
-    
     const obj = {
       baseMap: level.baseMap,
       levelLabel: level.levelLabel,

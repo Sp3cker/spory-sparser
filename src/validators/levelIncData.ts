@@ -12,13 +12,15 @@ export const IncItemEntrySchema = z.object({
   name: z.string(),
   quantity: z.number(),
 });
-/** Pokemon species given to player */
+/** Pokemon species given to player
+ * Part of the `IncFileParser` class.
+ */
 export const IncPokemonEntrySchema = z.object({
   species: z.string(),
   level: z.number(),
   isRandom: z.boolean(), // if `givemonrandom`
 });
-
+/** All events that happen in an inc file. */
 export const IncScriptedEventSchema = z.object({
   scriptName: z.string(),
   explanation: z.string().optional(),
@@ -37,7 +39,7 @@ export const LevelIncDataSchema = IncDataSchema.extend({
 });
 
 export type IncTrainer = z.infer<typeof IncTrainerSchema>;
-export type IncData = z.infer<typeof IncDataSchema>;
+export type IncTrainerAndEventData = z.infer<typeof IncDataSchema>;
 export type LevelIncData = z.infer<typeof LevelIncDataSchema>;
 
 export type IncScriptEvent = z.infer<typeof IncScriptedEventSchema>;
