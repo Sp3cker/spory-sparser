@@ -258,9 +258,8 @@ function extractIncScriptBlocks(
 
 function prettifyLabel(raw: string): string {
   const [, afterFirstUnderscore] = raw.split("_", 2);
-  return (afterFirstUnderscore ?? raw)
-    .replace(/([a-z])([A-Z])/g, "$1 $2")
-    .replace(/s\b/, "'s");
+  return (afterFirstUnderscore ?? raw).replace(/([a-z])([A-Z])/g, "$1 $2");
+  // .replace(/s\b/, "'s");
 }
 
 /**
@@ -294,11 +293,10 @@ export function parseScriptedEvents(content: string): IncScriptEvent[] {
       if (splitScriptName[1]) {
         script.scriptName = prettifyLabel(splitScriptName[1]);
       } else {
-        script.scriptName = splitScriptName[0]
-          .replace(/([A-Z])(?=[A-Z\\d])/g, " $1")
-          .trim()
-          .replace(/\\b\\w/g, (char: string) => char.toUpperCase()) // Added type for char
-          .replace(/s\\b/, "'s");
+        script.scriptName = splitScriptName[0];
+        // .replace(/([A-Z])(?=[A-Z\\d])/g, " $1")
+        // .trim()
+        // .replace(/\\b\\w/g, (char: string) => char.toUpperCase()); // Added type for char
       }
     } catch (err) {
       console.error(`Error processing script name ${script.scriptName}:`, err);
@@ -318,7 +316,8 @@ export function parseScriptedEvents(content: string): IncScriptEvent[] {
             (item) => item.name === newItem.name
           );
           if (existingItemIndex !== -1) {
-            existingScript.items[existingItemIndex].quantity += newItem.quantity;
+            existingScript.items[existingItemIndex].quantity +=
+              newItem.quantity;
           } else {
             existingScript.items.push(newItem);
           }
