@@ -9,19 +9,11 @@ import { extractTrainers } from "./parseMaps/Trainers/extractTrainersFromHeaderF
 
 import { MapEventPlace, TrainerStruct } from "./validators/index.ts";
 import { logger } from "./util/logger.ts";
+import { compareDataChanges } from "./util/compareDataChanges.ts";
 
 import { Config } from "./configReader.ts";
 import { IncScriptEvent } from "./parseMaps/incParser.ts";
 import mergeTrainers from "./mergeTrainerData.ts";
-
-// Load encounters data from the project's data directory
-const encountersData = JSON.parse(
-  await readFile(
-    path.join(process.cwd(), "data", "cleanEncounters.json"),
-    "utf8"
-  )
-);
-// Helper function for pretty printing JSON
 
 /**
  * Combined trainer data from maps.json and trainers_flat.json
@@ -113,7 +105,7 @@ const mergeDataByLevelsID = async ({
           mergeTrainers(incTrainer, trainersFlat, thisLevelsId, pickupEntry)
         )
         .filter((trainer) => trainer !== null) as Trainer[];
-        debugger
+      debugger;
       /** filter out battles with same ID. Generally these get in here
        * because of double battles. When there are duplicates, prioritize keeping
        * the one with rematch: true but preserve sprite from original
@@ -228,7 +220,9 @@ const mergeDataByLevelsID = async ({
     // }
 
     const config = new Config();
-
+    const encountersData = JSON.parse(
+      await readFile(path.join(config.dataDir, "cleanEncounters.json"), "utf8")
+    );
     const encountersMap = new Map<string, any>(
       encountersData.map((enc: any) => [enc.map, enc])
     );
@@ -272,6 +266,24 @@ const mergeDataByLevelsID = async ({
       encountersMap,
     });
     // console.log(sset.values());
+    const [existingTrainers, existingLevels] = await Promise.all([
+      readFile(path.join(process.cwd(), "trainers.json"), "utf8").then(
+        (data) => JSON.parse(data) as Record<string, Trainer[]>
+      ),
+      readFile(path.join(process.cwd(), "levels.json"), "utf8").then(
+        (data) => JSON.parse(data) as Record<string, any[]>
+      ),
+    ]).catch((error) => {
+      throw error;
+    });
+    // Compare with existing data before writing new files
+    await compareDataChanges({
+      existingLevels,
+      existingTrainers,
+      newGroupedTrainers: groupedTrainers,
+      newGroupedData: groupedData,
+    });
+
     // Write output files
     await writeFile("levels.json", prettyPrint(groupedData));
     await writeFile("trainers.json", prettyPrint(groupedTrainers));
@@ -279,6 +291,10 @@ const mergeDataByLevelsID = async ({
     logger.info("Merged data written to levels.json and trainers.json");
     logger.info("Validating...");
   } catch (error) {
+    throw error;
     logger.error("Error:", error);
   }
-})();
+})().catch((error) => {
+  console.error("Unhandled error in main execution:", error);
+  logger.error("Unhandled error in main execution:", error);
+});

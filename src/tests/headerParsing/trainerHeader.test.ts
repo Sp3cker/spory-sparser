@@ -1,4 +1,4 @@
-import { extractParties } from "../../parseMaps/Trainers/extractTrainerPartiesfromHeaderFile.ts";
+import { extractPartiesTest as extractParties } from "../../parseMaps/Trainers/extractTrainerPartiesfromHeaderFile.ts";
 import test from "ava";
 
 const hedaerData1 = `static const struct TrainerMon sParty_Roxanne5[] = {
@@ -111,17 +111,17 @@ test("extractParties should parse moves correctly", (t) => {
 
   t.deepEqual(firstMon.moves, [
     317, // MOVE_ROCK_TOMB
-    30,  // MOVE_HORN_ATTACK
+    30, // MOVE_HORN_ATTACK
     525, // MOVE_BULLDOZE
     249, // MOVE_ROCK_SMASH
   ]);
 
   const thirdMon = result.sParty_Roxanne5[2];
   t.deepEqual(thirdMon.moves, [
-    17,  // MOVE_WING_ATTACK
-    98,  // MOVE_QUICK_ATTACK
+    17, // MOVE_WING_ATTACK
+    98, // MOVE_QUICK_ATTACK
     525, // MOVE_BULLDOZE
-    0,   // MOVE_NONE
+    0, // MOVE_NONE
   ]);
 });
 
@@ -146,8 +146,8 @@ test("extractParties should handle MOVE_NONE correctly", (t) => {
   t.deepEqual(firstMon.moves, [
     33, // MOVE_TACKLE
     111, // MOVE_DEFENSE_CURL
-    0,   // MOVE_NONE
-    0,   // MOVE_NONE
+    0, // MOVE_NONE
+    0, // MOVE_NONE
   ]);
 });
 

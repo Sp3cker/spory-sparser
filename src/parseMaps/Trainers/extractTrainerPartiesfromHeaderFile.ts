@@ -1,9 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
 import { PartyMonSchema, PartyMon } from "../../validators/partyMon.ts";
-import speciesData from "../../../data/speciesData.json" with { type: "json" };
-import abilities from "../../../data/abilities.json" with { type: "json" }; // ability name to ID mapping
-import movesData from "../../../data/moves.json" with { type: "json" }; // move data for constant to ID mapping
 
 const Evs: Record<
   string,
@@ -22,109 +19,15 @@ const Evs: Record<
   TRAINER_PARTY_EVS_CALM: [252, 0, 0, 6, 252, 0],
 };
 
-// Build a lookup map from move constant to move ID
-const MOVE_CONSTANT_TO_ID: Map<string, number> = new Map();
-for (const move of movesData) {
-  if (move.constant) {
-    MOVE_CONSTANT_TO_ID.set(move.constant, move.id);
-  }
-}
-
-
-// Build a lookup map from normalized key => speciesId.
-const SPECIES_NAME_TO_ID: Map<string, number> = new Map();
-const excludedForms = new Set(["mega", "gigantamax", "tera", "ultraburst", "primal", "eternamax", "totem"]);
-
-// First pass: Add base forms and forms without excluded types
-for (const key of Object.keys(speciesData)){
-  const p = (speciesData as any)[key] ;
-  if (p.forms && p.forms.some((form: string) => excludedForms.has(form))) {
-    continue;
-  };
-  if (p?.speciesName) {
-    const normalizedName = normalizeName(p.speciesName);
-    // Only add if not already present (prioritizes base forms)
-    if (!SPECIES_NAME_TO_ID.has(normalizedName)) {
-      SPECIES_NAME_TO_ID.set(normalizedName, p.speciesId);
-    }
-  }
-  if (p?.nameKey) {
-    SPECIES_NAME_TO_ID.set(normalizeName(p.nameKey), p.speciesId);
-  }
-
-}
-
-// Utility: normalize names to a common underscore-separated lowercase form.
-function normalizeName(str: string): string {
-  return str
-    .toLowerCase()
-    .replace(/é/g, "e") // remove accent
-    .replace(/[^a-z0-9♂♀ _-]/g, "") // strip exotic chars we dont care about
-    .replace(/[♂]/g, "_m")
-    .replace(/[♀]/g, "_f")
-    .replace(/[\s-]+/g, "_") // spaces & hyphens -> underscore
-    .replace(/__+/g, "_") // collapse dup underscores
-    .replace(/^_+|_+$/g, ""); // trim underscores
-}
-/**
- * Convert a header constant (e.g. "SPECIES_DARMANITAN_GALAR_ZEN_MODE_TWO") to the corresponding numeric speciesId.
- * Throws if no mapping can be found.
- */
-function constantToSpeciesId(constant: string): number {
-  if (!constant.startsWith("SPECIES_")) {
-    throw new Error(`Unexpected species constant format: ${constant}`);
-  }
-  // Strip prefix and normalise
-  let candidate = normalizeName(constant.replace(/^SPECIES_/, ""));
-
-  while (candidate.length) {
-    const id = SPECIES_NAME_TO_ID.get(candidate);
-    if (id !== undefined) return id;
-    // drop the last segment after an underscore and retry
-    const idx = candidate.lastIndexOf("_");
-    if (idx === -1) break;
-    candidate = candidate.slice(0, idx);
-  }
-
-  throw new Error(`Unable to map species constant '${constant}' to speciesId`);
-}
-
-/**
- * 
- * @param block the entire Pokemon block containing .ev = TRAINER_PARTY_EVS().
- * @returns [HP, ATK, DEF, SP_ATK, SP_DEF, SPD ]
- */
-function parseTrainerPartyEVs(block: string) {
-  // Extract the EV line from the block - improved regex to handle parentheses properly
-  const evMatch = block.match(/\.ev\s*=\s*(TRAINER_PARTY_EVS(?:_[A-Z_]+)?(?:\([^)]*\))?)/);
-  if (!evMatch) {
-    return undefined;
-  }
-  
-  const raw = evMatch[1].trim();
-  // console.log("raw EV string:", raw);
-  
-  // Check if it's a predefined constant (like TRAINER_PARTY_EVS_TIMID())
-  const constantName = raw.replace("()", "");
-  if (Evs[constantName]) {
-    return Evs[constantName];
-  }
-  /** If we get here
-   * the evs are probly in TRAINER_PARTY_EVS(0, 0, 252, 252, 6, 0 )
-   */
-  if (constantName.startsWith("TRAINER_PARTY_EVS(")) {
-    // Extract numbers from the constant name
-    const regex = /\d+/g;
-    const numbers = constantName.match(regex);
-  if (typeof numbers === 'object' && numbers !== null && numbers.length === 6){
-    return numbers.map(Number) as number[] // Dont touch
-  } 
-  }
-  // If it's not a predefined constant, just return undefined
-  // (instead of trying to parse custom EV values)
-  console.log("Unknown EV constant:", constantName);
-  return undefined;
-}
+const excludedForms = new Set([
+  "mega",
+  "gigantamax",
+  "tera",
+  "ultraburst",
+  "primal",
+  "eternamax",
+  "totem",
+]);
 
 function stripComments(src: string): string {
   return src.replace(/\/\*[^]*?\*\//g, "").replace(/\/\/.*$/gm, "");
@@ -134,171 +37,287 @@ function hasIVs(raw: string): boolean {
   return /TRAINER_PARTY_IVS\s*\(/.test(raw);
 }
 
-function extractMoves(block: string): number[] | undefined {
-  const m = block.match(/\.moves\s*=\s*\{([^}]*)\}/ms);
-  if (!m) return undefined;
-  
-  const moveConstants = m[1]
-    .split(",")
-    .map((s) => s.trim())
-    .filter(Boolean)
-    .filter((s) => /^MOVE_/.test(s));
-  
-  // Map move constants to their IDs
-  const moveIds: number[] = [];
-  for (const constant of moveConstants) {
-    const moveId = MOVE_CONSTANT_TO_ID.get(constant);
-    if (moveId !== undefined) {
-      moveIds.push(moveId);
-    }
-  }
-  
-  return moveIds.length > 0 ? moveIds : undefined;
-}
+class TrainerPartyParser {
+  private speciesData: Record<string, any>;
+  private abilities: Record<string, number>;
+  private movesData: any[];
+  private moveConstantToId: Map<string, number> = new Map();
+  private speciesNameToId: Map<string, number> = new Map();
 
-function parseMon(block: string): PartyMon {
-  const mon: Partial<PartyMon> = {};
-  const lineRegex = /\.(\w+)\s*=\s*([^,\n{}]+(?:\([^)]*\))?)/g;
-  let lm: RegExpExecArray | null;
-  while ((lm = lineRegex.exec(block)) !== null) {
-    const key = lm[1];
-    let raw = lm[2].trim();
-    
-    switch (key) {
-      case "lvl":
-        mon.lvl = parseInt(raw, 10);
-        break;
-      case "species":
-        mon.id = constantToSpeciesId(raw);
-        break;
-      case "iv":
-        if (hasIVs(raw)) {
-          mon.iv = true;
-        }
-        break;
-      case "nature":
-        const n = raw.match(/NATURE_([A-Z]+)/);
-        if (n) mon.nature = n[1].toLowerCase();
-        break;
-      case "ability":
-        // ability constant like ABILITY_TECHNICIAN
-        const abilityConst = raw.replace(/[,}]/g, "").trim();
-        //@ts-ignore
-        const abilityId = abilities[abilityConst];
-        if (abilityId === undefined) {
-          throw new Error(`Unknown ability constant: ${abilityConst}`);
-        }
-        mon.ability = [abilityId];
-        break;
-      case "heldItem":
-        mon.item = raw.replace(/[,}]/g, "").trim();
-        break;
-      case "ev":
-        const evs = parseTrainerPartyEVs(block);
-        if (evs) {
-          mon.ev = evs;
-        }
-        break;
-      case "moves":
-        const parsedMoves = extractMoves(block);
-        if (parsedMoves) {
-          mon.moves = parsedMoves;
-        }
-        break;
-      default:
-        (mon as any)[key] = raw;
-        break;
+  constructor(dataDir: string) {
+    try {
+      const speciesDataPath = path.join(dataDir, "speciesData.json");
+      this.speciesData = this.loadJsonFile(speciesDataPath);
+      this.abilities = this.loadJsonFile(path.join(dataDir, "abilities.json"));
+      this.movesData = this.loadJsonFile(path.join(dataDir, "moves.json"));
+
+      // Build lookup maps after loading data
+      this.buildMoveConstantMap();
+      this.buildSpeciesNameMap();
+    } catch (error) {
+      throw new Error(`Failed to initialize TrainerPartyParser: ${error}`);
     }
   }
 
-  // Check if this mon is holding a mega stone and transform to mega form
-  // if (mon.item && mon.id) {
-  //   // Get the species data for this mon
-  //   const currentSpecies = (speciesData as any)[mon.id.toString()];
-  //   if (currentSpecies && currentSpecies.speciesName) {
-  //     const speciesName = currentSpecies.speciesName.toUpperCase();
-      
-  //     // Check if held item matches the pattern SPECIESNAME + (N?)ITE
-  //     const itemName = mon.item.replace("ITEM_", "");
-  //     const megaStonePattern = new RegExp(`^${speciesName}(N?)ITE$`);
-      
-  //     if (megaStonePattern.test(itemName)) {
-  //       // Find the mega form through siblings
-  //       if (currentSpecies.siblings && Array.isArray(currentSpecies.siblings)) {
-  //         for (const siblingId of currentSpecies.siblings) {
-  //           const sibling = (speciesData as any)[siblingId.toString()];
-  //           if (sibling && sibling.forms && sibling.forms.includes("mega")) {
-  //             // Found the mega form, update the mon's ID
-  //             mon.id = siblingId;
-  //             // Optionally remove the item since it's consumed for mega evolution
-  //             // delete mon.item;
-  //             break;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  private loadJsonFile<T = any>(filePath: string): T {
+    if (!fs.existsSync(filePath)) {
+      throw new Error(`JSON file not found: ${filePath}`);
+    }
+    try {
+      const content = fs.readFileSync(filePath, "utf8");
+      return JSON.parse(content);
+    } catch (error) {
+      throw new Error(`Failed to parse JSON file ${filePath}: ${error}`);
+    }
+  }
 
-  // Simple mega evolution check: only if holding a mega stone
-  // Simple mega evolution check: only if holding a mega stone
-  if (mon.item && mon.id && mon.item.slice(-5).includes("ITE")) {
-    const currentSpecies = (speciesData as any)[mon.id.toString()]
-    if (currentSpecies?.siblings) {
-      for (const siblingId of currentSpecies.siblings) {
-        //@ts-ignore
-        const sibling = speciesData[siblingId.toString()]
-        if (sibling?.forms?.includes("mega")) {
-          mon.id = siblingId
-          break
-        }
+  private buildMoveConstantMap(): void {
+    for (const move of this.movesData) {
+      if (move.constant) {
+        this.moveConstantToId.set(move.constant, move.id);
       }
     }
   }
 
-  return PartyMonSchema.parse(mon);
-}
-
-function splitEntries(body: string): string[] {
-  const entries: string[] = [];
-  let depth = 0;
-  let current = "";
-  for (let i = 0; i < body.length; i++) {
-    const ch = body[i];
-    if (ch === "{") {
-      if (depth === 0) current = "";
-      depth++;
-      if (depth > 1) current += ch;
-    } else if (ch === "}") {
-      depth--;
-      if (depth === 0) {
-        entries.push(current);
-      } else current += ch;
-    } else {
-      if (depth > 0) current += ch;
+  private buildSpeciesNameMap(): void {
+    // First pass: Add base forms and forms without excluded types
+    for (const key of Object.keys(this.speciesData)) {
+      const p = this.speciesData[key];
+      if (p.forms && p.forms.some((form: string) => excludedForms.has(form))) {
+        continue;
+      }
+      if (p?.speciesName) {
+        const normalizedName = this.normalizeName(p.speciesName);
+        // Only add if not already present (prioritizes base forms)
+        if (!this.speciesNameToId.has(normalizedName)) {
+          this.speciesNameToId.set(normalizedName, p.speciesId);
+        }
+      }
+      if (p?.nameKey) {
+        this.speciesNameToId.set(this.normalizeName(p.nameKey), p.speciesId);
+      }
     }
   }
-  return entries;
-}
-function extractParties(src:string) {
-  const clean = stripComments(src);
-  const regex =
-    /static const struct TrainerMon\s+(sParty_\w+)\[\]\s*=\s*\{([^]*?)\};/g;
-  const result: Record<string, PartyMon[]> = {};
-  let m: RegExpExecArray | null;
-  while ((m = regex.exec(clean)) !== null) {
-    const key = m[1];
-    const body = m[2];
-    const mons = splitEntries(body).map(parseMon);
-    result[key] = mons;
+
+  private static normalizeName(str: string): string {
+    return str
+      .toLowerCase()
+      .replace(/é/g, "e") // remove accent
+      .replace(/[^a-z0-9♂♀ _-]/g, "") // strip exotic chars we dont care about
+      .replace(/[♂]/g, "_m")
+      .replace(/[♀]/g, "_f")
+      .replace(/[\s-]+/g, "_") // spaces & hyphens -> underscore
+      .replace(/__+/g, "_") // collapse dup underscores
+      .replace(/^_+|_+$/g, ""); // trim underscores
   }
-  return result;
+
+  private normalizeName(str: string): string {
+    return TrainerPartyParser.normalizeName(str);
+  }
+
+  private constantToSpeciesId(constant: string): number {
+    if (!constant.startsWith("SPECIES_")) {
+      throw new Error(`Unexpected species constant format: ${constant}`);
+    }
+    // Strip prefix and normalise
+    let candidate = this.normalizeName(constant.replace(/^SPECIES_/, ""));
+
+    while (candidate.length) {
+      const id = this.speciesNameToId.get(candidate);
+      if (id !== undefined) return id;
+      // drop the last segment after an underscore and retry
+      const idx = candidate.lastIndexOf("_");
+      if (idx === -1) break;
+      candidate = candidate.slice(0, idx);
+    }
+
+    throw new Error(
+      `Unable to map species constant '${constant}' to speciesId`
+    );
+  }
+
+  private static parseTrainerPartyEVs(block: string) {
+    // Extract the EV line from the block - improved regex to handle parentheses properly
+    const evMatch = block.match(
+      /\.ev\s*=\s*(TRAINER_PARTY_EVS(?:_[A-Z_]+)?(?:\([^)]*\))?)/
+    );
+    if (!evMatch) {
+      return undefined;
+    }
+
+    const raw = evMatch[1].trim();
+
+    // Check if it's a predefined constant (like TRAINER_PARTY_EVS_TIMID())
+    const constantName = raw.replace("()", "");
+    if (Evs[constantName]) {
+      return Evs[constantName];
+    }
+    /** If we get here
+     * the evs are probly in TRAINER_PARTY_EVS(0, 0, 252, 252, 6, 0 )
+     */
+    if (constantName.startsWith("TRAINER_PARTY_EVS(")) {
+      // Extract numbers from the constant name
+      const regex = /\d+/g;
+      const numbers = constantName.match(regex);
+      if (
+        typeof numbers === "object" &&
+        numbers !== null &&
+        numbers.length === 6
+      ) {
+        return numbers.map(Number) as number[];
+      }
+    }
+    // fuq it
+    console.log("Unknown EV constant:", constantName);
+    return undefined;
+  }
+
+  private extractMoves(block: string): number[] | undefined {
+    const m = block.match(/\.moves\s*=\s*\{([^}]*)\}/ms);
+    if (!m) return undefined;
+
+    const moveConstants = m[1]
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean)
+      .filter((s) => /^MOVE_/.test(s));
+
+    // Map move constants to their IDs
+    const moveIds: number[] = [];
+    for (const constant of moveConstants) {
+      const moveId = this.moveConstantToId.get(constant);
+      if (moveId !== undefined) {
+        moveIds.push(moveId);
+      }
+    }
+
+    return moveIds.length > 0 ? moveIds : undefined;
+  }
+  parseMon(block: string): PartyMon {
+    const mon: Partial<PartyMon> = {};
+    const lineRegex = /\.(\w+)\s*=\s*([^,\n{}]+(?:\([^)]*\))?)/g;
+    let lm: RegExpExecArray | null;
+    while ((lm = lineRegex.exec(block)) !== null) {
+      const key = lm[1];
+      let raw = lm[2].trim();
+
+      switch (key) {
+        case "lvl":
+          mon.lvl = parseInt(raw, 10);
+          break;
+        case "species":
+          mon.id = this.constantToSpeciesId(raw);
+          break;
+        case "iv":
+          if (hasIVs(raw)) {
+            mon.iv = true;
+          }
+          break;
+        case "nature":
+          const n = raw.match(/NATURE_([A-Z]+)/);
+          if (n) mon.nature = n[1].toLowerCase();
+          break;
+        case "ability":
+          // ability constant like ABILITY_TECHNICIAN
+          const abilityConst = raw.replace(/[,}]/g, "").trim();
+          const abilityId = this.abilities[abilityConst];
+          if (abilityId === undefined) {
+            throw new Error(`Unknown ability constant: ${abilityConst}`);
+          }
+          mon.ability = [abilityId];
+          break;
+        case "heldItem":
+          mon.item = raw.replace(/[,}]/g, "").trim();
+          break;
+        case "ev":
+          const evs = TrainerPartyParser.parseTrainerPartyEVs(block);
+          if (evs) {
+            mon.ev = evs;
+          }
+          break;
+        case "moves":
+          const parsedMoves = this.extractMoves(block);
+          if (parsedMoves) {
+            mon.moves = parsedMoves;
+          }
+          break;
+        default:
+          (mon as any)[key] = raw;
+          break;
+      }
+    }
+
+    // Simple mega evolution check: only if holding a mega stone
+    if (mon.item && mon.id && mon.item.slice(-5).includes("ITE")) {
+      const currentSpecies = this.speciesData[mon.id.toString()];
+      if (currentSpecies?.siblings) {
+        for (const siblingId of currentSpecies.siblings) {
+          const sibling = this.speciesData[siblingId.toString()];
+          if (sibling?.forms?.includes("mega")) {
+            mon.id = siblingId;
+            break;
+          }
+        }
+      }
+    }
+
+    return PartyMonSchema.parse(mon);
+  }
+
+  splitEntries(body: string): string[] {
+    const entries: string[] = [];
+    let depth = 0;
+    let current = "";
+    for (let i = 0; i < body.length; i++) {
+      const ch = body[i];
+      if (ch === "{") {
+        if (depth === 0) current = "";
+        depth++;
+        if (depth > 1) current += ch;
+      } else if (ch === "}") {
+        depth--;
+        if (depth === 0) {
+          entries.push(current);
+        } else current += ch;
+      } else {
+        if (depth > 0) current += ch;
+      }
+    }
+    return entries;
+  }
+  extractParties(src: string): Record<string, PartyMon[]> {
+    const clean = stripComments(src);
+    const regex =
+      /static const struct TrainerMon\s+(sParty_\w+)\[\]\s*=\s*\{([^]*?)\};/g;
+    const result: Record<string, PartyMon[]> = {};
+    let m: RegExpExecArray | null;
+    while ((m = regex.exec(clean)) !== null) {
+      const key = m[1];
+      const body = m[2];
+      const mons = this.splitEntries(body).map((entry) => this.parseMon(entry));
+      result[key] = mons;
+    }
+    return result;
+  }
 }
 
 function extractTrainerParties(dataDir: string): Record<string, PartyMon[]> {
-  const src = fs.readFileSync(path.join(dataDir,"trainer_parties.h"), "utf8");
-  return extractParties(src);
+  const parser = new TrainerPartyParser(dataDir);
+  const src = fs.readFileSync(path.join(dataDir, "trainer_parties.h"), "utf8");
+  return parser.extractParties(src);
 }
-  
 
-export { extractTrainerParties,extractParties, PartyMon };
+// Helper function for testing - maintains the old function interface
+// Uses gameData directory by default for backward compatibility with tests
+function extractPartiesTest(src: string): Record<string, PartyMon[]> {
+  const dataDir = path.join(process.cwd(), "gameData");
+  const parser = new TrainerPartyParser(dataDir);
+  return parser.extractParties(src);
+}
+
+export {
+  extractTrainerParties,
+  extractPartiesTest,
+  TrainerPartyParser,
+  PartyMon,
+};
