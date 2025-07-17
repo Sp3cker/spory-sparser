@@ -110,18 +110,18 @@ test("extractParties should parse moves correctly", (t) => {
   const firstMon = result.sParty_Roxanne5[0];
 
   t.deepEqual(firstMon.moves, [
-    "MOVE_ROCK_TOMB",
-    "MOVE_HORN_ATTACK",
-    "MOVE_BULLDOZE",
-    "MOVE_ROCK_SMASH",
+    317, // MOVE_ROCK_TOMB
+    30,  // MOVE_HORN_ATTACK
+    525, // MOVE_BULLDOZE
+    249, // MOVE_ROCK_SMASH
   ]);
 
   const thirdMon = result.sParty_Roxanne5[2];
   t.deepEqual(thirdMon.moves, [
-    "MOVE_WING_ATTACK",
-    "MOVE_QUICK_ATTACK",
-    "MOVE_BULLDOZE",
-    "MOVE_NONE",
+    17,  // MOVE_WING_ATTACK
+    98,  // MOVE_QUICK_ATTACK
+    525, // MOVE_BULLDOZE
+    0,   // MOVE_NONE
   ]);
 });
 
@@ -144,10 +144,10 @@ test("extractParties should handle MOVE_NONE correctly", (t) => {
   const firstMon = result.sParty_Brock[0];
 
   t.deepEqual(firstMon.moves, [
-    "MOVE_TACKLE",
-    "MOVE_DEFENSE_CURL",
-    "MOVE_NONE",
-    "MOVE_NONE",
+    33, // MOVE_TACKLE
+    111, // MOVE_DEFENSE_CURL
+    0,   // MOVE_NONE
+    0,   // MOVE_NONE
   ]);
 });
 
@@ -190,6 +190,7 @@ test("extractParties should correctly map SPECIES_ARCANINE to ID 59", (t) => {
 
   t.is(firstMon.id, 59);
   t.is(firstMon.lvl, 50);
+  t.deepEqual(firstMon.moves, [53, 44, 46, 0]); // MOVE_FLAMETHROWER, MOVE_BITE, MOVE_ROAR, MOVE_NONE
 });
 
 test("extractParties should correctly map SPECIES_ARCANINE_HISUI to ID 994", (t) => {
@@ -207,6 +208,7 @@ test("extractParties should correctly map SPECIES_ARCANINE_HISUI to ID 994", (t)
 
   t.is(firstMon.id, 994);
   t.is(firstMon.lvl, 50);
+  t.deepEqual(firstMon.moves, [53, 157, 242, 0]); // MOVE_FLAMETHROWER, MOVE_ROCK_SLIDE, MOVE_CRUNCH, MOVE_NONE
 });
 
 test("extractParties should handle monsters without IV field", (t) => {
@@ -223,6 +225,7 @@ test("extractParties should handle monsters without IV field", (t) => {
 
   t.is(firstMon.iv, undefined);
   t.is(firstMon.lvl, 25);
+  t.deepEqual(firstMon.moves, [85, 98, 0, 0]); // MOVE_THUNDERBOLT, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE
 });
 
 test("extractParties should handle complex EV parsing", (t) => {
@@ -240,6 +243,7 @@ test("extractParties should handle complex EV parsing", (t) => {
   const firstMon = result.sParty_ComplexEV[0];
 
   t.deepEqual(firstMon.ev, [252, 128, 0, 128, 0, 0]);
+  t.deepEqual(firstMon.moves, [53, 337, 89, 76]); // MOVE_FLAMETHROWER, MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_SOLAR_BEAM
 });
 
 test("extractParties should handle multiple parties in same data", (t) => {
@@ -268,6 +272,8 @@ static const struct TrainerMon sParty_Leader2[] = {
   t.is(result.sParty_Leader2[0].lvl, 15);
   t.is(result.sParty_Leader1[0].iv, true);
   t.is(result.sParty_Leader2[0].iv, true);
+  t.deepEqual(result.sParty_Leader1[0].moves, [88, 33, 0, 0]); // MOVE_ROCK_THROW, MOVE_TACKLE, MOVE_NONE, MOVE_NONE
+  t.deepEqual(result.sParty_Leader2[0].moves, [317, 20, 0, 0]); // MOVE_ROCK_TOMB, MOVE_BIND, MOVE_NONE, MOVE_NONE
 });
 
 test("extractParties should return EV arrays in correct order: [hp, atk, def, spatk, spdef, speed]", (t) => {
@@ -292,4 +298,5 @@ test("extractParties should return EV arrays in correct order: [hp, atk, def, sp
   t.is(firstMon.ev![3], 150); // SP.ATK
   t.is(firstMon.ev![4], 25); // SP.DEF
   t.is(firstMon.ev![5], 75); // SPEED
+  t.deepEqual(firstMon.moves, [53, 337, 0, 0]); // MOVE_FLAMETHROWER, MOVE_DRAGON_CLAW, MOVE_NONE, MOVE_NONE
 });

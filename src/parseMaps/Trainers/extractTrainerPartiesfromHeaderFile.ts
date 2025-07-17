@@ -3,6 +3,7 @@ import * as path from "path";
 import { PartyMonSchema, PartyMon } from "../../validators/partyMon.ts";
 import speciesData from "../../../data/speciesData.json" with { type: "json" };
 import abilities from "../../../data/abilities.json" with { type: "json" }; // ability name to ID mapping
+import movesData from "../../../data/moves.json" with { type: "json" }; // move data for constant to ID mapping
 
 const Evs: Record<
   string,
@@ -20,6 +21,14 @@ const Evs: Record<
   TRAINER_PARTY_EVS_QUIET: [252, 6, 0, 252, 0, 0],
   TRAINER_PARTY_EVS_CALM: [252, 0, 0, 6, 252, 0],
 };
+
+// Build a lookup map from move constant to move ID
+const MOVE_CONSTANT_TO_ID: Map<string, number> = new Map();
+for (const move of movesData) {
+  if (move.constant) {
+    MOVE_CONSTANT_TO_ID.set(move.constant, move.id);
+  }
+}
 
 
 // Build a lookup map from normalized key => speciesId.
@@ -125,14 +134,26 @@ function hasIVs(raw: string): boolean {
   return /TRAINER_PARTY_IVS\s*\(/.test(raw);
 }
 
-function extractMoves(block: string): string[] | undefined {
+function extractMoves(block: string): number[] | undefined {
   const m = block.match(/\.moves\s*=\s*\{([^}]*)\}/ms);
   if (!m) return undefined;
-  return m[1]
+  
+  const moveConstants = m[1]
     .split(",")
     .map((s) => s.trim())
     .filter(Boolean)
     .filter((s) => /^MOVE_/.test(s));
+  
+  // Map move constants to their IDs
+  const moveIds: number[] = [];
+  for (const constant of moveConstants) {
+    const moveId = MOVE_CONSTANT_TO_ID.get(constant);
+    if (moveId !== undefined) {
+      moveIds.push(moveId);
+    }
+  }
+  
+  return moveIds.length > 0 ? moveIds : undefined;
 }
 
 function parseMon(block: string): PartyMon {
