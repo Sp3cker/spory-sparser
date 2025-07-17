@@ -153,10 +153,8 @@ const mergeDataByLevelsID = async ({
       // Filter out places that don't have any meaningful content
       // like the Battle Frontier...
       const hasShopItems = result.shopItems && result.shopItems.length > 0;
-      const hasPickupItems =
-        result.pickupItems && result.pickupItems.length > 0;
-      const hasTrainerRefs =
-        result.trainerRefs && result.trainerRefs.length > 0;
+      const hasPickupItems = result.pickupItems && result.pickupItems.length > 0;
+      const hasTrainerRefs = result.trainerRefs && result.trainerRefs.length > 0;
       const hasEncounters = encountersMap.has(result.thisLevelsId);
       const hasScriptedGives = result.scriptedGives.length > 0;
       if (
@@ -197,9 +195,7 @@ const mergeDataByLevelsID = async ({
   // This will be `levels.json`
   const groupedDataForOutput: GroupedDataOutput = {};
   for (const [base, levels] of Object.entries(groupedData)) {
-    groupedDataForOutput[base] = levels.map(
-      ({ trainers: _t, ...rest }) => rest
-    );
+    groupedDataForOutput[base] = levels.map(({ trainers: _t, ...rest }) => rest);
   }
 
   return {
@@ -282,11 +278,11 @@ const mergeDataByLevelsID = async ({
       existingTrainers,
       newGroupedTrainers: groupedTrainers,
       newGroupedData: groupedData,
+    }).then(async () => {
+      // Write output files
+      await writeFile("levels.json", prettyPrint(groupedData));
+      await writeFile("trainers.json", prettyPrint(groupedTrainers));
     });
-
-    // Write output files
-    await writeFile("levels.json", prettyPrint(groupedData));
-    await writeFile("trainers.json", prettyPrint(groupedTrainers));
 
     logger.info("Merged data written to levels.json and trainers.json");
     logger.info("Validating...");

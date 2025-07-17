@@ -39,7 +39,7 @@ interface LevelData {
 }
 
 /**
- * Extracts property keys that have changed from deep-diff results
+ * Extracts property names that have changed from deep-diff results
  */
 function extractChangedKeys(
   differences: deepDiff.Diff<any, any>[] | undefined
@@ -52,7 +52,7 @@ function extractChangedKeys(
 
   for (const diff of differences) {
     if (diff.path) {
-      // Extract the property name from the path
+      // Extract all string property names from the path (skip array indices)
       for (const pathSegment of diff.path) {
         if (typeof pathSegment === "string") {
           changedKeys.add(pathSegment);
