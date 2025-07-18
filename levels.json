@@ -529,26 +529,26 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Scotts House",
-          "explanation": "Collect all Silver Badges in Battle Frontier",
           "items": [
             {
               "name": "ITEM_LANSAT_BERRY",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Collect all Silver Badges in Battle Frontier",
+          "scriptName": "BattleFrontier_ScottsHouse_EventScript_CheckSilverSymbols::"
         },
         {
-          "scriptName": "Scotts House",
-          "explanation": "Collect all gold symbols in Battle Frontier",
           "items": [
             {
               "name": "ITEM_STARF_BERRY",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Collect all gold symbols in Battle Frontier",
+          "scriptName": "BattleFrontier_ScottsHouse_EventScript_CheckGoldSymbols::"
         }
       ],
       "image": "BattleFrontier_ScottsHouse",
@@ -637,8 +637,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Based on your selection in Desert Ruins",
           "items": [
             {
               "name": "ITEM_CLAW_FOSSIL",
@@ -649,7 +647,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Based on your selection in Desert Ruins",
+          "scriptName": "DesertUnderpass_EventScript_GiveClawFossil::"
         }
       ],
       "image": "DesertUnderpass",
@@ -692,15 +692,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Gym",
-          "explanation": "Whoop Brawly's lil' ass",
           "items": [
             {
               "name": "ITEM_TM_LOW_SWEEP",
               "quantity": 2
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Whoop Brawly's lil' ass",
+          "scriptName": "DewfordTown_Gym_EventScript_GiveLowSweep::"
         }
       ],
       "image": "DewfordTown_Gym",
@@ -752,19 +752,17 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Dawn",
           "items": [
             {
               "name": "ITEM_TM_DRACO_METEOR",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Dawn",
+          "scriptName": "EverGrandeCity_EventScript_RivalsFlyAway::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Say goodbye to your rival",
           "items": [],
           "pokemon": [
             {
@@ -772,11 +770,11 @@
               "level": 40,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Say goodbye to your rival",
+          "scriptName": "EverGrandeCity_EventScript_RivalGiveKubfu::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Volkner",
           "items": [
             {
               "name": "ITEM_TM_RISING_VOLTAGE",
@@ -791,11 +789,11 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Volkner",
+          "scriptName": "EverGrandeCity_EventScript_BattleVolkner::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Gift from Volkner",
           "items": [],
           "pokemon": [
             {
@@ -803,7 +801,9 @@
               "level": 50,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Gift from Volkner",
+          "scriptName": "EverGrandeCity_EventScript_VolknerGiveZeraora::"
         }
       ],
       "image": "EverGrandeCity",
@@ -1031,8 +1031,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Move Relearners House",
-          "explanation": "Talk to the Move Tutor",
           "items": [
             {
               "name": "ITEM_TM_DRAGON_CLAW",
@@ -1151,11 +1149,11 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Talk to the Move Tutor",
+          "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner::"
         },
         {
-          "scriptName": "Move Relearners House",
-          "explanation": "Trade these for a Starter Egg",
           "items": [
             {
               "name": "ITEM_RED_SHARD",
@@ -1170,11 +1168,11 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Trade these for a Starter Egg",
+          "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_StarterEggGive::"
         },
         {
-          "scriptName": "Move Relearners House",
-          "explanation": "Give Move Relearner a Red Shard",
           "items": [],
           "pokemon": [
             {
@@ -1182,11 +1180,11 @@
               "level": 0,
               "isRandom": false
             }
-          ]
+          ],
+          "explanation": "Give Move Relearner a Red Shard",
+          "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_GiveFireEgg::"
         },
         {
-          "scriptName": "Move Relearners House",
-          "explanation": "Give Move Relearner a Blue Shard",
           "items": [],
           "pokemon": [
             {
@@ -1194,11 +1192,11 @@
               "level": 0,
               "isRandom": false
             }
-          ]
+          ],
+          "explanation": "Give Move Relearner a Blue Shard",
+          "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_GiveWaterEgg::"
         },
         {
-          "scriptName": "Move Relearners House",
-          "explanation": "Give Move Relearner a Green Shard",
           "items": [],
           "pokemon": [
             {
@@ -1206,7 +1204,9 @@
               "level": 0,
               "isRandom": false
             }
-          ]
+          ],
+          "explanation": "Give Move Relearner a Green Shard",
+          "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_GiveGrassEgg::"
         }
       ],
       "image": "FallarborTown_MoveRelearnersHouse",
@@ -1255,8 +1255,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Creator House",
-          "explanation": "Defeat The Creator",
           "items": [
             {
               "name": "ITEM_EMPOLEONITE_O",
@@ -1279,11 +1277,11 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat The Creator",
+          "scriptName": "FortreeCity_CreatorHouse_EventScript_Iriv24GiveItems::"
         },
         {
-          "scriptName": "Creator House",
-          "explanation": "Defeat Cap",
           "items": [
             {
               "name": "ITEM_CHARIZARDITE_X",
@@ -1306,11 +1304,11 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Cap",
+          "scriptName": "FortreeCity_CreatorHouse_EventScript_CapGiveItems::"
         },
         {
-          "scriptName": "Creator House",
-          "explanation": "Defeat X (the trainer)",
           "items": [
             {
               "name": "ITEM_TORTERRITE",
@@ -1333,7 +1331,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat X (the trainer)",
+          "scriptName": "FortreeCity_CreatorHouse_EventScript_XGiveItems::"
         }
       ],
       "image": "FortreeCity_CreatorHouse",
@@ -1363,8 +1363,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Gym",
-          "explanation": "Defeat Fortree Gym Leader",
           "items": [
             {
               "name": "ITEM_TM_BRAVE_BIRD",
@@ -1387,7 +1385,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Fortree Gym Leader",
+          "scriptName": "FortreeCity_Gym_EventScript_GiveAerialAce::"
         }
       ],
       "image": "FortreeCity_Gym",
@@ -1437,15 +1437,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "House2",
-          "explanation": "Guess which hand he has the coin in 4 times",
           "items": [
             {
               "name": "ITEM_TM_STORED_POWER",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Guess which hand he has the coin in 4 times",
+          "scriptName": "FortreeCity_House2_EventScript_StoredPowerGiver::"
         }
       ],
       "image": "FortreeCity_House2",
@@ -1459,15 +1459,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "House4",
-          "explanation": "Wait for Wingull to return",
           "items": [
             {
               "name": "ITEM_MENTAL_HERB",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Wait for Wingull to return",
+          "scriptName": "FortreeCity_House4_EventScript_WingullReturned::"
         }
       ],
       "image": "FortreeCity_House4",
@@ -1522,15 +1522,15 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "1F",
-          "explanation": "Talk to the Hiker",
           "items": [
             {
               "name": "ITEM_HM_FLASH",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Talk to the Hiker",
+          "scriptName": "GraniteCave_1F_EventScript_Hiker::"
         }
       ],
       "image": "GraniteCave_1F",
@@ -1598,8 +1598,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Stevens Room",
-          "explanation": "Give Steven the letter",
           "items": [
             {
               "name": "ITEM_TM_STEEL_WING",
@@ -1658,7 +1656,9 @@
               "quantity": 10
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Give Steven the letter",
+          "scriptName": "GraniteCave_StevensRoom_EventScript_Steven::"
         }
       ],
       "image": "GraniteCave_StevensRoom",
@@ -1724,8 +1724,6 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Maylene",
           "items": [
             {
               "name": "ITEM_TM_FOCUS_PUNCH",
@@ -1760,7 +1758,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Maylene",
+          "scriptName": "JaggedPass_EventScript_MayleneGiveItems::"
         }
       ],
       "image": "JaggedPass",
@@ -1842,8 +1842,6 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Gift from Rival",
           "items": [
             {
               "name": "ITEM_MEGA_RING",
@@ -1858,11 +1856,11 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Gift from Rival",
+          "scriptName": "LavaridgeTown_EventScript_MayGiveGoGoggles::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Talk to the lady by the Hot Springs",
           "items": [],
           "pokemon": [
             {
@@ -1870,7 +1868,9 @@
               "level": 0,
               "isRandom": false
             }
-          ]
+          ],
+          "explanation": "Talk to the lady by the Hot Springs",
+          "scriptName": "LavaridgeTown_EventScript_EggWoman::"
         }
       ],
       "image": "LavaridgeTown",
@@ -1884,8 +1884,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Gym",
-          "explanation": "Whoop Flannery's ass",
           "items": [
             {
               "name": "ITEM_TM_OVERHEAT",
@@ -1912,7 +1910,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Whoop Flannery's ass",
+          "scriptName": "LavaridgeTown_Gym_1F_EventScript_GiveOverheat::"
         }
       ],
       "image": "LavaridgeTown_Gym_1F",
@@ -1949,15 +1949,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Herb Shop",
-          "explanation": "Peruse the traditional Herbal Medicene",
           "items": [
             {
               "name": "ITEM_CHARCOAL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Peruse the traditional Herbal Medicene",
+          "scriptName": "LavaridgeTown_HerbShop_EventScript_OldMan::"
         }
       ],
       "image": "LavaridgeTown_HerbShop",
@@ -2036,21 +2036,21 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Talk to Berryman to receive a berry",
           "items": [],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Talk to Berryman to receive a berry",
+          "scriptName": "LilycoveCity_EventScript_BerryGentleman::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Dawn",
           "items": [
             {
               "name": "ITEM_ASSAULT_VEST",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Dawn",
+          "scriptName": "LilycoveCity_EventScript_DawnDefeated::"
         }
       ],
       "image": "LilycoveCity",
@@ -2220,8 +2220,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "House1",
-          "explanation": "Speak to Man in House 1",
           "items": [],
           "pokemon": [
             {
@@ -2229,7 +2227,9 @@
               "level": 0,
               "isRandom": false
             }
-          ]
+          ],
+          "explanation": "Speak to Man in House 1",
+          "scriptName": "LilycoveCity_House1_EventScript_EggMan::"
         }
       ],
       "image": "LilycoveCity_House1",
@@ -2243,8 +2243,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "House2",
-          "explanation": "Talk to Fat Man in his house",
           "items": [
             {
               "name": "ITEM_FIGHTING_MEMORY",
@@ -2315,7 +2313,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Talk to Fat Man in his house",
+          "scriptName": "LilycoveCity_House2_EventScript_FatMan::"
         }
       ],
       "image": "LilycoveCity_House2",
@@ -2331,15 +2331,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "A humble gift from Iriv (it's blue raspberry flavor).",
           "items": [
             {
               "name": "ITEM_INFINITE_CANDY",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "A humble gift from Iriv (it's blue raspberry flavor).",
+          "scriptName": "LittlerootTown_EventScript_GiveRunningShoes::"
         }
       ],
       "image": "LittlerootTown",
@@ -2353,19 +2353,17 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Professor Birchs Lab",
-          "explanation": "Produce a Birth Island Ticket",
           "items": [
             {
               "name": "ITEM_AURORA_TICKET",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Produce a Birth Island Ticket",
+          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveBirthIslandTicket::"
         },
         {
-          "scriptName": "Professor Birchs Lab",
-          "explanation": "Choose Cyndaquil as a starter",
           "items": [],
           "pokemon": [
             {
@@ -2373,11 +2371,11 @@
               "level": 5,
               "isRandom": false
             }
-          ]
+          ],
+          "explanation": "Choose Cyndaquil as a starter",
+          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil::"
         },
         {
-          "scriptName": "Professor Birchs Lab",
-          "explanation": "Choose Totodile as a starter",
           "items": [],
           "pokemon": [
             {
@@ -2385,11 +2383,11 @@
               "level": 5,
               "isRandom": false
             }
-          ]
+          ],
+          "explanation": "Choose Totodile as a starter",
+          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodile::"
         },
         {
-          "scriptName": "Professor Birchs Lab",
-          "explanation": "Choose Chikorita as a starter",
           "items": [],
           "pokemon": [
             {
@@ -2397,11 +2395,11 @@
               "level": 5,
               "isRandom": false
             }
-          ]
+          ],
+          "explanation": "Choose Chikorita as a starter",
+          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikorita::"
         },
         {
-          "scriptName": "Professor Birchs Lab",
-          "explanation": "Receive your Pokédex",
           "items": [
             {
               "name": "ITEM_QUICK_BALL",
@@ -2524,7 +2522,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Receive your Pokédex",
+          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls::"
         }
       ],
       "image": "LittlerootTown_ProfessorBirchsLab",
@@ -2779,26 +2779,26 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Talk to Wattson",
           "items": [
             {
               "name": "ITEM_BASEMENT_KEY",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Talk to Wattson",
+          "scriptName": "MauvilleCity_EventScript_Wattson::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Clear New Mauville",
           "items": [
             {
               "name": "ITEM_TM_CLOSE_COMBAT",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Clear New Mauville",
+          "scriptName": "MauvilleCity_EventScript_CompletedNewMauville::"
         }
       ],
       "image": "MauvilleCity",
@@ -2818,8 +2818,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Bike Shop",
-          "explanation": "Choose a bike",
           "items": [
             {
               "name": "ITEM_MACH_BIKE",
@@ -2830,7 +2828,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Choose a bike",
+          "scriptName": "MauvilleCity_BikeShop_EventScript_ChooseBike::"
         }
       ],
       "image": "MauvilleCity_BikeShop",
@@ -2884,8 +2884,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Gym",
-          "explanation": "Whoop Wattson in his ass",
           "items": [
             {
               "name": "ITEM_TM_VOLT_SWITCH",
@@ -2904,7 +2902,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Whoop Wattson in his ass",
+          "scriptName": "MauvilleCity_Gym_EventScript_GiveVoltSwitch::"
         }
       ],
       "image": "MauvilleCity_Gym",
@@ -2949,15 +2949,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "House1",
-          "explanation": "Speak to Rock Smash Dude",
           "items": [
             {
               "name": "ITEM_HM_ROCK_SMASH",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to Rock Smash Dude",
+          "scriptName": "MauvilleCity_House1_EventScript_RockSmashDude::"
         }
       ],
       "image": "MauvilleCity_House1",
@@ -2971,15 +2971,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "House2",
-          "explanation": "Talk to the lady in House 2",
           "items": [
             {
               "name": "ITEM_COIN_CASE",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Talk to the lady in House 2",
+          "scriptName": "MauvilleCity_House2_EventScript_AcceptTrade::"
         }
       ],
       "image": "MauvilleCity_House2",
@@ -3025,8 +3025,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Pokemon Center",
-          "explanation": "PikachuMan (1st Floor of Pokemon Center).",
           "items": [],
           "pokemon": [
             {
@@ -3059,7 +3057,9 @@
               "level": 0,
               "isRandom": false
             }
-          ]
+          ],
+          "explanation": "PikachuMan (1st Floor of Pokemon Center).",
+          "scriptName": "MauvilleCity_PokemonCenter_1F_EventScript_CostumePikachuGive::"
         }
       ],
       "image": "MauvilleCity_PokemonCenter_1F",
@@ -3220,26 +3220,26 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "4F",
-          "explanation": "Pickup the Root Fossil",
           "items": [
             {
               "name": "ITEM_ROOT_FOSSIL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Pickup the Root Fossil",
+          "scriptName": "MirageTower_4F_EventScript_RootFossil::"
         },
         {
-          "scriptName": "4F",
-          "explanation": "Pick up the Claw Fossil",
           "items": [
             {
               "name": "ITEM_CLAW_FOSSIL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Pick up the Claw Fossil",
+          "scriptName": "MirageTower_4F_EventScript_ClawFossil::"
         }
       ],
       "image": "MirageTower_4F",
@@ -3264,15 +3264,15 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Talk to Kings Rock Boy",
           "items": [
             {
               "name": "ITEM_KINGS_ROCK",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Talk to Kings Rock Boy",
+          "scriptName": "MossdeepCity_EventScript_KingsRockBoy::"
         }
       ],
       "image": "MossdeepCity",
@@ -3286,8 +3286,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Beta Tester House",
-          "explanation": "Defeat Sunbird",
           "items": [],
           "pokemon": [
             {
@@ -3295,11 +3293,11 @@
               "level": 50,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat Sunbird",
+          "scriptName": "MossdeepCity_BetaTesterHouse_EventScript_SunbirdGiveCelebi::"
         },
         {
-          "scriptName": "Beta Tester House",
-          "explanation": "Defeat Suneal",
           "items": [],
           "pokemon": [
             {
@@ -3307,11 +3305,11 @@
               "level": 50,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat Suneal",
+          "scriptName": "MossdeepCity_BetaTesterHouse_EventScript_SunealGiveDarkrai::"
         },
         {
-          "scriptName": "Beta Tester House",
-          "explanation": "Defeat DollaMike",
           "items": [],
           "pokemon": [
             {
@@ -3319,7 +3317,9 @@
               "level": 50,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat DollaMike",
+          "scriptName": "MossdeepCity_BetaTesterHouse_EventScript_DollaMikeGiveVictini::"
         }
       ],
       "image": "MossdeepCity_BetaTesterHouse",
@@ -3349,8 +3349,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Gym",
-          "explanation": "Defeat bratty twins",
           "items": [
             {
               "name": "ITEM_TM_EXPANDING_FORCE",
@@ -3361,7 +3359,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat bratty twins",
+          "scriptName": "MossdeepCity_Gym_EventScript_GiveCalmMind::"
         }
       ],
       "image": "MossdeepCity_Gym",
@@ -3441,15 +3441,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "House3",
-          "explanation": "Talk to the fisherman",
           "items": [
             {
               "name": "ITEM_SUPER_ROD",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Talk to the fisherman",
+          "scriptName": "MossdeepCity_House3_EventScript_SuperRodFisherman::"
         }
       ],
       "image": "MossdeepCity_House3",
@@ -3491,15 +3491,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Space Center",
-          "explanation": "Do sumn with the Sun Stone man",
           "items": [
             {
               "name": "ITEM_SUN_STONE",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Do sumn with the Sun Stone man",
+          "scriptName": "MossdeepCity_SpaceCenter_1F_EventScript_SunStoneMan::"
         }
       ],
       "image": "MossdeepCity_SpaceCenter_1F",
@@ -3513,15 +3513,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Space Center",
-          "explanation": "Save the Space Center",
           "items": [
             {
               "name": "ITEM_MAGMA_EMBLEM",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Save the Space Center",
+          "scriptName": "MossdeepCity_SpaceCenter_2F_EventScript_Steven::"
         }
       ],
       "image": "MossdeepCity_SpaceCenter_2F",
@@ -3535,19 +3535,17 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Stevens House",
-          "explanation": "Enter Steven's Domicile",
           "items": [
             {
               "name": "ITEM_HM_DIVE",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Enter Steven's Domicile",
+          "scriptName": "MossdeepCity_StevensHouse_EventScript_StevenGivesDive::"
         },
         {
-          "scriptName": "Stevens House",
-          "explanation": "Defeat Elite Four, return to Steven",
           "items": [],
           "pokemon": [
             {
@@ -3555,7 +3553,9 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat Elite Four, return to Steven",
+          "scriptName": "MossdeepCity_StevensHouse_EventScript_GiveBeldum::"
         }
       ],
       "image": "MossdeepCity_StevensHouse",
@@ -3571,26 +3571,26 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "After defeating Team Magma, puruse Old Hag's wares",
           "items": [
             {
               "name": "ITEM_LAVA_COOKIE",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "After defeating Team Magma, puruse Old Hag's wares",
+          "scriptName": "MtChimney_EventScript_LavaCookieLady::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Collect after defeating Environmental Terrorists",
           "items": [
             {
               "name": "ITEM_METEORITE",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Collect after defeating Environmental Terrorists",
+          "scriptName": "MtChimney_EventScript_MeteoriteMachine::"
         }
       ],
       "image": "MtChimney",
@@ -3662,15 +3662,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "1F",
-          "explanation": "Commune with priestess on 1F",
           "items": [
             {
               "name": "ITEM_CLEANSE_TAG",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Commune with priestess on 1F",
+          "scriptName": "MtPyre_1F_EventScript_CleanseTagWoman::"
         }
       ],
       "image": "MtPyre_1F",
@@ -3906,8 +3906,6 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Summit",
-          "explanation": "Defeat Environmental Terrorists, save Mt. Pyre",
           "items": [
             {
               "name": "ITEM_RED_ORB",
@@ -3918,7 +3916,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Environmental Terrorists, save Mt. Pyre",
+          "scriptName": "MtPyre_Summit_EventScript_OldLadyOrbsReturned::"
         }
       ],
       "image": "MtPyre_Summit",
@@ -3974,8 +3974,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose Squirtle as a starter",
           "items": [],
           "pokemon": [
             {
@@ -3983,11 +3981,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose Squirtle as a starter",
+          "scriptName": "NewBirchsLab_EventScript_Squirtle::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -3995,11 +3993,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Totodile::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4007,11 +4005,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Mudkip::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4019,11 +4017,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Piplup::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4031,11 +4029,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Oshawott::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4043,11 +4041,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Froakie::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4055,11 +4053,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Popplio::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4067,11 +4065,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Sobble::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4079,11 +4077,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Quaxly::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4091,11 +4089,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Bulbasaur::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4103,11 +4101,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Chikorita::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4115,11 +4113,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Treecko::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4127,11 +4125,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Turtwig::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4139,11 +4137,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Snivy::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4151,11 +4149,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Chespin::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4163,11 +4161,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Rowlet::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4175,11 +4173,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Grookey::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4187,11 +4185,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Sprigatito::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4199,11 +4197,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Charmander::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4211,11 +4209,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Cyndaquil::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4223,11 +4221,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Torchic::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4235,11 +4233,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Chimchar::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4247,11 +4245,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Tepig::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4259,11 +4257,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Fennekin::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4271,11 +4269,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Litten::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4283,11 +4281,11 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Scorbunny::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Choose a starter",
           "items": [],
           "pokemon": [
             {
@@ -4295,7 +4293,9 @@
               "level": 5,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Choose a starter",
+          "scriptName": "NewBirchsLab_EventScript_Fuecoco::"
         }
       ],
       "image": "NewBirchsLab",
@@ -4358,15 +4358,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Talk to shopkeep in PokeMart",
           "items": [
             {
               "name": "ITEM_POTION",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Talk to shopkeep in PokeMart",
+          "scriptName": "OldaleTown_EventScript_ExplainPokemonMart::"
         }
       ],
       "image": "OldaleTown",
@@ -4415,8 +4415,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "House1",
-          "explanation": "Speak to man in House 1",
           "items": [
             {
               "name": "ITEM_DOUSE_DRIVE",
@@ -4435,7 +4433,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to man in House 1",
+          "scriptName": "PacifidlogTown_House1_EventScript_Man::"
         }
       ],
       "image": "PacifidlogTown_House1",
@@ -4476,26 +4476,26 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Speak to Scott (dude with sunglasses).",
           "items": [
             {
               "name": "ITEM_EXP_SHARE",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to Scott (dude with sunglasses).",
+          "scriptName": "PetalburgCity_EventScript_Scott::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Speak to fisherman by pond",
           "items": [
             {
               "name": "ITEM_OLD_ROD",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to fisherman by pond",
+          "scriptName": "PetalburgCity_EventScript_GiveOldRod::"
         }
       ],
       "image": "PetalburgCity",
@@ -4509,19 +4509,17 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Gym",
-          "explanation": "Unclear to me when you get this (sorry!)",
           "items": [
             {
               "name": "ITEM_ENIGMA_BERRY_E_READER",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Unclear to me when you get this (sorry!)",
+          "scriptName": "PetalburgCity_Gym_EventScript_GiveEnigmaBerry::"
         },
         {
-          "scriptName": "Gym",
-          "explanation": "Whoop your father's ass",
           "items": [
             {
               "name": "ITEM_TM_RETURN",
@@ -4540,7 +4538,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Whoop your father's ass",
+          "scriptName": "PetalburgCity_Gym_EventScript_GiveFacade::"
         }
       ],
       "image": "PetalburgCity_Gym",
@@ -4615,8 +4615,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Wallys House",
-          "explanation": "Received from Wally's dad",
           "items": [
             {
               "name": "ITEM_TM_METEOR_BEAM",
@@ -4639,7 +4637,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Received from Wally's dad",
+          "scriptName": "PetalburgCity_WallysHouse_EventScript_GiveHMSurf::"
         }
       ],
       "image": "PetalburgCity_WallysHouse",
@@ -4720,30 +4720,28 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Save the Devon Researcher from the Environmental Terrorist",
           "items": [
             {
               "name": "ITEM_GREAT_BALL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Save the Devon Researcher from the Environmental Terrorist",
+          "scriptName": "PetalburgWoods_EventScript_DevonResearcherPostBattle::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Talk to the girl in the woods (Must know Cut to pass trees)",
           "items": [
             {
               "name": "ITEM_MIRACLE_SEED",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Talk to the girl in the woods (Must know Cut to pass trees)",
+          "scriptName": "PetalburgWoods_EventScript_Girl::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Gardinia (Must know Cut to pass trees)",
           "items": [
             {
               "name": "ITEM_TM_U_TURN",
@@ -4758,7 +4756,9 @@
               "quantity": 10
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Gardinia (Must know Cut to pass trees)",
+          "scriptName": "PetalburgWoods_EventScript_GardeniaGiveItems::"
         }
       ],
       "image": "PetalburgWoods",
@@ -5043,41 +5043,39 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Florist that gives you berries",
           "items": [
             {
               "name": "ITEM_CHESTO_BERRY",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Florist that gives you berries",
+          "scriptName": "Route104_EventScript_ExpertF::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Hidden before Badge 3. Speak to her after defeating Watson",
           "items": [
             {
               "name": "ITEM_WHITE_HERB",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Hidden before Badge 3. Speak to her after defeating Watson",
+          "scriptName": "Route104_EventScript_WhiteHerbFlorist::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Speak to the boy on the beach",
           "items": [
             {
               "name": "ITEM_TM_BUG_BITE",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to the boy on the beach",
+          "scriptName": "Route104_EventScript_Boy2::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Dawn in a battle.",
           "items": [
             {
               "name": "ITEM_ASPEAR_BERRY",
@@ -5184,7 +5182,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Dawn in a battle.",
+          "scriptName": "Route104_EventScript_DawnDefeated::"
         }
       ],
       "image": "Route104",
@@ -5259,15 +5259,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Pretty Petal Flower Shop",
-          "explanation": "Speak to shopkeep in P.P. Flower Shop",
           "items": [
             {
               "name": "ITEM_WAILMER_PAIL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to shopkeep in P.P. Flower Shop",
+          "scriptName": "Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail::"
         }
       ],
       "image": "Route104_PrettyPetalFlowerShop",
@@ -5615,15 +5615,15 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Speak to little girl on the beach",
           "items": [
             {
               "name": "ITEM_SOFT_SAND",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to little girl on the beach",
+          "scriptName": "Route109_EventScript_SoftSandGirl::"
         }
       ],
       "image": "Route109",
@@ -5718,8 +5718,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Seashore House",
-          "explanation": "Defeat the trainers in Seashore House",
           "items": [],
           "pokemon": [
             {
@@ -5727,18 +5725,20 @@
               "level": 25,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat the trainers in Seashore House",
+          "scriptName": "Route109_SeashoreHouse_EventScript_DefeatedTrainers::"
         },
         {
-          "scriptName": "Seashore House",
-          "explanation": "Make purchase at Seashore House",
           "items": [
             {
               "name": "ITEM_SODA_POP",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Make purchase at Seashore House",
+          "scriptName": "Route109_SeashoreHouse_EventScript_BuySodaPop::"
         }
       ],
       "image": "Route109_SeashoreHouse",
@@ -5819,19 +5819,17 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Rival",
           "items": [
             {
               "name": "ITEM_HM_FLY",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Rival",
+          "scriptName": "Route110_EventScript_GiveFly::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat your Rival",
           "items": [
             {
               "name": "ITEM_DOWSING_MACHINE",
@@ -5946,7 +5944,9 @@
               "quantity": 10
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat your Rival",
+          "scriptName": "Route110_EventScript_GiveRestOfItems::"
         }
       ],
       "image": "Route110",
@@ -6105,8 +6105,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Trick House Entrance",
-          "explanation": "Solve puzzle 1",
           "items": [
             {
               "name": "ITEM_TM_GUNK_SHOT",
@@ -6121,11 +6119,11 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Solve puzzle 1",
+          "scriptName": "Route110_TrickHouseEntrance_EventScript_GivePuzzle1Reward::"
         },
         {
-          "scriptName": "Trick House Entrance",
-          "explanation": "Solve puzzle 2",
           "items": [
             {
               "name": "ITEM_TM_SOLAR_BEAM",
@@ -6168,11 +6166,11 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Solve puzzle 2",
+          "scriptName": "Route110_TrickHouseEntrance_EventScript_GivePuzzle2Reward::"
         },
         {
-          "scriptName": "Trick House Entrance",
-          "explanation": "Solve puzzle 3",
           "items": [
             {
               "name": "ITEM_TM_STONE_EDGE",
@@ -6191,51 +6189,53 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Solve puzzle 3",
+          "scriptName": "Route110_TrickHouseEntrance_EventScript_GivePuzzle3Reward::"
         },
         {
-          "scriptName": "Trick House Entrance",
-          "explanation": "Solve puzzle 4",
           "items": [
             {
               "name": "ITEM_SMOKE_BALL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Solve puzzle 4",
+          "scriptName": "Route110_TrickHouseEntrance_EventScript_GivePuzzle4Reward::"
         },
         {
-          "scriptName": "Trick House Entrance",
-          "explanation": "Solve puzzle 5",
           "items": [
             {
               "name": "ITEM_TM_TAUNT",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Solve puzzle 5",
+          "scriptName": "Route110_TrickHouseEntrance_EventScript_GivePuzzle5Reward::"
         },
         {
-          "scriptName": "Trick House Entrance",
-          "explanation": "Solve puzzle 6",
           "items": [
             {
               "name": "ITEM_MAGNET",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Solve puzzle 6",
+          "scriptName": "Route110_TrickHouseEntrance_EventScript_GivePuzzle6Reward::"
         },
         {
-          "scriptName": "Trick House Entrance",
-          "explanation": "Solve puzzle 7",
           "items": [
             {
               "name": "ITEM_PP_MAX",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Solve puzzle 7",
+          "scriptName": "Route110_TrickHouseEntrance_EventScript_GivePuzzle7Reward::"
         }
       ],
       "image": "Route110_TrickHouseEntrance",
@@ -6568,19 +6568,17 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Receive your daily berry from berry girl",
           "items": [
             {
               "name": "ITEM_RAZZ_BERRY",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Receive your daily berry from berry girl",
+          "scriptName": "Route111_EventScript_Girl::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Dawn",
           "items": [
             {
               "name": "ITEM_TM_ROOST",
@@ -6603,11 +6601,11 @@
               "quantity": 999
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Dawn",
+          "scriptName": "Route111_EventScript_DawnDefeated::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Black Belt Daisuke.",
           "items": [
             {
               "name": "ITEM_PROTECTIVE_PADS",
@@ -6626,11 +6624,11 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Black Belt Daisuke.",
+          "scriptName": "Route111_EventScript_BattleDaisuke::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Black Belt Diasuke",
           "items": [],
           "pokemon": [
             {
@@ -6638,7 +6636,9 @@
               "level": 15,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat Black Belt Diasuke",
+          "scriptName": "Route111_EventScript_DaisukeGiveTyrogue::"
         }
       ],
       "image": "Route111",
@@ -6773,8 +6773,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Old Ladys Rest Stop",
-          "explanation": "Speak to Old Lady in Rest Stop",
           "items": [],
           "pokemon": [
             {
@@ -6782,7 +6780,9 @@
               "level": 0,
               "isRandom": false
             }
-          ]
+          ],
+          "explanation": "Speak to Old Lady in Rest Stop",
+          "scriptName": "Route111_OldLadysRestStop_EventScript_EggMan::"
         }
       ],
       "image": "Route111_OldLadysRestStop",
@@ -6796,19 +6796,17 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Winstrate Familys House",
-          "explanation": "(Post Game) Speak to the Winstrate Family",
           "items": [
             {
               "name": "ITEM_MYSTIC_TICKET",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "(Post Game) Speak to the Winstrate Family",
+          "scriptName": "Route111_WinstrateFamilysHouse_GiveMysticTicket::"
         },
         {
-          "scriptName": "Winstrate Familys House",
-          "explanation": "Defeat Victoria at the Winstrate Family House",
           "items": [
             {
               "name": "ITEM_ALAKAZITE",
@@ -6919,7 +6917,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Victoria at the Winstrate Family House",
+          "scriptName": "Route111_WinstrateFamilysHouse_EventScript_Victoria::"
         }
       ],
       "image": "Route111_WinstrateFamilysHouse",
@@ -7094,15 +7094,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Glass Workshop",
-          "explanation": "Speak to Glass worker in Workshop",
           "items": [
             {
               "name": "ITEM_SCOPE_LENS",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to Glass worker in Workshop",
+          "scriptName": "Route113_GlassWorkshop_EventScript_GlassWorker::"
         }
       ],
       "image": "Route113_GlassWorkshop",
@@ -7151,15 +7151,15 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Speak to man in nice suit",
           "items": [
             {
               "name": "ITEM_TM_ROAR",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to man in nice suit",
+          "scriptName": "Route114_EventScript_RoarGentleman::"
         }
       ],
       "image": "Route114",
@@ -7244,15 +7244,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Fossil Maniacs House",
-          "explanation": "Enter Fossil Maniac's house, talk to him (HE CRAZY)",
           "items": [
             {
               "name": "ITEM_TM_DIG",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Enter Fossil Maniac's house, talk to him (HE CRAZY)",
+          "scriptName": "Route114_FossilManiacsHouse_EventScript_FossilManiacsBrother::"
         }
       ],
       "image": "Route114_FossilManiacsHouse",
@@ -7452,19 +7452,17 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Encounter Devon Worker outside Rustboro City",
           "items": [
             {
               "name": "ITEM_REPEAT_BALL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Encounter Devon Worker outside Rustboro City",
+          "scriptName": "Route116_EventScript_GiveRepeatBall::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Roark",
           "items": [
             {
               "name": "ITEM_TM_ROCK_TOMB",
@@ -7475,7 +7473,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Roark",
+          "scriptName": "Route116_EventScript_RoarkGiveRockTomb::"
         }
       ],
       "image": "Route116",
@@ -7582,19 +7582,17 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Find sneaky-deaky Derek",
           "items": [
             {
               "name": "ITEM_TM_HIDDEN_POWER",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Find sneaky-deaky Derek",
+          "scriptName": "Route117_EventScript_Derek::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Fantina",
           "items": [
             {
               "name": "ITEM_TM_PSYCHIC",
@@ -7633,7 +7631,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Fantina",
+          "scriptName": "Route117_EventScript_FantinaGiveItems::"
         }
       ],
       "image": "Route117",
@@ -7740,19 +7740,17 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Speak to fisherman outside Mauville City",
           "items": [
             {
               "name": "ITEM_GOOD_ROD",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to fisherman outside Mauville City",
+          "scriptName": "Route118_EventScript_ReceiveGoodRod::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Wake",
           "items": [
             {
               "name": "ITEM_LAPRASITE",
@@ -7771,7 +7769,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Wake",
+          "scriptName": "Route118_EventScript_WakeGiveItems::"
         }
       ],
       "image": "Route118",
@@ -7943,8 +7943,6 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Rival outside Fortree City",
           "items": [
             {
               "name": "ITEM_LIFE_ORB",
@@ -7963,7 +7961,9 @@
               "quantity": 999
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Rival outside Fortree City",
+          "scriptName": "Route119_EventScript_GiveFlyHM::"
         }
       ],
       "image": "Route119",
@@ -8124,8 +8124,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Weather Institute",
-          "explanation": "Save Weather Institute from Environmental Terrorists",
           "items": [],
           "pokemon": [
             {
@@ -8133,7 +8131,9 @@
               "level": 25,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Save Weather Institute from Environmental Terrorists",
+          "scriptName": "Route119_WeatherInstitute_2F_EventScript_ReceiveCastform::"
         }
       ],
       "image": "Route119_WeatherInstitute_2F",
@@ -8243,15 +8243,15 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Speak to Steven outside Fortree City",
           "items": [
             {
               "name": "ITEM_DEVON_SCOPE",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to Steven outside Fortree City",
+          "scriptName": "Route120_EventScript_StevenGiveDeconScope::"
         }
       ],
       "image": "Route120",
@@ -8387,8 +8387,6 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Byron outside Lilycove City",
           "items": [
             {
               "name": "ITEM_TM_STEALTH_ROCK",
@@ -8417,7 +8415,9 @@
               "level": 30,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat Byron outside Lilycove City",
+          "scriptName": "Route121_EventScript_BattleByron::"
         }
       ],
       "image": "Route121",
@@ -8708,8 +8708,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Berry Masters House",
-          "explanation": "Part of Berry Master Quest",
           "items": [
             {
               "name": "ITEM_SPELON_BERRY",
@@ -8728,18 +8726,20 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Part of Berry Master Quest",
+          "scriptName": "Route123_BerryMastersHouse_EventScript_GiveSpelonBerry::"
         },
         {
-          "scriptName": "Berry Masters House",
-          "explanation": "Part of Berry Master quest",
           "items": [
             {
               "name": "ITEM_BELUE_BERRY",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Part of Berry Master quest",
+          "scriptName": "Route123_BerryMastersHouse_EventScript_GiveBelueBerry::"
         }
       ],
       "image": "Route123_BerryMastersHouse",
@@ -8833,8 +8833,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Diving Treasure Hunters House",
-          "explanation": "House on island. Speak to lady inside house",
           "items": [
             {
               "name": "ITEM_ROTOM_CATALOG",
@@ -8853,7 +8851,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "House on island. Speak to lady inside house",
+          "scriptName": "Route124_DivingTreasureHuntersHouse_EventScript_FormChangingLady::"
         }
       ],
       "image": "Route124_DivingTreasureHuntersHouse",
@@ -8878,8 +8878,6 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Candice",
           "items": [
             {
               "name": "ITEM_TM_BLIZZARD",
@@ -8890,7 +8888,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Candice",
+          "scriptName": "Route125_EventScript_CandiceGiveItems::"
         }
       ],
       "image": "Route125",
@@ -9532,15 +9532,15 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Return stolen Devon Goods to Mr. Devon",
           "items": [
             {
               "name": "ITEM_GREAT_BALL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Return stolen Devon Goods to Mr. Devon",
+          "scriptName": "RustboroCity_EventScript_ReturnGoods::"
         }
       ],
       "image": "RustboroCity",
@@ -9585,15 +9585,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Cutters House",
-          "explanation": "Speak to Mr. Cutter in Cutter's House",
           "items": [
             {
               "name": "ITEM_HM_CUT",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to Mr. Cutter in Cutter's House",
+          "scriptName": "RustboroCity_CuttersHouse_EventScript_Cutter::"
         }
       ],
       "image": "RustboroCity_CuttersHouse",
@@ -9607,8 +9607,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Devon Corp",
-          "explanation": "after giving researcher fossil",
           "items": [],
           "pokemon": [
             {
@@ -9616,11 +9614,11 @@
               "level": 20,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "after giving researcher fossil",
+          "scriptName": "RustboroCity_DevonCorp_2F_EventScript_ReceiveLileep::"
         },
         {
-          "scriptName": "Devon Corp",
-          "explanation": "After giving researcher fossil",
           "items": [],
           "pokemon": [
             {
@@ -9628,7 +9626,9 @@
               "level": 20,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "After giving researcher fossil",
+          "scriptName": "RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorith::"
         }
       ],
       "image": "RustboroCity_DevonCorp_2F",
@@ -9642,19 +9642,17 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Devon Corp",
-          "explanation": "Talk to Mr. Devon for the first time.",
           "items": [
             {
               "name": "ITEM_LETTER",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Talk to Mr. Devon for the first time.",
+          "scriptName": "RustboroCity_DevonCorp_3F_EventScript_MeetPresident::"
         },
         {
-          "scriptName": "Devon Corp",
-          "explanation": "Deliver Stephen's letter to Devon Corp",
           "items": [
             {
               "name": "ITEM_WATER_STONE",
@@ -9673,7 +9671,9 @@
               "quantity": 10
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Deliver Stephen's letter to Devon Corp",
+          "scriptName": "RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::"
         }
       ],
       "image": "RustboroCity_DevonCorp_3F",
@@ -9687,15 +9687,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Flat2",
-          "explanation": "Speak to boy in ninja garb on 2F of apartments",
           "items": [
             {
               "name": "ITEM_PREMIER_BALL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to boy in ninja garb on 2F of apartments",
+          "scriptName": "RustboroCity_Flat2_2F_EventScript_NinjaBoy::"
         }
       ],
       "image": "RustboroCity_Flat2_2F",
@@ -9709,15 +9709,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Gym",
-          "explanation": "Whoops Roxanne's ass",
           "items": [
             {
               "name": "ITEM_TM_BULLDOZE",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Whoops Roxanne's ass",
+          "scriptName": "RustboroCity_Gym_EventScript_GiveBulldoze::"
         }
       ],
       "image": "RustboroCity_Gym",
@@ -9781,8 +9781,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Pokemon Center",
-          "explanation": "Speak to the Egg Man on 1F of the Pokemon Center",
           "items": [],
           "pokemon": [
             {
@@ -9790,7 +9788,9 @@
               "level": 0,
               "isRandom": false
             }
-          ]
+          ],
+          "explanation": "Speak to the Egg Man on 1F of the Pokemon Center",
+          "scriptName": "RustboroCity_PokemonCenter_1F_EventScript_EggMan::"
         }
       ],
       "image": "RustboroCity_PokemonCenter_1F",
@@ -9804,15 +9804,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Pokemon School",
-          "explanation": "Speak to the teacher in Pokemon School",
           "items": [
             {
               "name": "ITEM_QUICK_CLAW",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to the teacher in Pokemon School",
+          "scriptName": "RustboroCity_PokemonSchool_EventScript_Teacher::"
         }
       ],
       "image": "RustboroCity_PokemonSchool",
@@ -9837,26 +9837,26 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Save the relationship in Rusturf Tunnel",
           "items": [
             {
               "name": "ITEM_HM_STRENGTH",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Save the relationship in Rusturf Tunnel",
+          "scriptName": "RusturfTunnel_EventScript_ClearTunnelScene::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Take Devon Goods back from Environmental Terrorist",
           "items": [
             {
               "name": "ITEM_DEVON_PARTS",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Take Devon Goods back from Environmental Terrorist",
+          "scriptName": "RusturfTunnel_EventScript_Grunt::"
         }
       ],
       "image": "RusturfTunnel",
@@ -9915,15 +9915,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Find Snatch Giver in rooms",
           "items": [
             {
               "name": "ITEM_TM_LEECH_LIFE",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Find Snatch Giver in rooms",
+          "scriptName": "SSTidalRooms_EventScript_SnatchGiver::"
         }
       ],
       "image": "SSTidalRooms",
@@ -10306,15 +10306,15 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Low Tide Entrance Room",
-          "explanation": "Speak to old Man during low tide",
           "items": [
             {
               "name": "ITEM_SHELL_BELL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to old Man during low tide",
+          "scriptName": "ShoalCave_LowTideEntranceRoom_EventScript_ShellBellExpert::"
         }
       ],
       "image": "ShoalCave_LowTideEntranceRoom",
@@ -10364,19 +10364,17 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Low Tide Inner Room",
-          "explanation": "Pickup from ground",
           "items": [
             {
               "name": "ITEM_SHOAL_SHELL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Pickup from ground",
+          "scriptName": "ShoalCave_LowTideInnerRoom_EventScript_ShoalShell1::"
         },
         {
-          "scriptName": "Low Tide Inner Room",
-          "explanation": "Pick up from ground",
           "items": [
             {
               "name": "ITEM_SHOAL_SHELL",
@@ -10387,7 +10385,9 @@
               "quantity": 2
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Pick up from ground",
+          "scriptName": "ShoalCave_LowTideInnerRoom_EventScript_ShoalShell2::"
         }
       ],
       "image": "ShoalCave_LowTideInnerRoom",
@@ -10401,26 +10401,26 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Low Tide Lower Room",
-          "explanation": "Pickup from ground",
           "items": [
             {
               "name": "ITEM_SHOAL_SALT",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Pickup from ground",
+          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_ShoalSalt4::"
         },
         {
-          "scriptName": "Low Tide Lower Room",
-          "explanation": "Speak to trainer in Lower Room during Low Tide",
           "items": [
             {
               "name": "ITEM_FOCUS_BAND",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to trainer in Lower Room during Low Tide",
+          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_BlackBelt::"
         }
       ],
       "image": "ShoalCave_LowTideLowerRoom",
@@ -10443,15 +10443,15 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "Low Tide Stairs Room",
-          "explanation": "Pick up from ground",
           "items": [
             {
               "name": "ITEM_SHOAL_SALT",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Pick up from ground",
+          "scriptName": "ShoalCave_LowTideStairsRoom_EventScript_ShoalSalt3::"
         }
       ],
       "image": "ShoalCave_LowTideStairsRoom",
@@ -10583,15 +10583,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Speak to clerk in Market",
           "items": [
             {
               "name": "ITEM_POWDER_JAR",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to clerk in Market",
+          "scriptName": "SlateportCity_EventScript_BerryPowderClerk::"
         }
       ],
       "image": "SlateportCity",
@@ -10605,15 +10605,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Battle Tent Lobby",
-          "explanation": "Speak to trainer in Battle Tent",
           "items": [
             {
               "name": "ITEM_TM_THIEF",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to trainer in Battle Tent",
+          "scriptName": "SlateportCity_BattleTentLobby_EventScript_ThiefGiver::"
         }
       ],
       "image": "SlateportCity_BattleTentLobby",
@@ -10627,8 +10627,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Harbor",
-          "explanation": "Trade for a Scanner with Cpt. Stern",
           "items": [
             {
               "name": "ITEM_DEEP_SEA_TOOTH",
@@ -10639,7 +10637,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Trade for a Scanner with Cpt. Stern",
+          "scriptName": "SlateportCity_Harbor_EventScript_DeepSeaTooth::"
         }
       ],
       "image": "SlateportCity_Harbor",
@@ -10682,15 +10682,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Oceanic Museum",
-          "explanation": "Speak to Familiar Grunt in the Oceanic Museum",
           "items": [
             {
               "name": "ITEM_TM_FLIP_TURN",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Speak to Familiar Grunt in the Oceanic Museum",
+          "scriptName": "SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::"
         }
       ],
       "image": "SlateportCity_OceanicMuseum_1F",
@@ -10725,70 +10725,70 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Pokemon Fan Club",
-          "explanation": "In PkmnFan Club, show the player a Red Scarf for their lead Pokémon",
           "items": [
             {
               "name": "ITEM_RED_SCARF",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "In PkmnFan Club, show the player a Red Scarf for their lead Pokémon",
+          "scriptName": "SlateportCity_PokemonFanClub_EventScript_GiveRedScarf::"
         },
         {
-          "scriptName": "Pokemon Fan Club",
-          "explanation": "PkmnFan Club, Blue Scarf for their lead Pokémon",
           "items": [
             {
               "name": "ITEM_BLUE_SCARF",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "PkmnFan Club, Blue Scarf for their lead Pokémon",
+          "scriptName": "SlateportCity_PokemonFanClub_EventScript_GiveBlueScarf::"
         },
         {
-          "scriptName": "Pokemon Fan Club",
-          "explanation": "PkmnFan Club a Pink Scarf for their lead Pokémon",
           "items": [
             {
               "name": "ITEM_PINK_SCARF",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "PkmnFan Club a Pink Scarf for their lead Pokémon",
+          "scriptName": "SlateportCity_PokemonFanClub_EventScript_GivePinkScarf::"
         },
         {
-          "scriptName": "Pokemon Fan Club",
-          "explanation": "PkmnFan Club, a Green Scarf for their lead Pokémon",
           "items": [
             {
               "name": "ITEM_GREEN_SCARF",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "PkmnFan Club, a Green Scarf for their lead Pokémon",
+          "scriptName": "SlateportCity_PokemonFanClub_EventScript_GiveGreenScarf::"
         },
         {
-          "scriptName": "Pokemon Fan Club",
-          "explanation": "PkmnFan Club, a Yellow Scarf for their lead Pokémon",
           "items": [
             {
               "name": "ITEM_YELLOW_SCARF",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "PkmnFan Club, a Yellow Scarf for their lead Pokémon",
+          "scriptName": "SlateportCity_PokemonFanClub_EventScript_GiveYellowScarf::"
         },
         {
-          "scriptName": "Pokemon Fan Club",
-          "explanation": "PkmnFan Club, show pokemon with high friendship (> 150)",
           "items": [
             {
               "name": "ITEM_SOOTHE_BELL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "PkmnFan Club, show pokemon with high friendship (> 150)",
+          "scriptName": "SlateportCity_PokemonFanClub_EventScript_GiveSootheBell::"
         }
       ],
       "image": "SlateportCity_PokemonFanClub",
@@ -10804,37 +10804,37 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Daily berry from Kiri, sometimes Figy",
           "items": [
             {
               "name": "ITEM_FIGY_BERRY",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Daily berry from Kiri, sometimes Figy",
+          "scriptName": "SootopolisCity_EventScript_GiveFigyBerry::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Daily berry from Kiri, sometimes Iapapa",
           "items": [
             {
               "name": "ITEM_IAPAPA_BERRY",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Daily berry from Kiri, sometimes Iapapa",
+          "scriptName": "SootopolisCity_EventScript_GiveIapapaBerry::"
         },
         {
-          "scriptName": "Event Script",
-          "explanation": "Leave Cave of Origin and go to the Gym (part of quest)",
           "items": [
             {
               "name": "ITEM_HM_WATERFALL",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Leave Cave of Origin and go to the Gym (part of quest)",
+          "scriptName": "SootopolisCity_EventScript_GiveWaterfall::"
         }
       ],
       "image": "SootopolisCity",
@@ -10848,8 +10848,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Champ House",
-          "explanation": "Defeat Danni in the Champ's house",
           "items": [],
           "pokemon": [
             {
@@ -10857,11 +10855,11 @@
               "level": 50,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat Danni in the Champ's house",
+          "scriptName": "SootopolisCity_ChampHouse_EventScript_DanniGiveGenesect::"
         },
         {
-          "scriptName": "Champ House",
-          "explanation": "Defeat Masta Janes in the Champ's house",
           "items": [],
           "pokemon": [
             {
@@ -10869,11 +10867,11 @@
               "level": 50,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat Masta Janes in the Champ's house",
+          "scriptName": "SootopolisCity_ChampHouse_EventScript_MastaJanesGiveDitto::"
         },
         {
-          "scriptName": "Champ House",
-          "explanation": "Defeat Befools",
           "items": [],
           "pokemon": [
             {
@@ -10881,7 +10879,9 @@
               "level": 50,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat Befools",
+          "scriptName": "SootopolisCity_ChampHouse_EventScript_BefoolsGiveHoopa::"
         }
       ],
       "image": "SootopolisCity_ChampHouse",
@@ -10911,8 +10911,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Gym",
-          "explanation": "Defeat Juan (aka whoop his ass)",
           "items": [
             {
               "name": "ITEM_GRIMMITE",
@@ -10923,7 +10921,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Juan (aka whoop his ass)",
+          "scriptName": "SootopolisCity_Gym_1F_EventScript_GiveWaterPulse::"
         }
       ],
       "image": "SootopolisCity_Gym_1F",
@@ -11004,8 +11004,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "House2",
-          "explanation": "Trade Arceus Plates with Expert F",
           "items": [
             {
               "name": "ITEM_FIST_PLATE",
@@ -11076,7 +11074,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Trade Arceus Plates with Expert F",
+          "scriptName": "SootopolisCity_House2_EventScript_ExpertF::"
         }
       ],
       "image": "SootopolisCity_House2",
@@ -11090,8 +11090,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "House5",
-          "explanation": "Defeat Natn",
           "items": [],
           "pokemon": [
             {
@@ -11099,11 +11097,11 @@
               "level": 50,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat Natn",
+          "scriptName": "SootopolisCity_House5_EventScript_NatnGiveMeloetta::"
         },
         {
-          "scriptName": "House5",
-          "explanation": "Defeat Master Poucine",
           "items": [],
           "pokemon": [
             {
@@ -11111,11 +11109,11 @@
               "level": 50,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat Master Poucine",
+          "scriptName": "SootopolisCity_House5_EventScript_MasterPoucineGiveMarshadow::"
         },
         {
-          "scriptName": "House5",
-          "explanation": "Defeat Oblivion Wing in House %",
           "items": [],
           "pokemon": [
             {
@@ -11123,7 +11121,9 @@
               "level": 50,
               "isRandom": true
             }
-          ]
+          ],
+          "explanation": "Defeat Oblivion Wing in House %",
+          "scriptName": "SootopolisCity_House5_EventScript_OblivionWingGiveZarude::"
         }
       ],
       "image": "SootopolisCity_House5",
@@ -11153,26 +11153,26 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Lotad And Seedot House",
-          "explanation": "Show Zacian to receive the Rusted Sword",
           "items": [
             {
               "name": "ITEM_RUSTED_SWORD",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Show Zacian to receive the Rusted Sword",
+          "scriptName": "SootopolisCity_LotadAndSeedotHouse_EventScript_SwordMaster::"
         },
         {
-          "scriptName": "Lotad And Seedot House",
-          "explanation": "Show Zamazenta to receive the Rusted Shield",
           "items": [
             {
               "name": "ITEM_RUSTED_SHIELD",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Show Zamazenta to receive the Rusted Shield",
+          "scriptName": "SootopolisCity_LotadAndSeedotHouse_EventScript_ShieldMaster::"
         }
       ],
       "image": "SootopolisCity_LotadAndSeedotHouse",
@@ -11491,15 +11491,15 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Battle Tent Lobby",
-          "explanation": "NPC in Battle Tent gives this",
           "items": [
             {
               "name": "ITEM_TM_DRAINING_KISS",
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "NPC in Battle Tent gives this",
+          "scriptName": "VerdanturfTown_BattleTentLobby_EventScript_AttractGiver::"
         }
       ],
       "image": "VerdanturfTown_BattleTentLobby",
@@ -11513,8 +11513,6 @@
       "pickupItems": [],
       "scriptedGives": [
         {
-          "scriptName": "Event Script",
-          "explanation": "Defeat Ursula.",
           "items": [
             {
               "name": "ITEM_TM_CALM_MIND",
@@ -11549,7 +11547,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Ursula.",
+          "scriptName": "VerdanturfTown_EventScript_UrsulaGiveItems::"
         }
       ],
       "image": "VerdanturfTown_House",
@@ -11630,8 +11630,6 @@
       ],
       "scriptedGives": [
         {
-          "scriptName": "1F",
-          "explanation": "Defeat Wally at the entrance of Victory Road",
           "items": [
             {
               "name": "ITEM_SLAKITE",
@@ -11654,7 +11652,9 @@
               "quantity": 1
             }
           ],
-          "pokemon": []
+          "pokemon": [],
+          "explanation": "Defeat Wally at the entrance of Victory Road",
+          "scriptName": "VictoryRoad_1F_EventScript_WallyEntranceBattle::"
         }
       ],
       "image": "VictoryRoad_1F",

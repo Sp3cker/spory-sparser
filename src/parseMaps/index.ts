@@ -6,13 +6,15 @@ import { parseTrainerBattles } from "./Trainers/trainerInc.ts";
 import {
   LevelIncDataSchema,
   LevelIncData,
-  IncTrainerAndEventData,
+  // IncTrainerAndEventData,
   IncDataSchema,
+  IncScriptEvent,
+  IncTrainer,
+  IncScriptedEventSchema,
+  IncTrainerSchema,
 } from "../validators/levelIncData.js";
 
-export const processIncFile = async (
-  incFileContent: string
-): Promise<IncTrainerAndEventData> => {
+export const processIncFile = async (incFileContent: string) => {
   try {
     const scriptedGiveEvents = parseScriptedEvents(incFileContent);
     const trainerBattles = parseTrainerBattles(incFileContent);
@@ -41,27 +43,130 @@ export const processIncFile = async (
       }));
     }
 
-    // console.warn(
-    //   `maps/${level.thisLevelsId}/scripts.inc ${giveevent.items
-    //     .flatMap((i) => i.name)
-    //     .join(",")}`
-    // );
-
-    // scriptedGives: scriptedGiveEvents,
-    // trainerRefs: trainerBattles,
-
-    return IncDataSchema.parse({
+    IncDataSchema.parse({
       scriptedGives: scriptedGiveEvents,
       trainerRefs: trainerBattles,
     });
+    return {
+      scriptedGives: scriptedGiveEvents,
+      trainerRefs: trainerBattles,
+    };
   } catch (error) {
     throw new Error(
       `Error processing file ${incFileContent.slice(30)}: ${error}`
     );
   }
 };
+async function processMiscScriptsDirectory(miscScriptsPath: string) {
+  const incfilesInMiscDir = readdirSync(miscScriptsPath, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".inc"))
+    .map((entry) => path.join(miscScriptsPath, entry.name));
+  const miscScriptDict = new Map<
+    string,
+    { scriptedGives: IncScriptEvent[]; trainerRefs: IncTrainer[] }
+  >();
 
-async function processDirectory(
+  for (const incFilePath of incfilesInMiscDir) {
+    try {
+      const content = readFileSync(incFilePath, "utf8");
+      const { scriptedGives, trainerRefs } = await processIncFile(content);
+      if (scriptedGives.length === 0 && trainerRefs.length === 0) {
+        continue; // Skip empty scripts
+      }
+      // For misc scripts, we derive the level from the script, inshallah
+      // So we derive a estimated base map the script happens on from the `scriptName`
+      // and return it as a Record.
+      const splitRegex = /^(.*?)_EventScript/g; // Text before _EventScript
+      ["scriptedGives", "trainerRefs"].forEach(
+        (key) => {
+          if (key !== "scriptedGives" && key !== "trainerRefs") {
+            // gotta keep TS happy.
+            return;
+          }
+          // 1. For this inc file, which could have many different prefixes
+          // before `_EventScript`, we assign keys to `miscScriptDict`
+          // based on what we can parse out of the event's script name.
+
+          scriptedGives.map((scriptOrRef) => {
+            const match = key.match(splitRegex);
+            let maybeBaseMap: string;
+            if (match) {
+              maybeBaseMap = `MAP_${match[1].toUpperCase().replace(/_/g, "_")}`;
+            } else {
+              maybeBaseMap = "MAP_UNKNOWN";
+            }
+            try {
+              IncScriptedEventSchema.parse(scriptOrRef);
+            } catch (e) {
+              console.error(
+                `Failed to parse scripted event in ${incFilePath}:`,
+                e
+              );
+              throw e;
+            }
+            // If the map doesn't exist, we create it.
+            if (miscScriptDict.has(maybeBaseMap)) {
+              miscScriptDict
+                .get(maybeBaseMap)!
+                .scriptedGives.push(scriptOrRef as IncScriptEvent);
+            } else {
+              miscScriptDict.set(maybeBaseMap, {
+                scriptedGives: [],
+                trainerRefs: [],
+              });
+              miscScriptDict.get(maybeBaseMap)?.scriptedGives.push(
+                //@ts-ignore
+                scriptOrRef
+              );
+              // miscScriptDict.get(maybeBaseMap)![key] = [
+              //   //@ts-ignore
+              //   scriptOrRef as IncScriptEvent,
+              // ];
+            }
+          });
+          trainerRefs.map((scriptOrRef) => {
+            const match = key.match(splitRegex);
+            let maybeBaseMap: string;
+            if (match) {
+              maybeBaseMap = `MAP_${match[1].toUpperCase().replace(/_/g, "_")}`;
+            } else {
+              maybeBaseMap = "MAP_UNKNOWN";
+            }
+              try {
+                IncTrainerSchema.parse(scriptOrRef);
+              } catch (e) {
+                console.error(`Failed to parse trainer reference in ${incFilePath}:`, e);
+                throw e
+              }
+            if (miscScriptDict.has(maybeBaseMap)) {
+              miscScriptDict.get(maybeBaseMap)![key].push(
+                //@ts-ignore
+                scriptOrRef as IncTrainer
+              );
+            } else {
+              miscScriptDict.set(maybeBaseMap, {
+                scriptedGives: [],
+                trainerRefs: [],
+              });
+              miscScriptDict.get(maybeBaseMap)?.trainerRefs.push(
+                //@ts-ignore
+                scriptOrRef as IncTrainer
+              );
+            }
+          });
+        }
+        // return {
+        //   ...script,
+        //   maybeBaseMap,
+        // };
+      );
+    } catch (e) {
+      console.error(`Failed to process misc script file ${incFilePath}:`, e);
+    }
+  }
+  debugger;
+}
+async function processMapsDirectory(
   mapPath: string,
   folders: Dirent[]
 ): Promise<LevelIncData[]> {
@@ -112,14 +217,20 @@ async function processDirectory(
 }
 
 export async function findGiveItemsByLevel(
-  mapsPath: string
+  mapsPath: string,
+  miscScriptsPath?: string
 ): Promise<LevelIncData[]> {
   const folders = readdirSync(mapsPath, { withFileTypes: true }).filter((entry) =>
     entry.isDirectory()
   );
-  const levels = await processDirectory(mapsPath, folders);
+  const mapLevels = await processMapsDirectory(mapsPath, folders);
+  if (miscScriptsPath) {
+    // If miscScriptsPath is provided, include it in the search
+    //@ts-ignore
+    const miscScripts = await processMiscScriptsDirectory(miscScriptsPath);
+  }
 
-  return levels.map((level: LevelIncData) => {
+  return mapLevels.map((level: LevelIncData) => {
     const obj = {
       baseMap: level.baseMap,
       levelLabel: level.levelLabel,

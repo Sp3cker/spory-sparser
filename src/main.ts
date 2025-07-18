@@ -105,7 +105,7 @@ const mergeDataByLevelsID = async ({
           mergeTrainers(incTrainer, trainersFlat, thisLevelsId, pickupEntry)
         )
         .filter((trainer) => trainer !== null) as Trainer[];
-      debugger;
+
       /** filter out battles with same ID. Generally these get in here
        * because of double battles. When there are duplicates, prioritize keeping
        * the one with rematch: true but preserve sprite from original
@@ -248,7 +248,10 @@ const mergeDataByLevelsID = async ({
     const martSections = await findMartSectionsByLevel(config.mapsDir);
 
     // Find and log give items by level
-    const scriptedGives = await findGiveItemsByLevel(config.mapsDir);
+    const scriptedGives = await findGiveItemsByLevel(
+      config.mapsDir,
+      config.miscScriptsDir
+    );
 
     // Parse map events
     const mapEvents = await main(config.mapsDir);

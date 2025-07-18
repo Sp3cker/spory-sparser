@@ -10,6 +10,7 @@ const ConfigSchema = z.object({
     sprites: z.string().min(1, "Sprites directory path cannot be empty"),
     maps: z.string().min(1, "Maps directory path cannot be empty"),
     output: z.string().min(1, "Output directory path cannot be empty"),
+    miscScripts: z.string().min(1, "Misc scripts directory path cannot be empty"),
   }),
 });
 
@@ -22,6 +23,7 @@ export class Config {
   public readonly rootDir: string = process.cwd();
   public readonly mapsDir: string;
   public readonly outputDir: string;
+  public readonly miscScriptsDir: string;
   constructor(configPath: string = "sparser.toml") {
     try {
       // Read and parse the TOML file
@@ -62,6 +64,12 @@ export class Config {
           ? validatedConfig.directories.output.slice(1)
           : validatedConfig.directories.output
       );
+      this.miscScriptsDir = resolve(
+        process.cwd(),
+        validatedConfig.directories.miscScripts.startsWith("/")
+          ? validatedConfig.directories.miscScripts.slice(1)
+          : validatedConfig.directories.miscScripts
+      );
       // Validate that all directories exist
       this.validateDirectoriesExist();
     } catch (error) {
@@ -92,6 +100,7 @@ export class Config {
       sprites: this.sprites,
       maps: this.mapsDir,
       generated: resolve(this.rootDir, "generated"),
+      miscScripts: this.miscScriptsDir,
     };
 
     const missingDirectories: string[] = [];

@@ -256,17 +256,11 @@ function extractIncScriptBlocks(
   return sections;
 }
 
-function prettifyLabel(raw: string): string {
-  const [, afterFirstUnderscore] = raw.split("_", 2);
-  return (afterFirstUnderscore ?? raw).replace(/([a-z])([A-Z])/g, "$1 $2");
-  // .replace(/s\b/, "'s");
-}
-
 /**
  * Main parser function for .inc files
- * Pass a file path.
+ * Pass the parsed file.
  */
-export function parseScriptedEvents(content: string): IncScriptEvent[] {
+export function parseScriptedEvents(content: string) {
   // console.log("[incParser] Starting to parse .inc content");
 
   const scriptBlocks = extractIncScriptBlocks(content);
@@ -287,21 +281,21 @@ export function parseScriptedEvents(content: string): IncScriptEvent[] {
     return notneededLabels.includes(section.scriptName) === false;
   });
   // Remove the first bit of scropt name before first underscore (?)
-  for (const script of neededScripts) {
-    try {
-      const splitScriptName = script.scriptName.split("_");
-      if (splitScriptName[1]) {
-        script.scriptName = prettifyLabel(splitScriptName[1]);
-      } else {
-        script.scriptName = splitScriptName[0];
-        // .replace(/([A-Z])(?=[A-Z\\d])/g, " $1")
-        // .trim()
-        // .replace(/\\b\\w/g, (char: string) => char.toUpperCase()); // Added type for char
-      }
-    } catch (err) {
-      console.error(`Error processing script name ${script.scriptName}:`, err);
-    }
-  }
+  // for (const script of neededScripts) {
+  //   try {
+  //     const splitScriptName = script.scriptName.split("_");
+  //     if (splitScriptName[1]) {
+  //       script.scriptName = prettifyLabel(splitScriptName[1]);
+  //     } else {
+  //       script.scriptName = splitScriptName[0];
+  //       // .replace(/([A-Z])(?=[A-Z\\d])/g, " $1")
+  //       // .trim()
+  //       // .replace(/\\b\\w/g, (char: string) => char.toUpperCase()); // Added type for char
+  //     }
+  //   } catch (err) {
+  //     console.error(`Error processing script name ${script.scriptName}:`, err);
+  //   }
+  // }
   const groupedByExplanation = new Map<string, IncScriptEvent>();
   const scriptsWithoutExplanation: IncScriptEvent[] = [];
   /** Group scripts by explanation to merge give events with the same explainer tag */
@@ -316,8 +310,7 @@ export function parseScriptedEvents(content: string): IncScriptEvent[] {
             (item) => item.name === newItem.name
           );
           if (existingItemIndex !== -1) {
-            existingScript.items[existingItemIndex].quantity +=
-              newItem.quantity;
+            existingScript.items[existingItemIndex].quantity += newItem.quantity;
           } else {
             existingScript.items.push(newItem);
           }

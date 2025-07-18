@@ -29,6 +29,7 @@ LilycoveCity_ContestLobby_EventScript_ReceptionWelcome::
 	return
 
 LilycoveCity_ContestLobby_EventScript_GivePokeblockCase::
+@explanation Speak to receptionist in Contest Hall
 	msgbox LilycoveCity_ContestLobby_Text_ReceptionDontHavePokeblockCase, MSGBOX_DEFAULT
 	giveitem ITEM_POKEBLOCK_CASE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
@@ -43,6 +44,7 @@ LilycoveCity_ContestLobby_EventScript_PickUpPrize::
 	end
 
 LilycoveCity_ContestLobby_EventScript_GiveLuxuryBallAtCounter::
+@explanation Won as a prize at the Contest Hall
 	giveitem ITEM_LUXURY_BALL
 	goto_if_eq VAR_RESULT, FALSE, LilycoveCity_ContestLobby_EventScript_NoRoomForLuxuryBallAtCounter
 	setvar VAR_CONTEST_PRIZE_PICKUP, 0
@@ -1150,6 +1152,7 @@ ContestHall_EventScript_NoRoomForLuxuryBall::
 	return
 
 ContestHall_EventScript_GiveLuxuryBall::
+@explanation Free Luxury Balls for life after getting a Master Rank Ribbon
 	giveitem ITEM_LUXURY_BALL
 	goto_if_eq VAR_RESULT, FALSE, ContestHall_EventScript_NoRoomForLuxuryBall
 	lockall
