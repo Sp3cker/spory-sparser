@@ -76,7 +76,7 @@ async function processMiscScriptsDirectory(miscScriptsPath: string) {
       // For misc scripts, we derive the level from the script, inshallah
       // So we derive a estimated base map the script happens on from the `scriptName`
       // and return it as a Record.
-      const splitRegex = /^(.*?)_EventScript/g; // Text before _EventScript
+      const splitRegex = /^(.*?)_EventScript/; // Text before _EventScript
       ["scriptedGives", "trainerRefs"].forEach(
         (key) => {
           if (key !== "scriptedGives" && key !== "trainerRefs") {
@@ -88,7 +88,7 @@ async function processMiscScriptsDirectory(miscScriptsPath: string) {
           // based on what we can parse out of the event's script name.
 
           scriptedGives.map((scriptOrRef) => {
-            const match = key.match(splitRegex);
+            const match = scriptOrRef.scriptName.match(splitRegex);
             let maybeBaseMap: string;
             if (match) {
               maybeBaseMap = `MAP_${match[1].toUpperCase().replace(/_/g, "_")}`;
@@ -132,12 +132,15 @@ async function processMiscScriptsDirectory(miscScriptsPath: string) {
             } else {
               maybeBaseMap = "MAP_UNKNOWN";
             }
-              try {
-                IncTrainerSchema.parse(scriptOrRef);
-              } catch (e) {
-                console.error(`Failed to parse trainer reference in ${incFilePath}:`, e);
-                throw e
-              }
+            try {
+              IncTrainerSchema.parse(scriptOrRef);
+            } catch (e) {
+              console.error(
+                `Failed to parse trainer reference in ${incFilePath}:`,
+                e
+              );
+              throw e;
+            }
             if (miscScriptDict.has(maybeBaseMap)) {
               miscScriptDict.get(maybeBaseMap)![key].push(
                 //@ts-ignore

@@ -4,7 +4,7 @@ import { writeFile, readFile } from "fs/promises";
 import { findMartSectionsByLevel, Mart, MartEntry } from "./parseMarts.ts";
 import { findGiveItemsByLevel, LevelIncData } from "./parseMaps/index.ts";
 import { main } from "./parseMapEvents.ts";
-import { extractTrainerParties } from "./parseMaps/Trainers/extractTrainerPartiesfromHeaderFile.ts";
+// import { extractTrainerParties } from "./parseMaps/Trainers/extractTrainerPartiesfromHeaderFile.ts";
 import { extractTrainers } from "./parseMaps/Trainers/extractTrainersFromHeaderFile.ts";
 
 import { MapEventPlace, TrainerStruct } from "./validators/index.ts";
@@ -223,7 +223,10 @@ const mergeDataByLevelsID = async ({
       encountersData.map((enc: any) => [enc.map, enc])
     );
     // --- Trainer & party extraction ----------------------------------
-    const trainerParties = extractTrainerParties(config.dataDir);
+    const trainerParties = await readFile(
+      path.join(config.dataDir, "trainer_parties.json"),
+      "utf8"
+    ).then(JSON.parse);
     const trainersFlat: Record<string, TrainerStruct> = extractTrainers(
       config.dataDir,
       trainerParties,
@@ -235,10 +238,10 @@ const mergeDataByLevelsID = async ({
     mkdirSync(path.join(config.outputDir), { recursive: true });
 
     // Optionally persist to disk for inspection
-    await writeFile(
-      path.join(config.outputDir, "trainer_parties.json"),
-      prettyPrint(trainerParties)
-    );
+    // await writeFile(
+    //   path.join(config.outputDir, "trainer_parties.json"),
+    //   prettyPrint(trainerParties)
+    // );
     await writeFile(
       path.join(config.outputDir, "trainers_flat.json"),
       prettyPrint(trainersFlat)
