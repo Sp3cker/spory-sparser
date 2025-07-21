@@ -38,7 +38,7 @@ test("parse an inc file with multiple items and pokemon", async (t) => {
   const result = await processIncFile(content);
   t.is(result.scriptedGives.length, 1);
   t.deepEqual(result.scriptedGives[0], {
-    scriptName: "testscript",
+    scriptName: " levelname_testscript_script",
     explanation: "test multiple items",
     items: [
       { name: "ITEM_POTION", quantity: 3 },
@@ -80,7 +80,7 @@ test("parse an inc file with only pokemon", async (t) => {
   const result = await processIncFile(content);
   t.is(result.scriptedGives.length, 1);
   t.deepEqual(result.scriptedGives[0], {
-    scriptName: "pokemononly",
+    scriptName: "levelname_pokemononly_script::",
     explanation: "only pokemon here",
     items: [],
     pokemon: [

@@ -58,7 +58,9 @@ export const processIncFile = async (incFileContent: string) => {
   }
 };
 async function processMiscScriptsDirectory(miscScriptsPath: string) {
-  const incfilesInMiscDir = readdirSync(miscScriptsPath, { withFileTypes: true })
+  const incfilesInMiscDir = readdirSync(miscScriptsPath, {
+    withFileTypes: true,
+  })
     .filter((entry) => entry.isFile() && entry.name.endsWith(".inc"))
     .map((entry) => path.join(miscScriptsPath, entry.name));
   const miscScriptDict = new Map<
@@ -167,7 +169,7 @@ async function processMiscScriptsDirectory(miscScriptsPath: string) {
       console.error(`Failed to process misc script file ${incFilePath}:`, e);
     }
   }
-  debugger;
+  console.log(miscScriptDict);
 }
 async function processMapsDirectory(
   mapPath: string,
@@ -221,10 +223,11 @@ async function processMapsDirectory(
 
 export async function findGiveItemsByLevel(
   mapsPath: string,
-  miscScriptsPath?: string
+  miscScriptsPath?: string,
+  miscScriptNamesToLevels?: Record<string, string>
 ): Promise<LevelIncData[]> {
-  const folders = readdirSync(mapsPath, { withFileTypes: true }).filter((entry) =>
-    entry.isDirectory()
+  const folders = readdirSync(mapsPath, { withFileTypes: true }).filter(
+    (entry) => entry.isDirectory()
   );
   const mapLevels = await processMapsDirectory(mapsPath, folders);
   if (miscScriptsPath) {
