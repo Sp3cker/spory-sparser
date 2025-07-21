@@ -223,8 +223,7 @@ async function processMapsDirectory(
 
 export async function findGiveItemsByLevel(
   mapsPath: string,
-  miscScriptsPath?: string,
-  miscScriptNamesToLevels?: Record<string, string>
+  miscScriptsPath?: string
 ): Promise<LevelIncData[]> {
   const folders = readdirSync(mapsPath, { withFileTypes: true }).filter(
     (entry) => entry.isDirectory()
