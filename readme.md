@@ -8,7 +8,48 @@ This library primarily parses `.inc` files from a Pokémon Decompilation Project
 It also can parse your `trainer_parties.h` and document what trainers are on each Map, if you're old-school.
 The resultant JSON looks like this:
 
-```
+```json
+"MAP_ROUTE109": [
+    {
+      "thisLevelsId": "MAP_ROUTE109",
+      "baseMap": "MAP_ROUTE109",
+      "levelLabel": "",
+      "shopItems": [],
+      "pickupItems": [
+        {
+          "coords": [
+            10,
+            24
+          ],
+          "item": "ITEM_PP_UP",
+          "type": "object_event"
+        },
+      ],
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_CHESTO_BERRY",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "explanation": "Florist that gives you berries",
+          "scriptName": "Route104_EventScript_ExpertF::"
+        },
+      ],
+      "image": "Route104",
+      "trainerRefs": [
+        {
+          "id": "TRAINER_IVAN",
+          "script": "Route104_EventScript_Ivan",
+          "rematch": false
+        },
+        {
+          "id": "TRAINER_BILLY",
+          "script": "Route104_EventScript_Billy",
+          "rematch": false
+        },]
 
 ```
 

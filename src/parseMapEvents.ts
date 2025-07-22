@@ -87,9 +87,10 @@ function extractMapData(mapObj: any): { trainers: any[]; pickupitems: any[] } {
           graphics_id: obj.graphics_id.split("GFX_")[1].toLowerCase() + ".webp",
         });
       }
+      // Find pickup items
       if (
         obj.graphics_id &&
-        obj.graphics_id.startsWith("OBJ_EVENT_GFX_ITEM_BALL") &&
+        obj.graphics_id.includes("ITEM_BALL") &&
         obj.trainer_type === "TRAINER_TYPE_NONE" &&
         obj.trainer_sight_or_berry_tree_id !== "0"
       ) {
