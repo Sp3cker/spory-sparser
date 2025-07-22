@@ -36,6 +36,7 @@ Route111_EventScript_SecretPowerMan::
 	end
 
 Route111_EventScript_GiveSecretPower::
+@explanation Speak to NPC 
 	giveitem ITEM_TM_DEFOG
 	msgbox Route111_Text_ExplainSecretPower, MSGBOX_DEFAULT
 	closemessage

@@ -2051,6 +2051,28 @@
           "pokemon": [],
           "explanation": "Defeat Dawn",
           "scriptName": "LilycoveCity_EventScript_DawnDefeated::"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_POKEBLOCK_CASE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "explanation": "Speak to receptionist in Contest Hall",
+          "scriptName": "LilycoveCity_ContestLobby_EventScript_GivePokeblockCase::"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_LUXURY_BALL",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "explanation": "Won as a prize at the Contest Hall",
+          "scriptName": "LilycoveCity_ContestLobby_EventScript_GiveLuxuryBallAtCounter::"
         }
       ],
       "image": "LilycoveCity",
@@ -6639,6 +6661,17 @@
           ],
           "explanation": "Defeat Black Belt Diasuke",
           "scriptName": "Route111_EventScript_DaisukeGiveTyrogue::"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_TM_DEFOG",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "explanation": "Speak to NPC",
+          "scriptName": "Route111_EventScript_GiveSecretPower::"
         }
       ],
       "image": "Route111",
