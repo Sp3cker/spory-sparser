@@ -8,7 +8,6 @@ MauvilleCity_House1_MapScripts::
 
 # 5 "data/maps/MauvilleCity_House1/scripts.pory"
 MauvilleCity_House1_EventScript_RockSmashDude::
-@explanation Speak to Rock Smash Dude
 # 6 "data/maps/MauvilleCity_House1/scripts.pory"
 	lock
 # 7 "data/maps/MauvilleCity_House1/scripts.pory"

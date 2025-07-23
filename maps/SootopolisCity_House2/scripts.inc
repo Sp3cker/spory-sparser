@@ -7,6 +7,7 @@ SootopolisCity_House2_MapScripts::
 
 SootopolisCity_House2_EventScript_ExpertF::
 @explanation Trade Arceus Plates with Expert F
+
 # 8 "data/maps/SootopolisCity_House2/scripts.pory"
 	lock
 # 9 "data/maps/SootopolisCity_House2/scripts.pory"

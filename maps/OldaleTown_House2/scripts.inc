@@ -16,7 +16,6 @@ OldaleTown_House2_EventScript_Woman::
 
 # 9 "data/maps/OldaleTown_House2/scripts.pory"
 OldaleTown_House2_EventScript_Man::
-@explanation Be a real OG – Talk to a man in House 2
 # 10 "data/maps/OldaleTown_House2/scripts.pory"
 	lock
 # 11 "data/maps/OldaleTown_House2/scripts.pory"

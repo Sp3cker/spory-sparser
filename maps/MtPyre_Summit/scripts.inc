@@ -332,7 +332,6 @@ MtPyre_Summit_EventScript_OldLady::
 
 # 167 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_EventScript_OldLadyOrbsReturned::
-@explanation Defeat Environmental Terrorists, save Mt. Pyre
 # 168 "data/maps/MtPyre_Summit/scripts.pory"
 	msgbox MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs, MSGBOX_DEFAULT
 # 169 "data/maps/MtPyre_Summit/scripts.pory"

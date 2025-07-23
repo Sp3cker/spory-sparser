@@ -873,16 +873,18 @@ PlayersHouse_1F_Text_WhatColorDidTheySay:
 # 437 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	.string "Pokémon were on the Southern Island?\p"
 # 438 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "Well, I actually happened to have a\n"
+	.string "Did your friend Wally deliver those\n"
 # 439 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "ticket to get to the Southern Island…\p"
+	.string "tickets I sent with him?\p"
 # 440 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "You are the Champion now, maybe you\n"
+	.string "I think one of them could get you to\n"
 # 441 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "should go check it out!$"
+	.string "Southern Island, you should check it\l"
 # 442 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-
+	.string "out if you haven't yet!$"
 # 443 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-PlayersHouse_1F_Text_StillUnknownPokemon:
+
 # 444 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
+PlayersHouse_1F_Text_StillUnknownPokemon:
+# 445 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	.string "Just be careful out there, {PLAYER}!$"
