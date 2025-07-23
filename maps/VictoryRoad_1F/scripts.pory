@@ -51,6 +51,11 @@ VictoryRoad_1F_EventScript_WallyEntranceBattle::
 	giveitem ITEM_SALAMENCITE
 	giveitem ITEM_GARCHOMPITE
 	giveitem ITEM_METAGROSSITE
+	msgbox VictoryRoad_1F_Text_WallyTicketsFromDad, MSGBOX_DEFAULT
+	giveitem ITEM_EON_TICKET
+	giveitem ITEM_AURORA_TICKET
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
+	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
 	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_DEFAULT
 	closemessage
 	clearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY
@@ -183,6 +188,14 @@ VictoryRoad_1F_Text_WallyGiftFromDad:
 	.string "some extras to make up for it.\p"
 	.string "Here you go, {PLAYER}.$"
 
+VictoryRoad_1F_Text_WallyTicketsFromDad:
+	.string "Oh I almost forgot, he gave me these to\n"
+	.string "give to you too.\p"
+	.string "I'm not sure where these tickets will\n"
+	.string "take you, but your dad said you can go\l"
+	.string "to the ferry in Lilycove City and use\l"
+	.string "the tickets there.$"
+
 VictoryRoad_1F_Text_WallyIntro:
 	.string "Hi! {PLAYER}!\p"
 	.string "I've gotten stronger since that last\n"
@@ -261,3 +274,226 @@ VictoryRoad_1F_Text_KatelynnPostBattle:
 	.string "Humph, go right on ahead.\n"
 	.string "See if I care.$"
 `
+
+
+script VictoryRoad_1F_EventScript_PowerfulMonSummoner {
+	lock
+	faceplayer
+	if(flag(FLAG_TEMP_1))
+	{
+		msgbox(VictoryRoad_1F_Text_SummonerIntroQuick, MSGBOX_YESNO)	
+	}
+	else
+	{
+		msgbox(VictoryRoad_1F_Text_SummonerIntro, MSGBOX_YESNO)
+	}
+
+	setflag(FLAG_TEMP_1)
+
+	if(var(VAR_RESULT) == NO)
+	{
+		goto(VictoryRoad_1F_EventScript_SummonWomanManNo)
+	}
+
+	goto(VictoryRoad_1F_EventScript_ChooseRoom)
+	release
+	end
+}
+
+script VictoryRoad_1F_EventScript_ChooseRoom {
+	msgbox(VictoryRoad_1F_Text_WhichRoom, MSGBOX_DEFAULT)
+
+	dynmultipush("Entrance Room", 0)
+	dynmultipush("Inner Room", 1)
+	dynmultipush("Stairs Room", 2)
+    dynmultipush("Cancel", MULTI_B_PRESSED)
+
+	//.macro dynmultistack left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req
+    // // setting initial selected to a non-existant ID will always have it point to the first option
+	dynmultistack(0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+
+	if (var(VAR_RESULT) == MULTI_B_PRESSED)
+	{
+		goto(VictoryRoad_1F_EventScript_SummonWomanManNo)
+	}
+
+	if (var(VAR_RESULT) == 0)
+	{
+		goto(VictoryRoad_1F_EventScript_EntranceRoom)
+	}
+	if (var(VAR_RESULT) == 1)
+	{
+		goto(VictoryRoad_1F_EventScript_InnerRoom)
+	}
+	if (var(VAR_RESULT) == 2)
+	{
+		goto(VictoryRoad_1F_EventScript_StairsRoom)
+	}
+
+	release
+	end
+}
+
+script VictoryRoad_1F_EventScript_EntranceRoom {
+	msgbox(VictoryRoad_1F_Text_WhichPokemon, MSGBOX_DEFAULT)
+
+	dynmultipush("Great Tusk",   SPECIES_GREAT_TUSK)
+	dynmultipush("Scream Tail",  SPECIES_SCREAM_TAIL)
+	dynmultipush("Brute Bonnet", SPECIES_BRUTE_BONNET)
+	dynmultipush("Flutter Mane", SPECIES_FLUTTER_MANE)
+	dynmultipush("Slither Wing", SPECIES_SLITHER_WING)
+	dynmultipush("Sandy Shocks", SPECIES_SANDY_SHOCKS)
+	dynmultipush("Roaring Moon", SPECIES_ROARING_MOON)
+	dynmultipush("Walking Wake", SPECIES_WALKING_WAKE)
+	dynmultipush("Gouging Fire", SPECIES_GOUGING_FIRE)
+	dynmultipush("Raging Bolt",  SPECIES_RAGING_BOLT)
+    dynmultipush("Back", MULTI_B_PRESSED)
+
+	//.macro dynmultistack left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req
+    // // setting initial selected to a non-existant ID will always have it point to the first option
+	dynmultistack(0, 0, FALSE, 6, FALSE, SPECIES_GREAT_TUSK, DYN_MULTICHOICE_CB_NONE)
+
+	if (var(VAR_RESULT) == MULTI_B_PRESSED) 
+	{
+		goto(VictoryRoad_1F_EventScript_ChooseRoom)
+	}
+
+	goto(VictoryRoad_1F_EventScript_ConfirmAndUseSummon)
+
+	release
+	end
+
+}
+
+script VictoryRoad_1F_EventScript_InnerRoom {
+	msgbox(VictoryRoad_1F_Text_WhichPokemon, MSGBOX_DEFAULT)
+
+	dynmultipush("Iron Treads",   SPECIES_IRON_TREADS)
+	dynmultipush("Iron Bundle",   SPECIES_IRON_BUNDLE)
+	dynmultipush("Iron Hands",    SPECIES_IRON_HANDS)
+	dynmultipush("Iron Jugulis",  SPECIES_IRON_JUGULIS)
+	dynmultipush("Iron Moth",     SPECIES_IRON_MOTH)
+	dynmultipush("Iron Thorns",   SPECIES_IRON_THORNS)
+	dynmultipush("Iron Valiant",  SPECIES_IRON_VALIANT)
+	dynmultipush("Iron Leaves",   SPECIES_IRON_LEAVES)
+	dynmultipush("Iron Boulder",  SPECIES_IRON_BOULDER)
+	dynmultipush("Iron Crown",    SPECIES_IRON_CROWN)
+    dynmultipush("Back", MULTI_B_PRESSED)
+
+	//.macro dynmultistack left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req
+    // // setting initial selected to a non-existant ID will always have it point to the first option
+	dynmultistack(0, 0, FALSE, 6, FALSE, SPECIES_IRON_TREADS, DYN_MULTICHOICE_CB_NONE)
+
+	if (var(VAR_RESULT) == MULTI_B_PRESSED) 
+	{
+		goto(VictoryRoad_1F_EventScript_ChooseRoom)
+	}
+
+	goto(VictoryRoad_1F_EventScript_ConfirmAndUseSummon)
+
+	release
+	end
+
+}
+
+script VictoryRoad_1F_EventScript_StairsRoom {
+	msgbox(VictoryRoad_1F_Text_WhichPokemon, MSGBOX_DEFAULT)
+
+	dynmultipush("Nihilego",    SPECIES_NIHILEGO)
+	dynmultipush("Guzzlord",    SPECIES_GUZZLORD)
+	dynmultipush("Xurkitree",   SPECIES_XURKITREE)
+	dynmultipush("Buzzwole",    SPECIES_BUZZWOLE)
+	dynmultipush("Blacephalon", SPECIES_BLACEPHALON)
+	dynmultipush("Stakataka",   SPECIES_STAKATAKA)
+	dynmultipush("Poipole",     SPECIES_POIPOLE)
+	dynmultipush("Pheromosa",   SPECIES_PHEROMOSA)
+	dynmultipush("Celesteela",  SPECIES_CELESTEELA)
+    dynmultipush("Back", MULTI_B_PRESSED)
+
+	//.macro dynmultistack left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req
+    // // setting initial selected to a non-existant ID will always have it point to the first option
+	dynmultistack(0, 0, FALSE, 6, FALSE, SPECIES_NIHILEGO, DYN_MULTICHOICE_CB_NONE)
+
+	if (var(VAR_RESULT) == MULTI_B_PRESSED) 
+	{
+		goto(VictoryRoad_1F_EventScript_ChooseRoom)
+	}
+
+	goto(VictoryRoad_1F_EventScript_ConfirmAndUseSummon)
+
+	release
+	end
+
+}
+
+
+script VictoryRoad_1F_EventScript_ConfirmAndUseSummon {
+	copyvar(VAR_0x8005, VAR_RESULT)
+	bufferspeciesname(STR_VAR_1, VAR_0x8005)
+	msgbox(VictoryRoad_1F_Text_ConfirmSummon, MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == NO)
+	{
+		goto(VictoryRoad_1F_EventScript_SummonWomanManNo)
+	}
+
+	msgbox(VictoryRoad_1F_Text_VeryWell, MSGBOX_DEFAULT)
+	delay(30)
+
+	setwildbattle(VAR_0x8005, 50)
+	waitse
+	playmoncry(VAR_0x8005, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	dowildbattle
+	release
+	end
+}
+
+script VictoryRoad_1F_EventScript_SummonWomanManNo
+{
+    msgbox(VictoryRoad_1F_SummonWomanDeclined, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+ 
+text VictoryRoad_1F_Text_SummonerIntro {
+	"Hello, young trainer.\p"
+	"I've come to this remote location\n"
+	"because I have learned a powerful\l"
+	"technique that allows me to summon one\l"
+	"Pokémon from a remote location.\p"
+	"Would you like me to summon a Pokémon\n"
+	"here so you can battle it?"
+}
+
+text VictoryRoad_1F_Text_SummonerIntroQuick {
+	"Would you like me to summon a Pokémon\n"
+	"here so you can battle it?"
+}
+
+text VictoryRoad_1F_Text_WhichRoom {
+	"Which room would you like me to summon a\n"
+	"Pokémon from?"
+}
+
+text VictoryRoad_1F_Text_WhichPokemon {
+	"Which Pokémon would you like me to\n"
+	"summon so you can battle?"
+}
+
+text VictoryRoad_1F_Text_ConfirmSummon {
+	"So you want me to summon a\n"
+	"{STR_VAR_1} for you to battle?"
+}
+
+text VictoryRoad_1F_Text_VeryWell {
+	"Very well, prepare yourself for battle."
+}
+
+text VictoryRoad_1F_SummonWomanDeclined
+{
+	"I see. Let me know if you change\n"
+	"your mind."
+}

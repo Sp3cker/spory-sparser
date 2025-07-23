@@ -209,7 +209,7 @@ LittlerootTown_OnTransition:
 # 105 "data/maps/LittlerootTown/scripts.pory"
 # 53 "data/maps/LittlerootTown/scripts.pory"
 # 106 "data/maps/LittlerootTown/scripts.pory"
-	call_if_eq VAR_GIVE_BIRTH_ISLAND_TICKET, 1, LittlerootTown_EventScript_HideMapNamePopup
+	call_if_eq VAR_GIVE_NAVEL_ISLAND_TICKET, 1, LittlerootTown_EventScript_HideMapNamePopup
 # 107 "data/maps/LittlerootTown/scripts.pory"
 # 54 "data/maps/LittlerootTown/scripts.pory"
 # 108 "data/maps/LittlerootTown/scripts.pory"
@@ -449,7 +449,7 @@ LittlerootTown_OnFrame:
 # 225 "data/maps/LittlerootTown/scripts.pory"
 # 113 "data/maps/LittlerootTown/scripts.pory"
 # 226 "data/maps/LittlerootTown/scripts.pory"
-	map_script_2 VAR_GIVE_BIRTH_ISLAND_TICKET, 1, LittlerootTown_EventScript_BeginDexUpgradeScene
+	map_script_2 VAR_GIVE_NAVEL_ISLAND_TICKET, 1, LittlerootTown_EventScript_BeginDexUpgradeScene
 # 227 "data/maps/LittlerootTown/scripts.pory"
 # 114 "data/maps/LittlerootTown/scripts.pory"
 # 228 "data/maps/LittlerootTown/scripts.pory"
@@ -913,7 +913,7 @@ LittlerootTown_OnWarp:
 # 457 "data/maps/LittlerootTown/scripts.pory"
 # 229 "data/maps/LittlerootTown/scripts.pory"
 # 458 "data/maps/LittlerootTown/scripts.pory"
-	map_script_2 VAR_GIVE_BIRTH_ISLAND_TICKET, 1, LittlerootTown_EventScript_SetRivalBirchPosForDexUpgrade
+	map_script_2 VAR_GIVE_NAVEL_ISLAND_TICKET, 1, LittlerootTown_EventScript_SetRivalBirchPosForDexUpgrade
 # 459 "data/maps/LittlerootTown/scripts.pory"
 # 230 "data/maps/LittlerootTown/scripts.pory"
 # 460 "data/maps/LittlerootTown/scripts.pory"

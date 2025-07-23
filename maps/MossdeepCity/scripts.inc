@@ -511,6 +511,7 @@ MossdeepCity_EventScript_Man::
 # 256 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_EventScript_KingsRockBoy::
 @explanation Talk to Kings Rock Boy
+
 # 257 "data/maps/MossdeepCity/scripts.pory"
 	lock
 # 258 "data/maps/MossdeepCity/scripts.pory"

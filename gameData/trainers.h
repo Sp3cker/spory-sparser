@@ -189,7 +189,7 @@
         .trainerName = _("Declan"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY  | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY  | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_POWERFUL_STATUS,
         .party = TRAINER_PARTY(sParty_Declan),
         .isBossTrainer = TRUE,
     },
@@ -744,16 +744,39 @@
         .party = TRAINER_PARTY(sParty_Ricky1),
     },
 
-    [TRAINER_SIMON] =
+    [TRAINER_BRIAN] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_M,
-        .trainerName = _("Simon"),
+        .trainerClass = TRAINER_CLASS_GUITARIST,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerName = _("Brian"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
-        .party = TRAINER_PARTY(sParty_Simon),
+        .party = TRAINER_PARTY(sParty_Brian2Badges),
+        .isBossTrainer = TRUE,
+        .partyPickerFunction = HotHousePartyPicker,
+        .additionalParties =
+        {
+            sParty_Brian3Badges,
+            sParty_Brian4Badges,
+            sParty_Brian5Badges,
+            sParty_Brian6Badges,
+            sParty_Brian7Badges
+        },
+        .additionalPartySizes = {3, 4, 5, 6, 6},
+    },
+
+    [TRAINER_BRIAN_2] =
+    {
+        .trainerClass = TRAINER_CLASS_GUITARIST,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerName = _("Brian"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .party = TRAINER_PARTY(sParty_Brian7Badges),
         .isBossTrainer = TRUE,
     },
 
@@ -817,29 +840,6 @@
         .party = TRAINER_PARTY(sParty_Ricky5),
     },
 
-    [TRAINER_GEORGE] =
-    {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .trainerName = _("George"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .party = TRAINER_PARTY(sParty_George),
-    },
-
-    [TRAINER_BERKE] =
-    {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .trainerName = _("Berke"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .party = TRAINER_PARTY(sParty_Berke),
-    },
 
     [TRAINER_BRAXTON] =
     {
@@ -5994,8 +5994,18 @@
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
-        .party = TRAINER_PARTY(sParty_Dwayne),
+        .party = TRAINER_PARTY(sParty_Dwayne2Badges),
         .isBossTrainer = TRUE,
+        .partyPickerFunction = HotHousePartyPicker,
+        .additionalParties =
+        {
+            sParty_Dwayne3Badges,
+            sParty_Dwayne4Badges,
+            sParty_Dwayne5Badges,
+            sParty_Dwayne6Badges,
+            sParty_Dwayne7Badges
+        },
+        .additionalPartySizes = {3, 4, 5, 6, 6},
     },
 
     [TRAINER_PHILLIP] =
@@ -7769,8 +7779,18 @@
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
-        .party = TRAINER_PARTY(sParty_Johanna),
+        .party = TRAINER_PARTY(sParty_Johanna2Badges),
         .isBossTrainer = TRUE,
+        .partyPickerFunction = HotHousePartyPicker,
+        .additionalParties =
+        {
+            sParty_Johanna3Badges,
+            sParty_Johanna4Badges,
+            sParty_Johanna5Badges,
+            sParty_Johanna6Badges,
+            sParty_Johanna7Badges
+        },
+        .additionalPartySizes = {3, 4, 5, 6, 6},
     },
 
     [TRAINER_GERALD] =
@@ -9424,7 +9444,7 @@
         .trainerName = _("Winona"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Winona2),
         .isBossTrainer = TRUE,
     },
@@ -9437,7 +9457,7 @@
         .trainerName = _("Winona"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Winona3),
         .isBossTrainer = TRUE,
     },
@@ -9450,7 +9470,7 @@
         .trainerName = _("Winona"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Winona4),
         .isBossTrainer = TRUE,
     },
@@ -9463,7 +9483,7 @@
         .trainerName = _("Winona"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_Winona5),
         .isBossTrainer = TRUE,
     },
@@ -10322,7 +10342,7 @@
         .trainerName = _("Dawn"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_HP_AWARE | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .party = TRAINER_PARTY(sParty_DawnRoute111),
         .isBossTrainer = TRUE,
     },
@@ -10517,5 +10537,18 @@
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .party = TRAINER_PARTY(sParty_OblivionWing),
+        .isBossTrainer = TRUE,
+    },
+
+    [TRAINER_BURAK] =
+    {
+        .trainerClass = TRAINER_CLASS_RIVAL,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_CUE_BALL_FIRERED,
+        .trainerName = _("Burak"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .party = TRAINER_PARTY(sParty_Burak),
         .isBossTrainer = TRUE,
     },

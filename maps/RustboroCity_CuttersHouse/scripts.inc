@@ -9,6 +9,7 @@ RustboroCity_CuttersHouse_MapScripts::
 # 5 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 RustboroCity_CuttersHouse_EventScript_Cutter::
 @explanation Speak to Mr. Cutter in Cutter's House
+
 # 6 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	lock
 # 7 "data/maps/RustboroCity_CuttersHouse/scripts.pory"

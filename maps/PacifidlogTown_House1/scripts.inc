@@ -25,6 +25,7 @@ PacifidlogTown_House1_Text_SixDotsOpenThreeDoors:
 
 PacifidlogTown_House1_EventScript_Man::
 @explanation Speak to man in House 1
+
 # 17 "data/maps/PacifidlogTown_House1/scripts.pory"
 	lock
 # 18 "data/maps/PacifidlogTown_House1/scripts.pory"

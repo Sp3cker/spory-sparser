@@ -393,7 +393,8 @@
       "CHECK_VIABILITY",
       "SMART_SWITCHING",
       "OMNISCIENT",
-      "SMART_MON_CHOICES"
+      "SMART_MON_CHOICES",
+      "POWERFUL_STATUS"
     ],
     "party": [
       {
@@ -2595,70 +2596,6 @@
       }
     ]
   },
-  "TRAINER_SIMON": {
-    "id": "TRAINER_SIMON",
-    "battlePic": "TRAINER_PIC_TUBER_M",
-    "trainerName": "Simon",
-    "doubleBattle": false,
-    "aiFlags": [
-      "CHECK_BAD_MOVE",
-      "TRY_TO_FAINT",
-      "CHECK_VIABILITY",
-      "SMART_SWITCHING",
-      "OMNISCIENT",
-      "SMART_MON_CHOICES"
-    ],
-    "party": [
-      {
-        "lvl": 202,
-        "id": 214,
-        "iv": true,
-        "nature": "jolly",
-        "ability": [
-          62
-        ],
-        "item": "Flame Orb",
-        "moves": [
-          182,
-          157,
-          280,
-          810
-        ]
-      },
-      {
-        "lvl": 202,
-        "id": 618,
-        "iv": true,
-        "nature": "sassy",
-        "ability": [
-          11
-        ],
-        "item": "Shuca Berry",
-        "moves": [
-          435,
-          426,
-          157,
-          318
-        ]
-      },
-      {
-        "lvl": 202,
-        "id": 184,
-        "iv": true,
-        "nature": "adamant",
-        "ability": [
-          37
-        ],
-        "item": "Mystic Water",
-        "moves": [
-          401,
-          583,
-          453,
-          8
-        ]
-      }
-    ]
-  },
   "TRAINER_CHARLIE": {
     "id": "TRAINER_CHARLIE",
     "battlePic": "TRAINER_PIC_TUBER_M",
@@ -2750,52 +2687,6 @@
         "iv": true,
         "moves": [
           503
-        ]
-      }
-    ]
-  },
-  "TRAINER_GEORGE": {
-    "id": "TRAINER_GEORGE",
-    "battlePic": "TRAINER_PIC_COOLTRAINER_M",
-    "trainerName": "George",
-    "doubleBattle": false,
-    "aiFlags": [
-      "CHECK_BAD_MOVE",
-      "TRY_TO_FAINT",
-      "CHECK_VIABILITY"
-    ],
-    "party": [
-      {
-        "lvl": 26,
-        "id": 287,
-        "iv": true,
-        "item": "Sitrus Berry",
-        "moves": [
-          303,
-          68,
-          247
-        ]
-      }
-    ]
-  },
-  "TRAINER_BERKE": {
-    "id": "TRAINER_BERKE",
-    "battlePic": "TRAINER_PIC_COOLTRAINER_M",
-    "trainerName": "Berke",
-    "doubleBattle": false,
-    "aiFlags": [
-      "CHECK_BAD_MOVE",
-      "TRY_TO_FAINT",
-      "CHECK_VIABILITY"
-    ],
-    "party": [
-      {
-        "lvl": 26,
-        "id": 288,
-        "iv": true,
-        "moves": [
-          116,
-          163
         ]
       }
     ]
@@ -17302,70 +17193,6 @@
       }
     ]
   },
-  "TRAINER_DWAYNE": {
-    "id": "TRAINER_DWAYNE",
-    "battlePic": "TRAINER_PIC_SAILOR",
-    "trainerName": "Dwayne",
-    "doubleBattle": false,
-    "aiFlags": [
-      "CHECK_BAD_MOVE",
-      "TRY_TO_FAINT",
-      "CHECK_VIABILITY",
-      "SMART_SWITCHING",
-      "OMNISCIENT",
-      "SMART_MON_CHOICES"
-    ],
-    "party": [
-      {
-        "lvl": 200,
-        "id": 828,
-        "iv": true,
-        "nature": "timid",
-        "ability": [
-          84
-        ],
-        "item": "Dark Gem",
-        "moves": [
-          399,
-          389,
-          447,
-          94
-        ]
-      },
-      {
-        "lvl": 200,
-        "id": 845,
-        "iv": true,
-        "nature": "timid",
-        "ability": [
-          241
-        ],
-        "item": "Sitrus Berry",
-        "moves": [
-          355,
-          57,
-          196,
-          403
-        ]
-      },
-      {
-        "lvl": 200,
-        "id": 127,
-        "iv": true,
-        "nature": "jolly",
-        "ability": [
-          104
-        ],
-        "item": "Sitrus Berry",
-        "moves": [
-          404,
-          280,
-          157,
-          15
-        ]
-      }
-    ]
-  },
   "TRAINER_PHILLIP": {
     "id": "TRAINER_PHILLIP",
     "battlePic": "TRAINER_PIC_SAILOR",
@@ -24953,70 +24780,6 @@
       }
     ]
   },
-  "TRAINER_JOHANNA": {
-    "id": "TRAINER_JOHANNA",
-    "battlePic": "TRAINER_PIC_BEAUTY",
-    "trainerName": "Johanna",
-    "doubleBattle": false,
-    "aiFlags": [
-      "CHECK_BAD_MOVE",
-      "TRY_TO_FAINT",
-      "CHECK_VIABILITY",
-      "SMART_SWITCHING",
-      "OMNISCIENT",
-      "SMART_MON_CHOICES"
-    ],
-    "party": [
-      {
-        "lvl": 201,
-        "id": 59,
-        "iv": true,
-        "nature": "jolly",
-        "ability": [
-          22
-        ],
-        "item": "Muscle Band",
-        "moves": [
-          424,
-          245,
-          422,
-          242
-        ]
-      },
-      {
-        "lvl": 201,
-        "id": 123,
-        "iv": true,
-        "nature": "jolly",
-        "ability": [
-          101
-        ],
-        "item": "Eviolite",
-        "moves": [
-          14,
-          332,
-          450,
-          249
-        ]
-      },
-      {
-        "lvl": 201,
-        "id": 457,
-        "iv": true,
-        "nature": "timid",
-        "ability": [
-          114
-        ],
-        "item": "Wise Glasses",
-        "moves": [
-          503,
-          62,
-          314,
-          466
-        ]
-      }
-    ]
-  },
   "TRAINER_GERALD": {
     "id": "TRAINER_GERALD",
     "battlePic": "TRAINER_PIC_COOLTRAINER_M",
@@ -32125,8 +31888,7 @@
     "aiFlags": [
       "CHECK_BAD_MOVE",
       "TRY_TO_FAINT",
-      "CHECK_VIABILITY",
-      "RISKY"
+      "CHECK_VIABILITY"
     ],
     "party": [
       {
@@ -32283,8 +32045,7 @@
     "aiFlags": [
       "CHECK_BAD_MOVE",
       "TRY_TO_FAINT",
-      "CHECK_VIABILITY",
-      "RISKY"
+      "CHECK_VIABILITY"
     ],
     "party": [
       {
@@ -32441,8 +32202,7 @@
     "aiFlags": [
       "CHECK_BAD_MOVE",
       "TRY_TO_FAINT",
-      "CHECK_VIABILITY",
-      "RISKY"
+      "CHECK_VIABILITY"
     ],
     "party": [
       {
@@ -32599,8 +32359,7 @@
     "aiFlags": [
       "CHECK_BAD_MOVE",
       "TRY_TO_FAINT",
-      "CHECK_VIABILITY",
-      "RISKY"
+      "CHECK_VIABILITY"
     ],
     "party": [
       {
@@ -35982,7 +35741,6 @@
       "TRY_TO_FAINT",
       "CHECK_VIABILITY",
       "SMART_SWITCHING",
-      "HP_AWARE",
       "OMNISCIENT",
       "SMART_MON_CHOICES"
     ],

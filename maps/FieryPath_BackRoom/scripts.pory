@@ -1,0 +1,55 @@
+raw `
+FieryPath_BackRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, FieryPath_BackRoom_OnResume
+	map_script MAP_SCRIPT_ON_TRANSITION, FieryPath_BackRoom_OnTransition
+	.byte 0
+
+FieryPath_BackRoom_OnResume:
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, FieryPath_BackRoom_EventScript_TryRemoveHeatran
+	end
+
+FieryPath_BackRoom_EventScript_TryRemoveHeatran::
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
+	removeobject VAR_LAST_TALKED
+	return
+
+FieryPath_BackRoom_OnTransition:
+	call_if_unset FLAG_DEFEATED_HEATRAN, FieryPath_BackRoom_EventScript_ShowHeatran
+	end
+
+FieryPath_BackRoom_EventScript_ShowHeatran::
+	clearflag FLAG_HIDE_HEATRAN
+	return
+
+FieryPath_BackRoom_EventScript_Heatran::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_HEATRAN, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_HEATRAN, 70
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special StartRegiBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, FieryPath_BackRoom_EventScript_DefeatedHeatran
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, FieryPath_BackRoom_EventScript_RanFromHeatran
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, FieryPath_BackRoom_EventScript_RanFromHeatran
+	setflag FLAG_DEFEATED_HEATRAN
+	release
+	end
+
+FieryPath_BackRoom_EventScript_DefeatedHeatran::
+	setflag FLAG_DEFEATED_HEATRAN
+	goto Common_EventScript_RemoveStaticPokemon
+	end
+
+FieryPath_BackRoom_EventScript_RanFromHeatran::
+	setvar VAR_0x8004, SPECIES_HEATRAN
+	goto Common_EventScript_LegendaryFlewAway
+	end
+
+`

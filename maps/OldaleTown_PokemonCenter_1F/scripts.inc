@@ -84,6 +84,7 @@ OldaleTown_PokemonCenter_1F_EventScript_WirelessClubAvailable::
 
 # 43 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 OldaleTown_PokemonCenter_1F_EventScript_EggMan::
+@explanation Speak to egg man
 # 44 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"
 	lock
 # 45 "data/maps/OldaleTown_PokemonCenter_1F/scripts.pory"

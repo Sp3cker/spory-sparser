@@ -236,7 +236,8 @@ RustboroCity_DevonCorp_2F_EventScript_AnorithReady::
 
 # 119 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 RustboroCity_DevonCorp_2F_EventScript_ReceiveLileep::
-@explanation after giving researcher fossil
+@explanation Give researcher Root Fossil
+
 # 120 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_LILEEP
 # 121 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
@@ -327,7 +328,8 @@ RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep::
 
 # 164 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorith::
-@explanation After giving researcher fossil
+@explanation Give researcher Claw Fossil
+
 # 165 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_ANORITH
 # 166 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"

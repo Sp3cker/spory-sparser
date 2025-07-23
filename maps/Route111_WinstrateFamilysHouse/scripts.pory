@@ -17,10 +17,14 @@ Route111_WinstrateFamilysHouse_EventScript_Victor::
 	end
 
 Route111_WinstrateFamilysHouse_GiveMysticTicket::
-	goto_if_set FLAG_ENABLE_SHIP_NAVEL_ROCK, Route111_WinstrateFamilysHouse_AlreadyGaveMysticTicket
+	goto_if_set FLAG_ENABLE_SHIP_BIRTH_ISLAND, Route111_WinstrateFamilysHouse_AlreadyGaveMysticTicket
 	msgbox Route111_WinstrateFamilysHouse_Text_TakeMysticTicket, MSGBOX_DEFAULT
 	giveitem ITEM_MYSTIC_TICKET
+	giveitem ITEM_AURORA_TICKET
+	giveitem ITEM_EON_TICKET
 	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
+	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
 	msgbox Route111_WinstrateFamilysHouse_Text_BeSafeTicket, MSGBOX_DEFAULT
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end

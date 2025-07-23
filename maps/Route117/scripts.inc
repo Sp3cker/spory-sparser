@@ -355,6 +355,7 @@ Route117_EventScript_RematchMaria::
 # 178 "data/maps/Route117/scripts.pory"
 Route117_EventScript_Derek::
 @explanation Find sneaky-deaky Derek
+
 # 179 "data/maps/Route117/scripts.pory"
 	lock
 # 180 "data/maps/Route117/scripts.pory"
@@ -691,7 +692,6 @@ Route117_EventScript_FantinaDefeated::
 
 
 Route117_EventScript_FantinaGiveItems::
-@explanation Defeat Fantina
 # 363 "data/maps/Route117/scripts.pory"
 	giveitem ITEM_TM_PSYCHIC
 # 364 "data/maps/Route117/scripts.pory"

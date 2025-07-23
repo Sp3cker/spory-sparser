@@ -436,7 +436,8 @@
     "MeteorFalls_StevensCave",
     "FloatingSlab",
     "RockySlab",
-    "GrassySlab"
+    "GrassySlab",
+    "FieryPath_BackRoom"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

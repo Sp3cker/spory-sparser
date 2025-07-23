@@ -13,6 +13,7 @@ FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner::
 	goto_if_set FLAG_RECEIVED_TMS_FROM_TUTOR, FallarborTown_MoveRelearnersHouse_EventScript_ReceivedTms
 	msgbox FallarborTown_MoveRelearnersHouse_Text_ImTheMoveTutor, MSGBOX_DEFAULT
 	giveitemfast ITEM_TM_DRAGON_CLAW
+	giveitemfast ITEM_TM_BLIZZARD
 	giveitemfast ITEM_TM_THUNDER
 	giveitemfast ITEM_TM_TELEPORT
 	giveitemfast ITEM_TM_FIRE_BLAST
@@ -72,7 +73,8 @@ FallarborTown_MoveRelearnersHouse_Text_ExplainTms:
 	.string "Leaf Blade, Knock Off, Power Gem, Rock\l"
 	.string "Blast, Pin Missile, Icicle Spear, Tail\l"
 	.string "Slap, Arm Thrust, Foul Play, Iron\l"
-	.string "Defense, Body Slam, and Play Rough.\p"
+	.string "Defense, Body Slam, Play Rough,\l"
+	.string "and Blizzard.\p"
 	.string "Now you can take those moves with you\n"
 	.string "and teach them to your Pokémon\l"
 	.string "wherever you are!$"

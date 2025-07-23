@@ -43,6 +43,7 @@ PetalburgCity_WallysHouse_OnFrame:
 # 22 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 PetalburgCity_WallysHouse_EventScript_GiveHMSurf::
 @explanation Received from Wally's dad
+
 # 23 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	lockall
 # 24 "data/maps/PetalburgCity_WallysHouse/scripts.pory"

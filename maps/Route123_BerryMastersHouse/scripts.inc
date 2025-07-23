@@ -170,8 +170,6 @@ Route123_BerryMastersHouse_EventScript_GiveSpelonBerry::
 
 # 85 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 Route123_BerryMastersHouse_EventScript_GivePamtreBerry::
-@explanation Part of Berry Master Quest
-
 # 86 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	goto_if_set FLAG_RECEIVED_PAMTRE_BERRY, Route123_BerryMastersHouse_EventScript_GiveNormalBerry
 # 87 "data/maps/Route123_BerryMastersHouse/scripts.pory"
@@ -190,8 +188,6 @@ Route123_BerryMastersHouse_EventScript_GivePamtreBerry::
 
 # 94 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 Route123_BerryMastersHouse_EventScript_GiveWatmelBerry::
-@explanation Part of Berry Master Quest
-
 # 95 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	goto_if_set FLAG_RECEIVED_WATMEL_BERRY, Route123_BerryMastersHouse_EventScript_GiveNormalBerry
 # 96 "data/maps/Route123_BerryMastersHouse/scripts.pory"
@@ -210,7 +206,6 @@ Route123_BerryMastersHouse_EventScript_GiveWatmelBerry::
 
 # 103 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 Route123_BerryMastersHouse_EventScript_GiveDurinBerry::
-@explanation Part of Berry Master Quest
 # 104 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	goto_if_set FLAG_RECEIVED_DURIN_BERRY, Route123_BerryMastersHouse_EventScript_GiveNormalBerry
 # 105 "data/maps/Route123_BerryMastersHouse/scripts.pory"
@@ -229,7 +224,6 @@ Route123_BerryMastersHouse_EventScript_GiveDurinBerry::
 
 # 112 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 Route123_BerryMastersHouse_EventScript_GiveBelueBerry::
-@explanation Part of Berry Master quest
 # 113 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	goto_if_set FLAG_RECEIVED_BELUE_BERRY, Route123_BerryMastersHouse_EventScript_GiveNormalBerry
 # 114 "data/maps/Route123_BerryMastersHouse/scripts.pory"

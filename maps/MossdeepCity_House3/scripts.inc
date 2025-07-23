@@ -9,6 +9,7 @@ MossdeepCity_House3_MapScripts::
 # 5 "data/maps/MossdeepCity_House3/scripts.pory"
 MossdeepCity_House3_EventScript_SuperRodFisherman::
 @explanation Talk to the fisherman
+
 # 6 "data/maps/MossdeepCity_House3/scripts.pory"
 	lock
 # 7 "data/maps/MossdeepCity_House3/scripts.pory"

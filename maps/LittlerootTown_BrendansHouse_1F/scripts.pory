@@ -435,10 +435,11 @@ PlayersHouse_1F_Text_LatiEmergencyNewsFlash:
 PlayersHouse_1F_Text_WhatColorDidTheySay:
 	.string "{PLAYER}, did the announcer say the\n"
 	.string "Pokémon were on the Southern Island?\p"
-	.string "Well, I actually happened to have a\n"
-	.string "ticket to get to the Southern Island…\p"
-	.string "You are the Champion now, maybe you\n"
-	.string "should go check it out!$"
+	.string "Did your friend Wally deliver those\n"
+	.string "tickets I sent with him?\p"
+	.string "I think one of them could get you to\n"
+	.string "Southern Island, you should check it\l"
+	.string "out if you haven't yet!$"
 
 PlayersHouse_1F_Text_StillUnknownPokemon:
 	.string "Just be careful out there, {PLAYER}!$"

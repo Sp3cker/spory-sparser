@@ -31,30 +31,227 @@ ShoalCave_LowTideLowerRoom_EventScript_ReceivedShoalSalt::
 	releaseall
 	end
 
-ShoalCave_LowTideLowerRoom_EventScript_BlackBelt::
+`
+
+script ShoalCave_LowTideLowerRoom_EventScript_PowerfulMonSummoner {
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_FOCUS_BAND, ShoalCave_LowTideLowerRoom_EventScript_ReceivedFocusBand
-	msgbox ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus, MSGBOX_DEFAULT
-	giveitem ITEM_FOCUS_BAND
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_FOCUS_BAND
+	if(flag(FLAG_TEMP_1))
+	{
+		msgbox(ShoalCave_LowTideLowerRoom_Text_SummonerIntroQuick, MSGBOX_YESNO)	
+	}
+	else
+	{
+		msgbox(ShoalCave_LowTideLowerRoom_Text_SummonerIntro, MSGBOX_YESNO)
+	}
+
+	setflag(FLAG_TEMP_1)
+
+	if(var(VAR_RESULT) == NO)
+	{
+		goto(ShoalCave_LowTideLowerRoom_EventScript_SummonWomanManNo)
+	}
+
+	goto(ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom)
+	release
+	end
+}
+
+script ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom {
+	msgbox(ShoalCave_LowTideLowerRoom_Text_WhichRoom, MSGBOX_DEFAULT)
+
+	dynmultipush("Entrance Room", 0)
+	dynmultipush("Inner Room", 1)
+	dynmultipush("Stairs Room", 2)
+    dynmultipush("Cancel", MULTI_B_PRESSED)
+
+	//.macro dynmultistack left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req
+    // // setting initial selected to a non-existant ID will always have it point to the first option
+	dynmultistack(0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+
+	if (var(VAR_RESULT) == MULTI_B_PRESSED)
+	{
+		goto(ShoalCave_LowTideLowerRoom_EventScript_SummonWomanManNo)
+	}
+
+	if (var(VAR_RESULT) == 0)
+	{
+		goto(ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom)
+	}
+	if (var(VAR_RESULT) == 1)
+	{
+		goto(ShoalCave_LowTideLowerRoom_EventScript_InnerRoom)
+	}
+	if (var(VAR_RESULT) == 2)
+	{
+		goto(ShoalCave_LowTideLowerRoom_EventScript_StairsRoom)
+	}
+
+	release
+	end
+}
+
+script ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom {
+	msgbox(ShoalCave_LowTideLowerRoom_Text_WhichPokemon, MSGBOX_DEFAULT)
+
+	dynmultipush("Great Tusk",   SPECIES_GREAT_TUSK)
+	dynmultipush("Scream Tail",  SPECIES_SCREAM_TAIL)
+	dynmultipush("Brute Bonnet", SPECIES_BRUTE_BONNET)
+	dynmultipush("Flutter Mane", SPECIES_FLUTTER_MANE)
+	dynmultipush("Slither Wing", SPECIES_SLITHER_WING)
+	dynmultipush("Sandy Shocks", SPECIES_SANDY_SHOCKS)
+	dynmultipush("Roaring Moon", SPECIES_ROARING_MOON)
+	dynmultipush("Walking Wake", SPECIES_WALKING_WAKE)
+	dynmultipush("Gouging Fire", SPECIES_GOUGING_FIRE)
+	dynmultipush("Raging Bolt",  SPECIES_RAGING_BOLT)
+    dynmultipush("Back", MULTI_B_PRESSED)
+
+	//.macro dynmultistack left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req
+    // // setting initial selected to a non-existant ID will always have it point to the first option
+	dynmultistack(0, 0, FALSE, 6, FALSE, SPECIES_GREAT_TUSK, DYN_MULTICHOICE_CB_NONE)
+
+	if (var(VAR_RESULT) == MULTI_B_PRESSED) 
+	{
+		goto(ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom)
+	}
+
+	goto(ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon)
+
 	release
 	end
 
-ShoalCave_LowTideLowerRoom_EventScript_ReceivedFocusBand::
-	msgbox ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus, MSGBOX_DEFAULT
+}
+
+script ShoalCave_LowTideLowerRoom_EventScript_InnerRoom {
+	msgbox(ShoalCave_LowTideLowerRoom_Text_WhichPokemon, MSGBOX_DEFAULT)
+
+	dynmultipush("Iron Treads",   SPECIES_IRON_TREADS)
+	dynmultipush("Iron Bundle",   SPECIES_IRON_BUNDLE)
+	dynmultipush("Iron Hands",    SPECIES_IRON_HANDS)
+	dynmultipush("Iron Jugulis",  SPECIES_IRON_JUGULIS)
+	dynmultipush("Iron Moth",     SPECIES_IRON_MOTH)
+	dynmultipush("Iron Thorns",   SPECIES_IRON_THORNS)
+	dynmultipush("Iron Valiant",  SPECIES_IRON_VALIANT)
+	dynmultipush("Iron Leaves",   SPECIES_IRON_LEAVES)
+	dynmultipush("Iron Boulder",  SPECIES_IRON_BOULDER)
+	dynmultipush("Iron Crown",    SPECIES_IRON_CROWN)
+    dynmultipush("Back", MULTI_B_PRESSED)
+
+	//.macro dynmultistack left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req
+    // // setting initial selected to a non-existant ID will always have it point to the first option
+	dynmultistack(0, 0, FALSE, 6, FALSE, SPECIES_IRON_TREADS, DYN_MULTICHOICE_CB_NONE)
+
+	if (var(VAR_RESULT) == MULTI_B_PRESSED) 
+	{
+		goto(ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom)
+	}
+
+	goto(ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon)
+
 	release
 	end
 
-ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus:
-	.string "The penetrating cold around these\n"
-	.string "parts is an impediment to training.\p"
-	.string "But with focus, one can overcome!\p"
-	.string "With this FOCUS BAND, buckle down and\n"
-	.string "withstand the cold!$"
+}
 
-ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus:
-	.string "Everything starts with focus!$"
+script ShoalCave_LowTideLowerRoom_EventScript_StairsRoom {
+	msgbox(ShoalCave_LowTideLowerRoom_Text_WhichPokemon, MSGBOX_DEFAULT)
 
-`
+	dynmultipush("Nihilego",    SPECIES_NIHILEGO)
+	dynmultipush("Guzzlord",    SPECIES_GUZZLORD)
+	dynmultipush("Xurkitree",   SPECIES_XURKITREE)
+	dynmultipush("Buzzwole",    SPECIES_BUZZWOLE)
+	dynmultipush("Blacephalon", SPECIES_BLACEPHALON)
+	dynmultipush("Stakataka",   SPECIES_STAKATAKA)
+	dynmultipush("Poipole",     SPECIES_POIPOLE)
+	dynmultipush("Pheromosa",   SPECIES_PHEROMOSA)
+	dynmultipush("Celesteela",  SPECIES_CELESTEELA)
+    dynmultipush("Back", MULTI_B_PRESSED)
+
+	//.macro dynmultistack left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req
+    // // setting initial selected to a non-existant ID will always have it point to the first option
+	dynmultistack(0, 0, FALSE, 6, FALSE, SPECIES_NIHILEGO, DYN_MULTICHOICE_CB_NONE)
+
+	if (var(VAR_RESULT) == MULTI_B_PRESSED) 
+	{
+		goto(ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom)
+	}
+
+	goto(ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon)
+
+	release
+	end
+
+}
+
+
+script ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon {
+	copyvar(VAR_0x8005, VAR_RESULT)
+	bufferspeciesname(STR_VAR_1, VAR_0x8005)
+	msgbox(ShoalCave_LowTideLowerRoom_Text_ConfirmSummon, MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == NO)
+	{
+		goto(ShoalCave_LowTideLowerRoom_EventScript_SummonWomanManNo)
+	}
+
+	msgbox(ShoalCave_LowTideLowerRoom_Text_VeryWell, MSGBOX_DEFAULT)
+	delay(30)
+
+	setwildbattle(VAR_0x8005, 50)
+	waitse
+	playmoncry(VAR_0x8005, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	dowildbattle
+	release
+	end
+}
+
+script ShoalCave_LowTideLowerRoom_EventScript_SummonWomanManNo
+{
+    msgbox(ShoalCave_LowTideLowerRoom_SummonWomanDeclined, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+ 
+text ShoalCave_LowTideLowerRoom_Text_SummonerIntro {
+	"Hello, young trainer.\p"
+	"I've come to this remote location\n"
+	"because I have learned a powerful\l"
+	"technique that allows me to summon one\l"
+	"Pokémon from almost anywhere in this\l"
+	"cave.\p"
+	"Would you like me to summon a Pokémon\n"
+	"here so you can battle it?"
+}
+
+text ShoalCave_LowTideLowerRoom_Text_SummonerIntroQuick {
+	"Would you like me to summon a Pokémon\n"
+	"here so you can battle it?"
+}
+
+text ShoalCave_LowTideLowerRoom_Text_WhichRoom {
+	"Which room would you like me to summon a\n"
+	"Pokémon from?"
+}
+
+text ShoalCave_LowTideLowerRoom_Text_WhichPokemon {
+	"Which Pokémon would you like me to\n"
+	"summon so you can battle?"
+}
+
+text ShoalCave_LowTideLowerRoom_Text_ConfirmSummon {
+	"So you want me to summon a\n"
+	"{STR_VAR_1} for you to battle?"
+}
+
+text ShoalCave_LowTideLowerRoom_Text_VeryWell {
+	"Very well, prepare yourself for battle."
+}
+
+text ShoalCave_LowTideLowerRoom_SummonWomanDeclined
+{
+	"I see. Let me know if you change\n"
+	"your mind."
+}

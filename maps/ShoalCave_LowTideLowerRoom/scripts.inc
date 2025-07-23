@@ -35,6 +35,7 @@ ShoalCave_LowTideLowerRoom_EventScript_SetShoalItemMetatilesEnd::
 # 18 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 ShoalCave_LowTideLowerRoom_EventScript_ShoalSalt4::
 @explanation Pickup from ground
+
 # 19 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	lockall
 # 20 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
@@ -63,56 +64,438 @@ ShoalCave_LowTideLowerRoom_EventScript_ReceivedShoalSalt::
 	releaseall
 # 32 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	end
-# 33 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 
-# 34 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-ShoalCave_LowTideLowerRoom_EventScript_BlackBelt::
-@explanation Speak to trainer in Lower Room during Low Tide
-# 35 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	lock
-# 36 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	faceplayer
+ShoalCave_LowTideLowerRoom_EventScript_PowerfulMonSummoner::
 # 37 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	goto_if_set FLAG_RECEIVED_FOCUS_BAND, ShoalCave_LowTideLowerRoom_EventScript_ReceivedFocusBand
+	lock
 # 38 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	msgbox ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus, MSGBOX_DEFAULT
+	faceplayer
 # 39 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	giveitem ITEM_FOCUS_BAND
-# 40 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-# 41 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	setflag FLAG_RECEIVED_FOCUS_BAND
-# 42 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	release
-# 43 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	end
-# 44 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-
+	goto_if_set FLAG_TEMP_1, ShoalCave_LowTideLowerRoom_EventScript_PowerfulMonSummoner_2
 # 45 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-ShoalCave_LowTideLowerRoom_EventScript_ReceivedFocusBand::
-# 46 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	msgbox ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus, MSGBOX_DEFAULT
-# 47 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	release
+	msgbox ShoalCave_LowTideLowerRoom_Text_SummonerIntro, MSGBOX_YESNO
+ShoalCave_LowTideLowerRoom_EventScript_PowerfulMonSummoner_1:
 # 48 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	end
-# 49 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-
+	setflag FLAG_TEMP_1
 # 50 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus:
-# 51 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	.string "The penetrating cold around these\n"
-# 52 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	.string "parts is an impediment to training.\p"
-# 53 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	.string "But with focus, one can overcome!\p"
-# 54 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	.string "With this FOCUS BAND, buckle down and\n"
+	compare VAR_RESULT, NO
+	goto_if_eq ShoalCave_LowTideLowerRoom_EventScript_PowerfulMonSummoner_6
+ShoalCave_LowTideLowerRoom_EventScript_PowerfulMonSummoner_5:
 # 55 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	.string "withstand the cold!$"
+	goto ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom
 # 56 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	release
+	end
 
-# 57 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus:
-# 58 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
-	.string "Everything starts with focus!$"
+ShoalCave_LowTideLowerRoom_EventScript_PowerfulMonSummoner_2:
+# 41 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	msgbox ShoalCave_LowTideLowerRoom_Text_SummonerIntroQuick, MSGBOX_YESNO
+	goto ShoalCave_LowTideLowerRoom_EventScript_PowerfulMonSummoner_1
+
+ShoalCave_LowTideLowerRoom_EventScript_PowerfulMonSummoner_6:
+# 52 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	goto ShoalCave_LowTideLowerRoom_EventScript_SummonWomanManNo
+	goto ShoalCave_LowTideLowerRoom_EventScript_PowerfulMonSummoner_5
+
+
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom::
+# 61 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	msgbox ShoalCave_LowTideLowerRoom_Text_WhichRoom, MSGBOX_DEFAULT
+# 63 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_Text_0, 0
+# 64 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_Text_1, 1
+# 65 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_Text_2, 2
+# 66 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_Text_3, MULTI_B_PRESSED
+# 70 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+# 72 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	compare VAR_RESULT, MULTI_B_PRESSED
+	goto_if_eq ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_2
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_1:
+# 77 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_5
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_4:
+# 81 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_8
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_7:
+# 85 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	compare VAR_RESULT, 2
+	goto_if_eq ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_11
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_10:
+# 90 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	release
+	end
+
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_2:
+# 74 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	goto ShoalCave_LowTideLowerRoom_EventScript_SummonWomanManNo
+	goto ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_1
+
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_5:
+# 79 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	goto ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom
+	goto ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_4
+
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_8:
+# 83 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	goto ShoalCave_LowTideLowerRoom_EventScript_InnerRoom
+	goto ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_7
+
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_11:
+# 87 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	goto ShoalCave_LowTideLowerRoom_EventScript_StairsRoom
+	goto ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_10
+
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom::
+# 95 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	msgbox ShoalCave_LowTideLowerRoom_Text_WhichPokemon, MSGBOX_DEFAULT
+# 97 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_0, SPECIES_GREAT_TUSK
+# 98 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_1, SPECIES_SCREAM_TAIL
+# 99 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_2, SPECIES_BRUTE_BONNET
+# 100 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_3, SPECIES_FLUTTER_MANE
+# 101 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_4, SPECIES_SLITHER_WING
+# 102 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_5, SPECIES_SANDY_SHOCKS
+# 103 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_6, SPECIES_ROARING_MOON
+# 104 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_7, SPECIES_WALKING_WAKE
+# 105 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_8, SPECIES_GOUGING_FIRE
+# 106 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_9, SPECIES_RAGING_BOLT
+# 107 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_10, MULTI_B_PRESSED
+# 111 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultistack 0, 0, FALSE, 6, FALSE, SPECIES_GREAT_TUSK, DYN_MULTICHOICE_CB_NONE
+# 113 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	compare VAR_RESULT, MULTI_B_PRESSED
+	goto_if_eq ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_2
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_1:
+# 118 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	goto ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon
+# 120 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	release
+	end
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_2:
+# 115 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	goto ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom
+	goto ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_1
+
+
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom::
+# 126 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	msgbox ShoalCave_LowTideLowerRoom_Text_WhichPokemon, MSGBOX_DEFAULT
+# 128 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_0, SPECIES_IRON_TREADS
+# 129 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_1, SPECIES_IRON_BUNDLE
+# 130 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_2, SPECIES_IRON_HANDS
+# 131 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_3, SPECIES_IRON_JUGULIS
+# 132 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_4, SPECIES_IRON_MOTH
+# 133 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_5, SPECIES_IRON_THORNS
+# 134 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_6, SPECIES_IRON_VALIANT
+# 135 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_7, SPECIES_IRON_LEAVES
+# 136 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_8, SPECIES_IRON_BOULDER
+# 137 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_9, SPECIES_IRON_CROWN
+# 138 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_10, MULTI_B_PRESSED
+# 142 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultistack 0, 0, FALSE, 6, FALSE, SPECIES_IRON_TREADS, DYN_MULTICHOICE_CB_NONE
+# 144 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	compare VAR_RESULT, MULTI_B_PRESSED
+	goto_if_eq ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_2
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_1:
+# 149 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	goto ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon
+# 151 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	release
+	end
+
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_2:
+# 146 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	goto ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom
+	goto ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_1
+
+
+ShoalCave_LowTideLowerRoom_EventScript_StairsRoom::
+# 157 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	msgbox ShoalCave_LowTideLowerRoom_Text_WhichPokemon, MSGBOX_DEFAULT
+# 159 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_0, SPECIES_NIHILEGO
+# 160 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_1, SPECIES_GUZZLORD
+# 161 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_2, SPECIES_XURKITREE
+# 162 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_3, SPECIES_BUZZWOLE
+# 163 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_4, SPECIES_BLACEPHALON
+# 164 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_5, SPECIES_STAKATAKA
+# 165 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_6, SPECIES_POIPOLE
+# 166 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_7, SPECIES_PHEROMOSA
+# 167 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_8, SPECIES_CELESTEELA
+# 168 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultipush ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_10, MULTI_B_PRESSED
+# 172 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dynmultistack 0, 0, FALSE, 6, FALSE, SPECIES_NIHILEGO, DYN_MULTICHOICE_CB_NONE
+# 174 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	compare VAR_RESULT, MULTI_B_PRESSED
+	goto_if_eq ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_2
+ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_1:
+# 179 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	goto ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon
+# 181 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	release
+	end
+
+ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_2:
+# 176 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	goto ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom
+	goto ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_1
+
+
+ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon::
+# 188 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	copyvar VAR_0x8005, VAR_RESULT
+# 189 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	bufferspeciesname STR_VAR_1, VAR_0x8005
+# 190 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	msgbox ShoalCave_LowTideLowerRoom_Text_ConfirmSummon, MSGBOX_YESNO
+# 192 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon_2
+ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon_1:
+# 197 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	msgbox ShoalCave_LowTideLowerRoom_Text_VeryWell, MSGBOX_DEFAULT
+# 198 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	delay 30
+# 200 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	setwildbattle VAR_0x8005, 50
+# 201 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	waitse
+# 202 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	playmoncry VAR_0x8005, CRY_MODE_ENCOUNTER
+# 203 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	delay 40
+# 204 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	waitmoncry
+# 205 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	dowildbattle
+# 206 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	release
+	end
+
+ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon_2:
+# 194 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	goto ShoalCave_LowTideLowerRoom_EventScript_SummonWomanManNo
+	goto ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon_1
+
+
+ShoalCave_LowTideLowerRoom_EventScript_SummonWomanManNo::
+# 212 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	msgbox ShoalCave_LowTideLowerRoom_SummonWomanDeclined, MSGBOX_DEFAULT
+# 213 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	release
+	end
+
+
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_Text_0:
+# 63 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Entrance Room$"
+
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_Text_1:
+# 64 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Inner Room$"
+
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_Text_2:
+# 65 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Stairs Room$"
+
+ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_Text_3:
+# 66 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Cancel$"
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_0:
+# 97 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Great Tusk$"
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_1:
+# 98 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Scream Tail$"
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_2:
+# 99 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Brute Bonnet$"
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_3:
+# 100 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Flutter Mane$"
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_4:
+# 101 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Slither Wing$"
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_5:
+# 102 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Sandy Shocks$"
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_6:
+# 103 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Roaring Moon$"
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_7:
+# 104 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Walking Wake$"
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_8:
+# 105 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Gouging Fire$"
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_9:
+# 106 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Raging Bolt$"
+
+ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_Text_10:
+# 107 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Back$"
+
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_0:
+# 128 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Iron Treads$"
+
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_1:
+# 129 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Iron Bundle$"
+
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_2:
+# 130 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Iron Hands$"
+
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_3:
+# 131 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Iron Jugulis$"
+
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_4:
+# 132 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Iron Moth$"
+
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_5:
+# 133 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Iron Thorns$"
+
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_6:
+# 134 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Iron Valiant$"
+
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_7:
+# 135 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Iron Leaves$"
+
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_8:
+# 136 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Iron Boulder$"
+
+ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_Text_9:
+# 137 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Iron Crown$"
+
+ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_0:
+# 159 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Nihilego$"
+
+ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_1:
+# 160 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Guzzlord$"
+
+ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_2:
+# 161 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Xurkitree$"
+
+ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_3:
+# 162 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Buzzwole$"
+
+ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_4:
+# 163 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Blacephalon$"
+
+ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_5:
+# 164 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Stakataka$"
+
+ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_6:
+# 165 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Poipole$"
+
+ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_7:
+# 166 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Pheromosa$"
+
+ShoalCave_LowTideLowerRoom_EventScript_StairsRoom_Text_8:
+# 167 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Celesteela$"
+
+ShoalCave_LowTideLowerRoom_Text_SummonerIntro::
+# 218 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Hello, young trainer.\p"
+	.string "I've come to this remote location\n"
+	.string "because I have learned a powerful\l"
+	.string "technique that allows me to summon one\l"
+	.string "Pokémon from almost anywhere in this\l"
+	.string "cave.\p"
+	.string "Would you like me to summon a Pokémon\n"
+	.string "here so you can battle it?$"
+
+ShoalCave_LowTideLowerRoom_Text_SummonerIntroQuick::
+# 229 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Would you like me to summon a Pokémon\n"
+	.string "here so you can battle it?$"
+
+ShoalCave_LowTideLowerRoom_Text_WhichRoom::
+# 234 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Which room would you like me to summon a\n"
+	.string "Pokémon from?$"
+
+ShoalCave_LowTideLowerRoom_Text_WhichPokemon::
+# 239 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Which Pokémon would you like me to\n"
+	.string "summon so you can battle?$"
+
+ShoalCave_LowTideLowerRoom_Text_ConfirmSummon::
+# 244 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "So you want me to summon a\n"
+	.string "{STR_VAR_1} for you to battle?$"
+
+ShoalCave_LowTideLowerRoom_Text_VeryWell::
+# 249 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "Very well, prepare yourself for battle.$"
+
+ShoalCave_LowTideLowerRoom_SummonWomanDeclined::
+# 253 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
+	.string "I see. Let me know if you change\n"
+	.string "your mind.$"

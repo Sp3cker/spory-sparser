@@ -1,4 +1,8 @@
 import { z } from "zod";
+export const WildMonSchema = z.object({
+  script: z.string(),
+  wildMon: z.string(),
+});
 /**
 This is a trainerbattle we find in an .inc file.
  */
@@ -45,3 +49,4 @@ export type LevelIncData = z.infer<typeof LevelIncDataSchema>;
 export type IncScriptEvent = z.infer<typeof IncScriptedEventSchema>;
 export type IncItemEntry = z.infer<typeof IncItemEntrySchema>;
 export type IncPokemonEntry = z.infer<typeof IncPokemonEntrySchema>;
+export type IncWildMon = z.infer<typeof WildMonSchema>;

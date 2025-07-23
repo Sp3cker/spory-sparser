@@ -153,6 +153,7 @@ MossdeepCity_BetaTesterHouse_EventScript_SunbirdDefeated::
 
 MossdeepCity_BetaTesterHouse_EventScript_SunbirdGiveCelebi::
 @explanation Defeat Sunbird
+
 # 93 "data/maps/MossdeepCity_BetaTesterHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CELEBI
 # 94 "data/maps/MossdeepCity_BetaTesterHouse/scripts.pory"
@@ -291,7 +292,6 @@ MossdeepCity_BetaTesterHouse_EventScript_SunealDefeated::
 
 
 MossdeepCity_BetaTesterHouse_EventScript_SunealGiveDarkrai::
-@explanation Defeat Suneal
 # 249 "data/maps/MossdeepCity_BetaTesterHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_DARKRAI
 # 250 "data/maps/MossdeepCity_BetaTesterHouse/scripts.pory"
@@ -430,7 +430,6 @@ MossdeepCity_BetaTesterHouse_EventScript_DollaMikeDefeated::
 
 
 MossdeepCity_BetaTesterHouse_EventScript_DollaMikeGiveVictini::
-@explanation Defeat DollaMike
 # 398 "data/maps/MossdeepCity_BetaTesterHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_VICTINI
 # 399 "data/maps/MossdeepCity_BetaTesterHouse/scripts.pory"

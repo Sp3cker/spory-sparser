@@ -6,11 +6,26 @@ FieryPath_MapScripts::
 FieryPath_OnTransition:
 	call_if_unset FLAG_LANDMARK_FIERY_PATH, FieryPath_EventScript_MoveScottToFallarbor
 	setflag FLAG_LANDMARK_FIERY_PATH
+	setflag FLAG_VISITED_FIERY_PATH
 	end
 
 FieryPath_EventScript_MoveScottToFallarbor::
 	setflag FLAG_HIDE_VERDANTURF_TOWN_SCOTT
 	clearflag FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT
 	return
+
+FieryPath_EventScript_Scientist::
+	msgbox FieryPath_Text_BlockedOff, MSGBOX_NPC
+	end
+
+FieryPath_Text_BlockedOff:
+	.string "There's been an uptick in seismic\n"
+	.string "activity in this area, so I'm conducting\l"
+	.string "some important research.\p"
+	.string "Please don't bother me while I'm\n"
+	.string "working, and make sure you walk\l"
+	.string "very carefully while you're here in\l"
+	.string "Fiery Path so you don't interfere with\l"
+	.string "my data!$"
 
 `

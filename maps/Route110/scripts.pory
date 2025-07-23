@@ -471,7 +471,6 @@ Route110_EventScript_BrendanDefeated::
 Route110_EventScript_GiveFly::
 	giveitem ITEM_HM_FLY
 	msgbox Route110_Text_RivalExplainFlyHM, MSGBOX_DEFAULT
-	msgbox Route110_Text_RivalExplainFlyFromPokeNav, MSGBOX_DEFAULT
 	return
 
 Route110_EventScript_GiveRestOfItems::
@@ -500,8 +499,8 @@ Route110_EventScript_GiveRestOfItems::
 	giveitemfast ITEM_ELECTRIC_SEED, 10
 	giveitemfast ITEM_PSYCHIC_SEED, 10
 	giveitemfast ITEM_MISTY_SEED, 10
-	giveitemfast ITEM_AIR_BALLOON, 10
 	giveitemfast ITEM_TERRAIN_EXTENDER, 10
+	giveitemfast ITEM_SHED_SHELL, 10
 	giveitemfast ITEM_LIGHT_CLAY, 10
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_ReceivedSeveralItems, MSGBOX_DEFAULT
@@ -959,25 +958,6 @@ Route110_Text_RivalExplainFlyHM:
 	.string "removed! If you don't believe me, give\l"
 	.string "it a try!$"
 
-Route110_Text_RivalExplainFlyFromPokeNav:
-	.string "On the topic of Flying, let me borrow\n"
-	.string "your PokéNav for a second.\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "There we go! One of the developers\n"
-	.string "from the Devon Corporation showed\l"
-	.string "me how to do that.\p"
-	.string "I just installed a new feature into\n"
-	.string "your PokéNav that will allow you to Fly\l"
-	.string "anywhere you've previously been, just\l"
-	.string "from looking at the map!\p"
-	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}If you hover over a town or city that\n"
-	.string "you've visited in the PokéNav's map, you\l"
-	.string "will see an option to press the “R”\l"
-	.string "button to Fly there.{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Isn't that cool?\p"
-	.string "Now you have two convenient options\n"
-	.string "to Fly around Hoenn.$"
-
 Route110_Text_RivalThatsNotAll::
 	.string "That's not all I have for you.\n"
 	.string "Here, take these as well.$"
@@ -991,9 +971,9 @@ Route110_Text_RivalExplainRestOfItems::
 	.string "more types of Poké Balls, Shiny Stones,\l"
 	.string "Ice Stones, Black Sludges, Flame Orbs,\l"
 	.string "Toxic Orbs, Smoke Balls, Thick Clubs,\l"
-	.string "Weakness Policies, Air Balloons, Terrain\l"
-	.string "Extenders, some Terrain Seeds and\l"
-	.string "Light Clays.\p"
+	.string "Weakness Policies, Terrain Extenders,\l"
+	.string "Shed Shells, Light Clays, and some\l"
+	.string "Terrain Seeds.\p"
 	.string "Whew, I think that's everything, you\n"
 	.string "might want to take a look through your\l"
 	.string "Bag pockets to see what you have now!\p"

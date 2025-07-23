@@ -11,6 +11,7 @@ import {
   IncTrainer,
 } from "../validators/levelIncData.js";
 import { processMiscScripts } from "./processMiscScripts.js";
+import { parseWildMon } from "./baseInc.ts";
 
 export const processIncFile = async (incFileContent: string) => {
   try {
@@ -78,10 +79,7 @@ async function processMiscScriptsDirectory(miscScriptsPath: string) {
 
   return miscScriptDict;
 }
-async function processMapsDirectory(
-  mapPath: string,
-  folders: Dirent[]
-): Promise<LevelIncData[]> {
+async function processMapsDirectory(mapPath: string, folders: Dirent[]) {
   const results: LevelIncData[] = [];
   for (const folder of folders) {
     const fullPath = path.join(mapPath, folder.name, "scripts.inc");
@@ -106,15 +104,20 @@ async function processMapsDirectory(
               giveevent.explanation = "Choose a starter";
             }
           }
+          if (giveevent.scriptName.includes("SeashoreHouse")) {
+            giveevent.explanation = "Defeat trainers in Seashore House";
+          }
           if (giveevent.explanation) {
             continue;
           }
         }
       }
+      const wildMons = parseWildMon(content);
       const baseMap = await getBasemapID(parentFolderPath);
       const levelLabel = getLevelLabel(path.basename(path.dirname(fullPath)));
       const toPush = {
         ...result,
+        wildMons,
         baseMap,
         thisLevelsId,
         levelLabel,
@@ -158,17 +161,7 @@ export async function findGiveItemsByLevel(
     }
   }
 
-  return mapLevels.map((level: LevelIncData) => {
-    const obj = {
-      baseMap: level.baseMap,
-      levelLabel: level.levelLabel,
-      thisLevelsId: level.thisLevelsId,
-      scriptedGives: level.scriptedGives,
-      trainerRefs: level.trainerRefs,
-    };
-
-    return obj;
-  }); /** map */
+  return mapLevels;
 }
 
 export { LevelIncData };

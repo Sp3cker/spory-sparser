@@ -1,0 +1,46 @@
+{
+  "id": "MAP_FIERY_PATH_BACK_ROOM",
+  "name": "FieryPath_BackRoom",
+  "layout": "LAYOUT_FIERY_PATH_BACK_ROOM",
+  "music": "MUS_PETALBURG_WOODS",
+  "region_map_section": "MAPSEC_FIERY_PATH",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HEATRAN)",
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FieryPath_BackRoom_EventScript_Heatran",
+      "flag": "FLAG_HIDE_HEATRAN"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_FIERY_PATH",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

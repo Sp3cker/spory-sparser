@@ -1,0 +1,3875 @@
+[
+  {
+    "levelLabel": "Captainsoffice",
+    "folder": "AbandonedShip_CaptainsOffice",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_CAPTAINS_OFFICE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Corridors 1F",
+    "folder": "AbandonedShip_Corridors_1F",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_CORRIDORS_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Corridors B 1F",
+    "folder": "AbandonedShip_Corridors_B1F",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_CORRIDORS_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Deck",
+    "folder": "AbandonedShip_Deck",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_DECK",
+    "marts": []
+  },
+  {
+    "levelLabel": "Hiddenfloorcorridors",
+    "folder": "AbandonedShip_HiddenFloorCorridors",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS",
+    "marts": []
+  },
+  {
+    "levelLabel": "Hiddenfloorrooms",
+    "folder": "AbandonedShip_HiddenFloorRooms",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS",
+    "marts": []
+  },
+  {
+    "levelLabel": "Room B 1F",
+    "folder": "AbandonedShip_Room_B1F",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_ROOM_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Rooms 2 1F",
+    "folder": "AbandonedShip_Rooms2_1F",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_ROOMS2_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Rooms 2 B 1F",
+    "folder": "AbandonedShip_Rooms2_B1F",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_ROOMS2_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Rooms 1F",
+    "folder": "AbandonedShip_Rooms_1F",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_ROOMS_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Rooms B 1F",
+    "folder": "AbandonedShip_Rooms_B1F",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_ROOMS_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Underwater 1",
+    "folder": "AbandonedShip_Underwater1",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_UNDERWATER1",
+    "marts": []
+  },
+  {
+    "levelLabel": "Underwater 2",
+    "folder": "AbandonedShip_Underwater2",
+    "baseMap": "MAP_ABANDONED_SHIP",
+    "thisLevelsId": "MAP_ABANDONED_SHIP_UNDERWATER2",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "AlteringCave",
+    "baseMap": "MAP_ALTERING_CAVE",
+    "thisLevelsId": "MAP_ALTERING_CAVE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "AncientTomb",
+    "baseMap": "MAP_ANCIENT_TOMB",
+    "thisLevelsId": "MAP_ANCIENT_TOMB",
+    "marts": []
+  },
+  {
+    "levelLabel": "1F",
+    "folder": "AquaHideout_1F",
+    "baseMap": "MAP_AQUA_HIDEOUT",
+    "thisLevelsId": "MAP_AQUA_HIDEOUT_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "B 1F",
+    "folder": "AquaHideout_B1F",
+    "baseMap": "MAP_AQUA_HIDEOUT",
+    "thisLevelsId": "MAP_AQUA_HIDEOUT_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "B 2F",
+    "folder": "AquaHideout_B2F",
+    "baseMap": "MAP_AQUA_HIDEOUT",
+    "thisLevelsId": "MAP_AQUA_HIDEOUT_B2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Unusedrubymap 1",
+    "folder": "AquaHideout_UnusedRubyMap1",
+    "baseMap": "MAP_AQUA_HIDEOUT",
+    "thisLevelsId": "MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP1",
+    "marts": []
+  },
+  {
+    "levelLabel": "Unusedrubymap 2",
+    "folder": "AquaHideout_UnusedRubyMap2",
+    "baseMap": "MAP_AQUA_HIDEOUT",
+    "thisLevelsId": "MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP2",
+    "marts": []
+  },
+  {
+    "levelLabel": "Unusedrubymap 3",
+    "folder": "AquaHideout_UnusedRubyMap3",
+    "baseMap": "MAP_AQUA_HIDEOUT",
+    "thisLevelsId": "MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP3",
+    "marts": []
+  },
+  {
+    "levelLabel": "1F",
+    "folder": "ArtisanCave_1F",
+    "baseMap": "MAP_ARTISAN_CAVE",
+    "thisLevelsId": "MAP_ARTISAN_CAVE_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "B 1F",
+    "folder": "ArtisanCave_B1F",
+    "baseMap": "MAP_ARTISAN_CAVE",
+    "thisLevelsId": "MAP_ARTISAN_CAVE_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "2p",
+    "folder": "BattleColosseum_2P",
+    "baseMap": "MAP_BATTLE_COLOSSEUM",
+    "thisLevelsId": "MAP_BATTLE_COLOSSEUM_2P",
+    "marts": []
+  },
+  {
+    "levelLabel": "4p",
+    "folder": "BattleColosseum_4P",
+    "baseMap": "MAP_BATTLE_COLOSSEUM",
+    "thisLevelsId": "MAP_BATTLE_COLOSSEUM_4P",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlearenabattleroom",
+    "folder": "BattleFrontier_BattleArenaBattleRoom",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlearenacorridor",
+    "folder": "BattleFrontier_BattleArenaCorridor",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_ARENA_CORRIDOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlearenalobby",
+    "folder": "BattleFrontier_BattleArenaLobby",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_ARENA_LOBBY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battledomebattleroom",
+    "folder": "BattleFrontier_BattleDomeBattleRoom",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battledomecorridor",
+    "folder": "BattleFrontier_BattleDomeCorridor",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_DOME_CORRIDOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battledomelobby",
+    "folder": "BattleFrontier_BattleDomeLobby",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_DOME_LOBBY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battledomeprebattleroom",
+    "folder": "BattleFrontier_BattleDomePreBattleRoom",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_DOME_PRE_BATTLE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlefactorybattleroom",
+    "folder": "BattleFrontier_BattleFactoryBattleRoom",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_FACTORY_BATTLE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlefactorylobby",
+    "folder": "BattleFrontier_BattleFactoryLobby",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_FACTORY_LOBBY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlefactoryprebattleroom",
+    "folder": "BattleFrontier_BattleFactoryPreBattleRoom",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_FACTORY_PRE_BATTLE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlepalacebattleroom",
+    "folder": "BattleFrontier_BattlePalaceBattleRoom",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlepalacecorridor",
+    "folder": "BattleFrontier_BattlePalaceCorridor",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_PALACE_CORRIDOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlepalacelobby",
+    "folder": "BattleFrontier_BattlePalaceLobby",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_PALACE_LOBBY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlepikecorridor",
+    "folder": "BattleFrontier_BattlePikeCorridor",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_CORRIDOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlepikelobby",
+    "folder": "BattleFrontier_BattlePikeLobby",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlepikeroomfinal",
+    "folder": "BattleFrontier_BattlePikeRoomFinal",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_FINAL",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlepikeroomnormal",
+    "folder": "BattleFrontier_BattlePikeRoomNormal",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_NORMAL",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlepikeroomwildmons",
+    "folder": "BattleFrontier_BattlePikeRoomWildMons",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlepikethreepathroom",
+    "folder": "BattleFrontier_BattlePikeThreePathRoom",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_THREE_PATH_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlepyramidfloor",
+    "folder": "BattleFrontier_BattlePyramidFloor",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlepyramidlobby",
+    "folder": "BattleFrontier_BattlePyramidLobby",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battlepyramidtop",
+    "folder": "BattleFrontier_BattlePyramidTop",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletowerbattleroom",
+    "folder": "BattleFrontier_BattleTowerBattleRoom",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletowercorridor",
+    "folder": "BattleFrontier_BattleTowerCorridor",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_CORRIDOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletowerelevator",
+    "folder": "BattleFrontier_BattleTowerElevator",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_ELEVATOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletowerlobby",
+    "folder": "BattleFrontier_BattleTowerLobby",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_LOBBY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletowermultibattleroom",
+    "folder": "BattleFrontier_BattleTowerMultiBattleRoom",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_BATTLE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletowermulticorridor",
+    "folder": "BattleFrontier_BattleTowerMultiCorridor",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletowermultipartnerroom",
+    "folder": "BattleFrontier_BattleTowerMultiPartnerRoom",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Exchangeservicecorner",
+    "folder": "BattleFrontier_ExchangeServiceCorner",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_EXCHANGE_SERVICE_CORNER",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lounge 1",
+    "folder": "BattleFrontier_Lounge1",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_LOUNGE1",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lounge 2",
+    "folder": "BattleFrontier_Lounge2",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_LOUNGE2",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lounge 3",
+    "folder": "BattleFrontier_Lounge3",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_LOUNGE3",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lounge 4",
+    "folder": "BattleFrontier_Lounge4",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_LOUNGE4",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lounge 5",
+    "folder": "BattleFrontier_Lounge5",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_LOUNGE5",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lounge 6",
+    "folder": "BattleFrontier_Lounge6",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_LOUNGE6",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lounge 7",
+    "folder": "BattleFrontier_Lounge7",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_LOUNGE7",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lounge 8",
+    "folder": "BattleFrontier_Lounge8",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_LOUNGE8",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lounge 9",
+    "folder": "BattleFrontier_Lounge9",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_LOUNGE9",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mart",
+    "folder": "BattleFrontier_Mart",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_MART",
+    "marts": [
+      {
+        "label": "MAP_BATTLE_FRONTIER",
+        "mart": "Mart",
+        "items": [
+          "ITEM_TM_STEEL_BEAM",
+          "ITEM_TM_DRACO_BARRAGE",
+          "ITEM_TM_MISTY_EXPLOSION"
+        ],
+        "levelLabel": "Mart",
+        "scriptname": "BattleFrontier_Mart_Pokemart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Outsideeast",
+    "folder": "BattleFrontier_OutsideEast",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
+    "marts": []
+  },
+  {
+    "levelLabel": "Outsidewest",
+    "folder": "BattleFrontier_OutsideWest",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "BattleFrontier_PokemonCenter_1F",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "BattleFrontier_PokemonCenter_2F",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Rankinghall",
+    "folder": "BattleFrontier_RankingHall",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_RANKING_HALL",
+    "marts": []
+  },
+  {
+    "levelLabel": "Receptiongate",
+    "folder": "BattleFrontier_ReceptionGate",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_RECEPTION_GATE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Scottshouse",
+    "folder": "BattleFrontier_ScottsHouse",
+    "baseMap": "MAP_BATTLE_FRONTIER",
+    "thisLevelsId": "MAP_BATTLE_FRONTIER_SCOTTS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "BattlePyramidSquare01",
+    "baseMap": "MAP_BATTLE_PYRAMID_SQUARE_0_1",
+    "thisLevelsId": "MAP_BATTLE_PYRAMID_SQUARE01",
+    "marts": []
+  },
+  {
+    "levelLabel": "Exterior",
+    "folder": "BirthIsland_Exterior",
+    "baseMap": "MAP_BIRTH_ISLAND",
+    "thisLevelsId": "MAP_BIRTH_ISLAND_EXTERIOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Harbor",
+    "folder": "BirthIsland_Harbor",
+    "baseMap": "MAP_BIRTH_ISLAND",
+    "thisLevelsId": "MAP_BIRTH_ISLAND_HARBOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "1F",
+    "folder": "CaveOfOrigin_1F",
+    "baseMap": "MAP_CAVE_OF_ORIGIN",
+    "thisLevelsId": "MAP_CAVE_OF_ORIGIN_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "B 1F",
+    "folder": "CaveOfOrigin_B1F",
+    "baseMap": "MAP_CAVE_OF_ORIGIN",
+    "thisLevelsId": "MAP_CAVE_OF_ORIGIN_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Entrance",
+    "folder": "CaveOfOrigin_Entrance",
+    "baseMap": "MAP_CAVE_OF_ORIGIN",
+    "thisLevelsId": "MAP_CAVE_OF_ORIGIN_ENTRANCE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Unusedrubysapphiremap 1",
+    "folder": "CaveOfOrigin_UnusedRubySapphireMap1",
+    "baseMap": "MAP_CAVE_OF_ORIGIN",
+    "thisLevelsId": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1",
+    "marts": []
+  },
+  {
+    "levelLabel": "Unusedrubysapphiremap 2",
+    "folder": "CaveOfOrigin_UnusedRubySapphireMap2",
+    "baseMap": "MAP_CAVE_OF_ORIGIN",
+    "thisLevelsId": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2",
+    "marts": []
+  },
+  {
+    "levelLabel": "Unusedrubysapphiremap 3",
+    "folder": "CaveOfOrigin_UnusedRubySapphireMap3",
+    "baseMap": "MAP_CAVE_OF_ORIGIN",
+    "thisLevelsId": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "ContestHall",
+    "baseMap": "MAP_CONTEST_HALL",
+    "thisLevelsId": "MAP_CONTEST_HALL",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "DesertRuins",
+    "baseMap": "MAP_DESERT_RUINS",
+    "thisLevelsId": "MAP_DESERT_RUINS",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "DesertUnderpass",
+    "baseMap": "MAP_DESERT_UNDERPASS",
+    "thisLevelsId": "MAP_DESERT_UNDERPASS",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "DewfordTown",
+    "baseMap": "MAP_DEWFORD_TOWN",
+    "thisLevelsId": "MAP_DEWFORD_TOWN",
+    "marts": [
+      {
+        "label": "MAP_DEWFORD_TOWN",
+        "mart": "",
+        "items": [
+          "ITEM_TM_ELECTROWEB",
+          "ITEM_TM_ROCK_TOMB",
+          "ITEM_TM_AERIAL_ACE",
+          "ITEM_TM_LOW_KICK",
+          "ITEM_TM_PLUCK",
+          "ITEM_TM_SNARL",
+          "ITEM_TM_SMACK_DOWN"
+        ],
+        "levelLabel": "",
+        "scriptname": "DewfordTown_MiniMart2:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Gym",
+    "folder": "DewfordTown_Gym",
+    "baseMap": "MAP_DEWFORD_TOWN",
+    "thisLevelsId": "MAP_DEWFORD_TOWN_GYM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Hall",
+    "folder": "DewfordTown_Hall",
+    "baseMap": "MAP_DEWFORD_TOWN",
+    "thisLevelsId": "MAP_DEWFORD_TOWN_HALL",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 1",
+    "folder": "DewfordTown_House1",
+    "baseMap": "MAP_DEWFORD_TOWN",
+    "thisLevelsId": "MAP_DEWFORD_TOWN_HOUSE1",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 2",
+    "folder": "DewfordTown_House2",
+    "baseMap": "MAP_DEWFORD_TOWN",
+    "thisLevelsId": "MAP_DEWFORD_TOWN_HOUSE2",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "DewfordTown_PokemonCenter_1F",
+    "baseMap": "MAP_DEWFORD_TOWN",
+    "thisLevelsId": "MAP_DEWFORD_TOWN_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "DewfordTown_PokemonCenter_2F",
+    "baseMap": "MAP_DEWFORD_TOWN",
+    "thisLevelsId": "MAP_DEWFORD_TOWN_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "EverGrandeCity",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Championsroom",
+    "folder": "EverGrandeCity_ChampionsRoom",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Drakesroom",
+    "folder": "EverGrandeCity_DrakesRoom",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_DRAKES_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Glaciasroom",
+    "folder": "EverGrandeCity_GlaciasRoom",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_GLACIAS_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Hall 1",
+    "folder": "EverGrandeCity_Hall1",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_HALL1",
+    "marts": []
+  },
+  {
+    "levelLabel": "Hall 2",
+    "folder": "EverGrandeCity_Hall2",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_HALL2",
+    "marts": []
+  },
+  {
+    "levelLabel": "Hall 3",
+    "folder": "EverGrandeCity_Hall3",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_HALL3",
+    "marts": []
+  },
+  {
+    "levelLabel": "Hall 4",
+    "folder": "EverGrandeCity_Hall4",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_HALL4",
+    "marts": []
+  },
+  {
+    "levelLabel": "Hall 5",
+    "folder": "EverGrandeCity_Hall5",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_HALL5",
+    "marts": []
+  },
+  {
+    "levelLabel": "Halloffame",
+    "folder": "EverGrandeCity_HallOfFame",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_HALL_OF_FAME",
+    "marts": []
+  },
+  {
+    "levelLabel": "Phoebesroom",
+    "folder": "EverGrandeCity_PhoebesRoom",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_PHOEBES_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "EverGrandeCity_PokemonCenter_1F",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "EverGrandeCity_PokemonCenter_2F",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemonleague 1F",
+    "folder": "EverGrandeCity_PokemonLeague_1F",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
+    "marts": [
+      {
+        "label": "MAP_EVER_GRANDE_CITY",
+        "mart": "Mart",
+        "items": [
+          "ITEM_ULTRA_BALL",
+          "ITEM_HYPER_POTION",
+          "ITEM_MAX_POTION",
+          "ITEM_FULL_RESTORE",
+          "ITEM_FULL_HEAL",
+          "ITEM_REVIVE",
+          "ITEM_MAX_REPEL"
+        ],
+        "levelLabel": "Pokemonleague 1F",
+        "scriptname": "EverGrandeCity_PokemonLeague_1F_Pokemart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Pokemonleague 2F",
+    "folder": "EverGrandeCity_PokemonLeague_2F",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Sidneysroom",
+    "folder": "EverGrandeCity_SidneysRoom",
+    "baseMap": "MAP_EVER_GRANDE_CITY",
+    "thisLevelsId": "MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "FallarborTown",
+    "baseMap": "MAP_FALLARBOR_TOWN",
+    "thisLevelsId": "MAP_FALLARBOR_TOWN",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletentbattleroom",
+    "folder": "FallarborTown_BattleTentBattleRoom",
+    "baseMap": "MAP_FALLARBOR_TOWN",
+    "thisLevelsId": "MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletentcorridor",
+    "folder": "FallarborTown_BattleTentCorridor",
+    "baseMap": "MAP_FALLARBOR_TOWN",
+    "thisLevelsId": "MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletentlobby",
+    "folder": "FallarborTown_BattleTentLobby",
+    "baseMap": "MAP_FALLARBOR_TOWN",
+    "thisLevelsId": "MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Cozmoshouse",
+    "folder": "FallarborTown_CozmosHouse",
+    "baseMap": "MAP_FALLARBOR_TOWN",
+    "thisLevelsId": "MAP_FALLARBOR_TOWN_COZMOS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mart",
+    "folder": "FallarborTown_Mart",
+    "baseMap": "MAP_FALLARBOR_TOWN",
+    "thisLevelsId": "MAP_FALLARBOR_TOWN_MART",
+    "marts": [
+      {
+        "label": "MAP_FALLARBOR_TOWN",
+        "mart": "Mart",
+        "items": [
+          "ITEM_GREAT_BALL",
+          "ITEM_SUPER_POTION",
+          "ITEM_ANTIDOTE",
+          "ITEM_PARALYZE_HEAL",
+          "ITEM_ESCAPE_ROPE",
+          "ITEM_SUPER_REPEL",
+          "ITEM_X_SP_ATK",
+          "ITEM_X_SPEED",
+          "ITEM_X_ATTACK",
+          "ITEM_X_DEFENSE",
+          "ITEM_DIRE_HIT",
+          "ITEM_GUARD_SPEC"
+        ],
+        "levelLabel": "Mart",
+        "scriptname": "FallarborTown_Mart_Pokemart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Moverelearnershouse",
+    "folder": "FallarborTown_MoveRelearnersHouse",
+    "baseMap": "MAP_FALLARBOR_TOWN",
+    "thisLevelsId": "MAP_FALLARBOR_TOWN_MOVE_RELEARNERS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "FallarborTown_PokemonCenter_1F",
+    "baseMap": "MAP_FALLARBOR_TOWN",
+    "thisLevelsId": "MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "FallarborTown_PokemonCenter_2F",
+    "baseMap": "MAP_FALLARBOR_TOWN",
+    "thisLevelsId": "MAP_FALLARBOR_TOWN_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Entrance",
+    "folder": "FarawayIsland_Entrance",
+    "baseMap": "MAP_FARAWAY_ISLAND",
+    "thisLevelsId": "MAP_FARAWAY_ISLAND_ENTRANCE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Interior",
+    "folder": "FarawayIsland_Interior",
+    "baseMap": "MAP_FARAWAY_ISLAND",
+    "thisLevelsId": "MAP_FARAWAY_ISLAND_INTERIOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "FieryPath",
+    "baseMap": "MAP_FIERY_PATH",
+    "thisLevelsId": "MAP_FIERY_PATH",
+    "marts": []
+  },
+  {
+    "levelLabel": "Backroom",
+    "folder": "FieryPath_BackRoom",
+    "baseMap": "MAP_FIERY_PATH",
+    "thisLevelsId": "MAP_FIERY_PATH_BACK_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "FloatingSlab",
+    "baseMap": "MAP_FLOATING_SLAB",
+    "thisLevelsId": "MAP_FLOATING_SLAB",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "FortreeCity",
+    "baseMap": "MAP_FORTREE_CITY",
+    "thisLevelsId": "MAP_FORTREE_CITY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Creatorhouse",
+    "folder": "FortreeCity_CreatorHouse",
+    "baseMap": "MAP_FORTREE_CITY",
+    "thisLevelsId": "MAP_FORTREE_CITY_CREATOR_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Decorationshop",
+    "folder": "FortreeCity_DecorationShop",
+    "baseMap": "MAP_FORTREE_CITY",
+    "thisLevelsId": "MAP_FORTREE_CITY_DECORATION_SHOP",
+    "marts": []
+  },
+  {
+    "levelLabel": "Gym",
+    "folder": "FortreeCity_Gym",
+    "baseMap": "MAP_FORTREE_CITY",
+    "thisLevelsId": "MAP_FORTREE_CITY_GYM",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 1",
+    "folder": "FortreeCity_House1",
+    "baseMap": "MAP_FORTREE_CITY",
+    "thisLevelsId": "MAP_FORTREE_CITY_HOUSE1",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 2",
+    "folder": "FortreeCity_House2",
+    "baseMap": "MAP_FORTREE_CITY",
+    "thisLevelsId": "MAP_FORTREE_CITY_HOUSE2",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 3",
+    "folder": "FortreeCity_House3",
+    "baseMap": "MAP_FORTREE_CITY",
+    "thisLevelsId": "MAP_FORTREE_CITY_HOUSE3",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 4",
+    "folder": "FortreeCity_House4",
+    "baseMap": "MAP_FORTREE_CITY",
+    "thisLevelsId": "MAP_FORTREE_CITY_HOUSE4",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 5",
+    "folder": "FortreeCity_House5",
+    "baseMap": "MAP_FORTREE_CITY",
+    "thisLevelsId": "MAP_FORTREE_CITY_HOUSE5",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mart",
+    "folder": "FortreeCity_Mart",
+    "baseMap": "MAP_FORTREE_CITY",
+    "thisLevelsId": "MAP_FORTREE_CITY_MART",
+    "marts": [
+      {
+        "label": "MAP_FORTREE_CITY",
+        "mart": "Mart",
+        "items": [
+          "ITEM_POKE_BALL",
+          "ITEM_GREAT_BALL",
+          "ITEM_ULTRA_BALL",
+          "ITEM_SUPER_POTION",
+          "ITEM_HYPER_POTION",
+          "ITEM_ANTIDOTE",
+          "ITEM_PARALYZE_HEAL",
+          "ITEM_AWAKENING",
+          "ITEM_REVIVE",
+          "ITEM_SUPER_REPEL",
+          "ITEM_WOOD_MAIL"
+        ],
+        "levelLabel": "Mart",
+        "scriptname": "FortreeCity_Mart_Pokemart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "FortreeCity_PokemonCenter_1F",
+    "baseMap": "MAP_FORTREE_CITY",
+    "thisLevelsId": "MAP_FORTREE_CITY_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "FortreeCity_PokemonCenter_2F",
+    "baseMap": "MAP_FORTREE_CITY",
+    "thisLevelsId": "MAP_FORTREE_CITY_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "1F",
+    "folder": "GraniteCave_1F",
+    "baseMap": "MAP_GRANITE_CAVE",
+    "thisLevelsId": "MAP_GRANITE_CAVE_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "B 1F",
+    "folder": "GraniteCave_B1F",
+    "baseMap": "MAP_GRANITE_CAVE",
+    "thisLevelsId": "MAP_GRANITE_CAVE_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "B 2F",
+    "folder": "GraniteCave_B2F",
+    "baseMap": "MAP_GRANITE_CAVE",
+    "thisLevelsId": "MAP_GRANITE_CAVE_B2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Stevensroom",
+    "folder": "GraniteCave_StevensRoom",
+    "baseMap": "MAP_GRANITE_CAVE",
+    "thisLevelsId": "MAP_GRANITE_CAVE_STEVENS_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "GrassySlab",
+    "baseMap": "MAP_GRASSY_SLAB",
+    "thisLevelsId": "MAP_GRASSY_SLAB",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "InsideOfTruck",
+    "baseMap": "MAP_INSIDE_OF_TRUCK",
+    "thisLevelsId": "MAP_INSIDE_OF_TRUCK",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "IslandCave",
+    "baseMap": "MAP_ISLAND_CAVE",
+    "thisLevelsId": "MAP_ISLAND_CAVE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "JaggedPass",
+    "baseMap": "MAP_JAGGED_PASS",
+    "thisLevelsId": "MAP_JAGGED_PASS",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "LavaridgeTown",
+    "baseMap": "MAP_LAVARIDGE_TOWN",
+    "thisLevelsId": "MAP_LAVARIDGE_TOWN",
+    "marts": [
+      {
+        "label": "MAP_LAVARIDGE_TOWN",
+        "mart": "",
+        "items": [
+          "ITEM_TM_ICE_BEAM",
+          "ITEM_TM_HYPER_VOICE",
+          "ITEM_TM_THUNDERBOLT",
+          "ITEM_TM_FLAMETHROWER",
+          "ITEM_TM_SLUDGE_BOMB",
+          "ITEM_TM_ENERGY_BALL",
+          "ITEM_TM_DARK_PULSE"
+        ],
+        "levelLabel": "",
+        "scriptname": "LavaridgeTown_MiniMart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Gym 1F",
+    "folder": "LavaridgeTown_Gym_1F",
+    "baseMap": "MAP_LAVARIDGE_TOWN",
+    "thisLevelsId": "MAP_LAVARIDGE_TOWN_GYM_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Gym B 1F",
+    "folder": "LavaridgeTown_Gym_B1F",
+    "baseMap": "MAP_LAVARIDGE_TOWN",
+    "thisLevelsId": "MAP_LAVARIDGE_TOWN_GYM_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Herbshop",
+    "folder": "LavaridgeTown_HerbShop",
+    "baseMap": "MAP_LAVARIDGE_TOWN",
+    "thisLevelsId": "MAP_LAVARIDGE_TOWN_HERB_SHOP",
+    "marts": [
+      {
+        "label": "MAP_LAVARIDGE_TOWN",
+        "mart": "HerbShop",
+        "items": [
+          "ITEM_ENERGY_POWDER",
+          "ITEM_ENERGY_ROOT",
+          "ITEM_HEAL_POWDER",
+          "ITEM_REVIVAL_HERB",
+          "ITEM_WHITE_HERB",
+          "ITEM_MENTAL_HERB",
+          "ITEM_POWER_HERB",
+          "ITEM_BIG_ROOT"
+        ],
+        "levelLabel": "Herbshop",
+        "scriptname": "LavaridgeTown_HerbShop_Pokemart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "House",
+    "folder": "LavaridgeTown_House",
+    "baseMap": "MAP_LAVARIDGE_TOWN",
+    "thisLevelsId": "MAP_LAVARIDGE_TOWN_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mart",
+    "folder": "LavaridgeTown_Mart",
+    "baseMap": "MAP_LAVARIDGE_TOWN",
+    "thisLevelsId": "MAP_LAVARIDGE_TOWN_MART",
+    "marts": [
+      {
+        "label": "MAP_LAVARIDGE_TOWN",
+        "mart": "Mart",
+        "items": [
+          "ITEM_POKE_BALL",
+          "ITEM_GREAT_BALL",
+          "ITEM_ULTRA_BALL",
+          "ITEM_SUPER_POTION",
+          "ITEM_ANTIDOTE",
+          "ITEM_PARALYZE_HEAL",
+          "ITEM_AWAKENING",
+          "ITEM_BURN_HEAL",
+          "ITEM_REVIVE",
+          "ITEM_SUPER_REPEL",
+          "ITEM_X_SPEED"
+        ],
+        "levelLabel": "Mart",
+        "scriptname": "LavaridgeTown_Mart_Pokemart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "LavaridgeTown_PokemonCenter_1F",
+    "baseMap": "MAP_LAVARIDGE_TOWN",
+    "thisLevelsId": "MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "LavaridgeTown_PokemonCenter_2F",
+    "baseMap": "MAP_LAVARIDGE_TOWN",
+    "thisLevelsId": "MAP_LAVARIDGE_TOWN_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "LilycoveCity",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Contesthall",
+    "folder": "LilycoveCity_ContestHall",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_CONTEST_HALL",
+    "marts": []
+  },
+  {
+    "levelLabel": "Contestlobby",
+    "folder": "LilycoveCity_ContestLobby",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_CONTEST_LOBBY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Covelilymotel 1F",
+    "folder": "LilycoveCity_CoveLilyMotel_1F",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Covelilymotel 2F",
+    "folder": "LilycoveCity_CoveLilyMotel_2F",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Departmentstoreelevator",
+    "folder": "LilycoveCity_DepartmentStoreElevator",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Departmentstorerooftop",
+    "folder": "LilycoveCity_DepartmentStoreRooftop",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP",
+    "marts": []
+  },
+  {
+    "levelLabel": "Departmentstore 1F",
+    "folder": "LilycoveCity_DepartmentStore_1F",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Departmentstore 2F",
+    "folder": "LilycoveCity_DepartmentStore_2F",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_2F",
+    "marts": [
+      {
+        "label": "MAP_LILYCOVE_CITY",
+        "mart": "DepartmentStore_2F",
+        "items": [
+          "ITEM_POKE_BALL",
+          "ITEM_GREAT_BALL",
+          "ITEM_ULTRA_BALL",
+          "ITEM_ESCAPE_ROPE",
+          "ITEM_FULL_HEAL",
+          "ITEM_ANTIDOTE",
+          "ITEM_PARALYZE_HEAL",
+          "ITEM_BURN_HEAL",
+          "ITEM_ICE_HEAL",
+          "ITEM_AWAKENING",
+          "ITEM_FLUFFY_TAIL"
+        ],
+        "levelLabel": "Departmentstore 2F",
+        "scriptname": "LilycoveCity_DepartmentStore_2F_Pokemart1:"
+      },
+      {
+        "label": "MAP_LILYCOVE_CITY",
+        "mart": "DepartmentStore_2F",
+        "items": [
+          "ITEM_POTION",
+          "ITEM_SUPER_POTION",
+          "ITEM_HYPER_POTION",
+          "ITEM_MAX_POTION",
+          "ITEM_REVIVE",
+          "ITEM_REPEL",
+          "ITEM_SUPER_REPEL",
+          "ITEM_MAX_REPEL",
+          "ITEM_WAVE_MAIL",
+          "ITEM_MECH_MAIL"
+        ],
+        "levelLabel": "Departmentstore 2F",
+        "scriptname": "LilycoveCity_DepartmentStore_2F_Pokemart2:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Departmentstore 3F",
+    "folder": "LilycoveCity_DepartmentStore_3F",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_3F",
+    "marts": [
+      {
+        "label": "MAP_LILYCOVE_CITY",
+        "mart": "DepartmentStore_3F",
+        "items": [
+          "ITEM_PROTEIN",
+          "ITEM_CALCIUM",
+          "ITEM_IRON",
+          "ITEM_ZINC",
+          "ITEM_CARBOS",
+          "ITEM_HP_UP"
+        ],
+        "levelLabel": "Departmentstore 3F",
+        "scriptname": "LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins:"
+      },
+      {
+        "label": "MAP_LILYCOVE_CITY",
+        "mart": "DepartmentStore_3F",
+        "items": [
+          "ITEM_X_SPEED",
+          "ITEM_X_SP_ATK",
+          "ITEM_X_ATTACK",
+          "ITEM_X_DEFENSE",
+          "ITEM_DIRE_HIT",
+          "ITEM_GUARD_SPEC",
+          "ITEM_X_ACCURACY"
+        ],
+        "levelLabel": "Departmentstore 3F",
+        "scriptname": "LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Departmentstore 4F",
+    "folder": "LilycoveCity_DepartmentStore_4F",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_4F",
+    "marts": [
+      {
+        "label": "MAP_LILYCOVE_CITY",
+        "mart": "DepartmentStore_4F",
+        "items": [
+          "ITEM_HEAL_BALL",
+          "ITEM_NET_BALL",
+          "ITEM_NEST_BALL",
+          "ITEM_DIVE_BALL",
+          "ITEM_DUSK_BALL",
+          "ITEM_TIMER_BALL",
+          "ITEM_QUICK_BALL",
+          "ITEM_REPEAT_BALL",
+          "ITEM_LUXURY_BALL",
+          "ITEM_LEVEL_BALL",
+          "ITEM_LURE_BALL",
+          "ITEM_MOON_BALL",
+          "ITEM_FRIEND_BALL",
+          "ITEM_LOVE_BALL",
+          "ITEM_FAST_BALL",
+          "ITEM_HEAVY_BALL",
+          "ITEM_DREAM_BALL",
+          "ITEM_CHERISH_BALL",
+          "ITEM_BEAST_BALL"
+        ],
+        "levelLabel": "Departmentstore 4F",
+        "scriptname": "LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs:"
+      },
+      {
+        "label": "MAP_LILYCOVE_CITY",
+        "mart": "DepartmentStore_4F",
+        "items": [
+          "ITEM_FIRE_STONE",
+          "ITEM_THUNDER_STONE",
+          "ITEM_LEAF_STONE",
+          "ITEM_WATER_STONE",
+          "ITEM_ICE_STONE",
+          "ITEM_SUN_STONE",
+          "ITEM_MOON_STONE",
+          "ITEM_PRISM_SCALE",
+          "ITEM_LINKING_CORD",
+          "ITEM_DUSK_STONE",
+          "ITEM_DAWN_STONE",
+          "ITEM_SHINY_STONE",
+          "ITEM_KINGS_ROCK",
+          "ITEM_METAL_COAT",
+          "ITEM_UPGRADE",
+          "ITEM_DUBIOUS_DISC"
+        ],
+        "levelLabel": "Departmentstore 4F",
+        "scriptname": "LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Departmentstore 5F",
+    "folder": "LilycoveCity_DepartmentStore_5F",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_5F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Harbor",
+    "folder": "LilycoveCity_Harbor",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_HARBOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 1",
+    "folder": "LilycoveCity_House1",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_HOUSE1",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 2",
+    "folder": "LilycoveCity_House2",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_HOUSE2",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 3",
+    "folder": "LilycoveCity_House3",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_HOUSE3",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 4",
+    "folder": "LilycoveCity_House4",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_HOUSE4",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lilycovemuseum 1F",
+    "folder": "LilycoveCity_LilycoveMuseum_1F",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lilycovemuseum 2F",
+    "folder": "LilycoveCity_LilycoveMuseum_2F",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Movedeletershouse",
+    "folder": "LilycoveCity_MoveDeletersHouse",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_MOVE_DELETERS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "LilycoveCity_PokemonCenter_1F",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "LilycoveCity_PokemonCenter_2F",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemontrainerfanclub",
+    "folder": "LilycoveCity_PokemonTrainerFanClub",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_POKEMON_TRAINER_FAN_CLUB",
+    "marts": []
+  },
+  {
+    "levelLabel": "Unusedmart",
+    "folder": "LilycoveCity_UnusedMart",
+    "baseMap": "MAP_LILYCOVE_CITY",
+    "thisLevelsId": "MAP_LILYCOVE_CITY_UNUSED_MART",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "LittlerootTown",
+    "baseMap": "MAP_LITTLEROOT_TOWN",
+    "thisLevelsId": "MAP_LITTLEROOT_TOWN",
+    "marts": []
+  },
+  {
+    "levelLabel": "Brendanshouse 1F",
+    "folder": "LittlerootTown_BrendansHouse_1F",
+    "baseMap": "MAP_LITTLEROOT_TOWN",
+    "thisLevelsId": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Brendanshouse 2F",
+    "folder": "LittlerootTown_BrendansHouse_2F",
+    "baseMap": "MAP_LITTLEROOT_TOWN",
+    "thisLevelsId": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mayshouse 1F",
+    "folder": "LittlerootTown_MaysHouse_1F",
+    "baseMap": "MAP_LITTLEROOT_TOWN",
+    "thisLevelsId": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mayshouse 2F",
+    "folder": "LittlerootTown_MaysHouse_2F",
+    "baseMap": "MAP_LITTLEROOT_TOWN",
+    "thisLevelsId": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Professorbirchslab",
+    "folder": "LittlerootTown_ProfessorBirchsLab",
+    "baseMap": "MAP_LITTLEROOT_TOWN",
+    "thisLevelsId": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
+    "marts": []
+  },
+  {
+    "levelLabel": "1F",
+    "folder": "MagmaHideout_1F",
+    "baseMap": "MAP_MAGMA_HIDEOUT",
+    "thisLevelsId": "MAP_MAGMA_HIDEOUT_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "2F 1r",
+    "folder": "MagmaHideout_2F_1R",
+    "baseMap": "MAP_MAGMA_HIDEOUT",
+    "thisLevelsId": "MAP_MAGMA_HIDEOUT_2F_1R",
+    "marts": []
+  },
+  {
+    "levelLabel": "2F 2r",
+    "folder": "MagmaHideout_2F_2R",
+    "baseMap": "MAP_MAGMA_HIDEOUT",
+    "thisLevelsId": "MAP_MAGMA_HIDEOUT_2F_2R",
+    "marts": []
+  },
+  {
+    "levelLabel": "2F 3r",
+    "folder": "MagmaHideout_2F_3R",
+    "baseMap": "MAP_MAGMA_HIDEOUT",
+    "thisLevelsId": "MAP_MAGMA_HIDEOUT_2F_3R",
+    "marts": []
+  },
+  {
+    "levelLabel": "3F 1r",
+    "folder": "MagmaHideout_3F_1R",
+    "baseMap": "MAP_MAGMA_HIDEOUT",
+    "thisLevelsId": "MAP_MAGMA_HIDEOUT_3F_1R",
+    "marts": []
+  },
+  {
+    "levelLabel": "3F 2r",
+    "folder": "MagmaHideout_3F_2R",
+    "baseMap": "MAP_MAGMA_HIDEOUT",
+    "thisLevelsId": "MAP_MAGMA_HIDEOUT_3F_2R",
+    "marts": []
+  },
+  {
+    "levelLabel": "3F 3r",
+    "folder": "MagmaHideout_3F_3R",
+    "baseMap": "MAP_MAGMA_HIDEOUT",
+    "thisLevelsId": "MAP_MAGMA_HIDEOUT_3F_3R",
+    "marts": []
+  },
+  {
+    "levelLabel": "4F",
+    "folder": "MagmaHideout_4F",
+    "baseMap": "MAP_MAGMA_HIDEOUT",
+    "thisLevelsId": "MAP_MAGMA_HIDEOUT_4F",
+    "marts": []
+  },
+  {
+    "levelLabel": "End",
+    "folder": "MarineCave_End",
+    "baseMap": "MAP_MARINE_CAVE",
+    "thisLevelsId": "MAP_MARINE_CAVE_END",
+    "marts": []
+  },
+  {
+    "levelLabel": "Entrance",
+    "folder": "MarineCave_Entrance",
+    "baseMap": "MAP_MARINE_CAVE",
+    "thisLevelsId": "MAP_MARINE_CAVE_ENTRANCE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "MauvilleCity",
+    "baseMap": "MAP_MAUVILLE_CITY",
+    "thisLevelsId": "MAP_MAUVILLE_CITY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Bikeshop",
+    "folder": "MauvilleCity_BikeShop",
+    "baseMap": "MAP_MAUVILLE_CITY",
+    "thisLevelsId": "MAP_MAUVILLE_CITY_BIKE_SHOP",
+    "marts": []
+  },
+  {
+    "levelLabel": "Gamecorner",
+    "folder": "MauvilleCity_GameCorner",
+    "baseMap": "MAP_MAUVILLE_CITY",
+    "thisLevelsId": "MAP_MAUVILLE_CITY_GAME_CORNER",
+    "marts": [
+      {
+        "label": "MAP_MAUVILLE_CITY",
+        "mart": "GameCorner",
+        "items": [
+          "ITEM_TM_TOXIC",
+          "ITEM_TM_TAUNT",
+          "ITEM_TM_LIGHT_SCREEN",
+          "ITEM_TM_PROTECT",
+          "ITEM_TM_GIGA_DRAIN",
+          "ITEM_TM_REFLECT",
+          "ITEM_TM_REST",
+          "ITEM_TM_LEECH_LIFE",
+          "ITEM_TM_SILVER_WIND",
+          "ITEM_TM_VENOSHOCK",
+          "ITEM_TM_EXPLOSION",
+          "ITEM_TM_SHADOW_CLAW",
+          "ITEM_TM_DAZZLING_GLEAM",
+          "ITEM_TM_PSYSHOCK",
+          "ITEM_TM_GYRO_BALL",
+          "ITEM_TM_ROCK_SLIDE",
+          "ITEM_TM_SLEEP_TALK",
+          "ITEM_TM_POISON_JAB",
+          "ITEM_TM_DRAGON_TAIL",
+          "ITEM_TM_SCORCHING_SANDS",
+          "ITEM_TM_ICE_SPINNER",
+          "ITEM_TM_SPIKES",
+          "ITEM_TM_GRAVITY"
+        ],
+        "levelLabel": "Gamecorner",
+        "scriptname": "MauvilleCity_TMSales:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Gym",
+    "folder": "MauvilleCity_Gym",
+    "baseMap": "MAP_MAUVILLE_CITY",
+    "thisLevelsId": "MAP_MAUVILLE_CITY_GYM",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 1",
+    "folder": "MauvilleCity_House1",
+    "baseMap": "MAP_MAUVILLE_CITY",
+    "thisLevelsId": "MAP_MAUVILLE_CITY_HOUSE1",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 2",
+    "folder": "MauvilleCity_House2",
+    "baseMap": "MAP_MAUVILLE_CITY",
+    "thisLevelsId": "MAP_MAUVILLE_CITY_HOUSE2",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mart",
+    "folder": "MauvilleCity_Mart",
+    "baseMap": "MAP_MAUVILLE_CITY",
+    "thisLevelsId": "MAP_MAUVILLE_CITY_MART",
+    "marts": [
+      {
+        "label": "MAP_MAUVILLE_CITY",
+        "mart": "Mart",
+        "items": [
+          "ITEM_POKE_BALL",
+          "ITEM_GREAT_BALL",
+          "ITEM_SUPER_POTION",
+          "ITEM_ANTIDOTE",
+          "ITEM_PARALYZE_HEAL",
+          "ITEM_AWAKENING",
+          "ITEM_X_SPEED",
+          "ITEM_X_ATTACK",
+          "ITEM_X_DEFENSE",
+          "ITEM_GUARD_SPEC",
+          "ITEM_X_ACCURACY",
+          "ITEM_SHED_SHELL",
+          "ITEM_LIGHT_CLAY"
+        ],
+        "levelLabel": "Mart",
+        "scriptname": "MauvilleCity_Mart_Pokemart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "MauvilleCity_PokemonCenter_1F",
+    "baseMap": "MAP_MAUVILLE_CITY",
+    "thisLevelsId": "MAP_MAUVILLE_CITY_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "MauvilleCity_PokemonCenter_2F",
+    "baseMap": "MAP_MAUVILLE_CITY",
+    "thisLevelsId": "MAP_MAUVILLE_CITY_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "1F 1r",
+    "folder": "MeteorFalls_1F_1R",
+    "baseMap": "MAP_METEOR_FALLS",
+    "thisLevelsId": "MAP_METEOR_FALLS_1F_1R",
+    "marts": []
+  },
+  {
+    "levelLabel": "1F 2r",
+    "folder": "MeteorFalls_1F_2R",
+    "baseMap": "MAP_METEOR_FALLS",
+    "thisLevelsId": "MAP_METEOR_FALLS_1F_2R",
+    "marts": []
+  },
+  {
+    "levelLabel": "B 1F 1r",
+    "folder": "MeteorFalls_B1F_1R",
+    "baseMap": "MAP_METEOR_FALLS",
+    "thisLevelsId": "MAP_METEOR_FALLS_B1F_1R",
+    "marts": []
+  },
+  {
+    "levelLabel": "B 1F 2r",
+    "folder": "MeteorFalls_B1F_2R",
+    "baseMap": "MAP_METEOR_FALLS",
+    "thisLevelsId": "MAP_METEOR_FALLS_B1F_2R",
+    "marts": []
+  },
+  {
+    "levelLabel": "Stevenscave",
+    "folder": "MeteorFalls_StevensCave",
+    "baseMap": "MAP_METEOR_FALLS",
+    "thisLevelsId": "MAP_METEOR_FALLS_STEVENS_CAVE",
+    "marts": []
+  },
+  {
+    "levelLabel": "1F",
+    "folder": "MirageTower_1F",
+    "baseMap": "MAP_MIRAGE_TOWER",
+    "thisLevelsId": "MAP_MIRAGE_TOWER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "2F",
+    "folder": "MirageTower_2F",
+    "baseMap": "MAP_MIRAGE_TOWER",
+    "thisLevelsId": "MAP_MIRAGE_TOWER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "3F",
+    "folder": "MirageTower_3F",
+    "baseMap": "MAP_MIRAGE_TOWER",
+    "thisLevelsId": "MAP_MIRAGE_TOWER_3F",
+    "marts": []
+  },
+  {
+    "levelLabel": "4F",
+    "folder": "MirageTower_4F",
+    "baseMap": "MAP_MIRAGE_TOWER",
+    "thisLevelsId": "MAP_MIRAGE_TOWER_4F",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "MossdeepCity",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Betatesterhouse",
+    "folder": "MossdeepCity_BetaTesterHouse",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_BETA_TESTER_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Gamecorner 1F",
+    "folder": "MossdeepCity_GameCorner_1F",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_GAME_CORNER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Gamecorner B 1F",
+    "folder": "MossdeepCity_GameCorner_B1F",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_GAME_CORNER_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Gym",
+    "folder": "MossdeepCity_Gym",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_GYM",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 1",
+    "folder": "MossdeepCity_House1",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_HOUSE1",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 2",
+    "folder": "MossdeepCity_House2",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_HOUSE2",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 3",
+    "folder": "MossdeepCity_House3",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_HOUSE3",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 4",
+    "folder": "MossdeepCity_House4",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_HOUSE4",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mart",
+    "folder": "MossdeepCity_Mart",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_MART",
+    "marts": [
+      {
+        "label": "MAP_MOSSDEEP_CITY",
+        "mart": "Mart",
+        "items": [
+          "ITEM_ULTRA_BALL",
+          "ITEM_NET_BALL",
+          "ITEM_DIVE_BALL",
+          "ITEM_HYPER_POTION",
+          "ITEM_FULL_HEAL",
+          "ITEM_REVIVE",
+          "ITEM_MAX_REPEL",
+          "ITEM_X_ATTACK",
+          "ITEM_X_DEFENSE"
+        ],
+        "levelLabel": "Mart",
+        "scriptname": "MossdeepCity_Mart_Pokemart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "MossdeepCity_PokemonCenter_1F",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "MossdeepCity_PokemonCenter_2F",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Spacecenter 1F",
+    "folder": "MossdeepCity_SpaceCenter_1F",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_SPACE_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Spacecenter 2F",
+    "folder": "MossdeepCity_SpaceCenter_2F",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_SPACE_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Stevenshouse",
+    "folder": "MossdeepCity_StevensHouse",
+    "baseMap": "MAP_MOSSDEEP_CITY",
+    "thisLevelsId": "MAP_MOSSDEEP_CITY_STEVENS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "MtChimney",
+    "baseMap": "MAP_MT_CHIMNEY",
+    "thisLevelsId": "MAP_MT_CHIMNEY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Cablecarstation",
+    "folder": "MtChimney_CableCarStation",
+    "baseMap": "MAP_MT_CHIMNEY",
+    "thisLevelsId": "MAP_MT_CHIMNEY_CABLE_CAR_STATION",
+    "marts": []
+  },
+  {
+    "levelLabel": "1F",
+    "folder": "MtPyre_1F",
+    "baseMap": "MAP_MT_PYRE",
+    "thisLevelsId": "MAP_MT_PYRE_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "2F",
+    "folder": "MtPyre_2F",
+    "baseMap": "MAP_MT_PYRE",
+    "thisLevelsId": "MAP_MT_PYRE_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "3F",
+    "folder": "MtPyre_3F",
+    "baseMap": "MAP_MT_PYRE",
+    "thisLevelsId": "MAP_MT_PYRE_3F",
+    "marts": []
+  },
+  {
+    "levelLabel": "4F",
+    "folder": "MtPyre_4F",
+    "baseMap": "MAP_MT_PYRE",
+    "thisLevelsId": "MAP_MT_PYRE_4F",
+    "marts": []
+  },
+  {
+    "levelLabel": "5F",
+    "folder": "MtPyre_5F",
+    "baseMap": "MAP_MT_PYRE",
+    "thisLevelsId": "MAP_MT_PYRE_5F",
+    "marts": []
+  },
+  {
+    "levelLabel": "6F",
+    "folder": "MtPyre_6F",
+    "baseMap": "MAP_MT_PYRE",
+    "thisLevelsId": "MAP_MT_PYRE_6F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Exterior",
+    "folder": "MtPyre_Exterior",
+    "baseMap": "MAP_MT_PYRE",
+    "thisLevelsId": "MAP_MT_PYRE_EXTERIOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Summit",
+    "folder": "MtPyre_Summit",
+    "baseMap": "MAP_MT_PYRE",
+    "thisLevelsId": "MAP_MT_PYRE_SUMMIT",
+    "marts": []
+  },
+  {
+    "levelLabel": "B 1F",
+    "folder": "NavelRock_B1F",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Bottom",
+    "folder": "NavelRock_Bottom",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_BOTTOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Down 01",
+    "folder": "NavelRock_Down01",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_DOWN01",
+    "marts": []
+  },
+  {
+    "levelLabel": "Down 02",
+    "folder": "NavelRock_Down02",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_DOWN02",
+    "marts": []
+  },
+  {
+    "levelLabel": "Down 03",
+    "folder": "NavelRock_Down03",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_DOWN03",
+    "marts": []
+  },
+  {
+    "levelLabel": "Down 04",
+    "folder": "NavelRock_Down04",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_DOWN04",
+    "marts": []
+  },
+  {
+    "levelLabel": "Down 05",
+    "folder": "NavelRock_Down05",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_DOWN05",
+    "marts": []
+  },
+  {
+    "levelLabel": "Down 06",
+    "folder": "NavelRock_Down06",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_DOWN06",
+    "marts": []
+  },
+  {
+    "levelLabel": "Down 07",
+    "folder": "NavelRock_Down07",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_DOWN07",
+    "marts": []
+  },
+  {
+    "levelLabel": "Down 08",
+    "folder": "NavelRock_Down08",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_DOWN08",
+    "marts": []
+  },
+  {
+    "levelLabel": "Down 09",
+    "folder": "NavelRock_Down09",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_DOWN09",
+    "marts": []
+  },
+  {
+    "levelLabel": "Down 10",
+    "folder": "NavelRock_Down10",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_DOWN10",
+    "marts": []
+  },
+  {
+    "levelLabel": "Down 11",
+    "folder": "NavelRock_Down11",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_DOWN11",
+    "marts": []
+  },
+  {
+    "levelLabel": "Entrance",
+    "folder": "NavelRock_Entrance",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_ENTRANCE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Exterior",
+    "folder": "NavelRock_Exterior",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_EXTERIOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Fork",
+    "folder": "NavelRock_Fork",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_FORK",
+    "marts": []
+  },
+  {
+    "levelLabel": "Harbor",
+    "folder": "NavelRock_Harbor",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_HARBOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Top",
+    "folder": "NavelRock_Top",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_TOP",
+    "marts": []
+  },
+  {
+    "levelLabel": "Up 1",
+    "folder": "NavelRock_Up1",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_UP1",
+    "marts": []
+  },
+  {
+    "levelLabel": "Up 2",
+    "folder": "NavelRock_Up2",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_UP2",
+    "marts": []
+  },
+  {
+    "levelLabel": "Up 3",
+    "folder": "NavelRock_Up3",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_UP3",
+    "marts": []
+  },
+  {
+    "levelLabel": "Up 4",
+    "folder": "NavelRock_Up4",
+    "baseMap": "MAP_NAVEL_ROCK",
+    "thisLevelsId": "MAP_NAVEL_ROCK_UP4",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "NewBirchsLab",
+    "baseMap": "MAP_NEW_BIRCHS_LAB",
+    "thisLevelsId": "MAP_NEW_BIRCHS_LAB",
+    "marts": []
+  },
+  {
+    "levelLabel": "Entrance",
+    "folder": "NewMauville_Entrance",
+    "baseMap": "MAP_NEW_MAUVILLE",
+    "thisLevelsId": "MAP_NEW_MAUVILLE_ENTRANCE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Inside",
+    "folder": "NewMauville_Inside",
+    "baseMap": "MAP_NEW_MAUVILLE",
+    "thisLevelsId": "MAP_NEW_MAUVILLE_INSIDE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "OldaleTown",
+    "baseMap": "MAP_OLDALE_TOWN",
+    "thisLevelsId": "MAP_OLDALE_TOWN",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 1",
+    "folder": "OldaleTown_House1",
+    "baseMap": "MAP_OLDALE_TOWN",
+    "thisLevelsId": "MAP_OLDALE_TOWN_HOUSE1",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 2",
+    "folder": "OldaleTown_House2",
+    "baseMap": "MAP_OLDALE_TOWN",
+    "thisLevelsId": "MAP_OLDALE_TOWN_HOUSE2",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mart",
+    "folder": "OldaleTown_Mart",
+    "baseMap": "MAP_OLDALE_TOWN",
+    "thisLevelsId": "MAP_OLDALE_TOWN_MART",
+    "marts": [
+      {
+        "label": "MAP_OLDALE_TOWN",
+        "mart": "Mart",
+        "items": [
+          "ITEM_POTION",
+          "ITEM_ANTIDOTE",
+          "ITEM_PARALYZE_HEAL",
+          "ITEM_AWAKENING"
+        ],
+        "levelLabel": "Mart",
+        "scriptname": "OldaleTown_Mart_Pokemart_Basic:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "OldaleTown_PokemonCenter_1F",
+    "baseMap": "MAP_OLDALE_TOWN",
+    "thisLevelsId": "MAP_OLDALE_TOWN_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "OldaleTown_PokemonCenter_2F",
+    "baseMap": "MAP_OLDALE_TOWN",
+    "thisLevelsId": "MAP_OLDALE_TOWN_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "PacifidlogTown",
+    "baseMap": "MAP_PACIFIDLOG_TOWN",
+    "thisLevelsId": "MAP_PACIFIDLOG_TOWN",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 1",
+    "folder": "PacifidlogTown_House1",
+    "baseMap": "MAP_PACIFIDLOG_TOWN",
+    "thisLevelsId": "MAP_PACIFIDLOG_TOWN_HOUSE1",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 2",
+    "folder": "PacifidlogTown_House2",
+    "baseMap": "MAP_PACIFIDLOG_TOWN",
+    "thisLevelsId": "MAP_PACIFIDLOG_TOWN_HOUSE2",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 3",
+    "folder": "PacifidlogTown_House3",
+    "baseMap": "MAP_PACIFIDLOG_TOWN",
+    "thisLevelsId": "MAP_PACIFIDLOG_TOWN_HOUSE3",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 4",
+    "folder": "PacifidlogTown_House4",
+    "baseMap": "MAP_PACIFIDLOG_TOWN",
+    "thisLevelsId": "MAP_PACIFIDLOG_TOWN_HOUSE4",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 5",
+    "folder": "PacifidlogTown_House5",
+    "baseMap": "MAP_PACIFIDLOG_TOWN",
+    "thisLevelsId": "MAP_PACIFIDLOG_TOWN_HOUSE5",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "PacifidlogTown_PokemonCenter_1F",
+    "baseMap": "MAP_PACIFIDLOG_TOWN",
+    "thisLevelsId": "MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "PacifidlogTown_PokemonCenter_2F",
+    "baseMap": "MAP_PACIFIDLOG_TOWN",
+    "thisLevelsId": "MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "PetalburgCity",
+    "baseMap": "MAP_PETALBURG_CITY",
+    "thisLevelsId": "MAP_PETALBURG_CITY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Gym",
+    "folder": "PetalburgCity_Gym",
+    "baseMap": "MAP_PETALBURG_CITY",
+    "thisLevelsId": "MAP_PETALBURG_CITY_GYM",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 1",
+    "folder": "PetalburgCity_House1",
+    "baseMap": "MAP_PETALBURG_CITY",
+    "thisLevelsId": "MAP_PETALBURG_CITY_HOUSE1",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 2",
+    "folder": "PetalburgCity_House2",
+    "baseMap": "MAP_PETALBURG_CITY",
+    "thisLevelsId": "MAP_PETALBURG_CITY_HOUSE2",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mart",
+    "folder": "PetalburgCity_Mart",
+    "baseMap": "MAP_PETALBURG_CITY",
+    "thisLevelsId": "MAP_PETALBURG_CITY_MART",
+    "marts": [
+      {
+        "label": "MAP_PETALBURG_CITY",
+        "mart": "Mart",
+        "items": [
+          "ITEM_POKE_BALL",
+          "ITEM_POTION",
+          "ITEM_ANTIDOTE",
+          "ITEM_PARALYZE_HEAL",
+          "ITEM_AWAKENING",
+          "ITEM_ESCAPE_ROPE",
+          "ITEM_REPEL",
+          "ITEM_X_SPEED",
+          "ITEM_X_ATTACK",
+          "ITEM_X_DEFENSE",
+          "ITEM_ORANGE_MAIL"
+        ],
+        "levelLabel": "Mart",
+        "scriptname": "PetalburgCity_Mart_Pokemart_Basic:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "PetalburgCity_PokemonCenter_1F",
+    "baseMap": "MAP_PETALBURG_CITY",
+    "thisLevelsId": "MAP_PETALBURG_CITY_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "PetalburgCity_PokemonCenter_2F",
+    "baseMap": "MAP_PETALBURG_CITY",
+    "thisLevelsId": "MAP_PETALBURG_CITY_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Wallyshouse",
+    "folder": "PetalburgCity_WallysHouse",
+    "baseMap": "MAP_PETALBURG_CITY",
+    "thisLevelsId": "MAP_PETALBURG_CITY_WALLYS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "PetalburgWoods",
+    "baseMap": "MAP_PETALBURG_WOODS",
+    "thisLevelsId": "MAP_PETALBURG_WOODS",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "RecordCorner",
+    "baseMap": "MAP_RECORD_CORNER",
+    "thisLevelsId": "MAP_RECORD_CORNER",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "RockySlab",
+    "baseMap": "MAP_ROCKY_SLAB",
+    "thisLevelsId": "MAP_ROCKY_SLAB",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route101",
+    "baseMap": "MAP_ROUTE101",
+    "thisLevelsId": "MAP_ROUTE101",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route102",
+    "baseMap": "MAP_ROUTE102",
+    "thisLevelsId": "MAP_ROUTE102",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route103",
+    "baseMap": "MAP_ROUTE103",
+    "thisLevelsId": "MAP_ROUTE103",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route104",
+    "baseMap": "MAP_ROUTE104",
+    "thisLevelsId": "MAP_ROUTE104",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mrbrineyshouse",
+    "folder": "Route104_MrBrineysHouse",
+    "baseMap": "MAP_ROUTE104",
+    "thisLevelsId": "MAP_ROUTE104_MR_BRINEYS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Prettypetalflowershop",
+    "folder": "Route104_PrettyPetalFlowerShop",
+    "baseMap": "MAP_ROUTE104",
+    "thisLevelsId": "MAP_ROUTE104_PRETTY_PETAL_FLOWER_SHOP",
+    "marts": []
+  },
+  {
+    "levelLabel": "Prototype",
+    "folder": "Route104_Prototype",
+    "baseMap": "MAP_ROUTE104",
+    "thisLevelsId": "MAP_ROUTE104_PROTOTYPE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Prototypeprettypetalflowershop",
+    "folder": "Route104_PrototypePrettyPetalFlowerShop",
+    "baseMap": "MAP_ROUTE104",
+    "thisLevelsId": "MAP_ROUTE104_PROTOTYPE_PRETTY_PETAL_FLOWER_SHOP",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route105",
+    "baseMap": "MAP_ROUTE105",
+    "thisLevelsId": "MAP_ROUTE105",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route106",
+    "baseMap": "MAP_ROUTE106",
+    "thisLevelsId": "MAP_ROUTE106",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route107",
+    "baseMap": "MAP_ROUTE107",
+    "thisLevelsId": "MAP_ROUTE107",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route108",
+    "baseMap": "MAP_ROUTE108",
+    "thisLevelsId": "MAP_ROUTE108",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route109",
+    "baseMap": "MAP_ROUTE109",
+    "thisLevelsId": "MAP_ROUTE109",
+    "marts": []
+  },
+  {
+    "levelLabel": "Seashorehouse",
+    "folder": "Route109_SeashoreHouse",
+    "baseMap": "MAP_ROUTE109",
+    "thisLevelsId": "MAP_ROUTE109_SEASHORE_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route110",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110",
+    "marts": []
+  },
+  {
+    "levelLabel": "Seasidecyclingroadnorthentrance",
+    "folder": "Route110_SeasideCyclingRoadNorthEntrance",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Seasidecyclingroadsouthentrance",
+    "folder": "Route110_SeasideCyclingRoadSouthEntrance",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Trickhousecorridor",
+    "folder": "Route110_TrickHouseCorridor",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_CORRIDOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Trickhouseend",
+    "folder": "Route110_TrickHouseEnd",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_END",
+    "marts": []
+  },
+  {
+    "levelLabel": "Trickhouseentrance",
+    "folder": "Route110_TrickHouseEntrance",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_ENTRANCE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Trickhousepuzzle 1",
+    "folder": "Route110_TrickHousePuzzle1",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE1",
+    "marts": []
+  },
+  {
+    "levelLabel": "Trickhousepuzzle 2",
+    "folder": "Route110_TrickHousePuzzle2",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE2",
+    "marts": []
+  },
+  {
+    "levelLabel": "Trickhousepuzzle 3",
+    "folder": "Route110_TrickHousePuzzle3",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE3",
+    "marts": []
+  },
+  {
+    "levelLabel": "Trickhousepuzzle 4",
+    "folder": "Route110_TrickHousePuzzle4",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE4",
+    "marts": []
+  },
+  {
+    "levelLabel": "Trickhousepuzzle 5",
+    "folder": "Route110_TrickHousePuzzle5",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE5",
+    "marts": []
+  },
+  {
+    "levelLabel": "Trickhousepuzzle 6",
+    "folder": "Route110_TrickHousePuzzle6",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE6",
+    "marts": []
+  },
+  {
+    "levelLabel": "Trickhousepuzzle 7",
+    "folder": "Route110_TrickHousePuzzle7",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE7",
+    "marts": []
+  },
+  {
+    "levelLabel": "Trickhousepuzzle 8",
+    "folder": "Route110_TrickHousePuzzle8",
+    "baseMap": "MAP_ROUTE110",
+    "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE8",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route111",
+    "baseMap": "MAP_ROUTE111",
+    "thisLevelsId": "MAP_ROUTE111",
+    "marts": []
+  },
+  {
+    "levelLabel": "Oldladysreststop",
+    "folder": "Route111_OldLadysRestStop",
+    "baseMap": "MAP_ROUTE111",
+    "thisLevelsId": "MAP_ROUTE111_OLD_LADYS_REST_STOP",
+    "marts": []
+  },
+  {
+    "levelLabel": "Winstratefamilyshouse",
+    "folder": "Route111_WinstrateFamilysHouse",
+    "baseMap": "MAP_ROUTE111",
+    "thisLevelsId": "MAP_ROUTE111_WINSTRATE_FAMILYS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route112",
+    "baseMap": "MAP_ROUTE112",
+    "thisLevelsId": "MAP_ROUTE112",
+    "marts": []
+  },
+  {
+    "levelLabel": "Cablecarstation",
+    "folder": "Route112_CableCarStation",
+    "baseMap": "MAP_ROUTE112",
+    "thisLevelsId": "MAP_ROUTE112_CABLE_CAR_STATION",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route113",
+    "baseMap": "MAP_ROUTE113",
+    "thisLevelsId": "MAP_ROUTE113",
+    "marts": []
+  },
+  {
+    "levelLabel": "Glassworkshop",
+    "folder": "Route113_GlassWorkshop",
+    "baseMap": "MAP_ROUTE113",
+    "thisLevelsId": "MAP_ROUTE113_GLASS_WORKSHOP",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route114",
+    "baseMap": "MAP_ROUTE114",
+    "thisLevelsId": "MAP_ROUTE114",
+    "marts": []
+  },
+  {
+    "levelLabel": "Fossilmaniacshouse",
+    "folder": "Route114_FossilManiacsHouse",
+    "baseMap": "MAP_ROUTE114",
+    "thisLevelsId": "MAP_ROUTE114_FOSSIL_MANIACS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Fossilmaniacstunnel",
+    "folder": "Route114_FossilManiacsTunnel",
+    "baseMap": "MAP_ROUTE114",
+    "thisLevelsId": "MAP_ROUTE114_FOSSIL_MANIACS_TUNNEL",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lanetteshouse",
+    "folder": "Route114_LanettesHouse",
+    "baseMap": "MAP_ROUTE114",
+    "thisLevelsId": "MAP_ROUTE114_LANETTES_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route115",
+    "baseMap": "MAP_ROUTE115",
+    "thisLevelsId": "MAP_ROUTE115",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route116",
+    "baseMap": "MAP_ROUTE116",
+    "thisLevelsId": "MAP_ROUTE116",
+    "marts": []
+  },
+  {
+    "levelLabel": "Tunnelersresthouse",
+    "folder": "Route116_TunnelersRestHouse",
+    "baseMap": "MAP_ROUTE116",
+    "thisLevelsId": "MAP_ROUTE116_TUNNELERS_REST_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route117",
+    "baseMap": "MAP_ROUTE117",
+    "thisLevelsId": "MAP_ROUTE117",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemondaycare",
+    "folder": "Route117_PokemonDayCare",
+    "baseMap": "MAP_ROUTE117",
+    "thisLevelsId": "MAP_ROUTE117_POKEMON_DAY_CARE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route118",
+    "baseMap": "MAP_ROUTE118",
+    "thisLevelsId": "MAP_ROUTE118",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route119",
+    "baseMap": "MAP_ROUTE119",
+    "thisLevelsId": "MAP_ROUTE119",
+    "marts": []
+  },
+  {
+    "levelLabel": "House",
+    "folder": "Route119_House",
+    "baseMap": "MAP_ROUTE119",
+    "thisLevelsId": "MAP_ROUTE119_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Weatherinstitute 1F",
+    "folder": "Route119_WeatherInstitute_1F",
+    "baseMap": "MAP_ROUTE119",
+    "thisLevelsId": "MAP_ROUTE119_WEATHER_INSTITUTE_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Weatherinstitute 2F",
+    "folder": "Route119_WeatherInstitute_2F",
+    "baseMap": "MAP_ROUTE119",
+    "thisLevelsId": "MAP_ROUTE119_WEATHER_INSTITUTE_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route120",
+    "baseMap": "MAP_ROUTE120",
+    "thisLevelsId": "MAP_ROUTE120",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route121",
+    "baseMap": "MAP_ROUTE121",
+    "thisLevelsId": "MAP_ROUTE121",
+    "marts": []
+  },
+  {
+    "levelLabel": "Safarizoneentrance",
+    "folder": "Route121_SafariZoneEntrance",
+    "baseMap": "MAP_ROUTE121",
+    "thisLevelsId": "MAP_ROUTE121_SAFARI_ZONE_ENTRANCE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route122",
+    "baseMap": "MAP_ROUTE122",
+    "thisLevelsId": "MAP_ROUTE122",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route123",
+    "baseMap": "MAP_ROUTE123",
+    "thisLevelsId": "MAP_ROUTE123",
+    "marts": []
+  },
+  {
+    "levelLabel": "Berrymastershouse",
+    "folder": "Route123_BerryMastersHouse",
+    "baseMap": "MAP_ROUTE123",
+    "thisLevelsId": "MAP_ROUTE123_BERRY_MASTERS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route124",
+    "baseMap": "MAP_ROUTE124",
+    "thisLevelsId": "MAP_ROUTE124",
+    "marts": []
+  },
+  {
+    "levelLabel": "Divingtreasurehuntershouse",
+    "folder": "Route124_DivingTreasureHuntersHouse",
+    "baseMap": "MAP_ROUTE124",
+    "thisLevelsId": "MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route125",
+    "baseMap": "MAP_ROUTE125",
+    "thisLevelsId": "MAP_ROUTE125",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route126",
+    "baseMap": "MAP_ROUTE126",
+    "thisLevelsId": "MAP_ROUTE126",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route127",
+    "baseMap": "MAP_ROUTE127",
+    "thisLevelsId": "MAP_ROUTE127",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route128",
+    "baseMap": "MAP_ROUTE128",
+    "thisLevelsId": "MAP_ROUTE128",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route129",
+    "baseMap": "MAP_ROUTE129",
+    "thisLevelsId": "MAP_ROUTE129",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route130",
+    "baseMap": "MAP_ROUTE130",
+    "thisLevelsId": "MAP_ROUTE130",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route131",
+    "baseMap": "MAP_ROUTE131",
+    "thisLevelsId": "MAP_ROUTE131",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route132",
+    "baseMap": "MAP_ROUTE132",
+    "thisLevelsId": "MAP_ROUTE132",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route133",
+    "baseMap": "MAP_ROUTE133",
+    "thisLevelsId": "MAP_ROUTE133",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "Route134",
+    "baseMap": "MAP_ROUTE134",
+    "thisLevelsId": "MAP_ROUTE134",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "RustboroCity",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY",
+    "marts": [
+      {
+        "label": "MAP_RUSTBORO_CITY",
+        "mart": "",
+        "items": [
+          "ITEM_POMEG_BERRY"
+        ],
+        "levelLabel": "",
+        "scriptname": "RustboroCity_MiniMart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Cuttershouse",
+    "folder": "RustboroCity_CuttersHouse",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_CUTTERS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Devoncorp 1F",
+    "folder": "RustboroCity_DevonCorp_1F",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_DEVON_CORP_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Devoncorp 2F",
+    "folder": "RustboroCity_DevonCorp_2F",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_DEVON_CORP_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Devoncorp 3F",
+    "folder": "RustboroCity_DevonCorp_3F",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_DEVON_CORP_3F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Flat 1 1F",
+    "folder": "RustboroCity_Flat1_1F",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_FLAT1_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Flat 1 2F",
+    "folder": "RustboroCity_Flat1_2F",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_FLAT1_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Flat 2 1F",
+    "folder": "RustboroCity_Flat2_1F",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_FLAT2_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Flat 2 2F",
+    "folder": "RustboroCity_Flat2_2F",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_FLAT2_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Flat 2 3F",
+    "folder": "RustboroCity_Flat2_3F",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_FLAT2_3F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Gym",
+    "folder": "RustboroCity_Gym",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_GYM",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 1",
+    "folder": "RustboroCity_House1",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_HOUSE1",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 2",
+    "folder": "RustboroCity_House2",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_HOUSE2",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 3",
+    "folder": "RustboroCity_House3",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_HOUSE3",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mart",
+    "folder": "RustboroCity_Mart",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_MART",
+    "marts": [
+      {
+        "label": "MAP_RUSTBORO_CITY",
+        "mart": "Mart",
+        "items": [
+          "ITEM_POKE_BALL",
+          "ITEM_POTION",
+          "ITEM_SUPER_POTION",
+          "ITEM_ANTIDOTE",
+          "ITEM_PARALYZE_HEAL",
+          "ITEM_ESCAPE_ROPE",
+          "ITEM_REPEL",
+          "ITEM_X_SPEED",
+          "ITEM_X_ATTACK",
+          "ITEM_X_DEFENSE"
+        ],
+        "levelLabel": "Mart",
+        "scriptname": "RustboroCity_Mart_Pokemart_Basic:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "RustboroCity_PokemonCenter_1F",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "RustboroCity_PokemonCenter_2F",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemonschool",
+    "folder": "RustboroCity_PokemonSchool",
+    "baseMap": "MAP_RUSTBORO_CITY",
+    "thisLevelsId": "MAP_RUSTBORO_CITY_POKEMON_SCHOOL",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "RusturfTunnel",
+    "baseMap": "MAP_RUSTURF_TUNNEL",
+    "thisLevelsId": "MAP_RUSTURF_TUNNEL",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "SSTidalCorridor",
+    "baseMap": "MAP_S_S_TIDAL_CORRIDOR",
+    "thisLevelsId": "MAP_SS_TIDAL_CORRIDOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "SSTidalLowerDeck",
+    "baseMap": "MAP_S_S_TIDAL_LOWER_DECK",
+    "thisLevelsId": "MAP_SS_TIDAL_LOWER_DECK",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "SSTidalRooms",
+    "baseMap": "MAP_S_S_TIDAL_ROOMS",
+    "thisLevelsId": "MAP_SS_TIDAL_ROOMS",
+    "marts": []
+  },
+  {
+    "levelLabel": "North",
+    "folder": "SafariZone_North",
+    "baseMap": "MAP_SAFARI_ZONE",
+    "thisLevelsId": "MAP_SAFARI_ZONE_NORTH",
+    "marts": []
+  },
+  {
+    "levelLabel": "Northeast",
+    "folder": "SafariZone_Northeast",
+    "baseMap": "MAP_SAFARI_ZONE",
+    "thisLevelsId": "MAP_SAFARI_ZONE_NORTHEAST",
+    "marts": []
+  },
+  {
+    "levelLabel": "Northwest",
+    "folder": "SafariZone_Northwest",
+    "baseMap": "MAP_SAFARI_ZONE",
+    "thisLevelsId": "MAP_SAFARI_ZONE_NORTHWEST",
+    "marts": []
+  },
+  {
+    "levelLabel": "Resthouse",
+    "folder": "SafariZone_RestHouse",
+    "baseMap": "MAP_SAFARI_ZONE",
+    "thisLevelsId": "MAP_SAFARI_ZONE_REST_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "South",
+    "folder": "SafariZone_South",
+    "baseMap": "MAP_SAFARI_ZONE",
+    "thisLevelsId": "MAP_SAFARI_ZONE_SOUTH",
+    "marts": []
+  },
+  {
+    "levelLabel": "Southeast",
+    "folder": "SafariZone_Southeast",
+    "baseMap": "MAP_SAFARI_ZONE",
+    "thisLevelsId": "MAP_SAFARI_ZONE_SOUTHEAST",
+    "marts": []
+  },
+  {
+    "levelLabel": "Southwest",
+    "folder": "SafariZone_Southwest",
+    "baseMap": "MAP_SAFARI_ZONE",
+    "thisLevelsId": "MAP_SAFARI_ZONE_SOUTHWEST",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "ScorchedSlab",
+    "baseMap": "MAP_SCORCHED_SLAB",
+    "thisLevelsId": "MAP_SCORCHED_SLAB",
+    "marts": []
+  },
+  {
+    "levelLabel": "Entrance",
+    "folder": "SeafloorCavern_Entrance",
+    "baseMap": "MAP_SEAFLOOR_CAVERN",
+    "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ENTRANCE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Room 1",
+    "folder": "SeafloorCavern_Room1",
+    "baseMap": "MAP_SEAFLOOR_CAVERN",
+    "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM1",
+    "marts": []
+  },
+  {
+    "levelLabel": "Room 2",
+    "folder": "SeafloorCavern_Room2",
+    "baseMap": "MAP_SEAFLOOR_CAVERN",
+    "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM2",
+    "marts": []
+  },
+  {
+    "levelLabel": "Room 3",
+    "folder": "SeafloorCavern_Room3",
+    "baseMap": "MAP_SEAFLOOR_CAVERN",
+    "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM3",
+    "marts": []
+  },
+  {
+    "levelLabel": "Room 4",
+    "folder": "SeafloorCavern_Room4",
+    "baseMap": "MAP_SEAFLOOR_CAVERN",
+    "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM4",
+    "marts": []
+  },
+  {
+    "levelLabel": "Room 5",
+    "folder": "SeafloorCavern_Room5",
+    "baseMap": "MAP_SEAFLOOR_CAVERN",
+    "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM5",
+    "marts": []
+  },
+  {
+    "levelLabel": "Room 6",
+    "folder": "SeafloorCavern_Room6",
+    "baseMap": "MAP_SEAFLOOR_CAVERN",
+    "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM6",
+    "marts": []
+  },
+  {
+    "levelLabel": "Room 7",
+    "folder": "SeafloorCavern_Room7",
+    "baseMap": "MAP_SEAFLOOR_CAVERN",
+    "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM7",
+    "marts": []
+  },
+  {
+    "levelLabel": "Room 8",
+    "folder": "SeafloorCavern_Room8",
+    "baseMap": "MAP_SEAFLOOR_CAVERN",
+    "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM8",
+    "marts": []
+  },
+  {
+    "levelLabel": "Room 9",
+    "folder": "SeafloorCavern_Room9",
+    "baseMap": "MAP_SEAFLOOR_CAVERN",
+    "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM9",
+    "marts": []
+  },
+  {
+    "levelLabel": "Innerroom",
+    "folder": "SealedChamber_InnerRoom",
+    "baseMap": "MAP_SEALED_CHAMBER",
+    "thisLevelsId": "MAP_SEALED_CHAMBER_INNER_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Outerroom",
+    "folder": "SealedChamber_OuterRoom",
+    "baseMap": "MAP_SEALED_CHAMBER",
+    "thisLevelsId": "MAP_SEALED_CHAMBER_OUTER_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Hightideentranceroom",
+    "folder": "ShoalCave_HighTideEntranceRoom",
+    "baseMap": "MAP_SHOAL_CAVE",
+    "thisLevelsId": "MAP_SHOAL_CAVE_HIGH_TIDE_ENTRANCE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Hightideinnerroom",
+    "folder": "ShoalCave_HighTideInnerRoom",
+    "baseMap": "MAP_SHOAL_CAVE",
+    "thisLevelsId": "MAP_SHOAL_CAVE_HIGH_TIDE_INNER_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lowtideentranceroom",
+    "folder": "ShoalCave_LowTideEntranceRoom",
+    "baseMap": "MAP_SHOAL_CAVE",
+    "thisLevelsId": "MAP_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lowtideiceroom",
+    "folder": "ShoalCave_LowTideIceRoom",
+    "baseMap": "MAP_SHOAL_CAVE",
+    "thisLevelsId": "MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lowtideinnerroom",
+    "folder": "ShoalCave_LowTideInnerRoom",
+    "baseMap": "MAP_SHOAL_CAVE",
+    "thisLevelsId": "MAP_SHOAL_CAVE_LOW_TIDE_INNER_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lowtidelowerroom",
+    "folder": "ShoalCave_LowTideLowerRoom",
+    "baseMap": "MAP_SHOAL_CAVE",
+    "thisLevelsId": "MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lowtidestairsroom",
+    "folder": "ShoalCave_LowTideStairsRoom",
+    "baseMap": "MAP_SHOAL_CAVE",
+    "thisLevelsId": "MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "1F",
+    "folder": "SkyPillar_1F",
+    "baseMap": "MAP_SKY_PILLAR",
+    "thisLevelsId": "MAP_SKY_PILLAR_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "2F",
+    "folder": "SkyPillar_2F",
+    "baseMap": "MAP_SKY_PILLAR",
+    "thisLevelsId": "MAP_SKY_PILLAR_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "3F",
+    "folder": "SkyPillar_3F",
+    "baseMap": "MAP_SKY_PILLAR",
+    "thisLevelsId": "MAP_SKY_PILLAR_3F",
+    "marts": []
+  },
+  {
+    "levelLabel": "4F",
+    "folder": "SkyPillar_4F",
+    "baseMap": "MAP_SKY_PILLAR",
+    "thisLevelsId": "MAP_SKY_PILLAR_4F",
+    "marts": []
+  },
+  {
+    "levelLabel": "5F",
+    "folder": "SkyPillar_5F",
+    "baseMap": "MAP_SKY_PILLAR",
+    "thisLevelsId": "MAP_SKY_PILLAR_5F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Entrance",
+    "folder": "SkyPillar_Entrance",
+    "baseMap": "MAP_SKY_PILLAR",
+    "thisLevelsId": "MAP_SKY_PILLAR_ENTRANCE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Outside",
+    "folder": "SkyPillar_Outside",
+    "baseMap": "MAP_SKY_PILLAR",
+    "thisLevelsId": "MAP_SKY_PILLAR_OUTSIDE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Top",
+    "folder": "SkyPillar_Top",
+    "baseMap": "MAP_SKY_PILLAR",
+    "thisLevelsId": "MAP_SKY_PILLAR_TOP",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "SlateportCity",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY",
+    "marts": [
+      {
+        "label": "MAP_SLATEPORT_CITY",
+        "mart": "",
+        "items": [
+          "ITEM_ABILITY_CAPSULE"
+        ],
+        "levelLabel": "",
+        "scriptname": "SlateportCity_Pokemart_AbilityGuru:"
+      },
+      {
+        "label": "MAP_SLATEPORT_CITY",
+        "mart": "",
+        "items": [
+          "ITEM_ABILITY_CAPSULE",
+          "ITEM_ABILITY_PATCH"
+        ],
+        "levelLabel": "",
+        "scriptname": "SlateportCity_Pokemart_AbilityGuru2:"
+      },
+      {
+        "label": "MAP_SLATEPORT_CITY",
+        "mart": "",
+        "items": [
+          "ITEM_BLUE_SHARD",
+          "ITEM_RED_SHARD",
+          "ITEM_GREEN_SHARD",
+          "ITEM_YELLOW_SHARD"
+        ],
+        "levelLabel": "",
+        "scriptname": "SlateportCity_PokemartDecor_Shards:"
+      },
+      {
+        "label": "MAP_SLATEPORT_CITY",
+        "mart": "",
+        "items": [
+          "ITEM_CHOPLE_BERRY",
+          "ITEM_COLBUR_BERRY",
+          "ITEM_WACAN_BERRY",
+          "ITEM_CHARTI_BERRY",
+          "ITEM_CHILAN_BERRY",
+          "ITEM_HABAN_BERRY",
+          "ITEM_ROSELI_BERRY",
+          "ITEM_SHUCA_BERRY",
+          "ITEM_BABIRI_BERRY",
+          "ITEM_KASIB_BERRY",
+          "ITEM_COBA_BERRY",
+          "ITEM_KEBIA_BERRY",
+          "ITEM_OCCA_BERRY",
+          "ITEM_PASSHO_BERRY",
+          "ITEM_PAYAPA_BERRY",
+          "ITEM_RINDO_BERRY",
+          "ITEM_YACHE_BERRY",
+          "ITEM_TANGA_BERRY"
+        ],
+        "levelLabel": "",
+        "scriptname": "SlateportCity_PokemartBerries:"
+      },
+      {
+        "label": "MAP_SLATEPORT_CITY",
+        "mart": "",
+        "items": [
+          "ITEM_TM_HIDDEN_POWER",
+          "ITEM_TM_DEFOG"
+        ],
+        "levelLabel": "",
+        "scriptname": "SlateportCity_Pokemart_PowerTMs:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Battletentbattleroom",
+    "folder": "SlateportCity_BattleTentBattleRoom",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletentcorridor",
+    "folder": "SlateportCity_BattleTentCorridor",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletentlobby",
+    "folder": "SlateportCity_BattleTentLobby",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Harbor",
+    "folder": "SlateportCity_Harbor",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_HARBOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "House",
+    "folder": "SlateportCity_House",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mart",
+    "folder": "SlateportCity_Mart",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_MART",
+    "marts": [
+      {
+        "label": "MAP_SLATEPORT_CITY",
+        "mart": "Mart",
+        "items": [
+          "ITEM_POKE_BALL",
+          "ITEM_GREAT_BALL",
+          "ITEM_QUICK_BALL",
+          "ITEM_POTION",
+          "ITEM_SUPER_POTION",
+          "ITEM_ANTIDOTE",
+          "ITEM_PARALYZE_HEAL",
+          "ITEM_ESCAPE_ROPE",
+          "ITEM_REPEL",
+          "ITEM_HARBOR_MAIL"
+        ],
+        "levelLabel": "Mart",
+        "scriptname": "SlateportCity_Mart_Pokemart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Nameratershouse",
+    "folder": "SlateportCity_NameRatersHouse",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_NAME_RATERS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Oceanicmuseum 1F",
+    "folder": "SlateportCity_OceanicMuseum_1F",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Oceanicmuseum 2F",
+    "folder": "SlateportCity_OceanicMuseum_2F",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "SlateportCity_PokemonCenter_1F",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "SlateportCity_PokemonCenter_2F",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemonfanclub",
+    "folder": "SlateportCity_PokemonFanClub",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_POKEMON_FAN_CLUB",
+    "marts": []
+  },
+  {
+    "levelLabel": "Sternsshipyard 1F",
+    "folder": "SlateportCity_SternsShipyard_1F",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_STERNS_SHIPYARD_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Sternsshipyard 2F",
+    "folder": "SlateportCity_SternsShipyard_2F",
+    "baseMap": "MAP_SLATEPORT_CITY",
+    "thisLevelsId": "MAP_SLATEPORT_CITY_STERNS_SHIPYARD_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "SootopolisCity",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Champhouse",
+    "folder": "SootopolisCity_ChampHouse",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_CHAMP_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Gym 1F",
+    "folder": "SootopolisCity_Gym_1F",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_GYM_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Gym B 1F",
+    "folder": "SootopolisCity_Gym_B1F",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_GYM_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 1",
+    "folder": "SootopolisCity_House1",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_HOUSE1",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 2",
+    "folder": "SootopolisCity_House2",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_HOUSE2",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 3",
+    "folder": "SootopolisCity_House3",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_HOUSE3",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 4",
+    "folder": "SootopolisCity_House4",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_HOUSE4",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 5",
+    "folder": "SootopolisCity_House5",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_HOUSE5",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 6",
+    "folder": "SootopolisCity_House6",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_HOUSE6",
+    "marts": []
+  },
+  {
+    "levelLabel": "House 7",
+    "folder": "SootopolisCity_House7",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_HOUSE7",
+    "marts": []
+  },
+  {
+    "levelLabel": "Lotadandseedothouse",
+    "folder": "SootopolisCity_LotadAndSeedotHouse",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mart",
+    "folder": "SootopolisCity_Mart",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_MART",
+    "marts": [
+      {
+        "label": "MAP_SOOTOPOLIS_CITY",
+        "mart": "Mart",
+        "items": [
+          "ITEM_ULTRA_BALL",
+          "ITEM_HYPER_POTION",
+          "ITEM_MAX_POTION",
+          "ITEM_FULL_HEAL",
+          "ITEM_REVIVE",
+          "ITEM_MAX_REPEL",
+          "ITEM_X_ATTACK",
+          "ITEM_X_DEFENSE",
+          "ITEM_SHADOW_MAIL"
+        ],
+        "levelLabel": "Mart",
+        "scriptname": "SootopolisCity_Mart_Pokemart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Mysteryeventshouse 1F",
+    "folder": "SootopolisCity_MysteryEventsHouse_1F",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mysteryeventshouse B 1F",
+    "folder": "SootopolisCity_MysteryEventsHouse_B1F",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "SootopolisCity_PokemonCenter_1F",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "SootopolisCity_PokemonCenter_2F",
+    "baseMap": "MAP_SOOTOPOLIS_CITY",
+    "thisLevelsId": "MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Exterior",
+    "folder": "SouthernIsland_Exterior",
+    "baseMap": "MAP_SOUTHERN_ISLAND",
+    "thisLevelsId": "MAP_SOUTHERN_ISLAND_EXTERIOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Interior",
+    "folder": "SouthernIsland_Interior",
+    "baseMap": "MAP_SOUTHERN_ISLAND",
+    "thisLevelsId": "MAP_SOUTHERN_ISLAND_INTERIOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "End",
+    "folder": "TerraCave_End",
+    "baseMap": "MAP_TERRA_CAVE",
+    "thisLevelsId": "MAP_TERRA_CAVE_END",
+    "marts": []
+  },
+  {
+    "levelLabel": "Entrance",
+    "folder": "TerraCave_Entrance",
+    "baseMap": "MAP_TERRA_CAVE",
+    "thisLevelsId": "MAP_TERRA_CAVE_ENTRANCE",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "TradeCenter",
+    "baseMap": "MAP_TRADE_CENTER",
+    "thisLevelsId": "MAP_TRADE_CENTER",
+    "marts": []
+  },
+  {
+    "levelLabel": "1F",
+    "folder": "TrainerHill_1F",
+    "baseMap": "MAP_TRAINER_HILL",
+    "thisLevelsId": "MAP_TRAINER_HILL_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "2F",
+    "folder": "TrainerHill_2F",
+    "baseMap": "MAP_TRAINER_HILL",
+    "thisLevelsId": "MAP_TRAINER_HILL_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "3F",
+    "folder": "TrainerHill_3F",
+    "baseMap": "MAP_TRAINER_HILL",
+    "thisLevelsId": "MAP_TRAINER_HILL_3F",
+    "marts": []
+  },
+  {
+    "levelLabel": "4F",
+    "folder": "TrainerHill_4F",
+    "baseMap": "MAP_TRAINER_HILL",
+    "thisLevelsId": "MAP_TRAINER_HILL_4F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Elevator",
+    "folder": "TrainerHill_Elevator",
+    "baseMap": "MAP_TRAINER_HILL",
+    "thisLevelsId": "MAP_TRAINER_HILL_ELEVATOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Entrance",
+    "folder": "TrainerHill_Entrance",
+    "baseMap": "MAP_TRAINER_HILL",
+    "thisLevelsId": "MAP_TRAINER_HILL_ENTRANCE",
+    "marts": [
+      {
+        "label": "MAP_TRAINER_HILL",
+        "mart": "Entrance",
+        "items": [
+          "ITEM_SUPER_POTION",
+          "ITEM_ANTIDOTE",
+          "ITEM_PARALYZE_HEAL",
+          "ITEM_AWAKENING",
+          "ITEM_X_SPEED",
+          "ITEM_X_SP_ATK",
+          "ITEM_X_ATTACK",
+          "ITEM_X_DEFENSE",
+          "ITEM_DIRE_HIT",
+          "ITEM_GUARD_SPEC",
+          "ITEM_X_ACCURACY"
+        ],
+        "levelLabel": "Entrance",
+        "scriptname": "TrainerHill_Entrance_Pokemart_Basic:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Roof",
+    "folder": "TrainerHill_Roof",
+    "baseMap": "MAP_TRAINER_HILL",
+    "thisLevelsId": "MAP_TRAINER_HILL_ROOF",
+    "marts": []
+  },
+  {
+    "levelLabel": "Marinecave",
+    "folder": "Underwater_MarineCave",
+    "baseMap": "MAP_UNDERWATER",
+    "thisLevelsId": "MAP_UNDERWATER_MARINE_CAVE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Route 105",
+    "folder": "Underwater_Route105",
+    "baseMap": "MAP_UNDERWATER",
+    "thisLevelsId": "MAP_UNDERWATER_ROUTE105",
+    "marts": []
+  },
+  {
+    "levelLabel": "Route 124",
+    "folder": "Underwater_Route124",
+    "baseMap": "MAP_UNDERWATER",
+    "thisLevelsId": "MAP_UNDERWATER_ROUTE124",
+    "marts": []
+  },
+  {
+    "levelLabel": "Route 125",
+    "folder": "Underwater_Route125",
+    "baseMap": "MAP_UNDERWATER",
+    "thisLevelsId": "MAP_UNDERWATER_ROUTE125",
+    "marts": []
+  },
+  {
+    "levelLabel": "Route 126",
+    "folder": "Underwater_Route126",
+    "baseMap": "MAP_UNDERWATER",
+    "thisLevelsId": "MAP_UNDERWATER_ROUTE126",
+    "marts": []
+  },
+  {
+    "levelLabel": "Route 127",
+    "folder": "Underwater_Route127",
+    "baseMap": "MAP_UNDERWATER",
+    "thisLevelsId": "MAP_UNDERWATER_ROUTE127",
+    "marts": []
+  },
+  {
+    "levelLabel": "Route 128",
+    "folder": "Underwater_Route128",
+    "baseMap": "MAP_UNDERWATER",
+    "thisLevelsId": "MAP_UNDERWATER_ROUTE128",
+    "marts": []
+  },
+  {
+    "levelLabel": "Route 129",
+    "folder": "Underwater_Route129",
+    "baseMap": "MAP_UNDERWATER",
+    "thisLevelsId": "MAP_UNDERWATER_ROUTE129",
+    "marts": []
+  },
+  {
+    "levelLabel": "Route 134",
+    "folder": "Underwater_Route134",
+    "baseMap": "MAP_UNDERWATER",
+    "thisLevelsId": "MAP_UNDERWATER_ROUTE134",
+    "marts": []
+  },
+  {
+    "levelLabel": "Seafloorcavern",
+    "folder": "Underwater_SeafloorCavern",
+    "baseMap": "MAP_UNDERWATER",
+    "thisLevelsId": "MAP_UNDERWATER_SEAFLOOR_CAVERN",
+    "marts": []
+  },
+  {
+    "levelLabel": "Sealedchamber",
+    "folder": "Underwater_SealedChamber",
+    "baseMap": "MAP_UNDERWATER",
+    "thisLevelsId": "MAP_UNDERWATER_SEALED_CHAMBER",
+    "marts": []
+  },
+  {
+    "levelLabel": "Sootopoliscity",
+    "folder": "Underwater_SootopolisCity",
+    "baseMap": "MAP_UNDERWATER",
+    "thisLevelsId": "MAP_UNDERWATER_SOOTOPOLIS_CITY",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "UnionRoom",
+    "baseMap": "MAP_UNION_ROOM",
+    "thisLevelsId": "MAP_UNION_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "",
+    "folder": "VerdanturfTown",
+    "baseMap": "MAP_VERDANTURF_TOWN",
+    "thisLevelsId": "MAP_VERDANTURF_TOWN",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletentbattleroom",
+    "folder": "VerdanturfTown_BattleTentBattleRoom",
+    "baseMap": "MAP_VERDANTURF_TOWN",
+    "thisLevelsId": "MAP_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletentcorridor",
+    "folder": "VerdanturfTown_BattleTentCorridor",
+    "baseMap": "MAP_VERDANTURF_TOWN",
+    "thisLevelsId": "MAP_VERDANTURF_TOWN_BATTLE_TENT_CORRIDOR",
+    "marts": []
+  },
+  {
+    "levelLabel": "Battletentlobby",
+    "folder": "VerdanturfTown_BattleTentLobby",
+    "baseMap": "MAP_VERDANTURF_TOWN",
+    "thisLevelsId": "MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY",
+    "marts": []
+  },
+  {
+    "levelLabel": "Friendshipratershouse",
+    "folder": "VerdanturfTown_FriendshipRatersHouse",
+    "baseMap": "MAP_VERDANTURF_TOWN",
+    "thisLevelsId": "MAP_VERDANTURF_TOWN_FRIENDSHIP_RATERS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "House",
+    "folder": "VerdanturfTown_House",
+    "baseMap": "MAP_VERDANTURF_TOWN",
+    "thisLevelsId": "MAP_VERDANTURF_TOWN_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "Mart",
+    "folder": "VerdanturfTown_Mart",
+    "baseMap": "MAP_VERDANTURF_TOWN",
+    "thisLevelsId": "MAP_VERDANTURF_TOWN_MART",
+    "marts": [
+      {
+        "label": "MAP_VERDANTURF_TOWN",
+        "mart": "Mart",
+        "items": [
+          "ITEM_FIRE_STONE",
+          "ITEM_THUNDER_STONE",
+          "ITEM_LEAF_STONE",
+          "ITEM_WATER_STONE",
+          "ITEM_ICE_STONE",
+          "ITEM_SUN_STONE",
+          "ITEM_MOON_STONE",
+          "ITEM_PRISM_SCALE",
+          "ITEM_LINKING_CORD",
+          "ITEM_DUSK_STONE",
+          "ITEM_DAWN_STONE",
+          "ITEM_SHINY_STONE",
+          "ITEM_KINGS_ROCK",
+          "ITEM_METAL_COAT",
+          "ITEM_UPGRADE"
+        ],
+        "levelLabel": "Mart",
+        "scriptname": "VerdanturfTown_Mart_Pokemart:"
+      }
+    ]
+  },
+  {
+    "levelLabel": "Pokemoncenter 1F",
+    "folder": "VerdanturfTown_PokemonCenter_1F",
+    "baseMap": "MAP_VERDANTURF_TOWN",
+    "thisLevelsId": "MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Pokemoncenter 2F",
+    "folder": "VerdanturfTown_PokemonCenter_2F",
+    "baseMap": "MAP_VERDANTURF_TOWN",
+    "thisLevelsId": "MAP_VERDANTURF_TOWN_POKEMON_CENTER_2F",
+    "marts": []
+  },
+  {
+    "levelLabel": "Wandashouse",
+    "folder": "VerdanturfTown_WandasHouse",
+    "baseMap": "MAP_VERDANTURF_TOWN",
+    "thisLevelsId": "MAP_VERDANTURF_TOWN_WANDAS_HOUSE",
+    "marts": []
+  },
+  {
+    "levelLabel": "1F",
+    "folder": "VictoryRoad_1F",
+    "baseMap": "MAP_VICTORY_ROAD",
+    "thisLevelsId": "MAP_VICTORY_ROAD_1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "B 1F",
+    "folder": "VictoryRoad_B1F",
+    "baseMap": "MAP_VICTORY_ROAD",
+    "thisLevelsId": "MAP_VICTORY_ROAD_B1F",
+    "marts": []
+  },
+  {
+    "levelLabel": "B 2F",
+    "folder": "VictoryRoad_B2F",
+    "baseMap": "MAP_VICTORY_ROAD",
+    "thisLevelsId": "MAP_VICTORY_ROAD_B2F",
+    "marts": []
+  }
+]

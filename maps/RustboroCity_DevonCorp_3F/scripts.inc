@@ -61,6 +61,7 @@ RustboroCity_DevonCorp_3F_OnFrame:
 # 31 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 @explanation Talk to Mr. Devon for the first time.
+
 # 32 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	lockall
 # 33 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
@@ -321,7 +322,6 @@ RustboroCity_DevonCorp_3F_EventScript_MrStone::
 
 # 161 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::
-@explanation Deliver Stephen's letter to Devon Corp
 # 162 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter, MSGBOX_DEFAULT
 # 163 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"

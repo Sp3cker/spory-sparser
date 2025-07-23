@@ -191,6 +191,7 @@ Route114_EventScript_ReceivedBerry::
 # 96 "data/maps/Route114/scripts.pory"
 Route114_EventScript_RoarGentleman::
 @explanation Speak to man in nice suit
+
 # 97 "data/maps/Route114/scripts.pory"
 	lock
 # 98 "data/maps/Route114/scripts.pory"
