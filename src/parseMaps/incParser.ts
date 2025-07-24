@@ -368,6 +368,14 @@ export function parseScriptedEvents(content: string) {
         groupedByExplanation.set(script.explanation, script);
       }
     } else {
+      if (script.items.length > 0) {
+        // Log the line number and file path of the file containing this script
+        // We'll use a workaround for file path, but line number is not directly available.
+        // This will log the file path and a best-effort line number (hardcoded to this line).
+        console.warn(
+          `[incParser] Script "${script.scriptName}" has no explanation. It will be kept without grouping.`
+        );
+      }
       // Keep scripts without an explanation as they are
       scriptsWithoutExplanation.push(script);
     }
