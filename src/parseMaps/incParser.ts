@@ -3,6 +3,7 @@ import {
   IncItemEntry,
   IncScriptedEventSchema,
   IncPokemonEntry,
+  IncWildMon,
 } from "../validators/levelIncData.ts";
 
 // export interface IncPokemonEntry {
@@ -15,6 +16,7 @@ export class IncScriptEvent {
   public scriptName: string;
   public items: IncItemEntry[] = [];
   public pokemon: IncPokemonEntry[] = [];
+  public wildMon: IncWildMon[] = [];
   public explanation: string = "";
 
   constructor(name: string) {
@@ -45,6 +47,7 @@ export class IncScriptEvent {
 
       // Parse giveegg commands
       this.parseGiveEggLine(trimmed);
+      this.parseWildMonLine(trimmed);
     }
 
     this.filterVariables(); // Filter out VAR_ entries after parsing
@@ -156,7 +159,24 @@ export class IncScriptEvent {
       this.explanation = explainerMatch[1].trim();
     }
   }
+  private parseWildMonLine(line: string) {
+    // Match: setwildbattle SPECIES_NAME, LEVEL
 
+    const match = line.match(/^setwildbattle\s+(\w+),\s*(\d+)/i);
+    if (match) {
+      const species = match[1];
+      const level = parseInt(match[2], 10);
+      if (!this.wildMon) {
+        this.wildMon = [];
+      }
+
+      this.wildMon.push({
+        script: this.scriptName,
+        species: species,
+        level: level,
+      });
+    }
+  }
   /**
    * Filter out variables (VAR_*) from items and pokemon arrays
    * VAR_xxx is used to hold your selection I think...
@@ -174,6 +194,7 @@ export class IncScriptEvent {
     return (
       this.items.length > 0 ||
       this.pokemon.length > 0 ||
+      this.wildMon.length > 0 ||
       this.explanation.length > 0
     );
   }
@@ -310,7 +331,8 @@ export function parseScriptedEvents(content: string) {
             (item) => item.name === newItem.name
           );
           if (existingItemIndex !== -1) {
-            existingScript.items[existingItemIndex].quantity += newItem.quantity;
+            existingScript.items[existingItemIndex].quantity +=
+              newItem.quantity;
           } else {
             existingScript.items.push(newItem);
           }
@@ -326,6 +348,19 @@ export function parseScriptedEvents(content: string) {
           );
           if (!alreadyExists) {
             existingScript.pokemon.push(newPokemon);
+          }
+        }
+
+        // Merge wildMon (avoid duplicates)
+        for (const newWildMon of script.wildMon) {
+          const alreadyExists = existingScript.wildMon.some(
+            (w) =>
+              w.species === newWildMon.species &&
+              w.level === newWildMon.level &&
+              w.script === newWildMon.script
+          );
+          if (!alreadyExists) {
+            existingScript.wildMon.push(newWildMon);
           }
         }
       } else {

@@ -9,15 +9,16 @@ import {
   IncDataSchema,
   IncScriptEvent,
   IncTrainer,
+  IncWildMon,
 } from "../validators/levelIncData.js";
-import { processMiscScripts } from "./processMiscScripts.js";
-import { parseWildMon } from "./baseInc.ts";
+import { baseMapisizeMiscScripts } from "./baseMapisizeMiscScripts.ts";
+// import { parseWildMon } from "./baseInc.ts";
 
 export const processIncFile = async (incFileContent: string) => {
   try {
     const scriptedGiveEvents = parseScriptedEvents(incFileContent);
     const trainerBattles = parseTrainerBattles(incFileContent);
-
+    
     // Post-process the Pikachu man
     const pikachuSection = scriptedGiveEvents.find(
       (section) =>
@@ -56,10 +57,15 @@ export const processIncFile = async (incFileContent: string) => {
     );
   }
 };
+
 async function processMiscScriptsDirectory(miscScriptsPath: string) {
   const miscScriptDict = new Map<
     string,
-    { scriptedGives: IncScriptEvent[]; trainerRefs: IncTrainer[] }
+    {
+      scriptedGives: IncScriptEvent[];
+      trainerRefs: IncTrainer[];
+      wildMons: IncWildMon[];
+    }
   >();
   const incfilesInMiscDir = readdirSync(miscScriptsPath, {
     withFileTypes: true,
@@ -71,7 +77,7 @@ async function processMiscScriptsDirectory(miscScriptsPath: string) {
     try {
       const content = readFileSync(incFilePath, "utf8");
       const { scriptedGives, trainerRefs } = await processIncFile(content);
-      processMiscScripts(scriptedGives, trainerRefs, miscScriptDict);
+      baseMapisizeMiscScripts(scriptedGives, trainerRefs, miscScriptDict);
     } catch (e) {
       console.error(`Failed to process misc script file ${incFilePath}:`, e);
     }
@@ -112,12 +118,15 @@ async function processMapsDirectory(mapPath: string, folders: Dirent[]) {
           }
         }
       }
-      const wildMons = parseWildMon(content);
+      // const wildMons = parseWildMon(content);
       const baseMap = await getBasemapID(parentFolderPath);
       const levelLabel = getLevelLabel(path.basename(path.dirname(fullPath)));
+      // console.log(
+      //   result.scriptedGives.map((give) => JSON.stringify(give.wildMon))
+      // );
       const toPush = {
         ...result,
-        wildMons,
+
         baseMap,
         thisLevelsId,
         levelLabel,
@@ -140,6 +149,7 @@ export async function findGiveItemsByLevel(
     (entry) => entry.isDirectory()
   );
   const mapLevels = await processMapsDirectory(mapsPath, folders);
+
   if (miscScriptsPath) {
     // If miscScriptsPath is provided, include it in the search
     //@ts-ignore

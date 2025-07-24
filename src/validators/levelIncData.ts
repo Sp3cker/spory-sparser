@@ -1,7 +1,8 @@
 import { z } from "zod";
 export const WildMonSchema = z.object({
   script: z.string(),
-  wildMon: z.string(),
+  species: z.string(),
+  level: z.number(),
 });
 /**
 This is a trainerbattle we find in an .inc file.
@@ -25,11 +26,19 @@ export const IncPokemonEntrySchema = z.object({
   isRandom: z.boolean(), // if `givemonrandom`
 });
 /** All events that happen in an inc file. */
+export const AllIncEventsSchema = z.object({
+  items: z.array(IncItemEntrySchema),
+  pokemon: z.array(IncPokemonEntrySchema),
+  wildMon: z.array(WildMonSchema),
+  explanation: z.string(),
+});
+
 export const IncScriptedEventSchema = z.object({
   scriptName: z.string(),
   explanation: z.string().optional(),
   items: z.array(IncItemEntrySchema).optional(),
   pokemon: z.array(IncPokemonEntrySchema).optional(),
+  wildMon: z.array(WildMonSchema).optional(),
 });
 export const IncDataSchema = z.object({
   scriptedGives: z.array(IncScriptedEventSchema),

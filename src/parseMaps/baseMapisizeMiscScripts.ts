@@ -3,14 +3,17 @@ import {
   IncTrainer,
   IncScriptedEventSchema,
   IncTrainerSchema,
-} from "../validators/levelIncData.js";
+} from "../validators/levelIncData.ts";
 
-export const processMiscScripts = (
+export const baseMapisizeMiscScripts = (
   scriptedGives: IncScriptEvent[],
   trainerRefs: IncTrainer[],
   miscScriptDict: Map<
     string,
-    { scriptedGives: IncScriptEvent[]; trainerRefs: IncTrainer[] }
+    {
+      scriptedGives: IncScriptEvent[];
+      trainerRefs: IncTrainer[];
+    }
   >
 ) => {
   const splitRegex = /^(.*?)_EventScript/; // Text before _EventScript
@@ -50,7 +53,7 @@ export const processMiscScripts = (
 
       if (key === "scriptedGives") {
         IncScriptedEventSchema.parse(scriptOrRef);
-      } else {
+      } else if (key === "trainerRefs") {
         IncTrainerSchema.parse(scriptOrRef);
       }
 
