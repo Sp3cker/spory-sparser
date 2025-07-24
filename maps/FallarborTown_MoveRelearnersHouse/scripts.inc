@@ -375,6 +375,7 @@ FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg:
 	.string "I can teach an Egg.$"
 
 FallarborTown_MoveRelearnersHouse_EventScript_StarterEggGive::
+@explanation Trade shards for starter eggs
 # 192 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 	lock
 # 193 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
@@ -437,6 +438,7 @@ FallarborTown_MoveRelearnersHouse_EventScript_StarterEggGive_11:
 
 
 FallarborTown_MoveRelearnersHouse_EventScript_GiveFireEgg::
+@explanation Trade for Red Shard
 # 229 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 	checkitem ITEM_RED_SHARD
 # 230 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"

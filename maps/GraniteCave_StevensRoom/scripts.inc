@@ -12,6 +12,7 @@ GraniteCave_StevensRoom_MapScripts::
 
 # 7 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 GraniteCave_StevensRoom_EventScript_Steven::
+@explanation Speak to Steven in his cave.
 # 8 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	lock
 # 9 "data/maps/GraniteCave_StevensRoom/scripts.pory"

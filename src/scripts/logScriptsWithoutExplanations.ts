@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync, existsSync } from "fs";
-import { join, dirname } from "path";
+import { join } from "path";
 import { IncScriptEvent } from "../parseMaps/incParser.ts";
+import { notneededLabels } from "../removeSimilarLocations.js";
 
 interface ScriptBlockWithLineNumber {
   name: string;
@@ -126,10 +127,11 @@ function processIncFileForMissingExplanations(filePath: string): ScriptEventWith
     const content = readFileSync(filePath, "utf8");
     const scriptedEvents = parseScriptedEventsWithLocation(content, filePath);
     
-    // Filter for scripts that have content but no explanation
+    // Filter for scripts that have items but no explanation and are not in the notneededLabels array
     return scriptedEvents.filter(event => 
       !event.explanation &&
-      (event.items.length > 0 || event.pokemon.length > 0 || event.wildMon.length > 0)
+      event.items.length > 0 &&
+      !notneededLabels.includes(event.scriptName)
     );
   } catch (error) {
     console.error(`Error processing file ${filePath}:`, error);
@@ -214,6 +216,7 @@ async function logScriptsWithoutExplanations() {
     
     for (const script of scripts) {
       console.log(`  📄 Lines ${script.startLine}-${script.endLine}: ${script.scriptName}`);
+      console.log(`      file://${filePath}:${script.startLine}`);
       
       if (script.items.length > 0) {
         const itemsList = script.items.map(item => 
@@ -244,4 +247,4 @@ async function logScriptsWithoutExplanations() {
 }
 
 // Run the script
-logScriptsWithoutExplanations().catch(console.error); 
+logScriptsWithoutExplanations().catch(console.error);

@@ -520,6 +520,7 @@ Route103_EventScript_Andrew::
 
 # 261 "data/maps/Route103/scripts.pory"
 Route103_EventScript_ReceiveGoodRod::
+@explanation Speak to Fisherman Andrew
 # 262 "data/maps/Route103/scripts.pory"
 	msgbox Route103_Text_IdenticalMindsTakeThis, MSGBOX_DEFAULT
 # 263 "data/maps/Route103/scripts.pory"

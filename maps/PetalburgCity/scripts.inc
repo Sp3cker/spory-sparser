@@ -1388,6 +1388,7 @@ PetalburgCity_EventScript_OldRodFisherman::
 
 # 694 "data/maps/PetalburgCity/scripts.pory"
 PetalburgCity_EventScript_GiveOldRod::
+@explanation Speak to Fisherman
 # 695 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_Text_GiveYouOneOfMyRods, MSGBOX_DEFAULT
 # 696 "data/maps/PetalburgCity/scripts.pory"

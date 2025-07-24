@@ -1100,6 +1100,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex::
 
 # 551 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls::
+@explanation Recieved from May after receiving Pokédex
 # 552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese, MSGBOX_DEFAULT
 # 553 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"

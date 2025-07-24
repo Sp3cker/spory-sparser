@@ -967,6 +967,7 @@ LilycoveCity_EventScript_DawnRivalBattle::
 
 
 LilycoveCity_EventScript_DawnDefeated::
+@explanation Defeat Dawn
 # 498 "data/maps/LilycoveCity/scripts.pory"
 	msgbox LilycoveCity_Text_Dawn_MagmaAndAqua
 # 499 "data/maps/LilycoveCity/scripts.pory"

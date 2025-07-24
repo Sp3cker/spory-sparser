@@ -322,6 +322,7 @@ RustboroCity_DevonCorp_3F_EventScript_MrStone::
 
 # 161 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::
+@explanation Deliver letter from Steven to Mr. Devon
 # 162 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter, MSGBOX_DEFAULT
 # 163 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"

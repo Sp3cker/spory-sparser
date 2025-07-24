@@ -216,6 +216,7 @@ LavaridgeTown_Gym_1F_EventScript_GiveOverheat2::
 
 # 109 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 LavaridgeTown_Gym_1F_EventScript_GiveOverheat::
+@explanation Whoop Flannery's ass
 # 110 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	giveitem ITEM_TM_OVERHEAT
 # 111 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"

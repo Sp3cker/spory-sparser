@@ -1,4 +1,3 @@
-
 export const notneededLabels = [
   "FortreeCity_Gym_EventScript_GiveAerialAce2::",
   "CheatCodeMegaStones::",
@@ -10,6 +9,7 @@ export const notneededLabels = [
   "MauvilleCity_Gym_EventScript_GiveVoltSwitch2::",
   "SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2::",
   "LittlerootTown_ProfessorBirchsLab_EventScript_BrendanGivePokeBalls::",
+  "LittlerootTown_ProfessorBirchsLab_EventScript_BrendanGivePokeBalls",
   "Route110_TrickHouseEnd_EventScript_CompletedPuzzle6::",
   "MauvilleCity_BikeShop_EventScript_GetMachBike::",
   "MauvilleCity_BikeShop_EventScript_SwitchAcroForMach::",

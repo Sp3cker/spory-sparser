@@ -18,6 +18,7 @@ Route123_BerryMastersHouse_OnTransition:
 
 # 10 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 Route123_BerryMastersHouse_EventScript_BerryMaster::
+
 # 11 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	lock
 # 12 "data/maps/Route123_BerryMastersHouse/scripts.pory"

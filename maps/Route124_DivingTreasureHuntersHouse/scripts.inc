@@ -698,7 +698,7 @@ Route124_DivingTreasureHuntersHouse_Text_ShardTradeBoard:
 	.string "{CLEAR_TO 0x08}GREEN SHARD{CLEAR_TO 0x59}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 0x7b}LEAF STONE$"
 
 Route124_DivingTreasureHuntersHouse_EventScript_FormChangingLady::
-@explanation House on island. Speak to lady inside house
+@explanation Speak to lady inside island house
 
 # 354 "data/maps/Route124_DivingTreasureHuntersHouse/scripts.pory"
 	lock

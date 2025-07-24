@@ -1892,6 +1892,7 @@ Route111_EventScript_DeclineDaisukeBattle::
 
 
 Route111_EventScript_BattleDaisuke::
+@explanation Defeat Black Belt Daisuke
 # 1047 "data/maps/Route111/scripts.pory"
 	msgbox Route111_EventScript_BattleDaisuke_Text_0, MSGBOX_DEFAULT
 # 1048 "data/maps/Route111/scripts.pory"

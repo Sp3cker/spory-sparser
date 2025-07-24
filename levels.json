@@ -1273,7 +1273,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Trade shards for starter eggs",
           "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_StarterEggGive::"
         },
         {
@@ -1840,7 +1840,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Speak to Steven in his cave.",
           "scriptName": "GraniteCave_StevensRoom_EventScript_Steven::"
         }
       ],
@@ -2134,7 +2134,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Whoop Flannery's ass",
           "scriptName": "LavaridgeTown_Gym_1F_EventScript_GiveOverheat::"
         }
       ],
@@ -2283,7 +2283,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Defeat Dawn",
           "scriptName": "LilycoveCity_EventScript_DawnDefeated::"
         },
         {
@@ -2605,57 +2605,6 @@
         {
           "items": [
             {
-              "name": "ITEM_MYSTIC_TICKET",
-              "quantity": 1
-            }
-          ],
-          "pokemon": [],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveBirthIslandTicket::"
-        },
-        {
-          "items": [],
-          "pokemon": [
-            {
-              "species": "SPECIES_CYNDAQUIL",
-              "level": 5,
-              "isRandom": false
-            }
-          ],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil::"
-        },
-        {
-          "items": [],
-          "pokemon": [
-            {
-              "species": "SPECIES_TOTODILE",
-              "level": 5,
-              "isRandom": false
-            }
-          ],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodile::"
-        },
-        {
-          "items": [],
-          "pokemon": [
-            {
-              "species": "SPECIES_CHIKORITA",
-              "level": 5,
-              "isRandom": false
-            }
-          ],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikorita::"
-        },
-        {
-          "items": [
-            {
               "name": "ITEM_QUICK_BALL",
               "quantity": 99
             },
@@ -2778,8 +2727,59 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Recieved from May after receiving Pokédex",
           "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls::"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_MYSTIC_TICKET",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveBirthIslandTicket::"
+        },
+        {
+          "items": [],
+          "pokemon": [
+            {
+              "species": "SPECIES_CYNDAQUIL",
+              "level": 5,
+              "isRandom": false
+            }
+          ],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil::"
+        },
+        {
+          "items": [],
+          "pokemon": [
+            {
+              "species": "SPECIES_TOTODILE",
+              "level": 5,
+              "isRandom": false
+            }
+          ],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodile::"
+        },
+        {
+          "items": [],
+          "pokemon": [
+            {
+              "species": "SPECIES_CHIKORITA",
+              "level": 5,
+              "isRandom": false
+            }
+          ],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikorita::"
         }
       ],
       "image": "LittlerootTown_ProfessorBirchsLab",
@@ -3244,7 +3244,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Affront NPC in their dwelling space",
           "scriptName": "MauvilleCity_House1_EventScript_RockSmashDude::"
         }
       ],
@@ -3683,7 +3683,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Defeat bratty twins",
           "scriptName": "MossdeepCity_Gym_EventScript_GiveCalmMind::"
         }
       ],
@@ -4257,7 +4257,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Save Mt. Pyre from Environmental Terrorists",
           "scriptName": "MtPyre_Summit_EventScript_OldLadyOrbsReturned::"
         }
       ],
@@ -4622,7 +4622,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Speak to Fisherman",
           "scriptName": "PetalburgCity_EventScript_GiveOldRod::"
         }
       ],
@@ -5044,7 +5044,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Speak to Fisherman Andrew",
           "scriptName": "Route103_EventScript_ReceiveGoodRod::"
         }
       ],
@@ -6833,7 +6833,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Defeat Black Belt Daisuke",
           "scriptName": "Route111_EventScript_BattleDaisuke::"
         },
         {
@@ -7884,7 +7884,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Defeat Fantina",
           "scriptName": "Route117_EventScript_FantinaGiveItems::"
         }
       ],
@@ -10042,7 +10042,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Deliver letter from Steven to Mr. Devon",
           "scriptName": "RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::"
         }
       ],

@@ -692,6 +692,7 @@ Route117_EventScript_FantinaDefeated::
 
 
 Route117_EventScript_FantinaGiveItems::
+@explanation Defeat Fantina
 # 363 "data/maps/Route117/scripts.pory"
 	giveitem ITEM_TM_PSYCHIC
 # 364 "data/maps/Route117/scripts.pory"
