@@ -360,6 +360,7 @@ Route120_EventScript_StevenAskReadyForBattle::
 
 # 181 "data/maps/Route120/scripts.pory"
 Route120_EventScript_StevenBattleKecleon::
+@explanation use Devon Scope to find Kecleon
 # 182 "data/maps/Route120/scripts.pory"
 	msgbox Route120_Text_StevenShowMeYourPower, MSGBOX_DEFAULT
 # 183 "data/maps/Route120/scripts.pory"

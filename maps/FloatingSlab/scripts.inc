@@ -50,6 +50,7 @@ FloatingSlab_EventScript_ShowMesprit::
 
 # 26 "data/maps/FloatingSlab/scripts.pory"
 FloatingSlab_EventScript_Mesprit::
+@explanation After 6th badge, Surf to Floating Slab, Route 103
 # 27 "data/maps/FloatingSlab/scripts.pory"
 	lock
 # 28 "data/maps/FloatingSlab/scripts.pory"

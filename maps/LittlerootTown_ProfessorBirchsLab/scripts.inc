@@ -448,6 +448,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex::
 
 # 225 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveBirthIslandTicket::
+@explanation Return to Birch after entering Hall of Fame
 # 226 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	lockall
 # 227 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"

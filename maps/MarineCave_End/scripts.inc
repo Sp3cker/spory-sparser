@@ -54,6 +54,7 @@ MarineCave_End_EventScript_ShowKyogre::
 
 # 28 "data/maps/MarineCave_End/scripts.pory"
 MarineCave_End_EventScript_Kyogre::
+@explanation After Elite Four, find Marine Cave, Route 105, Route 125, Route 127, or Route 129
 # 29 "data/maps/MarineCave_End/scripts.pory"
 	lockall
 # 30 "data/maps/MarineCave_End/scripts.pory"

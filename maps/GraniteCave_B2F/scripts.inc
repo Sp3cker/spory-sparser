@@ -48,6 +48,7 @@ GraniteCave_B2F_EventScript_ShowMoltresGalar::
 
 # 25 "data/maps/GraniteCave_B2F/scripts.pory"
 GraniteCave_B2F_EventScript_MoltresGalar::
+@explanation After 8th badge, challenge in Granite Cave 2F
 # 26 "data/maps/GraniteCave_B2F/scripts.pory"
 	lock
 # 27 "data/maps/GraniteCave_B2F/scripts.pory"

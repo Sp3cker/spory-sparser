@@ -202,33 +202,16 @@ export class IncScriptEvent {
   }
 
   hasContent(): boolean {
-    return (
+    const notNothing =
       this.items.length > 0 ||
       this.pokemon.length > 0 ||
-      this.wildMon.length > 0 ||
-      this.explanation.length > 0
-    );
+      this.wildMon.length > 0;
+    // if no items but still an explanation, fuck
+    if (!notNothing && this.explanation.length > 0) {
+      throw new Error("Explanation for nothing: " + this.scriptName);
+    }
+    return notNothing;
   }
-
-  // getSummary(): string {
-  //   const parts: string[] = [];
-
-  //   if (this.items.length > 0) {
-  //     parts.push(
-  //       `${this.items.length} item${this.items.length !== 1 ? "s" : ""}`
-  //     );
-  //   }
-
-  //   if (this.pokemon.length > 0) {
-  //     parts.push(`${this.pokemon.length} Pokémon`);
-  //   }
-
-  //   if (this.explanation) {
-  //     parts.push(`explanation: "${this.explanation}"`);
-  //   }
-
-  //   return parts.join(", ") || "no content";
-  // }
 }
 
 /**
@@ -291,6 +274,9 @@ function extractIncScriptBlocks(
 /**
  * Main parser function for .inc files
  * Pass the parsed file.
+ *
+ * After parsing an inc:
+ * 1. Add items/mons to scripts I know that are VAR coded
  */
 export function parseScriptedEvents(content: string) {
   // console.log("[incParser] Starting to parse .inc content");
@@ -304,6 +290,12 @@ export function parseScriptedEvents(content: string) {
     const event = new IncScriptEvent(block.name);
     event.parseFromContent(block.content);
     IncScriptedEventSchema.parse(event); // Validate the event structure
+    if (event.scriptName.includes("BerryGentleman")) {
+      event.items = [{ name: "ITEM_NONE", quantity: 1 }];
+    }
+    if (event.items.some((item) => item.name.includes("VAR_"))) {
+      return; // Skip scripts with VAR_ items
+    }
     // Only include sections that have give events
     if (event.hasContent()) {
       results.push(event);
@@ -329,31 +321,31 @@ export function parseScriptedEvents(content: string) {
   //   }
   // }
 
-    // We have to map over the ScriptedEvents
-    // and assign an explanation to
-    // all the scripts in Birch's Lab
-    // because Birch's Lab has so many
-    // dynmultipushes in DIFFERENT SCRIPTS
+  // We have to map over the ScriptedEvents
+  // and assign an explanation to
+  // all the scripts in Birch's Lab
+  // because Birch's Lab has so many
+  // dynmultipushes in DIFFERENT SCRIPTS
 
-    for (const giveevent of neededScripts) {
-      if (giveevent.scriptName.includes("NewBirchsLab_EventScript_Birch_")) {
-        if (!giveevent.explanation) {
-          giveevent.explanation = "Choose a starter";
-        }
-      }
-      if (giveevent.scriptName.includes("SeashoreHouse")) {
-        giveevent.explanation = "Defeat trainers in Seashore House";
-      }
-      if (
-        giveevent.scriptName.includes("Route123_BerryMastersHouse_EventScript_")
-      ) {
-        giveevent.explanation = "Talk to the Berry Master";
-      }
-      if (giveevent.explanation) {
-        continue;
+  for (const giveevent of neededScripts) {
+    if (giveevent.scriptName.includes("NewBirchsLab_EventScript_Birch_")) {
+      if (!giveevent.explanation) {
+        giveevent.explanation = "Choose a starter";
       }
     }
-  
+    if (giveevent.scriptName.includes("SeashoreHouse")) {
+      giveevent.explanation = "Defeat trainers in Seashore House";
+    }
+    if (
+      giveevent.scriptName.includes("Route123_BerryMastersHouse_EventScript_")
+    ) {
+      giveevent.explanation = "Talk to the Berry Master";
+    }
+    if (giveevent.explanation) {
+      continue;
+    }
+  }
+
   const groupedByExplanation = new Map<string, IncScriptEvent>();
   const scriptsWithoutExplanation: IncScriptEvent[] = [];
   /** Group scripts by explanation to merge give events with the same explainer tag */
@@ -368,7 +360,8 @@ export function parseScriptedEvents(content: string) {
             (item) => item.name === newItem.name
           );
           if (existingItemIndex !== -1) {
-            existingScript.items[existingItemIndex].quantity += newItem.quantity;
+            existingScript.items[existingItemIndex].quantity +=
+              newItem.quantity;
           } else {
             existingScript.items.push(newItem);
           }

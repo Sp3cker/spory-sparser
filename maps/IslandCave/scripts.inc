@@ -180,6 +180,7 @@ IslandCave_EventScript_ClearSteps::
 
 # 91 "data/maps/IslandCave/scripts.pory"
 IslandCave_EventScript_Regice::
+@explanation After 6th badge, enter Island Cave, Route 105
 # 92 "data/maps/IslandCave/scripts.pory"
 	lock
 # 93 "data/maps/IslandCave/scripts.pory"

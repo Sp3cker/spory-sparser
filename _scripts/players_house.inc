@@ -422,6 +422,7 @@ PlayersHouse_1F_Movement_MovePlayerAwayFromDoor:
 	step_end
 
 PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
+@explanation Defeat Elite 4 and speak to Rival
 	lockall
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, PlayersHouse_1F_EventScript_SetUpObjectEventVarsMale

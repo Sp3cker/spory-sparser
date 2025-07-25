@@ -62,6 +62,7 @@ Route119_EventScript_ShowZapdosGalar::
 
 # 32 "data/maps/Route119/scripts.pory"
 Route119_EventScript_ZapdosGalar::
+@explanation Requires Waterfall and Acro Bike to reach
 # 33 "data/maps/Route119/scripts.pory"
 	lock
 # 34 "data/maps/Route119/scripts.pory"

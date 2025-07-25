@@ -114,6 +114,7 @@ AncientTomb_EventScript_CaveEntranceSide::
 
 # 58 "data/maps/AncientTomb/scripts.pory"
 AncientTomb_EventScript_Registeel::
+@explanation After 6th badge, enter Ancient Tomb, Route 120
 # 59 "data/maps/AncientTomb/scripts.pory"
 	lock
 # 60 "data/maps/AncientTomb/scripts.pory"

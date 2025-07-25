@@ -708,6 +708,7 @@ RustboroCity_DevonCorp_2F_EventScript_DNASplicers_7:
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_DNASplicers_9:
+@explanation Show reasercher Kyurem
 # 355 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Text_PleaseTakeTheseSplicers, MSGBOX_DEFAULT
 # 356 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
@@ -860,7 +861,7 @@ RustboroCity_DevonCorp_2F_EventScript_NFusions_7:
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_NFusions_9:
-@explanations Show researcher on 2F a Necrozma
+@explanation Show researcher on 2F a Necrozma
 # 525 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Text_PleaseTakeTheseNFusions, MSGBOX_DEFAULT
 # 526 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"

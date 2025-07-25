@@ -50,6 +50,7 @@ RockySlab_EventScript_ShowUxie::
 
 # 26 "data/maps/RockySlab/scripts.pory"
 RockySlab_EventScript_Uxie::
+@explanation After 6th badge, Surf to Rocky Slab.
 # 27 "data/maps/RockySlab/scripts.pory"
 	lock
 # 28 "data/maps/RockySlab/scripts.pory"

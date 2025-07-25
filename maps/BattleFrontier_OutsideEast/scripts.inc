@@ -232,6 +232,7 @@ BattleFrontier_OutsideEast_EventScript_Sudowoodo::
 
 # 117 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 BattleFrontier_OutsideEast_EventScript_WaterSudowoodo::
+@explanation Battle Frontier, water berry tree, postgame
 # 118 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 	lock
 # 119 "data/maps/BattleFrontier_OutsideEast/scripts.pory"

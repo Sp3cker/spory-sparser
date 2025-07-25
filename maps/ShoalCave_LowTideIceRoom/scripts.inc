@@ -48,6 +48,7 @@ ShoalCave_LowTideIceRoom_EventScript_ShowKyurem::
 
 # 25 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 ShoalCave_LowTideIceRoom_EventScript_Kyurem::
+@explanation Shoal Cave Ice Room, wait for low tide to access
 # 26 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"
 	lock
 # 27 "data/maps/ShoalCave_LowTideIceRoom/scripts.pory"

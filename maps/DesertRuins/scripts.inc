@@ -114,6 +114,7 @@ DesertRuins_EventScript_CaveEntranceSide::
 
 # 58 "data/maps/DesertRuins/scripts.pory"
 DesertRuins_EventScript_Regirock::
+@explanation After 6th badge, enter Desert Ruins, Route 111
 # 59 "data/maps/DesertRuins/scripts.pory"
 	lock
 # 60 "data/maps/DesertRuins/scripts.pory"

@@ -50,6 +50,7 @@ Route126_EventScript_ShowTapuKoko::
 
 # 26 "data/maps/Route126/scripts.pory"
 Route126_EventScript_TapuKoko::
+@explanation Use Dive to reach top-left corner of Route 126
 # 27 "data/maps/Route126/scripts.pory"
 	lock
 # 28 "data/maps/Route126/scripts.pory"

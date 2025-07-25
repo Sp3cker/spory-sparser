@@ -94,6 +94,7 @@ SkyPillar_Top_EventScript_RayquazaFaceDown::
 
 # 48 "data/maps/SkyPillar_Top/scripts.pory"
 SkyPillar_Top_EventScript_Rayquaza::
+@explanation After Elite Four, challenge Rayquaza at top of Sky Pillar
 # 49 "data/maps/SkyPillar_Top/scripts.pory"
 	lockall
 # 50 "data/maps/SkyPillar_Top/scripts.pory"

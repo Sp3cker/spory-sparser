@@ -50,6 +50,7 @@ ScorchedSlab_EventScript_ShowAzelf::
 
 # 26 "data/maps/ScorchedSlab/scripts.pory"
 ScorchedSlab_EventScript_Azelf::
+@explanation After receiving Badge 6, Surf to Scorched Slab, Route 120
 # 27 "data/maps/ScorchedSlab/scripts.pory"
 	lock
 # 28 "data/maps/ScorchedSlab/scripts.pory"

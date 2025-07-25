@@ -50,6 +50,7 @@ AbandonedShip_HiddenFloorRooms_EventScript_ShowTapuFini::
 
 # 26 "data/maps/AbandonedShip_HiddenFloorRooms/scripts.pory"
 AbandonedShip_HiddenFloorRooms_EventScript_TapuFini::
+@explanation Abandonded Ship. Requires Dive
 # 27 "data/maps/AbandonedShip_HiddenFloorRooms/scripts.pory"
 	lock
 # 28 "data/maps/AbandonedShip_HiddenFloorRooms/scripts.pory"

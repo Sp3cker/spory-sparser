@@ -58,6 +58,7 @@ Route114_EventScript_ShowArticunoGalar::
 
 # 30 "data/maps/Route114/scripts.pory"
 Route114_EventScript_ArticunoGalar::
+@explanation Speak to Articuno-Galar
 # 31 "data/maps/Route114/scripts.pory"
 	lock
 # 32 "data/maps/Route114/scripts.pory"

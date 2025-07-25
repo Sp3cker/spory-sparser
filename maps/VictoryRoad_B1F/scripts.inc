@@ -92,6 +92,7 @@ VictoryRoad_B1F_EventScript_AnimateRegigigas5::
 
 # 47 "data/maps/VictoryRoad_B1F/scripts.pory"
 VictoryRoad_B1F_EventScript_Regigigas::
+@explanation After defeating all other Regis, find in Victory Road
 # 48 "data/maps/VictoryRoad_B1F/scripts.pory"
 	lock
 # 49 "data/maps/VictoryRoad_B1F/scripts.pory"

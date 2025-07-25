@@ -48,6 +48,7 @@ FieryPath_BackRoom_EventScript_ShowHeatran::
 
 # 25 "data/maps/FieryPath_BackRoom/scripts.pory"
 FieryPath_BackRoom_EventScript_Heatran::
+@explanation Inside Fiery Path, Route 112
 # 26 "data/maps/FieryPath_BackRoom/scripts.pory"
 	lock
 # 27 "data/maps/FieryPath_BackRoom/scripts.pory"

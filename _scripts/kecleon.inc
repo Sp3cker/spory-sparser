@@ -61,6 +61,7 @@ EventScript_AskUseDevonScope::
 	end
 
 EventScript_BattleKecleon::
+@explanation Find Kecleon
 	msgbox Kecleon_Text_UseDevonScopeMonAttacked, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer

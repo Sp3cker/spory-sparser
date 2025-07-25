@@ -50,6 +50,7 @@ Route124_EventScript_ShowTapuLele::
 
 # 26 "data/maps/Route124/scripts.pory"
 Route124_EventScript_TapuLele::
+@explanation Use Dive to enter the lagoon encompassing Tapu Lele
 # 27 "data/maps/Route124/scripts.pory"
 	lock
 # 28 "data/maps/Route124/scripts.pory"

@@ -151,7 +151,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "Abandonded Ship. Requires Dive",
           "scriptName": "AbandonedShip_HiddenFloorRooms_EventScript_TapuFini::"
         }
       ],
@@ -330,7 +330,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "After 6th badge, enter Ancient Tomb, Route 120",
           "scriptName": "AncientTomb_EventScript_Registeel::"
         }
       ],
@@ -395,23 +395,15 @@
               "script": "AquaHideout_B1F_EventScript_Electrode1::",
               "species": "SPECIES_ELECTRODE",
               "level": 30
-            }
-          ],
-          "explanation": "",
-          "scriptName": "AquaHideout_B1F_EventScript_Electrode1::"
-        },
-        {
-          "items": [],
-          "pokemon": [],
-          "wildMon": [
+            },
             {
               "script": "AquaHideout_B1F_EventScript_Electrode2::",
               "species": "SPECIES_ELECTRODE",
               "level": 30
             }
           ],
-          "explanation": "",
-          "scriptName": "AquaHideout_B1F_EventScript_Electrode2::"
+          "explanation": "Speak to Pokéball",
+          "scriptName": "AquaHideout_B1F_EventScript_Electrode1::"
         }
       ],
       "image": "AquaHideout_B1F",
@@ -591,7 +583,7 @@
               "level": 40
             }
           ],
-          "explanation": "",
+          "explanation": "Battle Frontier, water berry tree, postgame",
           "scriptName": "BattleFrontier_OutsideEast_EventScript_WaterSudowoodo::"
         }
       ],
@@ -713,7 +705,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "After 6th badge, enter Desert Ruins, Route 111",
           "scriptName": "DesertRuins_EventScript_Regirock::"
         }
       ],
@@ -1400,7 +1392,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "Inside Fiery Path, Route 112",
           "scriptName": "FieryPath_BackRoom_EventScript_Heatran::"
         }
       ],
@@ -1426,7 +1418,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "After 6th badge, Surf to Floating Slab, Route 103",
           "scriptName": "FloatingSlab_EventScript_Mesprit::"
         }
       ],
@@ -1800,7 +1792,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "After 8th badge, challenge in Granite Cave 2F",
           "scriptName": "GraniteCave_B2F_EventScript_MoltresGalar::"
         }
       ],
@@ -1901,7 +1893,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "After 6th badge, enter Grassy Slab, Route 114",
           "scriptName": "GrassySlab_EventScript_Regidrago::"
         }
       ],
@@ -1936,7 +1928,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "After 6th badge, enter Island Cave, Route 105",
           "scriptName": "IslandCave_EventScript_Regice::"
         }
       ],
@@ -2295,7 +2287,12 @@
       ],
       "scriptedGives": [
         {
-          "items": [],
+          "items": [
+            {
+              "name": "ITEM_NONE",
+              "quantity": 1
+            }
+          ],
           "pokemon": [],
           "wildMon": [],
           "explanation": "Talk to Berryman to receive a berry",
@@ -2652,6 +2649,18 @@
         {
           "items": [
             {
+              "name": "ITEM_MYSTIC_TICKET",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Return to Birch after entering Hall of Fame",
+          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveBirthIslandTicket::"
+        },
+        {
+          "items": [
+            {
               "name": "ITEM_QUICK_BALL",
               "quantity": 99
             },
@@ -2776,18 +2785,6 @@
           "wildMon": [],
           "explanation": "Recieved from May after receiving Pokédex",
           "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls::"
-        },
-        {
-          "items": [
-            {
-              "name": "ITEM_MYSTIC_TICKET",
-              "quantity": 1
-            }
-          ],
-          "pokemon": [],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveBirthIslandTicket::"
         },
         {
           "items": [],
@@ -3081,7 +3078,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "After Elite Four, find Marine Cave, Route 105, Route 125, Route 127, or Route 129",
           "scriptName": "MarineCave_End_EventScript_Kyogre::"
         }
       ],
@@ -4416,25 +4413,12 @@
           "pokemon": [],
           "wildMon": [
             {
-              "script": "NewMauville_Inside_EventScript_Voltorb3::",
-              "species": "SPECIES_VOLTORB",
-              "level": 25
-            }
-          ],
-          "explanation": "Speak to the Pokéball",
-          "scriptName": "NewMauville_Inside_EventScript_Voltorb3::"
-        },
-        {
-          "items": [],
-          "pokemon": [],
-          "wildMon": [
-            {
               "script": "NewMauville_Inside_EventScript_Regieleki::",
               "species": "SPECIES_REGIELEKI",
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "Inside New Mauville. Requires Basement Key from Wattson",
           "scriptName": "NewMauville_Inside_EventScript_Regieleki::"
         },
         {
@@ -4445,23 +4429,20 @@
               "script": "NewMauville_Inside_EventScript_Voltorb1::",
               "species": "SPECIES_VOLTORB",
               "level": 25
-            }
-          ],
-          "explanation": "",
-          "scriptName": "NewMauville_Inside_EventScript_Voltorb1::"
-        },
-        {
-          "items": [],
-          "pokemon": [],
-          "wildMon": [
+            },
             {
               "script": "NewMauville_Inside_EventScript_Voltorb2::",
               "species": "SPECIES_VOLTORB",
               "level": 25
+            },
+            {
+              "script": "NewMauville_Inside_EventScript_Voltorb3::",
+              "species": "SPECIES_VOLTORB",
+              "level": 25
             }
           ],
-          "explanation": "",
-          "scriptName": "NewMauville_Inside_EventScript_Voltorb2::"
+          "explanation": "Speak to Pokéball",
+          "scriptName": "NewMauville_Inside_EventScript_Voltorb1::"
         }
       ],
       "image": "NewMauville_Inside",
@@ -5002,7 +4983,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "After 6th badge, Surf to Rocky Slab.",
           "scriptName": "RockySlab_EventScript_Uxie::"
         }
       ],
@@ -7502,6 +7483,19 @@
       ],
       "scriptedGives": [
         {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
+              "script": "Route114_EventScript_ArticunoGalar::",
+              "species": "SPECIES_ARTICUNO_GALAR",
+              "level": 70
+            }
+          ],
+          "explanation": "Speak to Articuno-Galar",
+          "scriptName": "Route114_EventScript_ArticunoGalar::"
+        },
+        {
           "items": [
             {
               "name": "ITEM_TM_ROAR",
@@ -7512,19 +7506,6 @@
           "wildMon": [],
           "explanation": "Speak to man in nice suit",
           "scriptName": "Route114_EventScript_RoarGentleman::"
-        },
-        {
-          "items": [],
-          "pokemon": [],
-          "wildMon": [
-            {
-              "script": "Route114_EventScript_ArticunoGalar::",
-              "species": "SPECIES_ARTICUNO_GALAR",
-              "level": 70
-            }
-          ],
-          "explanation": "",
-          "scriptName": "Route114_EventScript_ArticunoGalar::"
         }
       ],
       "image": "Route114",
@@ -7826,6 +7807,19 @@
       ],
       "scriptedGives": [
         {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
+              "script": "Route116_EventScript_TapuBulu::",
+              "species": "SPECIES_TAPU_BULU",
+              "level": 70
+            }
+          ],
+          "explanation": "Accessible via Rusturf Tunnel after 8th badge",
+          "scriptName": "Route116_EventScript_TapuBulu::"
+        },
+        {
           "items": [
             {
               "name": "ITEM_REPEAT_BALL",
@@ -7852,19 +7846,6 @@
           "wildMon": [],
           "explanation": "Defeat Candice",
           "scriptName": "Route116_EventScript_CandiceGiveRockTomb::"
-        },
-        {
-          "items": [],
-          "pokemon": [],
-          "wildMon": [
-            {
-              "script": "Route116_EventScript_TapuBulu::",
-              "species": "SPECIES_TAPU_BULU",
-              "level": 70
-            }
-          ],
-          "explanation": "",
-          "scriptName": "Route116_EventScript_TapuBulu::"
         }
       ],
       "image": "Route116",
@@ -8332,6 +8313,19 @@
       ],
       "scriptedGives": [
         {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
+              "script": "Route119_EventScript_ZapdosGalar::",
+              "species": "SPECIES_ZAPDOS_GALAR",
+              "level": 70
+            }
+          ],
+          "explanation": "Requires Waterfall and Acro Bike to reach",
+          "scriptName": "Route119_EventScript_ZapdosGalar::"
+        },
+        {
           "items": [
             {
               "name": "ITEM_LIFE_ORB",
@@ -8354,19 +8348,6 @@
           "wildMon": [],
           "explanation": "Defeat Rival outside Fortree City",
           "scriptName": "Route119_EventScript_GiveFlyHM::"
-        },
-        {
-          "items": [],
-          "pokemon": [],
-          "wildMon": [
-            {
-              "script": "Route119_EventScript_ZapdosGalar::",
-              "species": "SPECIES_ZAPDOS_GALAR",
-              "level": 70
-            }
-          ],
-          "explanation": "",
-          "scriptName": "Route119_EventScript_ZapdosGalar::"
         }
       ],
       "image": "Route119",
@@ -8525,15 +8506,7 @@
       "levelLabel": "Weatherinstitute 2F",
       "shopItems": [],
       "pickupItems": [],
-      "scriptedGives": [
-        {
-          "items": [],
-          "pokemon": [],
-          "wildMon": [],
-          "explanation": "Save Weather Institute from Environmental Terrorists",
-          "scriptName": "Route119_WeatherInstitute_2F_EventScript_ReceiveCastform::"
-        }
-      ],
+      "scriptedGives": [],
       "image": "Route119_WeatherInstitute_2F",
       "trainerRefs": [
         {
@@ -8649,6 +8622,19 @@
       ],
       "scriptedGives": [
         {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
+              "script": "Route120_EventScript_StevenBattleKecleon::",
+              "species": "SPECIES_KECLEON",
+              "level": 50
+            }
+          ],
+          "explanation": "use Devon Scope to find Kecleon",
+          "scriptName": "Route120_EventScript_StevenBattleKecleon::"
+        },
+        {
           "items": [
             {
               "name": "ITEM_DEVON_SCOPE",
@@ -8659,19 +8645,6 @@
           "wildMon": [],
           "explanation": "Speak to Steven outside Fortree City",
           "scriptName": "Route120_EventScript_StevenGiveDeconScope::"
-        },
-        {
-          "items": [],
-          "pokemon": [],
-          "wildMon": [
-            {
-              "script": "Route120_EventScript_StevenBattleKecleon::",
-              "species": "SPECIES_KECLEON",
-              "level": 50
-            }
-          ],
-          "explanation": "",
-          "scriptName": "Route120_EventScript_StevenBattleKecleon::"
         }
       ],
       "image": "Route120",
@@ -9212,7 +9185,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "Use Dive to enter the lagoon encompassing Tapu Lele",
           "scriptName": "Route124_EventScript_TapuLele::"
         }
       ],
@@ -9418,7 +9391,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "Use Dive to reach top-left corner of Route 126",
           "scriptName": "Route126_EventScript_TapuKoko::"
         }
       ],
@@ -10108,6 +10081,18 @@
         {
           "items": [
             {
+              "name": "ITEM_DNA_SPLICERS",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Show reasercher Kyurem",
+          "scriptName": "RustboroCity_DevonCorp_2F_EventScript_DNASplicers_9:"
+        },
+        {
+          "items": [
+            {
               "name": "ITEM_REINS_OF_UNITY",
               "quantity": 1
             }
@@ -10116,18 +10101,6 @@
           "wildMon": [],
           "explanation": "Show researcher on 2F a Calyrex",
           "scriptName": "RustboroCity_DevonCorp_2F_EventScript_ReinsOfUnity_9:"
-        },
-        {
-          "items": [
-            {
-              "name": "ITEM_DNA_SPLICERS",
-              "quantity": 1
-            }
-          ],
-          "pokemon": [],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "RustboroCity_DevonCorp_2F_EventScript_DNASplicers_9:"
         },
         {
           "items": [
@@ -10142,7 +10115,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Show researcher on 2F a Necrozma",
           "scriptName": "RustboroCity_DevonCorp_2F_EventScript_NFusions_9:"
         }
       ],
@@ -10631,7 +10604,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "After receiving Badge 6, Surf to Scorched Slab, Route 120",
           "scriptName": "ScorchedSlab_EventScript_Azelf::"
         }
       ],
@@ -10848,7 +10821,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "Shoal Cave Ice Room, wait for low tide to access",
           "scriptName": "ShoalCave_LowTideIceRoom_EventScript_Kyurem::"
         }
       ],
@@ -10974,7 +10947,15 @@
               "species": "SPECIES_RAGING_BOLT",
               "level": 0,
               "isRandom": false
-            },
+            }
+          ],
+          "wildMon": [],
+          "explanation": "Choose a powerful Pokémon to summon",
+          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom::"
+        },
+        {
+          "items": [],
+          "pokemon": [
             {
               "species": "SPECIES_IRON_TREADS",
               "level": 0,
@@ -11024,7 +11005,15 @@
               "species": "SPECIES_IRON_CROWN",
               "level": 0,
               "isRandom": false
-            },
+            }
+          ],
+          "wildMon": [],
+          "explanation": "Choose a Paradox Pokémon to summon",
+          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_InnerRoom::"
+        },
+        {
+          "items": [],
+          "pokemon": [
             {
               "species": "SPECIES_NIHILEGO",
               "level": 0,
@@ -11072,8 +11061,8 @@
             }
           ],
           "wildMon": [],
-          "explanation": "Choose a powerful Pokémon to summon",
-          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom::"
+          "explanation": "Select an Ultra Beast to fight",
+          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_StairsRoom::"
         },
         {
           "items": [],
@@ -11173,7 +11162,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "After Elite Four, challenge Rayquaza at top of Sky Pillar",
           "scriptName": "SkyPillar_Top_EventScript_Rayquaza::"
         }
       ],
@@ -12047,7 +12036,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "Challenge Groudon",
           "scriptName": "TerraCave_End_EventScript_Groudon::"
         }
       ],
@@ -12490,6 +12479,59 @@
           "items": [],
           "pokemon": [
             {
+              "species": "SPECIES_NIHILEGO",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_GUZZLORD",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_XURKITREE",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_BUZZWOLE",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_BLACEPHALON",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_STAKATAKA",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_POIPOLE",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_PHEROMOSA",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_CELESTEELA",
+              "level": 0,
+              "isRandom": false
+            }
+          ],
+          "wildMon": [],
+          "explanation": "Select a Paradox Pokémon to fight",
+          "scriptName": "VictoryRoad_1F_EventScript_StairsRoom::"
+        },
+        {
+          "items": [],
+          "pokemon": [
+            {
               "species": "SPECIES_GREAT_TUSK",
               "level": 0,
               "isRandom": false
@@ -12604,59 +12646,6 @@
         },
         {
           "items": [],
-          "pokemon": [
-            {
-              "species": "SPECIES_NIHILEGO",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_GUZZLORD",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_XURKITREE",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_BUZZWOLE",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_BLACEPHALON",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_STAKATAKA",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_POIPOLE",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_PHEROMOSA",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_CELESTEELA",
-              "level": 0,
-              "isRandom": false
-            }
-          ],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "VictoryRoad_1F_EventScript_StairsRoom::"
-        },
-        {
-          "items": [],
           "pokemon": [],
           "wildMon": [
             {
@@ -12747,7 +12736,7 @@
               "level": 70
             }
           ],
-          "explanation": "",
+          "explanation": "After defeating all other Regis, find in Victory Road",
           "scriptName": "VictoryRoad_B1F_EventScript_Regigigas::"
         }
       ],

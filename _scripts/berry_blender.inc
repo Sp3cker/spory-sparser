@@ -271,6 +271,7 @@ BerryBlender_EventScript_Blender1NoSpareBerries:
 	end
 
 BerryBlender_EventScript_Blender1GiveSpareBerry:
+@explanation Talk to man by Berry Blender
 	msgbox BerryBlender_Text_CanHaveOneOfMyBerries, MSGBOX_DEFAULT
 	giveitem ITEM_PECHA_BERRY
 	setflag FLAG_DAILY_CONTEST_LOBBY_RECEIVED_BERRY
@@ -532,6 +533,7 @@ BerryBlender_EventScript_ExpertMNoSpareBerries:
 	end
 
 BerryBlender_EventScript_ExpertMGiveBerry:
+@explanation Speak to man by Berry Blender
 	msgbox BerryBlender_Text_DontHaveAnyBerriesHaveOne, MSGBOX_DEFAULT
 	giveitem ITEM_PECHA_BERRY
 	setflag FLAG_DAILY_CONTEST_LOBBY_RECEIVED_BERRY

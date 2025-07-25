@@ -112,6 +112,7 @@ Route116_EventScript_WandasBoyfriend::
 
 # 57 "data/maps/Route116/scripts.pory"
 Route116_EventScript_TapuBulu::
+@explanation Accessible via Rusturf Tunnel after 8th badge
 # 58 "data/maps/Route116/scripts.pory"
 	lock
 # 59 "data/maps/Route116/scripts.pory"

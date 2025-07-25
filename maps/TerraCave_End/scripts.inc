@@ -54,6 +54,7 @@ TerraCave_End_EventScript_ShowGroudon::
 
 # 28 "data/maps/TerraCave_End/scripts.pory"
 TerraCave_End_EventScript_Groudon::
+@explanation Challenge Groudon
 # 29 "data/maps/TerraCave_End/scripts.pory"
 	lockall
 # 30 "data/maps/TerraCave_End/scripts.pory"

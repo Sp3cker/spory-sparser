@@ -29,7 +29,8 @@ import { resolve } from "path";
                     species: wildMonEntry.species,
                     level: wildMonEntry.level,
                     map: level.thisLevelsId,
-                    script: wildMonEntry.script || null
+                    script: wildMonEntry.script || null,
+                    explanation: scriptedGive.explanation
                   });
                 }
               });

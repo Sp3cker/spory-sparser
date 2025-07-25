@@ -58,6 +58,7 @@ AquaHideout_B1F_EventScript_ShowElectrode2::
 
 # 30 "data/maps/AquaHideout_B1F/scripts.pory"
 AquaHideout_B1F_EventScript_Electrode1::
+@explanation Speak to Pokéball
 # 31 "data/maps/AquaHideout_B1F/scripts.pory"
 	lock
 # 32 "data/maps/AquaHideout_B1F/scripts.pory"
@@ -106,6 +107,7 @@ AquaHideout_B1F_EventScript_DefeatedElectrode1::
 
 # 54 "data/maps/AquaHideout_B1F/scripts.pory"
 AquaHideout_B1F_EventScript_Electrode2::
+@explanation Speak to Pokéball
 # 55 "data/maps/AquaHideout_B1F/scripts.pory"
 	lock
 # 56 "data/maps/AquaHideout_B1F/scripts.pory"

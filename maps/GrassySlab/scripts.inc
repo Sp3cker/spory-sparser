@@ -50,6 +50,7 @@ GrassySlab_EventScript_ShowRegidrago::
 
 # 26 "data/maps/GrassySlab/scripts.pory"
 GrassySlab_EventScript_Regidrago::
+@explanation After 6th badge, enter Grassy Slab, Route 114
 # 27 "data/maps/GrassySlab/scripts.pory"
 	lock
 # 28 "data/maps/GrassySlab/scripts.pory"
