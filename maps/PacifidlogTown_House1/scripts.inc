@@ -70,6 +70,7 @@ PacifidlogTown_House1_EventScript_Man_7:
 	end
 
 PacifidlogTown_House1_EventScript_Man_2:
+@explanation Speak to a man in his house
 # 21 "data/maps/PacifidlogTown_House1/scripts.pory"
 	msgbox PacifidlogTown_House1_GenesectManIntro
 # 22 "data/maps/PacifidlogTown_House1/scripts.pory"

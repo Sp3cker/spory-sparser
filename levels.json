@@ -1050,7 +1050,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Show the NPC a Zygarde",
           "scriptName": "EverGrandeCity_PokemonCenter_1F_EventScript_ExpertM_6:"
         }
       ],
@@ -1334,7 +1334,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Trade for Blue Shard",
           "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_GiveWaterEgg::"
         },
         {
@@ -1347,7 +1347,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Trade for Green Shard",
           "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_GiveGrassEgg::"
         }
       ],
@@ -4416,6 +4416,19 @@
           "pokemon": [],
           "wildMon": [
             {
+              "script": "NewMauville_Inside_EventScript_Voltorb3::",
+              "species": "SPECIES_VOLTORB",
+              "level": 25
+            }
+          ],
+          "explanation": "Speak to the Pokéball",
+          "scriptName": "NewMauville_Inside_EventScript_Voltorb3::"
+        },
+        {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
               "script": "NewMauville_Inside_EventScript_Regieleki::",
               "species": "SPECIES_REGIELEKI",
               "level": 70
@@ -4449,19 +4462,6 @@
           ],
           "explanation": "",
           "scriptName": "NewMauville_Inside_EventScript_Voltorb2::"
-        },
-        {
-          "items": [],
-          "pokemon": [],
-          "wildMon": [
-            {
-              "script": "NewMauville_Inside_EventScript_Voltorb3::",
-              "species": "SPECIES_VOLTORB",
-              "level": 25
-            }
-          ],
-          "explanation": "",
-          "scriptName": "NewMauville_Inside_EventScript_Voltorb3::"
         }
       ],
       "image": "NewMauville_Inside",
@@ -4591,7 +4591,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Speak to a man in his house",
           "scriptName": "PacifidlogTown_House1_EventScript_Man_2:"
         }
       ],
@@ -10108,6 +10108,18 @@
         {
           "items": [
             {
+              "name": "ITEM_REINS_OF_UNITY",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Show researcher on 2F a Calyrex",
+          "scriptName": "RustboroCity_DevonCorp_2F_EventScript_ReinsOfUnity_9:"
+        },
+        {
+          "items": [
+            {
               "name": "ITEM_DNA_SPLICERS",
               "quantity": 1
             }
@@ -10116,18 +10128,6 @@
           "wildMon": [],
           "explanation": "",
           "scriptName": "RustboroCity_DevonCorp_2F_EventScript_DNASplicers_9:"
-        },
-        {
-          "items": [
-            {
-              "name": "ITEM_REINS_OF_UNITY",
-              "quantity": 1
-            }
-          ],
-          "pokemon": [],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "RustboroCity_DevonCorp_2F_EventScript_ReinsOfUnity_9:"
         },
         {
           "items": [
@@ -10974,15 +10974,7 @@
               "species": "SPECIES_RAGING_BOLT",
               "level": 0,
               "isRandom": false
-            }
-          ],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom::"
-        },
-        {
-          "items": [],
-          "pokemon": [
+            },
             {
               "species": "SPECIES_IRON_TREADS",
               "level": 0,
@@ -11032,15 +11024,7 @@
               "species": "SPECIES_IRON_CROWN",
               "level": 0,
               "isRandom": false
-            }
-          ],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_InnerRoom::"
-        },
-        {
-          "items": [],
-          "pokemon": [
+            },
             {
               "species": "SPECIES_NIHILEGO",
               "level": 0,
@@ -11088,8 +11072,8 @@
             }
           ],
           "wildMon": [],
-          "explanation": "",
-          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_StairsRoom::"
+          "explanation": "Choose a powerful Pokémon to summon",
+          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom::"
         },
         {
           "items": [],
@@ -11824,7 +11808,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Speak to the Arceus Expert",
           "scriptName": "SootopolisCity_House2_EventScript_ExpertF_2:"
         }
       ],
@@ -11851,7 +11835,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Man in House 4 Dialga",
           "scriptName": "SootopolisCity_House4_EventScript_RelicsMan_10:"
         },
         {
@@ -11867,7 +11851,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Show the man in House 4 Palkia",
           "scriptName": "SootopolisCity_House4_EventScript_RelicsMan_11:"
         },
         {
@@ -11879,7 +11863,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Show the man in House 4 Giratina",
           "scriptName": "SootopolisCity_House4_EventScript_RelicsMan_12:"
         }
       ],

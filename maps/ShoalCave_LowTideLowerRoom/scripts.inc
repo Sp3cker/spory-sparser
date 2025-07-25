@@ -153,6 +153,7 @@ ShoalCave_LowTideLowerRoom_EventScript_ChooseRoom_11:
 
 
 ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom::
+@explanation Choose a powerful Pokémon to summon
 # 95 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	msgbox ShoalCave_LowTideLowerRoom_Text_WhichPokemon, MSGBOX_DEFAULT
 # 97 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
@@ -196,6 +197,7 @@ ShoalCave_LowTideLowerRoom_EventScript_EntranceRoom_2:
 
 
 ShoalCave_LowTideLowerRoom_EventScript_InnerRoom::
+@explanation Choose a powerful Pokémon to summon
 # 126 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	msgbox ShoalCave_LowTideLowerRoom_Text_WhichPokemon, MSGBOX_DEFAULT
 # 128 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
@@ -239,6 +241,7 @@ ShoalCave_LowTideLowerRoom_EventScript_InnerRoom_2:
 
 
 ShoalCave_LowTideLowerRoom_EventScript_StairsRoom::
+@explanation Choose a powerful Pokémon to summon
 # 157 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	msgbox ShoalCave_LowTideLowerRoom_Text_WhichPokemon, MSGBOX_DEFAULT
 # 159 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"

@@ -78,6 +78,7 @@ SootopolisCity_House2_EventScript_ExpertF_7:
 	end
 
 SootopolisCity_House2_EventScript_ExpertF_2:
+@explanation Speak to the Arceus Expert
 # 12 "data/maps/SootopolisCity_House2/scripts.pory"
 	msgbox SootopolisCity_House2_ArceusExpertIntro
 # 13 "data/maps/SootopolisCity_House2/scripts.pory"

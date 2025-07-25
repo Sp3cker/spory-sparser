@@ -26,7 +26,8 @@ export const notneededLabels = [
   "MysteryGiftScript_MysticTicket::",
   "MysteryGiftScript_OldSeaMap::",
   "MysteryGiftScript_BattleCard::",
-  "MysteryGiftScript_AuroraTicket::"
+  "MysteryGiftScript_AuroraTicket::",
+  "DewfordTown_Gym_EventScript_GiveLowSweep2::",
 ];
 // const blacklist = ["VAR_0x8005", "VAR_RESULT"];
 // const removeSimilarLocations = (duplicates: Duplicate[]) => {

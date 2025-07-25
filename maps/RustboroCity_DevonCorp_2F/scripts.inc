@@ -782,8 +782,10 @@ RustboroCity_DevonCorp_2F_EventScript_ReinsOfUnity_7:
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_ReinsOfUnity_9:
+@explanation Show researcher on 2F a Calyrex
 # 444 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_2F_Text_PleaseTakeTheseReins, MSGBOX_DEFAULT
+	msgbox RustboroCity_DevonCorp
+	_2F_Text_PleaseTakeTheseReins, MSGBOX_DEFAULT
 # 445 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	giveitem ITEM_REINS_OF_UNITY
 # 446 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
@@ -858,6 +860,7 @@ RustboroCity_DevonCorp_2F_EventScript_NFusions_7:
 	end
 
 RustboroCity_DevonCorp_2F_EventScript_NFusions_9:
+@explanations Show researcher on 2F a Necrozma
 # 525 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Text_PleaseTakeTheseNFusions, MSGBOX_DEFAULT
 # 526 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"

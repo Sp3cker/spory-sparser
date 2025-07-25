@@ -518,6 +518,7 @@ NewMauville_Inside_EventScript_DefeatedVoltorb2::
 
 # 260 "data/maps/NewMauville_Inside/scripts.pory"
 NewMauville_Inside_EventScript_Voltorb3::
+@explanation Speak to the Pokéball
 # 261 "data/maps/NewMauville_Inside/scripts.pory"
 	lock
 # 262 "data/maps/NewMauville_Inside/scripts.pory"
