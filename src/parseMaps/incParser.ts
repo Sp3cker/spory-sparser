@@ -32,7 +32,9 @@ export class IncScriptEvent {
 
     for (const line of lines) {
       const trimmed = line.trim();
-
+      if (line.includes("PANSAGE")) {
+        debugger;
+      }
       // Parse @explainer comments
       this.parseExplanation(trimmed);
 
@@ -80,10 +82,14 @@ export class IncScriptEvent {
     // Match: givemon SPECIES_NAME, level
     // Match: givemonrandom SPECIES_NAME, level
     const giveMonMatch = line.match(
-      /^[\s]*(givemon(?:random)?)\s+(\w+)\s*,\s*(\d+)/
+      /^\s*(givemon(?:random)?)\s+(\w+)\s*,\s*(\d+)/
     );
 
     if (giveMonMatch) {
+      if (this.scriptName.includes("SeashoreHouse")) {
+        debugger;
+      }
+
       const command = giveMonMatch[1];
       const species = giveMonMatch[2];
       const level = parseInt(giveMonMatch[3], 10);
@@ -92,6 +98,11 @@ export class IncScriptEvent {
         (p) =>
           p.species === species && p.level === level && p.isRandom === isRandom
       );
+      if (species.includes("VAR_") || species.includes("VAR_RESULT")) {
+        console.warn(
+          `[incParser] variable species: ${species} in script ${this.scriptName}`
+        );
+      }
       if (!alreadyExists) {
         this.pokemon.push({
           species: species,
@@ -235,7 +246,7 @@ function extractIncScriptBlocks(
     const line = lines[i].trim();
 
     // Check if this line defines a script label (ends with ::)
-    if (line.endsWith("::")) {
+    if (line.endsWith(":")) {
       // Save previous section if it exists and has content
       if (currentScriptName && currentContent.length > 0) {
         sections.push({
@@ -317,6 +328,32 @@ export function parseScriptedEvents(content: string) {
   //     console.error(`Error processing script name ${script.scriptName}:`, err);
   //   }
   // }
+
+    // We have to map over the ScriptedEvents
+    // and assign an explanation to
+    // all the scripts in Birch's Lab
+    // because Birch's Lab has so many
+    // dynmultipushes in DIFFERENT SCRIPTS
+
+    for (const giveevent of neededScripts) {
+      if (giveevent.scriptName.includes("NewBirchsLab_EventScript_Birch_")) {
+        if (!giveevent.explanation) {
+          giveevent.explanation = "Choose a starter";
+        }
+      }
+      if (giveevent.scriptName.includes("SeashoreHouse")) {
+        giveevent.explanation = "Defeat trainers in Seashore House";
+      }
+      if (
+        giveevent.scriptName.includes("Route123_BerryMastersHouse_EventScript_")
+      ) {
+        giveevent.explanation = "Talk to the Berry Master";
+      }
+      if (giveevent.explanation) {
+        continue;
+      }
+    }
+  
   const groupedByExplanation = new Map<string, IncScriptEvent>();
   const scriptsWithoutExplanation: IncScriptEvent[] = [];
   /** Group scripts by explanation to merge give events with the same explainer tag */
@@ -331,8 +368,7 @@ export function parseScriptedEvents(content: string) {
             (item) => item.name === newItem.name
           );
           if (existingItemIndex !== -1) {
-            existingScript.items[existingItemIndex].quantity +=
-              newItem.quantity;
+            existingScript.items[existingItemIndex].quantity += newItem.quantity;
           } else {
             existingScript.items.push(newItem);
           }

@@ -18,7 +18,7 @@ export const processIncFile = async (incFileContent: string) => {
   try {
     const scriptedGiveEvents = parseScriptedEvents(incFileContent);
     const trainerBattles = parseTrainerBattles(incFileContent);
-    
+
     // Post-process the Pikachu man
     const pikachuSection = scriptedGiveEvents.find(
       (section) =>
@@ -97,27 +97,7 @@ async function processMapsDirectory(mapPath: string, folders: Dirent[]) {
         path.join(parentFolderPath, "map.json")
       );
       const result = await processIncFile(content);
-      if (result.scriptedGives.length > 0) {
-        // We have to map over the ScriptedEvents
-        // and assign an explanation to
-        // all the scripts in Birch's Lab
-        // because Birch's Lab has so many
-        // dynmultipushes in DIFFERENT SCRIPTS
 
-        for (const giveevent of result.scriptedGives) {
-          if (thisLevelsId === "MAP_NEW_BIRCHS_LAB") {
-            if (!giveevent.explanation) {
-              giveevent.explanation = "Choose a starter";
-            }
-          }
-          if (giveevent.scriptName.includes("SeashoreHouse")) {
-            giveevent.explanation = "Defeat trainers in Seashore House";
-          }
-          if (giveevent.explanation) {
-            continue;
-          }
-        }
-      }
       // const wildMons = parseWildMon(content);
       const baseMap = await getBasemapID(parentFolderPath);
       const levelLabel = getLevelLabel(path.basename(path.dirname(fullPath)));
@@ -145,8 +125,8 @@ export async function findGiveItemsByLevel(
   mapsPath: string,
   miscScriptsPath?: string
 ): Promise<LevelIncData[]> {
-  const folders = readdirSync(mapsPath, { withFileTypes: true }).filter(
-    (entry) => entry.isDirectory()
+  const folders = readdirSync(mapsPath, { withFileTypes: true }).filter((entry) =>
+    entry.isDirectory()
   );
   const mapLevels = await processMapsDirectory(mapsPath, folders);
 

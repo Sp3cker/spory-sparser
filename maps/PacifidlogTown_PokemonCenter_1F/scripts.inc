@@ -96,7 +96,6 @@ PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola:
 	.string "me?$"
 
 PacifidlogTown_PokemonCenter_1F_EventScript_EggMan::
-@explanation Speak to egg man in Pokémon Center
 # 52 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
 	lock
 # 53 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
@@ -107,6 +106,7 @@ PacifidlogTown_PokemonCenter_1F_EventScript_EggMan::
 	compare VAR_RESULT, NO
 	goto_if_eq PacifidlogTown_PokemonCenter_1F_EventScript_EggMan_2
 PacifidlogTown_PokemonCenter_1F_EventScript_EggMan_1:
+@explanation Speak to egg man in Pokémon Center
 # 61 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
 	checkitem ITEM_YELLOW_SHARD
 # 62 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"

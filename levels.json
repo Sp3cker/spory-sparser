@@ -788,13 +788,25 @@
           "items": [
             {
               "name": "ITEM_TM_LOW_SWEEP",
-              "quantity": 2
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Whoop Brawly's ass",
+          "scriptName": "DewfordTown_Gym_EventScript_GiveLowSweep::"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_TM_LOW_SWEEP",
+              "quantity": 1
             }
           ],
           "pokemon": [],
           "wildMon": [],
           "explanation": "Whoop Brawly's lil' ass",
-          "scriptName": "DewfordTown_Gym_EventScript_GiveLowSweep::"
+          "scriptName": "DewfordTown_Gym_EventScript_GiveLowSweep2:"
         }
       ],
       "image": "DewfordTown_Gym",
@@ -1021,6 +1033,29 @@
           "rematch": false
         }
       ]
+    },
+    {
+      "thisLevelsId": "MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F",
+      "baseMap": "MAP_EVER_GRANDE_CITY",
+      "levelLabel": "Pokemoncenter 1F",
+      "shopItems": [],
+      "pickupItems": [],
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_ZYGARDE_CUBE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "EverGrandeCity_PokemonCenter_1F_EventScript_ExpertM_6:"
+        }
+      ],
+      "image": "EverGrandeCity_PokemonCenter_1F",
+      "trainerRefs": []
     },
     {
       "thisLevelsId": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
@@ -1286,7 +1321,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Trade for Red Shard",
           "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_GiveFireEgg::"
         },
         {
@@ -2092,7 +2127,7 @@
           ],
           "wildMon": [],
           "explanation": "Give lady a Yellow Shard",
-          "scriptName": "LavaridgeTown_EventScript_EggWoman::"
+          "scriptName": "LavaridgeTown_EventScript_EggWoman_1:"
         }
       ],
       "image": "LavaridgeTown",
@@ -2565,6 +2600,18 @@
           "wildMon": [],
           "explanation": "Talk to Fat Man in his house",
           "scriptName": "LilycoveCity_House2_EventScript_FatMan::"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_DRAGON_MEMORY",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Talk to Fat Man for the first time.",
+          "scriptName": "LilycoveCity_House2_EventScript_FatMan_2:"
         }
       ],
       "image": "LilycoveCity_House2",
@@ -4534,6 +4581,18 @@
           "wildMon": [],
           "explanation": "Speak to man in House 1",
           "scriptName": "PacifidlogTown_House1_EventScript_Man::"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_DOUSE_DRIVE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "PacifidlogTown_House1_EventScript_Man_2:"
         }
       ],
       "image": "PacifidlogTown_House1",
@@ -4557,7 +4616,7 @@
           ],
           "wildMon": [],
           "explanation": "Speak to egg man in Pokémon Center",
-          "scriptName": "PacifidlogTown_PokemonCenter_1F_EventScript_EggMan::"
+          "scriptName": "PacifidlogTown_PokemonCenter_1F_EventScript_EggMan_1:"
         }
       ],
       "image": "PacifidlogTown_PokemonCenter_1F",
@@ -5907,6 +5966,86 @@
           "pokemon": [
             {
               "species": "SPECIES_TYROGUE",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_PANSAGE",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_PANPOUR",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_PANSEAR",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_MISDREAVUS",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_PINSIR",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_HERACROSS",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_SCYTHER",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_EEVEE",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_MAGBY",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_ELEKID",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_SMOOCHUM",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_RIOLU",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_TOGEPI",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_TYPE_NULL",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_CHARCADET",
+              "level": 25,
+              "isRandom": true
+            },
+            {
+              "species": "SPECIES_AERODACTYL",
               "level": 25,
               "isRandom": true
             }
@@ -9002,51 +9141,19 @@
             {
               "name": "ITEM_SPELON_BERRY",
               "quantity": 1
-            }
-          ],
-          "pokemon": [],
-          "wildMon": [],
-          "explanation": "Part of Berry Master Quest",
-          "scriptName": "Route123_BerryMastersHouse_EventScript_GiveSpelonBerry::"
-        },
-        {
-          "items": [
+            },
             {
               "name": "ITEM_PAMTRE_BERRY",
               "quantity": 1
-            }
-          ],
-          "pokemon": [],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "Route123_BerryMastersHouse_EventScript_GivePamtreBerry::"
-        },
-        {
-          "items": [
+            },
             {
               "name": "ITEM_WATMEL_BERRY",
               "quantity": 1
-            }
-          ],
-          "pokemon": [],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "Route123_BerryMastersHouse_EventScript_GiveWatmelBerry::"
-        },
-        {
-          "items": [
+            },
             {
               "name": "ITEM_DURIN_BERRY",
               "quantity": 1
-            }
-          ],
-          "pokemon": [],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "Route123_BerryMastersHouse_EventScript_GiveDurinBerry::"
-        },
-        {
-          "items": [
+            },
             {
               "name": "ITEM_BELUE_BERRY",
               "quantity": 1
@@ -9054,8 +9161,8 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
-          "scriptName": "Route123_BerryMastersHouse_EventScript_GiveBelueBerry::"
+          "explanation": "Talk to the Berry Master",
+          "scriptName": "Route123_BerryMastersHouse_EventScript_GiveSpelonBerry::"
         }
       ],
       "image": "Route123_BerryMastersHouse",
@@ -9191,7 +9298,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "House on island. Speak to lady inside house",
+          "explanation": "Speak to lady inside island house",
           "scriptName": "Route124_DivingTreasureHuntersHouse_EventScript_FormChangingLady::"
         }
       ],
@@ -9997,6 +10104,46 @@
           "wildMon": [],
           "explanation": "Give researcher Claw Fossil",
           "scriptName": "RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorith::"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_DNA_SPLICERS",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "RustboroCity_DevonCorp_2F_EventScript_DNASplicers_9:"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_REINS_OF_UNITY",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "RustboroCity_DevonCorp_2F_EventScript_ReinsOfUnity_9:"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_N_SOLARIZER",
+              "quantity": 1
+            },
+            {
+              "name": "ITEM_N_LUNARIZER",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "RustboroCity_DevonCorp_2F_EventScript_NFusions_9:"
         }
       ],
       "image": "RustboroCity_DevonCorp_2F",
@@ -10949,13 +11096,13 @@
           "pokemon": [],
           "wildMon": [
             {
-              "script": "ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon::",
+              "script": "ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon_1:",
               "species": "VAR_0x8005",
               "level": 50
             }
           ],
           "explanation": "",
-          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon::"
+          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon_1:"
         }
       ],
       "image": "ShoalCave_LowTideLowerRoom",
@@ -11667,9 +11814,76 @@
           "wildMon": [],
           "explanation": "Trade Arceus Plates with Expert F",
           "scriptName": "SootopolisCity_House2_EventScript_ExpertF::"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_DRACO_PLATE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "SootopolisCity_House2_EventScript_ExpertF_2:"
         }
       ],
       "image": "SootopolisCity_House2",
+      "trainerRefs": []
+    },
+    {
+      "thisLevelsId": "MAP_SOOTOPOLIS_CITY_HOUSE4",
+      "baseMap": "MAP_SOOTOPOLIS_CITY",
+      "levelLabel": "House 4",
+      "shopItems": [],
+      "pickupItems": [],
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_ADAMANT_ORB",
+              "quantity": 1
+            },
+            {
+              "name": "ITEM_ADAMANT_CRYSTAL",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "SootopolisCity_House4_EventScript_RelicsMan_10:"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_LUSTROUS_ORB",
+              "quantity": 1
+            },
+            {
+              "name": "ITEM_LUSTROUS_GLOBE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "SootopolisCity_House4_EventScript_RelicsMan_11:"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_GRISEOUS_ORB",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "SootopolisCity_House4_EventScript_RelicsMan_12:"
+        }
+      ],
+      "image": "SootopolisCity_House4",
       "trainerRefs": []
     },
     {
@@ -12462,13 +12676,13 @@
           "pokemon": [],
           "wildMon": [
             {
-              "script": "VictoryRoad_1F_EventScript_ConfirmAndUseSummon::",
+              "script": "VictoryRoad_1F_EventScript_ConfirmAndUseSummon_1:",
               "species": "VAR_0x8005",
               "level": 50
             }
           ],
           "explanation": "",
-          "scriptName": "VictoryRoad_1F_EventScript_ConfirmAndUseSummon::"
+          "scriptName": "VictoryRoad_1F_EventScript_ConfirmAndUseSummon_1:"
         }
       ],
       "image": "VictoryRoad_1F",

@@ -22,6 +22,11 @@ export const notneededLabels = [
   "Route110_TrickHouseEnd_EventScript_CompletedPuzzle5::",
   "Route110_TrickHouseEnd_EventScript_CompletedPuzzle7::",
   "OldaleTown_House2_EventScript_Man::",
+  "CableClub_EventScript_DistributeEonTicket::",
+  "MysteryGiftScript_MysticTicket::",
+  "MysteryGiftScript_OldSeaMap::",
+  "MysteryGiftScript_BattleCard::",
+  "MysteryGiftScript_AuroraTicket::"
 ];
 // const blacklist = ["VAR_0x8005", "VAR_RESULT"];
 // const removeSimilarLocations = (duplicates: Duplicate[]) => {

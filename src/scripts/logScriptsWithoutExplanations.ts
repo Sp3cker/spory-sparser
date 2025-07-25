@@ -130,7 +130,7 @@ function processIncFileForMissingExplanations(filePath: string): ScriptEventWith
     // Filter for scripts that have items but no explanation and are not in the notneededLabels array
     return scriptedEvents.filter(event => 
       !event.explanation &&
-      event.items.length > 0 &&
+      event.wildMon.length > 0 &&
       !notneededLabels.includes(event.scriptName)
     );
   } catch (error) {
