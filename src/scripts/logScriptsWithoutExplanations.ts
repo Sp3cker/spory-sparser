@@ -13,7 +13,7 @@ interface ScriptBlockWithLineNumber {
 interface ScriptEventWithLocation {
   scriptName: string;
   items: { name: string; quantity: number; }[];
-  pokemon: { species: string; level: number; isRandom: boolean; }[];
+  pokemon: { species: string; level: number; isRandom?: boolean; }[];
   wildMon: { species: string; level: number; script: string; }[];
   explanation: string;
   filePath: string;

@@ -5,7 +5,7 @@ import {
   IncPokemonEntry,
   IncWildMon,
 } from "../validators/levelIncData.ts";
-
+import { eggSpeciesMap } from "./eggMons.ts";
 // export interface IncPokemonEntry {
 //   species: string;
 //   level: number;
@@ -32,9 +32,7 @@ export class IncScriptEvent {
 
     for (const line of lines) {
       const trimmed = line.trim();
-      if (line.includes("PANSAGE")) {
-        debugger;
-      }
+
       // Parse @explainer comments
       this.parseExplanation(trimmed);
 
@@ -86,24 +84,23 @@ export class IncScriptEvent {
     );
 
     if (giveMonMatch) {
-      if (this.scriptName.includes("SeashoreHouse")) {
-        debugger;
-      }
-
       const command = giveMonMatch[1];
       const species = giveMonMatch[2];
       const level = parseInt(giveMonMatch[3], 10);
       const isRandom = command === "givemonrandom";
+
+      // Sometimes we'll pickup redundant logic
+      // where a mon *looks* like its given twice, but its because
+      // of bag size logic and stuff
       const alreadyExists = this.pokemon.some(
         (p) =>
           p.species === species && p.level === level && p.isRandom === isRandom
       );
-
       if (!alreadyExists) {
         this.pokemon.push({
           species: species,
           level: level,
-          isRandom: isRandom,
+          isRandom: isRandom ? true : undefined,
         });
       }
     }
@@ -142,9 +139,25 @@ export class IncScriptEvent {
 
   private parseGiveEggLine(line: string): void {
     // Match: giveegg SPECIES_NAME
-    const giveEggMatch = line.match(/^\s*giveegg\s+(\w+)/);
-    if (giveEggMatch) {
-      const species = giveEggMatch[1];
+    const eggMatch = line.match(/^\s*giveegg\s+(\w+)/);
+    if (eggMatch) {
+      const species = eggMatch[1];
+
+      if (species === "SPECIES_KLAWF") {
+        debugger;
+      }
+      // Eggs actually are random, so we need to add all the possible eggs
+      if (eggSpeciesMap[species as keyof typeof eggSpeciesMap]) {
+        eggSpeciesMap[species as keyof typeof eggSpeciesMap].forEach(
+          (eggSpecies) => {
+            this.pokemon.push({
+              species: eggSpecies,
+              level: 0,
+            });
+          }
+        );
+        return;
+      }
       const alreadyExists = this.pokemon.some(
         (p) => p.species === species && p.level === 0 && p.isRandom === false
       );

@@ -4,7 +4,6 @@
       "thisLevelsId": "MAP_ABANDONED_SHIP_CAPTAINS_OFFICE",
       "baseMap": "MAP_ABANDONED_SHIP",
       "levelLabel": "Captainsoffice",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -15,17 +14,12 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "AbandonedShip_CaptainsOffice",
-      "trainerRefs": []
+      "image": "AbandonedShip_CaptainsOffice"
     },
     {
       "thisLevelsId": "MAP_ABANDONED_SHIP_CORRIDORS_1F",
       "baseMap": "MAP_ABANDONED_SHIP",
       "levelLabel": "Corridors 1F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "AbandonedShip_Corridors_1F",
       "trainerRefs": [
         {
@@ -39,9 +33,6 @@
       "thisLevelsId": "MAP_ABANDONED_SHIP_CORRIDORS_B1F",
       "baseMap": "MAP_ABANDONED_SHIP",
       "levelLabel": "Corridors B 1F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "AbandonedShip_Corridors_B1F",
       "trainerRefs": [
         {
@@ -55,17 +46,12 @@
       "thisLevelsId": "MAP_ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS",
       "baseMap": "MAP_ABANDONED_SHIP",
       "levelLabel": "Hiddenfloorcorridors",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "AbandonedShip_HiddenFloorCorridors",
-      "trainerRefs": []
+      "image": "AbandonedShip_HiddenFloorCorridors"
     },
     {
       "thisLevelsId": "MAP_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS",
       "baseMap": "MAP_ABANDONED_SHIP",
       "levelLabel": "Hiddenfloorrooms",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -155,14 +141,12 @@
           "scriptName": "AbandonedShip_HiddenFloorRooms_EventScript_TapuFini::"
         }
       ],
-      "image": "AbandonedShip_HiddenFloorRooms",
-      "trainerRefs": []
+      "image": "AbandonedShip_HiddenFloorRooms"
     },
     {
       "thisLevelsId": "MAP_ABANDONED_SHIP_ROOM_B1F",
       "baseMap": "MAP_ABANDONED_SHIP",
       "levelLabel": "Room B 1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -173,15 +157,12 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "AbandonedShip_Room_B1F",
-      "trainerRefs": []
+      "image": "AbandonedShip_Room_B1F"
     },
     {
       "thisLevelsId": "MAP_ABANDONED_SHIP_ROOMS2_1F",
       "baseMap": "MAP_ABANDONED_SHIP",
       "levelLabel": "Rooms 2 1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -192,7 +173,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "AbandonedShip_Rooms2_1F",
       "trainerRefs": [
         {
@@ -221,7 +201,6 @@
       "thisLevelsId": "MAP_ABANDONED_SHIP_ROOMS2_B1F",
       "baseMap": "MAP_ABANDONED_SHIP",
       "levelLabel": "Rooms 2 B 1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -232,15 +211,12 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "AbandonedShip_Rooms2_B1F",
-      "trainerRefs": []
+      "image": "AbandonedShip_Rooms2_B1F"
     },
     {
       "thisLevelsId": "MAP_ABANDONED_SHIP_ROOMS_1F",
       "baseMap": "MAP_ABANDONED_SHIP",
       "levelLabel": "Rooms 1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -251,7 +227,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "AbandonedShip_Rooms_1F",
       "trainerRefs": [
         {
@@ -275,7 +250,6 @@
       "thisLevelsId": "MAP_ABANDONED_SHIP_ROOMS_B1F",
       "baseMap": "MAP_ABANDONED_SHIP",
       "levelLabel": "Rooms B 1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -286,9 +260,7 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "AbandonedShip_Rooms_B1F",
-      "trainerRefs": []
+      "image": "AbandonedShip_Rooms_B1F"
     }
   ],
   "MAP_ALTERING_CAVE": [
@@ -296,11 +268,7 @@
       "thisLevelsId": "MAP_ALTERING_CAVE",
       "baseMap": "MAP_ALTERING_CAVE",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "AlteringCave",
-      "trainerRefs": []
+      "image": "AlteringCave"
     }
   ],
   "MAP_ANCIENT_TOMB": [
@@ -308,7 +276,6 @@
       "thisLevelsId": "MAP_ANCIENT_TOMB",
       "baseMap": "MAP_ANCIENT_TOMB",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -334,8 +301,7 @@
           "scriptName": "AncientTomb_EventScript_Registeel::"
         }
       ],
-      "image": "AncientTomb",
-      "trainerRefs": []
+      "image": "AncientTomb"
     }
   ],
   "MAP_AQUA_HIDEOUT": [
@@ -343,9 +309,6 @@
       "thisLevelsId": "MAP_AQUA_HIDEOUT_1F",
       "baseMap": "MAP_AQUA_HIDEOUT",
       "levelLabel": "1F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "AquaHideout_1F",
       "trainerRefs": [
         {
@@ -359,7 +322,6 @@
       "thisLevelsId": "MAP_AQUA_HIDEOUT_B1F",
       "baseMap": "MAP_AQUA_HIDEOUT",
       "levelLabel": "B 1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -434,7 +396,6 @@
       "thisLevelsId": "MAP_AQUA_HIDEOUT_B2F",
       "baseMap": "MAP_AQUA_HIDEOUT",
       "levelLabel": "B 2F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -445,7 +406,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "AquaHideout_B2F",
       "trainerRefs": [
         {
@@ -476,7 +436,6 @@
       "thisLevelsId": "MAP_ARTISAN_CAVE_1F",
       "baseMap": "MAP_ARTISAN_CAVE",
       "levelLabel": "1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -487,15 +446,12 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "ArtisanCave_1F",
-      "trainerRefs": []
+      "image": "ArtisanCave_1F"
     },
     {
       "thisLevelsId": "MAP_ARTISAN_CAVE_B1F",
       "baseMap": "MAP_ARTISAN_CAVE",
       "levelLabel": "B 1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -538,9 +494,7 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
-      "image": "ArtisanCave_B1F",
-      "trainerRefs": []
+      "image": "ArtisanCave_B1F"
     }
   ],
   "MAP_BATTLE_FRONTIER": [
@@ -561,17 +515,12 @@
           "scriptname": "BattleFrontier_Mart_Pokemart:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "BattleFrontier_Mart",
-      "trainerRefs": []
+      "image": "BattleFrontier_Mart"
     },
     {
       "thisLevelsId": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
       "baseMap": "MAP_BATTLE_FRONTIER",
       "levelLabel": "Outsideeast",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -583,19 +532,16 @@
               "level": 40
             }
           ],
-          "explanation": "Battle Frontier, water berry tree, postgame",
+          "explanation": "Battle Frontier, water the suspicious berry tree",
           "scriptName": "BattleFrontier_OutsideEast_EventScript_WaterSudowoodo::"
         }
       ],
-      "image": "BattleFrontier_OutsideEast",
-      "trainerRefs": []
+      "image": "BattleFrontier_OutsideEast"
     },
     {
       "thisLevelsId": "MAP_BATTLE_FRONTIER_SCOTTS_HOUSE",
       "baseMap": "MAP_BATTLE_FRONTIER",
       "levelLabel": "Scottshouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -622,8 +568,7 @@
           "scriptName": "BattleFrontier_ScottsHouse_EventScript_CheckGoldSymbols::"
         }
       ],
-      "image": "BattleFrontier_ScottsHouse",
-      "trainerRefs": []
+      "image": "BattleFrontier_ScottsHouse"
     }
   ],
   "MAP_CAVE_OF_ORIGIN": [
@@ -631,51 +576,31 @@
       "thisLevelsId": "MAP_CAVE_OF_ORIGIN_1F",
       "baseMap": "MAP_CAVE_OF_ORIGIN",
       "levelLabel": "1F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "CaveOfOrigin_1F",
-      "trainerRefs": []
+      "image": "CaveOfOrigin_1F"
     },
     {
       "thisLevelsId": "MAP_CAVE_OF_ORIGIN_ENTRANCE",
       "baseMap": "MAP_CAVE_OF_ORIGIN",
       "levelLabel": "Entrance",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "CaveOfOrigin_Entrance",
-      "trainerRefs": []
+      "image": "CaveOfOrigin_Entrance"
     },
     {
       "thisLevelsId": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1",
       "baseMap": "MAP_CAVE_OF_ORIGIN",
       "levelLabel": "Unusedrubysapphiremap 1",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "CaveOfOrigin_UnusedRubySapphireMap1",
-      "trainerRefs": []
+      "image": "CaveOfOrigin_UnusedRubySapphireMap1"
     },
     {
       "thisLevelsId": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2",
       "baseMap": "MAP_CAVE_OF_ORIGIN",
       "levelLabel": "Unusedrubysapphiremap 2",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "CaveOfOrigin_UnusedRubySapphireMap2",
-      "trainerRefs": []
+      "image": "CaveOfOrigin_UnusedRubySapphireMap2"
     },
     {
       "thisLevelsId": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3",
       "baseMap": "MAP_CAVE_OF_ORIGIN",
       "levelLabel": "Unusedrubysapphiremap 3",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "CaveOfOrigin_UnusedRubySapphireMap3",
-      "trainerRefs": []
+      "image": "CaveOfOrigin_UnusedRubySapphireMap3"
     }
   ],
   "MAP_DESERT_RUINS": [
@@ -683,7 +608,6 @@
       "thisLevelsId": "MAP_DESERT_RUINS",
       "baseMap": "MAP_DESERT_RUINS",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -709,8 +633,7 @@
           "scriptName": "DesertRuins_EventScript_Regirock::"
         }
       ],
-      "image": "DesertRuins",
-      "trainerRefs": []
+      "image": "DesertRuins"
     }
   ],
   "MAP_DESERT_UNDERPASS": [
@@ -718,8 +641,6 @@
       "thisLevelsId": "MAP_DESERT_UNDERPASS",
       "baseMap": "MAP_DESERT_UNDERPASS",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -738,8 +659,7 @@
           "scriptName": "DesertUnderpass_EventScript_GiveClawFossil::"
         }
       ],
-      "image": "DesertUnderpass",
-      "trainerRefs": []
+      "image": "DesertUnderpass"
     }
   ],
   "MAP_DEWFORD_TOWN": [
@@ -764,17 +684,12 @@
           "scriptname": "DewfordTown_MiniMart2:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "DewfordTown",
-      "trainerRefs": []
+      "image": "DewfordTown"
     },
     {
       "thisLevelsId": "MAP_DEWFORD_TOWN_GYM",
       "baseMap": "MAP_DEWFORD_TOWN",
       "levelLabel": "Gym",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -846,8 +761,6 @@
       "thisLevelsId": "MAP_EVER_GRANDE_CITY",
       "baseMap": "MAP_EVER_GRANDE_CITY",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -956,9 +869,6 @@
       "thisLevelsId": "MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM",
       "baseMap": "MAP_EVER_GRANDE_CITY",
       "levelLabel": "Championsroom",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "EverGrandeCity_ChampionsRoom",
       "trainerRefs": [
         {
@@ -972,9 +882,6 @@
       "thisLevelsId": "MAP_EVER_GRANDE_CITY_DRAKES_ROOM",
       "baseMap": "MAP_EVER_GRANDE_CITY",
       "levelLabel": "Drakesroom",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "EverGrandeCity_DrakesRoom",
       "trainerRefs": [
         {
@@ -988,9 +895,6 @@
       "thisLevelsId": "MAP_EVER_GRANDE_CITY_GLACIAS_ROOM",
       "baseMap": "MAP_EVER_GRANDE_CITY",
       "levelLabel": "Glaciasroom",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "EverGrandeCity_GlaciasRoom",
       "trainerRefs": [
         {
@@ -1009,9 +913,6 @@
       "thisLevelsId": "MAP_EVER_GRANDE_CITY_PHOEBES_ROOM",
       "baseMap": "MAP_EVER_GRANDE_CITY",
       "levelLabel": "Phoebesroom",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "EverGrandeCity_PhoebesRoom",
       "trainerRefs": [
         {
@@ -1030,8 +931,6 @@
       "thisLevelsId": "MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F",
       "baseMap": "MAP_EVER_GRANDE_CITY",
       "levelLabel": "Pokemoncenter 1F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -1046,8 +945,7 @@
           "scriptName": "EverGrandeCity_PokemonCenter_1F_EventScript_ExpertM_6:"
         }
       ],
-      "image": "EverGrandeCity_PokemonCenter_1F",
-      "trainerRefs": []
+      "image": "EverGrandeCity_PokemonCenter_1F"
     },
     {
       "thisLevelsId": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
@@ -1070,18 +968,12 @@
           "scriptname": "EverGrandeCity_PokemonLeague_1F_Pokemart:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "EverGrandeCity_PokemonLeague_1F",
-      "trainerRefs": []
+      "image": "EverGrandeCity_PokemonLeague_1F"
     },
     {
       "thisLevelsId": "MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM",
       "baseMap": "MAP_EVER_GRANDE_CITY",
       "levelLabel": "Sidneysroom",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "EverGrandeCity_SidneysRoom",
       "trainerRefs": [
         {
@@ -1102,7 +994,6 @@
       "thisLevelsId": "MAP_FALLARBOR_TOWN",
       "baseMap": "MAP_FALLARBOR_TOWN",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -1113,9 +1004,7 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
-      "image": "FallarborTown",
-      "trainerRefs": []
+      "image": "FallarborTown"
     },
     {
       "thisLevelsId": "MAP_FALLARBOR_TOWN_MART",
@@ -1143,17 +1032,12 @@
           "scriptname": "FallarborTown_Mart_Pokemart:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "FallarborTown_Mart",
-      "trainerRefs": []
+      "image": "FallarborTown_Mart"
     },
     {
       "thisLevelsId": "MAP_FALLARBOR_TOWN_MOVE_RELEARNERS_HOUSE",
       "baseMap": "MAP_FALLARBOR_TOWN",
       "levelLabel": "Moverelearnershouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -1308,8 +1192,39 @@
           "pokemon": [
             {
               "species": "SPECIES_CHARMANDER",
-              "level": 0,
-              "isRandom": false
+              "level": 0
+            },
+            {
+              "species": "SPECIES_CYNDAQUIL",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_TORCHIC",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_CHIMCHAR",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_TEPIG",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_FENNEKIN",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_LITTEN",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_SCORBUNNY",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_FUECOCO",
+              "level": 0
             }
           ],
           "wildMon": [],
@@ -1321,8 +1236,39 @@
           "pokemon": [
             {
               "species": "SPECIES_SQUIRTLE",
-              "level": 0,
-              "isRandom": false
+              "level": 0
+            },
+            {
+              "species": "SPECIES_TOTODILE",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_MUDKIP",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_PIPLUP",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_OSHAWOTT",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_FROAKIE",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_POPPLIO",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_SOBBLE",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_QUAXLY",
+              "level": 0
             }
           ],
           "wildMon": [],
@@ -1334,8 +1280,39 @@
           "pokemon": [
             {
               "species": "SPECIES_BULBASAUR",
-              "level": 0,
-              "isRandom": false
+              "level": 0
+            },
+            {
+              "species": "SPECIES_CHIKORITA",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_TREECKO",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_TURTWIG",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_SNIVY",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_CHESPIN",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_ROWLET",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_GROOKEY",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_SPRIGATITO",
+              "level": 0
             }
           ],
           "wildMon": [],
@@ -1343,8 +1320,7 @@
           "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_GiveGrassEgg::"
         }
       ],
-      "image": "FallarborTown_MoveRelearnersHouse",
-      "trainerRefs": []
+      "image": "FallarborTown_MoveRelearnersHouse"
     }
   ],
   "MAP_FIERY_PATH": [
@@ -1352,7 +1328,6 @@
       "thisLevelsId": "MAP_FIERY_PATH",
       "baseMap": "MAP_FIERY_PATH",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -1371,16 +1346,12 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "FieryPath",
-      "trainerRefs": []
+      "image": "FieryPath"
     },
     {
       "thisLevelsId": "MAP_FIERY_PATH_BACK_ROOM",
       "baseMap": "MAP_FIERY_PATH",
       "levelLabel": "Backroom",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -1396,8 +1367,7 @@
           "scriptName": "FieryPath_BackRoom_EventScript_Heatran::"
         }
       ],
-      "image": "FieryPath_BackRoom",
-      "trainerRefs": []
+      "image": "FieryPath_BackRoom"
     }
   ],
   "MAP_FLOATING_SLAB": [
@@ -1405,8 +1375,6 @@
       "thisLevelsId": "MAP_FLOATING_SLAB",
       "baseMap": "MAP_FLOATING_SLAB",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -1422,8 +1390,7 @@
           "scriptName": "FloatingSlab_EventScript_Mesprit::"
         }
       ],
-      "image": "FloatingSlab",
-      "trainerRefs": []
+      "image": "FloatingSlab"
     }
   ],
   "MAP_FORTREE_CITY": [
@@ -1431,8 +1398,6 @@
       "thisLevelsId": "MAP_FORTREE_CITY_CREATOR_HOUSE",
       "baseMap": "MAP_FORTREE_CITY",
       "levelLabel": "Creatorhouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -1542,8 +1507,6 @@
       "thisLevelsId": "MAP_FORTREE_CITY_GYM",
       "baseMap": "MAP_FORTREE_CITY",
       "levelLabel": "Gym",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -1617,8 +1580,6 @@
       "thisLevelsId": "MAP_FORTREE_CITY_HOUSE2",
       "baseMap": "MAP_FORTREE_CITY",
       "levelLabel": "House 2",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -1633,15 +1594,12 @@
           "scriptName": "FortreeCity_House2_EventScript_StoredPowerGiver::"
         }
       ],
-      "image": "FortreeCity_House2",
-      "trainerRefs": []
+      "image": "FortreeCity_House2"
     },
     {
       "thisLevelsId": "MAP_FORTREE_CITY_HOUSE4",
       "baseMap": "MAP_FORTREE_CITY",
       "levelLabel": "House 4",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -1656,8 +1614,7 @@
           "scriptName": "FortreeCity_House4_EventScript_WingullReturned::"
         }
       ],
-      "image": "FortreeCity_House4",
-      "trainerRefs": []
+      "image": "FortreeCity_House4"
     },
     {
       "thisLevelsId": "MAP_FORTREE_CITY_MART",
@@ -1684,10 +1641,7 @@
           "scriptname": "FortreeCity_Mart_Pokemart:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "FortreeCity_Mart",
-      "trainerRefs": []
+      "image": "FortreeCity_Mart"
     }
   ],
   "MAP_GRANITE_CAVE": [
@@ -1695,7 +1649,6 @@
       "thisLevelsId": "MAP_GRANITE_CAVE_1F",
       "baseMap": "MAP_GRANITE_CAVE",
       "levelLabel": "1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -1720,14 +1673,12 @@
           "scriptName": "GraniteCave_1F_EventScript_Hiker::"
         }
       ],
-      "image": "GraniteCave_1F",
-      "trainerRefs": []
+      "image": "GraniteCave_1F"
     },
     {
       "thisLevelsId": "MAP_GRANITE_CAVE_B1F",
       "baseMap": "MAP_GRANITE_CAVE",
       "levelLabel": "B 1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -1738,15 +1689,12 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "GraniteCave_B1F",
-      "trainerRefs": []
+      "image": "GraniteCave_B1F"
     },
     {
       "thisLevelsId": "MAP_GRANITE_CAVE_B2F",
       "baseMap": "MAP_GRANITE_CAVE",
       "levelLabel": "B 2F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -1796,15 +1744,12 @@
           "scriptName": "GraniteCave_B2F_EventScript_MoltresGalar::"
         }
       ],
-      "image": "GraniteCave_B2F",
-      "trainerRefs": []
+      "image": "GraniteCave_B2F"
     },
     {
       "thisLevelsId": "MAP_GRANITE_CAVE_STEVENS_ROOM",
       "baseMap": "MAP_GRANITE_CAVE",
       "levelLabel": "Stevensroom",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -1871,8 +1816,7 @@
           "scriptName": "GraniteCave_StevensRoom_EventScript_Steven::"
         }
       ],
-      "image": "GraniteCave_StevensRoom",
-      "trainerRefs": []
+      "image": "GraniteCave_StevensRoom"
     }
   ],
   "MAP_GRASSY_SLAB": [
@@ -1880,8 +1824,6 @@
       "thisLevelsId": "MAP_GRASSY_SLAB",
       "baseMap": "MAP_GRASSY_SLAB",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -1897,8 +1839,7 @@
           "scriptName": "GrassySlab_EventScript_Regidrago::"
         }
       ],
-      "image": "GrassySlab",
-      "trainerRefs": []
+      "image": "GrassySlab"
     }
   ],
   "MAP_ISLAND_CAVE": [
@@ -1906,7 +1847,6 @@
       "thisLevelsId": "MAP_ISLAND_CAVE",
       "baseMap": "MAP_ISLAND_CAVE",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -1932,8 +1872,7 @@
           "scriptName": "IslandCave_EventScript_Regice::"
         }
       ],
-      "image": "IslandCave",
-      "trainerRefs": []
+      "image": "IslandCave"
     }
   ],
   "MAP_JAGGED_PASS": [
@@ -1941,7 +1880,6 @@
       "thisLevelsId": "MAP_JAGGED_PASS",
       "baseMap": "MAP_JAGGED_PASS",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -2112,9 +2050,40 @@
           "items": [],
           "pokemon": [
             {
+              "species": "SPECIES_TAUROS",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_DELIBIRD",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_TROPIUS",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_SPIRITOMB",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_HEATMOR",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_DEDENNE",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_BRUXISH",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_FALINKS",
+              "level": 0
+            },
+            {
               "species": "SPECIES_KLAWF",
-              "level": 0,
-              "isRandom": false
+              "level": 0
             }
           ],
           "wildMon": [],
@@ -2122,15 +2091,12 @@
           "scriptName": "LavaridgeTown_EventScript_EggWoman_1:"
         }
       ],
-      "image": "LavaridgeTown",
-      "trainerRefs": []
+      "image": "LavaridgeTown"
     },
     {
       "thisLevelsId": "MAP_LAVARIDGE_TOWN_GYM_1F",
       "baseMap": "MAP_LAVARIDGE_TOWN",
       "levelLabel": "Gym 1F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -2196,7 +2162,6 @@
           "scriptname": "LavaridgeTown_HerbShop_Pokemart:"
         }
       ],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -2211,8 +2176,7 @@
           "scriptName": "LavaridgeTown_HerbShop_EventScript_OldMan::"
         }
       ],
-      "image": "LavaridgeTown_HerbShop",
-      "trainerRefs": []
+      "image": "LavaridgeTown_HerbShop"
     },
     {
       "thisLevelsId": "MAP_LAVARIDGE_TOWN_MART",
@@ -2239,10 +2203,7 @@
           "scriptname": "LavaridgeTown_Mart_Pokemart:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "LavaridgeTown_Mart",
-      "trainerRefs": []
+      "image": "LavaridgeTown_Mart"
     }
   ],
   "MAP_LILYCOVE_CITY": [
@@ -2250,7 +2211,6 @@
       "thisLevelsId": "MAP_LILYCOVE_CITY",
       "baseMap": "MAP_LILYCOVE_CITY",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -2395,7 +2355,6 @@
           "scriptname": "LilycoveCity_DepartmentStore_2F_Pokemart2:"
         }
       ],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -2410,8 +2369,7 @@
           "scriptName": "LilycoveCity_DepartmentStore_2F_EventScript_PokefanF_GiveSpikes::"
         }
       ],
-      "image": "LilycoveCity_DepartmentStore_2F",
-      "trainerRefs": []
+      "image": "LilycoveCity_DepartmentStore_2F"
     },
     {
       "thisLevelsId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_3F",
@@ -2448,10 +2406,7 @@
           "scriptname": "LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "LilycoveCity_DepartmentStore_3F",
-      "trainerRefs": []
+      "image": "LilycoveCity_DepartmentStore_3F"
     },
     {
       "thisLevelsId": "MAP_LILYCOVE_CITY_DEPARTMENT_STORE_4F",
@@ -2510,17 +2465,12 @@
           "scriptname": "LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "LilycoveCity_DepartmentStore_4F",
-      "trainerRefs": []
+      "image": "LilycoveCity_DepartmentStore_4F"
     },
     {
       "thisLevelsId": "MAP_LILYCOVE_CITY_HOUSE2",
       "baseMap": "MAP_LILYCOVE_CITY",
       "levelLabel": "House 2",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -2611,8 +2561,7 @@
           "scriptName": "LilycoveCity_House2_EventScript_FatMan_2:"
         }
       ],
-      "image": "LilycoveCity_House2",
-      "trainerRefs": []
+      "image": "LilycoveCity_House2"
     }
   ],
   "MAP_LITTLEROOT_TOWN": [
@@ -2620,8 +2569,6 @@
       "thisLevelsId": "MAP_LITTLEROOT_TOWN",
       "baseMap": "MAP_LITTLEROOT_TOWN",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -2636,15 +2583,12 @@
           "scriptName": "LittlerootTown_EventScript_GiveRunningShoes::"
         }
       ],
-      "image": "LittlerootTown",
-      "trainerRefs": []
+      "image": "LittlerootTown"
     },
     {
       "thisLevelsId": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
       "baseMap": "MAP_LITTLEROOT_TOWN",
       "levelLabel": "Professorbirchslab",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -2663,18 +2607,15 @@
           "pokemon": [
             {
               "species": "SPECIES_CYNDAQUIL",
-              "level": 5,
-              "isRandom": false
+              "level": 5
             },
             {
               "species": "SPECIES_TOTODILE",
-              "level": 5,
-              "isRandom": false
+              "level": 5
             },
             {
               "species": "SPECIES_CHIKORITA",
-              "level": 5,
-              "isRandom": false
+              "level": 5
             }
           ],
           "wildMon": [],
@@ -2810,8 +2751,7 @@
           "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls::"
         }
       ],
-      "image": "LittlerootTown_ProfessorBirchsLab",
-      "trainerRefs": []
+      "image": "LittlerootTown_ProfessorBirchsLab"
     }
   ],
   "MAP_MAGMA_HIDEOUT": [
@@ -2819,7 +2759,6 @@
       "thisLevelsId": "MAP_MAGMA_HIDEOUT_1F",
       "baseMap": "MAP_MAGMA_HIDEOUT",
       "levelLabel": "1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -2830,7 +2769,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "MagmaHideout_1F",
       "trainerRefs": [
         {
@@ -2849,9 +2787,6 @@
       "thisLevelsId": "MAP_MAGMA_HIDEOUT_2F_1R",
       "baseMap": "MAP_MAGMA_HIDEOUT",
       "levelLabel": "2F 1r",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "MagmaHideout_2F_1R",
       "trainerRefs": [
         {
@@ -2880,7 +2815,6 @@
       "thisLevelsId": "MAP_MAGMA_HIDEOUT_2F_2R",
       "baseMap": "MAP_MAGMA_HIDEOUT",
       "levelLabel": "2F 2r",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -2899,7 +2833,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "MagmaHideout_2F_2R",
       "trainerRefs": [
         {
@@ -2928,17 +2861,12 @@
       "thisLevelsId": "MAP_MAGMA_HIDEOUT_2F_3R",
       "baseMap": "MAP_MAGMA_HIDEOUT",
       "levelLabel": "2F 3r",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "MagmaHideout_2F_3R",
-      "trainerRefs": []
+      "image": "MagmaHideout_2F_3R"
     },
     {
       "thisLevelsId": "MAP_MAGMA_HIDEOUT_3F_1R",
       "baseMap": "MAP_MAGMA_HIDEOUT",
       "levelLabel": "3F 1r",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -2949,7 +2877,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "MagmaHideout_3F_1R",
       "trainerRefs": [
         {
@@ -2968,7 +2895,6 @@
       "thisLevelsId": "MAP_MAGMA_HIDEOUT_3F_2R",
       "baseMap": "MAP_MAGMA_HIDEOUT",
       "levelLabel": "3F 2r",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -2979,7 +2905,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "MagmaHideout_3F_2R",
       "trainerRefs": [
         {
@@ -2993,7 +2918,6 @@
       "thisLevelsId": "MAP_MAGMA_HIDEOUT_3F_3R",
       "baseMap": "MAP_MAGMA_HIDEOUT",
       "levelLabel": "3F 3r",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -3004,15 +2928,12 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "MagmaHideout_3F_3R",
-      "trainerRefs": []
+      "image": "MagmaHideout_3F_3R"
     },
     {
       "thisLevelsId": "MAP_MAGMA_HIDEOUT_4F",
       "baseMap": "MAP_MAGMA_HIDEOUT",
       "levelLabel": "4F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -3023,7 +2944,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "MagmaHideout_4F",
       "trainerRefs": [
         {
@@ -3049,8 +2969,6 @@
       "thisLevelsId": "MAP_MARINE_CAVE_END",
       "baseMap": "MAP_MARINE_CAVE",
       "levelLabel": "End",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -3066,8 +2984,7 @@
           "scriptName": "MarineCave_End_EventScript_Kyogre::"
         }
       ],
-      "image": "MarineCave_End",
-      "trainerRefs": []
+      "image": "MarineCave_End"
     }
   ],
   "MAP_MAUVILLE_CITY": [
@@ -3075,7 +2992,6 @@
       "thisLevelsId": "MAP_MAUVILLE_CITY",
       "baseMap": "MAP_MAUVILLE_CITY",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -3125,8 +3041,6 @@
       "thisLevelsId": "MAP_MAUVILLE_CITY_BIKE_SHOP",
       "baseMap": "MAP_MAUVILLE_CITY",
       "levelLabel": "Bikeshop",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -3145,8 +3059,7 @@
           "scriptName": "MauvilleCity_BikeShop_EventScript_ChooseBike::"
         }
       ],
-      "image": "MauvilleCity_BikeShop",
-      "trainerRefs": []
+      "image": "MauvilleCity_BikeShop"
     },
     {
       "thisLevelsId": "MAP_MAUVILLE_CITY_GAME_CORNER",
@@ -3185,17 +3098,12 @@
           "scriptname": "MauvilleCity_TMSales:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "MauvilleCity_GameCorner",
-      "trainerRefs": []
+      "image": "MauvilleCity_GameCorner"
     },
     {
       "thisLevelsId": "MAP_MAUVILLE_CITY_GYM",
       "baseMap": "MAP_MAUVILLE_CITY",
       "levelLabel": "Gym",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -3260,8 +3168,6 @@
       "thisLevelsId": "MAP_MAUVILLE_CITY_HOUSE1",
       "baseMap": "MAP_MAUVILLE_CITY",
       "levelLabel": "House 1",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -3276,15 +3182,12 @@
           "scriptName": "MauvilleCity_House1_EventScript_RockSmashDude::"
         }
       ],
-      "image": "MauvilleCity_House1",
-      "trainerRefs": []
+      "image": "MauvilleCity_House1"
     },
     {
       "thisLevelsId": "MAP_MAUVILLE_CITY_HOUSE2",
       "baseMap": "MAP_MAUVILLE_CITY",
       "levelLabel": "House 2",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -3299,8 +3202,7 @@
           "scriptName": "MauvilleCity_House2_EventScript_AcceptTrade::"
         }
       ],
-      "image": "MauvilleCity_House2",
-      "trainerRefs": []
+      "image": "MauvilleCity_House2"
     },
     {
       "thisLevelsId": "MAP_MAUVILLE_CITY_MART",
@@ -3329,17 +3231,12 @@
           "scriptname": "MauvilleCity_Mart_Pokemart:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "MauvilleCity_Mart",
-      "trainerRefs": []
+      "image": "MauvilleCity_Mart"
     },
     {
       "thisLevelsId": "MAP_MAUVILLE_CITY_POKEMON_CENTER_1F",
       "baseMap": "MAP_MAUVILLE_CITY",
       "levelLabel": "Pokemoncenter 1F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -3390,8 +3287,7 @@
           "scriptName": "MauvilleCity_PokemonCenter_1F_EventScript_CostumePikachuGive::"
         }
       ],
-      "image": "MauvilleCity_PokemonCenter_1F",
-      "trainerRefs": []
+      "image": "MauvilleCity_PokemonCenter_1F"
     }
   ],
   "MAP_METEOR_FALLS": [
@@ -3399,7 +3295,6 @@
       "thisLevelsId": "MAP_METEOR_FALLS_1F_1R",
       "baseMap": "MAP_METEOR_FALLS",
       "levelLabel": "1F 1r",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -3434,17 +3329,12 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "MeteorFalls_1F_1R",
-      "trainerRefs": []
+      "image": "MeteorFalls_1F_1R"
     },
     {
       "thisLevelsId": "MAP_METEOR_FALLS_1F_2R",
       "baseMap": "MAP_METEOR_FALLS",
       "levelLabel": "1F 2r",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "MeteorFalls_1F_2R",
       "trainerRefs": [
         {
@@ -3473,27 +3363,18 @@
       "thisLevelsId": "MAP_METEOR_FALLS_B1F_1R",
       "baseMap": "MAP_METEOR_FALLS",
       "levelLabel": "B 1F 1r",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "MeteorFalls_B1F_1R",
-      "trainerRefs": []
+      "image": "MeteorFalls_B1F_1R"
     },
     {
       "thisLevelsId": "MAP_METEOR_FALLS_B1F_2R",
       "baseMap": "MAP_METEOR_FALLS",
       "levelLabel": "B 1F 2r",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "MeteorFalls_B1F_2R",
-      "trainerRefs": []
+      "image": "MeteorFalls_B1F_2R"
     },
     {
       "thisLevelsId": "MAP_METEOR_FALLS_STEVENS_CAVE",
       "baseMap": "MAP_METEOR_FALLS",
       "levelLabel": "Stevenscave",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -3520,9 +3401,7 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "MeteorFalls_StevensCave",
-      "trainerRefs": []
+      "image": "MeteorFalls_StevensCave"
     }
   ],
   "MAP_MIRAGE_TOWER": [
@@ -3530,38 +3409,24 @@
       "thisLevelsId": "MAP_MIRAGE_TOWER_1F",
       "baseMap": "MAP_MIRAGE_TOWER",
       "levelLabel": "1F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "MirageTower_1F",
-      "trainerRefs": []
+      "image": "MirageTower_1F"
     },
     {
       "thisLevelsId": "MAP_MIRAGE_TOWER_2F",
       "baseMap": "MAP_MIRAGE_TOWER",
       "levelLabel": "2F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "MirageTower_2F",
-      "trainerRefs": []
+      "image": "MirageTower_2F"
     },
     {
       "thisLevelsId": "MAP_MIRAGE_TOWER_3F",
       "baseMap": "MAP_MIRAGE_TOWER",
       "levelLabel": "3F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "MirageTower_3F",
-      "trainerRefs": []
+      "image": "MirageTower_3F"
     },
     {
       "thisLevelsId": "MAP_MIRAGE_TOWER_4F",
       "baseMap": "MAP_MIRAGE_TOWER",
       "levelLabel": "4F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -3588,8 +3453,7 @@
           "scriptName": "MirageTower_4F_EventScript_ClawFossil::"
         }
       ],
-      "image": "MirageTower_4F",
-      "trainerRefs": []
+      "image": "MirageTower_4F"
     }
   ],
   "MAP_MOSSDEEP_CITY": [
@@ -3597,7 +3461,6 @@
       "thisLevelsId": "MAP_MOSSDEEP_CITY",
       "baseMap": "MAP_MOSSDEEP_CITY",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -3622,15 +3485,12 @@
           "scriptName": "MossdeepCity_EventScript_KingsRockBoy::"
         }
       ],
-      "image": "MossdeepCity",
-      "trainerRefs": []
+      "image": "MossdeepCity"
     },
     {
       "thisLevelsId": "MAP_MOSSDEEP_CITY_BETA_TESTER_HOUSE",
       "baseMap": "MAP_MOSSDEEP_CITY",
       "levelLabel": "Betatesterhouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -3695,8 +3555,6 @@
       "thisLevelsId": "MAP_MOSSDEEP_CITY_GYM",
       "baseMap": "MAP_MOSSDEEP_CITY",
       "levelLabel": "Gym",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -3788,8 +3646,6 @@
       "thisLevelsId": "MAP_MOSSDEEP_CITY_HOUSE3",
       "baseMap": "MAP_MOSSDEEP_CITY",
       "levelLabel": "House 3",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -3804,8 +3660,7 @@
           "scriptName": "MossdeepCity_House3_EventScript_SuperRodFisherman::"
         }
       ],
-      "image": "MossdeepCity_House3",
-      "trainerRefs": []
+      "image": "MossdeepCity_House3"
     },
     {
       "thisLevelsId": "MAP_MOSSDEEP_CITY_MART",
@@ -3830,17 +3685,12 @@
           "scriptname": "MossdeepCity_Mart_Pokemart:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "MossdeepCity_Mart",
-      "trainerRefs": []
+      "image": "MossdeepCity_Mart"
     },
     {
       "thisLevelsId": "MAP_MOSSDEEP_CITY_SPACE_CENTER_1F",
       "baseMap": "MAP_MOSSDEEP_CITY",
       "levelLabel": "Spacecenter 1F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -3855,15 +3705,12 @@
           "scriptName": "MossdeepCity_SpaceCenter_1F_EventScript_SunStoneMan::"
         }
       ],
-      "image": "MossdeepCity_SpaceCenter_1F",
-      "trainerRefs": []
+      "image": "MossdeepCity_SpaceCenter_1F"
     },
     {
       "thisLevelsId": "MAP_MOSSDEEP_CITY_SPACE_CENTER_2F",
       "baseMap": "MAP_MOSSDEEP_CITY",
       "levelLabel": "Spacecenter 2F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -3878,15 +3725,12 @@
           "scriptName": "MossdeepCity_SpaceCenter_2F_EventScript_Steven::"
         }
       ],
-      "image": "MossdeepCity_SpaceCenter_2F",
-      "trainerRefs": []
+      "image": "MossdeepCity_SpaceCenter_2F"
     },
     {
       "thisLevelsId": "MAP_MOSSDEEP_CITY_STEVENS_HOUSE",
       "baseMap": "MAP_MOSSDEEP_CITY",
       "levelLabel": "Stevenshouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -3914,8 +3758,7 @@
           "scriptName": "MossdeepCity_StevensHouse_EventScript_GiveMeltan::"
         }
       ],
-      "image": "MossdeepCity_StevensHouse",
-      "trainerRefs": []
+      "image": "MossdeepCity_StevensHouse"
     }
   ],
   "MAP_MT_CHIMNEY": [
@@ -3923,8 +3766,6 @@
       "thisLevelsId": "MAP_MT_CHIMNEY",
       "baseMap": "MAP_MT_CHIMNEY",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -4016,8 +3857,6 @@
       "thisLevelsId": "MAP_MT_PYRE_1F",
       "baseMap": "MAP_MT_PYRE",
       "levelLabel": "1F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -4032,14 +3871,12 @@
           "scriptName": "MtPyre_1F_EventScript_CleanseTagWoman::"
         }
       ],
-      "image": "MtPyre_1F",
-      "trainerRefs": []
+      "image": "MtPyre_1F"
     },
     {
       "thisLevelsId": "MAP_MT_PYRE_2F",
       "baseMap": "MAP_MT_PYRE",
       "levelLabel": "2F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -4050,7 +3887,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "MtPyre_2F",
       "trainerRefs": [
         {
@@ -4084,7 +3920,6 @@
       "thisLevelsId": "MAP_MT_PYRE_3F",
       "baseMap": "MAP_MT_PYRE",
       "levelLabel": "3F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -4095,7 +3930,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "MtPyre_3F",
       "trainerRefs": [
         {
@@ -4124,7 +3958,6 @@
       "thisLevelsId": "MAP_MT_PYRE_4F",
       "baseMap": "MAP_MT_PYRE",
       "levelLabel": "4F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -4135,7 +3968,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "MtPyre_4F",
       "trainerRefs": [
         {
@@ -4149,7 +3981,6 @@
       "thisLevelsId": "MAP_MT_PYRE_5F",
       "baseMap": "MAP_MT_PYRE",
       "levelLabel": "5F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -4160,7 +3991,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "MtPyre_5F",
       "trainerRefs": [
         {
@@ -4174,7 +4004,6 @@
       "thisLevelsId": "MAP_MT_PYRE_6F",
       "baseMap": "MAP_MT_PYRE",
       "levelLabel": "6F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -4185,7 +4014,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "MtPyre_6F",
       "trainerRefs": [
         {
@@ -4209,7 +4037,6 @@
       "thisLevelsId": "MAP_MT_PYRE_EXTERIOR",
       "baseMap": "MAP_MT_PYRE",
       "levelLabel": "Exterior",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -4244,15 +4071,12 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
-      "image": "MtPyre_Exterior",
-      "trainerRefs": []
+      "image": "MtPyre_Exterior"
     },
     {
       "thisLevelsId": "MAP_MT_PYRE_SUMMIT",
       "baseMap": "MAP_MT_PYRE",
       "levelLabel": "Summit",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -4289,8 +4113,7 @@
           "scriptName": "MtPyre_Summit_EventScript_OldLadyOrbsReturned::"
         }
       ],
-      "image": "MtPyre_Summit",
-      "trainerRefs": []
+      "image": "MtPyre_Summit"
     }
   ],
   "MAP_NAVEL_ROCK": [
@@ -4298,7 +4121,6 @@
       "thisLevelsId": "MAP_NAVEL_ROCK_ENTRANCE",
       "baseMap": "MAP_NAVEL_ROCK",
       "levelLabel": "Entrance",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -4309,15 +4131,12 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "NavelRock_Entrance",
-      "trainerRefs": []
+      "image": "NavelRock_Entrance"
     },
     {
       "thisLevelsId": "MAP_NAVEL_ROCK_TOP",
       "baseMap": "MAP_NAVEL_ROCK",
       "levelLabel": "Top",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -4328,9 +4147,7 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
-      "image": "NavelRock_Top",
-      "trainerRefs": []
+      "image": "NavelRock_Top"
     }
   ],
   "MAP_NEW_MAUVILLE": [
@@ -4338,17 +4155,12 @@
       "thisLevelsId": "MAP_NEW_MAUVILLE_ENTRANCE",
       "baseMap": "MAP_NEW_MAUVILLE",
       "levelLabel": "Entrance",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "NewMauville_Entrance",
-      "trainerRefs": []
+      "image": "NewMauville_Entrance"
     },
     {
       "thisLevelsId": "MAP_NEW_MAUVILLE_INSIDE",
       "baseMap": "MAP_NEW_MAUVILLE",
       "levelLabel": "Inside",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -4429,8 +4241,7 @@
           "scriptName": "NewMauville_Inside_EventScript_Voltorb1::"
         }
       ],
-      "image": "NewMauville_Inside",
-      "trainerRefs": []
+      "image": "NewMauville_Inside"
     }
   ],
   "MAP_OLDALE_TOWN": [
@@ -4438,8 +4249,6 @@
       "thisLevelsId": "MAP_OLDALE_TOWN",
       "baseMap": "MAP_OLDALE_TOWN",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -4454,8 +4263,7 @@
           "scriptName": "OldaleTown_EventScript_ExplainPokemonMart::"
         }
       ],
-      "image": "OldaleTown",
-      "trainerRefs": []
+      "image": "OldaleTown"
     },
     {
       "thisLevelsId": "MAP_OLDALE_TOWN_MART",
@@ -4475,25 +4283,55 @@
           "scriptname": "OldaleTown_Mart_Pokemart_Basic:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "OldaleTown_Mart",
-      "trainerRefs": []
+      "image": "OldaleTown_Mart"
     },
     {
       "thisLevelsId": "MAP_OLDALE_TOWN_POKEMON_CENTER_1F",
       "baseMap": "MAP_OLDALE_TOWN",
       "levelLabel": "Pokemoncenter 1F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
           "pokemon": [
             {
               "species": "SPECIES_SENTRET",
-              "level": 0,
-              "isRandom": false
+              "level": 0
+            },
+            {
+              "species": "SPECIES_JIGGLYPUFF",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_KRICKETOT",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_CUBONE",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_PANCHAM",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_YAMPER",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_ROCKRUFF",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_SNORUNT",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_SPOINK",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_VAROOM",
+              "level": 0
             }
           ],
           "wildMon": [],
@@ -4501,8 +4339,7 @@
           "scriptName": "OldaleTown_PokemonCenter_1F_EventScript_EggMan::"
         }
       ],
-      "image": "OldaleTown_PokemonCenter_1F",
-      "trainerRefs": []
+      "image": "OldaleTown_PokemonCenter_1F"
     }
   ],
   "MAP_PACIFIDLOG_TOWN": [
@@ -4510,18 +4347,12 @@
       "thisLevelsId": "MAP_PACIFIDLOG_TOWN",
       "baseMap": "MAP_PACIFIDLOG_TOWN",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "PacifidlogTown",
-      "trainerRefs": []
+      "image": "PacifidlogTown"
     },
     {
       "thisLevelsId": "MAP_PACIFIDLOG_TOWN_HOUSE1",
       "baseMap": "MAP_PACIFIDLOG_TOWN",
       "levelLabel": "House 1",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -4560,23 +4391,55 @@
           "scriptName": "PacifidlogTown_House1_EventScript_Man_2:"
         }
       ],
-      "image": "PacifidlogTown_House1",
-      "trainerRefs": []
+      "image": "PacifidlogTown_House1"
     },
     {
       "thisLevelsId": "MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F",
       "baseMap": "MAP_PACIFIDLOG_TOWN",
       "levelLabel": "Pokemoncenter 1F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
           "pokemon": [
             {
               "species": "SPECIES_DRATINI",
-              "level": 0,
-              "isRandom": false
+              "level": 0
+            },
+            {
+              "species": "SPECIES_LARVITAR",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_BAGON",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_BELDUM",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_GIBLE",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_DEINO",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_GOOMY",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_JANGMO_O",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_DREEPY",
+              "level": 0
+            },
+            {
+              "species": "SPECIES_FRIGIBAX",
+              "level": 0
             }
           ],
           "wildMon": [],
@@ -4584,8 +4447,7 @@
           "scriptName": "PacifidlogTown_PokemonCenter_1F_EventScript_EggMan_1:"
         }
       ],
-      "image": "PacifidlogTown_PokemonCenter_1F",
-      "trainerRefs": []
+      "image": "PacifidlogTown_PokemonCenter_1F"
     }
   ],
   "MAP_PETALBURG_CITY": [
@@ -4593,7 +4455,6 @@
       "thisLevelsId": "MAP_PETALBURG_CITY",
       "baseMap": "MAP_PETALBURG_CITY",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -4650,15 +4511,12 @@
           "scriptName": "PetalburgCity_EventScript_GiveOldRod::"
         }
       ],
-      "image": "PetalburgCity",
-      "trainerRefs": []
+      "image": "PetalburgCity"
     },
     {
       "thisLevelsId": "MAP_PETALBURG_CITY_GYM",
       "baseMap": "MAP_PETALBURG_CITY",
       "levelLabel": "Gym",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -4746,17 +4604,12 @@
           "scriptname": "PetalburgCity_Mart_Pokemart_Basic:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "PetalburgCity_Mart",
-      "trainerRefs": []
+      "image": "PetalburgCity_Mart"
     },
     {
       "thisLevelsId": "MAP_PETALBURG_CITY_WALLYS_HOUSE",
       "baseMap": "MAP_PETALBURG_CITY",
       "levelLabel": "Wallyshouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -4787,8 +4640,7 @@
           "scriptName": "PetalburgCity_WallysHouse_EventScript_GiveHMSurf::"
         }
       ],
-      "image": "PetalburgCity_WallysHouse",
-      "trainerRefs": []
+      "image": "PetalburgCity_WallysHouse"
     }
   ],
   "MAP_PETALBURG_WOODS": [
@@ -4796,7 +4648,6 @@
       "thisLevelsId": "MAP_PETALBURG_WOODS",
       "baseMap": "MAP_PETALBURG_WOODS",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -4954,8 +4805,6 @@
       "thisLevelsId": "MAP_ROCKY_SLAB",
       "baseMap": "MAP_ROCKY_SLAB",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -4971,8 +4820,7 @@
           "scriptName": "RockySlab_EventScript_Uxie::"
         }
       ],
-      "image": "RockySlab",
-      "trainerRefs": []
+      "image": "RockySlab"
     }
   ],
   "MAP_ROUTE101": [
@@ -4980,11 +4828,7 @@
       "thisLevelsId": "MAP_ROUTE101",
       "baseMap": "MAP_ROUTE101",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "Route101",
-      "trainerRefs": []
+      "image": "Route101"
     }
   ],
   "MAP_ROUTE102": [
@@ -4992,7 +4836,6 @@
       "thisLevelsId": "MAP_ROUTE102",
       "baseMap": "MAP_ROUTE102",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -5003,7 +4846,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route102",
       "trainerRefs": [
         {
@@ -5039,7 +4881,6 @@
       "thisLevelsId": "MAP_ROUTE103",
       "baseMap": "MAP_ROUTE103",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -5157,7 +4998,6 @@
       "thisLevelsId": "MAP_ROUTE104",
       "baseMap": "MAP_ROUTE104",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -5462,8 +5302,6 @@
       "thisLevelsId": "MAP_ROUTE104_PRETTY_PETAL_FLOWER_SHOP",
       "baseMap": "MAP_ROUTE104",
       "levelLabel": "Prettypetalflowershop",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -5478,8 +5316,7 @@
           "scriptName": "Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail::"
         }
       ],
-      "image": "Route104_PrettyPetalFlowerShop",
-      "trainerRefs": []
+      "image": "Route104_PrettyPetalFlowerShop"
     }
   ],
   "MAP_ROUTE105": [
@@ -5487,7 +5324,6 @@
       "thisLevelsId": "MAP_ROUTE105",
       "baseMap": "MAP_ROUTE105",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -5514,7 +5350,6 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
       "image": "Route105",
       "trainerRefs": [
         {
@@ -5565,7 +5400,6 @@
       "thisLevelsId": "MAP_ROUTE106",
       "baseMap": "MAP_ROUTE106",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -5600,7 +5434,6 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
       "image": "Route106",
       "trainerRefs": [
         {
@@ -5636,9 +5469,6 @@
       "thisLevelsId": "MAP_ROUTE107",
       "baseMap": "MAP_ROUTE107",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "Route107",
       "trainerRefs": [
         {
@@ -5689,7 +5519,6 @@
       "thisLevelsId": "MAP_ROUTE108",
       "baseMap": "MAP_ROUTE108",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -5708,7 +5537,6 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
       "image": "Route108",
       "trainerRefs": [
         {
@@ -5754,7 +5582,6 @@
       "thisLevelsId": "MAP_ROUTE109",
       "baseMap": "MAP_ROUTE109",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -5923,8 +5750,6 @@
       "thisLevelsId": "MAP_ROUTE109_SEASHORE_HOUSE",
       "baseMap": "MAP_ROUTE109",
       "levelLabel": "Seashorehouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -6050,7 +5875,6 @@
       "thisLevelsId": "MAP_ROUTE110",
       "baseMap": "MAP_ROUTE110",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -6376,7 +6200,6 @@
       "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_END",
       "baseMap": "MAP_ROUTE110",
       "levelLabel": "Trickhouseend",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -6387,16 +6210,12 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
-      "image": "Route110_TrickHouseEnd",
-      "trainerRefs": []
+      "image": "Route110_TrickHouseEnd"
     },
     {
       "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_ENTRANCE",
       "baseMap": "MAP_ROUTE110",
       "levelLabel": "Trickhouseentrance",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -6535,14 +6354,12 @@
           "scriptName": "Route110_TrickHouseEntrance_EventScript_GivePuzzle7Reward::"
         }
       ],
-      "image": "Route110_TrickHouseEntrance",
-      "trainerRefs": []
+      "image": "Route110_TrickHouseEntrance"
     },
     {
       "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE1",
       "baseMap": "MAP_ROUTE110",
       "levelLabel": "Trickhousepuzzle 1",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -6553,7 +6370,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route110_TrickHousePuzzle1",
       "trainerRefs": [
         {
@@ -6577,7 +6393,6 @@
       "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE2",
       "baseMap": "MAP_ROUTE110",
       "levelLabel": "Trickhousepuzzle 2",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -6596,7 +6411,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route110_TrickHousePuzzle2",
       "trainerRefs": [
         {
@@ -6620,7 +6434,6 @@
       "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE3",
       "baseMap": "MAP_ROUTE110",
       "levelLabel": "Trickhousepuzzle 3",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -6639,7 +6452,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route110_TrickHousePuzzle3",
       "trainerRefs": [
         {
@@ -6663,7 +6475,6 @@
       "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE4",
       "baseMap": "MAP_ROUTE110",
       "levelLabel": "Trickhousepuzzle 4",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -6674,7 +6485,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route110_TrickHousePuzzle4",
       "trainerRefs": [
         {
@@ -6698,7 +6508,6 @@
       "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE6",
       "baseMap": "MAP_ROUTE110",
       "levelLabel": "Trickhousepuzzle 6",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -6709,7 +6518,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route110_TrickHousePuzzle6",
       "trainerRefs": [
         {
@@ -6733,7 +6541,6 @@
       "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE7",
       "baseMap": "MAP_ROUTE110",
       "levelLabel": "Trickhousepuzzle 7",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -6744,7 +6551,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route110_TrickHousePuzzle7",
       "trainerRefs": [
         {
@@ -6783,7 +6589,6 @@
       "thisLevelsId": "MAP_ROUTE110_TRICK_HOUSE_PUZZLE8",
       "baseMap": "MAP_ROUTE110",
       "levelLabel": "Trickhousepuzzle 8",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -6794,7 +6599,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route110_TrickHousePuzzle8",
       "trainerRefs": [
         {
@@ -6820,7 +6624,6 @@
       "thisLevelsId": "MAP_ROUTE111",
       "baseMap": "MAP_ROUTE111",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -7081,8 +6884,6 @@
       "thisLevelsId": "MAP_ROUTE111_WINSTRATE_FAMILYS_HOUSE",
       "baseMap": "MAP_ROUTE111",
       "levelLabel": "Winstratefamilyshouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -7221,8 +7022,7 @@
           "scriptName": "Route111_WinstrateFamilysHouse_EventScript_Victoria::"
         }
       ],
-      "image": "Route111_WinstrateFamilysHouse",
-      "trainerRefs": []
+      "image": "Route111_WinstrateFamilysHouse"
     }
   ],
   "MAP_ROUTE112": [
@@ -7230,7 +7030,6 @@
       "thisLevelsId": "MAP_ROUTE112",
       "baseMap": "MAP_ROUTE112",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -7241,7 +7040,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route112",
       "trainerRefs": [
         {
@@ -7282,7 +7080,6 @@
       "thisLevelsId": "MAP_ROUTE113",
       "baseMap": "MAP_ROUTE113",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -7333,7 +7130,6 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
       "image": "Route113",
       "trainerRefs": [
         {
@@ -7397,8 +7193,6 @@
       "thisLevelsId": "MAP_ROUTE113_GLASS_WORKSHOP",
       "baseMap": "MAP_ROUTE113",
       "levelLabel": "Glassworkshop",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -7413,8 +7207,7 @@
           "scriptName": "Route113_GlassWorkshop_EventScript_GlassWorker::"
         }
       ],
-      "image": "Route113_GlassWorkshop",
-      "trainerRefs": []
+      "image": "Route113_GlassWorkshop"
     }
   ],
   "MAP_ROUTE114": [
@@ -7422,7 +7215,6 @@
       "thisLevelsId": "MAP_ROUTE114",
       "baseMap": "MAP_ROUTE114",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -7570,8 +7362,6 @@
       "thisLevelsId": "MAP_ROUTE114_FOSSIL_MANIACS_HOUSE",
       "baseMap": "MAP_ROUTE114",
       "levelLabel": "Fossilmaniacshouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -7586,8 +7376,7 @@
           "scriptName": "Route114_FossilManiacsHouse_EventScript_FossilManiacsBrother::"
         }
       ],
-      "image": "Route114_FossilManiacsHouse",
-      "trainerRefs": []
+      "image": "Route114_FossilManiacsHouse"
     }
   ],
   "MAP_ROUTE115": [
@@ -7595,7 +7384,6 @@
       "thisLevelsId": "MAP_ROUTE115",
       "baseMap": "MAP_ROUTE115",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -7654,7 +7442,6 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
       "image": "Route115",
       "trainerRefs": [
         {
@@ -7730,7 +7517,6 @@
       "thisLevelsId": "MAP_ROUTE116",
       "baseMap": "MAP_ROUTE116",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -7907,7 +7693,6 @@
       "thisLevelsId": "MAP_ROUTE117",
       "baseMap": "MAP_ROUTE117",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -8067,7 +7852,6 @@
       "thisLevelsId": "MAP_ROUTE118",
       "baseMap": "MAP_ROUTE118",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -8188,7 +7972,6 @@
       "thisLevelsId": "MAP_ROUTE119",
       "baseMap": "MAP_ROUTE119",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -8467,9 +8250,6 @@
       "thisLevelsId": "MAP_ROUTE119_WEATHER_INSTITUTE_1F",
       "baseMap": "MAP_ROUTE119",
       "levelLabel": "Weatherinstitute 1F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "Route119_WeatherInstitute_1F",
       "trainerRefs": [
         {
@@ -8488,9 +8268,6 @@
       "thisLevelsId": "MAP_ROUTE119_WEATHER_INSTITUTE_2F",
       "baseMap": "MAP_ROUTE119",
       "levelLabel": "Weatherinstitute 2F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "Route119_WeatherInstitute_2F",
       "trainerRefs": [
         {
@@ -8521,7 +8298,6 @@
       "thisLevelsId": "MAP_ROUTE120",
       "baseMap": "MAP_ROUTE120",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -8711,7 +8487,6 @@
       "thisLevelsId": "MAP_ROUTE121",
       "baseMap": "MAP_ROUTE121",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -8891,11 +8666,7 @@
       "thisLevelsId": "MAP_ROUTE122",
       "baseMap": "MAP_ROUTE122",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "Route122",
-      "trainerRefs": []
+      "image": "Route122"
     }
   ],
   "MAP_ROUTE123": [
@@ -8903,7 +8674,6 @@
       "thisLevelsId": "MAP_ROUTE123",
       "baseMap": "MAP_ROUTE123",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -8986,7 +8756,6 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
       "image": "Route123",
       "trainerRefs": [
         {
@@ -9092,7 +8861,6 @@
       "thisLevelsId": "MAP_ROUTE124",
       "baseMap": "MAP_ROUTE124",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -9192,8 +8960,6 @@
       "thisLevelsId": "MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE",
       "baseMap": "MAP_ROUTE124",
       "levelLabel": "Divingtreasurehuntershouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -9220,8 +8986,7 @@
           "scriptName": "Route124_DivingTreasureHuntersHouse_EventScript_FormChangingLady::"
         }
       ],
-      "image": "Route124_DivingTreasureHuntersHouse",
-      "trainerRefs": []
+      "image": "Route124_DivingTreasureHuntersHouse"
     }
   ],
   "MAP_ROUTE125": [
@@ -9229,7 +8994,6 @@
       "thisLevelsId": "MAP_ROUTE125",
       "baseMap": "MAP_ROUTE125",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -9323,8 +9087,6 @@
       "thisLevelsId": "MAP_ROUTE126",
       "baseMap": "MAP_ROUTE126",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -9395,7 +9157,6 @@
       "thisLevelsId": "MAP_ROUTE127",
       "baseMap": "MAP_ROUTE127",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -9422,7 +9183,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route127",
       "trainerRefs": [
         {
@@ -9478,7 +9238,6 @@
       "thisLevelsId": "MAP_ROUTE128",
       "baseMap": "MAP_ROUTE128",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -9505,7 +9264,6 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
       "image": "Route128",
       "trainerRefs": [
         {
@@ -9561,9 +9319,6 @@
       "thisLevelsId": "MAP_ROUTE129",
       "baseMap": "MAP_ROUTE129",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "Route129",
       "trainerRefs": [
         {
@@ -9599,9 +9354,6 @@
       "thisLevelsId": "MAP_ROUTE130",
       "baseMap": "MAP_ROUTE130",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "Route130",
       "trainerRefs": [
         {
@@ -9627,9 +9379,6 @@
       "thisLevelsId": "MAP_ROUTE131",
       "baseMap": "MAP_ROUTE131",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "Route131",
       "trainerRefs": [
         {
@@ -9680,7 +9429,6 @@
       "thisLevelsId": "MAP_ROUTE132",
       "baseMap": "MAP_ROUTE132",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -9699,7 +9447,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route132",
       "trainerRefs": [
         {
@@ -9750,7 +9497,6 @@
       "thisLevelsId": "MAP_ROUTE133",
       "baseMap": "MAP_ROUTE133",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -9777,7 +9523,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route133",
       "trainerRefs": [
         {
@@ -9823,7 +9568,6 @@
       "thisLevelsId": "MAP_ROUTE134",
       "baseMap": "MAP_ROUTE134",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -9842,7 +9586,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "Route134",
       "trainerRefs": [
         {
@@ -9971,8 +9714,6 @@
       "thisLevelsId": "MAP_RUSTBORO_CITY_CUTTERS_HOUSE",
       "baseMap": "MAP_RUSTBORO_CITY",
       "levelLabel": "Cuttershouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -9987,15 +9728,12 @@
           "scriptName": "RustboroCity_CuttersHouse_EventScript_Cutter::"
         }
       ],
-      "image": "RustboroCity_CuttersHouse",
-      "trainerRefs": []
+      "image": "RustboroCity_CuttersHouse"
     },
     {
       "thisLevelsId": "MAP_RUSTBORO_CITY_DEVON_CORP_2F",
       "baseMap": "MAP_RUSTBORO_CITY",
       "levelLabel": "Devoncorp 2F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -10064,15 +9802,12 @@
           "scriptName": "RustboroCity_DevonCorp_2F_EventScript_NFusions_9:"
         }
       ],
-      "image": "RustboroCity_DevonCorp_2F",
-      "trainerRefs": []
+      "image": "RustboroCity_DevonCorp_2F"
     },
     {
       "thisLevelsId": "MAP_RUSTBORO_CITY_DEVON_CORP_3F",
       "baseMap": "MAP_RUSTBORO_CITY",
       "levelLabel": "Devoncorp 3F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -10111,15 +9846,12 @@
           "scriptName": "RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::"
         }
       ],
-      "image": "RustboroCity_DevonCorp_3F",
-      "trainerRefs": []
+      "image": "RustboroCity_DevonCorp_3F"
     },
     {
       "thisLevelsId": "MAP_RUSTBORO_CITY_FLAT2_2F",
       "baseMap": "MAP_RUSTBORO_CITY",
       "levelLabel": "Flat 2 2F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -10134,15 +9866,12 @@
           "scriptName": "RustboroCity_Flat2_2F_EventScript_NinjaBoy::"
         }
       ],
-      "image": "RustboroCity_Flat2_2F",
-      "trainerRefs": []
+      "image": "RustboroCity_Flat2_2F"
     },
     {
       "thisLevelsId": "MAP_RUSTBORO_CITY_GYM",
       "baseMap": "MAP_RUSTBORO_CITY",
       "levelLabel": "Gym",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -10205,17 +9934,12 @@
           "scriptname": "RustboroCity_Mart_Pokemart_Basic:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "RustboroCity_Mart",
-      "trainerRefs": []
+      "image": "RustboroCity_Mart"
     },
     {
       "thisLevelsId": "MAP_RUSTBORO_CITY_POKEMON_SCHOOL",
       "baseMap": "MAP_RUSTBORO_CITY",
       "levelLabel": "Pokemonschool",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -10230,8 +9954,7 @@
           "scriptName": "RustboroCity_PokemonSchool_EventScript_Teacher::"
         }
       ],
-      "image": "RustboroCity_PokemonSchool",
-      "trainerRefs": []
+      "image": "RustboroCity_PokemonSchool"
     }
   ],
   "MAP_RUSTURF_TUNNEL": [
@@ -10239,7 +9962,6 @@
       "thisLevelsId": "MAP_RUSTURF_TUNNEL",
       "baseMap": "MAP_RUSTURF_TUNNEL",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -10304,7 +10026,6 @@
       "thisLevelsId": "MAP_SS_TIDAL_LOWER_DECK",
       "baseMap": "MAP_S_S_TIDAL_LOWER_DECK",
       "levelLabel": "",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -10315,7 +10036,6 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
       "image": "SSTidalLowerDeck",
       "trainerRefs": [
         {
@@ -10336,8 +10056,6 @@
       "thisLevelsId": "MAP_SS_TIDAL_ROOMS",
       "baseMap": "MAP_S_S_TIDAL_ROOMS",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -10397,7 +10115,6 @@
       "thisLevelsId": "MAP_SAFARI_ZONE_NORTH",
       "baseMap": "MAP_SAFARI_ZONE",
       "levelLabel": "North",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -10408,15 +10125,12 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "SafariZone_North",
-      "trainerRefs": []
+      "image": "SafariZone_North"
     },
     {
       "thisLevelsId": "MAP_SAFARI_ZONE_NORTHEAST",
       "baseMap": "MAP_SAFARI_ZONE",
       "levelLabel": "Northeast",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -10443,15 +10157,12 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
-      "image": "SafariZone_Northeast",
-      "trainerRefs": []
+      "image": "SafariZone_Northeast"
     },
     {
       "thisLevelsId": "MAP_SAFARI_ZONE_NORTHWEST",
       "baseMap": "MAP_SAFARI_ZONE",
       "levelLabel": "Northwest",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -10462,25 +10173,18 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "SafariZone_Northwest",
-      "trainerRefs": []
+      "image": "SafariZone_Northwest"
     },
     {
       "thisLevelsId": "MAP_SAFARI_ZONE_SOUTH",
       "baseMap": "MAP_SAFARI_ZONE",
       "levelLabel": "South",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "SafariZone_South",
-      "trainerRefs": []
+      "image": "SafariZone_South"
     },
     {
       "thisLevelsId": "MAP_SAFARI_ZONE_SOUTHEAST",
       "baseMap": "MAP_SAFARI_ZONE",
       "levelLabel": "Southeast",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -10507,15 +10211,12 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
-      "image": "SafariZone_Southeast",
-      "trainerRefs": []
+      "image": "SafariZone_Southeast"
     },
     {
       "thisLevelsId": "MAP_SAFARI_ZONE_SOUTHWEST",
       "baseMap": "MAP_SAFARI_ZONE",
       "levelLabel": "Southwest",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -10526,9 +10227,7 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "SafariZone_Southwest",
-      "trainerRefs": []
+      "image": "SafariZone_Southwest"
     }
   ],
   "MAP_SCORCHED_SLAB": [
@@ -10536,8 +10235,6 @@
       "thisLevelsId": "MAP_SCORCHED_SLAB",
       "baseMap": "MAP_SCORCHED_SLAB",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -10553,8 +10250,7 @@
           "scriptName": "ScorchedSlab_EventScript_Azelf::"
         }
       ],
-      "image": "ScorchedSlab",
-      "trainerRefs": []
+      "image": "ScorchedSlab"
     }
   ],
   "MAP_SEAFLOOR_CAVERN": [
@@ -10562,19 +10258,12 @@
       "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ENTRANCE",
       "baseMap": "MAP_SEAFLOOR_CAVERN",
       "levelLabel": "Entrance",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "SeafloorCavern_Entrance",
-      "trainerRefs": []
+      "image": "SeafloorCavern_Entrance"
     },
     {
       "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM1",
       "baseMap": "MAP_SEAFLOOR_CAVERN",
       "levelLabel": "Room 1",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "SeafloorCavern_Room1",
       "trainerRefs": [
         {
@@ -10588,19 +10277,12 @@
       "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM2",
       "baseMap": "MAP_SEAFLOOR_CAVERN",
       "levelLabel": "Room 2",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "SeafloorCavern_Room2",
-      "trainerRefs": []
+      "image": "SeafloorCavern_Room2"
     },
     {
       "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM3",
       "baseMap": "MAP_SEAFLOOR_CAVERN",
       "levelLabel": "Room 3",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "SeafloorCavern_Room3",
       "trainerRefs": [
         {
@@ -10614,9 +10296,6 @@
       "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM4",
       "baseMap": "MAP_SEAFLOOR_CAVERN",
       "levelLabel": "Room 4",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "SeafloorCavern_Room4",
       "trainerRefs": [
         {
@@ -10635,47 +10314,30 @@
       "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM5",
       "baseMap": "MAP_SEAFLOOR_CAVERN",
       "levelLabel": "Room 5",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "SeafloorCavern_Room5",
-      "trainerRefs": []
+      "image": "SeafloorCavern_Room5"
     },
     {
       "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM6",
       "baseMap": "MAP_SEAFLOOR_CAVERN",
       "levelLabel": "Room 6",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "SeafloorCavern_Room6",
-      "trainerRefs": []
+      "image": "SeafloorCavern_Room6"
     },
     {
       "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM7",
       "baseMap": "MAP_SEAFLOOR_CAVERN",
       "levelLabel": "Room 7",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "SeafloorCavern_Room7",
-      "trainerRefs": []
+      "image": "SeafloorCavern_Room7"
     },
     {
       "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM8",
       "baseMap": "MAP_SEAFLOOR_CAVERN",
       "levelLabel": "Room 8",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "SeafloorCavern_Room8",
-      "trainerRefs": []
+      "image": "SeafloorCavern_Room8"
     },
     {
       "thisLevelsId": "MAP_SEAFLOOR_CAVERN_ROOM9",
       "baseMap": "MAP_SEAFLOOR_CAVERN",
       "levelLabel": "Room 9",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -10686,7 +10348,6 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
       "image": "SeafloorCavern_Room9",
       "trainerRefs": [
         {
@@ -10712,7 +10373,6 @@
       "thisLevelsId": "MAP_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM",
       "baseMap": "MAP_SHOAL_CAVE",
       "levelLabel": "Lowtideentranceroom",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -10737,14 +10397,12 @@
           "scriptName": "ShoalCave_LowTideEntranceRoom_EventScript_ShellBellExpert::"
         }
       ],
-      "image": "ShoalCave_LowTideEntranceRoom",
-      "trainerRefs": []
+      "image": "ShoalCave_LowTideEntranceRoom"
     },
     {
       "thisLevelsId": "MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM",
       "baseMap": "MAP_SHOAL_CAVE",
       "levelLabel": "Lowtideiceroom",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -10770,14 +10428,12 @@
           "scriptName": "ShoalCave_LowTideIceRoom_EventScript_Kyurem::"
         }
       ],
-      "image": "ShoalCave_LowTideIceRoom",
-      "trainerRefs": []
+      "image": "ShoalCave_LowTideIceRoom"
     },
     {
       "thisLevelsId": "MAP_SHOAL_CAVE_LOW_TIDE_INNER_ROOM",
       "baseMap": "MAP_SHOAL_CAVE",
       "levelLabel": "Lowtideinnerroom",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -10818,15 +10474,12 @@
           "scriptName": "ShoalCave_LowTideInnerRoom_EventScript_ShoalShell2::"
         }
       ],
-      "image": "ShoalCave_LowTideInnerRoom",
-      "trainerRefs": []
+      "image": "ShoalCave_LowTideInnerRoom"
     },
     {
       "thisLevelsId": "MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM",
       "baseMap": "MAP_SHOAL_CAVE",
       "levelLabel": "Lowtidelowerroom",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -11010,14 +10663,12 @@
           "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_StairsRoom::"
         }
       ],
-      "image": "ShoalCave_LowTideLowerRoom",
-      "trainerRefs": []
+      "image": "ShoalCave_LowTideLowerRoom"
     },
     {
       "thisLevelsId": "MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM",
       "baseMap": "MAP_SHOAL_CAVE",
       "levelLabel": "Lowtidestairsroom",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -11042,8 +10693,7 @@
           "scriptName": "ShoalCave_LowTideStairsRoom_EventScript_ShoalSalt3::"
         }
       ],
-      "image": "ShoalCave_LowTideStairsRoom",
-      "trainerRefs": []
+      "image": "ShoalCave_LowTideStairsRoom"
     }
   ],
   "MAP_SKY_PILLAR": [
@@ -11051,38 +10701,24 @@
       "thisLevelsId": "MAP_SKY_PILLAR_1F",
       "baseMap": "MAP_SKY_PILLAR",
       "levelLabel": "1F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "SkyPillar_1F",
-      "trainerRefs": []
+      "image": "SkyPillar_1F"
     },
     {
       "thisLevelsId": "MAP_SKY_PILLAR_3F",
       "baseMap": "MAP_SKY_PILLAR",
       "levelLabel": "3F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "SkyPillar_3F",
-      "trainerRefs": []
+      "image": "SkyPillar_3F"
     },
     {
       "thisLevelsId": "MAP_SKY_PILLAR_5F",
       "baseMap": "MAP_SKY_PILLAR",
       "levelLabel": "5F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "SkyPillar_5F",
-      "trainerRefs": []
+      "image": "SkyPillar_5F"
     },
     {
       "thisLevelsId": "MAP_SKY_PILLAR_TOP",
       "baseMap": "MAP_SKY_PILLAR",
       "levelLabel": "Top",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -11182,7 +10818,6 @@
           "scriptname": "SlateportCity_Pokemart_PowerTMs:"
         }
       ],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -11197,15 +10832,12 @@
           "scriptName": "SlateportCity_EventScript_BerryPowderClerk::"
         }
       ],
-      "image": "SlateportCity",
-      "trainerRefs": []
+      "image": "SlateportCity"
     },
     {
       "thisLevelsId": "MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY",
       "baseMap": "MAP_SLATEPORT_CITY",
       "levelLabel": "Battletentlobby",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -11220,15 +10852,12 @@
           "scriptName": "SlateportCity_BattleTentLobby_EventScript_ThiefGiver::"
         }
       ],
-      "image": "SlateportCity_BattleTentLobby",
-      "trainerRefs": []
+      "image": "SlateportCity_BattleTentLobby"
     },
     {
       "thisLevelsId": "MAP_SLATEPORT_CITY_HARBOR",
       "baseMap": "MAP_SLATEPORT_CITY",
       "levelLabel": "Harbor",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -11247,8 +10876,7 @@
           "scriptName": "SlateportCity_Harbor_EventScript_DeepSeaTooth::"
         }
       ],
-      "image": "SlateportCity_Harbor",
-      "trainerRefs": []
+      "image": "SlateportCity_Harbor"
     },
     {
       "thisLevelsId": "MAP_SLATEPORT_CITY_MART",
@@ -11274,17 +10902,12 @@
           "scriptname": "SlateportCity_Mart_Pokemart:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "SlateportCity_Mart",
-      "trainerRefs": []
+      "image": "SlateportCity_Mart"
     },
     {
       "thisLevelsId": "MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_1F",
       "baseMap": "MAP_SLATEPORT_CITY",
       "levelLabel": "Oceanicmuseum 1F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -11299,16 +10922,12 @@
           "scriptName": "SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::"
         }
       ],
-      "image": "SlateportCity_OceanicMuseum_1F",
-      "trainerRefs": []
+      "image": "SlateportCity_OceanicMuseum_1F"
     },
     {
       "thisLevelsId": "MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_2F",
       "baseMap": "MAP_SLATEPORT_CITY",
       "levelLabel": "Oceanicmuseum 2F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "SlateportCity_OceanicMuseum_2F",
       "trainerRefs": [
         {
@@ -11327,8 +10946,6 @@
       "thisLevelsId": "MAP_SLATEPORT_CITY_POKEMON_FAN_CLUB",
       "baseMap": "MAP_SLATEPORT_CITY",
       "levelLabel": "Pokemonfanclub",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -11403,8 +11020,7 @@
           "scriptName": "SlateportCity_PokemonFanClub_EventScript_GiveSootheBell::"
         }
       ],
-      "image": "SlateportCity_PokemonFanClub",
-      "trainerRefs": []
+      "image": "SlateportCity_PokemonFanClub"
     }
   ],
   "MAP_SOOTOPOLIS_CITY": [
@@ -11412,8 +11028,6 @@
       "thisLevelsId": "MAP_SOOTOPOLIS_CITY",
       "baseMap": "MAP_SOOTOPOLIS_CITY",
       "levelLabel": "",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -11452,15 +11066,12 @@
           "scriptName": "SootopolisCity_EventScript_GiveWaterfall::"
         }
       ],
-      "image": "SootopolisCity",
-      "trainerRefs": []
+      "image": "SootopolisCity"
     },
     {
       "thisLevelsId": "MAP_SOOTOPOLIS_CITY_CHAMP_HOUSE",
       "baseMap": "MAP_SOOTOPOLIS_CITY",
       "levelLabel": "Champhouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -11543,8 +11154,6 @@
       "thisLevelsId": "MAP_SOOTOPOLIS_CITY_GYM_1F",
       "baseMap": "MAP_SOOTOPOLIS_CITY",
       "levelLabel": "Gym 1F",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -11580,9 +11189,6 @@
       "thisLevelsId": "MAP_SOOTOPOLIS_CITY_GYM_B1F",
       "baseMap": "MAP_SOOTOPOLIS_CITY",
       "levelLabel": "Gym B 1F",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [],
       "image": "SootopolisCity_Gym_B1F",
       "trainerRefs": [
         {
@@ -11641,8 +11247,6 @@
       "thisLevelsId": "MAP_SOOTOPOLIS_CITY_HOUSE2",
       "baseMap": "MAP_SOOTOPOLIS_CITY",
       "levelLabel": "House 2",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -11733,15 +11337,12 @@
           "scriptName": "SootopolisCity_House2_EventScript_ExpertF_2:"
         }
       ],
-      "image": "SootopolisCity_House2",
-      "trainerRefs": []
+      "image": "SootopolisCity_House2"
     },
     {
       "thisLevelsId": "MAP_SOOTOPOLIS_CITY_HOUSE4",
       "baseMap": "MAP_SOOTOPOLIS_CITY",
       "levelLabel": "House 4",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -11788,15 +11389,12 @@
           "scriptName": "SootopolisCity_House4_EventScript_RelicsMan_12:"
         }
       ],
-      "image": "SootopolisCity_House4",
-      "trainerRefs": []
+      "image": "SootopolisCity_House4"
     },
     {
       "thisLevelsId": "MAP_SOOTOPOLIS_CITY_HOUSE5",
       "baseMap": "MAP_SOOTOPOLIS_CITY",
       "levelLabel": "House 5",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -11861,8 +11459,6 @@
       "thisLevelsId": "MAP_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE",
       "baseMap": "MAP_SOOTOPOLIS_CITY",
       "levelLabel": "Lotadandseedothouse",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -11889,8 +11485,7 @@
           "scriptName": "SootopolisCity_LotadAndSeedotHouse_EventScript_ShieldMaster::"
         }
       ],
-      "image": "SootopolisCity_LotadAndSeedotHouse",
-      "trainerRefs": []
+      "image": "SootopolisCity_LotadAndSeedotHouse"
     },
     {
       "thisLevelsId": "MAP_SOOTOPOLIS_CITY_MART",
@@ -11915,10 +11510,7 @@
           "scriptname": "SootopolisCity_Mart_Pokemart:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "SootopolisCity_Mart",
-      "trainerRefs": []
+      "image": "SootopolisCity_Mart"
     }
   ],
   "MAP_SOUTHERN_ISLAND": [
@@ -11926,7 +11518,6 @@
       "thisLevelsId": "MAP_SOUTHERN_ISLAND_INTERIOR",
       "baseMap": "MAP_SOUTHERN_ISLAND",
       "levelLabel": "Interior",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -11945,9 +11536,7 @@
           "type": "object_event"
         }
       ],
-      "scriptedGives": [],
-      "image": "SouthernIsland_Interior",
-      "trainerRefs": []
+      "image": "SouthernIsland_Interior"
     }
   ],
   "MAP_TERRA_CAVE": [
@@ -11955,8 +11544,6 @@
       "thisLevelsId": "MAP_TERRA_CAVE_END",
       "baseMap": "MAP_TERRA_CAVE",
       "levelLabel": "End",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [],
@@ -11972,8 +11559,7 @@
           "scriptName": "TerraCave_End_EventScript_Groudon::"
         }
       ],
-      "image": "TerraCave_End",
-      "trainerRefs": []
+      "image": "TerraCave_End"
     }
   ],
   "MAP_TRAINER_HILL": [
@@ -12002,10 +11588,7 @@
           "scriptname": "TrainerHill_Entrance_Pokemart_Basic:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "TrainerHill_Entrance",
-      "trainerRefs": []
+      "image": "TrainerHill_Entrance"
     }
   ],
   "MAP_UNDERWATER": [
@@ -12013,7 +11596,6 @@
       "thisLevelsId": "MAP_UNDERWATER_ROUTE124",
       "baseMap": "MAP_UNDERWATER",
       "levelLabel": "Route 124",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -12072,15 +11654,12 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
-      "image": "Underwater_Route124",
-      "trainerRefs": []
+      "image": "Underwater_Route124"
     },
     {
       "thisLevelsId": "MAP_UNDERWATER_ROUTE126",
       "baseMap": "MAP_UNDERWATER",
       "levelLabel": "Route 126",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -12147,15 +11726,12 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
-      "image": "Underwater_Route126",
-      "trainerRefs": []
+      "image": "Underwater_Route126"
     },
     {
       "thisLevelsId": "MAP_UNDERWATER_ROUTE127",
       "baseMap": "MAP_UNDERWATER",
       "levelLabel": "Route 127",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -12190,15 +11766,12 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
-      "image": "Underwater_Route127",
-      "trainerRefs": []
+      "image": "Underwater_Route127"
     },
     {
       "thisLevelsId": "MAP_UNDERWATER_ROUTE128",
       "baseMap": "MAP_UNDERWATER",
       "levelLabel": "Route 128",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -12217,9 +11790,7 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
-      "image": "Underwater_Route128",
-      "trainerRefs": []
+      "image": "Underwater_Route128"
     }
   ],
   "MAP_VERDANTURF_TOWN": [
@@ -12227,8 +11798,6 @@
       "thisLevelsId": "MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY",
       "baseMap": "MAP_VERDANTURF_TOWN",
       "levelLabel": "Battletentlobby",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -12243,15 +11812,12 @@
           "scriptName": "VerdanturfTown_BattleTentLobby_EventScript_AttractGiver::"
         }
       ],
-      "image": "VerdanturfTown_BattleTentLobby",
-      "trainerRefs": []
+      "image": "VerdanturfTown_BattleTentLobby"
     },
     {
       "thisLevelsId": "MAP_VERDANTURF_TOWN_HOUSE",
       "baseMap": "MAP_VERDANTURF_TOWN",
       "levelLabel": "House",
-      "shopItems": [],
-      "pickupItems": [],
       "scriptedGives": [
         {
           "items": [
@@ -12332,10 +11898,7 @@
           "scriptname": "VerdanturfTown_Mart_Pokemart:"
         }
       ],
-      "pickupItems": [],
-      "scriptedGives": [],
-      "image": "VerdanturfTown_Mart",
-      "trainerRefs": []
+      "image": "VerdanturfTown_Mart"
     }
   ],
   "MAP_VICTORY_ROAD": [
@@ -12343,7 +11906,6 @@
       "thisLevelsId": "MAP_VICTORY_ROAD_1F",
       "baseMap": "MAP_VICTORY_ROAD",
       "levelLabel": "1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -12609,7 +12171,6 @@
       "thisLevelsId": "MAP_VICTORY_ROAD_B1F",
       "baseMap": "MAP_VICTORY_ROAD",
       "levelLabel": "B 1F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -12676,7 +12237,6 @@
       "thisLevelsId": "MAP_VICTORY_ROAD_B2F",
       "baseMap": "MAP_VICTORY_ROAD",
       "levelLabel": "B 2F",
-      "shopItems": [],
       "pickupItems": [
         {
           "coords": [
@@ -12703,7 +12263,6 @@
           "type": "hidden_item"
         }
       ],
-      "scriptedGives": [],
       "image": "VictoryRoad_B2F",
       "trainerRefs": [
         {

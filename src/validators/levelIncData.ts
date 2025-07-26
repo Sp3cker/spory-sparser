@@ -23,7 +23,7 @@ export const IncItemEntrySchema = z.object({
 export const IncPokemonEntrySchema = z.object({
   species: z.string(),
   level: z.number(),
-  isRandom: z.boolean(), // if `givemonrandom`
+  isRandom: z.boolean().optional(), // if `givemonrandom`
 });
 /** All events that happen in an inc file. */
 export const AllIncEventsSchema = z.object({

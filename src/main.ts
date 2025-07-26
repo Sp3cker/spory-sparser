@@ -169,6 +169,28 @@ const mergeDataByLevelsID = async ({
 
       return result;
     })
+    .map((r) => {
+      if (!r) return r;
+      
+      // Remove empty array properties by creating new object without them
+      const cleaned: any = { ...r };
+      if (cleaned.shopItems && cleaned.shopItems.length === 0) {
+        delete cleaned.shopItems;
+      }
+      if (cleaned.pickupItems && cleaned.pickupItems.length === 0) {
+        delete cleaned.pickupItems;
+      }
+      if (cleaned.scriptedGives && cleaned.scriptedGives.length === 0) {
+        delete cleaned.scriptedGives;
+      }
+      if (cleaned.trainers && cleaned.trainers.length === 0) {
+        delete cleaned.trainers;
+      }
+      if (cleaned.trainerRefs && cleaned.trainerRefs.length === 0) {
+        delete cleaned.trainerRefs;
+      }
+      return cleaned;
+    })
     .filter(Boolean) as MergedData[]; // Filter out null entries
 
   // Make this a dictionary with keys of baseMaps
