@@ -1228,7 +1228,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "Trade for Red Shard",
+          "explanation": "Trade for Red Shard (random species)",
           "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_GiveFireEgg::"
         },
         {
@@ -1272,7 +1272,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "Trade for Blue Shard",
+          "explanation": "Trade for Blue Shard (random species)",
           "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_GiveWaterEgg::"
         },
         {
@@ -1316,7 +1316,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "Trade for Green Shard",
+          "explanation": "Trade for Green Shard (random egg)",
           "scriptName": "FallarborTown_MoveRelearnersHouse_EventScript_GiveGrassEgg::"
         }
       ],
@@ -4335,7 +4335,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "Speak to egg man",
+          "explanation": "Speak to egg man for a random egg!",
           "scriptName": "OldaleTown_PokemonCenter_1F_EventScript_EggMan::"
         }
       ],
@@ -4443,7 +4443,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "Speak to egg man in Pokémon Center",
+          "explanation": "Speak to egg man in Pokémon Center. Species is random.",
           "scriptName": "PacifidlogTown_PokemonCenter_1F_EventScript_EggMan_1:"
         }
       ],
@@ -5841,7 +5841,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "Defeat trainers in Seashore House",
+          "explanation": "Defeat trainers in Seashore House (difficulty dictates species)",
           "scriptName": "Route109_SeashoreHouse_EventScript_DefeatedTrainers::"
         }
       ],
@@ -11555,7 +11555,7 @@
               "level": 70
             }
           ],
-          "explanation": "Challenge Groudon",
+          "explanation": "After Elite Four, find Terra Cave, Route 114, Route 115, Route 116, or Route 118",
           "scriptName": "TerraCave_End_EventScript_Groudon::"
         }
       ],

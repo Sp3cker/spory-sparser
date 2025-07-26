@@ -211,9 +211,7 @@ export class IncScriptEvent {
   }
   explanationWithNoEvents(): boolean {
     const notNothing =
-      this.items.length > 0 ||
-      this.pokemon.length > 0 ||
-      this.wildMon.length > 0;
+      this.items.length > 0 || this.pokemon.length > 0 || this.wildMon.length > 0;
     // if no items but still an explanation, fuck
     if (!notNothing && this.explanation.length > 0) {
       throw new Error("Explanation for nothing: " + this.scriptName);
@@ -228,9 +226,7 @@ export class IncScriptEvent {
   }
   hasContent(): boolean {
     return (
-      this.items.length > 0 ||
-      this.pokemon.length > 0 ||
-      this.wildMon.length > 0
+      this.items.length > 0 || this.pokemon.length > 0 || this.wildMon.length > 0
     );
   }
 }
@@ -360,7 +356,8 @@ export function parseScriptedEvents(content: string) {
       }
     }
     if (giveevent.scriptName.includes("SeashoreHouse")) {
-      giveevent.explanation = "Defeat trainers in Seashore House";
+      giveevent.explanation =
+        "Defeat trainers in Seashore House (difficulty dictates species)";
     }
     if (
       giveevent.scriptName.includes("Route123_BerryMastersHouse_EventScript_")
@@ -386,8 +383,7 @@ export function parseScriptedEvents(content: string) {
             (item) => item.name === newItem.name
           );
           if (existingItemIndex !== -1) {
-            existingScript.items[existingItemIndex].quantity +=
-              newItem.quantity;
+            existingScript.items[existingItemIndex].quantity += newItem.quantity;
           } else {
             existingScript.items.push(newItem);
           }

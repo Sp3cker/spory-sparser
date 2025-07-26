@@ -495,7 +495,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_18:
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_19:
 @explanation Defeat Seashore House trainers (at different difficulties)
-@explanation Defeat trainers in Seashore House
+
 # 214 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_AERODACTYL
 # 215 "data/maps/Route109_SeashoreHouse/scripts.pory"

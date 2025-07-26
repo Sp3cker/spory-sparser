@@ -54,7 +54,7 @@ TerraCave_End_EventScript_ShowGroudon::
 
 # 28 "data/maps/TerraCave_End/scripts.pory"
 TerraCave_End_EventScript_Groudon::
-@explanation Challenge Groudon
+@explanation After Elite Four, find Terra Cave, Route 114, Route 115, Route 116, or Route 118
 # 29 "data/maps/TerraCave_End/scripts.pory"
 	lockall
 # 30 "data/maps/TerraCave_End/scripts.pory"

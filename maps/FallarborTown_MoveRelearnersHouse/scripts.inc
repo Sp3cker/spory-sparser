@@ -438,7 +438,7 @@ FallarborTown_MoveRelearnersHouse_EventScript_StarterEggGive_11:
 
 
 FallarborTown_MoveRelearnersHouse_EventScript_GiveFireEgg::
-@explanation Trade for Red Shard
+@explanation Trade for Red Shard (random species)
 # 229 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 	checkitem ITEM_RED_SHARD
 # 230 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
@@ -467,7 +467,7 @@ FallarborTown_MoveRelearnersHouse_EventScript_GiveFireEgg::
 
 
 FallarborTown_MoveRelearnersHouse_EventScript_GiveWaterEgg::
-@explanation Trade for Blue Shard
+@explanation Trade for Blue Shard (random species)
 # 245 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 	checkitem ITEM_BLUE_SHARD
 # 246 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
@@ -496,7 +496,7 @@ FallarborTown_MoveRelearnersHouse_EventScript_GiveWaterEgg::
 
 
 FallarborTown_MoveRelearnersHouse_EventScript_GiveGrassEgg::
-@explanation Trade for Green Shard
+@explanation Trade for Green Shard (random egg)
 # 261 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 	checkitem ITEM_GREEN_SHARD
 # 262 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
