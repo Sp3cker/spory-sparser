@@ -125,13 +125,12 @@ export class IncScriptEvent {
     } else if (dynMultiSpeciesMatch) {
       const species = dynMultiSpeciesMatch[1];
       const alreadyExists = this.pokemon.some(
-        (p) => p.species === species && p.level === 0 && p.isRandom === false
+        (p) => p.species === species && p.level === 1 && p.isRandom === false
       );
       if (!alreadyExists) {
         this.pokemon.push({
           species: species,
-          level: 0, // Level not specified in dynmultipush
-          isRandom: false,
+          level: 1, // Level not specified in dynmultipush
         });
       }
     }

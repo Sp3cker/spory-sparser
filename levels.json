@@ -3243,43 +3243,35 @@
           "pokemon": [
             {
               "species": "SPECIES_PIKACHU_COSPLAY",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_PIKACHU_ROCK_STAR",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_PIKACHU_BELLE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_PIKACHU_POP_STAR",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_PIKACHU_PHD",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_PIKACHU_LIBRE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_PIKACHU_SURFING",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_PIKACHU_FLYING",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             }
           ],
           "wildMon": [],
@@ -10498,53 +10490,43 @@
           "pokemon": [
             {
               "species": "SPECIES_GREAT_TUSK",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_SCREAM_TAIL",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_BRUTE_BONNET",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_FLUTTER_MANE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_SLITHER_WING",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_SANDY_SHOCKS",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_ROARING_MOON",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_WALKING_WAKE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_GOUGING_FIRE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_RAGING_BOLT",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             }
           ],
           "wildMon": [],
@@ -10556,53 +10538,43 @@
           "pokemon": [
             {
               "species": "SPECIES_IRON_TREADS",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_BUNDLE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_HANDS",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_JUGULIS",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_MOTH",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_THORNS",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_VALIANT",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_LEAVES",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_BOULDER",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_CROWN",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             }
           ],
           "wildMon": [],
@@ -10614,48 +10586,39 @@
           "pokemon": [
             {
               "species": "SPECIES_NIHILEGO",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_GUZZLORD",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_XURKITREE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_BUZZWOLE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_BLACEPHALON",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_STAKATAKA",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_POIPOLE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_PHEROMOSA",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_CELESTEELA",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             }
           ],
           "wildMon": [],
@@ -11974,148 +11937,119 @@
           "pokemon": [
             {
               "species": "SPECIES_GREAT_TUSK",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_SCREAM_TAIL",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_BRUTE_BONNET",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_FLUTTER_MANE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_SLITHER_WING",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_SANDY_SHOCKS",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_ROARING_MOON",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_WALKING_WAKE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_GOUGING_FIRE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_RAGING_BOLT",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_TREADS",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_BUNDLE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_HANDS",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_JUGULIS",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_MOTH",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_THORNS",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_VALIANT",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_LEAVES",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_BOULDER",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_IRON_CROWN",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_NIHILEGO",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_GUZZLORD",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_XURKITREE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_BUZZWOLE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_BLACEPHALON",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_STAKATAKA",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_POIPOLE",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_PHEROMOSA",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             },
             {
               "species": "SPECIES_CELESTEELA",
-              "level": 0,
-              "isRandom": false
+              "level": 1
             }
           ],
           "wildMon": [],
