@@ -639,6 +639,7 @@ VictoryRoad_1F_EventScript_ChooseRoom_11:
 
 
 VictoryRoad_1F_EventScript_EntranceRoom::
+@explanation Select a Paradox Pokémon to fight
 # 338 "data/maps/VictoryRoad_1F/scripts.pory"
 	msgbox VictoryRoad_1F_Text_WhichPokemon, MSGBOX_DEFAULT
 # 340 "data/maps/VictoryRoad_1F/scripts.pory"
@@ -682,6 +683,7 @@ VictoryRoad_1F_EventScript_EntranceRoom_2:
 
 
 VictoryRoad_1F_EventScript_InnerRoom::
+@explanation Select a Paradox Pokémon to fight
 # 369 "data/maps/VictoryRoad_1F/scripts.pory"
 	msgbox VictoryRoad_1F_Text_WhichPokemon, MSGBOX_DEFAULT
 # 371 "data/maps/VictoryRoad_1F/scripts.pory"

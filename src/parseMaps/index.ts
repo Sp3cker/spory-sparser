@@ -12,36 +12,15 @@ import {
   IncWildMon,
 } from "../validators/levelIncData.js";
 import { baseMapisizeMiscScripts } from "./baseMapisizeMiscScripts.ts";
-// import { parseWildMon } from "./baseInc.ts";
-
+/** In this file we orchestrate parsing of the configured `maps` directory
+ * and the `miscScripts` directory.
+ *
+ * The helper function `getMapJsonId parses `levels.json` file to get the level ids.
+ */
 export const processIncFile = async (incFileContent: string) => {
   try {
     const scriptedGiveEvents = parseScriptedEvents(incFileContent);
     const trainerBattles = parseTrainerBattles(incFileContent);
-
-    // Post-process the Pikachu man
-    const pikachuSection = scriptedGiveEvents.find(
-      (section) =>
-        section.scriptName ===
-        "MauvilleCity_PokemonCenter_1F_EventScript_CostumePikachuGive"
-    );
-    if (pikachuSection) {
-      const species = [
-        "SPECIES_PIKACHU_COSPLAY",
-        "SPECIES_PIKACHU_ROCK_STAR",
-        "SPECIES_PIKACHU_BELLE",
-        "SPECIES_PIKACHU_POP_STAR",
-        "SPECIES_PIKACHU_PHD",
-        "SPECIES_PIKACHU_LIBRE",
-        "SPECIES_PIKACHU_SURFING",
-        "SPECIES_PIKACHU_FLYING",
-      ];
-      pikachuSection.pokemon = species.map((p) => ({
-        species: p,
-        level: 5,
-        isRandom: true,
-      }));
-    }
 
     IncDataSchema.parse({
       scriptedGives: scriptedGiveEvents,
@@ -53,7 +32,9 @@ export const processIncFile = async (incFileContent: string) => {
     };
   } catch (error) {
     throw new Error(
-      `Error processing file ${incFileContent.slice(30)}: ${error}`
+      `Error processing file ${incFileContent.slice(
+        incFileContent.length - 30
+      )}: ${error}`
     );
   }
 };
@@ -125,8 +106,8 @@ export async function findGiveItemsByLevel(
   mapsPath: string,
   miscScriptsPath?: string
 ): Promise<LevelIncData[]> {
-  const folders = readdirSync(mapsPath, { withFileTypes: true }).filter((entry) =>
-    entry.isDirectory()
+  const folders = readdirSync(mapsPath, { withFileTypes: true }).filter(
+    (entry) => entry.isDirectory()
   );
   const mapLevels = await processMapsDirectory(mapsPath, folders);
 

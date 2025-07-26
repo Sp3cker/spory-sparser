@@ -174,6 +174,7 @@ MossdeepCity_StevensHouse_EventScript_LeaveMeltan::
 
 # 87 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 MossdeepCity_StevensHouse_EventScript_GiveMeltan::
+@explanation Gift from Steven
 # 88 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELTAN
 # 89 "data/maps/MossdeepCity_StevensHouse/scripts.pory"

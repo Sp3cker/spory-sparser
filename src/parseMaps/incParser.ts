@@ -98,11 +98,7 @@ export class IncScriptEvent {
         (p) =>
           p.species === species && p.level === level && p.isRandom === isRandom
       );
-      if (species.includes("VAR_") || species.includes("VAR_RESULT")) {
-        console.warn(
-          `[incParser] variable species: ${species} in script ${this.scriptName}`
-        );
-      }
+
       if (!alreadyExists) {
         this.pokemon.push({
           species: species,
@@ -200,8 +196,7 @@ export class IncScriptEvent {
       (pokemon) => !varPattern.test(pokemon.species)
     );
   }
-
-  hasContent(): boolean {
+  explanationWithNoEvents(): boolean {
     const notNothing =
       this.items.length > 0 ||
       this.pokemon.length > 0 ||
@@ -211,6 +206,19 @@ export class IncScriptEvent {
       throw new Error("Explanation for nothing: " + this.scriptName);
     }
     return notNothing;
+  }
+  eventsWithNoExplanation(): void {
+    if (this.explanation.length === 0 && this.hasContent()) {
+      console.error("Event with no explanation: " + this.scriptName);
+      throw new Error();
+    }
+  }
+  hasContent(): boolean {
+    return (
+      this.items.length > 0 ||
+      this.pokemon.length > 0 ||
+      this.wildMon.length > 0
+    );
   }
 }
 
@@ -282,44 +290,49 @@ export function parseScriptedEvents(content: string) {
   // console.log("[incParser] Starting to parse .inc content");
 
   const scriptBlocks = extractIncScriptBlocks(content);
+  const filteredScripts = scriptBlocks.filter(
+    (rawScriptBlock: { name: string }) => {
+      if (notneededLabels.includes(rawScriptBlock.name)) {
+        return false;
+      }
+      return true;
+    }
+  );
   // console.log(`[incParser] Found ${sections.length} script sections`);
 
   const results: IncScriptEvent[] = [];
 
-  for (const block of scriptBlocks) {
+  for (const block of filteredScripts) {
     const event = new IncScriptEvent(block.name);
     event.parseFromContent(block.content);
     IncScriptedEventSchema.parse(event); // Validate the event structure
     if (event.scriptName.includes("BerryGentleman")) {
       event.items = [{ name: "ITEM_NONE", quantity: 1 }];
     }
-    if (event.items.some((item) => item.name.includes("VAR_"))) {
-      return; // Skip scripts with VAR_ items
-    }
+    // kill ourselves if we have an explanation but no events
+    // Just keeps things cleaner ya know
+    event.explanationWithNoEvents();
+    event.eventsWithNoExplanation();
     // Only include sections that have give events
     if (event.hasContent()) {
       results.push(event);
     }
   }
-  const neededScripts = results.filter((section: IncScriptEvent) => {
-    return notneededLabels.includes(section.scriptName) === false;
-  });
-  // Remove the first bit of scropt name before first underscore (?)
-  // for (const script of neededScripts) {
-  //   try {
-  //     const splitScriptName = script.scriptName.split("_");
-  //     if (splitScriptName[1]) {
-  //       script.scriptName = prettifyLabel(splitScriptName[1]);
-  //     } else {
-  //       script.scriptName = splitScriptName[0];
-  //       // .replace(/([A-Z])(?=[A-Z\\d])/g, " $1")
-  //       // .trim()
-  //       // .replace(/\\b\\w/g, (char: string) => char.toUpperCase()); // Added type for char
-  //     }
-  //   } catch (err) {
-  //     console.error(`Error processing script name ${script.scriptName}:`, err);
-  //   }
-  // }
+
+  // Loop over for any `VAR` species
+  for (const script of results) {
+    for (const pokemon of script.pokemon) {
+      if (
+        pokemon.species.includes("VAR_") ||
+        pokemon.species.includes("VAR_RESULT")
+      ) {
+        console.warn(
+          `[incParser] variable species: ${pokemon.species} in script ${script.scriptName}
+          Review and add to "unneededLabels" in removeSimilarLocations.ts`
+        );
+      }
+    }
+  }
 
   // We have to map over the ScriptedEvents
   // and assign an explanation to
@@ -327,7 +340,7 @@ export function parseScriptedEvents(content: string) {
   // because Birch's Lab has so many
   // dynmultipushes in DIFFERENT SCRIPTS
 
-  for (const giveevent of neededScripts) {
+  for (const giveevent of results) {
     if (giveevent.scriptName.includes("NewBirchsLab_EventScript_Birch_")) {
       if (!giveevent.explanation) {
         giveevent.explanation = "Choose a starter";
@@ -341,15 +354,15 @@ export function parseScriptedEvents(content: string) {
     ) {
       giveevent.explanation = "Talk to the Berry Master";
     }
-    if (giveevent.explanation) {
-      continue;
-    }
+    // if (giveevent.explanation) {
+    //   continue;
+    // }
   }
 
   const groupedByExplanation = new Map<string, IncScriptEvent>();
   const scriptsWithoutExplanation: IncScriptEvent[] = [];
   /** Group scripts by explanation to merge give events with the same explainer tag */
-  for (const script of neededScripts) {
+  for (const script of results) {
     if (script.explanation) {
       const existingScript = groupedByExplanation.get(script.explanation);
       if (existingScript) {

@@ -85,6 +85,7 @@ MossdeepCity_StevensHouse_EventScript_LeaveMeltan::
 	end
 
 MossdeepCity_StevensHouse_EventScript_GiveMeltan::
+@explanation Gift from Steven
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELTAN
 	givemonrandom SPECIES_MELTAN, 5
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, MossdeepCity_StevensHouse_EventScript_SendMeltanParty

@@ -268,6 +268,7 @@ Route109_SeashoreHouse_EventScript_AlreadyGaveIntroduction::
 
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers::
+@explanation Defeat all three Seashore House trainers
 # 142 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_LEAVING_HOT_HOUSE, 1
 # 143 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -321,6 +322,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers::
 # 220 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_TYROGUE
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_1:
+
 # 223 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Route109_SeashoreHouse_EventScript_ReceiveRewardParty
 # 224 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -332,6 +334,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_1:
 	end
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_3:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 150 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TYROGUE
 # 151 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -341,6 +344,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_3:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_4:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 154 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PANSAGE
 # 155 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -350,6 +354,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_4:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_5:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 158 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PANPOUR
 # 159 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -359,6 +364,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_5:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_6:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 162 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PANSEAR
 # 163 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -368,6 +374,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_6:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_7:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 166 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MISDREAVUS
 # 167 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -377,6 +384,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_7:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_8:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 170 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PINSIR
 # 171 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -386,6 +394,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_8:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_9:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 174 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_HERACROSS
 # 175 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -395,6 +404,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_9:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_10:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 178 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SCYTHER
 # 179 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -404,6 +414,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_10:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_11:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 182 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_EEVEE
 # 183 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -413,6 +424,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_11:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_12:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 186 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MAGBY
 # 187 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -422,6 +434,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_12:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_13:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 190 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_ELEKID
 # 191 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -431,6 +444,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_13:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_14:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 194 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SMOOCHUM
 # 195 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -440,6 +454,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_14:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_15:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 198 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_RIOLU
 # 199 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -449,6 +464,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_15:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_16:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 202 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOGEPI
 # 203 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -458,6 +474,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_16:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_17:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 206 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TYPE_NULL
 # 207 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -467,6 +484,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_17:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_18:
+@explanation Defeat Seashore House trainers (at different difficulties)
 # 210 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHARCADET
 # 211 "data/maps/Route109_SeashoreHouse/scripts.pory"
@@ -476,6 +494,7 @@ Route109_SeashoreHouse_EventScript_DefeatedTrainers_18:
 	goto Route109_SeashoreHouse_EventScript_DefeatedTrainers_1
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers_19:
+@explanation Defeat Seashore House trainers (at different difficulties)
 @explanation Defeat trainers in Seashore House
 # 214 "data/maps/Route109_SeashoreHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_AERODACTYL

@@ -727,6 +727,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_TakeYourTime::
 
 # 364 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil::
+@explanation Reward for completing Hoenn Dex (choose one!)
 # 365 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_CYNDAQUIL
 # 366 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
@@ -809,6 +810,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedCyndaquil::
 
 # 405 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodile::
+@explanation Reward for completing Hoenn Dex (choose one!)
 # 406 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_TOTODILE
 # 407 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
@@ -891,6 +893,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedTotodile::
 
 # 446 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikorita::
+@explanation Reward for completing Hoenn Dex (choose one!)
 # 447 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_CHIKORITA
 # 448 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"

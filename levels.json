@@ -2659,6 +2659,29 @@
           "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveBirthIslandTicket::"
         },
         {
+          "items": [],
+          "pokemon": [
+            {
+              "species": "SPECIES_CYNDAQUIL",
+              "level": 5,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_TOTODILE",
+              "level": 5,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_CHIKORITA",
+              "level": 5,
+              "isRandom": false
+            }
+          ],
+          "wildMon": [],
+          "explanation": "Reward for completing Hoenn Dex (choose one!)",
+          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil::"
+        },
+        {
           "items": [
             {
               "name": "ITEM_QUICK_BALL",
@@ -2785,45 +2808,6 @@
           "wildMon": [],
           "explanation": "Recieved from May after receiving Pokédex",
           "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls::"
-        },
-        {
-          "items": [],
-          "pokemon": [
-            {
-              "species": "SPECIES_CYNDAQUIL",
-              "level": 5,
-              "isRandom": false
-            }
-          ],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil::"
-        },
-        {
-          "items": [],
-          "pokemon": [
-            {
-              "species": "SPECIES_TOTODILE",
-              "level": 5,
-              "isRandom": false
-            }
-          ],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodile::"
-        },
-        {
-          "items": [],
-          "pokemon": [
-            {
-              "species": "SPECIES_CHIKORITA",
-              "level": 5,
-              "isRandom": false
-            }
-          ],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikorita::"
         }
       ],
       "image": "LittlerootTown_ProfessorBirchsLab",
@@ -3671,7 +3655,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Defeat Suneal",
           "scriptName": "MossdeepCity_BetaTesterHouse_EventScript_SunealGiveDarkrai::"
         },
         {
@@ -3684,7 +3668,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Defeat DollaMike",
           "scriptName": "MossdeepCity_BetaTesterHouse_EventScript_DollaMikeGiveVictini::"
         }
       ],
@@ -3926,7 +3910,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Gift from Steven",
           "scriptName": "MossdeepCity_StevensHouse_EventScript_GiveMeltan::"
         }
       ],
@@ -9101,45 +9085,6 @@
           "rematch": true
         }
       ]
-    },
-    {
-      "thisLevelsId": "MAP_ROUTE123_BERRY_MASTERS_HOUSE",
-      "baseMap": "MAP_ROUTE123",
-      "levelLabel": "Berrymastershouse",
-      "shopItems": [],
-      "pickupItems": [],
-      "scriptedGives": [
-        {
-          "items": [
-            {
-              "name": "ITEM_SPELON_BERRY",
-              "quantity": 1
-            },
-            {
-              "name": "ITEM_PAMTRE_BERRY",
-              "quantity": 1
-            },
-            {
-              "name": "ITEM_WATMEL_BERRY",
-              "quantity": 1
-            },
-            {
-              "name": "ITEM_DURIN_BERRY",
-              "quantity": 1
-            },
-            {
-              "name": "ITEM_BELUE_BERRY",
-              "quantity": 1
-            }
-          ],
-          "pokemon": [],
-          "wildMon": [],
-          "explanation": "Talk to the Berry Master",
-          "scriptName": "Route123_BerryMastersHouse_EventScript_GiveSpelonBerry::"
-        }
-      ],
-      "image": "Route123_BerryMastersHouse",
-      "trainerRefs": []
     }
   ],
   "MAP_ROUTE124": [
@@ -11063,19 +11008,6 @@
           "wildMon": [],
           "explanation": "Select an Ultra Beast to fight",
           "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_StairsRoom::"
-        },
-        {
-          "items": [],
-          "pokemon": [],
-          "wildMon": [
-            {
-              "script": "ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon_1:",
-              "species": "VAR_0x8005",
-              "level": 50
-            }
-          ],
-          "explanation": "",
-          "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon_1:"
         }
       ],
       "image": "ShoalCave_LowTideLowerRoom",
@@ -12479,59 +12411,6 @@
           "items": [],
           "pokemon": [
             {
-              "species": "SPECIES_NIHILEGO",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_GUZZLORD",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_XURKITREE",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_BUZZWOLE",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_BLACEPHALON",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_STAKATAKA",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_POIPOLE",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_PHEROMOSA",
-              "level": 0,
-              "isRandom": false
-            },
-            {
-              "species": "SPECIES_CELESTEELA",
-              "level": 0,
-              "isRandom": false
-            }
-          ],
-          "wildMon": [],
-          "explanation": "Select a Paradox Pokémon to fight",
-          "scriptName": "VictoryRoad_1F_EventScript_StairsRoom::"
-        },
-        {
-          "items": [],
-          "pokemon": [
-            {
               "species": "SPECIES_GREAT_TUSK",
               "level": 0,
               "isRandom": false
@@ -12580,15 +12459,7 @@
               "species": "SPECIES_RAGING_BOLT",
               "level": 0,
               "isRandom": false
-            }
-          ],
-          "wildMon": [],
-          "explanation": "",
-          "scriptName": "VictoryRoad_1F_EventScript_EntranceRoom::"
-        },
-        {
-          "items": [],
-          "pokemon": [
+            },
             {
               "species": "SPECIES_IRON_TREADS",
               "level": 0,
@@ -12638,24 +12509,56 @@
               "species": "SPECIES_IRON_CROWN",
               "level": 0,
               "isRandom": false
+            },
+            {
+              "species": "SPECIES_NIHILEGO",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_GUZZLORD",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_XURKITREE",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_BUZZWOLE",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_BLACEPHALON",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_STAKATAKA",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_POIPOLE",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_PHEROMOSA",
+              "level": 0,
+              "isRandom": false
+            },
+            {
+              "species": "SPECIES_CELESTEELA",
+              "level": 0,
+              "isRandom": false
             }
           ],
           "wildMon": [],
-          "explanation": "",
-          "scriptName": "VictoryRoad_1F_EventScript_InnerRoom::"
-        },
-        {
-          "items": [],
-          "pokemon": [],
-          "wildMon": [
-            {
-              "script": "VictoryRoad_1F_EventScript_ConfirmAndUseSummon_1:",
-              "species": "VAR_0x8005",
-              "level": 50
-            }
-          ],
-          "explanation": "",
-          "scriptName": "VictoryRoad_1F_EventScript_ConfirmAndUseSummon_1:"
+          "explanation": "Select a Paradox Pokémon to fight",
+          "scriptName": "VictoryRoad_1F_EventScript_EntranceRoom::"
         }
       ],
       "image": "VictoryRoad_1F",
