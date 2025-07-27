@@ -11,6 +11,7 @@ export const TrainerStructSchema = z
     aiFlags: z.array(z.string()).optional(),
     boss: z.boolean().optional(),
     youPicked: z.string().optional(),
+    additionalProperties: z.array(z.string()).optional(),
   })
   .catchall(z.any());
 

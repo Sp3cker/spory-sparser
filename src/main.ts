@@ -5,6 +5,7 @@ import { findMartSectionsByLevel, Mart, MartEntry } from "./parseMarts.ts";
 import { findGiveItemsByLevel, LevelIncData } from "./parseMaps/index.ts";
 import { main } from "./parseMapEvents.ts";
 // import { extractTrainerParties } from "./parseMaps/Trainers/extractTrainerPartiesfromHeaderFile.ts";
+// import { mergeAdditionalParties } from "./parseMaps/Trainers/mergeAdditionalParties.ts";
 import { extractTrainers } from "./parseMaps/Trainers/extractTrainersFromHeaderFile.ts";
 
 import { MapEventPlace, TrainerStruct } from "./validators/index.ts";
@@ -171,7 +172,7 @@ const mergeDataByLevelsID = async ({
     })
     .map((r) => {
       if (!r) return r;
-      
+
       // Remove empty array properties by creating new object without them
       const cleaned: any = { ...r };
       if (cleaned.shopItems && cleaned.shopItems.length === 0) {

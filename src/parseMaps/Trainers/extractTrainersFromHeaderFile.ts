@@ -52,7 +52,17 @@ function parseTrainerEntry(
     const realItems = items.filter((it) => it !== "ITEM_NONE");
     if (realItems.length) rec.items = realItems;
   }
-
+  const additionalPartiesMatch = entry.match(
+    /\.additionalParties\s*=\s*\{([^}]*)\}/m
+  );
+  if (additionalPartiesMatch) {
+    const addParties = additionalPartiesMatch[1]
+      .split(",")
+      .map((p) => p.trim())
+      .filter(Boolean)
+      .sort();
+    if (addParties.length) rec.additionalParties = addParties;
+  }
   // boolean/dword fields we simply regex generically
   // isBossTrainer doesnt mean anything.
   const simpleFields = ["doubleBattle", "aiFlags"];
@@ -142,6 +152,12 @@ export function extractTrainers(
           if (!record) break;
           if (partySymbol && parties![partySymbol]) {
             record.party = parties![partySymbol];
+            if (record.additionalParties) {
+              // If the trainer has additional parties, merge them
+              record.additionalParties = [
+                ...record.additionalParties.map((p: string) => parties[p]),
+              ];
+            }
           }
           if (partySymbol && !parties![partySymbol]) {
             // Skip trainer if no party found

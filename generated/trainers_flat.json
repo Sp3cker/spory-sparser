@@ -2576,6 +2576,591 @@
     "id": "TRAINER_BRIAN",
     "battlePic": "guitarist.webp",
     "trainerName": "Brian",
+    "additionalParties": [
+      [
+        {
+          "lvl": 201,
+          "id": 214,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            62
+          ],
+          "item": "Flame Orb",
+          "moves": [
+            182,
+            157,
+            280,
+            810
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 201,
+          "id": 618,
+          "iv": true,
+          "nature": "sassy",
+          "ability": [
+            11
+          ],
+          "item": "Shuca Berry",
+          "moves": [
+            435,
+            426,
+            157,
+            318
+          ],
+          "ev": [
+            252,
+            0,
+            0,
+            6,
+            252,
+            0
+          ]
+        },
+        {
+          "lvl": 201,
+          "id": 184,
+          "iv": true,
+          "nature": "adamant",
+          "ability": [
+            37
+          ],
+          "item": "Mystic Water",
+          "moves": [
+            401,
+            583,
+            453,
+            8
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        }
+      ],
+      [
+        {
+          "lvl": 200,
+          "id": 469,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            3
+          ],
+          "item": "Life Orb",
+          "moves": [
+            403,
+            405,
+            94,
+            197
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 134,
+          "iv": true,
+          "nature": "calm",
+          "ability": [
+            11
+          ],
+          "item": "Leftovers",
+          "moves": [
+            503,
+            58,
+            247,
+            281
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 154,
+          "iv": true,
+          "nature": "modest",
+          "ability": [
+            205
+          ],
+          "item": "Big Root",
+          "moves": [
+            202,
+            577,
+            246,
+            235
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 257,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            311
+          ],
+          "item": "Blazikenite",
+          "moves": [
+            751,
+            299,
+            282,
+            612
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        }
+      ],
+      [
+        {
+          "lvl": 200,
+          "id": 143,
+          "iv": true,
+          "nature": "impish",
+          "ability": [
+            47
+          ],
+          "item": "Focus Sash",
+          "moves": [
+            242,
+            387
+          ],
+          "ev": [
+            6,
+            252,
+            252,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 576,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            23
+          ],
+          "item": "Choice Scarf",
+          "moves": [
+            94,
+            85,
+            247,
+            237
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 286,
+          "iv": true,
+          "nature": "impish",
+          "ability": [
+            90
+          ],
+          "item": "Leftovers",
+          "moves": [
+            164,
+            147,
+            264,
+            157
+          ],
+          "ev": [
+            6,
+            252,
+            252,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 468,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            32
+          ],
+          "item": "King's Rock",
+          "moves": [
+            403,
+            585,
+            326,
+            53
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 208,
+          "iv": true,
+          "nature": "brave",
+          "ability": [
+            69
+          ],
+          "item": "Steelixite",
+          "moves": [
+            787,
+            174,
+            89,
+            444
+          ],
+          "ev": [
+            6,
+            252,
+            252,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            225
+          ],
+          "item": "Dark Memory",
+          "moves": [
+            672,
+            660,
+            157,
+            575
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            225
+          ],
+          "item": "Flying Memory",
+          "moves": [
+            403,
+            366,
+            247,
+            237
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            225
+          ],
+          "item": "Ground Memory",
+          "moves": [
+            672,
+            404,
+            488,
+            14
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            225
+          ],
+          "item": "Grass Memory",
+          "moves": [
+            672,
+            369,
+            424,
+            423
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            225
+          ],
+          "item": "Ice Memory",
+          "moves": [
+            58,
+            85,
+            53,
+            57
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            225
+          ],
+          "item": "Life Orb",
+          "moves": [
+            672,
+            442,
+            337,
+            421
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        }
+      ],
+      [
+        {
+          "lvl": 200,
+          "id": 1381,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            195
+          ],
+          "item": "Focus Sash",
+          "moves": [
+            523,
+            570,
+            164
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 464,
+          "iv": true,
+          "nature": "adamant",
+          "ability": [
+            116
+          ],
+          "item": "WeaknssPolicy",
+          "moves": [
+            444,
+            359,
+            529,
+            525
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 1067,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            78
+          ],
+          "item": "Lum Berry",
+          "moves": [
+            403,
+            435,
+            247,
+            261
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 1357,
+          "iv": true,
+          "nature": "impish",
+          "ability": [
+            297
+          ],
+          "item": "Leftovers",
+          "moves": [
+            484,
+            704,
+            661,
+            489
+          ],
+          "ev": [
+            6,
+            252,
+            252,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 973,
+          "iv": true,
+          "nature": "brave",
+          "ability": [
+            31
+          ],
+          "item": "Thick Club",
+          "moves": [
+            257,
+            662,
+            155,
+            196
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            252,
+            0,
+            0
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 171,
+          "iv": true,
+          "nature": "bold",
+          "ability": [
+            10
+          ],
+          "item": "WeaknssPolicy",
+          "moves": [
+            570,
+            503,
+            605,
+            58
+          ],
+          "ev": [
+            6,
+            0,
+            252,
+            252,
+            0,
+            0
+          ]
+        }
+      ]
+    ],
     "doubleBattle": false,
     "aiFlags": [
       "CHECK_BAD_MOVE",
@@ -17380,6 +17965,594 @@
     "id": "TRAINER_DWAYNE",
     "battlePic": "sailor.webp",
     "trainerName": "Dwayne",
+    "additionalParties": [
+      [
+        {
+          "lvl": 201,
+          "id": 828,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            84
+          ],
+          "item": "Dark Gem",
+          "moves": [
+            399,
+            389,
+            447,
+            94
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 201,
+          "id": 845,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            241
+          ],
+          "item": "Sitrus Berry",
+          "moves": [
+            355,
+            57,
+            196,
+            403
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 201,
+          "id": 127,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            104
+          ],
+          "item": "Sitrus Berry",
+          "moves": [
+            404,
+            280,
+            157,
+            15
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        }
+      ],
+      [
+        {
+          "lvl": 200,
+          "id": 681,
+          "iv": true,
+          "nature": "bold",
+          "ability": [
+            176
+          ],
+          "item": "Leftovers",
+          "moves": [
+            430,
+            247,
+            92,
+            588
+          ],
+          "ev": [
+            252,
+            0,
+            0,
+            6,
+            252,
+            0
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 136,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            137
+          ],
+          "item": "Toxic Orb",
+          "moves": [
+            488,
+            221,
+            263,
+            488
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 1000,
+          "iv": true,
+          "nature": "adamant",
+          "ability": [
+            292
+          ],
+          "item": "White Herb",
+          "moves": [
+            534,
+            400,
+            533,
+            504
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 254,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            65
+          ],
+          "item": "Sceptilite",
+          "moves": [
+            530,
+            331,
+            317,
+            612
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        }
+      ],
+      [
+        {
+          "lvl": 200,
+          "id": 277,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            62
+          ],
+          "item": "Muscle Band",
+          "moves": [
+            211,
+            263,
+            742,
+            369
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 51,
+          "iv": true,
+          "nature": "adamant",
+          "ability": [
+            71
+          ],
+          "item": "Focus Sash",
+          "moves": [
+            89,
+            444,
+            389,
+            14
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 668,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            91
+          ],
+          "item": "Throat Spray",
+          "moves": [
+            304,
+            799,
+            399,
+            743
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 429,
+          "iv": true,
+          "nature": "modest",
+          "ability": [
+            26
+          ],
+          "item": "Life Orb",
+          "moves": [
+            605,
+            247,
+            94,
+            412
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 181,
+          "iv": true,
+          "nature": "modest",
+          "ability": [
+            57
+          ],
+          "item": "Ampharosite",
+          "moves": [
+            85,
+            406,
+            396,
+            97
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        }
+      ],
+      [
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "naive",
+          "ability": [
+            225
+          ],
+          "item": "Fire Memory",
+          "moves": [
+            672,
+            85,
+            57,
+            58
+          ],
+          "ev": [
+            0,
+            6,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            225
+          ],
+          "item": "Dragon Memory",
+          "moves": [
+            672,
+            442,
+            488,
+            14
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            225
+          ],
+          "item": "FightngMemory",
+          "moves": [
+            672,
+            404,
+            242,
+            157
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "hasty",
+          "ability": [
+            225
+          ],
+          "item": "Poison Memory",
+          "moves": [
+            672,
+            57,
+            242,
+            85
+          ],
+          "ev": [
+            0,
+            252,
+            0,
+            6,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "hasty",
+          "ability": [
+            225
+          ],
+          "item": "PsychicMemory",
+          "moves": [
+            672,
+            403,
+            404,
+            575
+          ],
+          "ev": [
+            0,
+            252,
+            0,
+            6,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "naive",
+          "ability": [
+            225
+          ],
+          "item": "Rock Memory",
+          "moves": [
+            672,
+            57,
+            53,
+            526
+          ],
+          "ev": [
+            0,
+            6,
+            0,
+            252,
+            0,
+            252
+          ]
+        }
+      ],
+      [
+        {
+          "lvl": 200,
+          "id": 598,
+          "iv": true,
+          "nature": "relaxed",
+          "ability": [
+            160
+          ],
+          "item": "Quick Claw",
+          "moves": [
+            360,
+            438,
+            446,
+            153
+          ],
+          "ev": [
+            252,
+            6,
+            252,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 1325,
+          "iv": true,
+          "nature": "adamant",
+          "ability": [
+            18
+          ],
+          "item": "Air Balloon",
+          "moves": [
+            817,
+            421,
+            370,
+            425
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 730,
+          "iv": true,
+          "nature": "modest",
+          "ability": [
+            204
+          ],
+          "item": "Throat Spray",
+          "moves": [
+            304,
+            585,
+            412,
+            94
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 202,
+          "iv": true,
+          "nature": "bold",
+          "ability": [
+            23
+          ],
+          "item": "Leftovers",
+          "moves": [
+            227,
+            68,
+            243,
+            194
+          ],
+          "ev": [
+            252,
+            0,
+            252,
+            6,
+            0,
+            0
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 620,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            144
+          ],
+          "item": "Life Orb",
+          "moves": [
+            398,
+            370,
+            282,
+            369
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 373,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            22
+          ],
+          "item": "Salamencite",
+          "moves": [
+            38,
+            442,
+            337,
+            349
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        }
+      ]
+    ],
     "doubleBattle": false,
     "aiFlags": [
       "CHECK_BAD_MOVE",
@@ -25015,6 +26188,594 @@
     "id": "TRAINER_JOHANNA",
     "battlePic": "beauty.webp",
     "trainerName": "Johanna",
+    "additionalParties": [
+      [
+        {
+          "lvl": 201,
+          "id": 59,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            22
+          ],
+          "item": "Muscle Band",
+          "moves": [
+            424,
+            245,
+            422,
+            242
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 201,
+          "id": 123,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            101
+          ],
+          "item": "Eviolite",
+          "moves": [
+            14,
+            332,
+            450,
+            249
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 201,
+          "id": 457,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            114
+          ],
+          "item": "Wise Glasses",
+          "moves": [
+            503,
+            62,
+            314,
+            466
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        }
+      ],
+      [
+        {
+          "lvl": 200,
+          "id": 1359,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            295
+          ],
+          "item": "Focus Sash",
+          "moves": [
+            446,
+            430,
+            482,
+            408
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 470,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            157
+          ],
+          "item": "Life Orb",
+          "moves": [
+            348,
+            404,
+            661,
+            14
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 1294,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            109
+          ],
+          "item": "Throat Spray",
+          "moves": [
+            799,
+            247,
+            304,
+            488
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 260,
+          "iv": true,
+          "nature": "adamant",
+          "ability": [
+            67
+          ],
+          "item": "Swampertite",
+          "moves": [
+            664,
+            89,
+            612,
+            419
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        }
+      ],
+      [
+        {
+          "lvl": 200,
+          "id": 703,
+          "iv": true,
+          "nature": "bold",
+          "ability": [
+            5
+          ],
+          "item": "Chesto Berry",
+          "moves": [
+            585,
+            704,
+            334,
+            156
+          ],
+          "ev": [
+            6,
+            0,
+            252,
+            252,
+            0,
+            0
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 462,
+          "iv": true,
+          "nature": "modest",
+          "ability": [
+            42
+          ],
+          "item": "Air Balloon",
+          "moves": [
+            85,
+            237,
+            430,
+            704
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 461,
+          "iv": true,
+          "nature": "adamant",
+          "ability": [
+            46
+          ],
+          "item": "Dark Gem",
+          "moves": [
+            228,
+            556,
+            67,
+            420
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 972,
+          "iv": true,
+          "nature": "adamant",
+          "ability": [
+            139
+          ],
+          "item": "Sitrus Berry",
+          "moves": [
+            655,
+            452,
+            263,
+            442
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 18,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            119
+          ],
+          "item": "Pidgeotite",
+          "moves": [
+            542,
+            257,
+            304,
+            411
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        }
+      ],
+      [
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            225
+          ],
+          "item": "Ghost Memory",
+          "moves": [
+            247,
+            161,
+            58,
+            575
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            225
+          ],
+          "item": "ElectrcMemory",
+          "moves": [
+            58,
+            85,
+            53,
+            57
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            225
+          ],
+          "item": "Water Memory",
+          "moves": [
+            672,
+            422,
+            488,
+            14
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            225
+          ],
+          "item": "Bug Memory",
+          "moves": [
+            672,
+            369,
+            424,
+            157
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            225
+          ],
+          "item": "Fairy Memory",
+          "moves": [
+            672,
+            424,
+            660,
+            14
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 773,
+          "iv": true,
+          "nature": "hasty",
+          "ability": [
+            225
+          ],
+          "item": "Steel Memory",
+          "moves": [
+            724,
+            153,
+            421,
+            575
+          ],
+          "ev": [
+            0,
+            6,
+            0,
+            252,
+            0,
+            252
+          ]
+        }
+      ],
+      [
+        {
+          "lvl": 200,
+          "id": 1352,
+          "iv": true,
+          "nature": "adamant",
+          "ability": [
+            278
+          ],
+          "item": "Choice Band",
+          "moves": [
+            785,
+            740,
+            370,
+            8
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 904,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            22
+          ],
+          "item": "Leftovers",
+          "moves": [
+            390,
+            114,
+            767,
+            638
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 596,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            14
+          ],
+          "item": "Focus Sash",
+          "moves": [
+            564,
+            87,
+            405,
+            202
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 1426,
+          "iv": true,
+          "nature": "modest",
+          "ability": [
+            144
+          ],
+          "item": "Assault Vest",
+          "moves": [
+            835,
+            412,
+            414,
+            237
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 1324,
+          "iv": true,
+          "nature": "timid",
+          "ability": [
+            178
+          ],
+          "item": "White Herb",
+          "moves": [
+            816,
+            396,
+            406,
+            473
+          ],
+          "ev": [
+            6,
+            0,
+            0,
+            252,
+            0,
+            252
+          ]
+        },
+        {
+          "lvl": 200,
+          "id": 248,
+          "iv": true,
+          "nature": "jolly",
+          "ability": [
+            45
+          ],
+          "item": "Tyranitarite",
+          "moves": [
+            157,
+            242,
+            89,
+            349
+          ],
+          "ev": [
+            6,
+            252,
+            0,
+            0,
+            0,
+            252
+          ]
+        }
+      ]
+    ],
     "doubleBattle": false,
     "aiFlags": [
       "CHECK_BAD_MOVE",

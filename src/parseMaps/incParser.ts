@@ -78,9 +78,9 @@ export class IncScriptEvent {
 
   private parseGiveMonLine(line: string): void {
     // Match: givemon SPECIES_NAME, level
-    // Match: givemonrandom SPECIES_NAME, level
+    // Match: givemonrandom SPECIES_NAME, level, isRandom
     const giveMonMatch = line.match(
-      /^\s*(givemon(?:random)?)\s+(\w+)\s*,\s*(\d+)/
+      /^\s*(givemon(?:random)?)\s+(\w+)\s*,\s*([^]+)$/
     );
 
     if (giveMonMatch) {
