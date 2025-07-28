@@ -124,7 +124,7 @@ ShoalCave_LowTideInnerRoom_EventScript_SetShoalItemMetatilesEnd::
 
 # 63 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 ShoalCave_LowTideInnerRoom_EventScript_ShoalShell1::
-@explanation Pickup from ground
+@explanation Pickup from ground in Low Tide Inner Room
 # 64 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	lockall
 # 65 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
@@ -157,7 +157,7 @@ ShoalCave_LowTideInnerRoom_EventScript_ReceivedShoalShell::
 
 # 79 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 ShoalCave_LowTideInnerRoom_EventScript_ShoalShell2::
-@explanation Pick up from ground
+@explanation Pick up from ground in Low Tide Inner Room
 # 80 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	lockall
 # 81 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
@@ -180,7 +180,7 @@ ShoalCave_LowTideInnerRoom_EventScript_ShoalShell2::
 
 # 90 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 ShoalCave_LowTideInnerRoom_EventScript_ShoalShell3::
-@explanation Pick up from ground
+@explanation Pick up from ground in Low Tide Inner Room
 # 91 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	lockall
 # 92 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
@@ -203,7 +203,7 @@ ShoalCave_LowTideInnerRoom_EventScript_ShoalShell3::
 
 # 101 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 ShoalCave_LowTideInnerRoom_EventScript_ShoalShell4::
-@explanation Pick up from ground
+@explanation Pick up from ground In Low Tide Inner Room
 # 102 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	lockall
 # 103 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
@@ -226,7 +226,7 @@ ShoalCave_LowTideInnerRoom_EventScript_ShoalShell4::
 
 # 112 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 ShoalCave_LowTideInnerRoom_EventScript_ShoalSalt1::
-@explanation Pick up from ground
+@explanation Pick up from ground in Low Tide Inner Room
 
 # 113 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	lockall
@@ -260,7 +260,7 @@ ShoalCave_LowTideInnerRoom_EventScript_ReceivedShoalSalt::
 
 # 128 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 ShoalCave_LowTideInnerRoom_EventScript_ShoalSalt2::
-@explanation Pick up from ground
+@explanation Pick up from ground in Low Tide Inner Room
 
 # 129 "data/maps/ShoalCave_LowTideInnerRoom/scripts.pory"
 	lockall

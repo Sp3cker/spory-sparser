@@ -31,6 +31,7 @@ export const notneededLabels = [
   "MauvilleCity_PokemonCenter_1F_EventScript_CostumePikachuGive_1::",
   "VictoryRoad_1F_EventScript_ConfirmAndUseSummon_1:",
   "VictoryRoad_1F_EventScript_ConfirmAndUseSummon::",
+  "VictoryRoad_1F_EventScript_ChooseRoom::",
   "Route123_BerryMastersHouse_EventScript_GiveNormalBerry::",
   "ShoalCave_LowTideLowerRoom_EventScript_ConfirmAndUseSummon_1:",
   "Debug_CheatStart::",

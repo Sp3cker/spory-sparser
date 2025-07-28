@@ -727,7 +727,7 @@ VictoryRoad_1F_EventScript_InnerRoom_2:
 
 
 VictoryRoad_1F_EventScript_StairsRoom::
-@explanation Select a Paradox Pokémon to fight
+@explanation Select an Ultra Beast Pokémon to fight
 
 # 400 "data/maps/VictoryRoad_1F/scripts.pory"
 	msgbox VictoryRoad_1F_Text_WhichPokemon, MSGBOX_DEFAULT

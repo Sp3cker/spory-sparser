@@ -10446,14 +10446,14 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "Pickup from ground",
+          "explanation": "Pickup from ground in Low Tide Inner Room",
           "scriptName": "ShoalCave_LowTideInnerRoom_EventScript_ShoalShell1::"
         },
         {
           "items": [
             {
               "name": "ITEM_SHOAL_SHELL",
-              "quantity": 3
+              "quantity": 2
             },
             {
               "name": "ITEM_SHOAL_SALT",
@@ -10462,8 +10462,20 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "Pick up from ground",
+          "explanation": "Pick up from ground in Low Tide Inner Room",
           "scriptName": "ShoalCave_LowTideInnerRoom_EventScript_ShoalShell2::"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_SHOAL_SHELL",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Pick up from ground In Low Tide Inner Room",
+          "scriptName": "ShoalCave_LowTideInnerRoom_EventScript_ShoalShell4::"
         }
       ],
       "image": "ShoalCave_LowTideInnerRoom"
@@ -10482,7 +10494,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "Pickup from ground",
+          "explanation": "Pickup from ground in Low Tide Lower Room",
           "scriptName": "ShoalCave_LowTideLowerRoom_EventScript_ShoalSalt4::"
         },
         {
@@ -10652,7 +10664,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "Pick up from ground",
+          "explanation": "Pick up from ground in Low Tide Stairs Room",
           "scriptName": "ShoalCave_LowTideStairsRoom_EventScript_ShoalSalt3::"
         }
       ],
@@ -12014,7 +12026,15 @@
             {
               "species": "SPECIES_IRON_CROWN",
               "level": 1
-            },
+            }
+          ],
+          "wildMon": [],
+          "explanation": "Select a Paradox Pokémon to fight",
+          "scriptName": "VictoryRoad_1F_EventScript_EntranceRoom::"
+        },
+        {
+          "items": [],
+          "pokemon": [
             {
               "species": "SPECIES_NIHILEGO",
               "level": 1
@@ -12053,8 +12073,8 @@
             }
           ],
           "wildMon": [],
-          "explanation": "Select a Paradox Pokémon to fight",
-          "scriptName": "VictoryRoad_1F_EventScript_EntranceRoom::"
+          "explanation": "Select an Ultra Beast Pokémon to fight",
+          "scriptName": "VictoryRoad_1F_EventScript_StairsRoom::"
         }
       ],
       "image": "VictoryRoad_1F",

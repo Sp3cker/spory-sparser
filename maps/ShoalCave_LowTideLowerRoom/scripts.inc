@@ -34,7 +34,7 @@ ShoalCave_LowTideLowerRoom_EventScript_SetShoalItemMetatilesEnd::
 
 # 18 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 ShoalCave_LowTideLowerRoom_EventScript_ShoalSalt4::
-@explanation Pickup from ground
+@explanation Pickup from ground in Low Tide Lower Room
 
 # 19 "data/maps/ShoalCave_LowTideLowerRoom/scripts.pory"
 	lockall
