@@ -50,7 +50,7 @@ RockySlab_EventScript_ShowUxie::
 
 # 26 "data/maps/RockySlab/scripts.pory"
 RockySlab_EventScript_Uxie::
-@explanation After 6th badge, Surf to Rocky Slab.
+@explanation After 6th badge, Surf to Rocky Slab, Route 115.
 # 27 "data/maps/RockySlab/scripts.pory"
 	lock
 # 28 "data/maps/RockySlab/scripts.pory"
