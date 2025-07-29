@@ -132,6 +132,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 788,
               "script": "AbandonedShip_HiddenFloorRooms_EventScript_TapuFini::",
               "species": "SPECIES_TAPU_FINI",
               "level": 70
@@ -292,6 +293,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 379,
               "script": "AncientTomb_EventScript_Registeel::",
               "species": "SPECIES_REGISTEEL",
               "level": 70
@@ -354,11 +356,13 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 101,
               "script": "AquaHideout_B1F_EventScript_Electrode1::",
               "species": "SPECIES_ELECTRODE",
               "level": 30
             },
             {
+              "id": 101,
               "script": "AquaHideout_B1F_EventScript_Electrode2::",
               "species": "SPECIES_ELECTRODE",
               "level": 30
@@ -527,6 +531,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 185,
               "script": "BattleFrontier_OutsideEast_EventScript_WaterSudowoodo::",
               "species": "SPECIES_SUDOWOODO",
               "level": 40
@@ -624,6 +629,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 377,
               "script": "DesertRuins_EventScript_Regirock::",
               "species": "SPECIES_REGIROCK",
               "level": 70
@@ -780,7 +786,8 @@
             {
               "species": "SPECIES_KUBFU",
               "level": 40,
-              "isRandom": true
+              "isRandom": true,
+              "id": 891
             }
           ],
           "wildMon": [],
@@ -813,7 +820,8 @@
             {
               "species": "SPECIES_ZERAORA",
               "level": 50,
-              "isRandom": true
+              "isRandom": true,
+              "id": 807
             }
           ],
           "wildMon": [],
@@ -1192,39 +1200,48 @@
           "pokemon": [
             {
               "species": "SPECIES_CHARMANDER",
-              "level": 0
+              "level": 0,
+              "id": 4
             },
             {
               "species": "SPECIES_CYNDAQUIL",
-              "level": 0
+              "level": 0,
+              "id": 155
             },
             {
               "species": "SPECIES_TORCHIC",
-              "level": 0
+              "level": 0,
+              "id": 255
             },
             {
               "species": "SPECIES_CHIMCHAR",
-              "level": 0
+              "level": 0,
+              "id": 390
             },
             {
               "species": "SPECIES_TEPIG",
-              "level": 0
+              "level": 0,
+              "id": 498
             },
             {
               "species": "SPECIES_FENNEKIN",
-              "level": 0
+              "level": 0,
+              "id": 653
             },
             {
               "species": "SPECIES_LITTEN",
-              "level": 0
+              "level": 0,
+              "id": 725
             },
             {
               "species": "SPECIES_SCORBUNNY",
-              "level": 0
+              "level": 0,
+              "id": 813
             },
             {
               "species": "SPECIES_FUECOCO",
-              "level": 0
+              "level": 0,
+              "id": 1292
             }
           ],
           "wildMon": [],
@@ -1236,39 +1253,48 @@
           "pokemon": [
             {
               "species": "SPECIES_SQUIRTLE",
-              "level": 0
+              "level": 0,
+              "id": 7
             },
             {
               "species": "SPECIES_TOTODILE",
-              "level": 0
+              "level": 0,
+              "id": 158
             },
             {
               "species": "SPECIES_MUDKIP",
-              "level": 0
+              "level": 0,
+              "id": 258
             },
             {
               "species": "SPECIES_PIPLUP",
-              "level": 0
+              "level": 0,
+              "id": 393
             },
             {
               "species": "SPECIES_OSHAWOTT",
-              "level": 0
+              "level": 0,
+              "id": 501
             },
             {
               "species": "SPECIES_FROAKIE",
-              "level": 0
+              "level": 0,
+              "id": 656
             },
             {
               "species": "SPECIES_POPPLIO",
-              "level": 0
+              "level": 0,
+              "id": 728
             },
             {
               "species": "SPECIES_SOBBLE",
-              "level": 0
+              "level": 0,
+              "id": 816
             },
             {
               "species": "SPECIES_QUAXLY",
-              "level": 0
+              "level": 0,
+              "id": 1295
             }
           ],
           "wildMon": [],
@@ -1280,39 +1306,48 @@
           "pokemon": [
             {
               "species": "SPECIES_BULBASAUR",
-              "level": 0
+              "level": 0,
+              "id": 1
             },
             {
               "species": "SPECIES_CHIKORITA",
-              "level": 0
+              "level": 0,
+              "id": 152
             },
             {
               "species": "SPECIES_TREECKO",
-              "level": 0
+              "level": 0,
+              "id": 252
             },
             {
               "species": "SPECIES_TURTWIG",
-              "level": 0
+              "level": 0,
+              "id": 387
             },
             {
               "species": "SPECIES_SNIVY",
-              "level": 0
+              "level": 0,
+              "id": 495
             },
             {
               "species": "SPECIES_CHESPIN",
-              "level": 0
+              "level": 0,
+              "id": 650
             },
             {
               "species": "SPECIES_ROWLET",
-              "level": 0
+              "level": 0,
+              "id": 722
             },
             {
               "species": "SPECIES_GROOKEY",
-              "level": 0
+              "level": 0,
+              "id": 810
             },
             {
               "species": "SPECIES_SPRIGATITO",
-              "level": 0
+              "level": 0,
+              "id": 1289
             }
           ],
           "wildMon": [],
@@ -1358,6 +1393,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 485,
               "script": "FieryPath_BackRoom_EventScript_Heatran::",
               "species": "SPECIES_HEATRAN",
               "level": 70
@@ -1381,6 +1417,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 481,
               "script": "FloatingSlab_EventScript_Mesprit::",
               "species": "SPECIES_MESPRIT",
               "level": 70
@@ -1735,6 +1772,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 984,
               "script": "GraniteCave_B2F_EventScript_MoltresGalar::",
               "species": "SPECIES_MOLTRES_GALAR",
               "level": 70
@@ -1830,6 +1868,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 895,
               "script": "GrassySlab_EventScript_Regidrago::",
               "species": "SPECIES_REGIDRAGO",
               "level": 70
@@ -1863,6 +1902,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 378,
               "script": "IslandCave_EventScript_Regice::",
               "species": "SPECIES_REGICE",
               "level": 70
@@ -2051,39 +2091,48 @@
           "pokemon": [
             {
               "species": "SPECIES_TAUROS",
-              "level": 0
+              "level": 0,
+              "id": 128
             },
             {
               "species": "SPECIES_DELIBIRD",
-              "level": 0
+              "level": 0,
+              "id": 225
             },
             {
               "species": "SPECIES_TROPIUS",
-              "level": 0
+              "level": 0,
+              "id": 357
             },
             {
               "species": "SPECIES_SPIRITOMB",
-              "level": 0
+              "level": 0,
+              "id": 442
             },
             {
               "species": "SPECIES_HEATMOR",
-              "level": 0
+              "level": 0,
+              "id": 631
             },
             {
               "species": "SPECIES_DEDENNE",
-              "level": 0
+              "level": 0,
+              "id": 702
             },
             {
               "species": "SPECIES_BRUXISH",
-              "level": 0
+              "level": 0,
+              "id": 779
             },
             {
               "species": "SPECIES_FALINKS",
-              "level": 0
+              "level": 0,
+              "id": 870
             },
             {
               "species": "SPECIES_KLAWF",
-              "level": 0
+              "level": 0,
+              "id": 1338
             }
           ],
           "wildMon": [],
@@ -2607,15 +2656,18 @@
           "pokemon": [
             {
               "species": "SPECIES_CYNDAQUIL",
-              "level": 5
+              "level": 5,
+              "id": 155
             },
             {
               "species": "SPECIES_TOTODILE",
-              "level": 5
+              "level": 5,
+              "id": 158
             },
             {
               "species": "SPECIES_CHIKORITA",
-              "level": 5
+              "level": 5,
+              "id": 152
             }
           ],
           "wildMon": [],
@@ -2975,6 +3027,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 382,
               "script": "MarineCave_End_EventScript_Kyogre::",
               "species": "SPECIES_KYOGRE",
               "level": 70
@@ -3242,34 +3295,42 @@
           "items": [],
           "pokemon": [
             {
+              "id": 1009,
               "species": "SPECIES_PIKACHU_COSPLAY",
               "level": 1
             },
             {
+              "id": 1010,
               "species": "SPECIES_PIKACHU_ROCK_STAR",
               "level": 1
             },
             {
+              "id": 1011,
               "species": "SPECIES_PIKACHU_BELLE",
               "level": 1
             },
             {
+              "id": 1012,
               "species": "SPECIES_PIKACHU_POP_STAR",
               "level": 1
             },
             {
+              "id": 1013,
               "species": "SPECIES_PIKACHU_PHD",
               "level": 1
             },
             {
+              "id": 1014,
               "species": "SPECIES_PIKACHU_LIBRE",
               "level": 1
             },
             {
+              "id": 1533,
               "species": "SPECIES_PIKACHU_SURFING",
               "level": 1
             },
             {
+              "id": 1534,
               "species": "SPECIES_PIKACHU_FLYING",
               "level": 1
             }
@@ -3490,7 +3551,8 @@
             {
               "species": "SPECIES_CELEBI",
               "level": 50,
-              "isRandom": true
+              "isRandom": true,
+              "id": 251
             }
           ],
           "wildMon": [],
@@ -3503,7 +3565,8 @@
             {
               "species": "SPECIES_DARKRAI",
               "level": 50,
-              "isRandom": true
+              "isRandom": true,
+              "id": 491
             }
           ],
           "wildMon": [],
@@ -3516,7 +3579,8 @@
             {
               "species": "SPECIES_VICTINI",
               "level": 50,
-              "isRandom": true
+              "isRandom": true,
+              "id": 494
             }
           ],
           "wildMon": [],
@@ -3742,7 +3806,8 @@
             {
               "species": "SPECIES_MELTAN",
               "level": 5,
-              "isRandom": true
+              "isRandom": true,
+              "id": 808
             }
           ],
           "wildMon": [],
@@ -4201,6 +4266,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 894,
               "script": "NewMauville_Inside_EventScript_Regieleki::",
               "species": "SPECIES_REGIELEKI",
               "level": 70
@@ -4214,16 +4280,19 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 100,
               "script": "NewMauville_Inside_EventScript_Voltorb1::",
               "species": "SPECIES_VOLTORB",
               "level": 25
             },
             {
+              "id": 100,
               "script": "NewMauville_Inside_EventScript_Voltorb2::",
               "species": "SPECIES_VOLTORB",
               "level": 25
             },
             {
+              "id": 100,
               "script": "NewMauville_Inside_EventScript_Voltorb3::",
               "species": "SPECIES_VOLTORB",
               "level": 25
@@ -4287,43 +4356,53 @@
           "pokemon": [
             {
               "species": "SPECIES_SENTRET",
-              "level": 0
+              "level": 0,
+              "id": 161
             },
             {
               "species": "SPECIES_JIGGLYPUFF",
-              "level": 0
+              "level": 0,
+              "id": 39
             },
             {
               "species": "SPECIES_KRICKETOT",
-              "level": 0
+              "level": 0,
+              "id": 401
             },
             {
               "species": "SPECIES_CUBONE",
-              "level": 0
+              "level": 0,
+              "id": 104
             },
             {
               "species": "SPECIES_PANCHAM",
-              "level": 0
+              "level": 0,
+              "id": 674
             },
             {
               "species": "SPECIES_YAMPER",
-              "level": 0
+              "level": 0,
+              "id": 835
             },
             {
               "species": "SPECIES_ROCKRUFF",
-              "level": 0
+              "level": 0,
+              "id": 744
             },
             {
               "species": "SPECIES_SNORUNT",
-              "level": 0
+              "level": 0,
+              "id": 361
             },
             {
               "species": "SPECIES_SPOINK",
-              "level": 0
+              "level": 0,
+              "id": 325
             },
             {
               "species": "SPECIES_VAROOM",
-              "level": 0
+              "level": 0,
+              "id": 1354
             }
           ],
           "wildMon": [],
@@ -4395,43 +4474,53 @@
           "pokemon": [
             {
               "species": "SPECIES_DRATINI",
-              "level": 0
+              "level": 0,
+              "id": 147
             },
             {
               "species": "SPECIES_LARVITAR",
-              "level": 0
+              "level": 0,
+              "id": 246
             },
             {
               "species": "SPECIES_BAGON",
-              "level": 0
+              "level": 0,
+              "id": 371
             },
             {
               "species": "SPECIES_BELDUM",
-              "level": 0
+              "level": 0,
+              "id": 374
             },
             {
               "species": "SPECIES_GIBLE",
-              "level": 0
+              "level": 0,
+              "id": 443
             },
             {
               "species": "SPECIES_DEINO",
-              "level": 0
+              "level": 0,
+              "id": 633
             },
             {
               "species": "SPECIES_GOOMY",
-              "level": 0
+              "level": 0,
+              "id": 704
             },
             {
               "species": "SPECIES_JANGMO_O",
-              "level": 0
+              "level": 0,
+              "id": 782
             },
             {
               "species": "SPECIES_DREEPY",
-              "level": 0
+              "level": 0,
+              "id": 885
             },
             {
               "species": "SPECIES_FRIGIBAX",
-              "level": 0
+              "level": 0,
+              "id": 1388
             }
           ],
           "wildMon": [],
@@ -4803,6 +4892,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 480,
               "script": "RockySlab_EventScript_Uxie::",
               "species": "SPECIES_UXIE",
               "level": 70
@@ -5749,87 +5839,104 @@
             {
               "species": "SPECIES_TYROGUE",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 236
             },
             {
               "species": "SPECIES_PANSAGE",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 511
             },
             {
               "species": "SPECIES_PANPOUR",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 515
             },
             {
               "species": "SPECIES_PANSEAR",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 513
             },
             {
               "species": "SPECIES_MISDREAVUS",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 200
             },
             {
               "species": "SPECIES_PINSIR",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 127
             },
             {
               "species": "SPECIES_HERACROSS",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 214
             },
             {
               "species": "SPECIES_SCYTHER",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 123
             },
             {
               "species": "SPECIES_EEVEE",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 133
             },
             {
               "species": "SPECIES_MAGBY",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 240
             },
             {
               "species": "SPECIES_ELEKID",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 239
             },
             {
               "species": "SPECIES_SMOOCHUM",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 238
             },
             {
               "species": "SPECIES_RIOLU",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 447
             },
             {
               "species": "SPECIES_TOGEPI",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 175
             },
             {
               "species": "SPECIES_TYPE_NULL",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 772
             },
             {
               "species": "SPECIES_CHARCADET",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 1323
             },
             {
               "species": "SPECIES_AERODACTYL",
               "level": 25,
-              "isRandom": true
+              "isRandom": true,
+              "id": 142
             }
           ],
           "wildMon": [],
@@ -7255,6 +7362,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 982,
               "script": "Route114_EventScript_ArticunoGalar::",
               "species": "SPECIES_ARTICUNO_GALAR",
               "level": 70
@@ -7573,6 +7681,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 787,
               "script": "Route116_EventScript_TapuBulu::",
               "species": "SPECIES_TAPU_BULU",
               "level": 70
@@ -8076,6 +8185,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 983,
               "script": "Route119_EventScript_ZapdosGalar::",
               "species": "SPECIES_ZAPDOS_GALAR",
               "level": 70
@@ -8378,6 +8488,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 352,
               "script": "Route120_EventScript_StevenBattleKecleon::",
               "species": "SPECIES_KECLEON",
               "level": 50
@@ -8565,7 +8676,8 @@
             {
               "species": "SPECIES_JIRACHI",
               "level": 30,
-              "isRandom": true
+              "isRandom": true,
+              "id": 385
             }
           ],
           "wildMon": [],
@@ -8885,6 +8997,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 786,
               "script": "Route124_EventScript_TapuLele::",
               "species": "SPECIES_TAPU_LELE",
               "level": 70
@@ -9085,6 +9198,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 785,
               "script": "Route126_EventScript_TapuKoko::",
               "species": "SPECIES_TAPU_KOKO",
               "level": 70
@@ -9733,7 +9847,8 @@
             {
               "species": "SPECIES_LILEEP",
               "level": 20,
-              "isRandom": true
+              "isRandom": true,
+              "id": 345
             }
           ],
           "wildMon": [],
@@ -9746,7 +9861,8 @@
             {
               "species": "SPECIES_ANORITH",
               "level": 20,
-              "isRandom": true
+              "isRandom": true,
+              "id": 347
             }
           ],
           "wildMon": [],
@@ -10233,6 +10349,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 482,
               "script": "ScorchedSlab_EventScript_Azelf::",
               "species": "SPECIES_AZELF",
               "level": 70
@@ -10411,6 +10528,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 646,
               "script": "ShoalCave_LowTideIceRoom_EventScript_Kyurem::",
               "species": "SPECIES_KYUREM",
               "level": 70
@@ -10501,42 +10619,52 @@
           "items": [],
           "pokemon": [
             {
+              "id": 1376,
               "species": "SPECIES_GREAT_TUSK",
               "level": 1
             },
             {
+              "id": 1377,
               "species": "SPECIES_SCREAM_TAIL",
               "level": 1
             },
             {
+              "id": 1378,
               "species": "SPECIES_BRUTE_BONNET",
               "level": 1
             },
             {
+              "id": 1379,
               "species": "SPECIES_FLUTTER_MANE",
               "level": 1
             },
             {
+              "id": 1380,
               "species": "SPECIES_SLITHER_WING",
               "level": 1
             },
             {
+              "id": 1381,
               "species": "SPECIES_SANDY_SHOCKS",
               "level": 1
             },
             {
+              "id": 1398,
               "species": "SPECIES_ROARING_MOON",
               "level": 1
             },
             {
+              "id": 1406,
               "species": "SPECIES_WALKING_WAKE",
               "level": 1
             },
             {
+              "id": 1427,
               "species": "SPECIES_GOUGING_FIRE",
               "level": 1
             },
             {
+              "id": 1428,
               "species": "SPECIES_RAGING_BOLT",
               "level": 1
             }
@@ -10549,42 +10677,52 @@
           "items": [],
           "pokemon": [
             {
+              "id": 1382,
               "species": "SPECIES_IRON_TREADS",
               "level": 1
             },
             {
+              "id": 1383,
               "species": "SPECIES_IRON_BUNDLE",
               "level": 1
             },
             {
+              "id": 1384,
               "species": "SPECIES_IRON_HANDS",
               "level": 1
             },
             {
+              "id": 1385,
               "species": "SPECIES_IRON_JUGULIS",
               "level": 1
             },
             {
+              "id": 1386,
               "species": "SPECIES_IRON_MOTH",
               "level": 1
             },
             {
+              "id": 1387,
               "species": "SPECIES_IRON_THORNS",
               "level": 1
             },
             {
+              "id": 1399,
               "species": "SPECIES_IRON_VALIANT",
               "level": 1
             },
             {
+              "id": 1407,
               "species": "SPECIES_IRON_LEAVES",
               "level": 1
             },
             {
+              "id": 1429,
               "species": "SPECIES_IRON_BOULDER",
               "level": 1
             },
             {
+              "id": 1430,
               "species": "SPECIES_IRON_CROWN",
               "level": 1
             }
@@ -10597,38 +10735,47 @@
           "items": [],
           "pokemon": [
             {
+              "id": 793,
               "species": "SPECIES_NIHILEGO",
               "level": 1
             },
             {
+              "id": 799,
               "species": "SPECIES_GUZZLORD",
               "level": 1
             },
             {
+              "id": 796,
               "species": "SPECIES_XURKITREE",
               "level": 1
             },
             {
+              "id": 794,
               "species": "SPECIES_BUZZWOLE",
               "level": 1
             },
             {
+              "id": 806,
               "species": "SPECIES_BLACEPHALON",
               "level": 1
             },
             {
+              "id": 805,
               "species": "SPECIES_STAKATAKA",
               "level": 1
             },
             {
+              "id": 803,
               "species": "SPECIES_POIPOLE",
               "level": 1
             },
             {
+              "id": 795,
               "species": "SPECIES_PHEROMOSA",
               "level": 1
             },
             {
+              "id": 797,
               "species": "SPECIES_CELESTEELA",
               "level": 1
             }
@@ -10700,6 +10847,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 384,
               "script": "SkyPillar_Top_EventScript_Rayquaza::",
               "species": "SPECIES_RAYQUAZA",
               "level": 70
@@ -11054,7 +11202,8 @@
             {
               "species": "SPECIES_GENESECT",
               "level": 50,
-              "isRandom": true
+              "isRandom": true,
+              "id": 649
             }
           ],
           "wildMon": [],
@@ -11067,7 +11216,8 @@
             {
               "species": "SPECIES_DITTO",
               "level": 50,
-              "isRandom": true
+              "isRandom": true,
+              "id": 132
             }
           ],
           "wildMon": [],
@@ -11080,7 +11230,8 @@
             {
               "species": "SPECIES_HOOPA_CONFINED",
               "level": 50,
-              "isRandom": true
+              "isRandom": true,
+              "id": 720
             }
           ],
           "wildMon": [],
@@ -11093,7 +11244,8 @@
             {
               "species": "SPECIES_VOLCANION",
               "level": 50,
-              "isRandom": true
+              "isRandom": true,
+              "id": 721
             }
           ],
           "wildMon": [],
@@ -11377,7 +11529,8 @@
             {
               "species": "SPECIES_MELOETTA_ARIA",
               "level": 50,
-              "isRandom": true
+              "isRandom": true,
+              "id": 648
             }
           ],
           "wildMon": [],
@@ -11390,7 +11543,8 @@
             {
               "species": "SPECIES_MARSHADOW",
               "level": 50,
-              "isRandom": true
+              "isRandom": true,
+              "id": 802
             }
           ],
           "wildMon": [],
@@ -11403,7 +11557,8 @@
             {
               "species": "SPECIES_ZARUDE",
               "level": 50,
-              "isRandom": true
+              "isRandom": true,
+              "id": 893
             }
           ],
           "wildMon": [],
@@ -11525,6 +11680,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 383,
               "script": "TerraCave_End_EventScript_Groudon::",
               "species": "SPECIES_GROUDON",
               "level": 70
@@ -11948,82 +12104,102 @@
           "items": [],
           "pokemon": [
             {
+              "id": 1376,
               "species": "SPECIES_GREAT_TUSK",
               "level": 1
             },
             {
+              "id": 1377,
               "species": "SPECIES_SCREAM_TAIL",
               "level": 1
             },
             {
+              "id": 1378,
               "species": "SPECIES_BRUTE_BONNET",
               "level": 1
             },
             {
+              "id": 1379,
               "species": "SPECIES_FLUTTER_MANE",
               "level": 1
             },
             {
+              "id": 1380,
               "species": "SPECIES_SLITHER_WING",
               "level": 1
             },
             {
+              "id": 1381,
               "species": "SPECIES_SANDY_SHOCKS",
               "level": 1
             },
             {
+              "id": 1398,
               "species": "SPECIES_ROARING_MOON",
               "level": 1
             },
             {
+              "id": 1406,
               "species": "SPECIES_WALKING_WAKE",
               "level": 1
             },
             {
+              "id": 1427,
               "species": "SPECIES_GOUGING_FIRE",
               "level": 1
             },
             {
+              "id": 1428,
               "species": "SPECIES_RAGING_BOLT",
               "level": 1
             },
             {
+              "id": 1382,
               "species": "SPECIES_IRON_TREADS",
               "level": 1
             },
             {
+              "id": 1383,
               "species": "SPECIES_IRON_BUNDLE",
               "level": 1
             },
             {
+              "id": 1384,
               "species": "SPECIES_IRON_HANDS",
               "level": 1
             },
             {
+              "id": 1385,
               "species": "SPECIES_IRON_JUGULIS",
               "level": 1
             },
             {
+              "id": 1386,
               "species": "SPECIES_IRON_MOTH",
               "level": 1
             },
             {
+              "id": 1387,
               "species": "SPECIES_IRON_THORNS",
               "level": 1
             },
             {
+              "id": 1399,
               "species": "SPECIES_IRON_VALIANT",
               "level": 1
             },
             {
+              "id": 1407,
               "species": "SPECIES_IRON_LEAVES",
               "level": 1
             },
             {
+              "id": 1429,
               "species": "SPECIES_IRON_BOULDER",
               "level": 1
             },
             {
+              "id": 1430,
               "species": "SPECIES_IRON_CROWN",
               "level": 1
             }
@@ -12036,38 +12212,47 @@
           "items": [],
           "pokemon": [
             {
+              "id": 793,
               "species": "SPECIES_NIHILEGO",
               "level": 1
             },
             {
+              "id": 799,
               "species": "SPECIES_GUZZLORD",
               "level": 1
             },
             {
+              "id": 796,
               "species": "SPECIES_XURKITREE",
               "level": 1
             },
             {
+              "id": 794,
               "species": "SPECIES_BUZZWOLE",
               "level": 1
             },
             {
+              "id": 806,
               "species": "SPECIES_BLACEPHALON",
               "level": 1
             },
             {
+              "id": 805,
               "species": "SPECIES_STAKATAKA",
               "level": 1
             },
             {
+              "id": 803,
               "species": "SPECIES_POIPOLE",
               "level": 1
             },
             {
+              "id": 795,
               "species": "SPECIES_PHEROMOSA",
               "level": 1
             },
             {
+              "id": 797,
               "species": "SPECIES_CELESTEELA",
               "level": 1
             }
@@ -12149,6 +12334,7 @@
           "pokemon": [],
           "wildMon": [
             {
+              "id": 486,
               "script": "VictoryRoad_B1F_EventScript_Regigigas::",
               "species": "SPECIES_REGIGIGAS",
               "level": 70

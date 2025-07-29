@@ -6,12 +6,37 @@ import {
   IncWildMon,
 } from "../validators/levelIncData.ts";
 import { eggSpeciesMap } from "./eggMons.ts";
+import pokemonData from "../../gameData/speciesData.json" with { type: "json" };
 // export interface IncPokemonEntry {
 //   species: string;
 //   level: number;
 //   isRandom: boolean;
 // }
-
+const normalizeName = (str: string): string => {
+  return str
+    .toLowerCase()
+    .replace(/é/g, "e") // remove accent
+    .replace(/[^a-z0-9♂♀ _-]/g, "") // strip exotic chars we dont care about
+    .replace(/[♂]/g, "_m")
+    .replace(/[♀]/g, "_f")
+    .replace(/[\s-]+/g, "_") // spaces & hyphens -> underscore
+    .replace(/__+/g, "_") // collapse dup underscores
+    .replace(/^_+|_+$/g, ""); // trim underscores
+};
+const pokemonDataArr = Object.values(pokemonData);
+const fromNameToId = (speciesConst: string) => {
+  const species = pokemonDataArr.find(
+    (p) =>
+      normalizeName(p.nameKey) ===    speciesConst.replace(/^SPECIES_/, "").toLowerCase() ||
+      p.speciesName === speciesConst
+  );
+  if (!species) {
+    throw new Error(
+      `Species not found for constant: ${speciesConst}. Check your speciesData.json`
+    );
+  }
+  return species.speciesId;
+};
 export class IncScriptEvent {
   public scriptName: string;
   public items: IncItemEntry[] = [];
@@ -88,7 +113,9 @@ export class IncScriptEvent {
       const species = giveMonMatch[2];
       const level = parseInt(giveMonMatch[3], 10);
       const isRandom = command === "givemonrandom";
-
+      if (species === "VAR_0x8005" || species === "VAR_0x8006") {
+        return;
+      }
       // Sometimes we'll pickup redundant logic
       // where a mon *looks* like its given twice, but its because
       // of bag size logic and stuff
@@ -101,6 +128,7 @@ export class IncScriptEvent {
           species: species,
           level: level,
           isRandom: isRandom ? true : undefined,
+          id: fromNameToId(species),
         });
       }
     }
@@ -124,11 +152,16 @@ export class IncScriptEvent {
       });
     } else if (dynMultiSpeciesMatch) {
       const species = dynMultiSpeciesMatch[1];
+      if (species === "VAR_0x8005" || species === "VAR_0x8006") {
+        return;
+      }
       const alreadyExists = this.pokemon.some(
         (p) => p.species === species && p.level === 1 && p.isRandom === false
       );
+      const id = fromNameToId(species);
       if (!alreadyExists) {
         this.pokemon.push({
+          id: id,
           species: species,
           level: 1, // Level not specified in dynmultipush
         });
@@ -142,8 +175,8 @@ export class IncScriptEvent {
     if (eggMatch) {
       const species = eggMatch[1];
 
-      if (species === "SPECIES_KLAWF") {
-        debugger;
+      if (species === "VAR_0x8005" || species === "VAR_0x8006") {
+        return;
       }
       // Eggs actually are random, so we need to add all the possible eggs
       if (eggSpeciesMap[species as keyof typeof eggSpeciesMap]) {
@@ -152,6 +185,7 @@ export class IncScriptEvent {
             this.pokemon.push({
               species: eggSpecies,
               level: 0,
+              id: fromNameToId(eggSpecies),
             });
           }
         );
@@ -165,6 +199,7 @@ export class IncScriptEvent {
           species: species,
           level: 0,
           isRandom: false,
+          id: fromNameToId(species),
         });
       }
     }
@@ -190,6 +225,7 @@ export class IncScriptEvent {
       }
 
       this.wildMon.push({
+        id: fromNameToId(species),
         script: this.scriptName,
         species: species,
         level: level,

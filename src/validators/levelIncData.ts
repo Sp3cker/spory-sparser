@@ -3,6 +3,7 @@ export const WildMonSchema = z.object({
   script: z.string(),
   species: z.string(),
   level: z.number(),
+  id: z.number(),
 });
 /**
 This is a trainerbattle we find in an .inc file.
@@ -22,6 +23,7 @@ export const IncItemEntrySchema = z.object({
  */
 export const IncPokemonEntrySchema = z.object({
   species: z.string(),
+  id: z.number(),
   level: z.number(),
   isRandom: z.boolean().optional(), // if `givemonrandom`
 });
