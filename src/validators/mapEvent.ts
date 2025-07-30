@@ -14,6 +14,7 @@ export const MapEventPickupSchema = z.object({
 
 export const MapEventPlaceSchema = z.object({
   thisLevelsId: z.string(),
+  baseMap: z.string(),
   levelLabel: z.string(),
   imageName: z.string(),
   trainers: z.array(MapEventTrainerSchema).optional(),

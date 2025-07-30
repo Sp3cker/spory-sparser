@@ -4898,7 +4898,7 @@
               "level": 70
             }
           ],
-          "explanation": "After 6th badge, Surf to Rocky Slab.",
+          "explanation": "After 6th badge, Surf to Rocky Slab, Route 115.",
           "scriptName": "RockySlab_EventScript_Uxie::"
         }
       ],
@@ -11722,10 +11722,10 @@
       "image": "TrainerHill_Entrance"
     }
   ],
-  "MAP_UNDERWATER": [
+  "MAP_UNDERWATER_ROUTE124": [
     {
       "thisLevelsId": "MAP_UNDERWATER_ROUTE124",
-      "baseMap": "MAP_UNDERWATER",
+      "baseMap": "MAP_UNDERWATER_ROUTE124",
       "levelLabel": "Route 124",
       "pickupItems": [
         {
@@ -11786,10 +11786,12 @@
         }
       ],
       "image": "Underwater_Route124"
-    },
+    }
+  ],
+  "MAP_UNDERWATER_ROUTE126": [
     {
       "thisLevelsId": "MAP_UNDERWATER_ROUTE126",
-      "baseMap": "MAP_UNDERWATER",
+      "baseMap": "MAP_UNDERWATER_ROUTE126",
       "levelLabel": "Route 126",
       "pickupItems": [
         {
@@ -11858,10 +11860,12 @@
         }
       ],
       "image": "Underwater_Route126"
-    },
+    }
+  ],
+  "MAP_UNDERWATER_ROUTE127": [
     {
       "thisLevelsId": "MAP_UNDERWATER_ROUTE127",
-      "baseMap": "MAP_UNDERWATER",
+      "baseMap": "MAP_UNDERWATER_ROUTE127",
       "levelLabel": "Route 127",
       "pickupItems": [
         {
@@ -11898,10 +11902,12 @@
         }
       ],
       "image": "Underwater_Route127"
-    },
+    }
+  ],
+  "MAP_UNDERWATER_ROUTE128": [
     {
       "thisLevelsId": "MAP_UNDERWATER_ROUTE128",
-      "baseMap": "MAP_UNDERWATER",
+      "baseMap": "MAP_UNDERWATER_ROUTE128",
       "levelLabel": "Route 128",
       "pickupItems": [
         {

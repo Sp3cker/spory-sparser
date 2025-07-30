@@ -1,6 +1,6 @@
 import path from "path";
 import { mkdirSync } from "fs";
-import { writeFile, readFile } from "fs/promises";
+import { writeFile, readFile, access } from "fs/promises";
 import { findMartSectionsByLevel, Mart, MartEntry } from "./parseMarts.ts";
 import { findGiveItemsByLevel, LevelIncData } from "./parseMaps/index.ts";
 import { main } from "./parseMapEvents.ts";
@@ -94,7 +94,6 @@ const mergeDataByLevelsID = async ({
       //       y: t.coords[1],
       //       sprite: t.graphics_id,
       //     });
-      //   }
       // }
       /** Here we match up trainers from the .inc file
        * with trainers from the header file.
@@ -154,8 +153,10 @@ const mergeDataByLevelsID = async ({
       // Filter out places that don't have any meaningful content
       // like the Battle Frontier...
       const hasShopItems = result.shopItems && result.shopItems.length > 0;
-      const hasPickupItems = result.pickupItems && result.pickupItems.length > 0;
-      const hasTrainerRefs = result.trainerRefs && result.trainerRefs.length > 0;
+      const hasPickupItems =
+        result.pickupItems && result.pickupItems.length > 0;
+      const hasTrainerRefs =
+        result.trainerRefs && result.trainerRefs.length > 0;
       const hasEncounters = encountersMap.has(result.thisLevelsId);
       const hasScriptedGives = result.scriptedGives.length > 0;
       if (
@@ -218,7 +219,9 @@ const mergeDataByLevelsID = async ({
   // This will be `levels.json`
   const groupedDataForOutput: GroupedDataOutput = {};
   for (const [base, levels] of Object.entries(groupedData)) {
-    groupedDataForOutput[base] = levels.map(({ trainers: _t, ...rest }) => rest);
+    groupedDataForOutput[base] = levels.map(
+      ({ trainers: _t, ...rest }) => rest
+    );
   }
 
   return {
@@ -260,11 +263,6 @@ const mergeDataByLevelsID = async ({
     // Ensure output directory exists
     mkdirSync(path.join(config.outputDir), { recursive: true });
 
-    // Optionally persist to disk for inspection
-    // await writeFile(
-    //   path.join(config.outputDir, "trainer_parties.json"),
-    //   prettyPrint(trainerParties)
-    // );
     await writeFile(
       path.join(config.outputDir, "trainers_flat.json"),
       prettyPrint(trainersFlat)
@@ -290,28 +288,37 @@ const mergeDataByLevelsID = async ({
       trainersFlat,
       encountersMap,
     });
-    // console.log(sset.values());
-    const [existingTrainers, existingLevels] = await Promise.all([
-      readFile(path.join(process.cwd(), "trainers.json"), "utf8").then(
-        (data) => JSON.parse(data) as Record<string, Trainer[]>
-      ),
-      readFile(path.join(process.cwd(), "levels.json"), "utf8").then(
-        (data) => JSON.parse(data) as Record<string, any[]>
-      ),
-    ]).catch((error) => {
-      throw error;
-    });
-    // Compare with existing data before writing new files
-    await compareDataChanges({
-      existingLevels,
-      existingTrainers,
-      newGroupedTrainers: groupedTrainers,
-      newGroupedData: groupedData,
-    }).then(async () => {
-      // Write output files
-      await writeFile("levels.json", prettyPrint(groupedData));
-      await writeFile("trainers.json", prettyPrint(groupedTrainers));
-    });
+
+    let trainersJsonExists = false;
+    try {
+      await access(path.join(config.outputDir, "trainers.json"));
+      trainersJsonExists = true;
+    } catch (err) {
+      trainersJsonExists = false;
+    }
+
+    if (trainersJsonExists) {
+      // console.log(sset.values());
+      const [existingTrainers, existingLevels] = await Promise.all([
+        readFile(path.join(process.cwd(), "trainers.json"), "utf8").then(
+          (data) => JSON.parse(data) as Record<string, Trainer[]>
+        ),
+        readFile(path.join(process.cwd(), "levels.json"), "utf8").then(
+          (data) => JSON.parse(data) as Record<string, any[]>
+        ),
+      ]).catch((error) => {
+        throw error;
+      });
+      // Compare with existing data before writing new files
+      await compareDataChanges({
+        existingLevels,
+        existingTrainers,
+        newGroupedTrainers: groupedTrainers,
+        newGroupedData: groupedData,
+      });
+    }
+    await writeFile("levels.json", prettyPrint(groupedData));
+    await writeFile("trainers.json", prettyPrint(groupedTrainers));
 
     logger.info("Merged data written to levels.json and trainers.json");
     logger.info("Validating...");

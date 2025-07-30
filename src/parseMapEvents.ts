@@ -1,13 +1,8 @@
 import fs from "fs/promises";
 import * as path from "path";
-import { getLevelLabel } from "./helpers.ts";
+import { getLevelLabel, getBasemapID } from "./helpers.ts";
 import { MapEventPlaceSchema, MapEventPlace } from "./validators/mapEvent.js";
 
-// const MAP_ROOT_NAMES = new Set<string>(
-//   JSON.parse(
-//     readFileSync(path.join(process.cwd(), "MAP_ROOT_NAMES.json"), "utf8")
-//   ).map(({ map }: { map: string }) => map.toUpperCase())
-// );
 /**
  * Coords is their xy on the Porymap map.
  * Script is used to key this trainer to their Trainer data, parsed by `extractTrainers`
@@ -147,8 +142,10 @@ export async function main(mapsDir: string): Promise<MapEventPlace[]> {
 
     const levelLabel = getLevelLabel(folder).toUpperCase().replace(/\s+/g, "_");
     const imageName = path.basename(path.dirname(mapJsonPath));
+    const baseMap = await getBasemapID(path.dirname(mapJsonPath));
     const place: MapEventPlace = MapEventPlaceSchema.parse({
       thisLevelsId: id,
+      baseMap,
       levelLabel,
       imageName,
       trainers,

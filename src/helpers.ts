@@ -238,15 +238,29 @@ export async function getBasemapID(folderOrMapJson: string): Promise<string> {
 
   const parts = folderName.split("_");
   const beforeUnderscore = parts[0];
-  // const afterUnderscore = parts
-  //   .slice(1)
-  //   .join("_")
-  //   .replace(/([A-Z])(?=[A-Z\d])/g, " $1") // Add space only before uppercase not followed by number
-  //   .trim()
-  //   .replace(/\b\w/g, (char) => char.toUpperCase());
+  
+  // Special handling for underwater routes - make each one its own map
+  if (folderName.toLowerCase().includes("underwater") && folderName.toLowerCase().includes("route")) {
+    // Extract the route number from the folder name
+    // Example: "Underwater_Route126" -> "MAP_UNDERWATER_ROUTE126"
+    const routeMatch = folderName.match(/Route(\d+)/);
+    if (routeMatch) {
+      const routeNumber = routeMatch[1];
+      return `MAP_UNDERWATER_ROUTE${routeNumber}`;
+    }
+  }
+  
   // Insert underscore before each capital letter (except the first one)
   let result;
-  if (beforeUnderscore.includes("Route") === false) {
+  const dontSplit = ["Route", "Underwater"];
+  // We treat "Routes" special here
+  // because we want to keep the number in the name
+  // e.g. "Route 119" -> "Route_119"
+  const treatAsRoute = dontSplit.some((part) =>
+    beforeUnderscore.includes(part)
+  );
+  if (treatAsRoute === false) {
+
     // Dont _under_score route names
     result = beforeUnderscore.charAt(0);
     for (let i = 1; i < beforeUnderscore.length; i++) {
@@ -259,6 +273,7 @@ export async function getBasemapID(folderOrMapJson: string): Promise<string> {
       }
     }
   } else {
+    debugger
     result = beforeUnderscore;
   }
 

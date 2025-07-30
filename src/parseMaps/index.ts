@@ -82,6 +82,7 @@ async function processMapsDirectory(mapPath: string, folders: Dirent[]) {
       // const wildMons = parseWildMon(content);
       const baseMap = await getBasemapID(parentFolderPath);
       const levelLabel = getLevelLabel(path.basename(path.dirname(fullPath)));
+   
       // console.log(
       //   result.scriptedGives.map((give) => JSON.stringify(give.wildMon))
       // );
