@@ -1,6 +1,7 @@
 export const notneededLabels = [
   "FortreeCity_Gym_EventScript_GiveAerialAce2::",
   "CheatCodeMegaStones::",
+  "DewfordTown_Gym_EventScript_GiveLowSweep2:",
   "LavaridgeTown_EventScript_BrendanGiveGoGoggles::",
   "LavaridgeTown_Gym_1F_EventScript_GiveOverheat2::",
   "MauvilleCity_Gym_EventScript_GiveVoltSwitch2::",

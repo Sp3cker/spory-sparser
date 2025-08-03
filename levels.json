@@ -708,18 +708,6 @@
           "wildMon": [],
           "explanation": "Whoop Brawly's ass",
           "scriptName": "DewfordTown_Gym_EventScript_GiveLowSweep::"
-        },
-        {
-          "items": [
-            {
-              "name": "ITEM_TM_LOW_SWEEP",
-              "quantity": 1
-            }
-          ],
-          "pokemon": [],
-          "wildMon": [],
-          "explanation": "Whoop Brawly's lil' ass",
-          "scriptName": "DewfordTown_Gym_EventScript_GiveLowSweep2:"
         }
       ],
       "image": "DewfordTown_Gym",
