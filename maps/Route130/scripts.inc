@@ -112,6 +112,7 @@ Route130_EventScript_TryRemoveHo_Oh::
 
 # 57 "data/maps/Route130/scripts.pory"
 Route130_EventScript_Ho_Oh::
+@explanation After Elite 4, find Mirage Island, Route 130
 # 58 "data/maps/Route130/scripts.pory"
 	lock
 # 59 "data/maps/Route130/scripts.pory"

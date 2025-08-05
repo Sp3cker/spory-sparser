@@ -576,6 +576,30 @@
       "image": "BattleFrontier_ScottsHouse"
     }
   ],
+  "MAP_BIRTH_ISLAND": [
+    {
+      "thisLevelsId": "MAP_BIRTH_ISLAND_EXTERIOR",
+      "baseMap": "MAP_BIRTH_ISLAND",
+      "levelLabel": "Exterior",
+      "scriptedGives": [
+        {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
+              "id": 386,
+              "script": "BirthIsland_Exterior_EventScript_Deoxys::",
+              "species": "SPECIES_DEOXYS_NORMAL",
+              "level": 70
+            }
+          ],
+          "explanation": "After defeating Wally in Victory Road, visit Birth Island",
+          "scriptName": "BirthIsland_Exterior_EventScript_Deoxys::"
+        }
+      ],
+      "image": "BirthIsland_Exterior"
+    }
+  ],
   "MAP_CAVE_OF_ORIGIN": [
     {
       "thisLevelsId": "MAP_CAVE_OF_ORIGIN_1F",
@@ -3442,6 +3466,22 @@
           "type": "object_event"
         }
       ],
+      "scriptedGives": [
+        {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
+              "id": 150,
+              "script": "MeteorFalls_StevensCave_EventScript_Mewtwo::",
+              "species": "SPECIES_MEWTWO",
+              "level": 70
+            }
+          ],
+          "explanation": "After beating Elite 4, use Waterfall to find inside Steven's Cave",
+          "scriptName": "MeteorFalls_StevensCave_EventScript_Mewtwo::"
+        }
+      ],
       "image": "MeteorFalls_StevensCave"
     }
   ],
@@ -4163,6 +4203,28 @@
   ],
   "MAP_NAVEL_ROCK": [
     {
+      "thisLevelsId": "MAP_NAVEL_ROCK_BOTTOM",
+      "baseMap": "MAP_NAVEL_ROCK",
+      "levelLabel": "Bottom",
+      "scriptedGives": [
+        {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
+              "id": 644,
+              "script": "NavelRock_Bottom_EventScript_Zekrom::",
+              "species": "SPECIES_ZEKROM",
+              "level": 70
+            }
+          ],
+          "explanation": "Challenge on Bottom Floor of Navel Rock.",
+          "scriptName": "NavelRock_Bottom_EventScript_Zekrom::"
+        }
+      ],
+      "image": "NavelRock_Bottom"
+    },
+    {
       "thisLevelsId": "MAP_NAVEL_ROCK_ENTRANCE",
       "baseMap": "MAP_NAVEL_ROCK",
       "levelLabel": "Entrance",
@@ -4190,6 +4252,22 @@
           ],
           "item": "ITEM_SACRED_ASH",
           "type": "hidden_item"
+        }
+      ],
+      "scriptedGives": [
+        {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
+              "id": 643,
+              "script": "NavelRock_Top_EventScript_Reshiram::",
+              "species": "SPECIES_RESHIRAM",
+              "level": 70
+            }
+          ],
+          "explanation": "After Elite 4, use Mystic Ticket to visit Navel Rock.",
+          "scriptName": "NavelRock_Top_EventScript_Reshiram::"
         }
       ],
       "image": "NavelRock_Top"
@@ -9448,6 +9526,22 @@
       "thisLevelsId": "MAP_ROUTE130",
       "baseMap": "MAP_ROUTE130",
       "levelLabel": "",
+      "scriptedGives": [
+        {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
+              "id": 250,
+              "script": "Route130_EventScript_Ho_Oh::",
+              "species": "SPECIES_HO_OH",
+              "level": 70
+            }
+          ],
+          "explanation": "After Elite 4, find Mirage Island, Route 130",
+          "scriptName": "Route130_EventScript_Ho_Oh::"
+        }
+      ],
       "image": "Route130",
       "trainerRefs": [
         {
@@ -10463,6 +10557,30 @@
           "rematch": false
         }
       ]
+    }
+  ],
+  "MAP_SEALED_CHAMBER": [
+    {
+      "thisLevelsId": "MAP_SEALED_CHAMBER_INNER_ROOM",
+      "baseMap": "MAP_SEALED_CHAMBER",
+      "levelLabel": "Innerroom",
+      "scriptedGives": [
+        {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
+              "id": 249,
+              "script": "SealedChamber_InnerRoom_EventScript_Lugia::",
+              "species": "SPECIES_LUGIA",
+              "level": 70
+            }
+          ],
+          "explanation": "After Elite 4, enter Sealed Chamber, Route 134",
+          "scriptName": "SealedChamber_InnerRoom_EventScript_Lugia::"
+        }
+      ],
+      "image": "SealedChamber_InnerRoom"
     }
   ],
   "MAP_SHOAL_CAVE": [
@@ -11652,6 +11770,28 @@
           ],
           "item": "ITEM_LATIASITE",
           "type": "object_event"
+        }
+      ],
+      "scriptedGives": [
+        {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
+              "id": 381,
+              "script": "SouthernIsland_Interior_EventScript_Latios::",
+              "species": "SPECIES_LATIOS",
+              "level": 70
+            },
+            {
+              "id": 380,
+              "script": "SouthernIsland_Interior_EventScript_Latias::",
+              "species": "SPECIES_LATIAS",
+              "level": 70
+            }
+          ],
+          "explanation": "After deafeating Wally in Victory Road, use Eon Ticket to visit Southern Island",
+          "scriptName": "SouthernIsland_Interior_EventScript_Latios::"
         }
       ],
       "image": "SouthernIsland_Interior"

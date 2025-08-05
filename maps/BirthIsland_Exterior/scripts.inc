@@ -144,6 +144,7 @@ BirthIsland_Exterior_EventScript_Complete::
 
 # 73 "data/maps/BirthIsland_Exterior/scripts.pory"
 BirthIsland_Exterior_EventScript_Deoxys::
+@explanation After defeating Wally in Victory Road, visit Birth Island
 # 74 "data/maps/BirthIsland_Exterior/scripts.pory"
 	waitse
 # 75 "data/maps/BirthIsland_Exterior/scripts.pory"

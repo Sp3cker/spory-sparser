@@ -214,12 +214,12 @@ export class IncScriptEvent {
     }
   }
   private parseWildMonLine(line: string) {
-    // Match: setwildbattle SPECIES_NAME, LEVEL
+    // Match: setwildbattle SPECIES_NAME, LEVEL or seteventmon SPECIES_NAME, LEVEL
 
-    const match = line.match(/^setwildbattle\s+(\w+),\s*(\d+)/i);
+    const match = line.match(/^(setwildbattle|seteventmon)\s+(\w+),\s*(\d+)/i);
     if (match) {
-      const species = match[1];
-      const level = parseInt(match[2], 10);
+      const species = match[2];
+      const level = parseInt(match[3], 10);
       if (!this.wildMon) {
         this.wildMon = [];
       }

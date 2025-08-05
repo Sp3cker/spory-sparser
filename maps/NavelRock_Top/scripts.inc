@@ -70,6 +70,7 @@ NavelRock_Top_EventScript_TryRemoveReshiram::
 
 # 36 "data/maps/NavelRock_Top/scripts.pory"
 NavelRock_Top_EventScript_Reshiram::
+@explanation After Elite 4, use Mystic Ticket to visit Navel Rock.
 # 37 "data/maps/NavelRock_Top/scripts.pory"
 	lockall
 # 38 "data/maps/NavelRock_Top/scripts.pory"

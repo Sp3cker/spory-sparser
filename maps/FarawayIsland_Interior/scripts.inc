@@ -230,6 +230,7 @@ FarawayIsland_Interior_Movement_MewFloatUpEast:
 
 # 116 "data/maps/FarawayIsland_Interior/scripts.pory"
 FarawayIsland_Interior_EventScript_Mew::
+@explanation With Old Sea Map, Visit Faraway Island
 # 117 "data/maps/FarawayIsland_Interior/scripts.pory"
 	lock
 # 118 "data/maps/FarawayIsland_Interior/scripts.pory"

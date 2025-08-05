@@ -64,6 +64,7 @@ SealedChamber_InnerRoom_EventScript_TryRemoveLugia::
 
 # 33 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 SealedChamber_InnerRoom_EventScript_Lugia::
+@explanation After Elite 4, enter Sealed Chamber, Route 134
 # 34 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	lock
 # 35 "data/maps/SealedChamber_InnerRoom/scripts.pory"

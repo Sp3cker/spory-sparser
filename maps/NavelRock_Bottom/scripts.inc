@@ -64,6 +64,7 @@ NavelRock_Bottom_EventScript_TryRemoveZekrom::
 
 # 33 "data/maps/NavelRock_Bottom/scripts.pory"
 NavelRock_Bottom_EventScript_Zekrom::
+@explanation Challenge on Bottom Floor of Navel Rock.
 # 34 "data/maps/NavelRock_Bottom/scripts.pory"
 	lock
 # 35 "data/maps/NavelRock_Bottom/scripts.pory"

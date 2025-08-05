@@ -58,6 +58,7 @@ SouthernIsland_Interior_EventScript_ShowLatias::
 
 # 30 "data/maps/SouthernIsland_Interior/scripts.pory"
 SouthernIsland_Interior_EventScript_Latios::
+@explanation After deafeating Wally in Victory Road, use Eon Ticket to visit Southern Island
 # 31 "data/maps/SouthernIsland_Interior/scripts.pory"
 	lock
 # 32 "data/maps/SouthernIsland_Interior/scripts.pory"
@@ -118,6 +119,7 @@ SouthernIsland_Interior_EventScript_RanFromLatios::
 
 # 60 "data/maps/SouthernIsland_Interior/scripts.pory"
 SouthernIsland_Interior_EventScript_Latias::
+@explanation After deafeating Wally in Victory Road, use Eon Ticket to visit Southern Island
 # 61 "data/maps/SouthernIsland_Interior/scripts.pory"
 	lock
 # 62 "data/maps/SouthernIsland_Interior/scripts.pory"
