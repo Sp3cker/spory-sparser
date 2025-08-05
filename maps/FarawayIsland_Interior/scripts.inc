@@ -230,7 +230,7 @@ FarawayIsland_Interior_Movement_MewFloatUpEast:
 
 # 116 "data/maps/FarawayIsland_Interior/scripts.pory"
 FarawayIsland_Interior_EventScript_Mew::
-@explanation With Old Sea Map, Visit Faraway Island
+@explanation After Elite 4, give Mr. Briney the Old Sea Map, visit Faraway Island
 # 117 "data/maps/FarawayIsland_Interior/scripts.pory"
 	lock
 # 118 "data/maps/FarawayIsland_Interior/scripts.pory"

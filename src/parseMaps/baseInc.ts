@@ -2,7 +2,7 @@ import { ZodSchema } from "zod";
 import {
   IncTrainer,
   IncTrainerSchema,
-  WildMonSchema,
+
 } from "../validators/levelIncData.ts";
 
 class BasicIncParser {
@@ -76,19 +76,5 @@ function parseTrainerBattles(incFileData: string): IncTrainer[] {
 
   return refs;
 }
-const parseWildMon = (incFileData: string): any => {
-  const parser = new BasicIncParser(
-    /^setwildbattle\s+(\w+)/i,
-    (match, _) => (currentLabel: string) => {
-      // Implementation for parsing wild mon
-      return {
-        script: currentLabel,
-        wildMon: match[1],
-      };
-    },
-    WildMonSchema
-  );
-  parser.parse(incFileData);
-  return parser.values;
-};
-export { parseTrainerBattles, parseWildMon };
+
+export { parseTrainerBattles };

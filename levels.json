@@ -1370,6 +1370,30 @@
       "image": "FallarborTown_MoveRelearnersHouse"
     }
   ],
+  "MAP_FARAWAY_ISLAND": [
+    {
+      "thisLevelsId": "MAP_FARAWAY_ISLAND_INTERIOR",
+      "baseMap": "MAP_FARAWAY_ISLAND",
+      "levelLabel": "Interior",
+      "scriptedGives": [
+        {
+          "items": [],
+          "pokemon": [],
+          "wildMon": [
+            {
+              "id": 151,
+              "script": "FarawayIsland_Interior_EventScript_Mew::",
+              "species": "SPECIES_MEW",
+              "level": 30
+            }
+          ],
+          "explanation": "After Elite 4, give Mr. Briney the Old Sea Map, visit Faraway Island",
+          "scriptName": "FarawayIsland_Interior_EventScript_Mew::"
+        }
+      ],
+      "image": "FarawayIsland_Interior"
+    }
+  ],
   "MAP_FIERY_PATH": [
     {
       "thisLevelsId": "MAP_FIERY_PATH",
@@ -3478,7 +3502,7 @@
               "level": 70
             }
           ],
-          "explanation": "After beating Elite 4, use Waterfall to find inside Steven's Cave",
+          "explanation": "After beating Elite 4, use Waterfall to find Steven's Cave in Meteor Falls",
           "scriptName": "MeteorFalls_StevensCave_EventScript_Mewtwo::"
         }
       ],
@@ -4218,7 +4242,7 @@
               "level": 70
             }
           ],
-          "explanation": "Challenge on Bottom Floor of Navel Rock.",
+          "explanation": "After Elite 4, travel to Navel Rock with the Mystic Ticket, challenge on bottom level",
           "scriptName": "NavelRock_Bottom_EventScript_Zekrom::"
         }
       ],
@@ -4266,7 +4290,7 @@
               "level": 70
             }
           ],
-          "explanation": "After Elite 4, use Mystic Ticket to visit Navel Rock.",
+          "explanation": "After Elite 4, travel to Navel Rock with the Mystic Ticket, challenge on top level",
           "scriptName": "NavelRock_Top_EventScript_Reshiram::"
         }
       ],

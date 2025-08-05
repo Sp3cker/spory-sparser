@@ -64,7 +64,7 @@ NavelRock_Bottom_EventScript_TryRemoveZekrom::
 
 # 33 "data/maps/NavelRock_Bottom/scripts.pory"
 NavelRock_Bottom_EventScript_Zekrom::
-@explanation Challenge on Bottom Floor of Navel Rock.
+@explanation After Elite 4, travel to Navel Rock with the Mystic Ticket, challenge on bottom level
 # 34 "data/maps/NavelRock_Bottom/scripts.pory"
 	lock
 # 35 "data/maps/NavelRock_Bottom/scripts.pory"

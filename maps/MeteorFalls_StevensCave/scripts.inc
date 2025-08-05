@@ -64,7 +64,7 @@ MeteorFalls_StevensCave_EventScript_TryRemoveMewtwo::
 
 # 33 "data/maps/MeteorFalls_StevensCave/scripts.pory"
 MeteorFalls_StevensCave_EventScript_Mewtwo::
-@explanation After beating Elite 4, use Waterfall to find inside Steven's Cave
+@explanation After beating Elite 4, use Waterfall to find Steven's Cave in Meteor Falls
 # 34 "data/maps/MeteorFalls_StevensCave/scripts.pory"
 	lock
 # 35 "data/maps/MeteorFalls_StevensCave/scripts.pory"
