@@ -37,7 +37,6 @@ Route111_WinstrateFamilysHouse_EventScript_Victor::
 # 19 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 Route111_WinstrateFamilysHouse_GiveMysticTicket::
 @explanation (Post Game) Speak to the Winstrate Family
-
 # 20 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	goto_if_set FLAG_ENABLE_SHIP_BIRTH_ISLAND, Route111_WinstrateFamilysHouse_AlreadyGaveMysticTicket
 # 21 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
@@ -75,7 +74,6 @@ Route111_WinstrateFamilysHouse_AlreadyGaveMysticTicket::
 # 37 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 Route111_WinstrateFamilysHouse_EventScript_Victoria::
 @explanation Defeat Victoria at the Winstrate Family House
-
 # 38 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	lock
 # 39 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"

@@ -49,9 +49,9 @@ RustboroCity_Mart_Pokemart_Basic:
 # 25 "data/maps/RustboroCity_Mart/scripts.pory"
 	.2byte ITEM_ANTIDOTE
 # 26 "data/maps/RustboroCity_Mart/scripts.pory"
-	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_FULL_HEAL
 # 27 "data/maps/RustboroCity_Mart/scripts.pory"
-	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_MAX_ELIXIR
 # 28 "data/maps/RustboroCity_Mart/scripts.pory"
 	.2byte ITEM_REPEL
 # 29 "data/maps/RustboroCity_Mart/scripts.pory"
@@ -95,9 +95,9 @@ RustboroCity_Mart_Pokemart_Expanded:
 # 48 "data/maps/RustboroCity_Mart/scripts.pory"
 	.2byte ITEM_SUPER_POTION
 # 49 "data/maps/RustboroCity_Mart/scripts.pory"
-	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_FULL_HEAL
 # 50 "data/maps/RustboroCity_Mart/scripts.pory"
-	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_MAX_ELIXIR
 # 51 "data/maps/RustboroCity_Mart/scripts.pory"
 	.2byte ITEM_ESCAPE_ROPE
 # 52 "data/maps/RustboroCity_Mart/scripts.pory"

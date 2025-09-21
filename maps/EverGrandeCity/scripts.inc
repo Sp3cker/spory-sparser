@@ -646,6 +646,7 @@ EverGrandeCity_EventScript_BeatDawnNotRival::
 
 
 EverGrandeCity_EventScript_RivalsFlyAway::
+@explanation Defeat Dawn
 # 344 "data/maps/EverGrandeCity/scripts.pory"
 	applymovement 2, Common_Movement_WalkInPlaceFasterDown
 # 345 "data/maps/EverGrandeCity/scripts.pory"
@@ -653,7 +654,6 @@ EverGrandeCity_EventScript_RivalsFlyAway::
 # 346 "data/maps/EverGrandeCity/scripts.pory"
 	msgbox DawnFarewell, MSGBOX_DEFAULT
 # 347 "data/maps/EverGrandeCity/scripts.pory"
-@explanation Defeat Dawn
 	giveitem ITEM_TM_DRACO_METEOR
 # 348 "data/maps/EverGrandeCity/scripts.pory"
 	msgbox DawnFarewell2, MSGBOX_DEFAULT
@@ -761,10 +761,10 @@ EverGrandeCity_EventScript_BrendanFarewell::
 
 
 EverGrandeCity_EventScript_RivalGiveKubfu::
+@explanation Say goodbye to your rival
 # 409 "data/maps/EverGrandeCity/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_KUBFU
 # 410 "data/maps/EverGrandeCity/scripts.pory"
-@explanation Say goodbye to your rival
 	givemonrandom SPECIES_KUBFU, 40
 # 411 "data/maps/EverGrandeCity/scripts.pory"
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, EverGrandeCity_EventScript_ReceiveKubfuParty
@@ -890,12 +890,12 @@ EverGrandeCity_EventScript_DeclineVolknerBattle::
 
 
 EverGrandeCity_EventScript_BattleVolkner::
+@explanation Defeat Volkner
 # 583 "data/maps/EverGrandeCity/scripts.pory"
 	msgbox EverGrandeCity_EventScript_BattleVolkner_Text_0, MSGBOX_DEFAULT
 # 584 "data/maps/EverGrandeCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_VOLKNER, Volkner_Outro
 # 585 "data/maps/EverGrandeCity/scripts.pory"
-@explanation Defeat Volkner
 	giveitem ITEM_TM_RISING_VOLTAGE
 # 586 "data/maps/EverGrandeCity/scripts.pory"
 	giveitem ITEM_TM_SUPERCELL_SLAM

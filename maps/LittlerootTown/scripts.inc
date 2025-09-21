@@ -3594,6 +3594,7 @@ LittlerootTown_EventScript_SetReceivedRunningShoes::
 # 901 "data/maps/LittlerootTown/scripts.pory"
 # 1798 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_EventScript_GiveRunningShoes::
+@explanation A humble gift from Iriv (it's blue raspberry flavor).
 # 1799 "data/maps/LittlerootTown/scripts.pory"
 # 902 "data/maps/LittlerootTown/scripts.pory"
 # 1800 "data/maps/LittlerootTown/scripts.pory"
@@ -3607,7 +3608,6 @@ LittlerootTown_EventScript_GiveRunningShoes::
 # 1804 "data/maps/LittlerootTown/scripts.pory"
 # 907 "data/maps/LittlerootTown/scripts.pory"
 # 1805 "data/maps/LittlerootTown/scripts.pory"
-@explanation A humble gift from Iriv (it's blue raspberry flavor).
 	giveitem ITEM_INFINITE_CANDY
 # 1806 "data/maps/LittlerootTown/scripts.pory"
 	setflag FLAG_SYS_DEXNAV_GET

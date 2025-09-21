@@ -801,7 +801,6 @@ PetalburgCity_Gym_EventScript_DontGiveEnigmaBerry::
 # 401 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_GiveEnigmaBerry::
 @explanation Unclear to me when you get this (sorry!)
-
 # 402 "data/maps/PetalburgCity_Gym/scripts.pory"
 	giveitem ITEM_ENIGMA_BERRY_E_READER
 # 403 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -877,7 +876,6 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 # 438 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_GiveFacade::
 @explanation Whoop your father's ass
-
 # 439 "data/maps/PetalburgCity_Gym/scripts.pory"
 	giveitem ITEM_TM_RETURN
 # 440 "data/maps/PetalburgCity_Gym/scripts.pory"

@@ -941,7 +941,6 @@ Route110_EventScript_BrendanDefeated::
 # 471 "data/maps/Route110/scripts.pory"
 Route110_EventScript_GiveFly::
 @explanation Defeat Rival
-
 # 472 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_HM_FLY
 # 473 "data/maps/Route110/scripts.pory"
@@ -953,7 +952,6 @@ Route110_EventScript_GiveFly::
 # 476 "data/maps/Route110/scripts.pory"
 Route110_EventScript_GiveRestOfItems::
 @explanation Defeat your Rival
-
 # 477 "data/maps/Route110/scripts.pory"
 	giveitemfast ITEM_DOWSING_MACHINE
 # 478 "data/maps/Route110/scripts.pory"

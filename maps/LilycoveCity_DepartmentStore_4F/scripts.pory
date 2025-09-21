@@ -75,8 +75,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
 	.2byte ITEM_SHINY_STONE
 	.2byte ITEM_KINGS_ROCK
 	.2byte ITEM_METAL_COAT
-	.2byte ITEM_UPGRADE
-	.2byte ITEM_DUBIOUS_DISC
 	.2byte ITEM_NONE
 	release
 	end

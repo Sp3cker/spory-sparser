@@ -1163,7 +1163,6 @@ RustboroCity_EventScript_ReturnGoodsTrigger3::
 # 582 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_EventScript_ReturnGoods::
 @explanation Return stolen Devon Goods to Mr. Devon
-
 # 583 "data/maps/RustboroCity/scripts.pory"
 	call_if_eq VAR_TEMP_1, 0, RustboroCity_EventScript_EmployeeFacePlayerUp2
 # 584 "data/maps/RustboroCity/scripts.pory"

@@ -237,7 +237,6 @@ RustboroCity_DevonCorp_2F_EventScript_AnorithReady::
 # 119 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 RustboroCity_DevonCorp_2F_EventScript_ReceiveLileep::
 @explanation Give researcher Root Fossil
-
 # 120 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_LILEEP
 # 121 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
@@ -329,7 +328,6 @@ RustboroCity_DevonCorp_2F_EventScript_FinishReceivingLileep::
 # 164 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorith::
 @explanation Give researcher Claw Fossil
-
 # 165 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_ANORITH
 # 166 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
@@ -709,6 +707,7 @@ RustboroCity_DevonCorp_2F_EventScript_DNASplicers_7:
 
 RustboroCity_DevonCorp_2F_EventScript_DNASplicers_9:
 @explanation Show reasercher Kyurem
+
 # 355 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Text_PleaseTakeTheseSplicers, MSGBOX_DEFAULT
 # 356 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
@@ -785,8 +784,7 @@ RustboroCity_DevonCorp_2F_EventScript_ReinsOfUnity_7:
 RustboroCity_DevonCorp_2F_EventScript_ReinsOfUnity_9:
 @explanation Show researcher on 2F a Calyrex
 # 444 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
-	msgbox RustboroCity_DevonCorp
-	_2F_Text_PleaseTakeTheseReins, MSGBOX_DEFAULT
+	msgbox RustboroCity_DevonCorp_2F_Text_PleaseTakeTheseReins, MSGBOX_DEFAULT
 # 445 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	giveitem ITEM_REINS_OF_UNITY
 # 446 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
@@ -862,6 +860,7 @@ RustboroCity_DevonCorp_2F_EventScript_NFusions_7:
 
 RustboroCity_DevonCorp_2F_EventScript_NFusions_9:
 @explanation Show researcher on 2F a Necrozma
+
 # 525 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Text_PleaseTakeTheseNFusions, MSGBOX_DEFAULT
 # 526 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"

@@ -155,7 +155,6 @@ RustboroCity_PokemonSchool_EventScript_StudentNotebook::
 # 78 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 RustboroCity_PokemonSchool_EventScript_Teacher::
 @explanation Speak to the teacher in Pokemon School
-
 # 79 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	lock
 # 80 "data/maps/RustboroCity_PokemonSchool/scripts.pory"

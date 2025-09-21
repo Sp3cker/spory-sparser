@@ -38,8 +38,8 @@ DesertUnderpass_EventScript_Fossil::
 
 # 20 "data/maps/DesertUnderpass/scripts.pory"
 DesertUnderpass_EventScript_GiveClawFossil::
-# 21 "data/maps/DesertUnderpass/scripts.pory"
 @explanation Based on your selection in Desert Ruins
+# 21 "data/maps/DesertUnderpass/scripts.pory"
 	giveitem ITEM_CLAW_FOSSIL
 # 22 "data/maps/DesertUnderpass/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
@@ -53,8 +53,8 @@ DesertUnderpass_EventScript_GiveClawFossil::
 
 # 27 "data/maps/DesertUnderpass/scripts.pory"
 DesertUnderpass_EventScript_GiveRootFossil::
-# 28 "data/maps/DesertUnderpass/scripts.pory"
 @explanation Based on your selection in Desert Ruins
+# 28 "data/maps/DesertUnderpass/scripts.pory"
 	giveitem ITEM_ROOT_FOSSIL
 # 29 "data/maps/DesertUnderpass/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull

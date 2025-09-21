@@ -24,8 +24,7 @@ PacifidlogTown_House1_Text_SixDotsOpenThreeDoors:
 	.string "know what he meant.$"
 
 PacifidlogTown_House1_EventScript_Man::
-@explanation Speak to man in House 1
-
+@explanation Speak to a man in his house
 # 17 "data/maps/PacifidlogTown_House1/scripts.pory"
 	lock
 # 18 "data/maps/PacifidlogTown_House1/scripts.pory"
@@ -70,7 +69,8 @@ PacifidlogTown_House1_EventScript_Man_7:
 	end
 
 PacifidlogTown_House1_EventScript_Man_2:
-@explanation Speak to a man in his house
+@explanation Speak to man in House 1
+
 # 21 "data/maps/PacifidlogTown_House1/scripts.pory"
 	msgbox PacifidlogTown_House1_GenesectManIntro
 # 22 "data/maps/PacifidlogTown_House1/scripts.pory"
@@ -159,3 +159,5 @@ PacifidlogTown_House1_Text_NoDrives::
 # 86 "data/maps/PacifidlogTown_House1/scripts.pory"
 	.string "Hmm? You don't have any drives to trade\n"
 	.string "with me.$"
+
+

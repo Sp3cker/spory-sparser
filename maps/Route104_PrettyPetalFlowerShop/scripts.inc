@@ -149,7 +149,6 @@ Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirl::
 # 75 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail::
 @explanation Speak to shopkeep in P.P. Flower Shop
-
 # 76 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	msgbox Route104_PrettyPetalFlowerShop_Text_YouCanHaveThis, MSGBOX_DEFAULT
 # 77 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"

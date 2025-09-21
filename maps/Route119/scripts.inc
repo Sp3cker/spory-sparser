@@ -338,7 +338,6 @@ Route119_EventScript_DefeatedBrendan::
 # 169 "data/maps/Route119/scripts.pory"
 Route119_EventScript_GiveFlyHM::
 @explanation Defeat Rival outside Fortree City
-
 # 170 "data/maps/Route119/scripts.pory"
 	giveitem ITEM_LIFE_ORB
 # 171 "data/maps/Route119/scripts.pory"

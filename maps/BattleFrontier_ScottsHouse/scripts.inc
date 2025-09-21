@@ -56,6 +56,7 @@ BattleFrontier_ScottsHouse_EventScript_CheckGiveShield::
 
 # 29 "data/maps/BattleFrontier_ScottsHouse/scripts.pory"
 BattleFrontier_ScottsHouse_EventScript_CheckSilverSymbols::
+@explanation Collect all Silver Badges in Battle Frontier
 # 30 "data/maps/BattleFrontier_ScottsHouse/scripts.pory"
 	goto_if_unset FLAG_SYS_TOWER_SILVER, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield
 # 31 "data/maps/BattleFrontier_ScottsHouse/scripts.pory"
@@ -73,7 +74,6 @@ BattleFrontier_ScottsHouse_EventScript_CheckSilverSymbols::
 # 37 "data/maps/BattleFrontier_ScottsHouse/scripts.pory"
 	msgbox BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols, MSGBOX_DEFAULT
 # 38 "data/maps/BattleFrontier_ScottsHouse/scripts.pory"
-	@explanation Collect all Silver Badges in Battle Frontier
 	giveitem ITEM_LANSAT_BERRY
 # 39 "data/maps/BattleFrontier_ScottsHouse/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_BerryPocketFull
@@ -89,6 +89,7 @@ BattleFrontier_ScottsHouse_EventScript_CheckSilverSymbols::
 
 # 45 "data/maps/BattleFrontier_ScottsHouse/scripts.pory"
 BattleFrontier_ScottsHouse_EventScript_CheckGoldSymbols::
+@explanation Collect all gold symbols in Battle Frontier
 # 46 "data/maps/BattleFrontier_ScottsHouse/scripts.pory"
 	goto_if_unset FLAG_SYS_TOWER_GOLD, BattleFrontier_ScottsHouse_EventScript_CheckGiveShield
 # 47 "data/maps/BattleFrontier_ScottsHouse/scripts.pory"
@@ -106,7 +107,6 @@ BattleFrontier_ScottsHouse_EventScript_CheckGoldSymbols::
 # 53 "data/maps/BattleFrontier_ScottsHouse/scripts.pory"
 	msgbox BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols, MSGBOX_DEFAULT
 # 54 "data/maps/BattleFrontier_ScottsHouse/scripts.pory"
-	@explanation Collect all gold symbols in Battle Frontier
 	giveitem ITEM_STARF_BERRY
 # 55 "data/maps/BattleFrontier_ScottsHouse/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_BerryPocketFull

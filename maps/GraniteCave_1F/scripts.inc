@@ -8,6 +8,7 @@ GraniteCave_1F_MapScripts::
 
 # 5 "data/maps/GraniteCave_1F/scripts.pory"
 GraniteCave_1F_EventScript_Hiker::
+@explanation Talk to the Hiker
 # 6 "data/maps/GraniteCave_1F/scripts.pory"
 	lock
 # 7 "data/maps/GraniteCave_1F/scripts.pory"
@@ -17,7 +18,6 @@ GraniteCave_1F_EventScript_Hiker::
 # 9 "data/maps/GraniteCave_1F/scripts.pory"
 	msgbox GraniteCave_1F_Text_GetsDarkAheadHereYouGo, MSGBOX_DEFAULT
 # 10 "data/maps/GraniteCave_1F/scripts.pory"
-@explanation Talk to the Hiker
 	giveitem ITEM_HM_FLASH
 # 11 "data/maps/GraniteCave_1F/scripts.pory"
 	setflag FLAG_RECEIVED_HM_FLASH

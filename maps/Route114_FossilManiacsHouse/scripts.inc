@@ -19,7 +19,6 @@ Route114_FossilManiacsHouse_OnTransition:
 # 10 "data/maps/Route114_FossilManiacsHouse/scripts.pory"
 Route114_FossilManiacsHouse_EventScript_FossilManiacsBrother::
 @explanation Enter Fossil Maniac's house, talk to him (HE CRAZY)
-
 # 11 "data/maps/Route114_FossilManiacsHouse/scripts.pory"
 	lock
 # 12 "data/maps/Route114_FossilManiacsHouse/scripts.pory"

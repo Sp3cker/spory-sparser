@@ -18,7 +18,6 @@ Route123_BerryMastersHouse_OnTransition:
 
 # 10 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 Route123_BerryMastersHouse_EventScript_BerryMaster::
-
 # 11 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	lock
 # 12 "data/maps/Route123_BerryMastersHouse/scripts.pory"
@@ -152,7 +151,6 @@ Route123_BerryMastersHouse_EventScript_GiveNormalBerry::
 # 76 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 Route123_BerryMastersHouse_EventScript_GiveSpelonBerry::
 @explanation Part of Berry Master Quest
-
 # 77 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	goto_if_set FLAG_RECEIVED_SPELON_BERRY, Route123_BerryMastersHouse_EventScript_GiveNormalBerry
 # 78 "data/maps/Route123_BerryMastersHouse/scripts.pory"

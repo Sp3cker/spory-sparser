@@ -121,7 +121,6 @@ Route110_TrickHouseEnd_EventScript_TrickMaster::
 # 61 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 Route110_TrickHouseEnd_EventScript_CompletedPuzzle1::
 @explanation Solve puzzle in Trick House
-
 # 62 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	msgbox Route110_TrickHouseEnd_Text_AllNightToPlantTrees, MSGBOX_DEFAULT
 # 63 "data/maps/Route110_TrickHouseEnd/scripts.pory"
@@ -190,7 +189,6 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle2::
 # 94 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 Route110_TrickHouseEnd_EventScript_CompletedPuzzle3::
 @explanation Solve puzzle 3 in Trick House
-
 # 95 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	msgbox Route110_TrickHouseEnd_Text_AllNightToPreparePanels, MSGBOX_DEFAULT
 # 96 "data/maps/Route110_TrickHouseEnd/scripts.pory"
@@ -240,7 +238,6 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle3::
 # 118 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 Route110_TrickHouseEnd_EventScript_CompletedPuzzle4::
 @explanation Solve puzzle 4 in Trick House
-
 # 119 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	msgbox Route110_TrickHouseEnd_Text_AllNightToShoveBoulders, MSGBOX_DEFAULT
 # 120 "data/maps/Route110_TrickHouseEnd/scripts.pory"
@@ -266,7 +263,6 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle4::
 # 130 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 Route110_TrickHouseEnd_EventScript_CompletedPuzzle5::
 @explanation Complete puzzle 5 in Trick House
-
 # 131 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	msgbox Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls, MSGBOX_DEFAULT
 # 132 "data/maps/Route110_TrickHouseEnd/scripts.pory"
@@ -292,7 +288,6 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle5::
 # 142 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 Route110_TrickHouseEnd_EventScript_CompletedPuzzle6::
 @explanation Complete puzzle 6 in Trick House
-
 # 143 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	msgbox Route110_TrickHouseEnd_Text_AllNightToInstallDoors, MSGBOX_DEFAULT
 # 144 "data/maps/Route110_TrickHouseEnd/scripts.pory"
@@ -318,7 +313,6 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle6::
 # 154 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 Route110_TrickHouseEnd_EventScript_CompletedPuzzle7::
 @explanation Defeat Trick House
-
 # 155 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	msgbox Route110_TrickHouseEnd_Text_AllNightSettingUpArrows, MSGBOX_DEFAULT
 # 156 "data/maps/Route110_TrickHouseEnd/scripts.pory"

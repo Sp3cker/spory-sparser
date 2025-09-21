@@ -9,7 +9,6 @@ Route113_GlassWorkshop_MapScripts::
 # 5 "data/maps/Route113_GlassWorkshop/scripts.pory"
 Route113_GlassWorkshop_EventScript_GlassWorker::
 @explanation Speak to Glass worker in Workshop
-
 # 6 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	lock
 # 7 "data/maps/Route113_GlassWorkshop/scripts.pory"

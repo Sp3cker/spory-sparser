@@ -205,7 +205,6 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 # 103 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_EventScript_GiveCalmMind2::
 @explanation Whoop BOTH those damn gym leaders
-
 # 104 "data/maps/MossdeepCity_Gym/scripts.pory"
 	giveitem ITEM_TM_EXPANDING_FORCE
 # 105 "data/maps/MossdeepCity_Gym/scripts.pory"

@@ -183,7 +183,6 @@ SootopolisCity_ChampHouse_EventScript_DanniDefeated::
 
 SootopolisCity_ChampHouse_EventScript_DanniGiveGenesect::
 @explanation Defeat Danni in the Champ's house
-
 # 109 "data/maps/SootopolisCity_ChampHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_GENESECT
 # 110 "data/maps/SootopolisCity_ChampHouse/scripts.pory"
@@ -323,7 +322,6 @@ SootopolisCity_ChampHouse_EventScript_MastaJanesDefeated::
 
 SootopolisCity_ChampHouse_EventScript_MastaJanesGiveDitto::
 @explanation Defeat Masta Janes in the Champ's house
-
 # 246 "data/maps/SootopolisCity_ChampHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_DITTO
 # 247 "data/maps/SootopolisCity_ChampHouse/scripts.pory"
@@ -463,7 +461,6 @@ SootopolisCity_ChampHouse_EventScript_BefoolsDefeated::
 
 SootopolisCity_ChampHouse_EventScript_BefoolsGiveHoopa::
 @explanation Defeat Befools
-
 # 386 "data/maps/SootopolisCity_ChampHouse/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_HOOPA_CONFINED
 # 387 "data/maps/SootopolisCity_ChampHouse/scripts.pory"

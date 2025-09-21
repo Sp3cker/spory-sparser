@@ -153,7 +153,6 @@ OldaleTown_EventScript_GoToMartEast::
 # 77 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_EventScript_ExplainPokemonMart::
 @explanation Talk to shopkeep in PokeMart
-
 # 78 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_Text_ThisIsAPokemonMart, MSGBOX_DEFAULT
 # 79 "data/maps/OldaleTown/scripts.pory"

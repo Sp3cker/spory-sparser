@@ -813,6 +813,7 @@ LavaridgeTown_EventScript_EggWoman::
 	goto_if_eq LavaridgeTown_EventScript_EggWoman_2
 LavaridgeTown_EventScript_EggWoman_1:
 @explanation Give lady a Yellow Shard
+
 # 413 "data/maps/LavaridgeTown/scripts.pory"
 	checkitem ITEM_YELLOW_SHARD
 # 414 "data/maps/LavaridgeTown/scripts.pory"

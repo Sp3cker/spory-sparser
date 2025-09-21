@@ -184,7 +184,6 @@ Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 
 # 93 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 Route119_WeatherInstitute_2F_EventScript_ReceiveCastform::
-
 # 94 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseDontTakePokemon, MSGBOX_DEFAULT
 # 95 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"

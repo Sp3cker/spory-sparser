@@ -315,7 +315,6 @@ Route111_Movement_PlayerFall::
 # 158 "data/maps/Route111/scripts.pory"
 Route111_EventScript_Girl::
 @explanation Receive your daily berry from berry girl
-
 # 159 "data/maps/Route111/scripts.pory"
 	lock
 # 160 "data/maps/Route111/scripts.pory"
@@ -1551,7 +1550,6 @@ Route111_EventScript_DawnRivalBattle::
 
 Route111_EventScript_DawnDefeated::
 @explanation Defeat Dawn
-
 # 794 "data/maps/Route111/scripts.pory"
 	msgbox Route111_Text_Dawn_MagmaAndAqua
 # 795 "data/maps/Route111/scripts.pory"

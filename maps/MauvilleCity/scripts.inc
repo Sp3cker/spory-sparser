@@ -836,6 +836,7 @@ MauvilleCity_Movement_ScottExitEast:
 
 # 419 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_Wattson::
+@explanation Talk to Wattson
 # 420 "data/maps/MauvilleCity/scripts.pory"
 	lock
 # 421 "data/maps/MauvilleCity/scripts.pory"
@@ -849,7 +850,6 @@ MauvilleCity_EventScript_Wattson::
 # 425 "data/maps/MauvilleCity/scripts.pory"
 	msgbox MauvilleCity_Text_WattsonNeedFavorTakeKey, MSGBOX_DEFAULT
 # 426 "data/maps/MauvilleCity/scripts.pory"
-@explanation Talk to Wattson
 	giveitem ITEM_BASEMENT_KEY
 # 427 "data/maps/MauvilleCity/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
@@ -875,10 +875,10 @@ MauvilleCity_EventScript_BegunNewMauville::
 
 # 438 "data/maps/MauvilleCity/scripts.pory"
 MauvilleCity_EventScript_CompletedNewMauville::
+@explanation Clear New Mauville
 # 439 "data/maps/MauvilleCity/scripts.pory"
 	msgbox MauvilleCity_Text_WattsonThanksTakeTM, MSGBOX_DEFAULT
 # 440 "data/maps/MauvilleCity/scripts.pory"
-@explanation Clear New Mauville
 	giveitem ITEM_TM_CLOSE_COMBAT
 # 441 "data/maps/MauvilleCity/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull

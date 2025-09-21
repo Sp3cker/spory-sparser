@@ -239,7 +239,6 @@ Route125_EventScript_RoarkDefeated::
 
 Route125_EventScript_RoarkGiveItems::
 @explanation Defeat Roark
-
 # 137 "data/maps/Route125/scripts.pory"
 	giveitem ITEM_TM_STONE_EDGE
 # 138 "data/maps/Route125/scripts.pory"

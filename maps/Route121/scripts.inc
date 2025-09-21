@@ -441,7 +441,6 @@ Route121_EventScript_DeclineByronBattle::
 
 Route121_EventScript_BattleByron::
 @explanation Defeat Byron outside Lilycove City
-
 # 233 "data/maps/Route121/scripts.pory"
 	msgbox Route121_EventScript_BattleByron_Text_0, MSGBOX_DEFAULT
 # 234 "data/maps/Route121/scripts.pory"
@@ -471,7 +470,6 @@ Route121_EventScript_ByronDefeated::
 
 Route121_EventScript_ByronGiveJirachi::
 @explanation Defeat Byron outside Lilycove City
-
 # 252 "data/maps/Route121/scripts.pory"
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_JIRACHI
 # 253 "data/maps/Route121/scripts.pory"

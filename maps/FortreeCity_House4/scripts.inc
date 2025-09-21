@@ -64,6 +64,7 @@ FortreeCity_House4_EventScript_WingullOnErrand::
 
 # 33 "data/maps/FortreeCity_House4/scripts.pory"
 FortreeCity_House4_EventScript_WingullReturned::
+@explanation Wait for Wingull to return
 # 34 "data/maps/FortreeCity_House4/scripts.pory"
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 # 35 "data/maps/FortreeCity_House4/scripts.pory"
@@ -71,7 +72,6 @@ FortreeCity_House4_EventScript_WingullReturned::
 # 36 "data/maps/FortreeCity_House4/scripts.pory"
 	msgbox FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb, MSGBOX_DEFAULT
 # 37 "data/maps/FortreeCity_House4/scripts.pory"
-@explanation Wait for Wingull to return
 	giveitem ITEM_MENTAL_HERB
 # 38 "data/maps/FortreeCity_House4/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull

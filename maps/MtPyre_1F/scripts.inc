@@ -8,6 +8,7 @@ MtPyre_1F_MapScripts::
 
 # 5 "data/maps/MtPyre_1F/scripts.pory"
 MtPyre_1F_EventScript_CleanseTagWoman::
+@explanation Commune with priestess on 1F
 # 6 "data/maps/MtPyre_1F/scripts.pory"
 	lock
 # 7 "data/maps/MtPyre_1F/scripts.pory"
@@ -17,7 +18,6 @@ MtPyre_1F_EventScript_CleanseTagWoman::
 # 9 "data/maps/MtPyre_1F/scripts.pory"
 	msgbox MtPyre_1F_Text_TakeThisForYourOwnGood, MSGBOX_DEFAULT
 # 10 "data/maps/MtPyre_1F/scripts.pory"
-@explanation Commune with priestess on 1F
 	giveitem ITEM_CLEANSE_TAG
 # 11 "data/maps/MtPyre_1F/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull

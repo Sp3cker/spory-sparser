@@ -61,7 +61,6 @@ RustboroCity_DevonCorp_3F_OnFrame:
 # 31 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 @explanation Talk to Mr. Devon for the first time.
-
 # 32 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	lockall
 # 33 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"

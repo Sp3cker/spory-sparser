@@ -354,8 +354,8 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 
 # 178 "data/maps/DewfordTown_Gym/scripts.pory"
 DewfordTown_Gym_EventScript_GiveLowSweep::
-# 179 "data/maps/DewfordTown_Gym/scripts.pory"
 @explanation Whoop Brawly's ass
+# 179 "data/maps/DewfordTown_Gym/scripts.pory"
 	giveitem ITEM_TM_LOW_SWEEP
 # 180 "data/maps/DewfordTown_Gym/scripts.pory"
 	msgbox DewfordTown_Gym_Text_ExplainLowSweep, MSGBOX_DEFAULT
@@ -368,7 +368,6 @@ DewfordTown_Gym_EventScript_GiveLowSweep::
 # 184 "data/maps/DewfordTown_Gym/scripts.pory"
 DewfordTown_Gym_EventScript_GiveLowSweep2:
 # 185 "data/maps/DewfordTown_Gym/scripts.pory"
-@explanation Whoop Brawly's lil' ass
 	giveitem ITEM_TM_LOW_SWEEP
 # 186 "data/maps/DewfordTown_Gym/scripts.pory"
 	msgbox DewfordTown_Gym_Text_ExplainLowSweep, MSGBOX_DEFAULT
@@ -950,3 +949,5 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 DewfordTown_Gym_Text_Hariyama:
 # 475 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "Hariyama: Har- Har- HARIYAMA!$"
+
+

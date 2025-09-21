@@ -251,7 +251,6 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 # 126 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 SootopolisCity_Gym_1F_EventScript_GiveWaterPulse::
 @explanation Defeat Juan (aka whoop his ass)
-
 # 127 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	giveitem ITEM_GRIMMITE
 # 128 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
@@ -269,7 +268,6 @@ SootopolisCity_Gym_1F_EventScript_GiveWaterPulse::
 # 134 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2::
 @explanation Defeat Juan (aka whoop his ass)
-
 # 135 "data/maps/SootopolisCity_Gym_1F/scripts.pory"
 	giveitem ITEM_GRIMMITE
 # 136 "data/maps/SootopolisCity_Gym_1F/scripts.pory"

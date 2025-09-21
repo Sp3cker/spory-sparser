@@ -153,46 +153,42 @@ LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
 # 77 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.2byte ITEM_METAL_COAT
 # 78 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_UPGRADE
-# 79 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_DUBIOUS_DISC
-# 80 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.2byte ITEM_NONE
-# 81 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 79 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	release
-# 82 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 80 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	end
-# 83 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 81 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 
-# 84 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 82 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
-# 85 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 83 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "Hmm…\p"
-# 86 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 84 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "An attacking move…\n"
-# 87 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 85 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "Or a defensive move…\p"
-# 88 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 86 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "It's no easy matter to decide which TM\n"
-# 89 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 87 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "moves should be taught to Pokémon…$"
-# 90 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 88 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 
-# 91 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 89 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs:
-# 92 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 90 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "There are so many different kinds of\n"
-# 93 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 91 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "TM moves.\p"
-# 94 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 92 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "A catalog I read said there are fifty\n"
-# 95 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 93 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "different kinds.$"
-# 96 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 94 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 
-# 97 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 95 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:
-# 98 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 96 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "I'd like to get all the different TMs,\n"
-# 99 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+# 97 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "but a Pokémon learns only four moves.$"

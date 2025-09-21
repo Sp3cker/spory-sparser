@@ -114,7 +114,8 @@ FarawayIsland_Interior_Movement_MewFloatUpEast:
 	step_end
 
 FarawayIsland_Interior_EventScript_Mew::
-With Old Sea Map from Abandoned Ship, visit Faraway Island
+@explanation After Elite 4, give Mr. Briney the Old Sea Map, visit Faraway Island
+
 	lock
 	faceplayer
 	applymovement LOCALID_FARAWAY_ISLAND_MEW, FarawayIsland_Interior_Movement_MewAppear

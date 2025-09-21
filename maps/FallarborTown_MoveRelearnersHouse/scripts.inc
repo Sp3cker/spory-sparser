@@ -16,6 +16,7 @@ FallarborTown_MoveRelearnersHouse_MapScripts::
 
 # 9 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner::
+@explanation Talk to the Move Tutor
 # 10 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 	lock
 # 11 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
@@ -27,7 +28,6 @@ FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner::
 # 14 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 	msgbox FallarborTown_MoveRelearnersHouse_Text_ImTheMoveTutor, MSGBOX_DEFAULT
 # 15 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
-@explanation Talk to the Move Tutor
 	giveitemfast ITEM_TM_DRAGON_CLAW
 # 16 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 	giveitemfast ITEM_TM_BLIZZARD

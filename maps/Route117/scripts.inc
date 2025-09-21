@@ -355,7 +355,6 @@ Route117_EventScript_RematchMaria::
 # 178 "data/maps/Route117/scripts.pory"
 Route117_EventScript_Derek::
 @explanation Find sneaky-deaky Derek
-
 # 179 "data/maps/Route117/scripts.pory"
 	lock
 # 180 "data/maps/Route117/scripts.pory"

@@ -210,7 +210,6 @@ Route116_EventScript_DevonEmployee::
 # 105 "data/maps/Route116/scripts.pory"
 Route116_EventScript_GiveRepeatBall::
 @explanation Encounter Devon Worker outside Rustboro City
-
 # 106 "data/maps/Route116/scripts.pory"
 	setflag FLAG_MET_DEVON_EMPLOYEE
 # 107 "data/maps/Route116/scripts.pory"
@@ -1098,7 +1097,6 @@ Route116_EventScript_CandiceDefeated::
 
 Route116_EventScript_CandiceGiveRockTomb::
 @explanation Defeat Candice
-
 # 565 "data/maps/Route116/scripts.pory"
 	giveitem ITEM_TM_ICY_WIND
 # 566 "data/maps/Route116/scripts.pory"

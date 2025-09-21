@@ -27,6 +27,7 @@ MauvilleCity_Mart_Pokemart:
 	.2byte ITEM_X_ACCURACY
 	.2byte ITEM_SHED_SHELL
 	.2byte ITEM_LIGHT_CLAY
+	.2byte ITEM_FLOAT_STONE
 	.2byte ITEM_NONE
 	release
 	end

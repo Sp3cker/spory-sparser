@@ -681,7 +681,6 @@ Route110_TrickHouseEntrance_EventScript_GiveReward::
 # 341 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 Route110_TrickHouseEntrance_EventScript_GivePuzzle1Reward::
 @explanation Solve puzzle 1
-
 # 342 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 	giveitem ITEM_TM_GUNK_SHOT
 # 343 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
@@ -703,7 +702,6 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle1Reward::
 # 351 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 Route110_TrickHouseEntrance_EventScript_GivePuzzle2Reward::
 @explanation Solve puzzle 2
-
 # 352 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 	giveitem ITEM_TM_SOLAR_BEAM
 # 353 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
@@ -739,7 +737,6 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle2Reward::
 # 368 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 Route110_TrickHouseEntrance_EventScript_GivePuzzle3Reward::
 @explanation Solve puzzle 3
-
 # 369 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 	setflag FLAG_BEAT_TRICK_HOUSE_3
 # 370 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
@@ -779,7 +776,6 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle3Reward::
 # 387 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 Route110_TrickHouseEntrance_EventScript_GivePuzzle4Reward::
 @explanation Solve puzzle 4
-
 # 388 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 	giveitem ITEM_SMOKE_BALL
 # 389 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
@@ -797,7 +793,6 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle4Reward::
 # 395 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 Route110_TrickHouseEntrance_EventScript_GivePuzzle5Reward::
 @explanation Solve puzzle 5
-
 # 396 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 	giveitem ITEM_TM_TAUNT
 # 397 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
@@ -815,7 +810,6 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle5Reward::
 # 403 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 Route110_TrickHouseEntrance_EventScript_GivePuzzle6Reward::
 @explanation Solve puzzle 6
-
 # 404 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 	giveitem ITEM_MAGNET
 # 405 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
@@ -833,7 +827,6 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle6Reward::
 # 411 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 Route110_TrickHouseEntrance_EventScript_GivePuzzle7Reward::
 @explanation Solve puzzle 7
-
 # 412 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 	giveitem ITEM_PP_MAX
 # 413 "data/maps/Route110_TrickHouseEntrance/scripts.pory"

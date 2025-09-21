@@ -15,7 +15,6 @@ MirageTower_4F_MapScripts::
 # 8 "data/maps/MirageTower_4F/scripts.pory"
 MirageTower_4F_EventScript_RootFossil::
 @explanation Pickup the Root Fossil
-
 # 9 "data/maps/MirageTower_4F/scripts.pory"
 	lock
 # 10 "data/maps/MirageTower_4F/scripts.pory"
@@ -61,7 +60,6 @@ MirageTower_4F_EventScript_LeaveRootFossil::
 # 30 "data/maps/MirageTower_4F/scripts.pory"
 MirageTower_4F_EventScript_ClawFossil::
 @explanation Pick up the Claw Fossil
-
 # 31 "data/maps/MirageTower_4F/scripts.pory"
 	lock
 # 32 "data/maps/MirageTower_4F/scripts.pory"

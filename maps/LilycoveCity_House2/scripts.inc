@@ -220,3 +220,5 @@ LilycoveCity_House2_Text_NoMemories::
 # 92 "data/maps/LilycoveCity_House2/scripts.pory"
 	.string "Nice try, but you don't even have any\n"
 	.string "memories to trade with me!$"
+
+

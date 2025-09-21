@@ -438,7 +438,6 @@ Route120_EventScript_RemoveBridgeKecleonPostBattle::
 # 219 "data/maps/Route120/scripts.pory"
 Route120_EventScript_StevenGiveDeconScope::
 @explanation Speak to Steven outside Fortree City
-
 # 220 "data/maps/Route120/scripts.pory"
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
 # 221 "data/maps/Route120/scripts.pory"

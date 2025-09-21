@@ -67,7 +67,6 @@ Route104_EventScript_HideWhiteHerbFlorist::
 # 34 "data/maps/Route104/scripts.pory"
 Route104_EventScript_ExpertF::
 @explanation Florist that gives you berries
-
 # 35 "data/maps/Route104/scripts.pory"
 	lock
 # 36 "data/maps/Route104/scripts.pory"
@@ -103,7 +102,6 @@ Route104_EventScript_ReceivedBerry::
 # 51 "data/maps/Route104/scripts.pory"
 Route104_EventScript_WhiteHerbFlorist::
 @explanation Hidden before Badge 3. Speak to her after defeating Watson
-
 # 52 "data/maps/Route104/scripts.pory"
 	lock
 # 53 "data/maps/Route104/scripts.pory"
@@ -201,7 +199,6 @@ Route104_EventScript_Boy1::
 # 99 "data/maps/Route104/scripts.pory"
 Route104_EventScript_HexManiac::
 @explanation Speak to HMA dork
-
 # 100 "data/maps/Route104/scripts.pory"
 	lock
 # 101 "data/maps/Route104/scripts.pory"
@@ -1974,7 +1971,6 @@ Route104_EventScript_DawnRivalBattle::
 
 Route104_EventScript_DawnDefeated::
 @explanation Defeat Dawn in a battle.
-
 # 997 "data/maps/Route104/scripts.pory"
 	msgbox Dawn_TakeThis
 # 998 "data/maps/Route104/scripts.pory"

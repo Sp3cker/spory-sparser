@@ -699,7 +699,6 @@ Route124_DivingTreasureHuntersHouse_Text_ShardTradeBoard:
 
 Route124_DivingTreasureHuntersHouse_EventScript_FormChangingLady::
 @explanation Speak to lady inside island house
-
 # 354 "data/maps/Route124_DivingTreasureHuntersHouse/scripts.pory"
 	lock
 # 355 "data/maps/Route124_DivingTreasureHuntersHouse/scripts.pory"

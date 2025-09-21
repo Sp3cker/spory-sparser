@@ -1021,7 +1021,6 @@ PetalburgCity_EventScript_Scott3::
 # 511 "data/maps/PetalburgCity/scripts.pory"
 PetalburgCity_EventScript_Scott::
 @explanation Speak to Scott (dude with sunglasses).
-
 # 512 "data/maps/PetalburgCity/scripts.pory"
 	applymovement LOCALID_SCOTT, PetalburgCity_Movement_ScottStartWalkLeft
 # 513 "data/maps/PetalburgCity/scripts.pory"

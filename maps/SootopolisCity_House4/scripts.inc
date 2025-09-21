@@ -64,7 +64,7 @@ SootopolisCity_House4_EventScript_RelicsMan_8:
 	end
 
 SootopolisCity_House4_EventScript_RelicsMan_10:
-@explanation Man in House 4 Dialga
+@explanation Show Man in House 4 Dialga
 # 25 "data/maps/SootopolisCity_House4/scripts.pory"
 	goto_if_set FLAG_RECEIVED_ADAMANT_ORB, SootopolisCity_House4_EventScript_RelicsMan_14
 # 32 "data/maps/SootopolisCity_House4/scripts.pory"
@@ -78,7 +78,7 @@ SootopolisCity_House4_EventScript_RelicsMan_10:
 	goto SootopolisCity_House4_EventScript_RelicsMan_8
 
 SootopolisCity_House4_EventScript_RelicsMan_11:
-@explanation Show the man in House 4 Palkia
+@explanation Show Man in House 4 Palkea
 # 39 "data/maps/SootopolisCity_House4/scripts.pory"
 	goto_if_set FLAG_RECEIVED_LUSTROUS_ORB, SootopolisCity_House4_EventScript_RelicsMan_17
 # 46 "data/maps/SootopolisCity_House4/scripts.pory"
@@ -92,7 +92,8 @@ SootopolisCity_House4_EventScript_RelicsMan_11:
 	goto SootopolisCity_House4_EventScript_RelicsMan_8
 
 SootopolisCity_House4_EventScript_RelicsMan_12:
-@explanation Show the man in House 4 Giratina
+@explanation Show Man in House 4 Giratina
+
 # 53 "data/maps/SootopolisCity_House4/scripts.pory"
 	goto_if_set FLAG_RECEIVED_GRISEOUS_ORB, SootopolisCity_House4_EventScript_RelicsMan_20
 # 60 "data/maps/SootopolisCity_House4/scripts.pory"
@@ -111,6 +112,7 @@ SootopolisCity_House4_EventScript_RelicsMan_14:
 	end
 
 SootopolisCity_House4_EventScript_RelicsMan_17:
+
 # 41 "data/maps/SootopolisCity_House4/scripts.pory"
 	msgbox SootopolisCity_House4_Text_AlreadyGaveRelic, MSGBOX_DEFAULT
 # 42 "data/maps/SootopolisCity_House4/scripts.pory"
@@ -178,3 +180,4 @@ SootopolisCity_House4_Text_NotLegend::
 # 122 "data/maps/SootopolisCity_House4/scripts.pory"
 	.string "That's not one of the Pokémon that can\n"
 	.string "use these relics.$"
+

@@ -171,7 +171,6 @@ PetalburgWoods_EventScript_DevonResearcherIntro::
 # 86 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_EventScript_DevonResearcherPostBattle::
 @explanation Save the Devon Researcher from the Environmental Terrorist
-
 # 87 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox PetalburgWoods_Text_YouveGotSomeNerve, MSGBOX_DEFAULT
 # 88 "data/maps/PetalburgWoods/scripts.pory"
@@ -505,7 +504,6 @@ PetalburgWoods_EventScript_Boy2::
 # 252 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_EventScript_Girl::
 @explanation Talk to the girl in the woods (Must know Cut to pass trees)
-
 # 253 "data/maps/PetalburgWoods/scripts.pory"
 	lock
 # 254 "data/maps/PetalburgWoods/scripts.pory"
@@ -1029,7 +1027,6 @@ PetalburgWoods_EventScript_GardeniaDefeated::
 
 PetalburgWoods_EventScript_GardeniaGiveItems::
 @explanation Defeat Gardinia (Must know Cut to pass trees)
-
 # 533 "data/maps/PetalburgWoods/scripts.pory"
 	giveitem ITEM_TM_U_TURN
 # 534 "data/maps/PetalburgWoods/scripts.pory"

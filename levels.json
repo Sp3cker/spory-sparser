@@ -961,7 +961,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "Show the NPC a Zygarde",
+          "explanation": "Defeat Expert M",
           "scriptName": "EverGrandeCity_PokemonCenter_1F_EventScript_ExpertM_6:"
         }
       ],
@@ -981,6 +981,8 @@
             "ITEM_MAX_POTION",
             "ITEM_FULL_RESTORE",
             "ITEM_FULL_HEAL",
+            "ITEM_MAX_ELIXIR",
+            "ITEM_ELIXIR",
             "ITEM_REVIVE",
             "ITEM_MAX_REPEL"
           ],
@@ -2542,9 +2544,7 @@
             "ITEM_DAWN_STONE",
             "ITEM_SHINY_STONE",
             "ITEM_KINGS_ROCK",
-            "ITEM_METAL_COAT",
-            "ITEM_UPGRADE",
-            "ITEM_DUBIOUS_DISC"
+            "ITEM_METAL_COAT"
           ],
           "levelLabel": "Departmentstore 4F",
           "scriptname": "LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:"
@@ -3314,7 +3314,8 @@
             "ITEM_GUARD_SPEC",
             "ITEM_X_ACCURACY",
             "ITEM_SHED_SHELL",
-            "ITEM_LIGHT_CLAY"
+            "ITEM_LIGHT_CLAY",
+            "ITEM_FLOAT_STONE"
           ],
           "levelLabel": "Mart",
           "scriptname": "MauvilleCity_Mart_Pokemart:"
@@ -4536,7 +4537,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "Speak to man in House 1",
+          "explanation": "Speak to a man in his house",
           "scriptName": "PacifidlogTown_House1_EventScript_Man::"
         },
         {
@@ -4548,7 +4549,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "Speak to a man in his house",
+          "explanation": "Speak to man in House 1",
           "scriptName": "PacifidlogTown_House1_EventScript_Man_2:"
         }
       ],
@@ -10137,8 +10138,8 @@
             "ITEM_POTION",
             "ITEM_SUPER_POTION",
             "ITEM_ANTIDOTE",
-            "ITEM_PARALYZE_HEAL",
-            "ITEM_ESCAPE_ROPE",
+            "ITEM_FULL_HEAL",
+            "ITEM_MAX_ELIXIR",
             "ITEM_REPEL",
             "ITEM_X_SPEED",
             "ITEM_X_ATTACK",
@@ -10908,6 +10909,11 @@
               "id": 797,
               "species": "SPECIES_CELESTEELA",
               "level": 1
+            },
+            {
+              "id": 798,
+              "species": "SPECIES_KARTANA",
+              "level": 1
             }
           ],
           "wildMon": [],
@@ -11614,7 +11620,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "Man in House 4 Dialga",
+          "explanation": "Show Man in House 4 Dialga",
           "scriptName": "SootopolisCity_House4_EventScript_RelicsMan_10:"
         },
         {
@@ -11630,7 +11636,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "Show the man in House 4 Palkia",
+          "explanation": "Show Man in House 4 Palkea",
           "scriptName": "SootopolisCity_House4_EventScript_RelicsMan_11:"
         },
         {
@@ -11642,7 +11648,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "Show the man in House 4 Giratina",
+          "explanation": "Show Man in House 4 Giratina",
           "scriptName": "SootopolisCity_House4_EventScript_RelicsMan_12:"
         }
       ],
@@ -12180,8 +12186,7 @@
             "ITEM_DAWN_STONE",
             "ITEM_SHINY_STONE",
             "ITEM_KINGS_ROCK",
-            "ITEM_METAL_COAT",
-            "ITEM_UPGRADE"
+            "ITEM_METAL_COAT"
           ],
           "levelLabel": "Mart",
           "scriptname": "VerdanturfTown_Mart_Pokemart:"
@@ -12412,6 +12417,11 @@
             {
               "id": 797,
               "species": "SPECIES_CELESTEELA",
+              "level": 1
+            },
+            {
+              "id": 798,
+              "species": "SPECIES_KARTANA",
               "level": 1
             }
           ],

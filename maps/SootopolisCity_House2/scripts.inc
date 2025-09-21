@@ -7,7 +7,6 @@ SootopolisCity_House2_MapScripts::
 
 SootopolisCity_House2_EventScript_ExpertF::
 @explanation Trade Arceus Plates with Expert F
-
 # 8 "data/maps/SootopolisCity_House2/scripts.pory"
 	lock
 # 9 "data/maps/SootopolisCity_House2/scripts.pory"
@@ -219,3 +218,5 @@ SootopolisCity_House2_Text_NoPlates::
 # 90 "data/maps/SootopolisCity_House2/scripts.pory"
 	.string "Ah, I see you don't have one of the\n"
 	.string "Plates with you. Come back when you do.$"
+
+

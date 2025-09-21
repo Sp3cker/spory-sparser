@@ -63,7 +63,6 @@ MossdeepCity_StevensHouse_OnFrame:
 # 32 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 @explanation Enter Steven's Domicile
-
 # 33 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	lockall
 # 34 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
