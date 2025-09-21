@@ -239,7 +239,7 @@ EverGrandeCity_PokemonCenter_1F_EventScript_ExpertM_4:
 	end
 
 EverGrandeCity_PokemonCenter_1F_EventScript_ExpertM_6:
-@explanation Defeat Expert M
+@explanation Show the NPC a Zygarde
 # 120 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 	msgbox EverGrandeCity_PokemonCenter_1F_Text_PleaseTakeThisCube, MSGBOX_DEFAULT
 # 121 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
