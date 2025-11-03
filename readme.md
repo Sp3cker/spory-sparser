@@ -57,18 +57,7 @@ The below documentation may not use terminology the way a rom-hacker would be us
 
 ## Parsing Item locations
 
-### Abstract
-
-To me, there are 4 ways to get items:
-
-1. The game gives you an item via `giveitem` and `giveitemfast`
-
-   1.A _Or_ as the result of a script utilizing `dynmultipush`.
-
-2. You buy an item from a `Mart`.
-3. You find a `Pickup Item` in the overworld
-
-This library finds those items.
+Your interested in `src/parseMaps`.
 
 ## Terminology
 
