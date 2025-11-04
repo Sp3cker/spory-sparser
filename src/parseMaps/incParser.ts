@@ -27,12 +27,13 @@ const pokemonDataArr = Object.values(pokemonData);
 const fromNameToId = (speciesConst: string) => {
   const species = pokemonDataArr.find(
     (p) =>
-      normalizeName(p.nameKey) ===    speciesConst.replace(/^SPECIES_/, "").toLowerCase() ||
-      p.speciesName === speciesConst
+      normalizeName(p.nameKey) ===
+        speciesConst.replace(/^SPECIES_/, "").toLowerCase() ||
+      p.speciesName === speciesConst,
   );
   if (!species) {
     throw new Error(
-      `Species not found for constant: ${speciesConst}. Check your speciesData.json`
+      `Species not found for constant: ${speciesConst}. Check your speciesData.json`,
     );
   }
   return species.speciesId;
@@ -82,13 +83,13 @@ export class IncScriptEvent {
     // Match: giveitem ITEM_NAME or giveitemfast ITEM_NAME
     // Match: giveitem ITEM_NAME, quantity or giveitemfast ITEM_NAME, quantity
     const giveItemMatch = line.match(
-      /^\s*(giveitemfast|giveitem)\s+(\w+)(?:\s*,\s*(\d+))?/
+      /^\s*(giveitemfast|giveitem)\s+(\w+)(?:\s*,\s*(\d+))?/,
     );
     if (giveItemMatch) {
       const itemName = giveItemMatch[2];
       const quantity = giveItemMatch[3] ? parseInt(giveItemMatch[3], 10) : 1;
       const existingIndex = this.items.findIndex(
-        (item) => item.name === itemName
+        (item) => item.name === itemName,
       );
       if (existingIndex !== -1) {
         this.items[existingIndex].quantity += quantity;
@@ -105,7 +106,7 @@ export class IncScriptEvent {
     // Match: givemon SPECIES_NAME, level
     // Match: givemonrandom SPECIES_NAME, level, isRandom
     const giveMonMatch = line.match(
-      /^\s*(givemon(?:random)?)\s+(\w+)\s*,\s*([^]+)$/
+      /^\s*(givemon(?:random)?)\s+(\w+)\s*,\s*([^]+)$/,
     );
 
     if (giveMonMatch) {
@@ -121,7 +122,7 @@ export class IncScriptEvent {
       // of bag size logic and stuff
       const alreadyExists = this.pokemon.some(
         (p) =>
-          p.species === species && p.level === level && p.isRandom === isRandom
+          p.species === species && p.level === level && p.isRandom === isRandom,
       );
       if (!alreadyExists) {
         this.pokemon.push({
@@ -138,10 +139,10 @@ export class IncScriptEvent {
     // Match: dynmultipush text, ITEM_NAME
     // Match: dynmultipush text, SPECIES_NAME
     const dynMultiItemMatch = line.match(
-      /^[\s]*dynmultipush\s+[^,]+,\s*(ITEM_\w+)/i
+      /^[\s]*dynmultipush\s+[^,]+,\s*(ITEM_\w+)/i,
     );
     const dynMultiSpeciesMatch = line.match(
-      /^[\s]*dynmultipush\s+[^,]+,\s*(SPECIES_\w+)/i
+      /^[\s]*dynmultipush\s+[^,]+,\s*(SPECIES_\w+)/i,
     );
 
     if (dynMultiItemMatch) {
@@ -156,7 +157,7 @@ export class IncScriptEvent {
         return;
       }
       const alreadyExists = this.pokemon.some(
-        (p) => p.species === species && p.level === 1 && p.isRandom === false
+        (p) => p.species === species && p.level === 1 && p.isRandom === false,
       );
       const id = fromNameToId(species);
       if (!alreadyExists) {
@@ -187,12 +188,12 @@ export class IncScriptEvent {
               level: 0,
               id: fromNameToId(eggSpecies),
             });
-          }
+          },
         );
         return;
       }
       const alreadyExists = this.pokemon.some(
-        (p) => p.species === species && p.level === 0 && p.isRandom === false
+        (p) => p.species === species && p.level === 0 && p.isRandom === false,
       );
       if (!alreadyExists) {
         this.pokemon.push({
@@ -241,12 +242,14 @@ export class IncScriptEvent {
 
     this.items = this.items.filter((item) => !varPattern.test(item.name));
     this.pokemon = this.pokemon.filter(
-      (pokemon) => !varPattern.test(pokemon.species)
+      (pokemon) => !varPattern.test(pokemon.species),
     );
   }
   explanationWithNoEvents(): boolean {
     const notNothing =
-      this.items.length > 0 || this.pokemon.length > 0 || this.wildMon.length > 0;
+      this.items.length > 0 ||
+      this.pokemon.length > 0 ||
+      this.wildMon.length > 0;
     // if no items but still an explanation, fuck
     if (!notNothing && this.explanation.length > 0) {
       throw new Error("Explanation for nothing: " + this.scriptName);
@@ -261,7 +264,9 @@ export class IncScriptEvent {
   }
   hasContent(): boolean {
     return (
-      this.items.length > 0 || this.pokemon.length > 0 || this.wildMon.length > 0
+      this.items.length > 0 ||
+      this.pokemon.length > 0 ||
+      this.wildMon.length > 0
     );
   }
 }
@@ -270,7 +275,7 @@ export class IncScriptEvent {
  * Extract scripts from .inc file
  */
 function extractIncScriptBlocks(
-  content: string
+  content: string,
 ): Array<{ name: string; content: string }> {
   const lines = content.split("\n");
   const sections: Array<{ name: string; content: string }> = [];
@@ -332,7 +337,10 @@ function extractIncScriptBlocks(
  */
 export function parseScriptedEvents(content: string) {
   // console.log("[incParser] Starting to parse .inc content");
-
+  // Content needs to be the insides of the "raw`" block
+  // Therefore we must split the .pory file into raw and pory sections.
+  // so file.split('\n').getLineNumsOfRawBlock
+  // No raw block means
   const scriptBlocks = extractIncScriptBlocks(content);
   const filteredScripts = scriptBlocks.filter(
     (rawScriptBlock: { name: string }) => {
@@ -340,7 +348,7 @@ export function parseScriptedEvents(content: string) {
         return false;
       }
       return true;
-    }
+    },
   );
   // console.log(`[incParser] Found ${sections.length} script sections`);
 
@@ -372,7 +380,7 @@ export function parseScriptedEvents(content: string) {
       ) {
         console.warn(
           `[incParser] variable species: ${pokemon.species} in script ${script.scriptName}
-          Review and add to "unneededLabels" in removeSimilarLocations.ts`
+          Review and add to "unneededLabels" in removeSimilarLocations.ts`,
         );
       }
     }
@@ -415,10 +423,11 @@ export function parseScriptedEvents(content: string) {
         // Merge items with quantity consolidation
         for (const newItem of script.items) {
           const existingItemIndex = existingScript.items.findIndex(
-            (item) => item.name === newItem.name
+            (item) => item.name === newItem.name,
           );
           if (existingItemIndex !== -1) {
-            existingScript.items[existingItemIndex].quantity += newItem.quantity;
+            existingScript.items[existingItemIndex].quantity +=
+              newItem.quantity;
           } else {
             existingScript.items.push(newItem);
           }
@@ -430,7 +439,7 @@ export function parseScriptedEvents(content: string) {
             (p) =>
               p.species === newPokemon.species &&
               p.level === newPokemon.level &&
-              p.isRandom === newPokemon.isRandom
+              p.isRandom === newPokemon.isRandom,
           );
           if (!alreadyExists) {
             existingScript.pokemon.push(newPokemon);
@@ -443,7 +452,7 @@ export function parseScriptedEvents(content: string) {
             (w) =>
               w.species === newWildMon.species &&
               w.level === newWildMon.level &&
-              w.script === newWildMon.script
+              w.script === newWildMon.script,
           );
           if (!alreadyExists) {
             existingScript.wildMon.push(newWildMon);
@@ -459,7 +468,7 @@ export function parseScriptedEvents(content: string) {
         // We'll use a workaround for file path, but line number is not directly available.
         // This will log the file path and a best-effort line number (hardcoded to this line).
         console.warn(
-          `[incParser] Script "${script.scriptName}" has no explanation. It will be kept without grouping.`
+          `[incParser] Script "${script.scriptName}" has no explanation. It will be kept without grouping.`,
         );
       }
       // Keep scripts without an explanation as they are
@@ -477,7 +486,7 @@ export function parseScriptedEvents(content: string) {
     const consolidatedItems: IncItemEntry[] = [];
     for (const item of script.items) {
       const existingIndex = consolidatedItems.findIndex(
-        (i) => i.name === item.name
+        (i) => i.name === item.name,
       );
       if (existingIndex !== -1) {
         consolidatedItems[existingIndex].quantity += item.quantity;
