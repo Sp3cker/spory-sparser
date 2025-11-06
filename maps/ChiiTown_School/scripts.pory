@@ -1,0 +1,206 @@
+mapscripts ChiiTown_School_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION{
+		//call(ChiiTownSchool_NPCSchedules)
+	}
+}
+
+script ChiiTown_School_EventScript_Teacher {
+	gettimeofday
+	switch(var(VAR_0x8000)){
+		case TIME_EARLY_MORNING:
+			goto(ChiiTown_School_EventScript_PreparingDay)
+		case TIME_EVENING:
+			goto(ChiiTown_School_EventScript_EndingDay)
+		default:
+			goto(ChiiTown_School_EventScript_Teaching)
+	}
+}
+
+script ChiiTown_School_EventScript_PreparingDay {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_TEACHER)
+	msgbox(format(
+		"Um… The school isn't open yet, I'm afraid. Come back later with your little brother or sister!"
+	))
+	closemessage
+
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+
+script ChiiTown_School_EventScript_Teaching {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_TEACHER)
+	msgbox(format(
+		"Um… Aren't you a little old for\nthis class?\p"
+		"It's alright, you can stay!\p"
+		"Today we're doing some creative\nwriting about the Toku legends."
+	))
+	closemessage
+
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+script ChiiTown_School_EventScript_EndingDay {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_TEACHER)
+	msgbox(format(
+		"Oh! I'm afraid classes are done for the day. You'll have to come back tomorrow."
+	))
+	closemessage
+
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+script ChiiTown_School_EventScript_BoardLegend {
+	lock
+	msgbox(format(
+		"A detailed print depicts\nan old legend.\p"
+		"“A very long time ago, the Volcano\nerupted terribly.\p"
+		"Four awakened Treasures fought\nthe fiery Pokémon within.\p"
+		"At last, the four Treasures and\nthe fiery Pokémon slumbered again.”"
+	))
+	closemessage
+	release
+}
+
+script ChiiTown_School_EventScript_Board {
+	lock
+	msgbox(format(
+		"A wide sheet of paper with lots of tiny scribbles on it."
+	))
+	closemessage
+	release
+}
+
+script ChiiTown_School_EventScript_ChildImBored {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_SCHOOL_KID)
+	msgbox(format(
+		"I'm bored! Why won't recess start already!"
+	))
+	closemessage
+
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+script ChiiTown_School_EventScript_ChildAlreadyKnowLegend {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_SCHOOL_KID)
+	msgbox(format(
+		"I already knew all of this! My gramma told me the legend a bajillion times!"
+	))
+	closemessage
+
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+script ChiiTown_School_EventScript_ChildPokemonInsideVolcano {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_SCHOOL_KID)
+	msgbox(format(
+		"There's a Pokémon inside the volcano?! That's AWESOME!"
+	))
+	closemessage
+
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+script ChiiTown_School_EventScript_ChildTellsStory {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_SCHOOL_KID)
+	msgbox(format(
+		"I know the story, I know the story!\p"
+		"Once upon a time, the Volcano Pokémon woke up, and then there was fire everywhere, and then four Pokémon were fighting the Volcano one, and then- and then the Volcano stopped spitting fire because the Pokémon went back to sleep!"
+	))
+	closemessage
+
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+script ChiiTown_School_EventScript_IsThePokemonWakingUp {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_SCHOOL_KID)
+	msgbox(format(
+		"When the Volcano Pokémon went to bed, the Volcano stopped erupting!\p"
+		"But the Volcano has been rumbling for days now…\p"
+		"Does that mean the Volcano Pokémon's waking up again?"
+	))
+	closemessage
+
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+script ChiiTown_School_EventScript_ChildWiseGlasses {
+	lock
+	faceplayer
+
+	if (!flag(FLAG_SMART_GLASSES)) {
+		setspeaker(SP_NAME_SCHOOL_KID)
+		msgbox(format(
+			"Ugh, I missed a class so I have to catch up on Pokémon's attack and special attack…\p"
+			"I'm almost done though! I don't even need these anymore!"
+		))
+		closemessage
+
+		giveitem(ITEM_WISE_GLASSES)
+		setflag(FLAG_SMART_GLASSES)
+	}
+
+	setspeaker(SP_NAME_SCHOOL_KID)
+	msgbox(format(
+		"These are my smart glasses. You looked like you needed them!"
+	))
+	closemessage
+
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+script ChiiTown_School_EventScript_ChildLikeSensei {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_SCHOOL_KID)
+	msgbox(format(
+		"I like our Sensei. She's pretty and she smells nice."
+	))
+	closemessage
+
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}

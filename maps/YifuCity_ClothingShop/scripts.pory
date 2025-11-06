@@ -1,0 +1,33 @@
+mapscripts YifuCity_ClothingShop_MapScripts {
+	
+}
+
+script YifuCity_ClothingShop_EventScript_Yutaka {
+	// TODO EVA
+}
+
+script YifuCity_ClothingShop_EventScript_Cashier {
+	// TODO EVA
+	lock
+	faceplayer
+	setspeaker(SP_NAME_SHOPKEEPER)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CLERK EMOTE_NORMAL}Sorry, everything's sold out at the moment!\p"
+		"We'll be restocking soon."
+	))
+	release
+}
+
+script YifuCity_ClothingShop_EventScript_Customer {
+	// TODO EVA: only says this if Yutaka is present
+	lock
+	faceplayer
+	setspeaker(SP_NAME_GIRL)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_UUME_GIRL_2 EMOTE_NORMAL}Ohmigosh ohmigosh ohmigosh!!\n"
+		"Master Yutaka is here!!\p"
+		"She's sooo beautiful, and her clothes are amazing!\p"
+		"Did you know she's a designer, too? There's a whole clothing line to her name!"
+	))
+	release
+}

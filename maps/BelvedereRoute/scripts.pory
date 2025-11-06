@@ -1,0 +1,141 @@
+const LOCALID_MAREEP_1 = 1
+const LOCALID_MAREEP_2 = 2
+const LOCALID_MAREEP_3 = 3
+const LOCALID_MAREEP_4 = 4
+const LOCALID_MAREEP_5 = 5
+const LOCALID_MAREEP_1_IN_RANCH = 6
+const LOCALID_MAREEP_2_IN_RANCH = 7
+const LOCALID_MAREEP_3_IN_RANCH = 8
+const LOCALID_MAREEP_4_IN_RANCH = 9
+const LOCALID_MAREEP_5_IN_RANCH = 10
+
+mapscripts BelvedereRoute_MapScripts {
+	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+		VAR_TEMP_0, 0 {
+			// Hiding the Mareep inside the ranch fence if they've not yet been found
+			if (!flag(FLAG_HIDE_LOST_MAREEP_1)) {
+				removeobject(LOCALID_MAREEP_1_IN_RANCH)
+			}
+			if (!flag(FLAG_HIDE_LOST_MAREEP_2)) {
+				removeobject(LOCALID_MAREEP_2_IN_RANCH)
+			}
+			if (!flag(FLAG_HIDE_LOST_MAREEP_3)) {
+				removeobject(LOCALID_MAREEP_3_IN_RANCH)
+			}
+			if (!flag(FLAG_HIDE_LOST_MAREEP_4)) {
+				removeobject(LOCALID_MAREEP_4_IN_RANCH)
+			}
+			if (!flag(FLAG_HIDE_LOST_MAREEP_5)) {
+				removeobject(LOCALID_MAREEP_5_IN_RANCH)
+			}
+		}
+	]
+}
+
+script BelvedereRoute_EventScript_FindMareep {
+	lock
+	faceplayer
+	setseenmon(SPECIES_MAREEP)
+	playmoncry(SPECIES_MAREEP, CRY_MODE_NORMAL)
+	msgbox(format("Bêêêêêh!"))
+	closemessage
+	if (var(VAR_QUEST_MAREEP_STATE) > 0) {
+		// TODO EVA fade to black
+		removeobject(VAR_LAST_TALKED)
+		// TODO EVA fade from black
+		switch(var(VAR_LAST_TALKED)) {
+			case 1:
+				setflag(FLAG_HIDE_LOST_MAREEP_1)
+				addobject(LOCALID_MAREEP_1_IN_RANCH)
+			case 2:
+				setflag(FLAG_HIDE_LOST_MAREEP_2)
+				addobject(LOCALID_MAREEP_2_IN_RANCH)
+			case 3:
+				setflag(FLAG_HIDE_LOST_MAREEP_3)
+				addobject(LOCALID_MAREEP_3_IN_RANCH)
+			case 4:
+				setflag(FLAG_HIDE_LOST_MAREEP_4)
+				addobject(LOCALID_MAREEP_4_IN_RANCH)
+			case 5:
+				setflag(FLAG_HIDE_LOST_MAREEP_5)
+				addobject(LOCALID_MAREEP_5_IN_RANCH)
+		}
+		addvar(VAR_QUEST_MAREEP_STATE, 1)
+	}
+	
+	release
+}
+
+script BelvedereRoute_EventScript_Rancher {
+	lock
+	faceplayer
+	switch(var(VAR_QUEST_MAREEP_STATE)) {
+		case 0:
+			msgbox(format(
+				"Hey, you didn't happen to see a Mareep on your way here, did you?"
+				"I'm desperate… All my Mareep escaped my ranch!\p"
+				"You look like you're at least a semi-capable person…\p"
+				"Would you mind helping me get them back?"
+			), MSGBOX_YESNO)
+			switch(var(VAR_RESULT)) {
+				case YES:
+					msgbox(format(
+						"Thank you so much!\p"
+						"There are five Mareep in total.\p"
+						"Hopefully they should all be not too far from the ranch…"
+					))
+					closemessage
+					addvar(VAR_QUEST_MAREEP_STATE, 1)
+				case NO:
+					msgbox(format(
+						"Now that's not very nice…"
+					))
+					closemessage
+				case MULTI_B_PRESSED:
+					msgbox(format(
+						"Now that's not very nice…"
+					))
+					closemessage
+			}
+		case 1:
+			msgbox(format(
+				"I'm still missing five Mareep!"
+			))
+		case 2:
+			msgbox(format(
+				"I'm still missing four Mareep!"
+			))
+		case 3:
+			msgbox(format(
+				"I'm still missing three Mareep!"
+			))
+		case 4:
+			msgbox(format(
+				"I'm still missing two Mareep!"
+			))
+		case 5:
+			msgbox(format(
+				"I'm still missing one Mareep!"
+			))
+		case 6:
+			msgbox(format(
+				"Finally, my herd is back together again!\p"
+				"I'm so glad. Thank you, sincerely.\p"
+				"Here's a small token of my appreciation."
+			))
+
+			// TODO EVA give wool
+
+			addvar(VAR_QUEST_MAREEP_STATE, 1)
+		case 7:
+			call(BelvedereRoute_EventScript_Wool)
+	}
+	release
+}
+
+script BelvedereRoute_EventScript_Wool {
+	// TODO EVA wool thing
+	msgbox(format(
+		"If you bring me enough wool, I'll knit you a nice warm cloak."
+	), MSGBOX_NPC)
+}

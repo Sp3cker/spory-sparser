@@ -1,0 +1,44 @@
+{
+  "id": "MAP_OPEN_SEA_ICY",
+  "name": "OpenSeaIcy",
+  "layout": "LAYOUT_OPEN_SEA_ICY",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_OPEN_SEA_ICY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_OPEN_SEA_CORAL",
+      "offset": -40,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_MIDDLE_ISLE",
+      "offset": 50,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_TOP_ISLE",
+      "offset": 40,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

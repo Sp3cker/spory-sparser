@@ -1,0 +1,216 @@
+const LOCALID_SCULPTOR = 0
+
+mapscripts Silveridge_SculptorsHouse_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (var(VAR_STATE_SCULPTOR) >= 2) {
+			call(Silveridge_SculptorsHouse_EventScript_DrawPonyta)
+		}
+		if (var(VAR_STATE_SCULPTOR) >= 3) {
+			call(Silveridge_SculptorsHouse_EventScript_DrawOnix)
+		}
+		if (var(VAR_STATE_SCULPTOR) >= 4) {
+			call(Silveridge_SculptorsHouse_EventScript_DrawClefable)
+		}
+
+		special(DrawWholeMapView)
+	}
+}
+
+script Silveridge_House1_EventScript_Sculptor {
+	// rock throw
+	// ancient power
+	// rock_blast
+	// rock slide
+	// stealth rock
+	// stone edge
+	switch(var(VAR_STATE_SCULPTOR)) {
+		case 0:
+			call(Silveridge_House1_EventScript_Sculptor_FirstTime)
+		case 1:
+			// Current mon
+			setvar(VAR_TEMP_1, SPECIES_PONYTA)
+			// Next mon
+			setvar(VAR_TEMP_2, SPECIES_ONIX)
+			// Reward
+			setvar(VAR_TEMP_3, ITEM_TM_ANCIENT_POWER)
+
+			call(Silveridge_House1_EventScript_Sculptor_BringMeMon)
+		case 2:
+			// Current mon
+			setvar(VAR_TEMP_1, SPECIES_ONIX)
+			// Next mon
+			setvar(VAR_TEMP_2, SPECIES_CLEFABLE)
+			// Reward
+			setvar(VAR_TEMP_3, ITEM_TM_ROCK_BLAST)
+
+			call(Silveridge_House1_EventScript_Sculptor_BringMeMon)
+		case 3:
+			// Current mon
+			setvar(VAR_TEMP_1, SPECIES_CLEFABLE)
+			// Next mon
+			setvar(VAR_TEMP_2, SPECIES_DRAGONAIR)
+			// Reward
+			// TODO
+			setvar(VAR_TEMP_3, ITEM_TM_ROCK_BLAST)
+
+			call(Silveridge_House1_EventScript_Sculptor_BringMeMon)
+	}
+}
+
+script Silveridge_SculptorsHouse_EventScript_DrawCurrentMon {
+	switch(var(VAR_TEMP_1)) {
+		case SPECIES_PONYTA:
+			call(Silveridge_SculptorsHouse_EventScript_DrawPonyta)
+		case SPECIES_ONIX:
+			call(Silveridge_SculptorsHouse_EventScript_DrawOnix)
+		case SPECIES_CLEFABLE:
+			call(Silveridge_SculptorsHouse_EventScript_DrawClefable)
+	}
+
+	special(DrawWholeMapView)
+}
+
+script Silveridge_SculptorsHouse_EventScript_DrawPonyta {
+	setmetatile(13, 3, METATILE_HouseStone_StatuePonytaTopLeft, FALSE)
+	setmetatile(13, 4, METATILE_HouseStone_StatuePonytaBottomLeft, TRUE)
+	setmetatile(14, 4, METATILE_HouseStone_StatuePonytaBottomRight, TRUE)
+}
+
+script Silveridge_SculptorsHouse_EventScript_DrawOnix {
+	setmetatile(11, 1, METATILE_HouseStone_StatueOnixTopLeft, FALSE)
+	setmetatile(12, 1, METATILE_HouseStone_StatueOnixTopRight, FALSE)
+	setmetatile(11, 2, METATILE_HouseStone_StatueOnixBottomLeft, TRUE)
+	setmetatile(12, 2, METATILE_HouseStone_StatueOnixBottomRight, TRUE)
+}
+
+script Silveridge_SculptorsHouse_EventScript_DrawClefable {
+	setmetatile(9, 2, METATILE_HouseStone_StatueClefableTopLeft, FALSE)
+	setmetatile(10, 2, METATILE_HouseStone_StatueClefableTopRight, FALSE)
+	setmetatile(9, 3, METATILE_HouseStone_StatueClefableBottomLeft, TRUE)
+	setmetatile(10, 3, METATILE_HouseStone_StatueClefableBottomRight, TRUE)
+}
+
+script Silveridge_House1_EventScript_Sculptor_BringMeMon {
+	lock
+	faceplayer
+
+	bufferspeciesname(STR_VAR_1, VAR_TEMP_1)
+	setspeaker(SP_NAME_SCULPTOR)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ARTIST EMOTE_NORMAL}Please show me {STR_VAR_1}. My soul aches for it!"
+	))
+	
+	checkspecies_choose(VAR_TEMP_1)
+
+	if (var(VAR_RESULT)) {
+		playse(SE_PIN)
+		applymovement(VAR_LAST_TALKED, moves(emote_exclamation_mark, delay_16 * 3))
+		waitse
+		waitmovement(0)
+
+		bufferspeciesname(STR_VAR_1, VAR_TEMP_1)
+		setspeaker(SP_NAME_SCULPTOR)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_ARTIST EMOTE_NORMAL}Oh… … … …\n"
+			"… … …Oh!!\p"
+			"This is is… I can feel the raw inspiration coursing through my veins!\p"
+			"Hello, {STR_VAR_1}!\nStand still just a moment…"
+		))
+		closemessage
+
+		fadescreenswapbuffers(FADE_TO_BLACK)
+		playse(SE_M_FLATTER)
+		delay(24)
+		playse(SE_M_FLATTER)
+		delay(24)
+		playse(SE_M_FLATTER)
+		delay(24)
+		playse(SE_M_FLATTER)
+
+		call(Silveridge_SculptorsHouse_EventScript_DrawCurrentMon)
+
+		delay(48)
+		fadescreenswapbuffers(FADE_FROM_BLACK)
+
+		delay(24)
+
+		bufferspeciesname(STR_VAR_2, VAR_TEMP_2)
+		setspeaker(SP_NAME_SCULPTOR)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_ARTIST EMOTE_NORMAL}There it is! My best work yet!\p"
+			"… … …And yet…\p"
+			"It still feels like something is missing.\p"
+			"I think… I think…\n"
+			"This wasn't the Pokémon my destiny was telling me about.\p"
+			"I am seeing {STR_VAR_2} in my mind's eye…\p"
+			"Yes! Please show me {STR_VAR_2} to help me achieve my magnum opus.\p"
+			"Still, I must reward you for your assistance. Take this rock technique!"
+		))
+		closemessage
+
+		giveitem(VAR_TEMP_3)
+
+		setnamedmon(VAR_TEMP_2)
+		addvar(VAR_STATE_SCULPTOR, 1)
+	} else {
+		setspeaker(SP_NAME_SCULPTOR)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_ARTIST EMOTE_NORMAL}Why must you toy with me so?"
+		))
+	}
+
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+
+	release
+}
+
+script Silveridge_House1_EventScript_Sculptor_FirstTime {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_SCULPTOR)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ARTIST EMOTE_NORMAL}Please do not talk to me. I am creating."
+	))
+	closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	delay(60)
+
+	playse(SE_PIN)
+	faceplayer
+	applymovement(VAR_LAST_TALKED, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(VAR_LAST_TALKED, Common_Movement_Delay48)
+	waitmovement(0)
+
+	setspeaker(SP_NAME_SCULPTOR)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ARTIST EMOTE_NORMAL}…Oh? Could it be? Another noble soul moved by the ancestral art of sculpture?\p"
+		"Am I no longer utterly alone? Oh, my heart swells up at the idea!\p"
+		"As a fellow connoisseur of sculpture, you must know how difficult it is to find a proper model, one that will stir in its beholder the most violent passions.\p"
+		"To transform a raw slab of stone into the pinnacle of beauty… That is my aspiration.\p"
+		"To satisfy this need, I must lay my eyes on a Ponyta.\p"
+		"I see that you are a Wielder. Please show me a Ponyta to help me achieve my magnum opus."
+	))
+	closemessage
+
+	setnamedmon(SPECIES_PONYTA)
+	setvar(VAR_STATE_SCULPTOR, 1)
+
+	release
+}
+
+script Silveridge_House1_EventScript_Aron {
+	lock
+    faceplayer
+	setseenmon(SPECIES_ARON)
+	setspeakertomonname(SPECIES_ARON)
+	playmoncry(SPECIES_ARON, CRY_MODE_NORMAL)
+    msgbox(format(
+        "Skeea!"
+    ))
+    waitmoncry
+    release
+    end
+}

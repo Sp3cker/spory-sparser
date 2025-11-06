@@ -1,0 +1,661 @@
+const LOCALID_NURSE_CROBAT = 1
+const LOCALID_GROWLITHE = 17
+const FLAG_HIDE_NURSE = FLAG_TEMP_1
+const FLAG_HIDE_ROUTE_SHAMISEN = FLAG_TEMP_2
+const FLAG_TALKED_TO_ROUTE_SHAMISEN_NO_SPACE_FOR_EGG = FLAG_TEMP_3
+
+mapscripts YifuCity_Refuge_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setrespawn(HEAL_LOCATION_YIFU_CITY)
+		if (!flag(FLAG_CLEARED_CROBAT_HIDEOUT)) {
+			setflag(FLAG_HIDE_NURSE)
+		}
+
+		getroutechallengestate(ROUTE_CHALLENGE_WHITESLATE_YIFU)
+		if (
+			var(VAR_RESULT) == ROUTE_CHALLENGE_STATE_SUCCESS_CONFIRMED
+			|| var(VAR_RESULT) == ROUTE_CHALLENGE_STATE_FAILURE_CONFIRMED
+		) {
+			setflag(FLAG_HIDE_ROUTE_SHAMISEN)
+		}
+
+		if (flag(FLAG_DAILY_YIFU_HOTEL_ROOM)) {
+			setobjectxyperm(LOCALID_YIFU_REFUGE_VALET, 3, 2)
+			setobjectxyperm(LOCALID_YIFU_REFUGE_FAKE_VALET, 3, 2)
+		}
+	}
+}
+
+script YifuCity_Refuge_EventScript_Nurse {
+	createfieldmugshot(MUGSHOT_UUME_NURSE)
+	setvar(VAR_0x800B, LOCALID_NURSE_YIFU)
+	setvar(VAR_0x800A, LOCALID_CHANSEY_YIFU)
+	setvar(VAR_0x8009, MUGSHOT_UUME_NURSE)
+	call(Common_EventScript_PkmnCenterNurse_CutTheBullshit)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script YifuCity_Refuge_EventScript_Pasture {
+	createfieldmugshot(MUGSHOT_UUME_MAN_2)
+	setvar(VAR_0x8009, MUGSHOT_UUME_MAN_2)
+	call(Common_EventScript_PcGuy)
+	release
+	end
+}
+
+script YifuCity_Refuge_EventScript_FakeNurse {
+	setvar(VAR_0x800B, LOCALID_NURSE_CROBAT)
+	setvar(VAR_0x800A, LOCALID_WOOBAT_YIFU)
+	lock
+	faceplayer
+	setvar(VAR_0x8004, 0)
+	setspeaker(SP_NAME_NURSE)
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Gimme yer Pokémon, I'mma heal 'em good."))
+	closemessage
+
+	incrementgamestat(GAME_STAT_USED_POKECENTER)
+	call(EventScript_PkmnCenterNurse_TakeAndHealPkmn)
+
+	if(flag(FLAG_GOT_SCAMMED_YIFU_REFUGE)) {
+		showmoneybox(18, 0)
+
+		if (checkmoney(500)) {
+			setspeaker(SP_NAME_NURSE)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Yep, uh, good as new, probably!\p"
+				"Ya know the drill, ¥500 please!"
+			))
+			playse(SE_SHOP)
+			removemoney(500)
+			updatemoneybox
+			waitse
+
+			setspeaker(SP_NAME_NURSE)
+				msgbox(format(
+					"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}C'magain, or whatever."
+				))
+		} else {
+			setspeaker(SP_NAME_NURSE)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Yep, uh, good as new, probably!\p"
+				"Ya know the drill, ¥500 please!\p"
+				"… … …\n… … …What? Yer THAT poor?\p"
+				"I feel almost bad for ya, buddy…\p"
+				"I guess, uh… I guess we're good then, don' worry 'bout it.\p"
+				"Now make like a Treecko 'n leave!"
+			))
+		}
+		// First time getting scammed
+	} else {
+		setflag(FLAG_GOT_SCAMMED_YIFU_REFUGE)
+		setspeaker(SP_NAME_NURSE)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Yep, uh, good as new, probably!\p"
+			"By the way, that'll be ¥500, wow, so cheap!"
+		))
+
+		showmoneybox(18, 0)
+
+		mcdialogue(
+			"What?!",
+			"No way!",
+			"Okay, I guess…"
+		)
+		closemessage
+
+		switch(var(VAR_RESULT)) {
+			case 0:
+			case 1:
+				if (checkmoney(500)) {
+					setspeaker(SP_NAME_NURSE)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}No whinin'! Fork over the cash before I call security!"
+					))
+					playse(SE_SHOP)
+					removemoney(500)
+					updatemoneybox
+					waitse
+
+					setspeaker(SP_NAME_NURSE)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}C'magain, or whatever."
+					))
+				} else {
+					setspeaker(SP_NAME_NURSE)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}No whinin'! Fork over the cash before I call security!\p"
+						"… … …\n… … …What? Yer THAT poor?\p"
+						"I feel almost bad for ya, buddy…\p"
+						"I guess, uh… I guess we're good then, don' worry 'bout it.\p"
+						"Now make like a Treecko 'n leave!"
+					))
+				}
+				
+			case 2:
+				if (checkmoney(500)) {
+					setspeaker(SP_NAME_NURSE)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}…Really? Jus' like that?\p"
+						"(Wow, this one's really dumb, huh?)\p"
+						"I mean, yeah, you better!"
+					))
+
+					playse(SE_SHOP)
+					removemoney(500)
+					updatemoneybox
+					waitse
+
+					setspeaker(SP_NAME_NURSE)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}C'magain, or whatever."
+					))
+				} else {
+					setspeaker(SP_NAME_NURSE)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}…Really? Jus' like that?\p"
+						"(Wow, this one's really dumb, huh?)\p"
+						"… … …\n… … …What? Ya don't have 'nuff cash?!\p"
+						"I can't believe it! I've been had!"
+					))
+					applymovement(VAR_LAST_TALKED, moves(emote_angry))
+					msgbox(format(
+						"Get outta here, ya scammer!"
+					))
+				}
+		}
+	}
+	hidemoneybox
+	closemessage
+}
+
+script YifuCity_Refuge_EventScript_Woobat {
+	lock
+	setseenmon(SPECIES_WOOBAT)
+	playmoncry(SPECIES_WOOBAT, CRY_MODE_NORMAL)
+	setspeaker("Chansey?")
+	msgbox("Rrrrr!")
+	waitse
+	closemessage
+	release
+}
+
+script YifuCity_Refuge_EventScript_Shamisen {
+	lock
+	faceplayer
+	// TODO EVA battle shamisen player!
+	setspeaker(SP_NAME_SHAMISEN_PLAYER)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_BLUE EMOTE_NORMAL}Good evening, traveler.\p"
+		"I hope my song will soothe your spirit, should it be troubled."
+	))
+	closemessage
+	release
+	end
+}
+
+script YifuCity_Refuge_EventScript_ShamisensPokemon {
+	lock
+	faceplayer
+	setseenmon(SPECIES_TOXEL_TOKUAN)
+	setspeakertomonname(SPECIES_TOXEL_TOKUAN)
+	playmoncry(SPECIES_TOXEL_TOKUAN, CRY_MODE_NORMAL)
+	msgbox(format(
+		"Mrrrp…"
+	))
+	closemessage
+	release
+	end
+}
+
+script YifuCity_Refuge_EventScript_HotelValet {
+	lock
+	faceplayer
+
+	special(GetPlayerSirMissString)
+
+	if (flag(FLAG_DAILY_YIFU_HOTEL_ROOM)) {
+		setspeaker(SP_NAME_VALET)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_UUME_VALET EMOTE_NORMAL}Enjoy your stay, {STR_VAR_1}!\nRoom one is yours for the day!"
+		))
+		closemessage
+	} else {
+		setspeaker(SP_NAME_VALET)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_UUME_VALET EMOTE_NORMAL}Good day, {STR_VAR_1}!\nA room is available for ¥500, if you need a place to spend the night!"
+		))
+
+		showmoneybox(18, 0)
+
+		if (checkmoney(500)) {
+			mcdialogue(
+				"One room, please.",
+				"No, thanks."
+			)
+			closemessage
+
+			switch(var(VAR_RESULT)) {
+				case 0:
+					setspeaker(SP_NAME_VALET)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_UUME_VALET EMOTE_NORMAL}For sure. That'll be ¥500!"
+					))
+					playse(SE_SHOP)
+					removemoney(500)
+					updatemoneybox
+					waitse
+
+					hidemoneybox
+
+					setspeaker(SP_NAME_VALET)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_UUME_VALET EMOTE_NORMAL}Your room is the first one down the corridor!\lWe hope you have a pleasant stay!"
+					))
+					closemessage
+
+					if (var(VAR_FACING) == DIR_WEST) {
+						applymovement(VAR_LAST_TALKED, moves(walk_down, face_right))
+					} else {
+						applymovement(VAR_LAST_TALKED, moves(walk_right, face_down))
+					}
+					waitmovement(0)
+
+					setflag(FLAG_DAILY_YIFU_HOTEL_ROOM)
+
+				case 1:
+					hidemoneybox
+
+					setspeaker(SP_NAME_VALET)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_UUME_VALET EMOTE_NORMAL}Have a nice day!"
+					))
+					closemessage
+			}
+
+		} else {
+			mcdialogue(
+				"I'm poor…"
+			)
+			closemessage
+
+			hidemoneybox
+
+			setspeaker(SP_NAME_VALET)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_UUME_VALET EMOTE_NORMAL}Goodness, it appears you don't have enough money…\l"
+				"I'm sorry!"
+			))
+			closemessage
+		}
+	}
+
+	release
+}
+
+script YifuCity_Refuge_EventScript_FakeValetRoomNotEmpty {
+	setspeaker(SP_NAME_VALET)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Hm? Someone was already in the room?\p"
+		"I never said the room'd be empty,\nnow did I?"
+	))
+	closemessage
+
+	release
+}
+
+script YifuCity_Refuge_EventScript_FakeValet {
+	lock
+	faceplayer
+
+	if (flag(FLAG_DAILY_YIFU_HOTEL_ROOM)) {
+
+		goto_if_defeated(TRAINER_YAMATO, YifuCity_Refuge_EventScript_FakeValetRoomNotEmpty)
+
+		setspeaker(SP_NAME_VALET)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Ya get room one for the day!\nNow get off my face."
+		))
+		closemessage
+	} else {
+		setspeaker(SP_NAME_VALET)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}G'day brat, I mean loyal customer!\nWanna book a room?\lOnly ¥2500 for one day!"
+		))
+
+		showmoneybox(18, 0)
+
+		if (checkmoney(2500)) {
+			mcdialogue(
+				"One room, please.",
+				"No, thanks."
+			)
+			closemessage
+
+			switch(var(VAR_RESULT)) {
+				case 0:
+					setspeaker(SP_NAME_VALET)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Don't just stand there then, gimme the money!"
+					))
+					playse(SE_SHOP)
+					removemoney(2500)
+					updatemoneybox
+					waitse
+
+					hidemoneybox
+
+					setspeaker(SP_NAME_VALET)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}First room down the corridor!\nHave a nice stay, or whatever."
+					))
+					closemessage
+
+					if (var(VAR_FACING) == DIR_WEST) {
+						applymovement(VAR_LAST_TALKED, moves(walk_down, face_right))
+					} else {
+						applymovement(VAR_LAST_TALKED, moves(walk_right, face_down))
+					}
+					waitmovement(0)
+
+					setflag(FLAG_DAILY_YIFU_HOTEL_ROOM)
+
+				case 1:
+					hidemoneybox
+
+					setspeaker(SP_NAME_VALET)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}What d'ya want? Just go!"
+					))
+					closemessage
+			}
+
+		} else {
+			mcdialogue(
+				"I'm poor…"
+			)
+			closemessage
+
+			hidemoneybox
+
+			special(GetPlayerBoyGirlString)
+
+			setspeaker(SP_NAME_VALET)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Get a load of this {STR_VAR_1}!\nYer even poorer than I am!\p"
+				"Scram, kid, this ain't a charity."
+			))
+			closemessage
+		}
+	}
+
+	release
+}
+
+script YifuCity_Refuge_EventScript_ListenToShamisen {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_BOY)
+	applymovement(VAR_LAST_TALKED, moves(emote_sweat))
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_BOY_2 EMOTE_NORMAL}Whew… I've walked all day…\nI am spent!"
+	))
+	closemessage
+	release
+	end
+}
+
+script YifuCity_Refuge_EventScript_OldMan {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_OLD_MAN)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_UUME_OLD_MAN EMOTE_NORMAL}I'm just resting my old bones by the fire.\p"
+		"How the years go by swiftly…\nDo treasure each passing day…"
+	))
+	closemessage
+	release
+	end
+}
+
+script YifuCity_Refuge_EventScript_Traveler {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_TRAVELER)
+	msgbox(format(
+		"I come from a place high up in the mountains, where the Pokémon are as tough as the rocky landscape.\p"
+		"My Pawniard hones its claws on the hardest stones to keep them sharp."
+	))
+	closemessage
+
+	setnamedmon(SPECIES_PAWNIARD)
+	setdescribedmon(SPECIES_PAWNIARD)
+	release
+	end
+}
+
+script YifuCity_Refuge_EventScript_Bisharp {
+	lock
+	faceplayer
+	setseenmon(SPECIES_PAWNIARD)
+	playmoncry(SPECIES_PAWNIARD, CRY_MODE_NORMAL)
+	setspeakertomonname(SPECIES_PAWNIARD)
+	msgbox(format("Kshhh."))
+	waitmoncry
+	closemessage
+	release
+}
+
+script YifuCity_Refuge_EventScript_Samurai {
+	lock
+	faceplayer
+	applymovement(VAR_LAST_TALKED, moves(emote_pensive))
+	setspeaker(SP_NAME_SAMURAI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}The Crobat Shadows must be operating from somewhere… But where?"
+	))
+	closemessage
+	release
+	end
+}
+
+script YifuCity_Refuge_EventScript_GotTrashedByDojo {
+	lock
+	faceplayer
+	applymovement(VAR_LAST_TALKED, moves(emote_sweat))
+	setspeaker(SP_NAME_MAN)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_BATTLE_GUY EMOTE_NORMAL}Arrgh… this city's Dojo is all girls, so I thought it was going to be super easy…\p"
+		"I got obliterated…"
+	))
+	closemessage
+	release
+	end
+}
+
+script YifuCity_Refuge_EventScript_RouteShamisensPokemon {
+	lock
+	setseenmon(SPECIES_GROWLITHE)
+	playmoncry(SPECIES_GROWLITHE, CRY_MODE_NORMAL)
+	setspeakertomonname(SPECIES_GROWLITHE)
+	msgbox("Rr-ruff!")
+	waitse
+	closemessage
+	release
+}
+
+script YifuCity_Refuge_EventScript_RouteShamisen {
+	lock
+	faceplayer
+	getroutechallengestate(ROUTE_CHALLENGE_WHITESLATE_YIFU)
+	switch(var(VAR_RESULT)) {
+		case ROUTE_CHALLENGE_STATE_STARTED:
+		case ROUTE_CHALLENGE_STATE_SUCCESS:
+			if (flag(FLAG_TALKED_TO_ROUTE_SHAMISEN_NO_SPACE_FOR_EGG)) {
+				setspeaker(SP_NAME_SHAMISEN_PLAYER)
+				msgbox(format(
+					"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_RED EMOTE_NORMAL}Ah, so have you made space in your party for the Egg I wanted to give you?\p"
+					"Which of these Eggs do you favor?"
+				))
+			} else {
+				setflag(FLAG_TALKED_TO_ROUTE_SHAMISEN_NO_SPACE_FOR_EGG)
+				setspeaker(SP_NAME_SHAMISEN_PLAYER)
+				msgbox(format(
+					"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_RED EMOTE_NORMAL}Hello, traveler.\n… … …\l"
+					"… … …!\p"
+					"Oh, I recognize you! You're that promising young Wielder I met on Whiteslate Route!\p"
+					"… …Yes, I feel it…\p"
+					"You managed to traverse the whole Route, triumphing of both Wielders and wild Pokémon, relying on your Wielding skills and medicine…\p"
+					"Congratulations, um… {FONT_SMALL}What did you say your name was?{FONT_NORMAL}\p"
+					"Congratulations, {PLAYER}!\nAs I expected, you have proved worthy of our songs!\p"
+					"I carry some Pokémon Eggs right this moment. I want you to have one, I know it would be in good hands.\p"
+					"Which of these Eggs do you favor?"
+				))
+			}
+
+			mcdialogue(
+				"The warm Egg!",
+				"The wet Egg!",
+				"The mossy Egg!"
+			)
+			closemessage
+
+			specialvar(VAR_0x8000, GetPlayerTrainerIdOnesDigit)
+			switch(var(VAR_RESULT)) {
+				case 0:
+					if (var(VAR_0x8000) <= 4) {
+						setvar(VAR_TEMP_0, SPECIES_CHIMCHAR)
+					} else {
+						setvar(VAR_TEMP_0, SPECIES_TORCHIC)
+					}
+				case 1:
+					if (var(VAR_0x8000) <= 4) {
+						setvar(VAR_TEMP_0, SPECIES_TOTODILE)
+					} else {
+						setvar(VAR_TEMP_0, SPECIES_OSHAWOTT)
+					}
+				case 2:
+					if (var(VAR_0x8000) <= 4) {
+						setvar(VAR_TEMP_0, SPECIES_CHIKORITA)
+					} else {
+						setvar(VAR_TEMP_0, SPECIES_BULBASAUR)
+					}
+			}
+
+			// Give egg if there's room in party
+			if (getpartysize < PARTY_SIZE) {
+				playfanfare(MUS_OBTAIN_ITEM)
+				message(format("{PLAYER} received the mysterious Egg."))
+				waitfanfare
+				giveegg(VAR_TEMP_0, METLOC_EGG_SHAMISEN)
+
+				setspeaker(SP_NAME_SHAMISEN_PLAYER)
+				msgbox(format(
+					"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_RED EMOTE_NORMAL}Please take good care of this Egg.\p"
+					"May destiny cross our paths again!"
+				))
+				closemessage
+
+				call(YifuCity_Refuge_EventScript_RouteShamisenLeaves)
+
+				setroutechallengestate(ROUTE_CHALLENGE_WHITESLATE_YIFU, ROUTE_CHALLENGE_STATE_SUCCESS_CONFIRMED)
+			} else {
+				setspeaker(SP_NAME_SHAMISEN_PLAYER)
+				msgbox(format(
+					"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_RED EMOTE_NORMAL}Oh, but wait, you don't have enough room for the Egg!\p"
+					"I'll wait for you to make some."
+				))
+				closemessage
+			}
+
+		case ROUTE_CHALLENGE_STATE_FAILURE:
+			applymovement(VAR_LAST_TALKED, moves(emote_pensive))
+			setspeaker(SP_NAME_SHAMISEN_PLAYER)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_RED EMOTE_NORMAL}Hello, traveler.\n… … …\l"
+				"… … …!\p"
+				"Oh, I recognize you! You're that promising young Wielder I met on Whiteslate Route!\p"
+				"{PLAYER}? It's nice to meet you again.\p"
+				"Tell me honestly, {PLAYER}… Did you manage to traverse Whiteslate Route without resorting to the services of a Pokémon Refuge?"
+			))
+
+			mcdialogue(
+				"I did!",
+				"I didn't…"
+			)
+
+			switch(var(VAR_RESULT)) {
+				case 0:
+					applymovement(VAR_LAST_TALKED, moves(emote_pensive))
+					setspeaker(SP_NAME_SHAMISEN_PLAYER)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_RED EMOTE_NORMAL}Hmmmm… … …\n… … …\p"
+						"You aren't telling the truth, are you?\n"
+						"You're deceiving yourself, do you not feel it in your heart?\p"
+						"Don't be too sad about not succeeding. Honesty beats pride, and you will get other opportunities to prove yourself in the future!\p"
+						"Rest here a while, and prepare well for your next journey!"
+					))
+					closemessage
+					setflag(FLAG_LIED_TO_SHAMISEN_PLAYER)
+				case 1:
+					applymovement(VAR_LAST_TALKED, moves(emote_happy))
+					setspeaker(SP_NAME_SHAMISEN_PLAYER)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_RED EMOTE_NORMAL}Oh, that's alright! Don't beat yourself up. I see in your heart that you have a bright future ahead of you.\p"
+						"Honesty beats pride, and you will get other opportunities to prove yourself in the future!\p"
+						"Rest here a while, and use these to prepare for your next journey!"
+					))
+
+					giveitem(ITEM_SUPERGIRI, 3)
+
+					setspeaker(SP_NAME_SHAMISEN_PLAYER)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_RED EMOTE_NORMAL}May destiny cross our paths again!"
+					))
+					closemessage
+			}
+
+			call(YifuCity_Refuge_EventScript_RouteShamisenLeaves)
+
+			setroutechallengestate(ROUTE_CHALLENGE_WHITESLATE_YIFU, ROUTE_CHALLENGE_STATE_FAILURE_CONFIRMED)
+	}
+
+	closemessage
+	release
+	end
+}
+
+script YifuCity_Refuge_EventScript_RouteShamisenLeaves {
+	switch(var(VAR_FACING)) {
+		case DIR_EAST:
+			applymovement(VAR_LAST_TALKED, moves(walk_down, walk_left * 4, face_down))
+			applymovement(LOCALID_GROWLITHE, moves(walk_down * 2, walk_left * 3))
+		default:
+			applymovement(VAR_LAST_TALKED, moves(walk_left * 4, walk_down))
+			applymovement(LOCALID_GROWLITHE, moves(walk_down, walk_left * 4, face_down))
+	}
+	delay(24)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_fast_left))
+
+	waitmovement(VAR_LAST_TALKED)
+
+	playse(SE_EXIT)
+	removeobject(VAR_LAST_TALKED)
+	waitse
+
+	switch(var(VAR_FACING)) {
+		case DIR_EAST:
+			applymovement(LOCALID_GROWLITHE, moves(walk_left, face_down))
+		default:
+			applymovement(LOCALID_GROWLITHE, moves(walk_down))
+	}
+	waitmovement(LOCALID_GROWLITHE)
+
+	playse(SE_EXIT)
+	removeobject(LOCALID_GROWLITHE)
+	waitse
+
+	setflag(FLAG_HIDE_ROUTE_SHAMISEN)
+}

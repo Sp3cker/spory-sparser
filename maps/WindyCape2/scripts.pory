@@ -1,0 +1,48 @@
+mapscripts WindyCape2_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setflag(FLAG_VISITED_WINDYCAPE)
+	}
+}
+
+script WindyCape_EventScript_WindThroughHoles {
+	lock
+	setspeaker(SP_NAME_LITTLE_BOY)
+	msgbox(format(
+		"When the wind blows through the holes in the rock, it makes strange noises.\p"
+		"It's like it's singing a song!"
+	))
+	closemessage
+	release
+}
+
+
+script WindyCape_EventScript_Mart {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_SHOPKEEPER)
+	message(format("Good day, welcome to Windycape's market!"))
+	waitmessage
+	pokemart(Soulkeep_Mart)
+	setspeaker(SP_NAME_SHOPKEEPER)
+	msgbox(format("Thank you for your business!"), MSGBOX_DEFAULT)
+	release
+}
+
+mart WindyCape_Mart {
+	ITEM_POKE_BALL
+	ITEM_GREAT_BALL
+	ITEM_OINTMENT
+	ITEM_SUPER_OINTMENT
+	ITEM_REVIVAL_POWDER
+	ITEM_REVIVAL_BALM
+	ITEM_PARALYZE_HEAL
+	ITEM_ANTIDOTE
+	ITEM_AWAKENING
+	ITEM_BURN_HEAL
+	ITEM_ICE_HEAL
+	ITEM_ESCAPE_ROPE
+}
+
+script WindyCape_EventScript_SignApricorn {
+	msgbox(format("Apricorn Workshop"), MSGBOX_SIGN)
+}

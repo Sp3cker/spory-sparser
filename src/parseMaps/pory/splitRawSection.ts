@@ -1,34 +1,26 @@
-type RawSection = string;
+type RawScripts = string;
 type PorySection = string;
-type SplitPoryFile = [RawSection, PorySection];
+type SplitPoryFile = [RawScripts, PorySection];
 
 /**
- * Splits a .pory file into sections of raw (assembly) and pory (higher-level) content
+ * Splits a .pory file into raw (assembly) and pory (higher-level) content
+ * Note: There is only ever 1 raw section per file
  * @param fileContents - The contents of the .pory file
- * @returns Array of tuples where each tuple is [rawContent, poryContent]
+ * @returns Tuple of [rawContentLength, poryContent]
  */
-export const splitRawSection = (fileContents: string): SplitPoryFile[] => {
-  const rawSectionRegex = /raw\s*`([^]*?)`/g;
-  const sections: SplitPoryFile[] = [];
-  let lastIndex = 0;
+export const splitRawSection = (fileContents: string): SplitPoryFile => {
+  const rawSectionRegex = /raw\s*`([^]*?)`/;
+  const match = fileContents.match(rawSectionRegex);
 
-  for (const match of fileContents.matchAll(rawSectionRegex)) {
-    const rawContent = match[1];
-    const matchStart = match.index!;
-    const matchEnd = matchStart + match[0].length;
-
-    // Get the pory content before this raw section
-    const poryContent = fileContents.slice(lastIndex, matchStart);
-
-    sections.push([rawContent, poryContent]);
-    lastIndex = matchEnd;
+  if (!match) {
+    // No raw section, return all content as pory
+    return ["", fileContents];
   }
 
-  // If there's content after the last raw section, add it as a section with empty raw content
-  const remainingPory = fileContents.slice(lastIndex);
-  if (remainingPory.trim()) {
-    sections.push(["", remainingPory]);
-  }
+  const rawContent = match[1];
 
-  return sections;
+  // Remove the entire raw section from the file to get pory content
+  const poryContent = fileContents.replace(rawSectionRegex, "");
+
+  return [rawContent, poryContent];
 };

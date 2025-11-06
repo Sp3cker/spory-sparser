@@ -1,0 +1,44 @@
+{
+  "id": "MAP_BURNFOOT_PASS_BOTTOM",
+  "name": "BurnfootPassBottom",
+  "layout": "LAYOUT_MT_KAZAN_EXTERIOR",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_BURNFOOT_PASS_BOTTOM",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_HANABI_CITY",
+      "offset": -10,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_BURNFOOT_PASS",
+      "offset": 26,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_STEEPSTONE_PASS_BOTTOM",
+      "offset": 14,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

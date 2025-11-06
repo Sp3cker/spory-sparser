@@ -1,0 +1,226 @@
+mapscripts ChiiTown_PokemonCenter_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setrespawn(HEAL_LOCATION_CHII_TOWN)
+		gettime
+		// Daytime
+		if (var(VAR_0x8000) >= 5 && var(VAR_0x8000) <= 17) {
+			// Fat guy is there
+			clearflag(FLAG_TEMP_1)
+			// Shamisen player is gone
+			setflag(FLAG_TEMP_2)
+
+			// Nighttime
+		} else {
+			// Fat guy is gone
+			setflag(FLAG_TEMP_1)
+			// Shamisen player is there
+			clearflag(FLAG_TEMP_2)
+			random(3)
+			// TODO EVA Set a var so that it's not reset if the player exits and reenters
+			switch(var(VAR_RESULT)) {
+			case 0:
+				setvar(VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SHAMISEN_RED)
+			case 1:
+				setvar(VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SHAMISEN_BLUE)
+			case 2:
+				setvar(VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SHAMISEN_GREEN)
+			}
+		}
+	}
+}
+
+script ChiiTown_PokemonCenter_EventScript_Nurse {
+	createfieldmugshot(MUGSHOT_SUNRISE_NURSE)
+	setvar(VAR_0x800B, LOCALID_NURSE_CHII)
+	setvar(VAR_0x800A, LOCALID_CHANSEY_CHII)
+	setvar(VAR_0x8009, MUGSHOT_SUNRISE_NURSE)
+	call(Common_EventScript_PkmnCenterNurse_CutTheBullshit)
+	waitmessage
+	waitbuttonpress
+	removefieldmugshot
+	release
+	end
+}
+
+script ChiiTown_PokemonCenter_EventScript_NurseSleep {
+	createfieldmugshot(MUGSHOT_SUNRISE_NURSE)
+	setvar(VAR_0x8009, MUGSHOT_SUNRISE_NURSE)
+	call(Common_EventScript_PkmnCenterNurse_Sleep)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script ChiiTown_PokemonCenter_EventScript_Pasture {
+	createfieldmugshot(MUGSHOT_SUNRISE_MAN_2)
+	setvar(VAR_0x8009, MUGSHOT_SUNRISE_MAN_2)
+	call(Common_EventScript_PcGuy)
+	release
+	end
+}
+
+script ChiiTown_PokemonCenter_EventScript_Shamisen {
+	lock
+	faceplayer
+	// TODO EVA battle shamisen player!
+	setspeaker(SP_NAME_SHAMISEN_PLAYER)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_BLUE EMOTE_NORMAL}Good evening.\p"
+		"We blind shamisen players sing to survive.\p"
+		"These Pokémon refuges give us a safe place to spend the night."
+	))
+	closemessage
+	release
+	end
+}
+
+script ChiiTown_PokemonCenter_EventScript_ShamisenFan {
+	lock
+	faceplayer
+	setspeaker("Shamisen Fan")
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SUNRISE_BOY_2 EMOTE_NORMAL}Such a beautiful voice…\p"
+		"Such sorrowful melodies…\p"
+		"Such ethereal beauty…\p"
+		"I could listen to her forever…\p"
+		"Even though she can't see me, I sure hope she'll notice me one day…"
+	))
+	closemessage
+	release
+	end
+}
+
+script ChiiTown_PokemonCenter_EventScript_Boy {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_LITTLE_GIRL)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SUNRISE_LITTLE_GIRL EMOTE_NORMAL}I'm here with my mama!\nThe music lady's nice!"
+	))
+	closemessage
+	release
+	end
+}
+
+script ChiiTown_PokemonCenter_EventScript_Mom {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_WOMAN)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SUNRISE_WOMAN_1 EMOTE_NORMAL}Traveling shamisen players take shelter in Refuges at nightfall.\p"
+		"Their singing makes for such a cosy atmosphere!"
+	))
+	closemessage
+	release
+	end
+}
+
+script ChiiTown_PokemonCenter_EventScript_WhereShamisen {
+	lock
+	faceplayer
+	setspeaker("Weird man")
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SUNRISE_FAT_GUY EMOTE_NORMAL}Where's that cute shamisen player that was here last night?"
+	))
+	closemessage
+	release
+	end
+}
+
+script ChiiTown_PokemonCenter_EventScript_IveComeALongWay {
+	lock
+	faceplayer
+	setspeaker("Weary traveler")
+	msgbox(format(
+		"I'm so glad I found this refuge. I've come a long way and my feet hurt.\p"
+		"My Pokémon and I will rest here for a while."
+	))
+	closemessage
+	release
+	end
+}
+
+script ChiiTown_PokemonCenter_EventScript_Snorunt {
+	lock
+	faceplayer
+	setseenmon(SPECIES_SNORUNT)
+	playmoncry(SPECIES_SNORUNT, CRY_MODE_NORMAL)
+	setspeakertomonname(SPECIES_SNORUNT)
+	msgbox(format(
+		"Glaglaglaglagla!"
+	))
+	waitmoncry
+	closemessage
+	release
+	end
+}
+
+script ChiiTown_PokemonCenter_EventScript_NeedMarket {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_WOMAN)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SUNRISE_WOMAN_2 EMOTE_NORMAL}Berries, ointments… I should get a few more Poké Balls from the market!"
+	))
+	closemessage
+	release
+	end
+}
+
+script ChiiTown_PokemonCenter_EventScript_RefugePresentation {
+	lock
+	faceplayer
+	setspeaker("Talkative man")
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SUNRISE_MAN_1 EMOTE_NORMAL}Isn't it amazing?\p"
+		"This is one of the many brand new Pokémon refuges that the Pokémon Council has built across all Toku!\p"
+		"With traveling alone becoming more dangerous, many people are now training a Pokémon for protection.\p"
+		"Towns were in dire need of proper healing and rest spots for Pokémon.\p"
+		"Sorry, I'll get out of your hair now.\n"
+		"Talk to the nurse and her Chansey\lif you want her to heal your Pokémon!"
+	))
+	closemessage
+
+	setnamedmon(SPECIES_CHANSEY)
+
+	switch(var(VAR_FACING)) {
+		case DIR_NORTH:
+			applymovement(VAR_LAST_TALKED, moves(walk_right, walk_down * 6))
+		case DIR_WEST:
+			applymovement(VAR_LAST_TALKED, moves(walk_down * 6))
+		case DIR_EAST:
+			applymovement(VAR_LAST_TALKED, moves(walk_down * 6))
+	}
+	waitmovement(0)
+	removeobject(VAR_LAST_TALKED)
+	playse(SE_EXIT)
+	waitse
+
+	setflag(FLAG_POKEMON_REFUGE_PRESENTATION)
+	release
+	end
+}
+
+movement ChiiTown_PokemonCenter_Movement_LeaveWhenFromBottom {
+	walk_right
+	walk_down * 6
+}
+
+movement ChiiTown_PokemonCenter_Movement_Leave {
+	walk_down * 6
+}
+
+script ChiiTown_PokemonCenter_EventScript_MakeNamesUp {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_LITTLE_BOY)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SUNRISE_LITTLE_BOY EMOTE_NORMAL}You know what happens if I see a Pokémon and I don't know its name?\p"
+		"I just make it right up!\nI don't care about silly “real” names!\p"
+		"And neither should you! Be free of the diktat of naming accuracy!"
+	))
+	closemessage
+	release
+	end
+}

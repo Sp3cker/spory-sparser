@@ -1,0 +1,40 @@
+mapscripts Beachbound_Maguro_Gate_MapScripts {
+	
+	MAP_SCRIPT_ON_TRANSITION {
+		if (var(VAR_DECAY_BEACHBOUND_ROUTE) > 0) {
+			setdynamicwarp(MAP_BEACHBOUND_ROUTE_DECAY, 0)
+		} else {
+			setdynamicwarp(MAP_BEACHBOUND_ROUTE, 0)
+		}
+	}	
+}
+
+script Beachbound_Maguro_Gate_EventScript_Guard {
+	lock
+	setspeaker(SP_NAME_SAMURAI)
+	if (var(VAR_DECAY_BEACHBOUND_ROUTE) == 1) {
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}Are you going to Beachbound Route? Uh, be careful, kid!"
+		))
+	} else {
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}Ugh, I hate guard duty…\nWe're not even allowed a book…"
+		))
+	}
+	closemessage
+	release
+}
+
+script Beachbound_Maguro_Gate_EventScript_Umbreon {
+	lock
+    faceplayer
+	setseenmon(SPECIES_UMBREON)
+	setspeakertomonname(SPECIES_UMBREON)
+	playmoncry(SPECIES_UMBREON, CRY_MODE_NORMAL)
+    msgbox(format(
+        "Whew…"
+    ))
+    waitmoncry
+    release
+    end
+}

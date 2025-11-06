@@ -7,6 +7,10 @@ import {
 } from "../validators/levelIncData.ts";
 import { eggSpeciesMap } from "./eggMons.ts";
 import pokemonData from "../../gameData/speciesData.json" with { type: "json" };
+import { splitRawSection } from "./pory/splitRawSection.ts";
+import { parsePoryscriptFunctions } from "./pory/extractPoryScripts.ts";
+import { findStringLineNumber } from "../util/findStringLineNumber.ts";
+
 // export interface IncPokemonEntry {
 //   species: string;
 //   level: number;
@@ -38,13 +42,14 @@ const fromNameToId = (speciesConst: string) => {
   }
   return species.speciesId;
 };
+
 export class IncScriptEvent {
   public scriptName: string;
   public items: IncItemEntry[] = [];
   public pokemon: IncPokemonEntry[] = [];
   public wildMon: IncWildMon[] = [];
   public explanation: string = "";
-
+  private rawContent: string = "";
   constructor(name: string) {
     this.scriptName = name;
   }
@@ -53,12 +58,18 @@ export class IncScriptEvent {
    * Parse content from a script section
    */
   parseFromContent(content: string): void {
-    // this.rawContent = content;
+    // keeps rawContent from beign console.logged
+    Object.defineProperty(this, "rawContent", {
+      value: content,
+      writable: false,
+      enumerable: false,
+      configurable: false,
+    });
     const lines = content.split("\n");
 
     for (const line of lines) {
       const trimmed = line.trim();
-
+      debugger;
       // Parse @explainer comments
       this.parseExplanation(trimmed);
 
@@ -75,7 +86,6 @@ export class IncScriptEvent {
       this.parseGiveEggLine(trimmed);
       this.parseWildMonLine(trimmed);
     }
-
     this.filterVariables(); // Filter out VAR_ entries after parsing
   }
 
@@ -83,7 +93,8 @@ export class IncScriptEvent {
     // Match: giveitem ITEM_NAME or giveitemfast ITEM_NAME
     // Match: giveitem ITEM_NAME, quantity or giveitemfast ITEM_NAME, quantity
     const giveItemMatch = line.match(
-      /^\s*(giveitemfast|giveitem)\s+(\w+)(?:\s*,\s*(\d+))?/,
+      // /^\s*(giveitemfast|giveitem)\s+(\w+)(?:\s*,\s*(\d+))?/,
+      /^\s*(giveitemfast|giveitem)\s*\(?\s*(\w+)\s*,?\s*(\d+)?\s*\)?/,
     );
     if (giveItemMatch) {
       const itemName = giveItemMatch[2];
@@ -251,15 +262,26 @@ export class IncScriptEvent {
       this.pokemon.length > 0 ||
       this.wildMon.length > 0;
     // if no items but still an explanation, fuck
-    if (!notNothing && this.explanation.length > 0) {
-      throw new Error("Explanation for nothing: " + this.scriptName);
+    if (notNothing === false && this.explanation.length > 0) {
+      const scriptLineNumber = findStringLineNumber(
+        this.rawContent,
+        this.scriptName,
+      );
+      throw new Error(
+        `Explanation for nothing: "${this.scriptName}:${scriptLineNumber}"`,
+      );
     }
     return notNothing;
   }
   eventsWithNoExplanation(): void {
     if (this.explanation.length === 0 && this.hasContent()) {
-      console.error("Event with no explanation: " + this.scriptName);
-      throw new Error();
+      const scriptLineNumber = findStringLineNumber(
+        this.rawContent,
+        this.scriptName,
+      );
+      throw new Error(
+        `Missing explanation: "${this.scriptName}:${scriptLineNumber}"`,
+      );
     }
   }
   hasContent(): boolean {
@@ -276,6 +298,7 @@ export class IncScriptEvent {
  */
 function extractIncScriptBlocks(
   content: string,
+  delimiters: [RegExp, string],
 ): Array<{ name: string; content: string }> {
   const lines = content.split("\n");
   const sections: Array<{ name: string; content: string }> = [];
@@ -284,9 +307,9 @@ function extractIncScriptBlocks(
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
-
+    if (line.startsWith("const")) continue;
     // Check if this line defines a script label (ends with ::)
-    if (line.endsWith(":")) {
+    if (line.match(delimiters[0])) {
       // Save previous section if it exists and has content
       if (currentScriptName && currentContent.length > 0) {
         sections.push({
@@ -306,7 +329,7 @@ function extractIncScriptBlocks(
       currentContent.push(line);
 
       // Stop at 'end' keyword
-      if (line === "end") {
+      if (line === delimiters[1]) {
         sections.push({
           name: currentScriptName,
           content: currentContent.join("\n"),
@@ -340,8 +363,20 @@ export function parseScriptedEvents(content: string) {
   // Content needs to be the insides of the "raw`" block
   // Therefore we must split the .pory file into raw and pory sections.
   // so file.split('\n').getLineNumsOfRawBlock
-  // No raw block means
-  const scriptBlocks = extractIncScriptBlocks(content);
+  const [rawScripts, poryScripts] = splitRawSection(content);
+
+  // All the scripts with their scriptName and function contents.
+  const scriptBlocks: {
+    name: string;
+    content: string;
+  }[] = [];
+  if (rawScripts) {
+    scriptBlocks.push(...extractIncScriptBlocks(rawScripts, [/:\s*$/, "end"]));
+  }
+  if (poryScripts) {
+    scriptBlocks.push(...parsePoryscriptFunctions(poryScripts));
+  }
+
   const filteredScripts = scriptBlocks.filter(
     (rawScriptBlock: { name: string }) => {
       if (notneededLabels.includes(rawScriptBlock.name)) {
@@ -363,8 +398,8 @@ export function parseScriptedEvents(content: string) {
     }
     // kill ourselves if we have an explanation but no events
     // Just keeps things cleaner ya know
-    event.explanationWithNoEvents();
-    event.eventsWithNoExplanation();
+    // event.explanationWithNoEvents();
+    // event.eventsWithNoExplanation();
     // Only include sections that have give events
     if (event.hasContent()) {
       results.push(event);

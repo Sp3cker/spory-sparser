@@ -1,0 +1,162 @@
+const LOCALID_OLDWOMAN = 1
+
+mapscripts KuraTown_House1_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setrespawn(HEAL_LOCATION_KURA_TOWN)
+		if (var(VAR_SAKU_KURA_QUEST_SCYTHER_STATE) < 4) {
+
+		}
+		else {
+			setvar(VAR_SAKU_KURA_QUEST_SCYTHER_STATE, 5)
+		}
+	}
+}
+
+script KuraTown_House1_OldWoman {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_OLD_LADY)
+	switch(var(VAR_SAKU_KURA_QUEST_SCYTHER_STATE)) {
+		case 2:
+			call(OldWomanQuestScript)
+			break
+		case 3:
+			call(OldWomanQuest2Script)
+			break
+		case 4:
+			msgbox(format("{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}Come back later for the medicine."))
+			waitmessage
+			closemessage
+			break
+		case 5:
+			setvar(VAR_SAKU_KURA_QUEST_SCYTHER_STATE, 6)
+			applymovement(VAR_LAST_TALKED, moves(emote_happy))
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}There you are! The medicine is ready.\p"
+				"Take it to the ailing Pokémon. It should feel good as new."
+			))
+			waitmessage
+			closemessage
+			giveitem(ITEM_SPECIAL_MEDICINE, 1)
+			setvar(VAR_SAKU_KURA_QUEST_SCYTHER_STATE, 6)
+			break
+		case 6:
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}Once the ill Pokémon drinks that medicine, it should feel right as rain."
+			))
+			waitmessage
+			closemessage
+			break
+		default:
+			call(OldWomanRegularScript)
+			break
+	}
+	release
+}
+
+script(local) OldWomanRegularScript {
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}You look tired, young one.\nPlease rest a while."
+	))
+	closemessage
+	call(Common_EventScript_OutOfCenterPartyHeal)
+	setspeaker(SP_NAME_OLD_LADY)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}I wish you strength on your journey."
+	))
+	closemessage
+	return
+}
+
+script(local) OldWomanQuestScript {
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}Hello, dearie. Do you need to rest yourself and your Pokémon?"))
+	mcdialogue("A Pokémon needs your help.")
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}Oh my. Take me, please. Where is it?"))
+	mcdialogue("In the Saku village Refuge.")
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}Saku village…? Oh dear…\p"
+		"As much as I'd like to help, I won't be allowed to go through the gate by the guard."
+	))
+	waitmessage
+	closemessage
+	applymovement(LOCALID_OLDWOMAN, moves(face_away_player, emote_pensive, delay_16 * 6, face_player))
+	waitmovement(0)
+	setspeaker(SP_NAME_OLD_LADY)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}While I can't go to Saku village myself, I can create an healing elixir.\p"
+		"I'll need an Oran Berry, a fishcake from Maguro Harbor, and a Revival Powder.\p"
+		"Be a dear and fetch these things for me!"
+	))
+	waitmessage
+	closemessage
+	mcdialogue("Of course!", "I'll try…", "Sure.")
+	setspeaker(SP_NAME_OLD_LADY)
+	applymovement(VAR_LAST_TALKED, moves(emote_heart))
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}Such a wonderful child. I'll wait here for the ingredients."
+	))
+	waitmessage
+	closemessage
+	setvar(VAR_SAKU_KURA_QUEST_SCYTHER_STATE, 3)
+	return
+}
+
+script OldWomanQuest2Script {
+	checkitem(ITEM_FISHCAKE, 1)
+	copyvar(VAR_TEMP_0,VAR_RESULT)
+	checkitem(ITEM_ORAN_BERRY, 1)
+	copyvar(VAR_TEMP_1,VAR_RESULT)
+	checkitem(ITEM_REVIVAL_POWDER, 1)
+	copyvar(VAR_TEMP_2,VAR_RESULT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}Do you have the ingredients I need for the elixir, child?"
+	))
+	if (var(VAR_TEMP_0) >= 1 && var(VAR_TEMP_1) >= 1 && var(VAR_TEMP_2) >= 1) {
+		applymovement(LOCALID_OLDWOMAN, moves(emote_exclamation_mark, delay_16))
+		playse(SE_PIN)
+		waitmovement(0)
+		msgbox(format("{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}Wonderful! Give me a moment, alright? You can come back later for it."))
+		waitmessage
+		closemessage
+		setvar(VAR_SAKU_KURA_QUEST_SCYTHER_STATE, 4)
+	} else {
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_OLD_WOMAN EMOTE_NORMAL}Well, off you go, then."
+			"Remember, I need an Oran Berry, a Maguro Fishcake, and a Revival Powder."
+		))
+		waitmessage
+		closemessage
+	}
+
+}
+
+script KuraTown_House1_OldWomansSon {
+	lock
+	waitse
+	playse(SE_PIN)
+	applymovement(VAR_LAST_TALKED, moves(emote_angry))
+	faceplayer
+	setspeaker(SP_NAME_GUY)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_FAT_GUY EMOTE_NORMAL}The Pokémon Council didn't see fit to build a Refuge in our town.\p"
+		"But those jerks over at Saku Village won't let us use theirs!\p"
+		"So my mother has to work hard to heal all the villager's Pokémon.\l"
+		"It's not fair!"
+	))
+	closemessage
+	release
+}
+
+script KuraTown_House1_Growlithe {
+	lock
+	faceplayer
+	setseenmon(SPECIES_GROWLITHE)
+	setspeakertomonname(SPECIES_GROWLITHE)
+	applymovement(VAR_LAST_TALKED, moves(emote_happy))
+	playmoncry(SPECIES_GROWLITHE, CRY_MODE_NORMAL)
+	msgbox(format(
+		"Wah!"
+	))
+	waitmoncry
+	release
+}

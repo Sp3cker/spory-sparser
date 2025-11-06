@@ -1,0 +1,21 @@
+mapscripts Kura_Beachbound_Gate_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if (var(VAR_DECAY_BEACHBOUND_ROUTE) > 0) {
+			setdynamicwarp(MAP_BEACHBOUND_ROUTE_DECAY, 1)
+		} else {
+			setdynamicwarp(MAP_BEACHBOUND_ROUTE, 1)
+		}
+	}
+}
+
+script Kura_Beachbound_Gate_EventScript_Guard {
+	lock
+	waitse
+	playse(SE_M_SNORE)
+	setspeaker(SP_NAME_SAMURAI)
+	applymovement(VAR_LAST_TALKED, moves(emote_sleep))
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}Zzzzzz…"
+	))
+	release
+}

@@ -1,0 +1,36 @@
+{
+  "id": "MAP_STEEPSTONE_PASS_BOTTOM",
+  "name": "SteepstonePassBottom",
+  "layout": "LAYOUT_STEEP_STONE_PASS_BOTTOM",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_STEEPSTONE_PASS_BOTTOM",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_WHITESLATE_ROUTE",
+      "offset": 23,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_BURNFOOT_PASS_BOTTOM",
+      "offset": -14,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_STEEPSTONE_PASS",
+      "offset": 30,
+      "direction": "up"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

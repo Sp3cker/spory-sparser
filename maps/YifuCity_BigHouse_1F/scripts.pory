@@ -1,0 +1,44 @@
+mapscripts YifuCity_BigHouse_1F_MapScripts {
+	
+}
+
+script YifuCity_BigHouse_1F_EventScript_GirlCrobatAtNight {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_GIRL)
+	if (flag(FLAG_CLEARED_CROBAT_HIDEOUT)) {
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_UUME_GIRL_1 EMOTE_NORMAL}I'm happy Yifu City is safe again!"
+		))
+	} else {
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_UUME_GIRL_1 EMOTE_NORMAL}I stopped going out at night.\pThose fishy Crobat people loiter at the docks right next to our building, speaking in hush tones…"
+		))
+	}
+	release
+}
+
+script YifuCity_BigHouse_1F_EventScript_Man {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_GUY)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_UUME_FAT_GUY EMOTE_NORMAL}The Samurai aren't actually affiliated with the Toku Council. That's a common misconception!\p"
+		"They're their own organization, which mostly deals in protecting the population and fighting crime."
+	))
+	release
+}
+
+script YifuCity_BigHouse_1F_EventScript_Pokemon {
+	lock
+    faceplayer
+	setseenmon(SPECIES_NIDORINA)
+    setspeakertomonname(SPECIES_NIDORINA)
+    msgbox(format(
+        "Gyooh!"
+    ))
+    playmoncry(SPECIES_NIDORINA, CRY_MODE_NORMAL)
+    waitmoncry
+    release
+    end
+}

@@ -1,0 +1,128 @@
+const LOCALID_BAG = 13
+
+mapscripts SunriseVillage_PlayersHouse_Bedroom_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		if (var(VAR_SUNRISE_VILLAGE_INTRO_STATE) < 1) {
+			setrespawn(HEAL_LOCATION_SUNRISE_VILLAGE)
+			setvar(VAR_SUNRISE_VILLAGE_INTRO_STATE, 1)
+			// Fake RTC will resume once the adventure starts!
+			pausefakertc
+		}
+	}
+	MAP_SCRIPT_ON_TRANSITION {
+		call(SecretBase_EventScript_SetDecorationFlags)
+		setvar(VAR_SECRET_BASE_INITIALIZED, 0)
+	}
+	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE {
+		map_script_2(VAR_SECRET_BASE_INITIALIZED, 0, SecretBase_EventScript_InitDecorations)
+	}
+}
+
+script SunriseVillage_PlayersHouse_Bedroom_EventScript_Doll {
+	lock
+	setnamedmon(SPECIES_MAREEP)
+	msgbox(format(
+		"“100% real Mareep wool”!"
+	))
+	release
+}
+
+// Big Sis calls player when he gets out of bed
+script SunriseVillage_PlayersHouse_Bedroom_Event_BigSisCalling {
+    lock
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_SOUTH)
+	setspeaker(SP_NAME_BIG_SIS)
+	msgbox(format(
+		"{PLAYER}! {PLAYER}!\nAre you still sleeping?"
+	))
+	
+	mcdialogue(
+		"…Yes?",
+		"Coming!",
+		"…"
+	)
+
+	closemessage
+
+	setspeaker(SP_NAME_BIG_SIS)
+
+	if (var(VAR_RESULT) == 0) {
+		delay(30)
+		msgbox(format(
+				"Very funny! Now get up and get ready!"
+			))
+	} else {
+		delay(48)
+
+		msgbox(format(
+				"… … … … … …\p"
+				"…{PLAYER}!! ARE YOU UP?!"
+			))
+
+		mcdialogue(
+			"COMIIIIING!!",
+			"COMIIIIIIIIIIING!!!"
+		)
+
+		closemessage
+
+		delay(30)
+
+		setspeaker(SP_NAME_BIG_SIS)
+		msgbox(format(
+			"No need to yell, I can hear you just fine!\p"
+			"Now get up and get ready!"
+		))
+	}
+
+	closemessage
+
+	setvar(VAR_SUNRISE_VILLAGE_INTRO_STATE, 2)
+	setflag(FLAG_HIDE_SUNRISE_VILLAGE_STANDARD_NPC_POSITIONS)
+    release
+    end
+}
+
+script SunriseVillage_PlayersHouse_Bedroom_Stuff {
+	msgbox(format(
+		"It's the medicine and Pokéballs your sister got for you!"
+	), MSGBOX_SIGN)
+	waitmessage
+
+	giveitem(ITEM_OINTMENT, 5)
+	giveitem(ITEM_POKE_BALL, 5)
+
+	// msgbox(format("There is also your journal inside! It might come in handy."), MSGBOX_DEFAULT)
+	// closemessage
+	// setflag(FLAG_SYS_QUEST_MENU_GET)
+	closemessage
+
+	setflag(FLAG_PICKED_UP_BAG)
+	removeobject(LOCALID_BAG)
+}
+
+script SunriseVillage_PlayersHouse_Bedroom_Trigger_ForgotBag {
+	lockall
+	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark, delay_16 * 3))
+	waitmovement(0)
+	waitse
+	msgbox(format(
+		"…You almost forgot to pick up your bag."
+	))
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+	waitmovement(0)
+	releaseall
+}
+
+script SunriseVillage_EventScript_PlayerPc {
+	lockall
+	special(BedroomPC)
+	waitstate
+}
+
+script SunriseVillage_TurnOffPlayerPC {
+	releaseall
+}

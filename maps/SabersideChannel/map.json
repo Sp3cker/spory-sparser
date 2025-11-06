@@ -1,0 +1,31 @@
+{
+  "id": "MAP_SABERSIDE_CHANNEL",
+  "name": "SabersideChannel",
+  "layout": "LAYOUT_SABERSIDE_CHANNEL",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_SABERSIDE_CHANNEL",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_SABERSIDE_TOWN",
+      "offset": -18,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_COREEF_ISLE",
+      "offset": -3,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

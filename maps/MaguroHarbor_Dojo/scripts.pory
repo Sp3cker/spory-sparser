@@ -1,0 +1,239 @@
+const LOCALID_LEADER = 4
+
+mapscripts MaguroHarbor_Dojo_MapScripts {
+	
+}
+
+script MaguroHarbor_Dojo_EventScript_Koishi {
+	setspeaker(SP_NAME_KOISHI)
+	trainerbattle_single(
+		TRAINER_KOISHI_1,
+		format(
+			"{CREATE_MUGSHOT MUGSHOT_KOISHI EMOTE_NORMAL}Welcome to Maguro's Koi Pond Dojo, one of the eight Dojos officially appointed by the Toku Council.\p"
+			"We Dojo Masters fight Wielders that have taken on the Toku Council's challenge.\p"
+			"We each give out a different Token to anyone who succeeds in defeating us.\p"
+			"I am Koishi. I began raising elegant, graceful Pokémon when I was even younger than you are now.\p"
+			"I may behave and speak in a soft manner…\p"
+			"But do not for one second mistake soft-spokenness for weakness.\p"
+			"Now… Shall we battle?"
+		),
+		format("I see…"),
+		MaguroHarbor_Dojo_EventScript_KoishiDefeated,
+		NO_MUSIC
+	)
+	// specialvar(VAR_RESULT, ShouldTryRematchBattle)
+	// goto_if_eq(VAR_RESULT, TRUE, MaguroHarbor_Dojo_EventScript_KoishiRematch)
+	msgbox(format(
+		"You shall achieve great things. I hope we meet again."
+	))
+	end
+}
+
+script MaguroHarbor_Dojo_EventScript_KoishiDefeated {
+	// removespeakername
+	message(format(
+		"{PLAYER} received the Flowing Token from Koishi."
+	))
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+	setspeaker(SP_NAME_KOISHI)
+	msgbox(
+		format(
+			"{CREATE_MUGSHOT MUGSHOT_KOISHI EMOTE_NORMAL}I applaud your skill.\nYou are still a child, yet you clearly have a natural aptitude for battle.\p"
+			"The Token I just gave you will boost your companions' Special Attack.\p"
+			"I am also supposed to give you this."
+		),
+		MSGBOX_DEFAULT
+	)
+
+	clearspeaker
+	removefieldmugshot
+	
+	giveitem(ITEM_TM_NATURE_POWER)
+
+	setspeaker(SP_NAME_KOISHI)
+	msgbox(
+		format(
+			"{CREATE_MUGSHOT MUGSHOT_KOISHI EMOTE_NORMAL}This scroll contains Nature Power, a move that changes depending on the terrain your Pokémon is standing on.\p"
+			"The Toku Council's challenge is no easy undertaking, but your spirit overflows with determination.\p"
+			"Good luck, {PLAYER}."
+		),
+		MSGBOX_DEFAULT
+	)
+	closemessage
+
+	setflag(FLAG_BADGE01_GET)
+	setvar(VAR_0x8008, 1)
+	call(Common_EventScript_SetGymTrainers)
+	addvar(VAR_PLAYER_REPUTATION, 5)
+	// Beachbound route is now decaying
+	setvar(VAR_DECAY_BEACHBOUND_ROUTE, 1)
+	// Kura dojo is closed
+	setflag(FLAG_KURA_DOJO_CLOSED)
+	// because the leader is at her bonsai shop
+	clearflag(FLAG_HIDE_BONSAI_SHOP_OWNER)
+
+	// TODO rematch
+	// delay(30)
+	// playfanfare(MUS_REGISTER_MATCH_CALL)
+	// msgbox(format("Registered Hana\nin the address log."), MSGBOX_DEFAULT)
+	// waitfanfare
+	// closemessage
+
+	delay(48)
+
+	// Volcano quake!
+	setvar(VAR_0x8004, 3)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 40) // num shakes
+	setvar(VAR_0x8007, 2)  // shake delay
+	special(ShakeCamera)
+	delay(16)
+	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	delay(16)
+	playse(SE_PIN)
+	applymovement(LOCALID_LEADER, Common_Movement_ExclamationMark)
+	waitstate
+	waitmovement(OBJ_EVENT_ID_PLAYER)
+	waitmovement(LOCALID_LEADER)
+	delay(60)
+
+	setspeaker(SP_NAME_KOISHI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_KOISHI EMOTE_NORMAL}That… That was a big one!…\p"
+		"I'm going outside to make sure everyone's alright."
+	))
+	closemessage
+
+	specialvar(VAR_RESULT, GetPlayerFacingDirection)
+	if (var(VAR_RESULT) == DIR_WEST) {
+		applymovement(LOCALID_LEADER, moves(walk_fast_down, walk_fast_right * 3, walk_fast_down * 5, walk_fast_left * 5, walk_fast_down * 3))
+	} else {
+		applymovement(LOCALID_LEADER, moves(walk_fast_right * 3, walk_fast_down * 6, walk_fast_left * 5, walk_fast_down * 3))
+	}
+	waitmovement(LOCALID_LEADER)
+	removeobject(LOCALID_LEADER)
+	setflag(FLAG_HIDE_KOISHI)
+
+	release
+	end
+}
+
+// Trainers
+
+script MaguroHarbor_Dojo_EventScript_Izumi {
+	trainerbattle_single(
+		TRAINER_IZUMI,
+		format("{CREATE_MUGSHOT MUGSHOT_MASQUERAIN_GIRL EMOTE_NORMAL}My Pokémon are the daintiest there is!"),
+		format("My poor Feebas!")
+	)
+
+	setspeaker(SP_NAME_BEAUTY)
+	if (var(VAR_DECAY_BEACHBOUND_ROUTE) == 1) {
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_MASQUERAIN_GIRL EMOTE_NORMAL}Oh my, what was that quake?"
+		), MSGBOX_AUTOCLOSE)
+	} else {
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_MASQUERAIN_GIRL EMOTE_NORMAL}You'll go far. I can tell."
+		), MSGBOX_AUTOCLOSE)
+	}
+}
+
+script MaguroHarbor_Dojo_EventScript_Ren {
+	trainerbattle_single(
+		TRAINER_REN,
+		format("Come in! The water's nice and toasty!"),
+		format("Nooo!")
+	)
+
+	setspeaker(SP_NAME_SWIMMER)
+	if (var(VAR_DECAY_BEACHBOUND_ROUTE) == 1) {
+		msgbox(format(
+			"W-what happened?"
+		), MSGBOX_AUTOCLOSE)
+	} else {
+		msgbox(format(
+			"I l-lied. I'm f-f-freezing in h-here."
+		), MSGBOX_AUTOCLOSE)
+	}
+}
+
+script MaguroHarbor_Dojo_EventScript_Mizu {
+	trainerbattle_single(
+		TRAINER_MIZU,
+		format("{CREATE_MUGSHOT MUGSHOT_HOT_SPRING_F EMOTE_NORMAL}Do not disturb the koi pond!"),
+		format("Stop making so much noise!")
+	)
+
+	setspeaker(SP_NAME_HOT_SPRING_GAL)
+	if (var(VAR_DECAY_BEACHBOUND_ROUTE) == 1) {
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_HOT_SPRING_F EMOTE_NORMAL}The poor fish must be all shaken!"
+		), MSGBOX_AUTOCLOSE)
+	} else {
+		msgbox(format(
+			// TODO EVA put some actual fish in the pond ffs
+			"{CREATE_MUGSHOT MUGSHOT_HOT_SPRING_F EMOTE_NORMAL}These are sophisticated fish. They need peace and quiet to thrive."
+		), MSGBOX_AUTOCLOSE)
+	}
+}
+
+script MaguroHarbor_Dojo_EventScript_Advice {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_MAN)
+	if (flag(FLAG_BADGE01_GET)) {
+		if (var(VAR_DECAY_BEACHBOUND_ROUTE) == 1) {
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SEASIDE_MAN_2 EMOTE_NORMAL}You swept me away with that battle!\p"
+				"That quake just now nearly literally swept me away as well!"
+			), MSGBOX_AUTOCLOSE)
+		} else {
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SEASIDE_MAN_2 EMOTE_NORMAL}You swept me away with that battle!"
+			))
+		}
+	} else {
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SEASIDE_MAN_2 EMOTE_NORMAL}Hello, young challenger!\nWelcome to the Koi Pond Dojo!\l"
+			"Fighting for your first Token?\p"
+			"Koishi, the Master of this place, favors water-type moves.\p"
+			"Her battling style is strong, yet graceful… Sigh…\lI am her biggest fan! It's true!"
+			"Maybe one day, I'll become your biggest fan, who knows?\l"
+			"Go get 'em!"
+		))
+	}
+
+	closemessage
+	release
+}
+
+script MaguroHarbor_Dojo_EventScript_DojoStatue {
+	lockall
+	if (flag(FLAG_BADGE01_GET) && flag(FLAG_BADGE02_GET) && flag(FLAG_BADGE03_GET)) {
+		msgbox(
+			"Dojo of Maguro Harbor\p"
+			"Certified Wielders:\n"
+			"Natsuki,\l"
+			"{PLAYER}",
+			MSGBOX_SIGN
+		)
+	} elif (flag(FLAG_BADGE01_GET)) {
+		msgbox(
+			"Dojo of Maguro Harbor\p"
+			"Certified Wielders:\n"
+			"{PLAYER}",
+			MSGBOX_SIGN
+		)
+	} else {
+		msgbox(
+			"Dojo of Maguro Harbor\p"
+			"Certified Wielders:\n"
+			"-",
+			MSGBOX_SIGN
+		)
+	}
+	releaseall
+}

@@ -1,0 +1,533 @@
+const LOCALID_GUARD = 2
+const LOCALID_ASHII = 16
+const FLAG_HIDE_HARIKO_NATSUKI = FLAG_TEMP_1
+const FLAG_HIDE_ABRA_GUY = FLAG_TEMP_2
+
+mapscripts KuraTown_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_KURA_TOWN)
+
+		returnqueststate(QUEST_SAKURALOVERS)
+		if(var(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE) < 5 || var(VAR_RESULT) >= 3) {
+			setflag(FLAG_HIDE_DEADNIGHT_ASHII)
+		}
+		elif(var(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE) >= 5) {
+			clearflag(FLAG_HIDE_DEADNIGHT_ASHII)
+		}
+
+		if (var(VAR_DECAY_BEACHBOUND_ROUTE) != 4) {
+			setflag(FLAG_HIDE_HARIKO_NATSUKI)
+		}
+
+		if (!flag(FLAG_BADGE01_GET)) {
+			setflag(FLAG_HIDE_ABRA_GUY)
+		}
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE, 5: KuraTown_EventScript_AnxiousAshii
+		VAR_DECAY_BEACHBOUND_ROUTE, 4: KuraTown_EventScript_PostDecayNatsukiHariko
+	]
+	MAP_SCRIPT_ON_LOAD {
+		// Barricading dojo
+		if (flag(FLAG_KURA_DOJO_CLOSED)) {
+			setmetatile(40, 16, METATILE_SakuKura_ClosedDojoDoor, TRUE)
+		}
+		gettimeofday
+		switch(var(VAR_0x8000)){
+			case TIME_DEAD_NIGHT:
+				setmetatile(18, 6, METATILE_SakuKura_ClosedDoorTop, TRUE)
+				setmetatile(18, 7, METATILE_SakuKura_ClosedDoorBottom, TRUE)
+			case TIME_EARLY_MORNING:
+			case TIME_MORNING:
+			case TIME_LUNCHTIME:
+			case TIME_AFTERNOON:
+			case TIME_EVENING:
+			case TIME_NIGHT:
+			default:
+				end
+    	}
+	}
+}
+
+script KuraTown_EventScript_GuardStopsYou {
+	lockall
+
+	getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+	// Player sneaks in from the left
+	if (var(VAR_TEMP_0) <= 14) {
+		applymovement(LOCALID_GUARD, Common_Movement_WalkInPlaceFasterLeft)
+		waitmovement(0)
+		msgbox(format("Hey!"))
+		closemessage
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+		// Player sneaks in from the right
+	} else {
+		applymovement(LOCALID_GUARD, Common_Movement_WalkInPlaceFasterRight)
+		waitmovement(0)
+		msgbox(format("Hey!"))
+		closemessage
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+	}
+	delay(20)
+
+	if (var(VAR_SAKU_KURA_VILLAGES_STATE) == 1) {
+		msgbox(format(
+			"You think I don't see you trying to sneak in from Saku Village?\p"
+			"…Wait, you're a regular traveler, aren't you…\p"
+			"Welcome to Kura Village then!"
+		))
+		closemessage
+		setvar(VAR_SAKU_KURA_VILLAGES_STATE, 2)
+	} elif (var(VAR_SAKU_KURA_VILLAGES_STATE) == 2) {
+		msgbox(format(
+			"You're not trying to sneak into Saku Village, are you?\p"
+			"…My bad, you're that traveler again. Didn't recognize ya.\p"
+			"You can go through, though I'm not sure why you'd want to."
+		))
+		closemessage
+		setvar(VAR_SAKU_KURA_VILLAGES_STATE, 3)
+	}
+	releaseall
+}
+
+script KuraTown_EventScript_DojoChallenger {
+	lock
+	faceplayer
+	if (flag(FLAG_KURA_DOJO_CLOSED)) {
+		waitse
+		playse(SE_PIN)
+		applymovement(VAR_LAST_TALKED, moves(emote_upset))
+		setspeaker("Bold Man")
+		msgbox(
+			format(
+				"{CREATE_MUGSHOT MUGSHOT_BATTLE_GUY}"
+				"Looks like the Dojo is closed again…\p"
+				"Gah, when will I get a chance to crush Hana in a fiery battle?\p"
+				"Could it be that she is scared of me?"
+			)
+		)
+	} else {
+		setspeaker("Cowardly Man")
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_BATTLE_GUY}"
+			"The Dojo is open! I can finally defeat its leader in a fiery battle!\p"
+			"…Hm? When, you ask?\p"
+			"In… In a minute…"
+		))
+		playse(SE_PIN)
+		applymovement(VAR_LAST_TALKED, moves(emote_sad))
+		msgbox(format(
+			"No, go right ahead, I'm just… preparing…"
+		))
+	}
+	closemessage
+	release
+}
+
+script KuraTown_EventScript_Farmer {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_FARMER)
+	msgbox(format(
+		"Why do we hate the Saku Village folks, y'ask?"
+	))
+	closemessage
+
+	applymovement(VAR_LAST_TALKED, moves(emote_pensive, delay_16 * 6))
+	waitmovement(0)
+
+	setspeaker(SP_NAME_FARMER)
+	msgbox(format(
+		"To be honest, I don't quite rememb'r.\nBut who needs a reas'n, right?"
+	))
+	release
+}
+
+script KuraTown_EventScript_SilkScarf {
+@explanation Ask the grey-looking girl about her scarf
+	lock
+	faceplayer
+	if (flag(FLAG_RECEIVED_SILK_SCARF)) {
+		setspeaker(SP_NAME_GIRL)
+		msgbox(
+			format(
+				"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_1 EMOTE_NORMAL}Sigh… Now I'm scarfless…\p"
+				"At least I'm not committing any more crimes against fashion…"
+			)
+		)
+		closemessage
+	} else {
+		setspeaker(SP_NAME_GIRL)
+		msgbox(
+			format(
+				"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_1 EMOTE_NORMAL}Hey, you! Yes, you! I need some super-urgent fashion advice!\p"
+				"I bought myself this scarf in Yifu City… But now I'm worried the white clashes with my complexion!\p"
+				"Is it awful?\nDoes it make my skin look grey?"
+			)
+		)
+		playse(SE_PIN)
+		applymovement(VAR_LAST_TALKED, moves(emote_sad))
+		msgbox(format(
+			"Oh gosh, it does, doesn't it? I knew it! I have to get rid of it right this moment!\p"
+			"Take it! Take it! I can't even look at it!"
+		))
+
+		closemessage
+
+		giveitem(ITEM_SILK_SCARF)
+		setflag(FLAG_RECEIVED_SILK_SCARF)
+	}
+
+
+	release
+}
+
+script KuraTown_EventScript_FarmerScyther {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_FARMER)
+	msgbox(
+		format(
+			"We started taming Scyther recently to help with harvestin' the crops. They've been a tremendous help!"
+		),
+		MSGBOX_DEFAULT
+	)
+	release
+}
+
+script KuraTown_EventScript_Scyther {
+	lock
+	faceplayer
+	setseenmon(SPECIES_SCYTHER)
+	playmoncry(SPECIES_SCYTHER, CRY_MODE_NORMAL)
+	setspeakertomonname(SPECIES_SCYTHER)
+	msgbox(format("Gyooo!"))
+	waitmoncry
+	closemessage
+	release
+}
+
+script KuraTown_EventScript_Guard {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_GUARD)
+	msgbox(
+		format(
+			"Hope you didn't have too much trouble passing the gate.\p"
+			"That Saku Village guard is such a jerk, he won't let anyone from our village cross to theirs.\p"
+			"So of course we're not gonna let anyone from theirs in ours! Hah!"
+		),
+		MSGBOX_DEFAULT
+	)
+	release
+}
+
+script SakuTown_EventScript_ClosedGymDoor {
+	// Barricading dojo
+	if (flag(FLAG_KURA_DOJO_CLOSED)) {
+		msgbox(format(
+			"“BE BACK SOON\n"
+			"- Hana”"
+		), MSGBOX_SIGN)
+	}
+}
+
+script KuraTown_EventScript_LovestruckGuy{
+	lock
+	faceplayer
+	setspeaker("Lovestruck Boy")
+	msgbox(
+		(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_BOY_1 EMOTE_NORMAL}I just spent the day with my girlfriend\nfrom Maguro Harbor, but I already want\ltomorrow to come to see her again!"
+		),
+		MSGBOX_DEFAULT
+	)
+	release
+}
+
+script KuraTown_EventScript_PokemonCouncil {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_WOMAN)
+	msgbox((
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_WOMAN_2 EMOTE_NORMAL}The Elders of the Toku Council may\nlook like a bunch of frail old people,\lbut they were once formidable Wielders!\p"
+		"They paved the way for what Pokémon\nWielding is today, and will be tomorrow."
+	))
+	closemessage
+	release
+}
+
+script KuraTown_EventScript_TownSign {
+	msgbox(format("Kura Village\n“A village where the mountains meet the woods.”"), MSGBOX_SIGN)
+}
+
+script KuraTown_EventScript_TrainerTips {
+	msgbox(format("Did you know?\pThe people from Saku Village can and will eat your children!"), MSGBOX_SIGN)
+}
+
+script KuraTown_EventScript_DirectionsSign {
+	msgbox(format("{UP_ARROW} Silver Tunnel\nThis way for Silveridge"), MSGBOX_SIGN)
+}
+
+script KuraTown_EventScript_GymSign {
+	msgbox(
+		format(
+			"Kura Village Pokémon Dojo\n"
+			"Leader: Hana\p"
+			"“Resilient as a maple rooted in wisdom.”"
+		),
+		MSGBOX_SIGN
+	)
+}
+
+script KuraTown_EventScript_PostDecayNatsukiHariko {
+	lockall
+	setvar(VAR_DECAY_BEACHBOUND_ROUTE, 5)
+
+	delay(48)
+
+	applymovement(LOCALID_KURA_HARIKO, moves(walk_in_place_fast_left))
+
+	setspeaker(SP_NAME_HARIKO)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_HARIKO EMOTE_NORMAL}Did you hear? They said this Decay\nstarted less than a week ago.\p"
+		"That coincides with the beginning of\nthe Volcano's rumbling spells,\lso there probably is a correlation.\p"
+		"We need to get to the bottom of this."
+	))
+	playse(SE_PIN)
+	applymovement(LOCALID_KURA_HARIKO, moves(emote_angry))
+	msgbox(format(
+		"But how are we supposed to if the grownups don't let us?"
+	))
+	closemessage
+
+	delay(60)
+
+	applymovement(LOCALID_KURA_HARIKO, moves(walk_in_place_fast_left))
+
+	setspeaker(SP_NAME_HARIKO)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_HARIKO EMOTE_NORMAL}… …{PLAYER}, Natsuki.\nI am heading home, in Yifu City.\p"
+		"We should meet up later to talk about this some more.\p"
+		"Well, I am leaving now.\p"
+		"Goodbye!"
+	))
+	closemessage
+
+	applymovement(LOCALID_KURA_HARIKO, moves(walk_down * 2, walk_left * 5, walk_down * 3))
+	delay(32)
+	applymovement(LOCALID_KURA_NATSUKI, moves(walk_in_place_fast_down))
+	waitmovement(LOCALID_KURA_HARIKO)
+	delay(24)
+
+	applymovement(LOCALID_KURA_NATSUKI, moves(walk_up))
+	waitmovement(LOCALID_KURA_NATSUKI)
+
+	applymovement(LOCALID_KURA_NATSUKI, moves(walk_in_place_fast_right))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_fast_left))
+	waitmovement(0)
+
+	playse(SE_PIN)
+	applymovement(LOCALID_KURA_NATSUKI, moves(emote_sweat))
+	setspeaker(SP_NAME_NATSUKI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}Boy, your friend sure talks a lot, huh?\p"
+		"D'you think this whole Decay business\nis linked to the wild Pokémon attacks\lElder Kaba told us about?\p"
+		"I'm glad the Samurai are on it.\nI'm sure they'll fix whatever this is.\p"
+		"You're going up to Silveridge to deliver that letter, huh, {PLAYER}?\p"
+		"Me? I'm heading to Yifu City.\nThere's a Dojo there, and I'll need\lto collect a heckload of Tokens\lif I wanna join the New Moon order.\p"
+		"When I'm a Samurai, I'll be able to\nprotect everyone from danger!\p"
+		"Don't worry, I'll protect you, too!{PAUSE_UNTIL_PRESS}\n…Mostly from yourself, though!"
+	))
+
+	applymovement(LOCALID_KURA_NATSUKI, moves(lock_facing_direction, walk_fast_left, unlock_facing_direction))
+
+	setspeaker(SP_NAME_NATSUKI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}Don't hit me! Don't hit me!\nI'm gone!\p"
+		"See ya later, Feraligatr!"
+	))
+
+	closemessage
+
+	applymovement(LOCALID_KURA_NATSUKI, moves(walk_down * 7))
+	delay(32)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_fast_down))
+	waitmovement(LOCALID_KURA_NATSUKI)
+	removeobject(LOCALID_KURA_NATSUKI)
+	removeobject(LOCALID_KURA_HARIKO)
+	setflag(FLAG_HIDE_HARIKO_NATSUKI)
+
+	releaseall
+}
+
+script KuraTown_EventScript_AnxiousAshii {
+	lock
+	delay(48)
+	applymovement(LOCALID_ASHII, moves(walk_in_place_fast_left))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_fast_right))
+	setspeaker(SP_NAME_ASHII)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}My heart is racing… Where is he?\nI hope he's alright…"
+	))
+	playse(SE_PIN)
+	applymovement(LOCALID_ASHII, moves(emote_sad))
+	msgbox(format(
+		"I'm worried…\nCan you check down south for me?"
+	))
+	closemessage
+	applymovement(LOCALID_ASHII, moves(walk_in_place_fast_down))
+	waitmovement(LOCALID_ASHII)
+	setvar(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE, 6)
+	release
+}
+
+script KuraTown_EventScript_AnxiousAshiiWaiting {
+	lock
+	faceplayer
+	waitse
+	playse(SE_PIN)
+	applymovement(LOCALID_ASHII, moves(emote_sad))
+	setspeaker(SP_NAME_ASHII)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}I'm worried…\nCan you check down south for me?"
+	))
+	closemessage
+	applymovement(LOCALID_ASHII, moves(walk_in_place_fast_down))
+	release
+}
+
+script KuraTown_EventScript_PreventEscape {
+	lock
+	applymovement(LOCALID_ASHII, moves(face_up))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+	waitmovement(LOCALID_ASHII)
+	waitmovement(OBJ_EVENT_ID_PLAYER)
+	playse(SE_PIN)
+	applymovement(LOCALID_ASHII, moves(emote_sad))
+	setspeaker(SP_NAME_ASHII)
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}Where on earth are you going, {PLAYER}?!\p{FONT_SMALL_NARROW}Please don't leave me here alone…"))
+	waitmessage
+	closemessage
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down * 2))
+	waitmovement(0)
+	end
+}
+
+script KuraTown_EventScript_Abra {
+	lock
+	setseenmon(SPECIES_ABRA)
+	setspeakertomonname(SPECIES_ABRA)
+	msgbox(format(
+		"… … … … … …\n… … … … … …\p"
+		"… … … … … …\n… … … … … …"
+	))
+	closemessage
+	playse(SE_M_SNORE)
+	applymovement(VAR_LAST_TALKED, moves(emote_sleep, delay_16 * 6))
+	waitmovement(0)
+	release
+}
+
+script KuraTown_EventScript_TeachingScrolls {
+	lock
+
+	setnamedmon(SPECIES_ABRA)
+
+	if (getdescribedmon(SPECIES_ABRA)) {
+		faceplayer
+		setspeaker(SP_NAME_GUY)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_FAT_GUY EMOTE_NORMAL}Abra is the best!\nHe can use attacks in his sleep!"
+		))
+		closemessage
+
+		applymovement(VAR_LAST_TALKED, moves(face_left))
+		waitmovement(VAR_LAST_TALKED)
+
+	} elif (checkitem(ITEM_TM_PSYBEAM)) {
+		setspeaker(SP_NAME_GUY)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_FAT_GUY EMOTE_NORMAL}C'mon Abra, wakey wakey…"
+		))
+		closemessage
+
+		setseenmon(SPECIES_ABRA)
+
+		playse(SE_M_SNORE)
+		applymovement(LOCALID_SAKU_ABRA, moves(emote_sleep, delay_16 * 6, face_right, delay_16 * 3))
+		waitmovement(0)
+
+		applymovement(VAR_LAST_TALKED, moves(
+			face_down,
+			emote_exclamation_mark,
+			delay_16 * 6,
+			walk_in_place_fast_down * 2,
+			lock_facing_direction,
+			lock_anim,
+			walk_slow_up,
+			walk_slow_down,
+			walk_slow_up,
+			walk_slow_down,
+			unlock_facing_direction,
+			unlock_anim,
+			delay_16 * 3
+		))
+
+		playse(SE_M_PSYBEAM)
+		waitse
+		playse(SE_M_PSYBEAM)
+		waitse
+		playse(SE_M_PSYBEAM)
+		waitse
+		playse(SE_M_PSYBEAM2)
+		waitse
+
+		waitmovement(VAR_LAST_TALKED)
+
+		faceplayer
+		setspeaker(SP_NAME_GUY)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_FAT_GUY EMOTE_NORMAL}Did… Did you see that?!\p"
+			"Abra made me float in the air with his Psybeam!!"
+		))
+		closemessage
+
+		applymovement(VAR_LAST_TALKED, moves(face_left, delay_16 * 3))
+		waitmovement(VAR_LAST_TALKED)
+
+		playse(SE_M_SNORE)
+		applymovement(LOCALID_SAKU_ABRA, moves(emote_sleep, delay_16 * 6))
+		waitmovement(LOCALID_SAKU_ABRA)
+		waitse
+
+		playse(SE_PIN)
+		applymovement(VAR_LAST_TALKED, moves(emote_sweat))
+		setspeaker(SP_NAME_GUY)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_FAT_GUY EMOTE_NORMAL}He didn't even wake up…"
+		))
+		closemessage
+
+		setdescribedmon(SPECIES_ABRA)
+
+	} else {
+		faceplayer
+		setspeaker(SP_NAME_GUY)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_FAT_GUY EMOTE_NORMAL}I taught Abra a sick Psychic move using a Technique Scroll, but…\p"
+			"Guess even the sickest move is useless if all he does is sleep, huh…\p"
+			"You can have my Scroll.\nUse it as many times as you want."
+		))
+		closemessage
+
+		giveitem(ITEM_TM_PSYBEAM)
+
+		applymovement(VAR_LAST_TALKED, moves(face_left))
+		waitmovement(VAR_LAST_TALKED)
+	}
+
+	release
+}

@@ -1,0 +1,580 @@
+const FLAG_HIDE_HOPPIP = FLAG_TEMP_5
+const LOCALID_HOPPIP = 7
+const LOCALID_GRUNT_1 = 18
+const LOCALID_GRUNT_2 = 21
+const LOCALID_GRUNT_3 = 20
+const LOCALID_GRUNT_BOSS = 19
+const LOCALID_MUGGED_WOMAN = 17
+
+mapscripts BeachboundRoute_MapScripts {
+}
+
+script BeachboundRoute_EventScript_RunningBoy {
+	lock
+	setspeaker(SP_NAME_LITTLE_BOY)
+	applymovement(VAR_LAST_TALKED, moves(emote_happy))
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SUNRISE_LITTLE_BOY EMOTE_NORMAL}Running running running!!\p"
+		"Yaaaaaaaay!!!"
+	))
+	closemessage
+	release
+}
+
+script BeachboundRoute_EventScript_RunningGirl {
+	lock
+	setspeaker(SP_NAME_LITTLE_GIRL)
+	applymovement(VAR_LAST_TALKED, moves(emote_sad))
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SUNRISE_LITTLE_GIRL EMOTE_NORMAL}Wait for me!! It's not fair!!!"
+	))
+	closemessage
+	release
+}
+
+script BeachboundRoute_EventScript_AnnoyedGirl {
+	gettimeofday
+	setspeaker("Annoyed girl")
+	if (var(VAR_0x8000) != TIME_EVENING && var(VAR_0x8000) != TIME_AFTERNOON) {
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SEASIDE_GIRL_1 EMOTE_NORMAL}Hum… Could you maybe, like, leave?"
+		), MSGBOX_NPC)
+	} else {
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SEASIDE_GIRL_1 EMOTE_NORMAL}I wish those kids would leave…"
+		), MSGBOX_NPC)
+	}
+}
+
+script BeachboundRoute_EventScript_AnnoyedBoy {
+	lock
+	faceplayer
+	applymovement(VAR_LAST_TALKED, moves(emote_sweat))
+	setspeaker("Annoyed boy")
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_BOY_1 EMOTE_NORMAL}I brought my date to the Lover's Meadow, but I kind of thought we'd be alone…"
+	))
+	closemessage
+	release
+}
+
+// Hoppip
+script BeachboundRoute_EventScript_Hoppip {
+	lock
+    faceplayer
+	setseenmon(SPECIES_HOPPIP)
+    setspeakertomonname(SPECIES_HOPPIP)
+    playmoncry(SPECIES_HOPPIP, CRY_MODE_NORMAL)
+    msgbox(format(
+        "Pip!"
+    ))
+    waitmoncry
+    release
+    end
+}
+
+// Wooloo
+script BeachboundRoute_EventScript_Wooloo {
+	lock
+    faceplayer
+	setseenmon(SPECIES_WOOLOO)
+	setspeakertomonname(SPECIES_WOOLOO)
+	playmoncry(SPECIES_WOOLOO, CRY_MODE_NORMAL)
+    msgbox(format(
+        "Bah…"
+    ))
+    waitmoncry
+    release
+    end
+}
+
+script BeachboundRoute_EventScript_Shepherd {
+	lock
+	faceplayer
+	setnamedmon(SPECIES_WOOLOO)
+	setspeaker(SP_NAME_SHEPHERD)
+	msgbox(format(
+		"I bring my Wooloo here to graze everyday."
+	))
+	closemessage
+	release
+}
+
+script BeachboundRoute_EventScript_Karu {
+	trainerbattle_single(
+		TRAINER_KARU,
+		format("{CREATE_MUGSHOT MUGSHOT_LASS EMOTE_NORMAL}Please allow me to introduce you to your own defeat!"),
+		format("N-nice to meet you…"),
+		BeachboundRoute_EventScript_Karu_PostBattle
+	)
+	setspeaker(SP_NAME_LASS)
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_LASS EMOTE_NORMAL}You wiped me away there. How long have you been a Wielder?"), MSGBOX_AUTOCLOSE)
+	end
+}
+
+script BeachboundRoute_EventScript_Karu_PostBattle {
+	setflag(FLAG_HIDE_HOPPIP)
+	removeobject(LOCALID_HOPPIP)
+}
+
+script BeachboundRoute_EventScript_Kin {
+	trainerbattle_single(
+		TRAINER_KIN,
+		format("{CREATE_MUGSHOT MUGSHOT_BATTLE_GIRL EMOTE_NORMAL}I run several hours everyday! You literally cannot defeat me!"),
+		format("Ow! I pulled a muscle!")
+	)
+	setspeaker(SP_NAME_BATTLE_GIRL)
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_BATTLE_GIRL EMOTE_NORMAL}You really don't look strong at all, and yet…"), MSGBOX_AUTOCLOSE)
+	end
+}
+
+script BeachboundRoute_EventScript_Kouta {
+	trainerbattle_single(
+		TRAINER_KOUTA ,
+		format("{CREATE_MUGSHOT MUGSHOT_YOUNGSTER EMOTE_NORMAL}Look at how soft my Pokémon is!"),
+		format("Maybe I'm the one who's soft…")
+	)
+	setspeaker(SP_NAME_YOUNGSTER)
+	setnamedmon(SPECIES_MAREEP)
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_YOUNGSTER EMOTE_NORMAL}When I pet my Mareep, I can hear the static crackle!"))
+	release
+	end
+}
+
+script BeachboundRoute_EventScript_Masato {
+	trainerbattle_single(
+		TRAINER_MASATO_1,
+		format("{CREATE_MUGSHOT MUGSHOT_BUG_CATCHER EMOTE_NORMAL}Let my Pokémon sing for you!"),
+		format("Okay, rude."),
+		BeachboundRoute_EventScript_Masato_Register
+	)
+
+	specialvar(VAR_RESULT, ShouldTryRematchBattle)
+	if (var(VAR_RESULT)) {
+		trainerbattle_rematch(TRAINER_MASATO_1, format("Let's fight again!"), format("I lost again?!"))
+	}
+
+	setnamedmon(SPECIES_KRICKETOT)
+	setspeaker(SP_NAME_BUGCATCHER)
+	// TODO "kricketot" -> "kricketune"
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_BUG_CATCHER EMOTE_NORMAL}I hope one day my Kricketot evolves! I wonder what delightful melody he'll be able to sing then…"))
+	closemessage
+	release
+	end
+}
+
+script(local) BeachboundRoute_EventScript_Masato_Register {
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_BUG_CATCHER EMOTE_NORMAL}{SPEAKER NAME_BUGCATCHER}"
+		"Are you a fan of singing bugs too?\nLet's stay in touch!\p"
+		"I'll have Chatot sing their songs for you!"
+	))
+	closemessage
+	register_matchcall(TRAINER_MASATO_1)
+}
+
+script BeachboundRoute_EventScript_SomeoneCallingForHelp {
+	lock
+
+	setspeaker(SP_NAME_UNKNOWN)
+	msgbox(format(
+		"Help! Someone help me!"
+	))
+
+	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	waitse
+	delay(48)
+
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+	setvar(VAR_CROBAT_SHADOWS_FIRST_ENCOUNTERS_STATE, 2)
+	setflag(FLAG_HIDE_CROBAT_SHADOWS_SAKU_POKECENTER_GRUNTS)
+
+	release
+}
+
+script BeachboundRoute_EventScript_WhereAreYouGoing {
+	lock
+
+	setspeaker(SP_NAME_UNKNOWN)
+	msgbox(format(
+		"Hey, you! In the red and blue clothes!\p"
+		"Are you… Are you leaving?!\p"
+		"Can't you be a decent human being and help me out?"
+	))
+	
+	specialvar(VAR_RESULT, GetPlayerFacingDirection)
+	switch(var(VAR_RESULT)) {
+		case DIR_EAST:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
+		case DIR_WEST:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right))
+		case DIR_SOUTH:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+	}
+	waitmovement(0)
+
+	release
+}
+
+script BeachboundRoute_EventScript_Mugging_Left {
+	lock
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right))
+	waitmovement(0)
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+	call(BeachboundRoute_EventScript_Mugging)
+	release
+}
+
+script BeachboundRoute_EventScript_Mugging_Right {
+	lock
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
+	waitmovement(0)
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+	call(BeachboundRoute_EventScript_Mugging)
+	release
+}
+
+script BeachboundRoute_EventScript_Mugging_Center {
+	lock
+	call(BeachboundRoute_EventScript_Mugging)
+	release
+}
+
+script BeachboundRoute_EventScript_Mugging {
+	// Lost to them once
+	if (var(VAR_CROBAT_SHADOWS_FIRST_ENCOUNTERS_STATE) < 3) {
+		setvar(VAR_CROBAT_SHADOWS_FIRST_ENCOUNTERS_STATE, 3)
+		applymovement(LOCALID_GRUNT_1, moves(walk_in_place_fast_up))
+
+		setspeaker("Shady Man")
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Quit yappin', lady! Just give us yer Pokémon already!"
+		))
+		closemessage
+
+		playse(SE_PIN)
+		applymovement(LOCALID_GRUNT_2, moves(walk_in_place_fast_up, emote_angry))
+
+		setspeaker("Shady Man")
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}C'mon, don't make this difficult! Just hand it over!"
+		))
+		closemessage
+
+		delay(40)
+
+		turnobject(LOCALID_GRUNT_BOSS, DIR_SOUTH)
+		playse(SE_PIN)
+		applymovement(LOCALID_GRUNT_BOSS, Common_Movement_ExclamationMark)
+		waitmovement(0)
+		waitse
+		delay(48)
+
+		setspeaker("Shady Man")
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Just what d'you think yer doin'?\p"
+			"Can't ya see we're in the middle of something 'ere?"
+		))
+
+		applymovement(LOCALID_GRUNT_1, Common_Movement_FaceDown)
+		applymovement(LOCALID_GRUNT_2, Common_Movement_FaceDown)
+		applymovement(LOCALID_GRUNT_3, Common_Movement_FaceDown)
+		waitmovement(LOCALID_GRUNT_1)
+		waitmovement(LOCALID_GRUNT_2)
+		waitmovement(LOCALID_GRUNT_3)
+
+		mcdialogue(
+			"Leave her alone!",
+			"Actually, I was just leaving!",
+			"Uh…"
+		)
+		closemessage
+
+		setspeaker("Shady Man")
+		switch (var(VAR_RESULT)) {
+			case 0:
+				msgbox(format(
+					"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Ooh, feelin' heroic today, are we?\p"
+					"D'ya know what we do to nosy brats who're not clever enough to mind their own business?\p"
+					"Ya have no self-preservation instinct whatsoever, do ya?\p"
+					"D'ya even know who we are?\p"
+					"We're the world-famous Crobat Shadows!\p"
+					"Thievin', muggin', wreakin' havoc… Ya name it!\p"
+					"We're basically the allegory of crime!"
+				))
+			case 1:
+				msgbox(format(
+					"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}'S a little too late fer that, don't ya think?"
+					"D'ya know what we do to nosy brats who're not clever enough to mind their own business?\p"
+					"Ya have no self-preservation instinct whatsoever, do ya?\p"
+					"D'ya even know who we are?\p"
+					"We're the world-famous Crobat Shadows!\p"
+					"Thievin', muggin', wreakin' havoc… Ya name it!\p"
+					"We're basically the allegory of crime!"
+				))
+			case 2:
+				msgbox(format(
+					"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Got nothin' to say, huh?\p"
+					"D'ya know what we do to nosy brats who're not clever enough to mind their own business?\p"
+					"Ya have no self-preservation instinct whatsoever, do ya?\p"
+					"D'ya even know who we are?\p"
+					"We're the world-famous Crobat Shadows!\p"
+					"Thievin', muggin', wreakin' havoc… Ya name it!\p"
+					"We're basically the allegory of crime!"
+				))
+		}
+		closemessage
+
+		applymovement(LOCALID_GRUNT_3, Common_Movement_WalkInPlaceFasterDown)
+		waitmovement(0)
+		setspeaker(SP_NAME_CROBAT_SHADOW)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Uh… What's an allergory, boss?"
+		))
+		closemessage
+
+		turnobject(LOCALID_GRUNT_BOSS, DIR_NORTH)
+		delay(40)
+
+		setspeaker(SP_NAME_CROBAT_BOSS)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}…Gonna pretend ya didn't say that."
+		))
+		closemessage
+
+		turnobject(LOCALID_GRUNT_BOSS, DIR_SOUTH)
+
+		delay(24)
+
+		setspeaker(SP_NAME_CROBAT_BOSS)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}'Nuff yappin' already! Take care of this clown, boys!"
+		))
+		closemessage
+	} else {
+		turnobject(LOCALID_GRUNT_BOSS, DIR_SOUTH)
+		setspeaker(SP_NAME_CROBAT_BOSS)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Can't believe it! Look who's back!\p"
+			"Back fer another whoopin', are we?\p"
+			"Take care of this clown, boys!"
+		))
+	}
+
+	applymovement(LOCALID_GRUNT_BOSS, moves(walk_right, face_left))
+	applymovement(LOCALID_GRUNT_1, moves(walk_down))
+	applymovement(LOCALID_GRUNT_2, moves(walk_down))
+	waitmovement(LOCALID_GRUNT_BOSS)
+	waitmovement(LOCALID_GRUNT_1)
+	waitmovement(LOCALID_GRUNT_2)
+
+	trainerbattle_two_trainers(
+		TRAINER_GRUNT_BEACHBOUND_ROUTE_1,
+		format("Aw, man!"),
+		TRAINER_GRUNT_BEACHBOUND_ROUTE_2,
+		format("Mama!")
+	)
+
+	setvar(VAR_CROBAT_SHADOWS_FIRST_ENCOUNTERS_STATE, 4)
+
+	applymovement(LOCALID_GRUNT_1, Common_Movement_WalkInPlaceFasterRight)
+	waitmovement(LOCALID_GRUNT_1)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Sorry, boss!"
+	))
+	closemessage
+	
+	applymovement(LOCALID_GRUNT_2, Common_Movement_WalkInPlaceFasterRight)
+	waitmovement(LOCALID_GRUNT_2)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}We got stomped proper, boss!"
+	))
+	closemessage
+
+	delay(24)
+
+	playse(SE_PIN)
+	applymovement(LOCALID_GRUNT_BOSS, moves(emote_angry))
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Ya gotta be kiddin' me…\p"
+		"Can't even do no regular muggin' in peace anymore!"
+	))
+	closemessage
+
+	applymovement(LOCALID_GRUNT_BOSS, moves(walk_in_place_fast_down))
+	waitmovement(LOCALID_GRUNT_BOSS)
+
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Well, I ain't gonna stoop to fighting ya myself!"
+	))
+	closemessage
+
+	applymovement(LOCALID_GRUNT_3, moves(walk_in_place_fast_down))
+	waitmovement(0)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Boss, what's a stoop?"
+	))
+	closemessage
+
+	delay(24)
+
+	applymovement(LOCALID_GRUNT_BOSS, moves(face_up, delay_16 * 3))
+	waitmovement(0)
+
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}For the love of god, Kevin…"
+	))
+	closemessage
+
+	delay(48)
+
+	applymovement(LOCALID_GRUNT_BOSS, moves(walk_in_place_fast_down))
+	waitmovement(0)
+	
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Movin' on! You've not seen the last of us, ya annoying brat!\p"
+		"Ya better steer clear of the Crobat Shadows from now on!\p"
+		"Let's move it, boys!"
+	))
+	closemessage
+
+	turnobject(LOCALID_GRUNT_BOSS, DIR_NORTH)
+
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}ZUBATS, ALIGN!!"
+	))
+	closemessage
+
+	applymovement(LOCALID_GRUNT_1, moves(walk_up, face_down))
+	applymovement(LOCALID_GRUNT_2, moves(walk_up, face_down))
+	waitmovement(LOCALID_GRUNT_1)
+	waitmovement(LOCALID_GRUNT_2)
+	applymovement(LOCALID_GRUNT_1, moves(face_down, zubats_align, delay_16 * 2))
+	applymovement(LOCALID_GRUNT_2, moves(face_down, zubats_align, delay_16 * 2))
+	applymovement(LOCALID_GRUNT_3, moves(face_down, zubats_align, delay_16 * 2))
+	waitmovement(LOCALID_GRUNT_1)
+	waitmovement(LOCALID_GRUNT_2)
+	waitmovement(LOCALID_GRUNT_3)
+
+	applymovement(LOCALID_GRUNT_BOSS, moves(walk_down * 5, walk_left * 9))
+	applymovement(LOCALID_GRUNT_1, moves(walk_right * 2, walk_down * 6, walk_left * 9))
+	applymovement(LOCALID_GRUNT_2, moves(walk_right, walk_down * 6, walk_left * 9))
+	applymovement(LOCALID_GRUNT_3, moves(walk_down * 6, walk_left * 9))
+	waitmovement(LOCALID_GRUNT_BOSS)
+	waitmovement(LOCALID_GRUNT_1)
+	waitmovement(LOCALID_GRUNT_2)
+	waitmovement(LOCALID_GRUNT_3)
+
+	removeobject(LOCALID_GRUNT_BOSS)
+	removeobject(LOCALID_GRUNT_1)
+	removeobject(LOCALID_GRUNT_2)
+	removeobject(LOCALID_GRUNT_3)
+	setflag(FLAG_HIDE_CROBAT_SHADOWS_BEACHBOUND_RT)
+
+	delay(60)
+
+	applymovement(LOCALID_MUGGED_WOMAN, moves(walk_down * 2))
+	waitmovement(LOCALID_MUGGED_WOMAN)
+
+	setspeaker(SP_NAME_WOMAN)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_WOMAN_1 EMOTE_NORMAL}Thank you so much for helping me!\p"
+		"Those ruffians were about to steal my Pokémon!\p"
+		"I don't have much to offer you as a thanks, but please take this!"
+	))
+	closemessage
+
+	// TODO EVA: reward
+	giveitem(ITEM_WHITE_HERB)
+
+	setspeaker(SP_NAME_WOMAN)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_WOMAN_1 EMOTE_NORMAL}What's your name?\n"
+		"{PLAYER}?\p"
+		"I'll be sure to tell everyone what a hero you are!"
+	))
+	closemessage
+
+	addvar(VAR_PLAYER_REPUTATION, 1)
+
+	applymovement(LOCALID_MUGGED_WOMAN, moves(walk_left, walk_down * 5, walk_left * 9))
+	waitmovement(LOCALID_MUGGED_WOMAN)
+	removeobject(LOCALID_MUGGED_WOMAN)
+	waitmovement(0)
+}
+
+script BeachboundRoute_EventScript_TravelingMerchantSecondTime {
+	lock
+	faceplayer
+	if (flag(FLAG_MET_TRAVELING_MERCHANT_2ND_TIME)) {
+		setspeaker(SP_NAME_OKADA)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_OKADA EMOTE_NORMAL}Hello, hello again, {PLAYER}!\p"
+			"Can I interest you in some handpicked goods?"
+		))
+	} elif (flag(FLAG_MET_TRAVELING_MERCHANT)) {
+		setspeaker(SP_NAME_OKADA)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_OKADA EMOTE_NORMAL}Hello! … …Have we met before?\p"
+			"Sorry, I'm not good with faces…\p"
+			"Wait! Uhh, {PLAYER}, was it?\p"
+			"I'm in the area for a while to gather some resources.\p"
+			"Can I interest you in some handpicked goods?"
+		))
+	} else {
+		setspeaker(SP_NAME_OKADA)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_OKADA EMOTE_NORMAL}Hello, hello again!\p"
+			"… …Oh, sorry, we haven't met, have we? I'm not good with faces…\p"
+			"I'm Okada, the traveling merchant! I travel through all of Toku on foot, selling useful goods and rare finds!\p"
+			"If you're a traveler, you're definitely going to see me around!\p"
+			"What's your name? {PLAYER}? It's nice to meet you, {PLAYER}!\p"
+			"I see you're a young Wielder, eh? Maybe we can even have a friendly battle sometime!\p"
+			"I'm in the area for a while to gather some resources.\p"
+			"Can I interest you in some handpicked goods?"
+		))
+	}
+
+	setflag(FLAG_MET_TRAVELING_MERCHANT)
+	setflag(FLAG_MET_TRAVELING_MERCHANT_2ND_TIME)
+
+	limitedpokemart(LIMITED_SHOP_1)
+	setspeaker(SP_NAME_OKADA)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_OKADA EMOTE_NORMAL}Thanks for your business! Now where did I put that scroll again…"
+	))
+	closemessage
+
+	release
+}
+
+script BeachboundRoute_EventScript_SeeDecay {
+	lockall
+	
+	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	waitse
+	waitmovement(0)
+
+	setflag(FLAG_SPAWN_INVISIBLE)
+	warpsilent(MAP_BEACHBOUND_ROUTE_DECAY, 43, 17)
+
+	releaseall
+}
+
+script BeachboundRoute_Sign_TrainerTips_XP {
+	msgbox(format(
+		"Did you know?\p"
+		"Weaker Pokémon will grow faster to catch up with your stronger ones!"
+	), MSGBOX_SIGN)
+}

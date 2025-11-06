@@ -1,0 +1,46 @@
+{
+  "id": "MAP_HANABI_CITY",
+  "name": "HanabiCity",
+  "layout": "LAYOUT_HANABI_CITY",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_HANABI_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_SEA_TURF_ROUTE",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_PUDDLE_PATH",
+      "offset": -5,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_DRAGONS_PASS",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_MT_KAZAN_EXTERIOR",
+      "offset": 10,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_BURNFOOT_PASS_BOTTOM",
+      "offset": 10,
+      "direction": "right"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

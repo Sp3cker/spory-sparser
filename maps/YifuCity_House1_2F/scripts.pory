@@ -1,0 +1,74 @@
+mapscripts YifuCity_House1_2F_MapScripts {
+	
+}
+
+script YifuCity_House1_2F_EventScript_ChildGiveDoll {
+	lock
+	if (flag(FLAG_RECEIVED_DOLL_FROM_CHILD)) {
+		faceplayer
+		setspeaker(SP_NAME_LITTLE_BOY)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_UUME_LITTLE_BOY EMOTE_NORMAL}Keep your mouth shut about it!"
+		))
+		closemessage
+	} else {
+		if (flag(FLAG_RECEIVED_SECRET_POWER)) {
+			faceplayer
+			setspeaker(SP_NAME_LITTLE_BOY)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_UUME_LITTLE_BOY EMOTE_NORMAL}Quick, take this!"
+			))
+			closemessage
+			
+			// TODO EVA change the type of doll
+			givedecoration(DECOR_LOTAD_DOLL)
+			setflag(FLAG_RECEIVED_DOLL_FROM_CHILD)
+
+			setspeaker(SP_NAME_LITTLE_BOY)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_UUME_LITTLE_BOY EMOTE_NORMAL}Tell no one! I was never here!"
+			))
+			closemessage
+		} else {
+			waitse
+			playse(SE_PIN)
+			applymovement(VAR_LAST_TALKED, moves(emote_upset))
+			setspeaker(SP_NAME_LITTLE_BOY)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_UUME_LITTLE_BOY EMOTE_NORMAL}Quit following me around!!"
+			))
+			closemessage
+		}
+	}
+	
+	release	
+}
+
+
+script YifuCity_House1_2F_EventScript_ChildStolenDoll {
+	lock
+	faceplayer
+	waitse
+	playse(SE_PIN)
+	applymovement(VAR_LAST_TALKED, moves(emote_upset))
+	setspeaker(SP_NAME_LITTLE_GIRL)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_UUME_LITTLE_GIRL EMOTE_NORMAL}My brother is meaaannnn!\nHe won't give me my doll back!!"
+	))
+	closemessage
+	release	
+}
+
+script YifuCity_House1_2F_EventScript_Vulpix {
+	lock
+	faceplayer
+	setseenmon(SPECIES_VULPIX)
+	playmoncry(SPECIES_VULPIX, CRY_MODE_NORMAL)
+	setspeakertomonname(SPECIES_VULPIX)
+	msgbox(format(
+		"Yap!"
+	))
+	waitmoncry
+	closemessage
+	release
+}

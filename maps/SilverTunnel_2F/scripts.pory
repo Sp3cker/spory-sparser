@@ -1,0 +1,67 @@
+const LOCALID_SANDSLASH = 5
+
+mapscripts SilverTunnel_2F_MapScripts {
+	
+}
+
+script SilverTunnel_2F_EventScript_Tama {
+	trainerbattle_double(
+		TRAINER_TAMA,
+		format("{CREATE_MUGSHOT MUGSHOT_GEM_MANIAC EMOTE_NORMAL}The lack of precious gemstones here is disappointing!"),
+		format("You shine like a diamond!"),
+		format("{CREATE_MUGSHOT MUGSHOT_GEM_MANIAC EMOTE_NORMAL}My two Pokémon like to fight side by side. Come back with at least two Pokémon.")
+	)
+	setspeaker(SP_NAME_GEM_MANIAC)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_GEM_MANIAC EMOTE_NORMAL}I came all the way from Saberside Town looking for precious gemstones.\l"
+		"But there's only sad, grey rocks here…"
+	), MSGBOX_AUTOCLOSE)
+	end
+}
+
+script SilverTunnel_2F_EventScript_Kansaku {
+	trainerbattle_single(
+		TRAINER_IKUTO,
+		format("{CREATE_MUGSHOT MUGSHOT_MINER EMOTE_NORMAL}You scared me! I'll break your head!"),
+		format("What a headache!")
+	)
+	setspeaker(SP_NAME_MINER)
+	setnamedmon(SPECIES_ONIX)
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_MINER EMOTE_NORMAL}Onix is the best!\nSure, she causes cave-ins sometimes, but that's not important!"), MSGBOX_AUTOCLOSE)
+	end
+}
+
+script SilverTunnel_2F_EventScript_Sandslash {
+    lock
+    faceplayer
+	setseenmon(SPECIES_SANDSLASH)
+    playmoncry(SPECIES_SANDSLASH, CRY_MODE_NORMAL)
+    setspeakertomonname(SPECIES_SANDSLASH)
+    msgbox(format(
+        "Sahaaah!"
+    ))
+    waitmoncry
+    closemessage
+    release
+}
+
+script SilverTunnel_2F_EventScript_Miner {
+    lock
+    faceplayer
+    setspeaker(SP_NAME_MINER)
+    msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_MINER EMOTE_NORMAL}Sandslash is such a good partner for Miners!\p"
+		"It curls into a ball and rolls into walls to break 'em, then it burrows in there with its claws.\p"
+		"Ain't that right, Sandy?"
+    ))
+    closemessage
+	turnobject(VAR_LAST_TALKED, DIR_WEST)
+	setnamedmon(SPECIES_SANDSLASH)
+	setseenmon(SPECIES_SANDSLASH)
+	playmoncry(SPECIES_SANDSLASH, CRY_MODE_NORMAL)
+	applymovement(LOCALID_SANDSLASH, moves(jump_in_place_right))
+	waitmoncry
+	waitmovement(0)
+	setdescribedmon(SPECIES_SANDSLASH)
+    release
+}

@@ -1,0 +1,403 @@
+const FLAG_TAILLOW_1 = FLAG_TEMP_1
+const FLAG_TAILLOW_2 = FLAG_TEMP_2
+const FLAG_FLETCHLING_1 = FLAG_TEMP_3
+const FLAG_FLETCHLING_2 = FLAG_TEMP_4
+const LOCALID_BATTLING_GIRL = 15
+const LOCALID_BATTLING_BOY = 16
+
+mapscripts ChiiTown_MapScripts {
+	MAP_SCRIPT_ON_LOAD {
+		call(ChiiTown_DrawMetatiles)
+    }
+	MAP_SCRIPT_ON_TRANSITION {
+        setflag(FLAG_VISITED_CHII_TOWN)
+    }
+	MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_CHII_TOWN_OLD_MAN_TRESPASS_STATE, 2: ChiiTown_EventScript_SetTrespassVar
+    ]
+}
+
+script ChiiTown_DrawMetatiles{
+	// Plant more flowers the more badges you have
+	if (flag(FLAG_BADGE01_GET)) {
+		setmetatile(17, 18, METATILE_SunriseVillage_RedFlowers, FALSE)
+		setmetatile(17, 19, METATILE_SunriseVillage_RedFlowers, FALSE)
+	}
+	if (flag(FLAG_BADGE03_GET)) {
+		setmetatile(16, 16, METATILE_SunriseVillage_RedFlowers, FALSE)
+	}
+	if (flag(FLAG_BADGE04_GET)) {
+		setmetatile(11, 20, METATILE_SunriseVillage_RedFlowers, FALSE)
+		setmetatile(15, 22, METATILE_SunriseVillage_RedFlowers, FALSE)
+	}
+	if (flag(FLAG_BADGE05_GET)) {
+		setmetatile(16, 22, METATILE_SunriseVillage_RedFlowers, FALSE)
+	}
+	if (flag(FLAG_BADGE06_GET)) {
+		setmetatile(18, 23, METATILE_SunriseVillage_RedFlowers, FALSE)
+		setmetatile(17, 16, METATILE_SunriseVillage_RedFlowers, FALSE)
+	}
+	if (flag(FLAG_BADGE08_GET)) {
+		setmetatile(10, 21, METATILE_SunriseVillage_RedFlowers, FALSE)
+		setmetatile(16, 19, METATILE_SunriseVillage_RedFlowers, FALSE)
+		setmetatile(21, 23, METATILE_SunriseVillage_RedFlowers, FALSE)
+	}
+
+    gettimeofday
+	switch(var(VAR_0x8000)){
+        case TIME_DEAD_NIGHT:
+            setmetatile(14, 5, METATILE_PorytilesPrimaryTutorial_ClosedDoorTop, TRUE)
+            setmetatile(14, 6, METATILE_PorytilesPrimaryTutorial_ClosedDoorBottom, TRUE)
+        case TIME_EARLY_MORNING:
+        case TIME_MORNING:
+        case TIME_LUNCHTIME:
+        case TIME_AFTERNOON:
+        case TIME_EVENING:
+        case TIME_NIGHT:
+        default:
+            end
+    }
+}
+
+script ChiiTown_EventScript_WatchfulMom{
+	gettimeofday
+	setspeaker(SP_NAME_WOMAN)
+	switch(var(VAR_0x8000)){
+		case TIME_MORNING:
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SUNRISE_WOMAN_1 EMOTE_NORMAL}I'm dropping off my children to school.\p"
+				"With all the recent Pokémon attacks, I will not let them leave my sight!"
+			), MSGBOX_NPC)	
+		case TIME_AFTERNOON:
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SUNRISE_WOMAN_1 EMOTE_NORMAL}I'm waiting to pick up my children after school.\p"
+				"With all the recent Pokémon attacks, I will not let them leave my sight!"
+			), MSGBOX_NPC)
+		default:
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SUNRISE_WOMAN_1 EMOTE_NORMAL}Phew… Being a full-time mom is exhausting…"
+			), MSGBOX_NPC)
+	}
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+}
+
+script ChiiTown_EventScript_Shopper {
+	setspeaker(SP_NAME_WOMAN)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SUNRISE_WOMAN_2 EMOTE_NORMAL}The town market lady sells Pokémon medicine and Poké Balls now!\p"
+		"Careful, though: her ointments can't be used in the middle of a battle.\p"
+		"They're super cheap though, so don't be afraid to use them to avoid needing to run to the nearest Refuge!"
+	), MSGBOX_NPC)
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+}
+
+script ChiiTown_EventScript_Kecleon {
+	lock
+	faceplayer
+	setseenmon(SPECIES_KECLEON)
+	playmoncry(SPECIES_KECLEON, CRY_MODE_NORMAL)
+	setspeakertomonname(SPECIES_KECLEON)
+	applymovement(VAR_LAST_TALKED, moves(emote_music))
+	msgbox(format("Kleeeeh!"))
+	waitmoncry
+	closemessage
+	release
+}
+
+script ChiiTown_EventScript_PlantingFlowers {
+	lock
+	faceplayer
+	waitse
+	playse(SE_PIN)
+	applymovement(VAR_LAST_TALKED, moves(emote_happy))
+	setspeaker(SP_NAME_LITTLE_GIRL)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SUNRISE_LITTLE_GIRL EMOTE_NORMAL}I'm planting flowers so that the wild Pokémon become happy again!"
+	))
+	closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+script ChiiTown_EventScript_AlsoPlantingFlowers {
+	setspeaker(SP_NAME_LITTLE_BOY)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SUNRISE_LITTLE_BOY EMOTE_NORMAL}She's making me plant flowers so that the wild Pokémon become happy again.\p"
+		"I'm not though…"
+	), MSGBOX_NPC)
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+}
+
+script ChiiTown_EventScript_WatchingTheChildren {
+	setspeaker(SP_NAME_TEACHER)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_MASQUERAIN_GIRL EMOTE_NORMAL}Recess is great to channel the children's pent up energy."
+	), MSGBOX_NPC)
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+}
+
+script ChiiTown_EventScript_EatingBerries {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_LITTLE_GIRL)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SCHOOL_KID_F EMOTE_NORMAL}Sensei said that we should eat berries to grow big and strong!\p"
+		"But how are we supposed to get them if we aren't big and strong yet?"
+	), MSGBOX_DEFAULT)
+	closemessage
+
+	if(checkitem(ITEM_ORAN_BERRY, 1)){
+		msgbox(format(
+			"Give the girl an Oran Berry?"
+		))
+
+		mcdialogue(
+			"Give",
+			"Don't give"
+		)
+
+		if(var(VAR_RESULT) == 0){
+			removeitem(ITEM_ORAN_BERRY)
+			applymovement(VAR_LAST_TALKED, moves(emote_heart))
+			setspeaker(SP_NAME_LITTLE_GIRL)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SCHOOL_KID_F EMOTE_NORMAL}Oh my gosh, thank you!"
+			), MSGBOX_DEFAULT)
+			closemessage
+
+			addvar(VAR_PLAYER_REPUTATION, 1)
+		}
+	}
+	closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+script ChiiTown_EventScript_BerryEnthusiast {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_LITTLE_BOY)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SCHOOL_KID_M EMOTE_NORMAL}I've been eating berries just like Sensei said, but I haven't grown yet.\p"
+		"I don't care though. They're delicious!"
+	))
+	closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+script ChiiTown_EventScript_BattlingGirl {
+	lock
+	faceplayer
+
+	if (flag(FLAG_BEAT_CHII_TOWN_KIDS)) {
+		special(GetPlayerMrMrsString)
+		setspeaker(SP_NAME_LITTLE_GIRL)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SCHOOL_KID_F EMOTE_NORMAL}Wow, {STR_VAR_1}! You're super strong!!\p"
+			"I'll have to train Snuggles a whole lot more!"
+		))
+		closemessage
+	} else {
+			
+		// From bottom
+		if (var(VAR_FACING) == DIR_NORTH) {
+			applymovement(LOCALID_BATTLING_BOY, moves(face_down))
+			// From left
+		} else {
+			applymovement(LOCALID_BATTLING_BOY, moves(face_left))
+		}
+		waitmovement(0)
+		
+		special(GetPlayerMrMrsString)
+		setspeaker(SP_NAME_LITTLE_GIRL)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SCHOOL_KID_F EMOTE_NORMAL}Hey {STR_VAR_1}! We've been studying Pokémon battles in class. Wanna fight with us?"
+		))
+		mcdialogue(
+			"Sure!",
+			"I don't want to."
+		)
+		closemessage
+
+		if(var(VAR_RESULT) == 0) {
+			trainerbattle_two_trainers(
+				TRAINER_MINORI,
+				format("Whaaaat?!"),
+				TRAINER_KAITO,
+				format("Well I never learned about THAT!")
+			)
+			setflag(FLAG_BEAT_CHII_TOWN_KIDS)
+
+			special(GetPlayerMrMrsString)
+			applymovement(VAR_LAST_TALKED, moves(emote_heart))
+			setspeaker(SP_NAME_LITTLE_GIRL)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SCHOOL_KID_F EMOTE_NORMAL}Wow, {STR_VAR_1}! You're super strong!!\p"
+				"I'll have to train Snuggles a whole lot more!"
+			))
+			closemessage
+
+			// TODO EVA reward?
+		} else {
+			applymovement(VAR_LAST_TALKED, moves(emote_angry))
+			setspeaker(SP_NAME_LITTLE_GIRL)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SCHOOL_KID_F EMOTE_NORMAL}Ughhhh, older kids are so boooring!"
+			))
+			closemessage
+		}
+
+		applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+		applymovement(LOCALID_BATTLING_BOY, moves(face_left))
+		waitmovement(0)
+	}
+	release
+}
+
+script ChiiTown_EventScript_BattlingBoy {
+	lock
+	faceplayer
+
+	if (flag(FLAG_BEAT_CHII_TOWN_KIDS)) {
+		special(GetPlayerMrMrsString)
+		setspeaker(SP_NAME_LITTLE_BOY)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SCHOOL_KID_M EMOTE_NORMAL}Wow, {STR_VAR_1}! Can you be our Sensei?\p"
+			"That way, Destroyer will be invincible!"
+		))
+		closemessage
+	} else {
+		applymovement(LOCALID_BATTLING_GIRL, moves(face_down))
+		waitmovement(0)
+		
+		special(GetPlayerMrMrsString)
+		setspeaker(SP_NAME_LITTLE_BOY)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SCHOOL_KID_M EMOTE_NORMAL}Hello {STR_VAR_1}! We're top of our class! That means we're strong!\lWanna battle us?"
+		))
+		mcdialogue(
+			"Sure!",
+			"I don't want to."
+		)
+		closemessage
+
+		if(var(VAR_RESULT) == 0) {
+			trainerbattle_two_trainers(
+				TRAINER_MINORI,
+				format("Whaaaat?!"),
+				TRAINER_KAITO,
+				format("Well I never learned about THAT!")
+			)
+			setflag(FLAG_BEAT_CHII_TOWN_KIDS)
+
+			special(GetPlayerMrMrsString)
+			applymovement(VAR_LAST_TALKED, moves(emote_heart))
+			setspeaker(SP_NAME_LITTLE_BOY)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SCHOOL_KID_M EMOTE_NORMAL}Wow, {STR_VAR_1}! Can you be our sensei?\p"
+				"That way, Destroyer will be invincible!"
+			))
+			closemessage
+
+			// TODO EVA reward?
+		} else {
+			applymovement(VAR_LAST_TALKED, moves(emote_angry))
+			setspeaker(SP_NAME_LITTLE_BOY)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SCHOOL_KID_M EMOTE_NORMAL}Fine! Go do grownup stuff!"
+			))
+			closemessage
+		}
+
+		applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+		applymovement(LOCALID_BATTLING_GIRL, moves(face_right))
+		waitmovement(0)
+	}
+	release
+}
+
+script ChiiTown_EventScript_Mart {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_SHOPKEEPER)
+	message(format("{CREATE_MUGSHOT MUGSHOT_CLERK EMOTE_NORMAL}Welcome to Chii Town's market!\pHow may I help you?"))
+	waitmessage
+	pokemart(ChiiTown_Mart)
+	setspeaker(SP_NAME_SHOPKEEPER)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+}
+
+script ChiiTown_EventScript_MartDecor {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_SHOPKEEPER)
+	message(format("Decors!"))
+	waitmessage
+	pokemartdecoration(ChiiTown_MartDecors)
+	setspeaker(SP_NAME_SHOPKEEPER)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+}
+
+mart ChiiTown_MartDecors {
+	DECOR_SURF_MAT
+}
+
+mart ChiiTown_Mart {
+	ITEM_POKE_BALL
+	ITEM_OINTMENT
+	ITEM_REVIVAL_POWDER
+	ITEM_PARALYZE_HEAL
+	ITEM_ANTIDOTE
+	ITEM_AWAKENING
+	ITEM_BURN_HEAL
+}
+
+script ChiiTown_EventScript_Samurai {
+	setspeaker(SP_NAME_SAMURAI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}There's been reports of shady men dressed in blue loitering around here.\pBe careful when traveling!"
+	), MSGBOX_NPC)
+}
+
+script ChiiTown_EventScript_TownSign {
+	msgbox(format("Chii Town\n“The smallest town, with the biggest heart.”"), MSGBOX_SIGN)
+}
+
+script ChiiTown_EventScript_SchoolSign {
+	msgbox(format(
+		"Little Deerling elementary school"
+	), MSGBOX_SIGN)
+}
+
+script ChiiTown_EventScript_SetTrespassVar {
+	setvar(VAR_CHII_TOWN_OLD_MAN_TRESPASS_STATE, 1)
+}
+
+script ChiiTown_EventScript_HexManiac {
+	setspeaker(SP_NAME_GIRL)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_HEX_MANIAC EMOTE_NORMAL}I hate people.\p"
+		"There are fewer people outdoors after dark, so I only hang out at night."
+	), MSGBOX_NPC)
+}
+
+script ChiiTown_EventScript_Deerling {
+	lock
+	setseenmon(SPECIES_DEERLING_SPRING)
+	playmoncry(SPECIES_DEERLING_SPRING, CRY_MODE_NORMAL)
+	setspeakertomonname(SPECIES_DEERLING_SPRING)
+	msgbox(format("Hun!"))
+	waitmoncry
+	closemessage
+	release
+}

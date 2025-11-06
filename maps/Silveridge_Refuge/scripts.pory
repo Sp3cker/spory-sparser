@@ -1,0 +1,157 @@
+const FLAG_HIDE_FIREBRINGER = FLAG_TEMP_1
+
+mapscripts Silveridge_Refuge_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setrespawn(HEAL_LOCATION_SILVERIDGE)
+		setflag(FLAG_HIDE_FIREBRINGER)
+		getweekday
+		switch(var(VAR_RESULT)) {
+			case WEEKDAY_TUE:
+			case WEEKDAY_THU:
+			case WEEKDAY_SAT:
+				clearflag(FLAG_HIDE_FIREBRINGER)
+		}
+	}
+}
+
+script Silveridge_Refuge_EventScript_ImWorried {
+	setspeaker(SP_NAME_WOMAN)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_MOUNTAIN_WOMAN_2 EMOTE_NORMAL}The whole town trembles from the Volcano's quakes…\p"
+		"I'm so worried…"
+	), MSGBOX_NPC)
+}
+
+script Silveridge_Refuge_EventScript_Firebringer {
+	lock
+	faceplayer
+	if (flag(FLAG_RECEIVED_CHARCOAL)) {
+		setspeaker(SP_NAME_FIREBRINGER)
+		msgbox(format(
+			"I'm bringin' down some Slugma today, freshly caught on Burnfoot Pass this mornin'.\p"
+			"Tomorrow I'll be back up there, catching some more of 'em."
+		))
+		closemessage
+	} else {
+		special(GetPlayerBoyLassString)
+		setspeaker(SP_NAME_FIREBRINGER)
+		msgbox(format(
+			"Hm? You askin' why I smell like smoke?\p"
+			"Prob'ly 'cause I just got down from Mt Kazan, and lemme tell ya, {STR_VAR_1}, it is no piece o' cake!\p"
+			"There's molten lava, aggressive Pokémon, chambers filled to the brim with explosive smoke!\p"
+			"Firebringers risk their life to capture fresh Slugma an' carry 'em to towns an' cities!\p"
+			"… …Wait, there's a piece of Charcoal stuck in my pocket.\lThe smell actually probably comes from there…\p"
+			"Here, you can keep it as a souvenir from Mt Kazan!"
+		))
+		closemessage
+
+		giveitem(ITEM_CHARCOAL)
+		setflag(FLAG_RECEIVED_CHARCOAL)
+	}
+	release
+}
+
+script Silveridge_Refuge_EventScript_FirebringerFangirl {
+	gettimeofday
+	if (var(VAR_0x8000) == TIME_EARLY_MORNING || var(VAR_0x8000) == TIME_MORNING) {
+		setspeaker(SP_NAME_GIRL)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_MOUNTAIN_GIRL_1 EMOTE_NORMAL}The Firebringer is coming to Silveridge today! Gosh, I can't wait!"
+		), MSGBOX_NPC)
+	} else {
+		setspeaker(SP_NAME_GIRL)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_MOUNTAIN_GIRL_1 EMOTE_NORMAL}Oh gosh, look at him…\p"
+			"He's so…\nRough-looking…\lAnd handsome…\lAnd smoke-smelling…"
+			"Sigh…"
+		), MSGBOX_NPC)
+	}
+}
+
+script Silveridge_Refuge_EventScript_Artist {
+	setspeaker(SP_NAME_ARTIST)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ARTIST EMOTE_NORMAL}Listening to the musician's sweet song inspires me so!"
+	), MSGBOX_NPC)
+}
+
+script Silveridge_Refuge_EventScript_Kricketune {
+	lock
+	faceplayer
+	setseenmon(SPECIES_KRICKETUNE)
+	setspeakertomonname(SPECIES_KRICKETUNE)
+	playmoncry(SPECIES_KRICKETUNE, CRY_MODE_NORMAL)
+	msgbox(format(
+		"Delelelele…"
+	))
+	waitmoncry
+	closemessage
+	release
+}
+
+script Silveridge_Refuge_EventScript_NurseSleep {
+	createfieldmugshot(MUGSHOT_MOUNTAIN_NURSE)
+	setvar(VAR_0x8009, MUGSHOT_MOUNTAIN_NURSE)
+	call(Common_EventScript_PkmnCenterNurse_Sleep)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script Silveridge_Refuge_EventScript_Nurse {
+	createfieldmugshot(MUGSHOT_MOUNTAIN_NURSE)
+	setvar(VAR_0x800B, LOCALID_NURSE_SILVERIDGE)
+	setvar(VAR_0x800A, LOCALID_CHANSEY_SILVERIDGE)
+	setvar(VAR_0x8009, MUGSHOT_MOUNTAIN_NURSE)
+	call(Common_EventScript_PkmnCenterNurse_CutTheBullshit)
+	waitmessage
+	waitbuttonpress
+	removefieldmugshot
+	release
+	end
+}
+
+script Silveridge_Refuge_EventScript_Pasture {
+	createfieldmugshot(MUGSHOT_MOUNTAIN_MAN_2)
+	setvar(VAR_0x8009, MUGSHOT_MOUNTAIN_MAN_2)
+	call(Common_EventScript_PcGuy)
+	release
+	end
+}
+
+script Silveridge_Refuge_EventScript_Shamisen {
+	lock
+	faceplayer
+
+	if (flag(FLAG_DAILY_SHAMISEN_BATTLE_IN_POKECENTER)) {
+		setspeaker(SP_NAME_SHAMISEN_PLAYER)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_GREEN EMOTE_NORMAL}Are you resting here for the night as well?"
+		))
+		closemessage
+	} else {
+		special(GetPlayerBoyGirlString)
+		setspeaker(SP_NAME_SHAMISEN_PLAYER)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_GREEN EMOTE_NORMAL}Good evening to you, {STR_VAR_1}.\nAre you here to listen to my music?\lOr are you here to battle?"
+		))
+		closemessage
+
+		trainerbattle_no_intro(TRAINER_SHAMISEN, format("Such fun!"))
+
+		setspeaker(SP_NAME_SHAMISEN_PLAYER)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SHAMISEN_GREEN EMOTE_NORMAL}That was just the thing I needed to pass the time.\p"
+			"I'll share my meal with you as a thanks."
+		))
+		closemessage
+
+		giveitem(ITEM_SUPERGIRI, 2)
+
+		setflag(FLAG_DAILY_SHAMISEN_BATTLE_IN_POKECENTER)
+	}
+
+	release
+	end
+}

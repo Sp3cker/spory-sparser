@@ -1,0 +1,950 @@
+const LOCALID_SAMURAI = 14
+
+const LOCALID_FIRST_GRUNT = 2
+
+const LOCALID_4V1_GRUNT_1 = 15
+const LOCALID_4V1_GRUNT_2 = 16
+const LOCALID_4V1_GRUNT_3 = 17
+const LOCALID_4V1_GRUNT_4 = 18
+
+const LOCALID_GRUNT_REUNION_ROOM_LEFT = 8
+const LOCALID_KEVIN = 7
+const LOCALID_GRUNT_REUNION_ROOM_TOP = 6
+const LOCALID_CROBAT_BOSS = 9
+
+const LOCALID_GOLBAT_LEFT = 13
+const LOCALID_GOLBAT_RIGHT = 19
+
+const LOCALID_POOCHYENA_LEFT = 26
+const LOCALID_POOCHYENA_MIDDLE = 27
+const LOCALID_POOCHYENA_RIGHT = 28
+
+const FLAG_HIDE_GOLBAT_ADMINS = FLAG_TEMP_1
+const FLAG_HIDE_SAMURAI = FLAG_TEMP_2
+const FLAG_TALKED_TO_SAMURAI_BEFORE_ENTERING_BOSS_ROOM = FLAG_TEMP_3
+const FLAG_HIDE_4V1_GRUNTS = FLAG_TEMP_4
+const FLAG_HIDE_FIRST_GRUNT = FLAG_TEMP_5
+
+mapscripts CrobatHideout_1F_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		if (flag(FLAG_CROBAT_HIDEOUT_SEEN_BY_GRUNT)) {
+			setflag(FLAG_HIDE_FIRST_GRUNT)
+		}
+		setflag(FLAG_HIDE_GOLBAT_ADMINS)
+		setflag(FLAG_HIDE_SAMURAI)
+		setflag(FLAG_HIDE_4V1_GRUNTS)
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_CROBAT_HIDEOUT_STATE, 0: CrobatHideout_1F_SeenByGrunt
+    ]
+}
+
+script CrobatHideout_1F_SeenByGrunt {
+	lockall
+
+	delay(24)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+	waitmovement(OBJ_EVENT_ID_PLAYER)
+	playse(SE_PIN)
+	applymovement(LOCALID_FIRST_GRUNT, moves(face_up, emote_exclamation_mark, delay_16 * 3))
+	waitmovement(LOCALID_FIRST_GRUNT)
+	waitse
+
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Who the heck're you?!"
+	))
+
+	dynmultichoice(
+		0,
+		0,
+		TRUE,
+		10,
+		0,
+		DYN_MULTICHOICE_CB_NONE,
+		"{PLAYER}, nice to meet you!",
+		"I'm the new recruit!",
+		"Are you a criminal?"
+	)
+	closemessage
+
+	switch(var(VAR_RESULT)) {
+		case 0:
+			setspeaker(SP_NAME_ZUBAT_GRUNT)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}I don' know no {PLAYER}!\nThis ain't no tea party!\p"
+				"You a spy? Ya don' work with the Samurai or somethin', do ya?"
+			))
+		case 1:
+			setspeaker(SP_NAME_ZUBAT_GRUNT)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Oh, right, 'course, the new recruit!\p"
+				"(Why am I never in the loop?…)\p"
+				"Wait… Where's yer uniform?"
+			))
+		case 2:
+			setspeaker(SP_NAME_ZUBAT_GRUNT)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Duh, what dum' question is that?\p"
+				"…Wait…\nYou're not a Crobat Shadow, are ya?"
+			))
+	}
+	closemessage
+
+	playse(SE_PIN)
+	applymovement(LOCALID_FIRST_GRUNT, moves(emote_exclamation_mark, delay_16 * 3, lock_facing_direction, walk_down, unlock_facing_direction))
+	waitmovement(0)
+	waitse
+
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Ah, crappers! Hideout's compromised!\p"
+		"We've got an intruder!\nBOSS!! BOOOSSSS!!!"
+	))
+	closemessage
+
+	applymovement(LOCALID_FIRST_GRUNT, moves(walk_fast_down * 4, delay_16 * 3))
+	waitmovement(LOCALID_FIRST_GRUNT)
+	removeobject(LOCALID_FIRST_GRUNT)
+
+	setflag(FLAG_CROBAT_HIDEOUT_SEEN_BY_GRUNT)
+	setvar(VAR_CROBAT_HIDEOUT_STATE, 1)
+	releaseall
+}
+
+script CrobatHideout_1F_EventScript_Grunt1 {
+	trainerbattle_single(
+		TRAINER_GRUNT_CROBAT_HIDEOUT_1,
+		format("{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}I bet yer the intruder!\nYeah, I'm smart like that!"),
+		format("Boss, help us!")
+	)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Whaddyawant? Ya got nothin' on us!\nErr I mean, we done nothin' wrong!"
+	))
+	closemessage
+	end
+}
+
+script CrobatHideout_1F_EventScript_GruntPaintingPokeballs {
+	trainerbattle_single(
+		TRAINER_GRUNT_CROBAT_HIDEOUT_2,
+		format("{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}What? I'm not paintin' Poké Balls to look like Ultra Balls!"),
+		format("Alright alright, ya got me!")
+	)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}I'm sure this is all super legal, but dontcha dare say a thing!"
+	))
+	closemessage
+	end
+}
+
+script CrobatHideout_1F_EventScript_GruntLaundryRoom {
+	trainerbattle_single(
+		TRAINER_GRUNT_CROBAT_HIDEOUT_3,
+		format(
+			"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Yer not here to help with the laundry, are ya?"
+			),
+		format("Hung me out to dry…")
+	)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}I always end up on laundry duty, even when it's someone else's turn…"
+	))
+	closemessage
+	end
+}
+
+script CrobatHideout_1F_EventScript_GruntDoubleGirl {
+	trainerbattle_single(
+		TRAINER_GRUNT_CROBAT_HIDEOUT_4,
+		format(
+			"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Where d'ya think yer goin', cutie pie?"
+			),
+		format("Fine, go where ya want then, sheesh!")
+	)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Yer laughin' now, but our boss is gonna stomp on ya real good!"
+	))
+	closemessage
+	end
+}
+
+script CrobatHideout_1F_EventScript_GruntDoubleGuy {
+	trainerbattle_single(
+		TRAINER_GRUNT_CROBAT_HIDEOUT_5,
+		format(
+			"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Trespassin's against the law, ya know?"
+			),
+		format("Kids these days, I swear!")
+	)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}We ain't gon' take this invasion of our privacy lyin' down!"
+	))
+	closemessage
+	end
+}
+
+script CrobatHideout_1F_EventScript_GruntNearReunionRoom {
+	trainerbattle_single(
+		TRAINER_GRUNT_CROBAT_HIDEOUT_6,
+		format(
+			"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}This is our super secret hideout! Yer not wanted 'ere!"
+			),
+		format("Yer ruinin' everythin'!")
+	)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Our boss takes good care of us! Everythin' was fine an' dandy 'til you showed up!"
+	))
+	closemessage
+	end
+}
+
+script CrobatHideout_1F_EventScript_Samurai {
+	lock
+	setspeaker(SP_NAME_SAMURAI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}Quiet! The leader of the Crobat Shadows is in the next room!\p"
+		"You're a trainer, yes? You have a wild look in your eyes… Like you're itching for a fight!\p"
+		"Shall we join forces for the inevitable confrontation?"
+	))
+	closemessage
+
+	setflag(FLAG_TALKED_TO_SAMURAI_BEFORE_ENTERING_BOSS_ROOM)
+    release
+    end
+}
+
+script CrobatHideout_1F_EventScript_LaundrySchedule {
+    msgbox(format(
+		"“WEEKLY LAUNDRY SCHEDULE\n"
+		"MON - Hiro\l"
+		"TUE - Hiro\l"
+		"WED - Mei\l"
+		"THU - Kevin\l"
+		"FRI - Hiro\l"
+		"SAT - Saki\l"
+		"SUN - Hiro”"
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_MessPoster {
+    msgbox(format(
+		"“KITCHEN RULES:\n"
+		"1. DO clean up after yourself!\p"
+		"2. DO NOT steal food from other grunts!\p"
+		"3. But more importantly, DO NOT let your food be stolen!\p"
+		"4. Seriously though, next one who leaves a mess, I WILL bite them in their sleep.\l"
+		"- The Boss”"
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_FirstPoster {
+    msgbox(format(
+		"“Welcome to the Super Secret Crobat Hideout!\p"
+		"Keep it down, we don't want to attract attention.\l"
+		"- The Boss”"
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_Pots {
+    msgbox(format(
+		"An assortment of mismatched pots and pans."
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_EmptyBowl {
+    msgbox(format(
+		"An empty bowl."
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_EmptyBowlLeftover {
+    msgbox(format(
+		"A bowl containing some leftover Mifan Berry soup."
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_WantedPosterMustache {
+    msgbox(format(
+		"“WANTED: Crobat Shadows Grunt\n"
+		"¥3000”\p"
+		"Someone has doodled glasses\nand a mustache on the poster."
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_WantedPosterNose {
+    msgbox(format(
+		"“WANTED: Crobat Shadows Grunt\n"
+		"¥4500”\p"
+		"It looks like the nose was\ndrawn over with a different nose."
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_WantedPosterHanddrawn {
+    msgbox(format(
+		"“WANTED: KEVIN\n"
+		"¥10 000 000 000 000”\p"
+		"This poster looks handdrawn…"
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_WantedPosterBoss {
+    msgbox(format(
+		"“WANTED: Crobat Shadows Leader\n"
+		"¥100 000”\p"
+		"There are various messages\nscribbled on the poster:\l"
+		"“Happy birthday boss”,\l"
+		"“U are worthe ¥999 999 in our harts”,\l"
+		"“Gogettem boss”…\l"
+		"… … …\l"
+		"It's time to go."
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_PosterFeedPoochyena {
+    msgbox(format(
+		"“REMEMBER TO FEED THE POOCHYENA”"
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_PosterReunionRoom {
+    msgbox(format(
+		"“BELIEVE IN YOURSELF\n"
+		"Be the kind of criminal you want to be!”\p"
+		"There is a doodle of a Woobat in a corner."
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_Plan {
+    msgbox(format(
+		"Looks like a brainstorming session was interrupted.\p"
+		"“How to steal more efficiently”…"
+	), MSGBOX_SIGN)
+}
+
+script CrobatHideout_1F_EventScript_Nickit {
+	lock
+	setseenmon(SPECIES_HAPPINY)
+	setspeakertomonname(SPECIES_HAPPINY)
+	playmoncry(SPECIES_HAPPINY, CRY_MODE_NORMAL)
+    msgbox(format(
+		"Yap!"
+	))
+	waitmoncry
+	closemessage
+
+	fadescreenswapbuffers(FADE_TO_BLACK)
+	playfanfare(MUS_HEAL)
+	waitfanfare
+	special(HealPlayerParty)
+	callnative(UpdateFollowingPokemon)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+
+	release
+}
+
+script CrobatHideout_1F_Trigger_4V1_FromLeft {
+	lockall
+
+	clearflag(FLAG_HIDE_4V1_GRUNTS)
+	addobject(LOCALID_4V1_GRUNT_1)
+	addobject(LOCALID_4V1_GRUNT_2)
+	addobject(LOCALID_4V1_GRUNT_3)
+	addobject(LOCALID_4V1_GRUNT_4)
+
+	playbgm(MUS_ENCOUNTER_AQUA, FALSE)
+
+	// Grunts surround player
+	applymovement(LOCALID_4V1_GRUNT_1, moves(walk_faster_right * 8))
+	applymovement(LOCALID_4V1_GRUNT_2, moves(delay_16 * 2, walk_faster_right * 9, face_up))
+	applymovement(LOCALID_4V1_GRUNT_3, moves(delay_16 * 4, walk_faster_left * 9, walk_faster_up, walk_faster_left, face_down))
+	applymovement(LOCALID_4V1_GRUNT_4, moves(delay_16 * 6, walk_faster_left * 9, walk_faster_up, face_left))
+	waitmovement(LOCALID_4V1_GRUNT_1)
+	waitmovement(LOCALID_4V1_GRUNT_2)
+	waitmovement(LOCALID_4V1_GRUNT_3)
+	waitmovement(LOCALID_4V1_GRUNT_4)
+
+	call(CrobatHideout_1F_Trigger_4V1)
+}
+
+script CrobatHideout_1F_Trigger_4V1_FromRight {
+	lockall
+
+	clearflag(FLAG_HIDE_4V1_GRUNTS)
+	addobject(LOCALID_4V1_GRUNT_1)
+	addobject(LOCALID_4V1_GRUNT_2)
+	addobject(LOCALID_4V1_GRUNT_3)
+	addobject(LOCALID_4V1_GRUNT_4)
+
+	playbgm(MUS_ENCOUNTER_AQUA, FALSE)
+
+	// Grunts surround player
+	applymovement(LOCALID_4V1_GRUNT_3, moves(walk_faster_left * 9, delay_16, walk_faster_up, walk_faster_left, face_down))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_16 * 2, face_right, lock_facing_direction, walk_faster_left, unlock_facing_direction, delay_16, face_up))
+	delay(128)
+	playse(SE_WALL_HIT)
+	waitmovement(OBJ_EVENT_ID_PLAYER)
+	applymovement(LOCALID_4V1_GRUNT_4, moves(walk_faster_left * 9, walk_faster_up, face_left))
+	waitmovement(0)
+	applymovement(LOCALID_4V1_GRUNT_1, moves(walk_faster_right * 8))
+	applymovement(LOCALID_4V1_GRUNT_2, moves(delay_16 * 2, walk_faster_right * 9, face_up))
+	waitmovement(LOCALID_4V1_GRUNT_1)
+	waitmovement(LOCALID_4V1_GRUNT_2)
+	waitmovement(LOCALID_4V1_GRUNT_3)
+	waitmovement(LOCALID_4V1_GRUNT_4)
+
+	call(CrobatHideout_1F_Trigger_4V1)
+}
+
+script CrobatHideout_1F_Trigger_4V1 {
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(
+		face_down, delay_16,
+		face_left, delay_16,
+		face_right, delay_16,
+		face_down
+	))
+	waitmovement(OBJ_EVENT_ID_PLAYER)
+
+	applymovement(LOCALID_4V1_GRUNT_1, moves(walk_in_place_fast_right))
+	waitmovement(LOCALID_4V1_GRUNT_1)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox("{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Dontcha take another step!")
+
+	applymovement(LOCALID_4V1_GRUNT_2, moves(walk_in_place_fast_up))
+	waitmovement(LOCALID_4V1_GRUNT_2)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox("{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}We're 'ere to end ya!")
+	closemessage
+
+	// Samurai runs in
+	addobject(LOCALID_SAMURAI)
+	applymovement(LOCALID_SAMURAI, moves(walk_fast_left * 9))
+	waitmovement(LOCALID_SAMURAI)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+	playse(SE_WALL_HIT)
+	applymovement(LOCALID_4V1_GRUNT_4, moves(face_down, lock_facing_direction, walk_fast_up, unlock_facing_direction))
+	applymovement(LOCALID_SAMURAI, moves(walk_fast_left))
+	waitmovement(0)
+
+	call(CrobatHideout_1F_SamuraiOffersHelp)
+
+	applymovement(LOCALID_SAMURAI, moves(walk_in_place_faster_up))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_faster_left))
+	waitmovement(0)
+	delay(24)
+
+	call(CrobatHideout_1F_BattleSamuraiBackToBack)
+
+	applymovement(LOCALID_SAMURAI, moves(walk_in_place_fast_up))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_fast_up))
+	waitmovement(0)
+
+	setspeaker(SP_NAME_SAMURAI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}Excuse me!"
+	))
+	closemessage
+
+	applymovement(LOCALID_4V1_GRUNT_3, moves(lock_facing_direction, walk_up * 3, unlock_facing_direction, face_right, lock_facing_direction, walk_left, unlock_facing_direction))
+	applymovement(LOCALID_4V1_GRUNT_4, moves(lock_facing_direction, walk_up * 3, unlock_facing_direction, face_left, lock_facing_direction, walk_right, unlock_facing_direction))
+	applymovement(LOCALID_SAMURAI, moves(walk_up * 4))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 4))
+	waitmovement(0)
+
+	call(CrobatHideout_1F_EnteredBossRoomWithSamurai)
+
+	releaseall
+}
+
+script CrobatHideout_1F_SamuraiOffersHelp {
+	setspeaker(SP_NAME_SAMURAI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}You sure are elusive! I finally caught up with your trail!\p"
+		"Good work finding their lair, we'd been on the lookout for a while!"
+	))
+	closemessage
+
+	applymovement(LOCALID_SAMURAI, moves(face_up, delay_16 * 2, face_down, delay_16 * 2, face_left))
+	waitmovement(LOCALID_SAMURAI)
+	playse(SE_PIN)
+	applymovement(LOCALID_SAMURAI, moves(emote_exclamation_mark, delay_16 * 3))
+	waitmovement(LOCALID_SAMURAI)
+	waitse
+
+	setspeaker(SP_NAME_SAMURAI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}Oh, you were in the midst of getting attacked by these four delinquents, were you not?\p"
+		"Let me help!\nI can handle two at a time!"
+	))
+	closemessage
+
+	applymovement(LOCALID_4V1_GRUNT_4, moves(walk_in_place_fast_down))
+	waitmovement(LOCALID_4V1_GRUNT_4)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Hey, no fair! This was s'posed to be a four on one situation!"
+	))
+	closemessage
+}
+
+script CrobatHideout_1F_BattleSamuraiBackToBack {
+	trainerbattle_two_trainers(
+		TRAINER_GRUNT_CROBAT_HIDEOUT_7,
+		format("No more!"),
+		TRAINER_GRUNT_CROBAT_HIDEOUT_8,
+		format("Please let me live!")
+	)
+
+	applymovement(LOCALID_4V1_GRUNT_1, moves(walk_in_place_fast_right))
+	waitmovement(LOCALID_4V1_GRUNT_1)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Ayayaya! Jus' wait til the Boss hears of this!"
+	))
+	closemessage
+
+	// Grunts go away
+	applymovement(LOCALID_4V1_GRUNT_1, moves(walk_fast_left * 9))
+	applymovement(LOCALID_4V1_GRUNT_2, moves(delay_8, walk_fast_left * 10))
+	applymovement(LOCALID_4V1_GRUNT_3, moves(delay_8, walk_in_place_fast_left, delay_16 * 2, walk_in_place_fast_down))
+	applymovement(LOCALID_4V1_GRUNT_4, moves(delay_8, walk_in_place_fast_left, delay_16 * 3, walk_in_place_fast_down))
+	waitmovement(LOCALID_4V1_GRUNT_2)
+	removeobject(LOCALID_4V1_GRUNT_1)
+	removeobject(LOCALID_4V1_GRUNT_2)
+
+	applymovement(LOCALID_SAMURAI, moves(walk_in_place_fast_left))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_fast_right))
+
+	setspeaker(SP_NAME_SAMURAI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}Nicely done!\nWhat is your name, child?\p"
+		"… … …{PLAYER}!\nI see you have skill!\p"
+		"We have to take their leader down!\nBut first, let me heal your companions!"
+	))
+	closemessage
+
+	fadescreenswapbuffers(FADE_TO_BLACK)
+	playfanfare(MUS_HEAL)
+	waitfanfare
+	special(HealPlayerParty)
+	callnative(UpdateFollowingPokemon)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+
+	setspeaker(SP_NAME_SAMURAI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}Right! Follow me, {PLAYER}!"
+	))
+	closemessage
+
+	setvar(VAR_CROBAT_HIDEOUT_STATE, 2)
+}
+
+script CrobatHideout_1F_EnteredBossRoomWithSamurai {
+	special(SpawnCameraObject)
+	applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up))
+	waitmovement(OBJ_EVENT_ID_CAMERA)
+
+	playse(SE_PIN)
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_LEFT, moves(face_down, emote_exclamation_mark))
+	delay(16)
+	playse(SE_PIN)
+	applymovement(LOCALID_KEVIN, moves(face_down, emote_exclamation_mark))
+	delay(16)
+	playse(SE_PIN)
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_TOP, moves(face_down, emote_exclamation_mark))
+	waitmovement(LOCALID_GRUNT_REUNION_ROOM_TOP)
+	delay(48)
+
+	applymovement(LOCALID_KEVIN, moves(walk_in_place_fast_up))
+	waitmovement(LOCALID_KEVIN)
+	setspeaker(SP_NAME_ZUBAT_GRUNT)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Boss, uh, the intruder's 'ere!"
+	))
+	closemessage
+
+	applymovement(LOCALID_KEVIN, moves(face_down))
+	applymovement(LOCALID_CROBAT_BOSS, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement(LOCALID_CROBAT_BOSS)
+	playse(SE_PIN)
+	applymovement(LOCALID_CROBAT_BOSS, moves(emote_angry))
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox((
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Yeah -{PAUSE 8} I can see that, Kevin…\p"
+		"As always, thank you for your\nprecious input!\p"
+		"Did one man and a puny lil' brat jus'\nwipe through our whole squad like it\lwas nothin'? Is that what happened?"
+	))
+	closemessage
+
+	delay(48)
+	playse(SE_LEDGE)
+	applymovement(LOCALID_CROBAT_BOSS, moves(jump_in_place_down))
+	applymovement(LOCALID_KEVIN, moves(face_up))
+
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox((
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Wait a second… I know this kid!\p"
+		"Yer the annoyin' brat that ruined us\na good muggin' in Beachbound Route!\p"
+		"What the hell, kid?\nWhy're y'always all up in our business?\lD'ya think yer the law or somethin'?"
+	))
+	closemessage
+
+	applymovement(LOCALID_SAMURAI, Common_Movement_WalkInPlaceFasterUp)
+	waitmovement(LOCALID_SAMURAI)
+
+	applymovement(LOCALID_KEVIN, moves(face_down))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_LEFT, moves(face_down))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_TOP, moves(face_down))
+	applymovement(LOCALID_4V1_GRUNT_3, moves(face_right))
+	applymovement(LOCALID_4V1_GRUNT_4, moves(face_left))
+
+	playse(SE_PIN)
+	applymovement(LOCALID_SAMURAI, moves(emote_angry))
+	setspeaker(SP_NAME_SAMURAI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}I make the law here!\n"
+		"You're under arrest, you thug!\p"
+		"I'm taking you in for the Pokémon Refuge robbery!"
+	))
+	closemessage
+
+	applymovement(LOCALID_CROBAT_BOSS, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement(LOCALID_CROBAT_BOSS)
+
+	applymovement(LOCALID_KEVIN, moves(face_up))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_LEFT, moves(face_right))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_TOP, moves(face_right))
+	applymovement(LOCALID_4V1_GRUNT_3, moves(face_up))
+	applymovement(LOCALID_4V1_GRUNT_4, moves(face_up))
+
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Bahaha! Don't make me laugh! Ya'll never get m-"
+	))
+	closemessage
+
+	playse(SE_PIN)
+	applymovement(LOCALID_CROBAT_BOSS, moves(emote_exclamation_mark, delay_16 * 3))
+	waitmovement(0)
+	waitse
+	waitmovement(LOCALID_CROBAT_BOSS)
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Wait, a robbery? Which one of ya goons did this?"
+	))
+	closemessage
+
+	playse(SE_PIN)
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_LEFT, moves(emote_exclamation_mark, delay_16 * 2, face_right, delay_16 * 2, face_right, delay_16 * 3))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_TOP, moves(emote_exclamation_mark, delay_16 * 2, face_left, delay_16 * 2, face_right, delay_16 * 3))
+	waitmovement(0)
+
+	playse(SE_PIN)
+	applymovement(LOCALID_CROBAT_BOSS, moves(emote_angry))
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Well bravaw! You've jus' blown our cover, ya bumblin' idjets!\p"
+		"A robbery right here in Yifu City?\nJus' what were ya thinkin'?\p"
+		"I told y'all to lay low!\nWe can't deal with this much heat!"
+	))
+	closemessage
+
+	playse(SE_LEDGE)
+	applymovement(LOCALID_SAMURAI, moves(jump_in_place_up))
+	waitmovement(LOCALID_SAMURAI)
+
+	applymovement(LOCALID_KEVIN, moves(face_down))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_LEFT, moves(face_down))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_TOP, moves(face_down))
+	applymovement(LOCALID_4V1_GRUNT_3, moves(face_right))
+	applymovement(LOCALID_4V1_GRUNT_4, moves(face_left))
+	
+	setspeaker(SP_NAME_SAMURAI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}Cut the chatter, you lowlife crook!\p"
+		"Your reign of terror has been going on for too long!\p"
+		"You are under arrest, I said!"
+	))
+	closemessage
+
+	playse(SE_LEDGE)
+	applymovement(LOCALID_CROBAT_BOSS, moves(jump_in_place_down))
+
+	applymovement(LOCALID_KEVIN, moves(face_up))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_LEFT, moves(face_right))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_TOP, moves(face_right))
+	applymovement(LOCALID_4V1_GRUNT_3, moves(face_up))
+	applymovement(LOCALID_4V1_GRUNT_4, moves(face_up))
+
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Nope, ya ain't arrestin' me, nor my gang!\p"
+		"Golbat, to me!!"
+	))
+	closemessage
+
+	// Golbat come to the rescue
+	addobject(LOCALID_GOLBAT_LEFT)
+	addobject(LOCALID_GOLBAT_RIGHT)
+	applymovement(LOCALID_GOLBAT_LEFT, moves(walk_up * 2))
+	applymovement(LOCALID_GOLBAT_RIGHT, moves(walk_up * 2))
+	waitmovement(0)
+
+	applymovement(LOCALID_KEVIN, moves(face_down))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_LEFT, moves(face_down))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_TOP, moves(face_down))
+	applymovement(LOCALID_4V1_GRUNT_3, moves(face_right))
+	applymovement(LOCALID_4V1_GRUNT_4, moves(face_left))
+
+	playse(SE_PIN)
+	applymovement(LOCALID_SAMURAI, moves(emote_exclamation_mark, face_down, delay_16 * 3))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+	waitmovement(LOCALID_SAMURAI)
+
+	applymovement(LOCALID_CROBAT_BOSS, moves(walk_in_place_fast_down))
+	waitmovement(LOCALID_CROBAT_BOSS)
+
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}I trust ya two to cover our backs, yeah?"
+	))
+	closemessage
+
+	playse(SE_LEDGE)
+	applymovement(LOCALID_GOLBAT_LEFT, moves(jump_in_place_up))
+	applymovement(LOCALID_GOLBAT_RIGHT, moves(jump_in_place_up))
+	waitmovement(0)
+
+	setspeaker("Golbat Admins")
+	msgbox(format(
+		"Yes boss!"
+	))
+	closemessage
+
+	applymovement(LOCALID_SAMURAI, moves(face_up))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+	waitmovement(0)
+
+	applymovement(LOCALID_CROBAT_BOSS, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement(LOCALID_CROBAT_BOSS)
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}No fancy Samurai and no lil' privileged scrub are ever gonna stop us!\p"
+		"We're the Crobat Shadows, and we're always one step ahead of ya!\p"
+		"Kid… Careful who ya team up with."
+	))
+	closemessage
+
+
+	playse(SE_LEDGE)
+	applymovement(LOCALID_CROBAT_BOSS, moves(jump_in_place_down))
+
+	setspeaker(SP_NAME_CROBAT_BOSS)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_CROBAT EMOTE_NORMAL}Zubat! Align!"
+	))
+	closemessage
+
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_TOP, moves(walk_right * 2, face_down))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_LEFT, moves(walk_right * 2, face_down))
+	applymovement(LOCALID_4V1_GRUNT_3, moves(walk_up * 3, walk_right * 2, face_down))
+	applymovement(LOCALID_4V1_GRUNT_4, moves(walk_right * 2, walk_up * 3, face_down))
+	applymovement(LOCALID_KEVIN, moves(face_down))
+	waitmovement(LOCALID_GRUNT_REUNION_ROOM_TOP)
+	waitmovement(LOCALID_GRUNT_REUNION_ROOM_LEFT)
+	waitmovement(LOCALID_4V1_GRUNT_3)
+	waitmovement(LOCALID_4V1_GRUNT_4)
+	delay(48)
+	playse(SE_PIN)
+	applymovement(LOCALID_KEVIN, moves(face_up, emote_exclamation_mark, delay_16 * 3, walk_fast_right * 2, walk_fast_up * 2, face_down, delay_16 * 3))
+	waitmovement(0)
+
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_TOP, moves(zubats_align, delay_16 * 2))
+	applymovement(LOCALID_GRUNT_REUNION_ROOM_LEFT, moves(zubats_align, delay_16 * 2))
+	applymovement(LOCALID_4V1_GRUNT_3, moves(zubats_align, delay_16 * 2))
+	applymovement(LOCALID_4V1_GRUNT_4, moves(zubats_align, delay_16 * 2))
+	applymovement(LOCALID_KEVIN, moves(zubats_align, delay_16 * 2))
+	waitmovement(0)
+
+	applymovement(LOCALID_CROBAT_BOSS, moves(crobat_cape))	
+	playse(SE_M_DIVE)
+	// SE_MUGSHOT ? SE_M_SPIT_UP ? SE_M_DIVE ? SE_M_MUD_BALL + SE_REPEL?
+	fadescreenswapbuffers(FADE_TO_WHITE)
+	setweather(WEATHER_FOG_HORIZONTAL)
+	doweather
+	removeobject(LOCALID_GRUNT_REUNION_ROOM_TOP)
+	removeobject(LOCALID_GRUNT_REUNION_ROOM_LEFT)
+	removeobject(LOCALID_4V1_GRUNT_3)
+	removeobject(LOCALID_4V1_GRUNT_4)
+	removeobject(LOCALID_KEVIN)
+	removeobject(LOCALID_CROBAT_BOSS)
+	delay(80)
+	fadescreenswapbuffers(FADE_FROM_WHITE)
+
+	delay(48)
+
+	setspeaker(SP_NAME_SAMURAI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}Cough… cough…\nThey're gone!"
+	))
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down))
+	waitmovement(OBJ_EVENT_ID_CAMERA)
+	
+	applymovement(LOCALID_GOLBAT_LEFT, moves(walk_in_place_fast_up))
+	applymovement(LOCALID_SAMURAI, moves(face_down))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+	waitmovement(LOCALID_GOLBAT_LEFT)
+	setspeaker(SP_NAME_GOLBAT_ADMIN)
+	msgbox(format(
+		"Prepare to be crushed!"
+	))
+	setweather(WEATHER_NONE)
+	closemessage
+	special(RemoveCameraObject)
+
+	applymovement(LOCALID_SAMURAI, moves(walk_in_place_fast_left))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_fast_right))
+
+	call(CrobatHideout_1F_LetsFight2v2)
+}
+
+script CrobatHideout_1F_LetsFight2v2 {
+	setspeaker(SP_NAME_SAMURAI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}Let us join forces, {PLAYER}!"
+	))
+	closemessage
+
+	special(SavePlayerParty)
+	fadescreenswapbuffers(FADE_TO_BLACK)
+	special(ChooseHalfPartyForBattle)
+	waitstate
+
+	if (var(VAR_RESULT) == 0) {
+		special(LoadPlayerParty)
+		// Loop until player has picked at least one mon
+		goto(CrobatHideout_1F_LetsFight2v2)
+	} else {
+		applymovement(LOCALID_SAMURAI, moves(walk_in_place_fast_down))
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_fast_down))
+
+		multi_2_vs_2(
+			TRAINER_GOLBAT_ADMIN_1,
+			format("H-how'd that happen?!"),
+			TRAINER_GOLBAT_ADMIN_2,
+			format("Ugh, that's humiliatin'…"),
+			PARTNER_SAMURAI
+		)
+
+		if (var(VAR_RESULT) == 1) {
+			playse(SE_LEDGE)
+			applymovement(LOCALID_GOLBAT_RIGHT, moves(jump_in_place_left))
+			waitmovement(0)
+			setspeaker(SP_NAME_GOLBAT_ADMIN)
+			msgbox(format(
+				"Ya dumball, ya made us lose!"
+			))
+			closemessage
+
+			playse(SE_LEDGE)
+			applymovement(LOCALID_GOLBAT_LEFT, moves(jump_in_place_right))
+			waitmovement(0)
+			setspeaker(SP_NAME_GOLBAT_ADMIN)
+			msgbox(format(
+				"Naw I didn't! 'Twas yer fault!"
+			))
+			closemessage
+
+			applymovement(LOCALID_GOLBAT_RIGHT, moves(walk_in_place_fast_up, delay_16 * 2, walk_in_place_fast_left, delay_16))
+			applymovement(LOCALID_GOLBAT_LEFT, moves(walk_in_place_fast_up, delay_16 * 2, walk_in_place_fast_right, delay_16))
+			waitmovement(0)
+
+			setspeaker(SP_NAME_GOLBAT_ADMIN)
+			msgbox(format(
+				"Nevermind that! Let's scram!"
+			))
+			closemessage
+
+			playse(SE_M_DIVE)
+			fadescreenswapbuffers(FADE_TO_WHITE)
+			setweather(WEATHER_FOG_HORIZONTAL)
+			doweather
+			removeobject(LOCALID_GOLBAT_RIGHT)
+			removeobject(LOCALID_GOLBAT_LEFT)
+			delay(80)
+			fadescreenswapbuffers(FADE_FROM_WHITE)
+			delay(48)
+
+			applymovement(LOCALID_SAMURAI, moves(walk_in_place_fast_left))
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_fast_right))
+			waitmovement(0)
+			setspeaker(SP_NAME_SAMURAI)
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_SAMURAI EMOTE_NORMAL}Cough… Let's get out of here!"
+			))
+			closemessage
+
+			setvar(VAR_CROBAT_HIDEOUT_STATE, 3)
+			setflag(FLAG_CLEARED_CROBAT_HIDEOUT)
+			setflag(FLAG_BOUGHT_FAKE_SHINY)
+
+			warp(MAP_YIFU_CITY, 33, 13)
+		} else {
+			fadescreenswapbuffers(FADE_TO_BLACK)
+			special(SetCB2WhiteOut)
+			waitstate
+		}
+	}
+
+	applymovement(LOCALID_GOLBAT_LEFT, moves(walk_in_place_fast_up))
+	waitmovement(0)
+}
+
+script CrobatHideout_1F_Trigger_Poochyena {
+	lockall
+
+	playmoncry(SPECIES_POOCHYENA, CRY_MODE_ENCOUNTER)
+	applymovement(LOCALID_POOCHYENA_MIDDLE, moves(emote_exclamation_mark))
+	waitmoncry
+	playmoncry(SPECIES_POOCHYENA, CRY_MODE_NORMAL)
+	applymovement(LOCALID_POOCHYENA_RIGHT, moves(emote_exclamation_mark))
+	delay(48)
+	waitmoncry
+
+	playmoncry(SPECIES_POOCHYENA, CRY_MODE_NORMAL)
+	applymovement(LOCALID_POOCHYENA_MIDDLE, moves(walk_fast_down))
+	waitmovement(LOCALID_POOCHYENA_MIDDLE)
+	applymovement(LOCALID_POOCHYENA_LEFT, moves(walk_fast_down))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up, lock_facing_direction, walk_down, unlock_facing_direction, face_right, lock_facing_direction, walk_left, unlock_facing_direction))
+	waitmovement(LOCALID_POOCHYENA_LEFT)
+	waitmovement(OBJ_EVENT_ID_PLAYER)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark, delay_16, walk_fast_left * 8, walk_left))
+	applymovement(LOCALID_POOCHYENA_MIDDLE, moves(walk_fast_down * 2, face_left, delay_16 * 2 walk_fast_left * 3, walk_left, delay_16, walk_right * 4))
+	applymovement(LOCALID_POOCHYENA_RIGHT, moves(walk_fast_down * 3, face_left, delay_16 * 2 walk_fast_left * 3, walk_left, delay_16, walk_right * 4))
+	delay(16)
+	playmoncry(SPECIES_POOCHYENA, CRY_MODE_ENCOUNTER)
+	delay(32)
+	playmoncry(SPECIES_POOCHYENA, CRY_MODE_ENCOUNTER)
+
+	waitmovement(OBJ_EVENT_ID_PLAYER)
+	waitmovement(LOCALID_POOCHYENA_RIGHT)
+
+	setobjectxy(LOCALID_POOCHYENA_LEFT, 55, 14)
+	setobjectxy(LOCALID_POOCHYENA_MIDDLE, 56, 14)
+	setobjectxy(LOCALID_POOCHYENA_RIGHT, 57, 14)
+	turnobject(LOCALID_POOCHYENA_LEFT, DIR_SOUTH)
+	turnobject(LOCALID_POOCHYENA_MIDDLE, DIR_SOUTH)
+	turnobject(LOCALID_POOCHYENA_RIGHT, DIR_SOUTH)
+	delay(1)
+
+	releaseall
+}

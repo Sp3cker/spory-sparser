@@ -1,0 +1,273 @@
+const LOCALID_ASHII = 1
+
+mapscripts KuraTown_House2_MapScripts {
+	
+}
+
+script KuraTown_House2_EventScript_Ashii {
+	lock
+	switch(var(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE)){
+		case 0: // First encounter
+			call(AshiiScript_FirstEncounter)
+			break
+		case 1: // Accepted the quest
+			call(AshiiScript_DidYouGiveTamaScarf)
+			break
+		case 2: // Reporting back after giving Scarf
+			call(AshiiScript_ReportBackAfterGivingScarf)
+		case 3: // After having reported back
+			if (flag(FLAG_BROKE_SAKU_ROCK_1) && flag(FLAG_BROKE_SAKU_ROCK_2)) {
+				setvar(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE, 4)
+				call(AshiiScript_EscortAshii)
+			} else {
+				call(AshiiScript_Rocks)
+			}
+		case 4: // After breaking rocks
+			call(AshiiScript_EscortAshii)
+		case 8: // Getting Reward from her
+			call(AshiiScript_Reward)
+		case 9: // Quest over
+			call(AshiiScript_QuestOver)
+		default:
+	}
+	release
+}
+
+script(local) AshiiScript_FirstEncounter {
+	applymovement(LOCALID_ASHII, moves(emote_pensive))
+	setspeaker(SP_NAME_GIRL)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}Sigh… Oh, Tama…\nWhy must life be so complicated?"
+	))
+	closemessage
+	delay(30)
+
+	playse(SE_PIN)
+	applymovement(LOCALID_ASHII, Common_Movement_FacePlayer)
+	waitmovement(0)
+	applymovement(LOCALID_ASHII, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(LOCALID_ASHII, Common_Movement_Delay48)
+	waitmovement(0)
+
+	setspeaker(SP_NAME_GIRL)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}Hey, what are you doing in my house?\nWere you eavesdropping?\p"
+		"…It doesn't matter anyway.\nThe boy who stole my heart lives in\lSaku Village, but our two villages hate each other, so I can't see him anymore.\p"
+		"If only there was a way for him\nto know my feelings…"
+	))
+	closemessage
+	delay(30)
+
+	playse(SE_PIN)
+	applymovement(LOCALID_ASHII, moves(emote_exclamation_mark, delay_16 * 3))
+	waitmovement(0)
+
+	setspeaker(SP_NAME_ASHII)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}Wait, you're not from here, are you?\p"
+		"My name is Ashii. I need your help.\p"
+		"The guard won't let anyone from\nKura Village enter Saku Village.\lBut you should be fine!\p"
+		"Please, go to Saku Village and\ngive him this.\p"
+		"He'll know it's from me…"
+	))
+	closemessage
+
+	giveitem(ITEM_ASHIIS_SCARF)
+	setvar(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE, 1)
+	startquest(QUEST_SAKURALOVERS)
+}
+
+script(local) AshiiScript_DidYouGiveTamaScarf {
+	faceplayer
+	setspeaker(SP_NAME_ASHII)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}Please, give Tama my silk scarf.\nHe'll know it's from me…"
+	))
+	closemessage
+}
+
+script(local) AshiiScript_ReportBackAfterGivingScarf {
+	setvar(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE, 3)
+	faceplayer
+	setspeaker(SP_NAME_ASHII)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}Were you able to give Tama my gift?\p"
+		"Did…\nDid he get my letter?"
+	))
+
+	mcdialogue("Yep!","He sure did!","Loud and clear.")
+	closemessage
+	delay(24)
+
+	playse(SE_PIN)
+	applymovement(LOCALID_ASHII, moves(
+		emote_exclamation_mark,
+		delay_16 * 3,
+		face_away_player,
+		delay_16 * 3,
+	))
+	waitmovement(0)
+
+	playse(SE_PIN)
+	applymovement(LOCALID_ASHII, moves(
+		emote_heart,
+		delay_16 * 3,
+		face_player
+	))
+	waitmovement(0)
+
+	setspeaker(SP_NAME_ASHII)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}I'm sorry. You've been an incredible help, and I don't even know your name!\p"
+		"… … …{PLAYER}. I see…\p"
+		"{PLAYER}, look, There are treelings blocking the entrance of the vale.\p"
+		"Tama can't get to me!\nCould you cut them for me?\p"
+		"I'd do it myself, but I can't get into Saku Village."
+	))
+}
+
+script(local) AshiiScript_Rocks {
+	faceplayer
+	setspeaker(SP_NAME_ASHII)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}Could you please cut those treelings in the vale?\p"
+		"I'd do it myself, but I can't get into Saku Village."
+	))
+}
+
+script(local) AshiiScript_EscortAshii {
+	faceplayer
+	setspeaker(SP_NAME_ASHII)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}Thank you for clearing the way of those trees!\p"
+		"{PLAYER}… I know this is a big thing to ask, but…\p"
+		"I want to be sure that my meeting with Tama is safe.\NWho knows? It might be our last.\p"
+		"Could you please escort me?"
+	))
+
+	mcdialogue("Let's go!", "Not right now.")
+	closemessage
+
+	if (var(VAR_RESULT) == 0) {
+		call(AshiiScript_PlayerAcceptsEscort)
+		// Player says no
+	} else {
+		applymovement(LOCALID_ASHII, moves(emote_sad))
+		setspeaker(SP_NAME_ASHII)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}Please come back…\nDon't toy with a girl's heart…"
+		))
+		closemessage
+	}
+}
+
+script(local) AshiiScript_PlayerAcceptsEscort {
+	setvar(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE, 5)
+	applymovement(LOCALID_ASHII, moves(
+		emote_exclamation_mark,
+		delay_16 * 3,
+		jump_in_place_down,
+		delay_4,
+		jump_in_place_left,
+		delay_4,
+		jump_in_place_up,
+		delay_4,
+		jump_in_place_right,
+		delay_4,
+		jump_in_place_down
+	))
+	playse(SE_PIN)
+	delay(48)
+	playse(SE_LEDGE)
+	delay(16)
+	delay(4)
+	playse(SE_LEDGE)
+	delay(16)
+	delay(4)
+	playse(SE_LEDGE)
+	delay(16)
+	delay(4)
+	playse(SE_LEDGE)
+	delay(16)
+	delay(4)
+	playse(SE_LEDGE)
+	waitmovement(LOCALID_ASHII)
+	faceplayer
+
+	gettimeofday
+	if(var(VAR_0x8000) == TIME_DEAD_NIGHT) {
+		applymovement(LOCALID_ASHII, moves(emote_heart))
+		setspeaker(SP_NAME_ASHII)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}Thank you! Thank you! Thank you!\p"
+			"Let's make haste, then.\nBefore the moon takes her slumber!"
+		))
+
+		delay(40)
+
+		pausefakertc
+		fwdtime(0, 0)
+
+		warp(MAP_KURA_TOWN, 48, 29)
+
+	} else {
+		applymovement(LOCALID_ASHII, moves(emote_heart))
+		setspeaker(SP_NAME_ASHII)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}Thank you! Thank you! Thank you!\p"
+			"Meet me here later tonight."
+		))
+		closemessage
+
+		delay(40)
+
+		fadescreen(FADE_TO_BLACK)
+
+		msgbox("Later that night…")
+		waitmessage
+		closemessage
+
+		pausefakertc
+		fwdtime(0, 0)
+
+		warpsilent(MAP_KURA_TOWN, 48, 29)
+	} 
+	closemessage
+}
+
+script(local) AshiiScript_Reward {
+	faceplayer
+	applymovement(LOCALID_ASHII, moves(emote_happy))
+	setspeaker(SP_NAME_ASHII)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}{PLAYER}! It's you!\p"
+		"I can't thank you enough for the night you've given us.\p"
+		"Even if we must meet under cover of darkness, I would risk it all for Tama, again and again and again…\NAnd again… And again…\NAnd again…\p"
+		"Here, you can have this…\nFor all the trouble."
+	))
+	closemessage
+
+	giveitem(ITEM_COVERT_CLOAK)
+
+	applymovement(LOCALID_ASHII, moves(emote_sweat))
+	setspeaker(SP_NAME_ASHII)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}It was supposed to conceal me so I could sneak into Saku Village, but…\p"
+		"When the guards made fun of me, I realized it's meant for Pokémon."
+	))
+	closemessage
+
+	completequest(QUEST_SAKURALOVERS)
+	setvar(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE, 9)
+}
+
+script(local) AshiiScript_QuestOver {
+	faceplayer
+	setspeaker(SP_NAME_ASHII)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_GIRL_2 EMOTE_NORMAL}If only Saku and Kura Village stopped this nonsensical rivalry…\p"
+		"I'm sure nobody even remembers the reason!"
+	))
+	closemessage
+}

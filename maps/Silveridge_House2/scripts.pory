@@ -1,0 +1,59 @@
+mapscripts Silveridge_House2_MapScripts {
+	
+}
+
+script Silveridge_House2_EventScript_Woman {
+    lock
+    faceplayer
+    setspeaker(SP_NAME_WOMAN)
+    msgbox(format(
+        "{CREATE_MUGSHOT MUGSHOT_MOUNTAIN_WOMAN_2 EMOTE_NORMAL}I wish my husband would stop talking about rocks…"
+    ))
+    closemessage
+
+    applymovement(LOCALID_SILVERIDGE_MINING_NERD, moves(delay_16 * 2, walk_in_place_fast_left))
+    waitmovement(0)
+
+    setspeaker(SP_NAME_MINER)
+    msgbox(format(
+        "{CREATE_MUGSHOT MUGSHOT_MINER EMOTE_NORMAL}But honey, steel isn't a rock!"
+    ))
+    closemessage
+
+    applymovement(VAR_LAST_TALKED, moves(face_right, delay_16 * 2))
+
+    setspeaker(SP_NAME_WOMAN)
+    msgbox(format(
+        "{CREATE_MUGSHOT MUGSHOT_MOUNTAIN_WOMAN_2 EMOTE_NORMAL}… …{FONT_SMALL}Sigh{FONT_NORMAL}…"
+    ))
+    closemessage
+
+    release
+}
+
+
+script Silveridge_House2_EventScript_Miner {
+    lock
+    faceplayer
+    setspeaker(SP_NAME_MINER)
+    msgbox(format(
+        "{CREATE_MUGSHOT MUGSHOT_MINER EMOTE_NORMAL}The region's finest steel is found in the quarry near Saberside Town.\p"
+        "When my Makuhita is strong enough, we'll go see it for ourselves!"
+    ))
+    closemessage
+    setnamedmon(SPECIES_MAKUHITA)
+    release
+}
+
+script Silveridge_House2_EventScript_Makuhita {
+    lock
+    faceplayer
+	setseenmon(SPECIES_MAKUHITA)
+	setspeakertomonname(SPECIES_MAKUHITA)
+	playmoncry(SPECIES_MAKUHITA, CRY_MODE_NORMAL)
+    msgbox(format(
+        "Ku!"
+    ))
+    waitmoncry
+    release
+}

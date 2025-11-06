@@ -1,0 +1,662 @@
+const LOCALID_ELDER = 1
+const LOCALID_BALL_SNIVY = 3
+const LOCALID_BALL_FROAKIE = 4
+const LOCALID_BALL_CYNDAQUIL = 5
+const LOCALID_SNIVY = 6
+const LOCALID_FROAKIE = 7
+const LOCALID_CYNDAQUIL = 8
+const LOCALID_RIVAL = 2
+
+const FLAG_HIDE_STARTERS = FLAG_TEMP_1
+const FLAG_HIDE_BALLS = FLAG_TEMP_2
+
+mapscripts SunriseVillage_EldersHouse_MapScripts {
+	MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_SUNRISE_VILLAGE_INTRO_STATE, 4: SunriseVillage_EldersHouse_EventScript_DistributionCutscene
+    ]
+	MAP_SCRIPT_ON_TRANSITION {
+		if (var(VAR_SUNRISE_VILLAGE_INTRO_STATE) >= 4) {
+			setflag(FLAG_HIDE_STARTERS)
+		}
+		if (var(VAR_SUNRISE_VILLAGE_INTRO_STATE) >= 7) {
+			setflag(FLAG_HIDE_BALLS)
+		}
+	}
+}
+
+script SunriseVillage_EldersHouse_EventScript_DistributionCutscene {
+	lock
+
+	setseenmon(SPECIES_CYNDAQUIL)
+	setnamedmon(SPECIES_CYNDAQUIL)
+	setseenmon(SPECIES_SNIVY)
+	setnamedmon(SPECIES_SNIVY)
+	setseenmon(SPECIES_FROAKIE)
+	setnamedmon(SPECIES_FROAKIE)
+
+	// Walk up to elder
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_left, walk_up, delay_16 * 2))
+	waitmovement(0)
+	playse(SE_ARENA_TIMEUP2)
+	applymovement(LOCALID_ELDER, moves(jump_in_place_down))
+	delay(4)
+
+	playse(SE_PIN)
+	applymovement(LOCALID_RIVAL, moves(emote_exclamation_mark, delay_16))
+	waitmovement(LOCALID_RIVAL)
+	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark))
+
+	applymovement(LOCALID_ELDER, moves(emote_angry))
+	setspeaker(SP_NAME_ELDER_KABA)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}PAH!"
+	))
+	waitse
+	
+	// Elder speaks
+	setspeaker(SP_NAME_ELDER_KABA)
+	msgbox((
+		"{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}{PLAYER}, Natsuki.\nYou are late. Why am I not surprised?\p"
+		"I always have to run after you two!\nNow stay still and listen closely!\p"
+		"As you have heard, the woods, and even\nthe roads, are no longer safe.\p"
+		"We don't yet know why, but the wild\nPokémon that hide in the tall grass\land live peacefully alongside men\lhave started behaving aggressively.\p"
+		"There are reports of travelers being\nattacked from several nearby villages.\p"
+		"This is all very worrying…$"
+	))
+	closemessage
+
+	playse(SE_PIN)
+	applymovement(LOCALID_ELDER, moves(walk_in_place_faster_up, emote_pensive, delay_16 * 6))
+	waitmovement(0)
+	waitse
+
+	playse(SE_ARENA_TIMEUP2)
+	applymovement(LOCALID_ELDER, moves(jump_in_place_down, emote_angry))
+
+	playse(SE_PIN)
+	applymovement(LOCALID_RIVAL, moves(emote_exclamation_mark, delay_16))
+	waitmovement(LOCALID_RIVAL)
+	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark))
+
+	setspeaker(SP_NAME_ELDER_KABA)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}WHICH IS WHY!{PAUSE 15}\p"
+		"The Toku council has decided that,\nfor the time being, the best way to\lhandle this is to use the Pokémon\lthemselves as a means of protection!\p"
+		"There were very few experienced\nPokémon Wielders in Toku until now.\l"
+		"This is about to change.\p"
+		"With a trained Pokémon by your side,\nyou'll be able to defend yourselves."
+	))
+	applymovement(LOCALID_ELDER, moves(walk_in_place_fast_right))
+	msgbox(format(
+		"Without further ado, please carefully\nchoose your new companion!"
+	))
+	closemessage
+
+	clearflag(FLAG_HIDE_STARTERS)
+
+	applymovement(LOCALID_ELDER, moves(walk_right, face_up, delay_16))
+	waitmovement(0)
+	playse(SE_BALL_OPEN)
+	removeobject(LOCALID_BALL_SNIVY)
+	addobject(LOCALID_SNIVY)
+	waitse
+	playmoncry(SPECIES_SNIVY, CRY_MODE_NORMAL)
+	delay(30)
+
+	applymovement(LOCALID_ELDER, moves(walk_right, face_up, delay_16))
+	waitmovement(0)
+	playse(SE_BALL_OPEN)
+	removeobject(LOCALID_BALL_FROAKIE)
+	addobject(LOCALID_FROAKIE)
+	waitse
+	playmoncry(SPECIES_FROAKIE, CRY_MODE_NORMAL)
+	delay(30)
+
+	applymovement(LOCALID_ELDER, moves(walk_right, face_up, delay_16))
+	waitmovement(0)
+	playse(SE_BALL_OPEN)
+	removeobject(LOCALID_BALL_CYNDAQUIL)
+	addobject(LOCALID_CYNDAQUIL)
+	waitse
+	playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
+	delay(30)
+
+	applymovement(LOCALID_ELDER, moves(walk_left * 3, face_down))
+	waitmovement(0)
+
+	playse(SE_LEDGE)
+	applymovement(LOCALID_RIVAL, moves(jump_in_place_up))
+	waitmovement(0)
+	waitse
+	playse(SE_PIN)
+	applymovement(LOCALID_RIVAL, moves(emote_heart))
+	setspeaker(SP_NAME_NATSUKI)
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}Woah! Cool."))
+
+	// Rival is nice and lets you pick first
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
+	applymovement(LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterLeft)
+	waitmovement(0)
+	setspeaker(SP_NAME_NATSUKI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}{PLAYER}, choose yours first!\n"
+		"I don't mind being second pick."
+	))
+	closemessage
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+
+	setvar(VAR_SUNRISE_VILLAGE_INTRO_STATE, 5)
+	release
+}
+
+// TODO EVA dex evaluation, letter delivery, etc
+script SunriseVillage_EldersHouse_Event_Elder {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_ELDER_KABA)
+	if (var(VAR_SUNRISE_VILLAGE_INTRO_STATE) >= 7) {
+		if (var(VAR_DECAY_BEACHBOUND_ROUTE) < 5) {
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}Don't dilly-dally on the way!\pAnd keep an eye on Natsuki, make sure he doesn't get into trouble!"
+			))
+		} else {
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}Oh! You delivered my letter. Good.\p"
+				"You've been appointed to investigate Decaying areas?\p"
+				"Well then, what are you still doing here? Off you go!"
+			))
+
+			mcdialogue(
+				"Evaluate my PokéDex!",
+				"See you!"
+			)
+			closemessage
+
+			switch(var(VAR_RESULT)) {
+				case 0:
+					setspeaker(SP_NAME_ELDER_KABA)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}Well, what are you waiting for? Hand it over!"
+					))
+
+					call(ProfBirch_EventScript_RatePokedex)
+				case 1:
+					setspeaker(SP_NAME_ELDER_KABA)
+					msgbox(format(
+						"{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}Alright, alright.\n"
+						"{FONT_SMALL}Damned children wasting my time.{FONT_NORMAL}"
+					))
+			}
+		}
+	} else {
+		// Player has yet to pick a Pokémon
+		msgbox(format("{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}Choose your new partner wisely.\nNo takebacks."))
+	}
+
+	release
+}
+
+script SunriseVillage_EldersHouse_EventScript_TryToLeave {
+	lock
+	turnobject(LOCALID_ELDER, DIR_SOUTH)
+	setspeaker(SP_NAME_ELDER_KABA)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}Where do you think you're going?"
+	))
+	closemessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+	waitmovement(0)
+	release
+}
+
+script SunriseVillage_EldersHouse_EventScript_TryToEnterOtherRoom {
+	lock
+	turnobject(LOCALID_ELDER, DIR_NORTH)
+	setspeaker(SP_NAME_ELDER_KABA)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}Where do you think you're going?"
+	))
+	closemessage
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+	waitmovement(0)
+	release
+}
+
+script SunriseVillage_EldersHouse_Event_Pokeball_Starter_Cyndaquil {
+	lock
+	setvar(VAR_TEMP_1, SPECIES_CYNDAQUIL)
+	call(SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter)
+	release
+}
+
+script SunriseVillage_EldersHouse_Event_Pokeball_Starter_Snivy {
+	lock
+	setvar(VAR_TEMP_1, SPECIES_SNIVY)
+	call(SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter)
+	release
+}
+
+script SunriseVillage_EldersHouse_Event_Pokeball_Starter_Froakie {
+	lock
+	setvar(VAR_TEMP_1, SPECIES_FROAKIE)
+	call(SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter)
+	release
+}
+
+script SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter {
+	if (flag(FLAG_RECEIVED_STARTER)) {
+		msgbox(format(
+			"You already got a Pokémon.\nBetter leave this one here."
+		))
+		closemessage
+		return
+	}
+	playmoncry(VAR_TEMP_1, CRY_MODE_NORMAL)
+	showmonpic(VAR_TEMP_1, 10, 3)
+	bufferspeciesname(STR_VAR_1, VAR_TEMP_1)
+	switch(var(VAR_TEMP_1)) {
+		case SPECIES_FROAKIE:
+			msgbox(format("Do you choose {STR_VAR_1},\nsoul of the crashing sea waves?"), MSGBOX_YESNO)
+		case SPECIES_SNIVY:
+			msgbox(format("Do you choose {STR_VAR_1},\ngraceful storm of leaves?"), MSGBOX_YESNO)
+		case SPECIES_CYNDAQUIL:
+			msgbox(format("Do you choose {STR_VAR_1},\ntender heart of the hearth?"), MSGBOX_YESNO)
+	}
+	if (var(VAR_RESULT) == NO || var(VAR_RESULT) == MULTI_B_PRESSED) {
+		hidemonpic
+		return
+	} elif (var(VAR_RESULT) == YES) {
+		switch(var(VAR_TEMP_1)) {
+			case SPECIES_FROAKIE:
+				givemon(SPECIES_FROAKIE, 5, ITEM_ORAN_BERRY, move1=MOVE_POUND, move2=MOVE_GROWL, move3=MOVE_NONE, move4=MOVE_NONE)
+			case SPECIES_SNIVY:
+				givemon(SPECIES_SNIVY, 5, ITEM_ORAN_BERRY, move1=MOVE_TACKLE, move2=MOVE_LEER, move3=MOVE_NONE, move4=MOVE_NONE)
+			case SPECIES_CYNDAQUIL:
+				givemon(SPECIES_CYNDAQUIL, 5, ITEM_ORAN_BERRY, move1=MOVE_TACKLE, move2=MOVE_LEER, move3=MOVE_NONE, move4=MOVE_NONE)
+		}
+		playfanfare(MUS_OBTAIN_ITEM)
+		message(format("{PLAYER} received the Pokémon {STR_VAR_1}!"))
+		waitmessage
+		waitfanfare
+
+		switch(var(VAR_TEMP_1)) {
+			case SPECIES_FROAKIE:
+				setvar(VAR_STARTER_MON, SPECIES_FROAKIE)
+				removeobject(LOCALID_FROAKIE)
+				removeobject(LOCALID_BALL_FROAKIE)
+			case SPECIES_SNIVY:
+				removeobject(LOCALID_SNIVY)
+				removeobject(LOCALID_BALL_SNIVY)
+				setvar(VAR_STARTER_MON, SPECIES_SNIVY)
+			case SPECIES_CYNDAQUIL:
+				removeobject(LOCALID_CYNDAQUIL)
+				removeobject(LOCALID_BALL_CYNDAQUIL)
+				setvar(VAR_STARTER_MON, SPECIES_CYNDAQUIL)
+		}
+
+		msgbox(gText_NicknameThisPokemon, MSGBOX_YESNO)
+		if (var(VAR_RESULT) == YES){
+			call(Common_EventScript_GetGiftMonPartySlot)
+			call(Common_EventScript_NameReceivedPartyMon)
+		}
+		closemessage
+	}
+	hidemonpic
+
+	setflag(FLAG_RECEIVED_STARTER)
+	setflag(FLAG_SYS_POKEMON_GET)
+
+	turnobject(LOCALID_RIVAL, DIR_NORTH)
+
+	// Put the player back in their initial spot
+	switch(var(VAR_STARTER_MON)) {
+		case SPECIES_FROAKIE:
+			switch(var(VAR_FACING)) {
+				case DIR_SOUTH:
+					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down * 2, walk_left, walk_down, walk_in_place_faster_up, step_end))
+				case DIR_NORTH:
+					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left, walk_down, walk_in_place_faster_up, step_end))
+			}
+		case SPECIES_SNIVY:
+			switch(var(VAR_FACING)) {
+				case DIR_SOUTH:
+					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down * 3, walk_in_place_faster_up, step_end))
+				case DIR_NORTH:
+					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down, walk_in_place_faster_up, step_end))
+				case DIR_EAST:
+					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right, walk_down * 2, walk_in_place_faster_up, step_end))
+			}
+		case SPECIES_CYNDAQUIL:
+			switch(var(VAR_FACING)) {
+				case DIR_SOUTH:
+					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down * 2, walk_left * 2, walk_down, walk_in_place_faster_up, step_end))
+				case DIR_NORTH:
+					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left * 2, walk_down, walk_in_place_faster_up, step_end))
+				case DIR_WEST:
+					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down, walk_left * 3, walk_down, walk_in_place_faster_up, step_end))
+			}
+	}
+
+	waitmovement(OBJ_EVENT_ID_PLAYER)
+
+	turnobject(LOCALID_ELDER, DIR_SOUTH)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_Delay48)
+
+	// Rival walks up to his Pokémon
+	setspeaker(SP_NAME_NATSUKI)
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}Alright. I'm taking this one!"))
+	closemessage
+
+	switch(var(VAR_STARTER_MON)) {
+		case SPECIES_FROAKIE:
+			applymovement(LOCALID_RIVAL, moves(walk_up, walk_left, walk_in_place_faster_up, delay_16))
+			waitmovement(0)
+			playmoncry(SPECIES_SNIVY, CRY_MODE_NORMAL)
+			removeobject(LOCALID_SNIVY)
+			removeobject(LOCALID_BALL_SNIVY)
+			applymovement(LOCALID_RIVAL, moves(walk_right, walk_down, walk_in_place_faster_up, delay_16))
+			waitmovement(0)
+		case SPECIES_SNIVY:
+			applymovement(LOCALID_RIVAL, moves(walk_up, walk_right, walk_in_place_faster_up, delay_16))
+			waitmovement(0)
+			playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
+			removeobject(LOCALID_CYNDAQUIL)
+			removeobject(LOCALID_BALL_CYNDAQUIL)
+			applymovement(LOCALID_RIVAL, moves(walk_left, walk_down, walk_in_place_faster_up, delay_16))
+			waitmovement(0)
+		case SPECIES_CYNDAQUIL:
+			applymovement(LOCALID_RIVAL, moves(walk_up, delay_16))
+			waitmovement(0)
+			playmoncry(SPECIES_FROAKIE, CRY_MODE_NORMAL)
+			removeobject(LOCALID_FROAKIE)
+			removeobject(LOCALID_BALL_FROAKIE)
+			applymovement(LOCALID_RIVAL, moves(walk_down, walk_in_place_faster_up, delay_16))
+			waitmovement(0)
+	}
+
+	// Elder gives Pokédex
+	setspeaker(SP_NAME_ELDER_KABA)
+	msgbox(
+		"{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}Now that you have your own Pokémon,\nyou two are budding Pokémon Wielders!\p"
+		"The more Wielders there are,\nthe deeper our understanding\lof these creatures will be.\p"
+		"Studying Pokémon from up close will\nget us to the bottom of this.\p"
+		"Actually, there's something\nI wanted to ask you."
+	)
+	closemessage
+
+	applymovement(LOCALID_ELDER, moves(walk_right * 2, walk_in_place_faster_down, delay_16, walk_left, walk_in_place_faster_down, delay_16))
+	waitmovement(0)
+
+	playfanfare(MUS_OBTAIN_ITEM)
+	message(format("{PLAYER} received the PokéDex!"))
+	waitfanfare
+	setflag(FLAG_SYS_POKEDEX_GET)
+	// TODO EVA why does this exist
+	setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+	closemessage
+
+	delay(20)
+
+	setspeaker(SP_NAME_NATSUKI)
+	playse(SE_PIN)
+	applymovement(LOCALID_RIVAL, moves(emote_question_mark))
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}What's this? A book?"
+	))
+	closemessage
+
+	delay(20)
+
+	applymovement(LOCALID_ELDER, moves(walk_in_place_fast_down))
+	waitmovement(0)
+
+	setspeaker(SP_NAME_ELDER_KABA)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}I call this the “PokéDex”.\nIt is an encyclopedia containing all\lwe know about the region's Pokémon!\p"
+		"Except it's, well, empty.\nThat's where you come in!\p"
+		"Explore Toku and fill its pages with\nyour findings!\p"
+		"Start by going all the way to rocky\nSilveridge, north of here.\p"
+		"Another Elder lives there and,\nhopefully, has more information as to\lwhy the Pokémon are lashing out.\p"
+		"Could you deliver him this letter?\nI could send him a Chatot, but I need\lto make sure it gets to him."
+	))
+	closemessage
+
+	giveitem(ITEM_LETTER)
+
+	waitfanfare
+	closemessage
+
+	applymovement(LOCALID_RIVAL, moves(walk_in_place_fast_up))
+	waitmovement(0)
+
+	setspeaker(SP_NAME_NATSUKI)
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}Understood, Grandma Kaba.\nWe're going adventuring!"))
+	closemessage
+
+	applymovement(LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterLeft)
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
+	waitmovement(LOCALID_RIVAL)
+
+	setspeaker(SP_NAME_NATSUKI)
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}{PLAYER}… Are you ready?"))
+	dynmultichoice(
+		0,
+		0,
+		TRUE,
+		10,
+		0,
+		DYN_MULTICHOICE_CB_NONE,
+		"Totally!",
+		"Absolutely not!"
+	)
+
+	if (var(VAR_RESULT) == 0) {
+		playse(SE_LEDGE)
+		applymovement(LOCALID_RIVAL, moves(jump_in_place_left))
+		msgbox(format(
+				"That's what I'm talking about!"
+			))
+		closemessage
+	} else {
+		applymovement(LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterUp)
+
+		setspeaker(SP_NAME_NATSUKI)
+		checkplayergender
+		if (var(VAR_RESULT) == MALE) {
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}Don't listen to him! He's so ready!"
+			))
+		} else {
+			msgbox(format(
+				"{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}Don't listen to her! She's so ready!"
+			))
+		}
+		closemessage
+
+		applymovement(LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterLeft)
+	}
+
+	setspeaker(SP_NAME_NATSUKI)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}{PLAYER}!\nLet's see what our Pokémon can do!\p"
+		"I request an official Pokémon\nWielder battle!"
+	))
+	closemessage
+
+	// TODO EVA battle pose
+	applymovement(LOCALID_RIVAL, moves(face_player))
+	waitmovement(0)
+
+	setvar(VAR_SUNRISE_VILLAGE_INTRO_STATE, 6)
+
+	// Battle!
+	goto(SunriseVillage_EldersHouse_EventScript_RivalBattle)
+}
+
+movement SunriseVillage_EldersHouse_Movement_RivalPreBattlePose {
+	// TODO EVA
+	// zubats_align
+	face_player
+}
+
+script SunriseVillage_EldersHouse_EventScript_Natsuki {
+	setspeaker(SP_NAME_NATSUKI)
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}Hm, which one will I choose?…"), MSGBOX_NPC)
+}
+
+script SunriseVillage_EldersHouse_EventScript_PostBattle {
+	special(HealPlayerParty)
+	updatefollowingmon
+
+	playse(SE_LEDGE)
+	applymovement(LOCALID_RIVAL, moves(jump_in_place_left))
+
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if (var(VAR_RESULT) == B_OUTCOME_WON) {
+		setspeaker(SP_NAME_NATSUKI)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}Oh, man!\nThat was the most fun I've ever had!\p"
+			"{PLAYER}!\nWe're now officially rivals!\p"
+			"I went easy on you this time, but\nnext time… You'll see!\p"
+			"I'm going home to pack some things.\p"
+			"See ya later, Feraligatr."
+		))
+		closemessage
+	} else {
+		setspeaker(SP_NAME_NATSUKI)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_NATSUKI EMOTE_NORMAL}Oh, man!\nThat was the most fun I've ever had!\p"
+			"{PLAYER}!\nWe're now officially rivals!\p"
+			"You better work hard to keep up!\p"
+			"I'm going home to pack some things.\p"
+			"See ya later, Feraligatr."
+		))
+		closemessage
+	}
+
+	setnamedmon(SPECIES_FERALIGATR)
+
+	setflag(FLAG_HIDE_GUARD_SUNRISE_VILLAGE)
+
+	getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_0) == 6 && var(VAR_TEMP_1) == 7) {
+		applymovement(LOCALID_RIVAL, moves(walk_left, walk_down * 2))
+	} else {
+		applymovement(LOCALID_RIVAL, moves(walk_down * 2))
+	}
+
+	waitmovement(LOCALID_RIVAL)
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_SOUTH)
+	removeobject(LOCALID_RIVAL)
+	playse(SE_EXIT)
+	waitse
+	delay(16)
+
+	setvar(VAR_SUNRISE_VILLAGE_INTRO_STATE, 7)
+
+	// Time starts ticking!
+	resumefakertc //macro kept for redundancy + safeguarding + reference
+	updatequest(QUEST_HEARTH_MAIN_CAMPAIGN, VAR_MAIN_CAMPAIGN_QUEST)
+	startquest(QUEST_POKEDEX)
+
+	release
+}
+
+script SunriseVillage_EldersHouse_EventScript_RivalBattle {
+	switch(var(VAR_STARTER_MON)) {
+		case SPECIES_FROAKIE:
+			trainerbattle_no_intro_no_whiteout(TRAINER_RIVAL_FIRST_BATTLE_FROAKIE, format("What? It's over already?"))
+		case SPECIES_SNIVY:
+			trainerbattle_no_intro_no_whiteout(TRAINER_RIVAL_FIRST_BATTLE_SNIVY, format("What? It's over already?"))
+		case SPECIES_CYNDAQUIL:
+			trainerbattle_no_intro_no_whiteout(TRAINER_RIVAL_FIRST_BATTLE_CYNDAQUIL, format("What? It's over already?"))
+	}
+
+	goto(SunriseVillage_EldersHouse_EventScript_PostBattle)
+}
+
+script SunriseVillage_EldersHouse_EventScript_Joltik {
+	lock
+    faceplayer
+	if (var(VAR_SUNRISE_VILLAGE_INTRO_STATE) >= 7) {
+		setseenmon(SPECIES_JOLTIK)
+		playmoncry(SPECIES_JOLTIK, CRY_MODE_NORMAL)
+		setspeakertomonname(SPECIES_JOLTIK)
+		msgbox(format(
+			"Fss!"
+		))
+		waitmoncry
+	} else {
+		playmoncry(SPECIES_JOLTIK, CRY_MODE_NORMAL)
+		showmonpic(SPECIES_JOLTIK, 10, 3)
+		setnamedmon(SPECIES_JOLTIK)
+		msgbox(format("Do you choose Joltik,\ntiny spark of the woods?"))
+		closemessage
+		hidemonpic
+
+		waitse
+		playse(SE_PIN)
+		applymovement(LOCALID_ELDER, moves(face_up, emote_angry))
+		setspeaker(SP_NAME_ELDER_KABA)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_KABA EMOTE_NORMAL}Hands off my Joltik!!"
+		))
+		waitmovement(0)
+		closemessage
+		applymovement(LOCALID_ELDER, moves(face_right))
+	}
+    release
+    end	
+}
+
+script SunriseVillage_EldersHouse_EventScript_Assistant {
+	lock
+	faceplayer
+
+	if (var(VAR_SUNRISE_VILLAGE_INTRO_STATE) >= 7) {
+		setspeaker(SP_NAME_ASSISTANT)
+		msgbox((
+			"{CREATE_MUGSHOT MUGSHOT_SUNRISE_VALET EMOTE_NORMAL}Hi! I'm Elder Kaba's assistant.\nWant to know more about the PokéDex?"
+		))
+
+		dynmultichoice(
+			0,
+			0,
+			TRUE,
+			10,
+			0,
+			DYN_MULTICHOICE_CB_NONE,
+			"PokéDex?",
+			"I'm good."
+		)
+
+		switch (var(VAR_RESULT)) {
+			case 0:
+				msgbox((
+					"{CREATE_MUGSHOT MUGSHOT_SUNRISE_VALET EMOTE_NORMAL}To complete a page of the PokéDex,\nyou need a Pokémon's real name,\lappearance and description.\p"
+					"Write down its name if you hear it\nsomewhere, or if you catch it.\p"
+					"Draw a sketch of the Pokémon when\nyou encounter it.\p"
+					"And write field notes about it when you\nhear or see something interesting!"
+				))
+			case 1:
+				msgbox((
+					"{CREATE_MUGSHOT MUGSHOT_SUNRISE_VALET EMOTE_NORMAL}I see, you're all set then!\nCan't wait to read your findings!"
+				))
+		}
+	} else {
+		waitse
+		playse(SE_PIN)
+		applymovement(VAR_LAST_TALKED, moves(emote_happy))
+
+		setspeaker(SP_NAME_ASSISTANT)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SUNRISE_VALET EMOTE_NORMAL}Don't mind me! I hope you're excited about the distribution!"
+		))
+		closemessage
+	}
+
+	release
+}

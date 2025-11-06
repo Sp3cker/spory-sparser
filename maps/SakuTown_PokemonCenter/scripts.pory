@@ -1,0 +1,465 @@
+const LOCALID_NURSE = 1
+const LOCALID_GRUNT = 3
+const LOCALID_FRONT_SCYTHER = 8
+const LOCALID_FRONT_FARMER_1 = 9
+const LOCALID_FRONT_FARMER_2 = 10
+const LOCALID_BED_SCYTHER = 13
+const LOCALID_BED_FARMER_1 = 11
+const LOCALID_BED_FARMER_2 = 12
+
+const VAR_GET_QUEST_LOG_STATE_SAKURA_LOVERS = VAR_TEMP_0
+const VAR_GET_QUEST_LOG_STATE_SAKURA_ESPEON = VAR_TEMP_1
+const VAR_GET_QUEST_LOG_STATE_SAKURA_SCYTHER = VAR_TEMP_2
+
+mapscripts SakuTown_PokemonCenter_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		setrespawn(HEAL_LOCATION_SAKU_TOWN)
+
+		returnqueststate(QUEST_SAKURALOVERS)
+		copyvar(VAR_GET_QUEST_LOG_STATE_SAKURA_LOVERS, VAR_RESULT)
+		returnqueststate(QUEST_SAKURAESPEON)
+		copyvar(VAR_GET_QUEST_LOG_STATE_SAKURA_ESPEON, VAR_RESULT)
+		returnqueststate(QUEST_SAKURASCYTHER)
+		copyvar(VAR_GET_QUEST_LOG_STATE_SAKURA_SCYTHER, VAR_RESULT)
+
+		setflag(FLAG_HIDE_SAKU_REFUGE_FARMERS_1)
+		setflag(FLAG_HIDE_SAKU_REFUGE_FARMERS_2)
+
+		// If conditions for scyther quest are met, then farmers_1 are shown
+		if (
+			var(VAR_GET_QUEST_LOG_STATE_SAKURA_LOVERS) == 4
+			&& var(VAR_GET_QUEST_LOG_STATE_SAKURA_ESPEON) == 4
+			&& var(VAR_GET_QUEST_LOG_STATE_SAKURA_SCYTHER) == 1
+		) {
+			clearflag(FLAG_HIDE_SAKU_REFUGE_FARMERS_1)
+			setflag(FLAG_HIDE_SAKU_REFUGE_FARMERS_2)
+
+			// If scyther quest is reward-ready or complete
+		} elif (var(VAR_GET_QUEST_LOG_STATE_SAKURA_SCYTHER) == 3 || var(VAR_GET_QUEST_LOG_STATE_SAKURA_SCYTHER) == 4){
+			setflag(FLAG_HIDE_SAKU_REFUGE_FARMERS_1)
+			setflag(FLAG_HIDE_SAKU_REFUGE_FARMERS_2)
+
+			// If scyther quest is active, show farmers in bed area
+		} elif (var(VAR_SAKU_KURA_QUEST_SCYTHER_STATE) >= 2) {
+			clearflag(FLAG_HIDE_SAKU_REFUGE_FARMERS_2)
+			setflag(FLAG_HIDE_SAKU_REFUGE_FARMERS_1)
+		} 
+	}
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_SAKU_KURA_QUEST_SCYTHER_STATE, 1: SakuTown_PokemonCenter_EventScript_ScytherQuest
+	]
+}
+
+script Saku_PokemonCenter_EventScript_NurseSleep {
+	if (flag(FLAG_HIDE_SAKU_REFUGE_FARMERS_2)) {
+		createfieldmugshot(MUGSHOT_SAKURA_NURSE)
+		setvar(VAR_0x8009, MUGSHOT_SAKURA_NURSE)
+		call(Common_EventScript_PkmnCenterNurse_Sleep)
+		waitmessage
+		waitbuttonpress
+	} else {
+		lock
+		msgbox(format("{CREATE_MUGSHOT MUGSHOT_SAKURA_NURSE EMOTE_NORMAL}{SPEAKER NAME_NURSE}I'm sorry, we don't have enough room for you to sleep here…"))
+		closemessage
+	}
+	release
+}
+
+script SakuTown_PokemonCenter_EventScript_Nurse {
+	// setvar(VAR_0x800B, LOCALID_NURSE)
+	// call(Common_EventScript_PkmnCenterNurse_CutTheBullshit)
+	// waitmessage
+	// waitbuttonpress
+	lock
+
+	faceplayer
+	setspeaker(SP_NAME_NURSE)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_NURSE EMOTE_NORMAL}Hello! Apologies for the mess, we're not fully set up yet!\p"
+		"Let me heal your Pokémon!"
+	))
+
+	fadescreenswapbuffers(FADE_TO_BLACK)
+	playfanfare(MUS_HEAL)
+	waitfanfare
+	special(HealPlayerParty)
+	callnative(UpdateFollowingPokemon)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+
+	setspeaker(SP_NAME_NURSE)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_NURSE EMOTE_NORMAL}Come back soon!"
+	))
+
+	turnobject(VAR_LAST_TALKED, DIR_SOUTH)
+
+	release
+	end
+}
+
+script SakuTown_PokemonCenter_EventScript_Pasture {
+	createfieldmugshot(MUGSHOT_SAKURA_MAN_2)
+	setvar(VAR_0x8009, MUGSHOT_SAKURA_MAN_2)
+	call(Common_EventScript_PcGuy)
+	release
+	end
+}
+
+script SakuTown_PokemonCenter_EventScript_BewareOfFallingBricks {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_NURSE)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_NURSE EMOTE_NORMAL}This Pokémon refuge is brand new, courtesy of the Toku Council!\p"
+		"As you can see, it's still being built.\NWatch out for the falling bricks,\lha ha, just kidding!\p"
+		"Seriously though, do watch out.\nWe're held responsible if anything happens to you."
+	))
+	closemessage
+	release
+	end
+}
+
+script SakuTown_PokemonCenter_EventScript_ChatotPost {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_GUY)
+	playse(SE_PIN)
+	setnamedmon(SPECIES_CHATOT)
+	applymovement(VAR_LAST_TALKED, moves(emote_music, lock_facing_direction, walk_in_place_slow_down * 4, unlock_facing_direction, face_player))
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_FAT_GUY EMOTE_NORMAL}If you're waiting for Chatot post~\nHang out by the Chatot Post~!\p"
+		"If a Chatot is perched on a Chatot Post, that means you've got mail!\p"
+		"Chatot will repeat the message it's been told for you to enjoy!\p"
+		"SQWAK SQWAK!\nHe he."
+	))
+	closemessage
+	release
+	end
+}
+
+script SakuTown_PokemonCenter_EventScript_ScytherQuest {
+	lock
+	setvar(VAR_SAKU_KURA_QUEST_SCYTHER_STATE, 2)
+	applymovement(LOCALID_NURSE, moves(face_right))
+	waitmovement(0)
+	setspeaker(SP_NAME_NURSE)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_NURSE EMOTE_NORMAL}I'm sorry, but there's nothing I can do yet.\p"
+		"We haven't tools that allow us to heal a Pokémon in this dire a state."
+	))
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up * 5))
+
+	setspeaker(SP_NAME_FARMER)
+	msgbox(format("Y'have to do som'thin', miss!\nCantcha see she's in pain?!"))
+	closemessage
+
+	applymovement(LOCALID_NURSE, moves(walk_in_place_fast_down))
+	waitmovement(0)
+
+	setspeaker(SP_NAME_NURSE)
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_SAKURA_NURSE EMOTE_NORMAL}She can stay here for as long as she needs.\p"
+		"I'll keep her in as good a shape as I can."
+	))
+	closemessage
+
+	applymovement(LOCALID_FRONT_FARMER_1, moves(face_right))
+	waitmovement(0)
+}
+
+script SakuTown_PokemonCenter_EventScript_Farmer1 {
+	lock
+	faceplayer
+	setspeaker(SP_NAME_FARMER)
+	returnqueststate(QUEST_SAKURASCYTHER)
+	switch(var(VAR_RESULT))
+	{
+		case 1:
+			call(FarmerGivesQuest)
+			break
+		case 2:
+			call(FarmerWaitsMedicine)
+			break
+	}
+	release
+	end
+}
+
+script(local) FarmerGivesQuest {
+	msgbox(format(
+		"The nurse here said the newfangled medical technology from the Toku Council isn't here yet.\p"
+		"Scyther can't be cured of whatever's ailin' her.\p"
+		"Please! If you can spare some time, help us find someone or something to cure our girl!"))
+	startquest(QUEST_SAKURASCYTHER)
+	applymovement(LOCALID_FRONT_FARMER_1, moves(face_original_direction))
+	return
+}
+
+script(local) FarmerWaitsMedicine {
+	msgbox(format("So? Have ye found anythin' yet?"))
+	checkitem(ITEM_SPECIAL_MEDICINE, 1)
+	if(var(VAR_SAKU_KURA_QUEST_SCYTHER_STATE) == 6 && var(VAR_RESULT) == TRUE){
+		call(HealedScytherScript)
+	} else {
+		closemessage
+	}
+	return
+}
+
+script(local) HealedScytherScript{
+	mcdialogue(
+		"Right here.",
+		"I have this medicine."
+	)
+	closemessage
+
+	playse(SE_PIN)
+	applymovement(LOCALID_BED_FARMER_1, moves(emote_exclamation_mark, delay_16 * 3))
+	waitmovement(0)
+	waitse
+
+	setspeaker(SP_NAME_FARMER)
+	msgbox(format("That's it!\nPlease, Wielder, quickly!"))
+	closemessage
+
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox(format("{PLAYER} gave the Special Medicine."))
+	waitfanfare
+	removeitem(ITEM_SPECIAL_MEDICINE)
+	closemessage
+
+	applymovement(LOCALID_BED_FARMER_1, moves(walk_in_place_fast_right))
+	waitmovement(0)
+
+	setspeaker(SP_NAME_FARMER)
+	msgbox(format("Here, girl…\nThis'll make ye feel better…"))
+	closemessage
+
+	applymovement(LOCALID_BED_SCYTHER, moves(face_left))
+	playmoncry(SPECIES_SCYTHER, CRY_MODE_WEAK)
+	setspeakertomonname(SPECIES_SCYTHER)
+	msgbox(format("{FONT_SMALL} Gyooo…"))
+	closemessage
+
+	playse(SE_USE_ITEM)
+
+	applymovement(LOCALID_BED_SCYTHER, moves(
+		emote_exclamation_mark,
+		delay_16 * 6,
+		jump_in_place_down * 2,
+		walk_fast_up,
+		walk_fast_right * 2,
+		walk_fast_down * 2,
+		walk_fast_left * 4,
+		walk_fast_up * 2,
+		walk_fast_right * 2,
+		face_down,
+		delay_16,
+		emote_heart,
+		delay_16 * 3
+	))
+	waitmovement(0)
+
+	applymovement(LOCALID_BED_FARMER_1, moves(walk_in_place_fast_left))
+	applymovement(LOCALID_BED_FARMER_2, moves(walk_up, face_left))
+	waitmovement(LOCALID_BED_FARMER_1)
+	waitmovement(LOCALID_BED_FARMER_2)
+
+	setspeaker(SP_NAME_FARMER)
+	msgbox(format(
+		"Wielder… I don't know how to thank ya.\NWe were so worried…\p"
+		"Where did you get this medicine?"
+	))
+	closemessage
+
+	mcdialogue("The healer in Kura Village!")
+
+	setspeaker(SP_NAME_FARMER)
+	msgbox(format("Kura Village, eh…"))
+
+	applymovement(LOCALID_BED_FARMER_1, moves(face_up))
+	waitmovement(0)
+	applymovement(LOCALID_BED_SCYTHER, moves(
+		face_up,
+		delay_4,
+		face_left,
+		delay_4,
+		face_down,
+		delay_4,
+		face_right,
+		delay_4
+	))
+
+	playmoncry(SPECIES_SCYTHER, CRY_MODE_NORMAL)
+
+	setspeakertomonname(SPECIES_SCYTHER)
+	msgbox(format("Gyaaa!"))
+	waitmoncry
+	closemessage
+
+	setspeaker(SP_NAME_FARMER)
+	msgbox(format("{FONT_SMALL} Maybe they ain't s'bad afta' all…"))
+	closemessage
+
+	applymovement(LOCALID_BED_FARMER_1, moves(face_player))
+	waitmovement(0)
+
+	setspeaker(SP_NAME_FARMER)
+	msgbox(format("Thank you, Wielder. I can give ye a reward for your effors. Just meet us in the fields outside."))
+	closemessage
+
+	applymovement(LOCALID_BED_FARMER_2, moves(walk_right * 6, walk_down * 2, walk_right * 2))
+	applymovement(LOCALID_BED_SCYTHER, moves(walk_right * 7, walk_down * 2, walk_right * 2))
+	applymovement(LOCALID_BED_FARMER_1, moves(walk_up, walk_right * 8, walk_down * 2, walk_right * 2))
+	waitmovement(LOCALID_BED_FARMER_2)
+	waitmovement(LOCALID_BED_SCYTHER)
+	waitmovement(LOCALID_BED_FARMER_1)
+
+	removeobject(LOCALID_BED_FARMER_2)
+	removeobject(LOCALID_BED_SCYTHER)
+	removeobject(LOCALID_BED_FARMER_1)
+
+	questmenu(QUEST_MENU_SET_REWARD, QUEST_SAKURASCYTHER)
+	setvar(VAR_SAKU_KURA_QUEST_SCYTHER_STATE, 7)
+	return
+}
+
+script SakuTown_PokemonCenter_EventScript_Farmer2 {
+	lock
+	setspeaker(SP_NAME_FARMER)
+	msgbox(format("There, there, girl…\nIt'll be okay…"))
+	closemessage
+
+	playmoncry(SPECIES_SCYTHER, CRY_MODE_WEAK)
+	setspeakertomonname(SPECIES_SCYTHER)
+	msgbox(format("{FONT_SMALL} Gyooo…"))
+	waitmoncry
+	closemessage
+
+	release
+}
+
+script SakuTown_PokemonCenter_EventScript_Pushing {
+	delay(30)
+
+	faceplayer
+	setspeaker("Shady man")
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Watchu lookin' at? Scram!"
+	))
+	closemessage
+
+	switch(var(VAR_FACING)) {
+		case DIR_EAST:
+			applymovement(VAR_LAST_TALKED, SakuTown_PokemonCenter_Movement_PushesPlayer)
+			applymovement(OBJ_EVENT_ID_PLAYER, SakuTown_PokemonCenter_Movement_PlayerPushed)
+		case DIR_SOUTH:
+			applymovement(VAR_LAST_TALKED, SakuTown_PokemonCenter_Movement_PushesPlayerUp)
+			applymovement(OBJ_EVENT_ID_PLAYER, SakuTown_PokemonCenter_Movement_PlayerPushedUp)
+	}
+
+	playse(SE_NOT_EFFECTIVE)
+
+	waitmovement(VAR_LAST_TALKED)
+	waitmovement(OBJ_EVENT_ID_PLAYER)
+}
+
+script SakuTown_PokemonCenter_EventScript_Grunt1 {
+	lock
+	setspeaker("Shady man")
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}Great plan…"
+	))
+	closemessage
+
+	call(SakuTown_PokemonCenter_EventScript_Pushing)
+
+	release
+	end
+}
+
+script SakuTown_PokemonCenter_EventScript_Grunt2 {
+	lock
+	setspeaker("Shady man")
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}We should do this next…"
+	))
+	closemessage
+	
+	call(SakuTown_PokemonCenter_EventScript_Pushing)
+
+	release
+	end
+}
+
+script SakuTown_PokemonCenter_EventScript_Grunt3 {
+	lock
+	setspeaker("Shady man")
+	msgbox(format(
+		"{CREATE_MUGSHOT MUGSHOT_ZUBAT EMOTE_NORMAL}On Beachbound Route…"
+	))
+	closemessage
+	
+	call(SakuTown_PokemonCenter_EventScript_Pushing)
+
+	release
+	end
+}
+
+movement SakuTown_PokemonCenter_Movement_PlayerPushed {
+	lock_facing_direction
+	jump_2_left
+	unlock_facing_direction
+}
+
+movement SakuTown_PokemonCenter_Movement_PushesPlayer {
+	walk_left
+	delay_16
+	walk_right
+	face_original_direction
+}
+
+movement SakuTown_PokemonCenter_Movement_PlayerPushedUp {
+	lock_facing_direction
+	jump_2_up
+	unlock_facing_direction
+}
+
+movement SakuTown_PokemonCenter_Movement_PushesPlayerUp {
+	walk_up
+	delay_16
+	walk_down
+	face_original_direction
+}
+
+script SakuTown_Refuge_EventScript_MakuhitaRest {
+	lock
+	setseenmon(SPECIES_MAKUHITA)
+	setspeakertomonname(SPECIES_MAKUHITA)
+	applymovement(VAR_LAST_TALKED, moves(emote_sleep))
+	playmoncry(SPECIES_MAKUHITA, CRY_MODE_WEAK)
+	msgbox(format("Hu…"))
+	waitmoncry
+	waitmessage
+	closemessage
+	msgbox(format("The Pokémon is resting."))
+	closemessage
+	release
+}
+
+script SakuTown_Refuge_EventScript_MakuhitaWork {
+	lock
+	setseenmon(SPECIES_MAKUHITA)
+	setspeakertomonname(SPECIES_MAKUHITA)
+	faceplayer
+	applymovement(VAR_LAST_TALKED, moves(emote_happy))
+	playmoncry(SPECIES_MAKUHITA, CRY_MODE_NORMAL)
+	msgbox(format("Kuhu!"))
+	waitmoncry
+	waitmessage
+	closemessage
+	msgbox(format("The Pokémon is hard at work!"))
+	release
+}

@@ -1,0 +1,150 @@
+const LOCALID_TAMA = 1
+mapscripts SakuTown_House1_MapScripts {
+	
+}
+
+script SakuTown_House1_EventScript_Tama {
+	lock
+	if (var(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE) == 0) {
+		call(TamaScript1)
+	}
+	elif (var(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE) == 1) {
+		setspeaker(SP_NAME_MAN)
+		msgbox(format("{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}Please go away.\nLeave me alone."))
+
+		mcdialogue(
+			"Excuse me!",
+			"Are you Tama?"
+		)
+		closemessage
+
+		switch(var(VAR_RESULT)) {
+			case 0:
+				setspeaker(SP_NAME_TAMA)
+				msgbox(format("{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}… … … … … …\n… … … … …What?"))
+			case 1:
+				setspeaker(SP_NAME_TAMA)
+				msgbox(format("{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}… … … … … …\n… … … … …Yeah, so?"))
+		}
+		
+		mcdialogue(
+			"I have something!",
+			"This is for you!"
+		)
+		closemessage
+
+		delay(32)
+
+		setspeaker(SP_NAME_TAMA)
+		msgbox(format("{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}… … … … … …\n… … … … … …"))
+
+		delay(32)
+
+		mcdialogue("It's from Ashii.")
+		closemessage
+		delay(24)
+
+		playse(SE_PIN)
+		applymovement(LOCALID_TAMA, Common_Movement_FacePlayer)
+		waitmovement(0)
+		applymovement(LOCALID_TAMA, Common_Movement_ExclamationMark)
+		waitmovement(0)
+		applymovement(LOCALID_TAMA, Common_Movement_Delay48)
+		waitmovement(0)
+
+		setspeaker(SP_NAME_TAMA)
+		msgbox(format("{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}WHAT?! Let me see!"))
+		closemessage
+
+		playfanfare(MUS_OBTAIN_ITEM)
+		msgbox(format("{PLAYER} gave Tama the scarf."))
+		waitfanfare
+		removeitem(ITEM_ASHIIS_SCARF)
+		closemessage
+
+		playse(SE_LEDGE)
+		applymovement(LOCALID_TAMA, moves(lock_facing_direction, jump_in_place_down, unlock_facing_direction))
+		waitmovement(LOCALID_TAMA)
+
+		setspeaker(SP_NAME_TAMA)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}I… I can't believe it!\nShe really does love me!"
+		))
+		closemessage
+
+		playse(SE_PIN)
+		applymovement(LOCALID_TAMA, moves(emote_question_mark, delay_16 * 3))
+		waitmovement(LOCALID_TAMA)
+		waitse
+
+		setspeaker(SP_NAME_TAMA)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}Eh? There's a letter inside!\n Whatever for?"
+		))
+		closemessage
+
+		applymovement(LOCALID_TAMA, moves(face_down))
+		waitmovement(LOCALID_TAMA)
+
+		setspeaker(SP_NAME_TAMA)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}Ahem…\n"
+			"“My dear Tama,\lIt pains me that you aren't by my side each night.\l"
+			"The sweet chirping of birds pales in comparison to your hearty laugh.\l"
+			"I would move Heaven and Earth for us to be together.\l"
+			"If your heart still rings true for mine, meet me under pale moonlight, in the vale betwixt our homes.\p"
+			"Sincerely yours,\n-Ashii {EMOJI_HEART}”\p"
+			"… … … … … …\n… … … … … …"
+		))
+		closemessage
+
+		delay(24)
+		faceplayer
+	
+		setspeaker(SP_NAME_TAMA)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}…Ahem. Sorry, this is a little embarrassing…\p"
+			"What does she mean with that “vale”, though?…\p"
+			"Oh!\n She must be talking about the small valley east of here!\p"
+			"And “pale moonlight”…\nThat must be tonight!\p"
+			"Of course! Why else ask you to deliver this now?"
+		))
+		closemessage
+
+		applymovement(LOCALID_TAMA, Common_Movement_FaceAwayPlayer)
+		waitmovement(LOCALID_TAMA)
+		delay(60)
+		faceplayer
+		setspeaker(SP_NAME_TAMA)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}Wielder! I owe you my thanks.\nPlease, tell her I'll meet her tonight!"
+		))
+		closemessage
+		addvar(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE, 1)
+
+	} elif (var(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE) >= 2 || var(VAR_SAKU_KURA_QUEST_TAMA_ASHII_STATE) < 8) {
+		faceplayer
+		setspeaker(SP_NAME_TAMA)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}Please, tell Ashii I'll meet her tonight!"
+		))
+		waitmessage
+		closemessage
+	} else {
+		faceplayer
+		setspeaker(SP_NAME_TAMA)
+		msgbox(format(
+			"{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}One day our villages will stand together, and we will love each other in broad daylight!"
+		))
+		waitmessage
+		closemessage
+	}
+
+	release
+}
+
+script(local) TamaScript1 {
+	setspeaker(SP_NAME_MAN)
+	msgbox(format("{CREATE_MUGSHOT MUGSHOT_SAKURA_MAN_1 EMOTE_NORMAL}Please go away.\nLeave me alone."))
+	closemessage
+}
