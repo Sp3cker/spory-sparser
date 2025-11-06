@@ -127,6 +127,7 @@ script TranquilRoute_CutHouse_EventScript_CutMaster {
 
 
 script TranquilRoute_CutHouse_EventScript_RandomCryGuy {
+	@explanation Play "Whomst is that Pokémon!" with the 14 yr old.
 	lock
 	faceplayer
 	if(flag(FLAG_DAILY_MON_CRY_RIDDLE))

@@ -14,7 +14,7 @@ import { compareDataChanges } from "./util/compareDataChanges.ts";
 
 import { Config } from "./configReader.ts";
 import { IncScriptEvent } from "./parseMaps/incParser.ts";
-import mergeTrainers from "./mergeTrainerData.ts";
+// import mergeTrainers from "./mergeTrainerData.ts";
 
 /**
  * Combined trainer data from maps.json and trainers_flat.json
@@ -36,7 +36,7 @@ interface MergedData {
   pickupItems: any[]; // Define more specific type if possible
   scriptedGives: IncScriptEvent[];
   image: string;
-  trainers?: Trainer[];
+  // trainers?: Trainer[];
   trainerRefs?: { id: string; script: string }[];
 }
 
@@ -50,7 +50,7 @@ interface MergeDataParams {
   mapsData: LevelIncData[];
   pickupItemsAndTrainers: MapEventPlace[];
   /** Data from `trainers_flat */
-  trainersFlat: Record<string, TrainerStruct>;
+  // trainersFlat: Record<string, TrainerStruct>;
   encountersMap: Map<string, any>;
 }
 
@@ -60,7 +60,7 @@ const mergeDataByLevelsID = async ({
   martsData,
   mapsData,
   pickupItemsAndTrainers,
-  trainersFlat,
+  // trainersFlat,
   encountersMap,
 }: MergeDataParams): Promise<{
   groupedData: GroupedDataOutput;
@@ -71,11 +71,11 @@ const mergeDataByLevelsID = async ({
       const { thisLevelsId } = mapEntry;
 
       const martEntry = martsData.find(
-        (mart) => mart.thisLevelsId === thisLevelsId
+        (mart) => mart.thisLevelsId === thisLevelsId,
       );
       // Things found in `map.json`
       const pickupEntry = pickupItemsAndTrainers.find(
-        (pickup) => pickup.thisLevelsId === thisLevelsId
+        (pickup) => pickup.thisLevelsId === thisLevelsId,
       );
 
       if (!martEntry || !pickupEntry) {
@@ -100,41 +100,41 @@ const mergeDataByLevelsID = async ({
        * We also get their overworld sprite here from the map.json.
        * We also move the `rematch` prop from `trainerRefs` to the trainer object
        * */
-      const trainersAlsoInMapJson = mapEntry.trainerRefs
-        .map((incTrainer) =>
-          mergeTrainers(incTrainer, trainersFlat, thisLevelsId, pickupEntry)
-        )
-        .filter((trainer) => trainer !== null) as Trainer[];
+      // const trainersAlsoInMapJson = mapEntry.trainerRefs
+      //   .map((incTrainer) =>
+      //     mergeTrainers(incTrainer, trainersFlat, thisLevelsId, pickupEntry)
+      //   )
+      //   .filter((trainer) => trainer !== null) as Trainer[];
 
       /** filter out battles with same ID. Generally these get in here
        * because of double battles. When there are duplicates, prioritize keeping
        * the one with rematch: true but preserve sprite from original
        */
       const seen = new Map<string, Trainer>();
-      for (const tr of trainersAlsoInMapJson) {
-        const existing = seen.get(tr.id);
-        if (!existing) {
-          // First time seeing this ID, keep it
-          seen.set(tr.id, tr);
-        } else if (tr.rematch && !existing.rematch) {
-          // Replace the existing trainer if current one has rematch: true
-          // but preserve the sprite from the original (non-rematch) version
-          const updatedTrainer = {
-            ...tr,
-            sprite: existing.sprite || tr.sprite, // Keep original sprite if it exists
-          };
-          seen.set(tr.id, updatedTrainer);
-        } else if (!tr.rematch && existing.rematch) {
-          // If we encounter a non-rematch after a rematch, update the rematch trainer
-          // to have rematch: true but use the sprite from the non-rematch version
-          const updatedTrainer = {
-            ...existing,
-            sprite: tr.sprite || existing.sprite, // Use the non-rematch sprite
-          };
-          seen.set(tr.id, updatedTrainer);
-        }
-        // Otherwise, keep the existing one (don't replace)
-      }
+      // for (const tr of trainersAlsoInMapJson) {
+      //   const existing = seen.get(tr.id);
+      //   if (!existing) {
+      //     // First time seeing this ID, keep it
+      //     seen.set(tr.id, tr);
+      //   } else if (tr.rematch && !existing.rematch) {
+      //     // Replace the existing trainer if current one has rematch: true
+      //     // but preserve the sprite from the original (non-rematch) version
+      //     const updatedTrainer = {
+      //       ...tr,
+      //       sprite: existing.sprite || tr.sprite, // Keep original sprite if it exists
+      //     };
+      //     seen.set(tr.id, updatedTrainer);
+      //   } else if (!tr.rematch && existing.rematch) {
+      //     // If we encounter a non-rematch after a rematch, update the rematch trainer
+      //     // to have rematch: true but use the sprite from the non-rematch version
+      //     const updatedTrainer = {
+      //       ...existing,
+      //       sprite: tr.sprite || existing.sprite, // Use the non-rematch sprite
+      //     };
+      //     seen.set(tr.id, updatedTrainer);
+      //   }
+      //   // Otherwise, keep the existing one (don't replace)
+      // }
 
       const trainersUnique = Array.from(seen.values());
 
@@ -210,17 +210,18 @@ const mergeDataByLevelsID = async ({
   // Create dictionary of BASE_MAPs with trainer objects
   // This will become `trainers.json`
   const trainersOnMapDictionary: Record<string, Trainer[]> = {};
-  for (const [map, levels] of Object.entries(groupedData)) {
-    const trainersOnMap = levels.flatMap((lvl) => lvl.trainers || []);
-    if (trainersOnMap.length) trainersOnMapDictionary[map] = trainersOnMap;
-  }
+  // for (const [map, levels] of Object.entries(groupedData)) {
+  // const trainersOnMap = levels.flatMap((lvl) => lvl.trainers || []);
+  // if (trainersOnMap.length) trainersOnMapDictionary[map] = trainersOnMap;
+  // }
 
   // Strip `trainers` before returning groupedData
   // This will be `levels.json`
   const groupedDataForOutput: GroupedDataOutput = {};
   for (const [base, levels] of Object.entries(groupedData)) {
     groupedDataForOutput[base] = levels.map(
-      ({ trainers: _t, ...rest }) => rest
+      // ({÷ trainers: _t, ...rest }) => rest,
+      ({ ...rest }) => rest,
     );
   }
 
@@ -243,21 +244,21 @@ const mergeDataByLevelsID = async ({
 
     const config = new Config();
     const encountersData = JSON.parse(
-      await readFile(path.join(config.dataDir, "cleanEncounters.json"), "utf8")
+      await readFile(path.join(config.dataDir, "cleanEncounters.json"), "utf8"),
     );
     const encountersMap = new Map<string, any>(
-      encountersData.map((enc: any) => [enc.map, enc])
+      encountersData.map((enc: any) => [enc.map, enc]),
     );
     // --- Trainer & party extraction ----------------------------------
     const trainerParties = await readFile(
       path.join(config.dataDir, "trainer_parties.json"),
-      "utf8"
+      "utf8",
     ).then(JSON.parse);
     const trainersFlat: Record<string, TrainerStruct> = extractTrainers(
       config.dataDir,
       trainerParties,
       config.battlePics,
-      config.outputDir
+      config.outputDir,
     );
 
     // Ensure output directory exists
@@ -265,7 +266,7 @@ const mergeDataByLevelsID = async ({
 
     await writeFile(
       path.join(config.outputDir, "trainers_flat.json"),
-      prettyPrint(trainersFlat)
+      prettyPrint(trainersFlat),
     );
 
     // Find and log mart sections
@@ -274,7 +275,7 @@ const mergeDataByLevelsID = async ({
     // Find and log give items by level
     const scriptedGives = await findGiveItemsByLevel(
       config.mapsDir,
-      config.miscScriptsDir
+      config.miscScriptsDir,
     );
 
     // Parse map events
@@ -285,7 +286,7 @@ const mergeDataByLevelsID = async ({
       martsData: martSections,
       mapsData: scriptedGives,
       pickupItemsAndTrainers: mapEvents,
-      trainersFlat,
+      // trainersFlat,
       encountersMap,
     });
 
@@ -301,10 +302,10 @@ const mergeDataByLevelsID = async ({
       // console.log(sset.values());
       const [existingTrainers, existingLevels] = await Promise.all([
         readFile(path.join(process.cwd(), "trainers.json"), "utf8").then(
-          (data) => JSON.parse(data) as Record<string, Trainer[]>
+          (data) => JSON.parse(data) as Record<string, Trainer[]>,
         ),
         readFile(path.join(process.cwd(), "levels.json"), "utf8").then(
-          (data) => JSON.parse(data) as Record<string, any[]>
+          (data) => JSON.parse(data) as Record<string, any[]>,
         ),
       ]).catch((error) => {
         throw error;

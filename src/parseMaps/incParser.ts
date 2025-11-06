@@ -69,7 +69,7 @@ export class IncScriptEvent {
 
     for (const line of lines) {
       const trimmed = line.trim();
-      debugger;
+
       // Parse @explainer comments
       this.parseExplanation(trimmed);
 
@@ -309,7 +309,7 @@ function extractIncScriptBlocks(
     const line = lines[i].trim();
     if (line.startsWith("const")) continue;
     // Check if this line defines a script label (ends with ::)
-    if (line.match(delimiters[0])) {
+    if (line.endsWith(":")) {
       // Save previous section if it exists and has content
       if (currentScriptName && currentContent.length > 0) {
         sections.push({
@@ -359,10 +359,6 @@ function extractIncScriptBlocks(
  * 1. Add items/mons to scripts I know that are VAR coded
  */
 export function parseScriptedEvents(content: string) {
-  // console.log("[incParser] Starting to parse .inc content");
-  // Content needs to be the insides of the "raw`" block
-  // Therefore we must split the .pory file into raw and pory sections.
-  // so file.split('\n').getLineNumsOfRawBlock
   const [rawScripts, poryScripts] = splitRawSection(content);
 
   // All the scripts with their scriptName and function contents.
@@ -398,7 +394,7 @@ export function parseScriptedEvents(content: string) {
     }
     // kill ourselves if we have an explanation but no events
     // Just keeps things cleaner ya know
-    // event.explanationWithNoEvents();
+    event.explanationWithNoEvents();
     // event.eventsWithNoExplanation();
     // Only include sections that have give events
     if (event.hasContent()) {
