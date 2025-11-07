@@ -127,3 +127,5 @@ export class Config {
     return new Config(configPath);
   }
 }
+
+export const config = Config.load();

@@ -69,7 +69,7 @@ async function processMiscScriptsDirectory(miscScriptsPath: string) {
 async function processMapsDirectory(mapPath: string, folders: Dirent[]) {
   const results: LevelIncData[] = [];
   for (const folder of folders) {
-    const fullPath = path.join(mapPath, folder.name, "scripts.inc");
+    const fullPath = path.join(mapPath, folder.name, "scripts.pory");
     if (!existsSync(fullPath)) continue;
     try {
       const content = readFileSync(fullPath, "utf8");

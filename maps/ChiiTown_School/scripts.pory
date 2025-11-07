@@ -164,6 +164,7 @@ script ChiiTown_School_EventScript_IsThePokemonWakingUp {
 }
 
 script ChiiTown_School_EventScript_ChildWiseGlasses {
+	@explanation Talk to the 'lil nerd 
 	lock
 	faceplayer
 

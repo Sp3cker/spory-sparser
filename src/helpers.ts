@@ -273,7 +273,7 @@ export async function getBasemapID(folderOrMapJson: string): Promise<string> {
       }
     }
   } else {
-    debugger
+
     result = beforeUnderscore;
   }
 

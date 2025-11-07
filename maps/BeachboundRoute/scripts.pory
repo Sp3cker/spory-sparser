@@ -243,6 +243,7 @@ script BeachboundRoute_EventScript_Mugging_Center {
 }
 
 script BeachboundRoute_EventScript_Mugging {
+	@explanation Save woman from muggers
 	// Lost to them once
 	if (var(VAR_CROBAT_SHADOWS_FIRST_ENCOUNTERS_STATE) < 3) {
 		setvar(VAR_CROBAT_SHADOWS_FIRST_ENCOUNTERS_STATE, 3)

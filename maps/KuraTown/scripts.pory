@@ -432,6 +432,7 @@ script KuraTown_EventScript_Abra {
 }
 
 script KuraTown_EventScript_TeachingScrolls {
+	@explanation Ask the man about his Abra
 	lock
 
 	setnamedmon(SPECIES_ABRA)

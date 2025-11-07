@@ -103,6 +103,7 @@ script MaguroHarbor_EventScript_FishcakeSalesmanSettingUp {
 }
 
 script MaguroHarbor_EventScript_FishcakeSalesmanSelling {
+	@explanation Make purchase of a fishcake from the elderly lady.
 	lock
 	faceplayer
 	if (flag(FLAG_DAILY_FISHCAKE)) {
@@ -237,6 +238,7 @@ script MaguroHarbor_EventScript_FishPokemonSalesmanSettingUp {
 }
 
 script MaguroHarbor_EventScript_FishPokemonSalesmanSelling {
+	@explanation Sell a fish pokemon for profit!
 	lock
 	faceplayer
 	if (var(VAR_DECAY_BEACHBOUND_ROUTE) == 1) {
@@ -391,6 +393,7 @@ script MaguroHarbor_EventScript_Cramorant {
 }
 
 script MaguroHarbor_EventScript_FishermanOldRod {
+	@explanation Speak to the old Fisherman.
 	lock
 	faceplayer
 	if (flag(FLAG_RECEIVED_OLD_ROD)) {

@@ -12,7 +12,7 @@ import { MapEventPlace, TrainerStruct } from "./validators/index.ts";
 import { logger } from "./util/logger.ts";
 import { compareDataChanges } from "./util/compareDataChanges.ts";
 
-import { Config } from "./configReader.ts";
+import { config } from "./configReader.ts";
 import { IncScriptEvent } from "./parseMaps/incParser.ts";
 // import mergeTrainers from "./mergeTrainerData.ts";
 
@@ -242,7 +242,7 @@ const mergeDataByLevelsID = async ({
     //   process.exit(1);
     // }
 
-    const config = new Config();
+
     const encountersData = JSON.parse(
       await readFile(path.join(config.dataDir, "cleanEncounters.json"), "utf8"),
     );
@@ -280,7 +280,7 @@ const mergeDataByLevelsID = async ({
 
     // Parse map events
     const mapEvents = await main(config.mapsDir);
-
+debugger
     // Merge all data in memory
     const { groupedData, groupedTrainers } = await mergeDataByLevelsID({
       martsData: martSections,

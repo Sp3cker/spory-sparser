@@ -1,9 +1,6 @@
 {
   "MAP_BEACHBOUNDROUTE": [
     {
-      "thisLevelsId": "MAP_BEACHBOUND_ROUTE",
-      "baseMap": "MAP_BEACHBOUNDROUTE",
-      "levelLabel": "",
       "pickupItems": [
         {
           "coords": [
@@ -62,54 +59,46 @@
           "type": "hidden_item"
         }
       ],
-      "image": "BeachboundRoute",
-      "trainerRefs": [
+      "scriptedGives": [
         {
-          "id": "TRAINER_KARU",
-          "script": "BeachboundRoute_EventScript_Karu",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_KIN",
-          "script": "BeachboundRoute_EventScript_Kin",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_KOUTA",
-          "script": "BeachboundRoute_EventScript_Kouta",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_MASATO_1",
-          "script": "BeachboundRoute_EventScript_Masato",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_GRUNT_BEACHBOUND_ROUTE_1",
-          "script": "BeachboundRoute_EventScript_Mugging",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_WHITE_HERB",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Save woman from muggers",
+          "scriptName": "BeachboundRoute_EventScript_Mugging"
         }
-      ]
+      ],
+      "thisLevelsId": "MAP_BEACHBOUND_ROUTE",
+      "baseMap": "MAP_BEACHBOUNDROUTE",
+      "levelLabel": "",
+      "image": "BeachboundRoute"
     }
   ],
   "MAP_CHII_TOWN": [
     {
-      "thisLevelsId": "MAP_CHII_TOWN",
+      "thisLevelsId": "MAP_CHII_TOWN_SCHOOL",
       "baseMap": "MAP_CHII_TOWN",
-      "levelLabel": "",
-      "image": "ChiiTown",
-      "trainerRefs": [
+      "levelLabel": "School",
+      "scriptedGives": [
         {
-          "id": "TRAINER_MINORI",
-          "script": "ChiiTown_EventScript_BattlingGirl",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_MINORI",
-          "script": "ChiiTown_EventScript_BattlingBoy",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_WISE_GLASSES",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Talk to the 'lil nerd",
+          "scriptName": "ChiiTown_School_EventScript_ChildWiseGlasses"
         }
-      ]
+      ],
+      "image": "ChiiTown_School"
     }
   ],
   "MAP_CROBAT_HIDEOUT": [
@@ -175,44 +164,7 @@
           "type": "hidden_item"
         }
       ],
-      "image": "CrobatHideout_1F",
-      "trainerRefs": [
-        {
-          "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_1",
-          "script": "CrobatHideout_1F_EventScript_Grunt1",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_2",
-          "script": "CrobatHideout_1F_EventScript_GruntPaintingPokeballs",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_3",
-          "script": "CrobatHideout_1F_EventScript_GruntLaundryRoom",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_4",
-          "script": "CrobatHideout_1F_EventScript_GruntDoubleGirl",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_5",
-          "script": "CrobatHideout_1F_EventScript_GruntDoubleGuy",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_6",
-          "script": "CrobatHideout_1F_EventScript_GruntNearReunionRoom",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_7",
-          "script": "CrobatHideout_1F_BattleSamuraiBackToBack",
-          "rematch": false
-        }
-      ]
+      "image": "CrobatHideout_1F"
     }
   ],
   "MAP_GINKO_WOODS": [
@@ -270,29 +222,7 @@
           "type": "hidden_item"
         }
       ],
-      "image": "GinkoWoods",
-      "trainerRefs": [
-        {
-          "id": "TRAINER_TOSHIKI",
-          "script": "GinkoWoods_EventScript_Toshiki",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_TOSHIO_1",
-          "script": "GinkoWoods_EventScript_Toshio",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_TOSHIO_1",
-          "script": "GinkoWoods_EventScript_Toshio",
-          "rematch": true
-        },
-        {
-          "id": "TRAINER_EIJI",
-          "script": "GinkoWoods_EventScript_Eiji",
-          "rematch": false
-        }
-      ]
+      "image": "GinkoWoods"
     }
   ],
   "MAP_HARVEST_SHRINE": [
@@ -300,14 +230,21 @@
       "thisLevelsId": "MAP_HARVEST_SHRINE",
       "baseMap": "MAP_HARVEST_SHRINE",
       "levelLabel": "",
-      "image": "HarvestShrine",
-      "trainerRefs": [
+      "scriptedGives": [
         {
-          "id": "TRAINER_KOUGA",
-          "script": "HarvestShrine_EventScript_Kouga",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_TM_RAIN_DANCE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Speak to the monk during a rainstorm",
+          "scriptName": "HarvestShrine_EventScript_MonkRain"
         }
-      ]
+      ],
+      "image": "HarvestShrine"
     }
   ],
   "MAP_KURA_TOWN": [
@@ -333,93 +270,139 @@
           "type": "hidden_item"
         }
       ],
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_SILK_SCARF",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Ask the grey-looking girl about her scarf",
+          "scriptName": "KuraTown_EventScript_SilkScarf"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_TM_PSYBEAM",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Ask the man about his Abra",
+          "scriptName": "KuraTown_EventScript_TeachingScrolls"
+        }
+      ],
       "image": "KuraTown"
     },
     {
-      "thisLevelsId": "MAP_KURA_TOWN_DOJO",
+      "thisLevelsId": "MAP_KURA_TOWN_HOUSE1",
       "baseMap": "MAP_KURA_TOWN",
-      "levelLabel": "Dojo",
-      "image": "KuraTown_Dojo",
-      "trainerRefs": [
+      "levelLabel": "House 1",
+      "scriptedGives": [
         {
-          "id": "TRAINER_MATSU",
-          "script": "KuraTown_Dojo_EventScript_Matsu",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_KIKU",
-          "script": "KuraTown_Dojo_EventScript_Kiku",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_AYAME",
-          "script": "KuraTown_Dojo_EventScript_Laura",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_TSUBAKI",
-          "script": "KuraTown_Dojo_EventScript_Brenden",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_AJISAI",
-          "script": "KuraTown_Dojo_EventScript_Cristian",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_SUMIRE",
-          "script": "KuraTown_Dojo_EventScript_Lilith",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_HANA_1",
-          "script": "KuraTown_Dojo_EventScript_Hana",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_SPECIAL_MEDICINE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "KuraTown_House1_OldWoman"
         }
-      ]
+      ],
+      "image": "KuraTown_House1"
     }
   ],
   "MAP_MAGURO_HARBOR": [
     {
+      "thisLevelsId": "MAP_MAGURO_HARBOR",
+      "baseMap": "MAP_MAGURO_HARBOR",
+      "levelLabel": "",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_FISHCAKE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Make purchase of a fishcake from the elderly lady.",
+          "scriptName": "MaguroHarbor_EventScript_FishcakeSalesmanSelling"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_FISHCAKE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "MaguroHarbor_EventScript_FishcakeSalesmanClosingUp"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_OLD_ROD",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "MaguroHarbor_EventScript_FishermanOldRod"
+        }
+      ],
+      "image": "MaguroHarbor"
+    },
+    {
       "thisLevelsId": "MAP_MAGURO_HARBOR_DOJO",
       "baseMap": "MAP_MAGURO_HARBOR",
       "levelLabel": "Dojo",
-      "image": "MaguroHarbor_Dojo",
-      "trainerRefs": [
+      "scriptedGives": [
         {
-          "id": "TRAINER_KOISHI_1",
-          "script": "MaguroHarbor_Dojo_EventScript_Koishi",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_IZUMI",
-          "script": "MaguroHarbor_Dojo_EventScript_Izumi",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_REN",
-          "script": "MaguroHarbor_Dojo_EventScript_Ren",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_MIZU",
-          "script": "MaguroHarbor_Dojo_EventScript_Mizu",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_TM_NATURE_POWER",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "MaguroHarbor_Dojo_EventScript_KoishiDefeated"
         }
-      ]
+      ],
+      "image": "MaguroHarbor_Dojo"
     },
     {
       "thisLevelsId": "MAP_MAGURO_HARBOR_REFUGE",
       "baseMap": "MAP_MAGURO_HARBOR",
       "levelLabel": "Refuge",
-      "image": "MaguroHarbor_Refuge",
-      "trainerRefs": [
+      "scriptedGives": [
         {
-          "id": "TRAINER_HARIKO_MAGURO",
-          "script": "MaguroHarbor_Refuge_BattleHariko",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_UUMEGIRI",
+              "quantity": 4
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "MaguroHarbor_Refuge_BattleHariko"
         }
-      ]
+      ],
+      "image": "MaguroHarbor_Refuge"
     }
   ],
   "MAP_ORCHARD_PATH": [
@@ -427,24 +410,25 @@
       "thisLevelsId": "MAP_ORCHARD_PATH",
       "baseMap": "MAP_ORCHARD_PATH",
       "levelLabel": "",
-      "image": "OrchardPath",
-      "trainerRefs": [
+      "scriptedGives": [
         {
-          "id": "TRAINER_JUNKO",
-          "script": "OrchardPath_EventScript_Junko",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_MAMI",
-          "script": "OrchardPath_EventScript_Mami",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_ROCK_SMASH_GUY",
-          "script": "OrchardPath_EventScript_RockSmashBrokeMyRocks",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_SECRET_SMASH",
+              "quantity": 1
+            },
+            {
+              "name": "ITEM_TM_PEBBLE_CRUSH",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "OrchardPath_EventScript_RockSmashRegular"
         }
-      ]
+      ],
+      "image": "OrchardPath"
     }
   ],
   "MAP_SAKU_TOWN": [
@@ -470,24 +454,85 @@
           "type": "hidden_item"
         }
       ],
-      "image": "SakuTown",
-      "trainerRefs": [
+      "scriptedGives": [
         {
-          "id": "TRAINER_RIVAL_SAKU_SNIVY",
-          "script": "SakuTown_EventScript_RivalAtSakuWall",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_RIVAL_SAKU_FROAKIE",
-          "script": "SakuTown_EventScript_RivalAtSakuWall",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_RIVAL_SAKU_CYNDAQUIL",
-          "script": "SakuTown_EventScript_RivalAtSakuWall",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_CHERI_BERRY",
+              "quantity": 20
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Help the farmers with their health problems",
+          "scriptName": "SakuTown_EventScript_Farmer"
         }
-      ]
+      ],
+      "image": "SakuTown"
+    },
+    {
+      "thisLevelsId": "MAP_SAKU_TOWN_BONSAI_SHOP",
+      "baseMap": "MAP_SAKU_TOWN",
+      "levelLabel": "Bonsaishop",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_TM_ACROBATICS",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "SakuTown_BonsaiShop_EventScript_LittleSister"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_ORAN_BERRY",
+              "quantity": 3
+            },
+            {
+              "name": "ITEM_WAILMER_PAIL",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "SakuTown_BonsaiShop_EventScript_Assistant"
+        }
+      ],
+      "image": "SakuTown_BonsaiShop"
+    },
+    {
+      "thisLevelsId": "MAP_SAKU_TOWN_HOUSE2",
+      "baseMap": "MAP_SAKU_TOWN",
+      "levelLabel": "House 2",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_FIRE_STONE",
+              "quantity": 1
+            },
+            {
+              "name": "ITEM_WATER_STONE",
+              "quantity": 1
+            },
+            {
+              "name": "ITEM_THUNDER_STONE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "SakuTown_House2_EventScript_GiveEvoStone"
+        }
+      ],
+      "image": "SakuTown_House2"
     }
   ],
   "MAP_SILVER_TUNNEL": [
@@ -529,24 +574,7 @@
           "type": "hidden_item"
         }
       ],
-      "image": "SilverTunnel_1F",
-      "trainerRefs": [
-        {
-          "id": "TRAINER_KENTO",
-          "script": "SilverTunnel_1F_EventScript_Kento",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_SHUYA",
-          "script": "SilverTunnel_1F_EventScript_Shuya",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_YORU",
-          "script": "SilverTunnel_1F_EventScript_Yoru",
-          "rematch": false
-        }
-      ]
+      "image": "SilverTunnel_1F"
     },
     {
       "thisLevelsId": "MAP_SILVER_TUNNEL_2F",
@@ -586,19 +614,7 @@
           "type": "hidden_item"
         }
       ],
-      "image": "SilverTunnel_2F",
-      "trainerRefs": [
-        {
-          "id": "TRAINER_TAMA",
-          "script": "SilverTunnel_2F_EventScript_Tama",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_IKUTO",
-          "script": "SilverTunnel_2F_EventScript_Kansaku",
-          "rematch": false
-        }
-      ]
+      "image": "SilverTunnel_2F"
     }
   ],
   "MAP_SILVERIDGE": [
@@ -619,17 +635,76 @@
       "image": "Silveridge"
     },
     {
+      "thisLevelsId": "MAP_SILVERIDGE_ELDERS_HOUSE",
+      "baseMap": "MAP_SILVERIDGE",
+      "levelLabel": "Eldershouse",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_EXP_SHARE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "Silveridge_EldersHouse_EventScript_Conversation"
+        }
+      ],
+      "image": "Silveridge_EldersHouse"
+    },
+    {
+      "thisLevelsId": "MAP_SILVERIDGE_HOUSE1",
+      "baseMap": "MAP_SILVERIDGE",
+      "levelLabel": "House 1",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_EVERSTONE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "Silveridge_House1_EventScript_Man"
+        }
+      ],
+      "image": "Silveridge_House1"
+    },
+    {
       "thisLevelsId": "MAP_SILVERIDGE_REFUGE",
       "baseMap": "MAP_SILVERIDGE",
       "levelLabel": "Refuge",
-      "image": "Silveridge_Refuge",
-      "trainerRefs": [
+      "scriptedGives": [
         {
-          "id": "TRAINER_SHAMISEN",
-          "script": "Silveridge_Refuge_EventScript_Shamisen",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_CHARCOAL",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "Silveridge_Refuge_EventScript_Firebringer"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_SUPERGIRI",
+              "quantity": 2
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "Silveridge_Refuge_EventScript_Shamisen"
         }
-      ]
+      ],
+      "image": "Silveridge_Refuge"
     }
   ],
   "MAP_SUNRISE_CAVE": [
@@ -648,6 +723,92 @@
         }
       ],
       "image": "SunriseCave"
+    }
+  ],
+  "MAP_SUNRISE_VILLAGE": [
+    {
+      "thisLevelsId": "MAP_SUNRISE_VILLAGE",
+      "baseMap": "MAP_SUNRISE_VILLAGE",
+      "levelLabel": "",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_TOWN_MAP",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "SunriseVillage_Event_BigSisMap_GiveMap"
+        }
+      ],
+      "image": "SunriseVillage"
+    },
+    {
+      "thisLevelsId": "MAP_SUNRISE_VILLAGE_ELDERS_HOUSE",
+      "baseMap": "MAP_SUNRISE_VILLAGE",
+      "levelLabel": "Eldershouse",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_LETTER",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter"
+        }
+      ],
+      "image": "SunriseVillage_EldersHouse"
+    },
+    {
+      "thisLevelsId": "MAP_SUNRISE_VILLAGE_PLAYERS_HOUSE_BEDROOM",
+      "baseMap": "MAP_SUNRISE_VILLAGE",
+      "levelLabel": "Playershouse Bedroom",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_OINTMENT",
+              "quantity": 5
+            },
+            {
+              "name": "ITEM_POKE_BALL",
+              "quantity": 5
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "SunriseVillage_PlayersHouse_Bedroom_Stuff"
+        }
+      ],
+      "image": "SunriseVillage_PlayersHouse_Bedroom"
+    },
+    {
+      "thisLevelsId": "MAP_SUNRISE_VILLAGE_PLAYERS_HOUSE_LR",
+      "baseMap": "MAP_SUNRISE_VILLAGE",
+      "levelLabel": "Playershouse Lr",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_TOWN_MAP",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "SunriseVillage_PlayersHouse_LR_EventScript_BigSis"
+        }
+      ],
+      "image": "SunriseVillage_PlayersHouse_LR"
     }
   ],
   "MAP_TRANQUILROUTE": [
@@ -681,34 +842,73 @@
           "type": "hidden_item"
         }
       ],
-      "image": "TranquilRoute",
-      "trainerRefs": [
+      "scriptedGives": [
         {
-          "id": "TRAINER_CHIKAO",
-          "script": "TranquilRoute_EventScript_Chikao",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_LEAF_STONE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "TranquilRoute_EventScript_GrassCutscene"
         },
         {
-          "id": "TRAINER_KODOMO",
-          "script": "TranquilRoute_EventScript_Kodomo",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_TAKESHI",
-          "script": "TranquilRoute_EventScript_Takeshi",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_HIINA",
-          "script": "TranquilRoute_EventScript_Hana",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_KENJI",
-          "script": "TranquilRoute_EventScript_Kenji",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_ORAN_BERRY",
+              "quantity": 3
+            },
+            {
+              "name": "ITEM_WAILMER_PAIL",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "TranquilRoute_EventScript_BerryWoman"
         }
-      ]
+      ],
+      "image": "TranquilRoute"
+    },
+    {
+      "thisLevelsId": "MAP_TRANQUIL_ROUTE_CUT_HOUSE",
+      "baseMap": "MAP_TRANQUILROUTE",
+      "levelLabel": "Cuthouse",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_MEWTWONITE_X",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Play \"Whomst is that Pokémon!\" with the 14 yr old.",
+          "scriptName": "TranquilRoute_CutHouse_EventScript_RandomCryGuy"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_SECRET_CUT",
+              "quantity": 1
+            },
+            {
+              "name": "ITEM_TM_NICK",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "TranquilRoute_CutHouse_EventScript_CutMaster"
+        }
+      ],
+      "image": "TranquilRoute_CutHouse"
     }
   ],
   "MAP_WHITESLATEROUTE": [
@@ -774,54 +974,33 @@
           "type": "hidden_item"
         }
       ],
-      "image": "WhiteslateRoute",
-      "trainerRefs": [
+      "scriptedGives": [
         {
-          "id": "TRAINER_ITSUMI",
-          "script": "WhiteslateRoute_EventScript_Itsumi",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_BERRY_JUICE",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "WhiteslateRoute_EventScript_Shuckle"
         },
         {
-          "id": "TRAINER_RYOSUKE",
-          "script": "WhiteslateRoute_EventScript_Ryosuke",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_RIKU",
-          "script": "WhiteslateRoute_EventScript_Riku",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_TOMOMI",
-          "script": "WhiteslateRoute_EventScript_Tomomi",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_YONO",
-          "script": "WhiteslateRoute_EventScript_Yono",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_SUMI",
-          "script": "WhiteslateRoute_EventScript_Sumi",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_TOMIKO",
-          "script": "WhiteslateRoute_EventScript_Tomiko",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_UTARO",
-          "script": "WhiteslateRoute_EventScript_Utaro",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_UTARO",
-          "script": "WhiteslateRoute_EventScript_Asagao",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_TM_SECRET_POWER",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "WhiteslateRoute_Trigger_SecretBase"
         }
-      ]
+      ],
+      "image": "WhiteslateRoute"
     }
   ],
   "MAP_WINDSWEPTROUTE": [
@@ -839,44 +1018,7 @@
           "type": "object_event"
         }
       ],
-      "image": "WindsweptRoute",
-      "trainerRefs": [
-        {
-          "id": "TRAINER_MUSASHI_1",
-          "script": "WindsweptRoute_EventScript_Trainer1",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_ITAMAE",
-          "script": "WindsweptRoute_EventScript_Itamae",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_MAKOTO_1",
-          "script": "WindsweptRoute_EventScript_Trainer3",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_ROKU",
-          "script": "WindsweptRoute_EventScript_Roku",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_MUSASHI_1",
-          "script": "WindsweptRoute_EventScript_Trainer4",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_MUSASHI_1",
-          "script": "WindsweptRoute_EventScript_Trainer5",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_MUSASHI_1",
-          "script": "WindsweptRoute_EventScript_Trainer6",
-          "rematch": false
-        }
-      ]
+      "image": "WindsweptRoute"
     }
   ],
   "MAP_YIFU_CITY": [
@@ -918,93 +1060,105 @@
           "type": "hidden_item"
         }
       ],
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_TM_CALM_MIND",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "YifuCity_EventScript_RobberyVictim"
+        },
+        {
+          "items": [
+            {
+              "name": "ITEM_HEAL_BALL",
+              "quantity": 2
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "YifuCity_EventScript_Nurse"
+        }
+      ],
       "image": "YifuCity"
     },
     {
       "thisLevelsId": "MAP_YIFU_CITY_DOJO",
       "baseMap": "MAP_YIFU_CITY",
       "levelLabel": "Dojo",
-      "image": "YifuCity_Dojo",
-      "trainerRefs": [
+      "scriptedGives": [
         {
-          "id": "TRAINER_AKARI",
-          "script": "YifuCity_Dojo_EventScript_Dance1",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_KARIN",
-          "script": "YifuCity_Dojo_EventScript_Dance2",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_NANAMI",
-          "script": "YifuCity_Dojo_EventScript_Dance3",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_AKARI",
-          "script": "YifuCity_Dojo_EventScript_Akari",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_YUKA",
-          "script": "YifuCity_Dojo_EventScript_Yuka",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_NANAMI",
-          "script": "YifuCity_Dojo_EventScript_Nanami",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_KANAE",
-          "script": "YifuCity_Dojo_EventScript_Kanae",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_KARIN",
-          "script": "YifuCity_Dojo_EventScript_Karin",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_MIIKA",
-          "script": "YifuCity_Dojo_EventScript_Miika",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_YUTAKA_1",
-          "script": "YifuCity_Dojo_EventScript_Yutaka",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_TM_X_SCISSOR",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Defeat Yukata",
+          "scriptName": "YifuCity_Dojo_EventScript_YutakaDefeated"
         }
-      ]
+      ],
+      "image": "YifuCity_Dojo"
     },
     {
-      "thisLevelsId": "MAP_YIFU_CITY_HOT_SPRINGS",
+      "thisLevelsId": "MAP_YIFU_CITY_HOUSE2",
       "baseMap": "MAP_YIFU_CITY",
-      "levelLabel": "Hotsprings",
-      "image": "YifuCity_HotSprings",
-      "trainerRefs": [
+      "levelLabel": "House 2",
+      "scriptedGives": [
         {
-          "id": "TRAINER_SACHIKO",
-          "script": "YifuCity_HotSprings_EventScript_OldWoman",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_CHOICE_SCARF",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "YifuCity_House2_Model"
         },
         {
-          "id": "TRAINER_FUTOSHI",
-          "script": "YifuCity_HotSprings_EventScript_HotSpringM",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_WAKAE",
-          "script": "YifuCity_HotSprings_EventScript_HotSpringF",
-          "rematch": false
-        },
-        {
-          "id": "TRAINER_LIHUO",
-          "script": "YifuCity_HotSprings_EventScript_Firebringer",
-          "rematch": false
+          "items": [
+            {
+              "name": "ITEM_DESTINY_KNOT",
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "YifuCity_House2_Tarountula"
         }
-      ]
+      ],
+      "image": "YifuCity_House2"
+    },
+    {
+      "thisLevelsId": "MAP_YIFU_CITY_REFUGE",
+      "baseMap": "MAP_YIFU_CITY",
+      "levelLabel": "Refuge",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "name": "ITEM_SUPERGIRI",
+              "quantity": 3
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "YifuCity_Refuge_EventScript_RouteShamisen"
+        }
+      ],
+      "image": "YifuCity_Refuge"
     },
     {
       "thisLevelsId": "MAP_YIFU_CITY_REFUGE_2F",
@@ -1028,14 +1182,7 @@
           "type": "hidden_item"
         }
       ],
-      "image": "YifuCity_Refuge_2F",
-      "trainerRefs": [
-        {
-          "id": "TRAINER_YAMATO",
-          "script": "YifuCity_Refuge_2F_EventScript_SameRoom",
-          "rematch": false
-        }
-      ]
+      "image": "YifuCity_Refuge_2F"
     }
   ]
 }

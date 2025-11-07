@@ -5,9 +5,9 @@ export function findStringLineNumber(
   searchString: string,
 ): { lineNumber: number; lineContent: string } | null {
   const lines = fileContents.split("\n");
-
+debugger
   for (let i = 0; i < lines.length; i++) {
-    if (lines[i].includes(searchString)) {
+    if (lines[i].trim().includes(searchString)) {
       return {
         lineNumber: i + 1,
         lineContent: lines[i],

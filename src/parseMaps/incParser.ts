@@ -10,12 +10,8 @@ import pokemonData from "../../gameData/speciesData.json" with { type: "json" };
 import { splitRawSection } from "./pory/splitRawSection.ts";
 import { parsePoryscriptFunctions } from "./pory/extractPoryScripts.ts";
 import { findStringLineNumber } from "../util/findStringLineNumber.ts";
+// import { config } from "../configReader.ts"; // Used to get path to maps to make dir when errors
 
-// export interface IncPokemonEntry {
-//   species: string;
-//   level: number;
-//   isRandom: boolean;
-// }
 const normalizeName = (str: string): string => {
   return str
     .toLowerCase()
@@ -267,8 +263,8 @@ export class IncScriptEvent {
         this.rawContent,
         this.scriptName,
       );
-      throw new Error(
-        `Explanation for nothing: "${this.scriptName}:${scriptLineNumber}"`,
+      console.error(
+        `[incParser] Unused explanation with no events: "${this.scriptName}:${scriptLineNumber}"`,
       );
     }
     return notNothing;
@@ -279,8 +275,8 @@ export class IncScriptEvent {
         this.rawContent,
         this.scriptName,
       );
-      throw new Error(
-        `Missing explanation: "${this.scriptName}:${scriptLineNumber}"`,
+      console.error(
+        `[incParser] Missing explanation: "${this.scriptName}:${scriptLineNumber}"`,
       );
     }
   }
@@ -392,9 +388,9 @@ export function parseScriptedEvents(content: string) {
     if (event.scriptName.includes("BerryGentleman")) {
       event.items = [{ name: "ITEM_NONE", quantity: 1 }];
     }
-    // kill ourselves if we have an explanation but no events
+
     // Just keeps things cleaner ya know
-    event.explanationWithNoEvents();
+    // event.explanationWithNoEvents();
     // event.eventsWithNoExplanation();
     // Only include sections that have give events
     if (event.hasContent()) {
@@ -499,7 +495,7 @@ export function parseScriptedEvents(content: string) {
         // We'll use a workaround for file path, but line number is not directly available.
         // This will log the file path and a best-effort line number (hardcoded to this line).
         console.warn(
-          `[incParser] Script "${script.scriptName}" has no explanation. It will be kept without grouping.`,
+          `[incParser] Script "${script.scriptName}" has no explanation.`,
         );
       }
       // Keep scripts without an explanation as they are
