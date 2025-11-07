@@ -65,6 +65,7 @@ script SakuTown_BonsaiShop_EventScript_Painting {
 }
 
 script SakuTown_BonsaiShop_EventScript_LittleSisterGiveBerry {
+	@explanation Bonsai Shop, receive a daily berry from little girl
 	lock
 	faceplayer
 	dotimebasedevents
@@ -95,6 +96,7 @@ script SakuTown_BonsaiShop_EventScript_LittleSisterGiveBerry {
 }
 
 script SakuTown_BonsaiShop_EventScript_LittleSister {
+	@explanation Achieve Berry Mastery & speak to the little girl
 	lock
 	faceplayer
 
@@ -180,8 +182,9 @@ script SakuTown_BonsaiShop_EventScript_LittleSister {
 }
 
 script SakuTown_BonsaiShop_EventScript_Assistant {
+	@explanation Bonsai Shop, 
 	lock
-	faceplayer
+faceplayer
 
 	// Already visited shop
 	if (var(VAR_BONSAI_SHOP_STATE) == 1) {

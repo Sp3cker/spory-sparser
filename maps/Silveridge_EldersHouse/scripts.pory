@@ -27,6 +27,7 @@ script Silveridge_EldersHouse_EventScript_EldersMon {
 }
 
 script Silveridge_EldersHouse_EventScript_Conversation {
+	@explanation Deliver message to Village Elder
 	lock
 	setvar(VAR_DECAY_BEACHBOUND_ROUTE, 6)
 

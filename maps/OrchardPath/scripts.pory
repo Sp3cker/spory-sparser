@@ -258,6 +258,7 @@ script OrchardPath_EventScript_RockSmashBrokeMyRocks {
 }
 
 script OrchardPath_EventScript_RockSmashRegular {
+	@explanation Speak to the Rock Smasher
 	setspeaker(SP_NAME_MAN)
 	msgbox(format(
 		"Gather round, folks, gather round!\p"

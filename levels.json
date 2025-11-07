@@ -1,6 +1,9 @@
 {
   "MAP_BEACHBOUNDROUTE": [
     {
+      "thisLevelsId": "MAP_BEACHBOUND_ROUTE",
+      "baseMap": "MAP_BEACHBOUNDROUTE",
+      "levelLabel": "",
       "pickupItems": [
         {
           "coords": [
@@ -73,9 +76,6 @@
           "scriptName": "BeachboundRoute_EventScript_Mugging"
         }
       ],
-      "thisLevelsId": "MAP_BEACHBOUND_ROUTE",
-      "baseMap": "MAP_BEACHBOUNDROUTE",
-      "levelLabel": "",
       "image": "BeachboundRoute"
     }
   ],
@@ -312,7 +312,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Give the old woman an Oran Berry, a fishcake, and a Revival Powder",
           "scriptName": "KuraTown_House1_OldWoman"
         }
       ],
@@ -346,7 +346,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Talk to the fishcake saleswoman while she's closing shop.",
           "scriptName": "MaguroHarbor_EventScript_FishcakeSalesmanClosingUp"
         },
         {
@@ -358,7 +358,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Speak to the old Fisherman.",
           "scriptName": "MaguroHarbor_EventScript_FishermanOldRod"
         }
       ],
@@ -378,7 +378,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Defeat Koishi",
           "scriptName": "MaguroHarbor_Dojo_EventScript_KoishiDefeated"
         }
       ],
@@ -424,7 +424,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Speak to the Rock Smasher",
           "scriptName": "OrchardPath_EventScript_RockSmashRegular"
         }
       ],
@@ -484,7 +484,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Achieve Berry Mastery & speak to the little girl",
           "scriptName": "SakuTown_BonsaiShop_EventScript_LittleSister"
         },
         {
@@ -500,7 +500,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Bonsai Shop,",
           "scriptName": "SakuTown_BonsaiShop_EventScript_Assistant"
         }
       ],
@@ -528,7 +528,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Return Espeon to it's master, choose an Evo stone.",
           "scriptName": "SakuTown_House2_EventScript_GiveEvoStone"
         }
       ],
@@ -648,7 +648,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Deliver message to Village Elder",
           "scriptName": "Silveridge_EldersHouse_EventScript_Conversation"
         }
       ],
@@ -758,7 +758,23 @@
               "quantity": 1
             }
           ],
-          "pokemon": [],
+          "pokemon": [
+            {
+              "species": "SPECIES_FROAKIE",
+              "level": 5,
+              "id": 656
+            },
+            {
+              "species": "SPECIES_SNIVY",
+              "level": 5,
+              "id": 495
+            },
+            {
+              "species": "SPECIES_CYNDAQUIL",
+              "level": 5,
+              "id": 155
+            }
+          ],
           "wildMon": [],
           "explanation": "",
           "scriptName": "SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter"
@@ -1072,6 +1088,19 @@
           "wildMon": [],
           "explanation": "",
           "scriptName": "YifuCity_EventScript_RobberyVictim"
+        },
+        {
+          "items": [],
+          "pokemon": [
+            {
+              "species": "SPECIES_CATERPIE",
+              "level": 5,
+              "id": 10
+            }
+          ],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "YifuCity_ShinySellerChoice"
         },
         {
           "items": [

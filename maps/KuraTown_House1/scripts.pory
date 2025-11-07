@@ -13,6 +13,7 @@ mapscripts KuraTown_House1_MapScripts {
 }
 
 script KuraTown_House1_OldWoman {
+	@explanation Give the old woman an Oran Berry, a fishcake, and a Revival Powder
 	lock
 	faceplayer
 	setspeaker(SP_NAME_OLD_LADY)

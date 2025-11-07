@@ -165,6 +165,7 @@ script MaguroHarbor_EventScript_FishcakeSalesmanSelling {
 }
 
 script MaguroHarbor_EventScript_FishcakeSalesmanClosingUp {
+	@explanation Talk to the fishcake saleswoman while she's closing shop.
 	lock
 	faceplayer
 

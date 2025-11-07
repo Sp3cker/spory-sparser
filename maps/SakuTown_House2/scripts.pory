@@ -189,6 +189,7 @@ script SakuTown_House2_EventScript_Reunited {
 }
 
 script SakuTown_House2_EventScript_GiveEvoStone {
+	@explanation Return Espeon to it's master, choose an Evo stone.
 	msgbox(format("Which rock would you like?"))
 
 	dynmultichoice(

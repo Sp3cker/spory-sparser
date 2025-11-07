@@ -113,7 +113,9 @@ export class IncScriptEvent {
     // Match: givemon SPECIES_NAME, level
     // Match: givemonrandom SPECIES_NAME, level, isRandom
     const giveMonMatch = line.match(
-      /^\s*(givemon(?:random)?)\s+(\w+)\s*,\s*([^]+)$/,
+
+      /^\s*(givemon(?:random)?)\s*\(?\s*(\w+)\s*,?\s*(\d+)?\s*\)?/,
+
     );
 
     if (giveMonMatch) {

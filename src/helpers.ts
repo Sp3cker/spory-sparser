@@ -181,22 +181,6 @@ export function getLevelLabel(folderName: string): string {
   return result;
 }
 
-// async function geAlltMapIds(dir: string): Promise<Set<string>> {
-//   const ids = new Set<string>();
-//   const entries = await fs.readdir(dir, { withFileTypes: true });
-
-//   for (const entry of entries) {
-//     if (entry.isDirectory()) {
-//       const mapPath = path.join(dir, entry.name, "map.json");
-//       const id = await getMapJsonId(mapPath);
-//       if (id) {
-//         ids.add(id);
-//       }
-//     }
-//   }
-
-//   return ids;
-// }
 export const getMapJsonId = async (filePath: string): Promise<string> => {
   try {
     const data = await fs.readFile(filePath, "utf-8");
@@ -208,18 +192,6 @@ export const getMapJsonId = async (filePath: string): Promise<string> => {
     throw new Error(`No id found in ${filePath}`);
   }
 };
-
-export async function getLevelId(folderPath: string): Promise<string> {
-  const levelFilePath = path.join(folderPath, "map.json");
-  try {
-    const data = await fs.readFile(levelFilePath, "utf-8");
-    const json = JSON.parse(data);
-    return json.id;
-  } catch (error) {
-    console.error(`Error reading ${levelFilePath}:`, error);
-    throw new Error(`No id found in ${levelFilePath}`);
-  }
-}
 
 export async function getBasemapID(folderOrMapJson: string): Promise<string> {
   let folderName: string;
@@ -238,9 +210,12 @@ export async function getBasemapID(folderOrMapJson: string): Promise<string> {
 
   const parts = folderName.split("_");
   const beforeUnderscore = parts[0];
-  
+
   // Special handling for underwater routes - make each one its own map
-  if (folderName.toLowerCase().includes("underwater") && folderName.toLowerCase().includes("route")) {
+  if (
+    folderName.toLowerCase().includes("underwater") &&
+    folderName.toLowerCase().includes("route")
+  ) {
     // Extract the route number from the folder name
     // Example: "Underwater_Route126" -> "MAP_UNDERWATER_ROUTE126"
     const routeMatch = folderName.match(/Route(\d+)/);
@@ -249,7 +224,7 @@ export async function getBasemapID(folderOrMapJson: string): Promise<string> {
       return `MAP_UNDERWATER_ROUTE${routeNumber}`;
     }
   }
-  
+
   // Insert underscore before each capital letter (except the first one)
   let result;
   const dontSplit = ["Route", "Underwater"];
@@ -260,7 +235,6 @@ export async function getBasemapID(folderOrMapJson: string): Promise<string> {
     beforeUnderscore.includes(part)
   );
   if (treatAsRoute === false) {
-
     // Dont _under_score route names
     result = beforeUnderscore.charAt(0);
     for (let i = 1; i < beforeUnderscore.length; i++) {
@@ -273,7 +247,6 @@ export async function getBasemapID(folderOrMapJson: string): Promise<string> {
       }
     }
   } else {
-
     result = beforeUnderscore;
   }
 
