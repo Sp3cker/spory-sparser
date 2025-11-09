@@ -398,7 +398,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Defeat Hariko",
           "scriptName": "MaguroHarbor_Refuge_BattleHariko"
         }
       ],
@@ -500,7 +500,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "Bonsai Shop,",
+          "explanation": "Bonsai Shop, if you didn't meet the assistant on Tranquil route",
           "scriptName": "SakuTown_BonsaiShop_EventScript_Assistant"
         }
       ],
@@ -668,7 +668,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Speak to the miner in his house",
           "scriptName": "Silveridge_House1_EventScript_Man"
         }
       ],

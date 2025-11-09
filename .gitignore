@@ -7,3 +7,6 @@ generated/192
 generated/icon
 generated/frames
 log/output.log
+graphics/*
+_generated/*
+generated/*

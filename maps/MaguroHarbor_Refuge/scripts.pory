@@ -88,6 +88,7 @@ script MaguroHarbor_Refuge_EventScript_Hariko {
 }
 
 script MaguroHarbor_Refuge_BattleHariko {
+	@explanation Defeat Hariko
 	dynmultichoice(
 		0,
 		0,

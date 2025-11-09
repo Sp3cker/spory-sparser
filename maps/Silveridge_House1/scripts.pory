@@ -65,6 +65,7 @@ script Silveridge_House1_EventScript_Sandslash {
 }
 
 script Silveridge_House1_EventScript_Man {
+    @explanation Speak to the miner in his house
     lock
     faceplayer
     setspeaker(SP_NAME_MINER)

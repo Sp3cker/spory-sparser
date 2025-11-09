@@ -182,7 +182,7 @@ script SakuTown_BonsaiShop_EventScript_LittleSister {
 }
 
 script SakuTown_BonsaiShop_EventScript_Assistant {
-	@explanation Bonsai Shop, 
+	@explanation Bonsai Shop, if you didn't meet the assistant on Tranquil route
 	lock
 faceplayer
 
