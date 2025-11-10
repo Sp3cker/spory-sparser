@@ -3,27 +3,40 @@ import { z } from "zod";
 import { readFileSync, existsSync } from "fs";
 import { resolve } from "path";
 
+const DirectoriesSchema = z.object({
+  data: z.string().min(1, "Data directory path cannot be empty"),
+  sprites: z.string().min(1, "Sprites directory path cannot be empty"),
+  maps: z.string().min(1, "Maps directory path cannot be empty"),
+  output: z.string().min(1, "Output directory path cannot be empty"),
+  miscScripts: z.string().min(1, "Misc scripts directory path cannot be empty"),
+});
+
 const ConfigSchema = z.object({
-  directories: z.object({
-    data: z.string().min(1, "Data directory path cannot be empty"),
-    battlePics: z.string().min(1, "Battle pics directory path cannot be empty"),
-    sprites: z.string().min(1, "Sprites directory path cannot be empty"),
-    maps: z.string().min(1, "Maps directory path cannot be empty"),
-    output: z.string().min(1, "Output directory path cannot be empty"),
-    miscScripts: z.string().min(1, "Misc scripts directory path cannot be empty"),
-  }),
+  directories: DirectoriesSchema,
 });
 
 export type ConfigType = z.infer<typeof ConfigSchema>;
 
 export class Config {
   public readonly dataDir: string;
-  public readonly battlePics: string;
   public readonly sprites: string;
   public readonly rootDir: string = process.cwd();
   public readonly mapsDir: string;
   public readonly outputDir: string;
   public readonly miscScriptsDir: string;
+
+  public readonly trainerPalettesDir: string;
+  public readonly trainerFrontPicsDir: string;
+
+  public readonly itemIconsDir: string;
+  public readonly itemPalettesDir: string;
+  public readonly itemOutputDir: string;
+  public readonly pokemonSpritesDir: string;
+
+  private resolveDir(dir: string): string {
+    return resolve(process.cwd(), dir.startsWith("/") ? dir.slice(1) : dir);
+  }
+
   constructor(configPath: string = "sparser.toml") {
     try {
       // Read and parse the TOML file
@@ -34,42 +47,25 @@ export class Config {
       const validatedConfig = ConfigSchema.parse(parsedConfig);
 
       // Assign the validated properties
-      this.dataDir = resolve(
-        process.cwd(),
-        validatedConfig.directories.data.startsWith("/")
-          ? validatedConfig.directories.data.slice(1)
-          : validatedConfig.directories.data
-      );
-      this.battlePics = resolve(
-        process.cwd(),
-        validatedConfig.directories.battlePics.startsWith("/")
-          ? validatedConfig.directories.battlePics.slice(1)
-          : validatedConfig.directories.battlePics
-      );
-      this.sprites = resolve(
-        process.cwd(),
-        validatedConfig.directories.sprites.startsWith("/")
-          ? validatedConfig.directories.sprites.slice(1)
-          : validatedConfig.directories.sprites
-      );
-      this.mapsDir = resolve(
-        process.cwd(),
-        validatedConfig.directories.maps.startsWith("/")
-          ? validatedConfig.directories.maps.slice(1)
-          : validatedConfig.directories.maps
-      );
-      this.outputDir = resolve(
-        process.cwd(),
-        validatedConfig.directories.output.startsWith("/")
-          ? validatedConfig.directories.output.slice(1)
-          : validatedConfig.directories.output
-      );
-      this.miscScriptsDir = resolve(
-        process.cwd(),
-        validatedConfig.directories.miscScripts.startsWith("/")
-          ? validatedConfig.directories.miscScripts.slice(1)
-          : validatedConfig.directories.miscScripts
-      );
+      const dirs = validatedConfig.directories;
+
+      this.dataDir = this.resolveDir(dirs.data);
+      this.sprites = this.resolveDir(dirs.sprites);
+      this.mapsDir = this.resolveDir(dirs.maps);
+      this.outputDir = this.resolveDir(dirs.output);
+      this.miscScriptsDir = this.resolveDir(dirs.miscScripts);
+
+      const trainerSpritesDir = resolve(this.sprites, "trainers");
+      this.trainerFrontPicsDir = resolve(trainerSpritesDir, "front_pics");
+      this.trainerPalettesDir = resolve(trainerSpritesDir, "palettes");
+
+      const itemSpritesDir = resolve(this.sprites, "items");
+      this.itemIconsDir = resolve(itemSpritesDir, "icons");
+      this.itemPalettesDir = resolve(itemSpritesDir, "icon_palettes");
+      this.itemOutputDir = resolve(this.outputDir, "icons");
+
+      this.pokemonSpritesDir = resolve(this.sprites, "pokemon");
+
       // Validate that all directories exist
       this.validateDirectoriesExist();
     } catch (error) {
@@ -96,8 +92,14 @@ export class Config {
   private validateDirectoriesExist(): void {
     const directories = {
       dataDir: this.dataDir,
-      battlePics: this.battlePics,
-      sprites: this.sprites,
+      spritesRoot: this.sprites,
+
+      trainerFrontPics: this.trainerFrontPicsDir,
+      trainerPalettes: this.trainerPalettesDir,
+
+      itemIcons: this.itemIconsDir,
+      itemPalettes: this.itemPalettesDir,
+      pokemonSprites: this.pokemonSpritesDir,
       maps: this.mapsDir,
       generated: resolve(this.rootDir, "generated"),
       miscScripts: this.miscScriptsDir,

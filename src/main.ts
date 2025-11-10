@@ -1,20 +1,22 @@
 import path from "path";
 import { mkdirSync } from "fs";
-import { writeFile, readFile, access } from "fs/promises";
+import { writeFile, readFile } from "fs/promises";
 import { findMartSectionsByLevel, Mart, MartEntry } from "./parseMarts.ts";
-import { findGiveItemsByLevel, LevelIncData } from "./parseMaps/index.ts";
+import  findGiveItemsByLevel, { LevelIncData } from "./parseMaps/index.ts";
 import { main } from "./parseMapEvents.ts";
-// import { extractTrainerParties } from "./parseMaps/Trainers/extractTrainerPartiesfromHeaderFile.ts";
-// import { mergeAdditionalParties } from "./parseMaps/Trainers/mergeAdditionalParties.ts";
 import { extractTrainers } from "./parseMaps/Trainers/extractTrainersFromHeaderFile.ts";
+// 
 
-import { MapEventPlace, TrainerStruct } from "./validators/index.ts";
+import {
+  MapEventPlace,
+   TrainerStruct
+} from "./validators/index.ts";
 import { logger } from "./util/logger.ts";
-import { compareDataChanges } from "./util/compareDataChanges.ts";
+
 
 import { config } from "./configReader.ts";
 import { IncScriptEvent } from "./parseMaps/incParser.ts";
-// import mergeTrainers from "./mergeTrainerData.ts";
+import mergeTrainers from "./mergeTrainerData.ts";
 
 /**
  * Combined trainer data from maps.json and trainers_flat.json
@@ -71,11 +73,11 @@ const mergeDataByLevelsID = async ({
       const { thisLevelsId } = mapEntry;
 
       const martEntry = martsData.find(
-        (mart) => mart.thisLevelsId === thisLevelsId,
+        (mart) => mart.thisLevelsId === thisLevelsId
       );
       // Things found in `map.json`
       const pickupEntry = pickupItemsAndTrainers.find(
-        (pickup) => pickup.thisLevelsId === thisLevelsId,
+        (pickup) => pickup.thisLevelsId === thisLevelsId
       );
 
       if (!martEntry || !pickupEntry) {
@@ -153,10 +155,8 @@ const mergeDataByLevelsID = async ({
       // Filter out places that don't have any meaningful content
       // like the Battle Frontier...
       const hasShopItems = result.shopItems && result.shopItems.length > 0;
-      const hasPickupItems =
-        result.pickupItems && result.pickupItems.length > 0;
-      const hasTrainerRefs =
-        result.trainerRefs && result.trainerRefs.length > 0;
+      const hasPickupItems = result.pickupItems && result.pickupItems.length > 0;
+      const hasTrainerRefs = result.trainerRefs && result.trainerRefs.length > 0;
       const hasEncounters = encountersMap.has(result.thisLevelsId);
       const hasScriptedGives = result.scriptedGives.length > 0;
       if (
@@ -221,7 +221,7 @@ const mergeDataByLevelsID = async ({
   for (const [base, levels] of Object.entries(groupedData)) {
     groupedDataForOutput[base] = levels.map(
       // ({÷ trainers: _t, ...rest }) => rest,
-      ({ ...rest }) => rest,
+      ({ ...rest }) => rest
     );
   }
 
@@ -242,12 +242,11 @@ const mergeDataByLevelsID = async ({
     //   process.exit(1);
     // }
 
-
     const encountersData = JSON.parse(
-      await readFile(path.join(config.dataDir, "cleanEncounters.json"), "utf8"),
+      await readFile(path.join(config.dataDir, "cleanEncounters.json"), "utf8")
     );
     const encountersMap = new Map<string, any>(
-      encountersData.map((enc: any) => [enc.map, enc]),
+      encountersData.map((enc: any) => [enc.map, enc])
     );
     // --- Trainer & party extraction ----------------------------------
     const trainerParties = await readFile(
@@ -257,17 +256,17 @@ const mergeDataByLevelsID = async ({
     const trainersFlat: Record<string, TrainerStruct> = extractTrainers(
       config.dataDir,
       trainerParties,
-      config.battlePics,
+      config.,
       config.outputDir,
     );
 
     // Ensure output directory exists
     mkdirSync(path.join(config.outputDir), { recursive: true });
 
-    await writeFile(
-      path.join(config.outputDir, "trainers_flat.json"),
-      prettyPrint(trainersFlat),
-    );
+    // await writeFile(
+    //   path.join(config.outputDir, "trainers_flat.json"),
+    //   prettyPrint(trainersFlat),
+    // );
 
     // Find and log mart sections
     const martSections = await findMartSectionsByLevel(config.mapsDir);
@@ -275,12 +274,12 @@ const mergeDataByLevelsID = async ({
     // Find and log give items by level
     const scriptedGives = await findGiveItemsByLevel(
       config.mapsDir,
-      config.miscScriptsDir,
+      config.miscScriptsDir
     );
 
     // Parse map events
     const mapEvents = await main(config.mapsDir);
-debugger
+    debugger;
     // Merge all data in memory
     const { groupedData, groupedTrainers } = await mergeDataByLevelsID({
       martsData: martSections,
@@ -290,34 +289,6 @@ debugger
       encountersMap,
     });
 
-    let trainersJsonExists = false;
-    try {
-      await access(path.join(config.outputDir, "trainers.json"));
-      trainersJsonExists = true;
-    } catch (err) {
-      trainersJsonExists = false;
-    }
-
-    if (trainersJsonExists) {
-      // console.log(sset.values());
-      const [existingTrainers, existingLevels] = await Promise.all([
-        readFile(path.join(process.cwd(), "trainers.json"), "utf8").then(
-          (data) => JSON.parse(data) as Record<string, Trainer[]>,
-        ),
-        readFile(path.join(process.cwd(), "levels.json"), "utf8").then(
-          (data) => JSON.parse(data) as Record<string, any[]>,
-        ),
-      ]).catch((error) => {
-        throw error;
-      });
-      // Compare with existing data before writing new files
-      await compareDataChanges({
-        existingLevels,
-        existingTrainers,
-        newGroupedTrainers: groupedTrainers,
-        newGroupedData: groupedData,
-      });
-    }
     await writeFile("levels.json", prettyPrint(groupedData));
     await writeFile("trainers.json", prettyPrint(groupedTrainers));
 

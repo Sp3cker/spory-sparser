@@ -1,75 +1,16 @@
 import * as fs from "fs";
 import * as path from "path";
-import extractChunks from "png-chunks-extract";
-import encodeChunks from "png-chunks-encode";
 import { PNG } from "pngjs";
-
-interface PaletteEntry {
-  r: number;
-  g: number;
-  b: number;
-}
+import { PaletteApplier } from "./PaletteApplier.js";
 
 const ROOT = path.resolve(
   path.dirname(decodeURI(new URL(import.meta.url).pathname)),
   "../../"
 );
+const paletteApplier = new PaletteApplier();
 
 function ensureDir(dir: string) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-}
-
-function readJascPal(palPath: string): PaletteEntry[] {
-  const lines = fs.readFileSync(palPath, "utf8").trim().split(/\r?\n/);
-  if (lines[0] !== "JASC-PAL")
-    throw new Error(`Invalid JASC-PAL signature in ${palPath}`);
-  // Skip version line lines[1]
-  const count = parseInt(lines[2], 10);
-  const colors: PaletteEntry[] = [];
-  for (let i = 0; i < count; i++) {
-    const [r, g, b] = lines[3 + i].split(" ").map(Number);
-    colors.push({ r, g, b });
-  }
-  return colors;
-}
-
-function replacePngPalette(
-  pngBuffer: Buffer,
-  newPalette: PaletteEntry[]
-): Buffer {
-  const chunks = extractChunks(pngBuffer);
-  const paletteBytes: number[] = [];
-  newPalette.forEach(({ r, g, b }) => {
-    paletteBytes.push(r & 0xff, g & 0xff, b & 0xff);
-  });
-  // PNG spec allows fewer than 256 colours, but PLTE length must be a multiple of 3.
-  const plteChunk = {
-    name: "PLTE",
-    data: Buffer.from(paletteBytes),
-  } as const;
-  // Build transparency chunk: first palette entry transparent, others opaque
-  const trnsData = Buffer.alloc(newPalette.length, 0xff);
-  if (trnsData.length > 0) trnsData[0] = 0x00;
-  const trnsChunk = { name: "tRNS", data: trnsData } as const;
-  const newChunks = (chunks as any[]).map((chunk: any) =>
-    chunk.name === "PLTE" ? plteChunk : chunk
-  );
-  // If no PLTE existed (unlikely), insert after IHDR
-  if (!(chunks as any[]).some((c: any) => c.name === "PLTE")) {
-    const ihdrIndex = (chunks as any[]).findIndex(
-      (c: any) => c.name === "IHDR"
-    );
-    newChunks.splice(ihdrIndex + 1, 0, plteChunk);
-  }
-  // Handle tRNS chunk: replace or insert right after PLTE
-  const plteIndex = newChunks.findIndex((c: any) => c.name === "PLTE");
-  const existingTrns = newChunks.findIndex((c: any) => c.name === "tRNS");
-  if (existingTrns !== -1) {
-    newChunks[existingTrns] = trnsChunk;
-  } else {
-    newChunks.splice(plteIndex + 1, 0, trnsChunk);
-  }
-  return Buffer.from(encodeChunks(newChunks));
 }
 
 function getBaseName(fileName: string): string {
@@ -131,8 +72,8 @@ export function generateSprites(options: GenerateSpritesOptions) {
         // If palette exists, still apply it
         if (paletteFile) {
           const palettePath = path.join(paletteDir, paletteFile);
-          const palette = readJascPal(palettePath);
-          pngBuffer = replacePngPalette(pngBuffer, palette);
+          const palette = paletteApplier.readPalette(palettePath);
+          pngBuffer = paletteApplier.applyPalette(pngBuffer, palette);
         }
       } else {
         // For other directories: require palette file
@@ -147,8 +88,8 @@ export function generateSprites(options: GenerateSpritesOptions) {
         }
 
         const palettePath = path.join(paletteDir, paletteFile);
-        const palette = readJascPal(palettePath);
-        pngBuffer = replacePngPalette(pngBuffer, palette);
+        const palette = paletteApplier.readPalette(palettePath);
+        pngBuffer = paletteApplier.applyPalette(pngBuffer, palette);
       }
 
       fs.writeFileSync(outputPath, pngBuffer);

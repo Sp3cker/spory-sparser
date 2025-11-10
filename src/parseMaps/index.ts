@@ -17,7 +17,7 @@ import { baseMapisizeMiscScripts } from "./baseMapisizeMiscScripts.ts";
  *
  * The helper function `getMapJsonId parses `levels.json` file to get the level ids.
  */
-export const processIncFile = async (incFileContent: string) => {
+const processIncFile = async (incFileContent: string) => {
   try {
     const scriptedGiveEvents = parseScriptedEvents(incFileContent);
     const trainerBattles = parseTrainerBattles(incFileContent);
@@ -82,7 +82,7 @@ async function processMapsDirectory(mapPath: string, folders: Dirent[]) {
       // const wildMons = parseWildMon(content);
       const baseMap = await getBasemapID(parentFolderPath);
       const levelLabel = getLevelLabel(path.basename(path.dirname(fullPath)));
-   
+
       // console.log(
       //   result.scriptedGives.map((give) => JSON.stringify(give.wildMon))
       // );
@@ -103,12 +103,12 @@ async function processMapsDirectory(mapPath: string, folders: Dirent[]) {
   return results;
 }
 
-export async function findGiveItemsByLevel(
+export default async function findGiveItemsByLevel(
   mapsPath: string,
   miscScriptsPath?: string
 ): Promise<LevelIncData[]> {
-  const folders = readdirSync(mapsPath, { withFileTypes: true }).filter(
-    (entry) => entry.isDirectory()
+  const folders = readdirSync(mapsPath, { withFileTypes: true }).filter((entry) =>
+    entry.isDirectory()
   );
   const mapLevels = await processMapsDirectory(mapsPath, folders);
 

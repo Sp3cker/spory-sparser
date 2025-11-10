@@ -1,8 +1,7 @@
 [directories]
 maps = "/maps"
 data = "/gameData"
-battlePics = "/generated/trainers"
-sprites = "/generated/trainers/48"
+sprites = "/graphics"
 output = "/generated"
 miscScripts = "/_scripts"
 

@@ -1,0 +1,2065 @@
+{
+  "OBJ_EVENT_GFX_BRENDAN_NORMAL": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/walking.4bpp",
+      "graphics/object_events/pics/people/brendan/running.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_BRENDAN_MACH_BIKE": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/mach_bike.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_BRENDAN_SURFING": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/surfing.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/field_move.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_QUINTY_PLUMP": {
+    "sprites": [
+      "graphics/object_events/pics/people/quinty_plump.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/quinty_plump.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_WOMAN_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/woman_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_WOMAN_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/woman_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_MAN_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/man_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_MAN_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/man_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_OLD_WOMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/old_woman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_OLD_MAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/old_man.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_LITTLE_BOY": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/little_boy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_LITTLE_GIRL": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/little_girl.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_GIRL_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/girl_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_GIRL_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/girl_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_BOY_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/boy_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_BOY_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/boy_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_NURSE": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/nurse.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_VALET": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/valet.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUNRISE_FAT_GUY": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/fat_guy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_WOMAN_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/woman_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_WOMAN_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/woman_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_MAN_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/man_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_MAN_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/man_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_OLD_WOMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/old_woman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_OLD_MAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/old_man.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_LITTLE_BOY": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/little_boy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_LITTLE_GIRL": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/little_girl.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_GIRL_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/girl_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_GIRL_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/girl_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_BOY_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/boy_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_BOY_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/boy_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_NURSE": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/nurse.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_VALET": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/valet.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEASIDE_FAT_GUY": {
+    "sprites": [
+      "graphics/object_events/pics/people/seaside/fat_guy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_seaside.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_WOMAN_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/woman_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_WOMAN_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/woman_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_MAN_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/man_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_MAN_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/man_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_OLD_WOMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/old_woman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_OLD_MAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/old_man.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_LITTLE_BOY": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/little_boy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_LITTLE_GIRL": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/little_girl.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_GIRL_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/girl_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_GIRL_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/girl_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_BOY_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/boy_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_BOY_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/boy_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_NURSE": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/nurse.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_VALET": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/valet.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_FAT_GUY": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/fat_guy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_UUME_OLD_WOMAN_SWIMMING": {
+    "sprites": [
+      "graphics/object_events/pics/people/uume/old_woman_swimming.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_uume.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_WOMAN_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/woman_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_WOMAN_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/woman_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_MAN_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/man_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_MAN_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/man_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_OLD_WOMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/old_woman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_OLD_MAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/old_man.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_LITTLE_BOY": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/little_boy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_LITTLE_GIRL": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/little_girl.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_GIRL_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/girl_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_GIRL_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/girl_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_BOY_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/boy_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_BOY_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/boy_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_NURSE": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/nurse.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_VALET": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/valet.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_FAT_GUY": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/fat_guy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_WOMAN_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/woman_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_WOMAN_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/woman_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_MAN_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/man_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_MAN_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/man_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_OLD_WOMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/old_woman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_OLD_MAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/old_man.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_LITTLE_BOY": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/little_boy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_LITTLE_GIRL": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/little_girl.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_GIRL_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/girl_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_GIRL_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/girl_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_BOY_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/boy_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_BOY_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/boy_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_NURSE": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/nurse.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_VALET": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/valet.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAKURA_FAT_GUY": {
+    "sprites": [
+      "graphics/object_events/pics/people/sakura/fat_guy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sakura.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_WOMAN_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/woman_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_WOMAN_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/woman_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_MAN_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/man_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_MAN_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/man_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_OLD_WOMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/old_woman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_OLD_MAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/old_man.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_LITTLE_BOY": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/little_boy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_LITTLE_GIRL": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/little_girl.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_GIRL_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/girl_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_GIRL_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/girl_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_BOY_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/boy_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_BOY_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/boy_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_NURSE": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/nurse.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_VALET": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/valet.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOUNTAIN_FAT_GUY": {
+    "sprites": [
+      "graphics/object_events/pics/people/mountain/fat_guy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_mountain.gbapal"
+  },
+  "OBJ_EVENT_GFX_NINJA_BOY": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/ninja_boy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_TWIN_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/twin_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_TWIN_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/twin_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_RICH_BOY": {
+    "sprites": [
+      "graphics/object_events/pics/people/rich_boy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_GARDENER": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/gardener.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_FAT_MAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/fat_man.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_POKEFAN_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/pokefan_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_AROMA_LADY": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/aroma_lady.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_SHAMISEN_BLUE": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/shamisen_blue.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_SHAMISEN_GREEN": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/shamisen_green.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_SHAMISEN_RED": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/shamisen_red.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_INCENSE_SHOP_KEEPER": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/incense_seller.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_MASQUERAIN_WOMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/masquerain_woman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_BATTLE_GIRL": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/martial_artist_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_EXPERT_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/expert_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_EXPERT_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/expert_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_POKEFAN_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/pokefan_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_COOK": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/cook.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_LINK_RECEPTIONIST": {
+    "sprites": [
+      "graphics/object_events/pics/people/link_receptionist.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_OLD_MAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/woody/old_man.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_woody.gbapal"
+  },
+  "OBJ_EVENT_GFX_OLD_WOMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/woody/old_woman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_woody.gbapal"
+  },
+  "OBJ_EVENT_GFX_MEDIUM": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/medium.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_CAMPER": {
+    "sprites": [
+      "graphics/object_events/pics/people/camper.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_PICNICKER": {
+    "sprites": [
+      "graphics/object_events/pics/people/picnicker.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_YOUNGSTER": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/youngster.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_BUG_CATCHER": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/bug_catcher.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_PSYCHIC_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/psychic_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_SCHOOL_KID_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/school_kid_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_SCHOOL_KID_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/school_kid_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_MANIAC": {
+    "sprites": [
+      "graphics/object_events/pics/people/maniac.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_HEX_MANIAC": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/hex_maniac.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_RAYQUAZA_STILL": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/rayquaza_still.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_SWIMMER_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/swimmer_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_SWIMMER_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/woody/swimmer_swimming_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_woody.gbapal"
+  },
+  "OBJ_EVENT_GFX_BLACK_BELT": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/martial_artist_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_BEAUTY": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/ponyta_woman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_SCIENTIST_1": {
+    "sprites": [
+      "graphics/object_events/pics/people/scientist_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_LASS": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/lass.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_GEM_MANIAC": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/gem_maniac.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_MINER": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/miner.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_BREEDER_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/breeder_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_BREEDER_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/breeder_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_COOLTRAINER": {
+    "sprites": [
+      "graphics/object_events/pics/people/cooltrainer.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_woody.gbapal"
+  },
+  "OBJ_EVENT_GFX_KIMONO_GIRL": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/kimono_girl.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_MONK": {
+    "sprites": [
+      "graphics/object_events/pics/people/woody/monk.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_woody.gbapal"
+  },
+  "OBJ_EVENT_GFX_GENTLEMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/gentleman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAILOR": {
+    "sprites": [
+      "graphics/object_events/pics/people/sailor.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_FISHERMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/fisherman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/running_triathlete_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/running_triathlete_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_TUBER_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/tuber_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_TUBER_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/tuber_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_HIKER": {
+    "sprites": [
+      "graphics/object_events/pics/people/hiker.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/cycling_triathlete_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/cycling_triathlete_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_NURSE": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/nurse.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_ITEM_BALL": {
+    "sprites": [
+      "graphics/object_events/pics/misc/item_ball.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/hearth_ow_item.gbapal"
+  },
+  "OBJ_EVENT_GFX_LUNCHBOX": {
+    "sprites": [
+      "graphics/object_events/pics/misc/lunchbox.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/hearth_ow_item.gbapal"
+  },
+  "OBJ_EVENT_GFX_BERRY_TREE": {
+    "sprites": [],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES": {
+    "sprites": [],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_BERRY_TREE_LATE_STAGES": {
+    "sprites": [],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_BRENDAN_ACRO_BIKE": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/acro_bike.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_KABA": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/kaba.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_ELDER2": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/elder2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_REPORTER_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/reporter_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_REPORTER_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/reporter_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_BARD": {
+    "sprites": [
+      "graphics/object_events/pics/people/mauville_old_man_1.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_ANABEL": {
+    "sprites": [
+      "graphics/object_events/pics/people/frontier_brains/anabel.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_TUCKER": {
+    "sprites": [
+      "graphics/object_events/pics/people/frontier_brains/tucker.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_GRETA": {
+    "sprites": [
+      "graphics/object_events/pics/people/frontier_brains/greta.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_SPENSER": {
+    "sprites": [
+      "graphics/object_events/pics/people/frontier_brains/spenser.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_NOLAND": {
+    "sprites": [
+      "graphics/object_events/pics/people/frontier_brains/noland.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_LUCY": {
+    "sprites": [
+      "graphics/object_events/pics/people/frontier_brains/lucy.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_FARMER": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/farmer.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_woody.gbapal"
+  },
+  "OBJ_EVENT_GFX_FIREBRINGER": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/firebringer.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_BEAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/cold/hariko.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_cold.gbapal"
+  },
+  "OBJ_EVENT_GFX_NATSUKI": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot/natsuki.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_hot.gbapal"
+  },
+  "OBJ_EVENT_GFX_TRAVELING_MERCHANT": {
+    "sprites": [
+      "graphics/object_events/pics/people/traveling_merchant.4bpp"
+    ],
+    "palette": "graphics/trainers/front_pics/traveling_merchant.gbapal"
+  },
+  "OBJ_EVENT_GFX_ONSEN_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/hotspring_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_ONSEN_F_SWIMMING": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/hotspring_f_swimming.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_ONSEN_M_SWIMMING": {
+    "sprites": [
+      "graphics/object_events/pics/people/greenish/hotspring_m_swimming.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_greenish.gbapal"
+  },
+  "OBJ_EVENT_GFX_CUTTABLE_TREE_KURA_DOJO": {
+    "sprites": [
+      "graphics/object_events/pics/misc/cuttable_tree_kura_dojo.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/cuttable_tree_kura_dojo.gbapal"
+  },
+  "OBJ_EVENT_GFX_TRAVELER": {
+    "sprites": [
+      "graphics/object_events/pics/people/woody/traveler.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_woody.gbapal"
+  },
+  "OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/unused_porygon2_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_CUTTABLE_TREE": {
+    "sprites": [
+      "graphics/object_events/pics/misc/cuttable_tree.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/hearth_ow_foliage.gbapal"
+  },
+  "OBJ_EVENT_GFX_MART_EMPLOYEE": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/mart_employee.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/rooftop_sale_woman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_VALET": {
+    "sprites": [
+      "graphics/object_events/pics/people/woody/valet.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_woody.gbapal"
+  },
+  "OBJ_EVENT_GFX_BREAKABLE_ROCK": {
+    "sprites": [
+      "graphics/object_events/pics/misc/breakable_rock.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/hearth_ow_item.gbapal"
+  },
+  "OBJ_EVENT_GFX_PUSHABLE_BOULDER": {
+    "sprites": [
+      "graphics/object_events/pics/misc/pushable_boulder.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/hearth_ow_item.gbapal"
+  },
+  "OBJ_EVENT_GFX_MR_BRINEYS_BOAT": {
+    "sprites": [
+      "graphics/object_events/pics/misc/mr_brineys_boat.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAY_NORMAL": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/walking.4bpp",
+      "graphics/object_events/pics/people/may/running.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAY_MACH_BIKE": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/mach_bike.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAY_ACRO_BIKE": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/acro_bike.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAY_SURFING": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/surfing.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAY_FIELD_MOVE": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/field_move.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_TRUCK": {
+    "sprites": [
+      "graphics/object_events/pics/misc/truck.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/truck.gbapal"
+  },
+  "OBJ_EVENT_GFX_VIGOROTH_CARRYING_BOX": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/vigoroth_mover.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/vigoroth.gbapal"
+  },
+  "OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/vigoroth_mover.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/vigoroth.gbapal"
+  },
+  "OBJ_EVENT_GFX_BIRCHS_BAG": {
+    "sprites": [
+      "graphics/object_events/pics/misc/birchs_bag.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_ZIGZAGOON_1": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/enemy_zigzagoon.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/enemy_zigzagoon.gbapal"
+  },
+  "OBJ_EVENT_GFX_ARTIST": {
+    "sprites": [
+      "graphics/object_events/pics/people/purplish/artist.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/walking.4bpp",
+      "graphics/object_events/pics/people/brendan/running.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_RIVAL_BRENDAN_MACH_BIKE": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/mach_bike.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_RIVAL_BRENDAN_ACRO_BIKE": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/acro_bike.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_RIVAL_BRENDAN_SURFING": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/surfing.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_RIVAL_BRENDAN_FIELD_MOVE": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/field_move.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_RIVAL_MAY_NORMAL": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/walking.4bpp",
+      "graphics/object_events/pics/people/may/running.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_RIVAL_MAY_MACH_BIKE": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/mach_bike.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/acro_bike.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_RIVAL_MAY_SURFING": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/surfing.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_RIVAL_MAY_FIELD_MOVE": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/field_move.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_CAMERAMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/cameraman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_BRENDAN_UNDERWATER": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/underwater.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/player_underwater.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAY_UNDERWATER": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/underwater.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/player_underwater.gbapal"
+  },
+  "OBJ_EVENT_GFX_MOVING_BOX": {
+    "sprites": [
+      "graphics/object_events/pics/misc/moving_box.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/moving_box.gbapal"
+  },
+  "OBJ_EVENT_GFX_CABLE_CAR": {
+    "sprites": [
+      "graphics/object_events/pics/misc/cable_car.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/cable_car.gbapal"
+  },
+  "OBJ_EVENT_GFX_SCIENTIST_2": {
+    "sprites": [
+      "graphics/object_events/pics/people/scientist_2.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_DEVON_EMPLOYEE": {
+    "sprites": [
+      "graphics/object_events/pics/people/devon_employee.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_AQUA_MEMBER_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/team_aqua/aqua_member_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_AQUA_MEMBER_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/team_aqua/aqua_member_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAGMA_MEMBER_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/team_magma/magma_member_m.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAGMA_MEMBER_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/team_magma/magma_member_f.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/crobat_shadows/zubat_m.4bpp",
+      "graphics/object_events/pics/people/crobat_shadows/zubat_m_align.4bpp"
+    ],
+    "palette": "graphics/trainers/front_pics/crobat_shadows/golbat_m.gbapal"
+  },
+  "OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/crobat_shadows/zubat_f.4bpp"
+    ],
+    "palette": "graphics/trainers/front_pics/crobat_shadows/golbat_m.gbapal"
+  },
+  "OBJ_EVENT_GFX_CROBAT_SHADOWS_ADMIN_M": {
+    "sprites": [
+      "graphics/object_events/pics/people/crobat_shadows/golbat_m.4bpp"
+    ],
+    "palette": "graphics/trainers/front_pics/crobat_shadows/golbat_m.gbapal"
+  },
+  "OBJ_EVENT_GFX_CROBAT_SHADOWS_ADMIN_F": {
+    "sprites": [
+      "graphics/object_events/pics/people/crobat_shadows/golbat_f.4bpp"
+    ],
+    "palette": "graphics/trainers/front_pics/crobat_shadows/golbat_m.gbapal"
+  },
+  "OBJ_EVENT_GFX_CROBAT_SHADOWS_BOSS": {
+    "sprites": [
+      "graphics/object_events/pics/people/crobat_shadows/crobat.4bpp",
+      "graphics/object_events/pics/people/crobat_shadows/crobat_cape.4bpp"
+    ],
+    "palette": "graphics/trainers/front_pics/crobat_shadows/crobat.gbapal"
+  },
+  "OBJ_EVENT_GFX_CROBAT_SHADOWS_KEVIN": {
+    "sprites": [
+      "graphics/object_events/pics/people/crobat_shadows/kevin.4bpp",
+      "graphics/object_events/pics/people/crobat_shadows/zubat_m_align.4bpp"
+    ],
+    "palette": "graphics/trainers/front_pics/crobat_shadows/golbat_m.gbapal"
+  },
+  "OBJ_EVENT_GFX_SAMURAI": {
+    "sprites": [
+      "graphics/object_events/pics/people/samurai/samurai.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_purplish.gbapal"
+  },
+  "OBJ_EVENT_GFX_SIDNEY": {
+    "sprites": [
+      "graphics/object_events/pics/people/elite_four/sidney.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_PHOEBE": {
+    "sprites": [
+      "graphics/object_events/pics/people/elite_four/phoebe.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_GLACIA": {
+    "sprites": [
+      "graphics/object_events/pics/people/elite_four/glacia.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_DRAKE": {
+    "sprites": [
+      "graphics/object_events/pics/people/elite_four/drake.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_KOISHI": {
+    "sprites": [
+      "graphics/object_events/pics/people/gym_leaders/koishi.4bpp"
+    ],
+    "palette": "graphics/trainers/front_pics/leader_koishi.gbapal"
+  },
+  "OBJ_EVENT_GFX_HANA": {
+    "sprites": [
+      "graphics/object_events/pics/people/gym_leaders/hana.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/leader_hana.gbapal"
+  },
+  "OBJ_EVENT_GFX_YUTAKA": {
+    "sprites": [
+      "graphics/object_events/pics/people/gym_leaders/yutaka.4bpp"
+    ],
+    "palette": "graphics/trainers/front_pics/leader_yutaka.gbapal"
+  },
+  "OBJ_EVENT_GFX_FLANNERY": {
+    "sprites": [
+      "graphics/object_events/pics/people/gym_leaders/flannery.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_NORMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/gym_leaders/norman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_WINONA": {
+    "sprites": [
+      "graphics/object_events/pics/people/gym_leaders/winona.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_LIZA": {
+    "sprites": [
+      "graphics/object_events/pics/people/gym_leaders/liza.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_TATE": {
+    "sprites": [
+      "graphics/object_events/pics/people/gym_leaders/tate.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_WALLACE": {
+    "sprites": [
+      "graphics/object_events/pics/people/wallace.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_STEVEN": {
+    "sprites": [
+      "graphics/object_events/pics/people/steven.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_WALLY": {
+    "sprites": [
+      "graphics/object_events/pics/people/wally.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_BRENDAN_FISHING": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/fishing.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAY_FISHING": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/fishing.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/hot_springs_old_woman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_SS_TIDAL": {
+    "sprites": [
+      "graphics/object_events/pics/misc/ss_tidal.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/ss_tidal.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUBMARINE_SHADOW": {
+    "sprites": [
+      "graphics/object_events/pics/misc/submarine_shadow.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/submarine_shadow.gbapal"
+  },
+  "OBJ_EVENT_GFX_PICHU_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/pichu_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_PIKACHU_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/pikachu_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_MARILL_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/marill_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_TOGEPI_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/togepi_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_CYNDAQUIL_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/cyndaquil_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_CHIKORITA_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/chikorita_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_TOTODILE_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/totodile_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_JIGGLYPUFF_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/jigglypuff_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_MEOWTH_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/meowth_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_CLEFAIRY_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/clefairy_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_DITTO_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/ditto_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_SMOOCHUM_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/smoochum_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_TREECKO_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/treecko_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_TORCHIC_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/torchic_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_MUDKIP_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/mudkip_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_DUSKULL_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/duskull_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_WYNAUT_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/wynaut_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_BALTOY_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/baltoy_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_KECLEON_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/kecleon_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_AZURILL_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/azurill_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_SKITTY_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/skitty_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_SWABLU_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/swablu_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_GULPIN_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/gulpin_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_LOTAD_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/lotad_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_SEEDOT_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/seedot_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_PIKA_CUSHION": {
+    "sprites": [
+      "graphics/object_events/pics/cushions/pika_cushion.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_ROUND_CUSHION": {
+    "sprites": [
+      "graphics/object_events/pics/cushions/round_cushion.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_KISS_CUSHION": {
+    "sprites": [
+      "graphics/object_events/pics/cushions/kiss_cushion.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_ZIGZAG_CUSHION": {
+    "sprites": [
+      "graphics/object_events/pics/cushions/zigzag_cushion.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_SPIN_CUSHION": {
+    "sprites": [
+      "graphics/object_events/pics/cushions/spin_cushion.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_DIAMOND_CUSHION": {
+    "sprites": [
+      "graphics/object_events/pics/cushions/diamond_cushion.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_BALL_CUSHION": {
+    "sprites": [
+      "graphics/object_events/pics/cushions/ball_cushion.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_GRASS_CUSHION": {
+    "sprites": [
+      "graphics/object_events/pics/cushions/grass_cushion.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_FIRE_CUSHION": {
+    "sprites": [
+      "graphics/object_events/pics/cushions/fire_cushion.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_WATER_CUSHION": {
+    "sprites": [
+      "graphics/object_events/pics/cushions/water_cushion.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_BIG_SNORLAX_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/big_snorlax_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_BIG_RHYDON_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/big_rhydon_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_BIG_LAPRAS_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/big_lapras_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_BIG_VENUSAUR_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/big_venusaur_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_BIG_CHARIZARD_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/big_charizard_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_BIG_BLASTOISE_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/big_blastoise_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_BIG_WAILMER_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/big_wailmer_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_BIG_REGIROCK_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/big_regirock_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_BIG_REGICE_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/big_regice_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_BIG_REGISTEEL_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/big_registeel_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAREEP_DOLL": {
+    "sprites": [
+      "graphics/object_events/pics/dolls/mareep_doll.4bpp"
+    ],
+    "palette": "graphics/object_events/pics/dolls/mareep_doll.gbapal"
+  },
+  "OBJ_EVENT_GFX_LATIAS": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/latias_latios.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_LATIOS": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/latias_latios.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_GAMEBOY_KID": {
+    "sprites": [
+      "graphics/object_events/pics/people/gameboy_kid.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_CONTEST_JUDGE": {
+    "sprites": [
+      "graphics/object_events/pics/people/contest_judge.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_BRENDAN_WATERING": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/watering.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAY_WATERING": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/watering.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_BRENDAN_DECORATING": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/decorating.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAY_DECORATING": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/decorating.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_ARCHIE": {
+    "sprites": [
+      "graphics/object_events/pics/people/team_aqua/archie.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_MAXIE": {
+    "sprites": [
+      "graphics/object_events/pics/people/team_magma/maxie.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_KYOGRE_FRONT": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/kyogre.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_GROUDON_FRONT": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/groudon.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_FOSSIL": {
+    "sprites": [
+      "graphics/object_events/pics/misc/fossil.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_REGIROCK": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/regi.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_REGICE": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/regi.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_REGISTEEL": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/regi.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_SKITTY": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/skitty.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_KECLEON": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/kecleon.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_KYOGRE_ASLEEP": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/kyogre.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/kyogre.gbapal"
+  },
+  "OBJ_EVENT_GFX_GROUDON_ASLEEP": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/groudon.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/groudon.gbapal"
+  },
+  "OBJ_EVENT_GFX_RAYQUAZA": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/rayquaza_cutscene.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_ZIGZAGOON_2": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/zigzagoon.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_PIKACHU": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/pikachu.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_AZUMARILL": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/azumarill.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_WINGULL": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_special/wingull.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_KECLEON_BRIDGE_SHADOW": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/kecleon.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_TUBER_M_SWIMMING": {
+    "sprites": [
+      "graphics/object_events/pics/people/tuber_m_swimming.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_2.gbapal"
+  },
+  "OBJ_EVENT_GFX_AZURILL": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/azurill.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_BIG_SISTER": {
+    "sprites": [
+      "graphics/object_events/pics/people/sunrise/big_sister.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/pal_sunrise.gbapal"
+  },
+  "OBJ_EVENT_GFX_LINK_BRENDAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/brendan/walking.4bpp",
+      "graphics/object_events/pics/people/brendan/running.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_LINK_MAY": {
+    "sprites": [
+      "graphics/object_events/pics/people/may/walking.4bpp",
+      "graphics/object_events/pics/people/may/running.4bpp"
+    ],
+    "palette": "graphics/trainers/palettes/protagonist.gbapal"
+  },
+  "OBJ_EVENT_GFX_JUAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/gym_leaders/juan.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_SCOTT": {
+    "sprites": [
+      "graphics/object_events/pics/people/scott.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_POOCHYENA": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/poochyena.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/poochyena.gbapal"
+  },
+  "OBJ_EVENT_GFX_KYOGRE_SIDE": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/kyogre.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_GROUDON_SIDE": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/groudon.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_MYSTERY_GIFT_MAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/mystery_event_deliveryman.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_1.gbapal"
+  },
+  "OBJ_EVENT_GFX_TRICK_HOUSE_STATUE": {
+    "sprites": [
+      "graphics/object_events/pics/misc/statue.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_4.gbapal"
+  },
+  "OBJ_EVENT_GFX_UNION_ROOM_NURSE": {
+    "sprites": [
+      "graphics/object_events/pics/people/union_room_attendant.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_SUDOWOODO": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/sudowoodo_tree.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_RED": {
+    "sprites": [
+      "graphics/object_events/pics/people/red.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/red_leaf.gbapal"
+  },
+  "OBJ_EVENT_GFX_LEAF": {
+    "sprites": [
+      "graphics/object_events/pics/people/leaf.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/red_leaf.gbapal"
+  },
+  "OBJ_EVENT_GFX_DEOXYS": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/deoxys.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/deoxys.gbapal"
+  },
+  "OBJ_EVENT_GFX_DEOXYS_TRIANGLE": {
+    "sprites": [
+      "graphics/object_events/pics/misc/birth_island_stone.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/birth_island_stone.gbapal"
+  },
+  "OBJ_EVENT_GFX_BRANDON": {
+    "sprites": [
+      "graphics/object_events/pics/people/frontier_brains/brandon.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_LINK_RS_BRENDAN": {
+    "sprites": [
+      "graphics/object_events/pics/people/ruby_sapphire_brendan/walking.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/ruby_sapphire_brendan.gbapal"
+  },
+  "OBJ_EVENT_GFX_LINK_RS_MAY": {
+    "sprites": [
+      "graphics/object_events/pics/people/ruby_sapphire_may/walking.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/ruby_sapphire_may.gbapal"
+  },
+  "OBJ_EVENT_GFX_LUGIA": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/lugia.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/lugia.gbapal"
+  },
+  "OBJ_EVENT_GFX_HOOH": {
+    "sprites": [
+      "graphics/object_events/pics/pokemon_old/ho_oh.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/ho_oh.gbapal"
+  },
+  "OBJ_EVENT_GFX_POKE_BALL": {
+    "sprites": [
+      "graphics/object_events/pics/misc/ball_poke.4bpp"
+    ],
+    "palette": "graphics/object_events/palettes/npc_3.gbapal"
+  },
+  "OBJ_EVENT_GFX_OW_MON": {
+    "sprites": [],
+    "palette": null
+  },
+  "OBJ_EVENT_GFX_LIGHT_SPRITE": {
+    "sprites": [],
+    "palette": null
+  }
+}

@@ -13,6 +13,7 @@
     "sprites": "node build/sprites/itemSpriteGenerator.js",
     "genTrainerSprites": "node build/newSpriteGenerator/generateTrainerSprites.js",
     "objects": "node  build/newSpriteGenerator/processIcons.js",
+    "applyPalettes": "node build/newSpriteGenerator/applyGraphicPalettes.js",
     "trainers": "tsx src/util/findNonTrainerTrainers.ts",
     "missing-exp": "npx tsx src/scripts/logScriptsWithoutExplanations.ts",
     "test": "ava"
