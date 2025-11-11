@@ -6,7 +6,7 @@
     "lib": ["ES2020"], // Include modern JS and DOM APIs
     "outDir": "./build", // Output directory for compiled files
     "rootDir": "./src", // Source directory for TS files
-    // "moduleResolution": "nodenext", // Node.js-style module resolution
+    "moduleResolution": "nodenext", // Node.js-style module resolution
 
     // Strict type-checking
     "strict": true, // Enable all strict type-checking options

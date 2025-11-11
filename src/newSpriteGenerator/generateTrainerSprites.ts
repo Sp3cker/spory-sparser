@@ -2,12 +2,12 @@ import * as fs from "fs";
 import * as path from "path";
 import { PNG } from "pngjs";
 import { PaletteApplier } from "./PaletteApplier.js";
-
+import { config } from "../config/index.js";
 const ROOT = path.resolve(
   path.dirname(decodeURI(new URL(import.meta.url).pathname)),
   "../../"
 );
-const paletteApplier = new PaletteApplier();
+const paletteApplier = new PaletteApplier({ config: config });
 
 function ensureDir(dir: string) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });

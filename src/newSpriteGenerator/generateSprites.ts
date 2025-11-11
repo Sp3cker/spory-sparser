@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import { PaletteApplier } from "./PaletteApplier.js";
-import { config } from "../configReader.ts";
+import { config } from "../config/index.js";
 
 export interface ItemFromJson {
   id: string;
@@ -19,7 +19,7 @@ const ICON_SOURCE_DIR = config.itemIconsDir;
 const ICON_PALETTE_DIR = config.itemPalettesDir;
 const OUTPUT_DIR = config.itemOutputDir;
 const ITEMS_JSON = path.join(config.dataDir, "items.json");
-const paletteApplier = new PaletteApplier();
+const paletteApplier = new PaletteApplier({ config });
 
 function ensureDir(dir: string) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });

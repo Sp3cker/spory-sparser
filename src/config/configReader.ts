@@ -2,7 +2,7 @@ import * as toml from "toml";
 import { z } from "zod";
 import { readFileSync, existsSync } from "fs";
 import { resolve } from "path";
-import { ConfigSchema, type ConfigType } from "./config/configSchema.js";
+import { ConfigSchema, type ConfigType } from "./configSchema.js";
 
 export type { ConfigType };
 

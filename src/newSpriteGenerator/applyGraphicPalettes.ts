@@ -3,9 +3,9 @@
 import { promises as fs } from "fs";
 import * as path from "path";
 import { PaletteApplier } from "./PaletteApplier.js";
-import { config } from "../configReader.ts";
+import { config } from "../config/index.js";
 
-const paletteApplier = new PaletteApplier();
+const paletteApplier = new PaletteApplier({ config });
 const INPUT_ROOT = config.sprites;
 const OUTPUT_ROOT = path.join(config.outputDir, "graphics");
 

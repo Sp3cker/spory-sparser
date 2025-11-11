@@ -1,6 +1,9 @@
 import * as fs from "fs";
 import extractChunks from "png-chunks-extract";
 import encodeChunks from "png-chunks-encode";
+import writePng from "./PaletteApplier.writePng.ts";
+import type { Config } from "../config/index.js";
+/* BEST FUNCTION in this class is `applyPaletteFromFiles` !!!! */
 
 export interface PaletteEntry {
   r: number;
@@ -14,6 +17,7 @@ export interface PaletteApplierOptions {
    * Defaults to 0 which matches how the original assets are authored.
    */
   transparentIndex?: number;
+  config: Config
 }
 
 /**
@@ -22,11 +26,16 @@ export interface PaletteApplierOptions {
  */
 export class PaletteApplier {
   private transparentIndex: number;
+  /*
+  @param folder The name of the folder inside outputDir to write the png
+  @returns The path it came up with to your image.
+  */
+  writePng: (folder: string, fileName: string, data: Buffer) => Promise<string>;
 
-  constructor(options: PaletteApplierOptions = {}) {
+  constructor(options: PaletteApplierOptions) {
     this.transparentIndex = options.transparentIndex ?? 0;
+    this.writePng = writePng(options.config);
   }
-
   /**
    * Parse a JASC-PAL palette file and return its colour entries.
    */
@@ -123,7 +132,7 @@ export class PaletteApplier {
   /**
    * Convenience helper for the common case where both source files live on disk.
    */
-  applyPaletteFromFiles(pngPath: string, palPath: string): Buffer {
+  public applyPaletteFromFiles(pngPath: string, palPath: string): Buffer {
     const palette = this.readPalette(palPath);
     const pngBuffer = fs.readFileSync(pngPath);
     return this.applyPalette(pngBuffer, palette);

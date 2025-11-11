@@ -14,9 +14,9 @@ import {
 import { logger } from "./util/logger.ts";
 
 
-import { config } from "./configReader.ts";
+import { config } from "./config/index.js";
 import { IncScriptEvent } from "./parseMaps/incParser.ts";
-import mergeTrainers from "./mergeTrainerData.ts";
+// import mergeTrainers from "./mergeTrainerData.ts";
 
 /**
  * Combined trainer data from maps.json and trainers_flat.json
@@ -256,10 +256,10 @@ const mergeDataByLevelsID = async ({
     const trainersFlat: Record<string, TrainerStruct> = extractTrainers(
       config.dataDir,
       trainerParties,
-      config.,
+      config.dataDir,
       config.outputDir,
     );
-
+console.log(trainersFlat)
     // Ensure output directory exists
     mkdirSync(path.join(config.outputDir), { recursive: true });
 
