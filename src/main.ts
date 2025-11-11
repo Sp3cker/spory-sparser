@@ -4,12 +4,12 @@ import { writeFile, readFile } from "fs/promises";
 import { findMartSectionsByLevel, Mart, MartEntry } from "./parseMarts.ts";
 import  findGiveItemsByLevel, { LevelIncData } from "./parseMaps/index.ts";
 import { main } from "./parseMapEvents.ts";
-import { extractTrainers } from "./parseMaps/Trainers/extractTrainersFromHeaderFile.ts";
+// import { extractTrainers } from "./parseMaps/Trainers/extractTrainersFromHeaderFile.ts";
 // 
 
 import {
   MapEventPlace,
-   TrainerStruct
+  //  TrainerStruct
 } from "./validators/index.ts";
 import { logger } from "./util/logger.ts";
 
@@ -232,7 +232,7 @@ const mergeDataByLevelsID = async ({
 };
 
 (async () => {
-  // Call the functions here as needed
+
   try {
     // const rootDir = process.cwd();
     // const directoryPath = path.join(rootDir, "maps");
@@ -243,23 +243,23 @@ const mergeDataByLevelsID = async ({
     // }
 
     const encountersData = JSON.parse(
-      await readFile(path.join(config.dataDir, "cleanEncounters.json"), "utf8")
-    );
+      await readFile(path.join(config.dataDir, "wild_encounters.json"), "utf8")
+    )['wild_encounter_groups'][0]['encounters'];
     const encountersMap = new Map<string, any>(
       encountersData.map((enc: any) => [enc.map, enc])
     );
     // --- Trainer & party extraction ----------------------------------
-    const trainerParties = await readFile(
-      path.join(config.dataDir, "trainer_parties.json"),
-      "utf8",
-    ).then(JSON.parse);
-    const trainersFlat: Record<string, TrainerStruct> = extractTrainers(
-      config.dataDir,
-      trainerParties,
-      config.dataDir,
-      config.outputDir,
-    );
-console.log(trainersFlat)
+    // const trainerParties = await readFile(
+    //   path.join(config.dataDir, "trainer_parties.json"),
+    //   "utf8",
+    // ).then(JSON.parse);
+    // const trainersFlat: Record<string, TrainerStruct> = extractTrainers(
+    //   config.dataDir,
+    //   trainerParties,
+    //   config.dataDir,
+    //   config.outputDir,
+    // );
+// console.log(trainersFlat)
     // Ensure output directory exists
     mkdirSync(path.join(config.outputDir), { recursive: true });
 
@@ -276,7 +276,7 @@ console.log(trainersFlat)
       config.mapsDir,
       config.miscScriptsDir
     );
-
+debugger
     // Parse map events
     const mapEvents = await main(config.mapsDir);
     debugger;

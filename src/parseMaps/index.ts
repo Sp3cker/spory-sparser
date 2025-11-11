@@ -2,7 +2,6 @@ import { Dirent, existsSync, readFileSync, readdirSync } from "fs";
 import * as path from "path";
 import { getLevelLabel, getBasemapID, getMapJsonId } from "../helpers.ts";
 import { parseScriptedEvents } from "./incParser.ts";
-import { parseTrainerBattles } from "./Trainers/trainerInc.ts";
 import {
   LevelIncDataSchema,
   LevelIncData,
@@ -12,6 +11,7 @@ import {
   IncWildMon,
 } from "../validators/levelIncData.js";
 import { baseMapisizeMiscScripts } from "./baseMapisizeMiscScripts.ts";
+
 /** In this file we orchestrate parsing of the configured `maps` directory
  * and the `miscScripts` directory.
  *
@@ -19,16 +19,18 @@ import { baseMapisizeMiscScripts } from "./baseMapisizeMiscScripts.ts";
  */
 const processIncFile = async (incFileContent: string) => {
   try {
-    const scriptedGiveEvents = parseScriptedEvents(incFileContent);
-    const trainerBattles = parseTrainerBattles(incFileContent);
+    const { scriptedGiveEvents, trainerRefs } =
+      parseScriptedEvents(incFileContent);
+    // Trainers should be put into `parseScriptedEvents...`
+    // const trainerBattles = parseTrainerBattles(incFileContent);
 
     IncDataSchema.parse({
       scriptedGives: scriptedGiveEvents,
-      trainerRefs: trainerBattles,
+      trainerRefs: trainerRefs,
     });
     return {
       scriptedGives: scriptedGiveEvents,
-      trainerRefs: trainerBattles,
+      trainerRefs: trainerRefs,
     };
   } catch (error) {
     throw new Error(
@@ -107,8 +109,8 @@ export default async function findGiveItemsByLevel(
   mapsPath: string,
   miscScriptsPath?: string
 ): Promise<LevelIncData[]> {
-  const folders = readdirSync(mapsPath, { withFileTypes: true }).filter((entry) =>
-    entry.isDirectory()
+  const folders = readdirSync(mapsPath, { withFileTypes: true }).filter(
+    (entry) => entry.isDirectory()
   );
   const mapLevels = await processMapsDirectory(mapsPath, folders);
 

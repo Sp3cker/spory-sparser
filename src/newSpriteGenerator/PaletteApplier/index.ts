@@ -1,0 +1,1 @@
+export { PaletteApplier } from "./PaletteApplier.js";

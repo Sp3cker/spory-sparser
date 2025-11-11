@@ -12,6 +12,7 @@ export const IncTrainerSchema = z.object({
   id: z.string(),
   script: z.string(),
   rematch: z.boolean().optional(),
+  battlePicPath: z.string(),
 });
 /** Item given to player in .inc file */
 export const IncItemEntrySchema = z.object({

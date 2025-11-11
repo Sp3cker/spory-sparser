@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import { PNG } from "pngjs";
-import { PaletteApplier } from "./PaletteApplier.js";
+import { PaletteApplier } from "./PaletteApplier/PaletteApplier.ts";
 import { config } from "../config/index.js";
 const ROOT = path.resolve(
   path.dirname(decodeURI(new URL(import.meta.url).pathname)),

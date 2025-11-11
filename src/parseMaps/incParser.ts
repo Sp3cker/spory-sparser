@@ -10,6 +10,7 @@ import pokemonData from "../../gameData/speciesData.json" with { type: "json" };
 import { splitRawSection } from "./pory/splitRawSection.ts";
 import { parsePoryscriptFunctions } from "./pory/extractPoryScripts.ts";
 import { findStringLineNumber } from "../util/findStringLineNumber.ts";
+import { parseTrainerBattlesSCRIPT } from "./Trainers/trainerInc.ts";
 // import { config } from "../configReader.ts"; // Used to get path to maps to make dir when errors
 
 const normalizeName = (str: string): string => {
@@ -350,7 +351,7 @@ function extractIncScriptBlocks(
 }
 
 /**
- * Main parser function for .inc files
+ * Main parser function for .inc and .pory files
  * Pass the parsed file.
  *
  * After parsing an inc:
@@ -383,6 +384,9 @@ export function parseScriptedEvents(content: string) {
 
   const results: IncScriptEvent[] = [];
 
+  const trainerRefs = scriptBlocks.flatMap(script => {
+    return parseTrainerBattlesSCRIPT(script.name, script.content);
+  })
   for (const block of filteredScripts) {
     const event = new IncScriptEvent(block.name);
     event.parseFromContent(block.content);
@@ -505,12 +509,12 @@ export function parseScriptedEvents(content: string) {
     }
   }
 
-  const finalResults = [
+  const scriptedGiveEvents = [
     ...groupedByExplanation.values(),
     ...scriptsWithoutExplanation,
   ];
 
-  for (const script of finalResults) {
+  for (const script of scriptedGiveEvents) {
     // Consolidate items within each script (in case there are still duplicates)
     const consolidatedItems: IncItemEntry[] = [];
     for (const item of script.items) {
@@ -526,5 +530,5 @@ export function parseScriptedEvents(content: string) {
     script.items = consolidatedItems;
   }
 
-  return finalResults;
+  return {scriptedGiveEvents, trainerRefs};
 }

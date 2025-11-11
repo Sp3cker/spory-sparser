@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { PaletteApplier } from "./PaletteApplier.js";
+import { PaletteApplier } from "./PaletteApplier/PaletteApplier.ts";
 import { config } from "../config/index.js";
 
 export interface ItemFromJson {
