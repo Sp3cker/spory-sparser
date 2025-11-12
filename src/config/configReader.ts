@@ -12,7 +12,7 @@ export class Config {
   public readonly rootDir: string = process.cwd();
   public readonly mapsDir: string;
   public readonly outputDir: string;
-  public readonly miscScriptsDir: string;
+  public readonly miscScriptsDir?: string;
 
   public readonly trainerPalettesDir: string;
   public readonly trainerFrontPicsDir: string;
@@ -42,7 +42,7 @@ export class Config {
       this.sprites = this.resolveDir(dirs.sprites);
       this.mapsDir = this.resolveDir(dirs.maps);
       this.outputDir = this.resolveDir(dirs.output);
-      this.miscScriptsDir = this.resolveDir(dirs.miscScripts);
+      this.miscScriptsDir = dirs.miscScripts ? this.resolveDir(dirs.miscScripts) : undefined;
 
       const trainerSpritesDir = resolve(this.sprites, "trainers");
       this.trainerFrontPicsDir = resolve(trainerSpritesDir, "front_pics");
@@ -79,7 +79,7 @@ export class Config {
    * @throws Error if any directory doesn't exist
    */
   private validateDirectoriesExist(): void {
-    const directories = {
+    const directories: Record<string, string> = {
       dataDir: this.dataDir,
       spritesRoot: this.sprites,
 
@@ -91,8 +91,12 @@ export class Config {
       pokemonSprites: this.pokemonSpritesDir,
       maps: this.mapsDir,
       generated: resolve(this.rootDir, "generated"),
-      miscScripts: this.miscScriptsDir,
     };
+
+    // Only validate miscScripts if it's defined
+    if (this.miscScriptsDir) {
+      directories.miscScripts = this.miscScriptsDir;
+    }
 
     const missingDirectories: string[] = [];
 

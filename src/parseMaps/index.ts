@@ -11,6 +11,7 @@ import {
   IncWildMon,
 } from "../validators/levelIncData.js";
 import { baseMapisizeMiscScripts } from "./baseMapisizeMiscScripts.ts";
+import { parsePoryscriptMarts } from "./pory/parseMarts.ts";
 
 /** In this file we orchestrate parsing of the configured `maps` directory
  * and the `miscScripts` directory.
@@ -80,6 +81,7 @@ async function processMapsDirectory(mapPath: string, folders: Dirent[]) {
         path.join(parentFolderPath, "map.json")
       );
       const result = await processIncFile(content);
+      const marts = parsePoryscriptMarts(content, parentFolderPath);
 
       // const wildMons = parseWildMon(content);
       const baseMap = await getBasemapID(parentFolderPath);
@@ -90,7 +92,7 @@ async function processMapsDirectory(mapPath: string, folders: Dirent[]) {
       // );
       const toPush = {
         ...result,
-
+        marts,
         baseMap,
         thisLevelsId,
         levelLabel,
@@ -105,10 +107,10 @@ async function processMapsDirectory(mapPath: string, folders: Dirent[]) {
   return results;
 }
 
-export default async function findGiveItemsByLevel(
+export default async (
   mapsPath: string,
   miscScriptsPath?: string
-): Promise<LevelIncData[]> {
+): Promise<LevelIncData[]> => {
   const folders = readdirSync(mapsPath, { withFileTypes: true }).filter(
     (entry) => entry.isDirectory()
   );
@@ -130,12 +132,13 @@ export default async function findGiveItemsByLevel(
           thisLevelsId: "MAP_MISC",
           scriptedGives,
           trainerRefs,
+          marts: [],
         });
       }
     }
   }
 
   return mapLevels;
-}
+};
 
 export { LevelIncData };

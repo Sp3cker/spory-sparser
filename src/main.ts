@@ -1,21 +1,18 @@
 import path from "path";
 import { mkdirSync } from "fs";
 import { writeFile, readFile } from "fs/promises";
-import { findMartSectionsByLevel, Mart, MartEntry } from "./parseMarts.ts";
-import  findGiveItemsByLevel, { LevelIncData } from "./parseMaps/index.ts";
-import { main } from "./parseMapEvents.ts";
+
+import findGiveItemsByLevel, { LevelIncData } from "./parseMaps/index.ts";
+import parseMapEvents from "./parseMaps/overworld/parseMapEvents.ts";
 // import { extractTrainers } from "./parseMaps/Trainers/extractTrainersFromHeaderFile.ts";
-// 
+//
 
-import {
-  MapEventPlace,
-  //  TrainerStruct
-} from "./validators/index.ts";
+import { MapEventPlace, Mart } from "./validators/index.ts";
 import { logger } from "./util/logger.ts";
-
 
 import { config } from "./config/index.js";
 import { IncScriptEvent } from "./parseMaps/incParser.ts";
+
 // import mergeTrainers from "./mergeTrainerData.ts";
 
 /**
@@ -48,7 +45,6 @@ type GroupedData = Record<string, MergedData[]>;
 type GroupedDataOutput = Record<string, Omit<MergedData, "trainers">[]>;
 
 interface MergeDataParams {
-  martsData: MartEntry[];
   mapsData: LevelIncData[];
   pickupItemsAndTrainers: MapEventPlace[];
   /** Data from `trainers_flat */
@@ -59,7 +55,6 @@ interface MergeDataParams {
 const prettyPrint = (data: any): string => JSON.stringify(data, null, 2);
 
 const mergeDataByLevelsID = async ({
-  martsData,
   mapsData,
   pickupItemsAndTrainers,
   // trainersFlat,
@@ -68,19 +63,26 @@ const mergeDataByLevelsID = async ({
   groupedData: GroupedDataOutput;
   groupedTrainers: Record<string, Trainer[]>;
 }> => {
+  const TrainersFromJsonMap = new Map<string, any>();
+  await readFile(path.join(config.dataDir, "trainers.json"), "utf8").then(
+    (data) => {
+      const temp = JSON.parse(data);
+      for (const trainer of temp) {
+        TrainersFromJsonMap.set(trainer.id, trainer);
+      }
+    }
+  );
   const mergedData: MergedData[] = mapsData
     .map((mapEntry) => {
       const { thisLevelsId } = mapEntry;
+      const hasEncountersThereforNeeded = encountersMap.has(thisLevelsId);
 
-      const martEntry = martsData.find(
-        (mart) => mart.thisLevelsId === thisLevelsId
-      );
       // Things found in `map.json`
       const pickupEntry = pickupItemsAndTrainers.find(
         (pickup) => pickup.thisLevelsId === thisLevelsId
       );
 
-      if (!martEntry || !pickupEntry) {
+      if (!mapEntry || !pickupEntry) {
         logger.warn(`Missing data for thisLevelsId: ${thisLevelsId}`);
         return null; // Return null to be filtered out later
       }
@@ -96,17 +98,29 @@ const mergeDataByLevelsID = async ({
       //       y: t.coords[1],
       //       sprite: t.graphics_id,
       //     });
+      //   }
       // }
-      /** Here we match up trainers from the .inc file
-       * with trainers from the header file.
-       * We also get their overworld sprite here from the map.json.
-       * We also move the `rematch` prop from `trainerRefs` to the trainer object
+      /** Here we match up trainers from the .inc/.pory file
+       * with trainers from the header/party file.
+       * Their overworld sprite graphic is already on the pickup entry.
        * */
-      // const trainersAlsoInMapJson = mapEntry.trainerRefs
-      //   .map((incTrainer) =>
-      //     mergeTrainers(incTrainer, trainersFlat, thisLevelsId, pickupEntry)
-      //   )
-      //   .filter((trainer) => trainer !== null) as Trainer[];
+      for (const [index, incTrainer] of mapEntry.trainerRefs.entries()) {
+        const trainerJsonData = TrainersFromJsonMap.get(incTrainer.id);
+        if (!trainerJsonData) {
+          logger.warn(
+            `Trainer ID ${incTrainer.id} from map ${thisLevelsId} not found in trainers.json`
+          );
+          return null;
+        }
+        mapEntry.trainerRefs[index] = {
+          sprite: pickupItemsAndTrainers
+            .find((level) => level.thisLevelsId === thisLevelsId)
+            ?.trainers?.find((tr) => tr.script === incTrainer.script)
+            ?.graphics_id,
+          ...trainerJsonData,
+          ...incTrainer,
+        };
+      }
 
       /** filter out battles with same ID. Generally these get in here
        * because of double battles. When there are duplicates, prioritize keeping
@@ -144,7 +158,7 @@ const mergeDataByLevelsID = async ({
         thisLevelsId: mapEntry.thisLevelsId,
         baseMap: mapEntry.baseMap,
         levelLabel: mapEntry.levelLabel,
-        shopItems: martEntry.marts,
+        shopItems: mapEntry.marts,
         pickupItems: pickupEntry.pickupItems || [],
         scriptedGives: mapEntry.scriptedGives || [],
         image: pickupEntry.imageName,
@@ -155,15 +169,17 @@ const mergeDataByLevelsID = async ({
       // Filter out places that don't have any meaningful content
       // like the Battle Frontier...
       const hasShopItems = result.shopItems && result.shopItems.length > 0;
-      const hasPickupItems = result.pickupItems && result.pickupItems.length > 0;
-      const hasTrainerRefs = result.trainerRefs && result.trainerRefs.length > 0;
-      const hasEncounters = encountersMap.has(result.thisLevelsId);
+      const hasPickupItems =
+        result.pickupItems && result.pickupItems.length > 0;
+      const hasTrainerRefs =
+        result.trainerRefs && result.trainerRefs.length > 0;
+
       const hasScriptedGives = result.scriptedGives.length > 0;
       if (
         !hasShopItems &&
         !hasPickupItems &&
         !hasTrainerRefs &&
-        !hasEncounters &&
+        !hasEncountersThereforNeeded &&
         !hasScriptedGives
       ) {
         return null; // Skip empty locations (no shops, items, trainers, or encounters)
@@ -211,8 +227,8 @@ const mergeDataByLevelsID = async ({
   // This will become `trainers.json`
   const trainersOnMapDictionary: Record<string, Trainer[]> = {};
   // for (const [map, levels] of Object.entries(groupedData)) {
-  // const trainersOnMap = levels.flatMap((lvl) => lvl.trainers || []);
-  // if (trainersOnMap.length) trainersOnMapDictionary[map] = trainersOnMap;
+  //   const trainersOnMap = levels.flatMap((lvl) => lvl.trainers || []);
+  //   if (trainersOnMap.length) trainersOnMapDictionary[map] = trainersOnMap;
   // }
 
   // Strip `trainers` before returning groupedData
@@ -232,7 +248,6 @@ const mergeDataByLevelsID = async ({
 };
 
 (async () => {
-
   try {
     // const rootDir = process.cwd();
     // const directoryPath = path.join(rootDir, "maps");
@@ -244,22 +259,23 @@ const mergeDataByLevelsID = async ({
 
     const encountersData = JSON.parse(
       await readFile(path.join(config.dataDir, "wild_encounters.json"), "utf8")
-    )['wild_encounter_groups'][0]['encounters'];
+    )["wild_encounter_groups"][0]["encounters"];
     const encountersMap = new Map<string, any>(
       encountersData.map((enc: any) => [enc.map, enc])
     );
     // --- Trainer & party extraction ----------------------------------
     // const trainerParties = await readFile(
     //   path.join(config.dataDir, "trainer_parties.json"),
-    //   "utf8",
+    //   "utf8"
     // ).then(JSON.parse);
+    // new scriptedGive format already has the path to the battle pic
     // const trainersFlat: Record<string, TrainerStruct> = extractTrainers(
     //   config.dataDir,
     //   trainerParties,
     //   config.dataDir,
-    //   config.outputDir,
+    //   config.outputDir
     // );
-// console.log(trainersFlat)
+    // console.log(trainersFlat)
     // Ensure output directory exists
     mkdirSync(path.join(config.outputDir), { recursive: true });
 
@@ -269,23 +285,21 @@ const mergeDataByLevelsID = async ({
     // );
 
     // Find and log mart sections
-    const martSections = await findMartSectionsByLevel(config.mapsDir);
 
     // Find and log give items by level
     const scriptedGives = await findGiveItemsByLevel(
       config.mapsDir,
       config.miscScriptsDir
     );
-debugger
+
     // Parse map events
-    const mapEvents = await main(config.mapsDir);
-    debugger;
+    const mapEvents = await parseMapEvents(config.mapsDir);
+
     // Merge all data in memory
     const { groupedData, groupedTrainers } = await mergeDataByLevelsID({
-      martsData: martSections,
       mapsData: scriptedGives,
       pickupItemsAndTrainers: mapEvents,
-      // trainersFlat,
+
       encountersMap,
     });
 

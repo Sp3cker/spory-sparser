@@ -43,9 +43,14 @@ export const IncScriptedEventSchema = z.object({
   pokemon: z.array(IncPokemonEntrySchema).optional(),
   wildMon: z.array(WildMonSchema).optional(),
 });
+export const MartSchema = z.object({
+  label: z.string(),
+  items: z.array(z.string()),
+});
 export const IncDataSchema = z.object({
   scriptedGives: z.array(IncScriptedEventSchema),
   trainerRefs: z.array(IncTrainerSchema),
+  marts: z.array(MartSchema).optional(),
 });
 
 export const LevelIncDataSchema = IncDataSchema.extend({
@@ -62,3 +67,4 @@ export type IncScriptEvent = z.infer<typeof IncScriptedEventSchema>;
 export type IncItemEntry = z.infer<typeof IncItemEntrySchema>;
 export type IncPokemonEntry = z.infer<typeof IncPokemonEntrySchema>;
 export type IncWildMon = z.infer<typeof WildMonSchema>;
+export type Mart = z.infer<typeof MartSchema>;

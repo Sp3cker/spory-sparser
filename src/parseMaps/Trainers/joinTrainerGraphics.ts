@@ -7,8 +7,11 @@ import { z } from "zod";
 
 import { PaletteApplier } from "../../newSpriteGenerator/PaletteApplier/PaletteApplier.ts";
 import type { Config } from "../../config/index.ts";
-/* This will build into `trainers.json`
-This has the trainer overworld_sprite as a path to the PNG, 
+/*
+
+This is ran on-import in `trainerInc.ts` 
+
+It returns a Map of trainer overworld_sprite as a path to the PNG,
 and the in-battle sprite path as a PNG, palette applied.
 */
 
@@ -63,7 +66,6 @@ export default async (config: Config) => {
   const paletteApplier = new PaletteApplier({ config: config });
   const trainersWithBattlePath = new Map<string, string>();
   // 1. Map through `validTrainerGraphics`, applying trainer palette to it's sprite
-  // `TrainersWithPngPaths[overworldSprite] will still be undefined when it leaves this loop`
   for await (const trainerGraphic of validTrainerGraphics) {
     const { frontPic, palette } = trainerGraphic;
     const frontPicRealPath = frontPic.replace(/(.*?)\.4bpp\.smol/, "$1.png");

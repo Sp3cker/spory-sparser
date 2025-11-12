@@ -3,9 +3,6 @@ import { join } from "path";
 import { Jimp } from "jimp";
 import { SpriteProcessor, ProcessingRule } from "./SpriteProcessor.js";
 
-const UPSCALED_PEOPLE_DIR = "generated/people";
-const GENERATED_FRAMES_DIR = "generated/frames";
-
 // Exception files that are 288px wide with 32px frames
 const EXCEPTION_FILES = [
   "candice.png",
@@ -22,10 +19,7 @@ export class CharacterSpriteProcessor extends SpriteProcessor {
   private sourceDirPath: string;
   private outputDirPath: string;
 
-  constructor(
-    sourceDirPath: string = UPSCALED_PEOPLE_DIR,
-    outputDirPath: string = GENERATED_FRAMES_DIR
-  ) {
+  constructor(sourceDirPath: string, outputDirPath: string) {
     super();
     this.sourceDirPath = sourceDirPath;
     this.outputDirPath = outputDirPath;
@@ -64,18 +58,19 @@ export class CharacterSpriteProcessor extends SpriteProcessor {
     }
 
     // Handle exception files (288px wide)
-    if (EXCEPTION_FILES.includes(filename)) {
-      if (width !== 288) {
-        throw new Error(
-          `Exception file ${filename} should be 288px wide, got ${width}px`
-        );
-      }
+    // if (EXCEPTION_FILES.includes(filename)) {
+    // if (width !== 288) {
+    //   throw new Error(
+    //     `Exception file ${filename} should be 288px wide, got ${width}px`
+    //   );
+    // }
+    if (width === 288) {
       return {
         width: 288,
         height: 32,
         frameWidth: 32,
         frameCount: 9, // 288 / 32 = 9 frames
-        framesToExtract: [0, 3, 4, 0], // 1st, 4th, 5th frames (0-indexed)
+        framesToExtract: [0, 3, 0, 4], // 1st, 4th, 5th frames (0-indexed)
       };
     }
 
@@ -158,7 +153,9 @@ export class CharacterSpriteProcessor extends SpriteProcessor {
             8
           );
           // Replace the temp file with the padded version
-          await this.execImageMagick(`mv "${paddedFramePath}" "${tempFramePath}"`);
+          await this.execImageMagick(
+            `mv "${paddedFramePath}" "${tempFramePath}"`
+          );
         }
 
         // For exception files and 96x32 sprites, center crop from 32px to 16px width
@@ -178,7 +175,9 @@ export class CharacterSpriteProcessor extends SpriteProcessor {
             0
           );
           // Replace the temp file
-          await this.execImageMagick(`mv "${tempCroppedPath}" "${tempFramePath}"`);
+          await this.execImageMagick(
+            `mv "${tempCroppedPath}" "${tempFramePath}"`
+          );
         }
 
         // Crop top 8 pixels to get final 24px height
@@ -298,6 +297,6 @@ export class CharacterSpriteProcessor extends SpriteProcessor {
 
 // Export the main function for backward compatibility
 export async function processAllSprites(): Promise<void> {
-  const processor = new CharacterSpriteProcessor();
+  const processor = new CharacterSpriteProcessor("temp", "temp");
   await processor.processAllSprites();
 }

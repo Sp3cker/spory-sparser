@@ -3,7 +3,7 @@ maps = "/maps"
 data = "/gameData"
 sprites = "/graphics"
 output = "/generated"
-miscScripts = "/_scripts"
+# miscScripts = undefined
 
 [scriptNamesToLevels]
 PLAYERSHOUSE = "LITTLEROOT_TOWN"

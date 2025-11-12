@@ -9,20 +9,22 @@ const writePng =
     const outPath = path.resolve(config.outputDir, folder, filePath);
     const dir = path.dirname(outPath);
     
+    const relativePath = path.join(folder, filePath);
+
     // Check if file already exists
     try {
       await access(outPath, constants.F_OK);
       // File exists, skip writing
-      return outPath;
+      return relativePath;
     } catch {
       // File doesn't exist, proceed with writing
     }
-    
+
     // Create directory if it doesn't exist
     await mkdir(dir, { recursive: true });
-    
+
     await writeFile(outPath, data);
-    return path.join(folder, filePath);
+    return relativePath;
   };
 
 export default writePng;
