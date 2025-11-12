@@ -2,7 +2,9 @@ import { promises as fs } from "fs";
 import { join } from "path";
 import { Jimp } from "jimp";
 import { SpriteProcessor, ProcessingRule } from "./SpriteProcessor.js";
-
+/**
+ * Run this file/class in a CLI to process all character sprites
+ */
 // Exception files that are 288px wide with 32px frames
 const EXCEPTION_FILES = [
   "candice.png",
@@ -140,6 +142,10 @@ export class CharacterSpriteProcessor extends SpriteProcessor {
           startX,
           0
         );
+        // Upscale the raw frame 2× with nearest-neighbour
+        await this.execImageMagick(
+          `magick "${tempFramePath}" -filter point -resize 200% "${tempFramePath}"`
+        );
 
         // Add padding for 16px tall sprites to make them 32px tall
         if (rule.needsPadding) {
@@ -193,24 +199,31 @@ export class CharacterSpriteProcessor extends SpriteProcessor {
           8
         );
 
-        tempFrames.push(finalCropPath);
+        // Option 1: upscale after all cropping (keeps cropping math intact).
+        const upscaledPath = this.generateTempPath(`upscaled_${i}`);
+        await this.execImageMagick(
+          `magick "${finalCropPath}" -filter point -resize 200% "${upscaledPath}"`
+        );
+
+        tempFrames.push(upscaledPath);
 
         // Clean up intermediate temp file
         await this.execImageMagick(`rm -f "${tempFramePath}"`);
+        await this.execImageMagick(`rm -f "${finalCropPath}"`);
       }
 
       // Add padding to each frame and prepare for animated WEBP creation
-      const frameWidthWithPadding = 32; // 16px frame + 8px padding on each side
-      const frameHeightWithPadding = 40; // 24px frame + 8px padding on top and bottom
+      const frameWidthWithPadding = 64; // 32px frame + 16px padding on each side after scaling
+      const frameHeightWithPadding = 80; // 48px frame + 16px padding on top and bottom
 
       for (let i = 0; i < tempFrames.length; i++) {
-        // Create padded frame with 8px padding on all sides
+        // Create padded frame with 16px padding on all sides after scaling
         const paddedFramePath = this.generateTempPath(`padded_final_${i}`);
 
         // For 144px sprites, the 1st frame needs to be 2px lower
-        let frameY = 8; // 8px top padding (default)
+        let frameY = 16; // 16px top padding (default after 2x scaling)
         if (rule.width === 144 && rule.framesToExtract[i] === 0) {
-          frameY = 9; // 2px lower for the first frame of 144px sprites
+          frameY = 18; // 2px lower for the first frame of 144px sprites
         }
 
         await this.addPadding(
@@ -218,7 +231,7 @@ export class CharacterSpriteProcessor extends SpriteProcessor {
           paddedFramePath,
           frameWidthWithPadding,
           frameHeightWithPadding,
-          8,
+          16,
           frameY
         );
 
