@@ -17,7 +17,7 @@ and the in-battle sprite path as a PNG, palette applied.
 
 /** === MARK: Schemas === */
 
-const TrainerGraphicsSchema = z
+export const TrainerGraphicsSchema = z
   .object({
     trainerClass: z.string(),
     pic: z.string(),

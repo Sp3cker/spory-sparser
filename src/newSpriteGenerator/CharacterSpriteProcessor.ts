@@ -1,7 +1,9 @@
 import { promises as fs } from "fs";
-import { join } from "path";
-import { Jimp } from "jimp";
-import { SpriteProcessor, ProcessingRule } from "./SpriteProcessor.js";
+import { basename, join } from "path";
+import {
+  PeopleSpriteProcessorBase,
+  type PeopleSpriteRule,
+} from "./PeopleSpriteProcessorBase.ts";
 /**
  * Run this file/class in a CLI to process all character sprites
  */
@@ -12,29 +14,19 @@ const EXCEPTION_FILES = [
   "cycling_triathlete_m.png",
 ];
 
-interface SpriteProcessingRule extends ProcessingRule {
-  repeatedFrameCount?: number; // Number of repeated frames to create for 48px sprites
-  needsPadding?: boolean; // For 16px tall sprites that need transparent padding
-}
-
-export class CharacterSpriteProcessor extends SpriteProcessor {
-  private sourceDirPath: string;
-  private outputDirPath: string;
-
+export class CharacterSpriteProcessor extends PeopleSpriteProcessorBase {
   constructor(sourceDirPath: string, outputDirPath: string) {
-    super();
-    this.sourceDirPath = sourceDirPath;
-    this.outputDirPath = outputDirPath;
+    super(sourceDirPath, outputDirPath, EXCEPTION_FILES);
   }
 
   /**
    * Get processing rule for a sprite based on its dimensions and filename
    */
-  private getSpriteRule(
+  protected getSpriteRule(
     filename: string,
     width: number,
     height: number
-  ): SpriteProcessingRule {
+  ): PeopleSpriteRule {
     // Handle 16px tall sprites by adding transparent padding
     if (height === 16) {
       if (width !== 144) {
@@ -115,183 +107,78 @@ export class CharacterSpriteProcessor extends SpriteProcessor {
     );
   }
 
-  /**
-   * Process sprite frames with complex logic for different sprite types
-   */
-  async processSpriteFrames(
-    inputPath: string,
-    outputPath: string,
-    rule: SpriteProcessingRule
-  ): Promise<void> {
-    const tempFrames: string[] = [];
-    const finalFramePaths: string[] = [];
+  protected async processSpriteFile(filePath: string): Promise<void> {
+    const filename = basename(filePath);
+    const { width, height } = await this.readImageDimensions(filePath);
+    const rule = this.getSpriteRule(filename, width, height);
+
+    console.log(`Processing ${filename} (${width}x${height})`);
+
+    const normalizedFrames = await this.extractNormalizedFrames(
+      filePath,
+      filename,
+      rule
+    );
+    const paddedFrames: string[] = [];
 
     try {
-      // Extract frames using ImageMagick to preserve transparency
-      for (let i = 0; i < rule.framesToExtract.length; i++) {
-        const frameIndex = rule.framesToExtract[i];
-        const startX = frameIndex * rule.frameWidth;
-        const tempFramePath = this.generateTempPath(`frame_${i}`);
-
-        // Extract frame with ImageMagick, preserving alpha
-        await this.extractRegion(
-          inputPath,
-          tempFramePath,
-          rule.frameWidth,
-          rule.height,
-          startX,
-          0
-        );
-        // Upscale the raw frame 2× with nearest-neighbour
-        await this.execImageMagick(
-          `magick "${tempFramePath}" -filter point -resize 200% "${tempFramePath}"`
-        );
-
-        // Add padding for 16px tall sprites to make them 32px tall
-        if (rule.needsPadding) {
-          const paddedFramePath = this.generateTempPath(`padded_${i}`);
-          await this.addPadding(
-            tempFramePath,
-            paddedFramePath,
-            rule.frameWidth,
-            32,
-            0,
-            8
-          );
-          // Replace the temp file with the padded version
-          await this.execImageMagick(
-            `mv "${paddedFramePath}" "${tempFramePath}"`
-          );
-        }
-
-        // For exception files and 96x32 sprites, center crop from 32px to 16px width
-        if (
-          EXCEPTION_FILES.includes(inputPath.split("/").pop() || "") ||
-          rule.frameWidth === 32
-        ) {
-          const cropStartX = (rule.frameWidth - 16) / 2;
-          const tempCroppedPath = this.generateTempPath(`cropped_${i}`);
-          const effectiveHeight = rule.needsPadding ? 32 : rule.height;
-          await this.extractRegion(
-            tempFramePath,
-            tempCroppedPath,
-            16,
-            effectiveHeight,
-            cropStartX,
-            0
-          );
-          // Replace the temp file
-          await this.execImageMagick(
-            `mv "${tempCroppedPath}" "${tempFramePath}"`
-          );
-        }
-
-        // Crop top 8 pixels to get final 24px height
-        const finalCropPath = this.generateTempPath(`final_${i}`);
-        // For sprites with 32px frames (exception files and 96x32 sprites), use 16px width after cropping
-        const finalFrameWidth = rule.frameWidth === 32 ? 16 : rule.frameWidth;
-        await this.extractRegion(
-          tempFramePath,
-          finalCropPath,
-          finalFrameWidth,
-          24,
-          0,
-          8
-        );
-
-        // Option 1: upscale after all cropping (keeps cropping math intact).
-        const upscaledPath = this.generateTempPath(`upscaled_${i}`);
-        await this.execImageMagick(
-          `magick "${finalCropPath}" -filter point -resize 200% "${upscaledPath}"`
-        );
-
-        tempFrames.push(upscaledPath);
-
-        // Clean up intermediate temp file
-        await this.execImageMagick(`rm -f "${tempFramePath}"`);
-        await this.execImageMagick(`rm -f "${finalCropPath}"`);
-      }
-
-      // Add padding to each frame and prepare for animated WEBP creation
-      const frameWidthWithPadding = 64; // 32px frame + 16px padding on each side after scaling
-      const frameHeightWithPadding = 80; // 48px frame + 16px padding on top and bottom
-
-      for (let i = 0; i < tempFrames.length; i++) {
-        // Create padded frame with 16px padding on all sides after scaling
+      for (let i = 0; i < normalizedFrames.length; i++) {
         const paddedFramePath = this.generateTempPath(`padded_final_${i}`);
-
-        // For 144px sprites, the 1st frame needs to be 2px lower
-        let frameY = 16; // 16px top padding (default after 2x scaling)
+        let frameY = 8;
         if (rule.width === 144 && rule.framesToExtract[i] === 0) {
-          frameY = 18; // 2px lower for the first frame of 144px sprites
+          frameY = 9;
         }
 
         await this.addPadding(
-          tempFrames[i],
+          normalizedFrames[i],
           paddedFramePath,
-          frameWidthWithPadding,
-          frameHeightWithPadding,
-          16,
+          32,
+          40,
+          8,
           frameY
         );
 
-        finalFramePaths.push(paddedFramePath);
+        paddedFrames.push(paddedFramePath);
       }
 
-      // Clean up temp frames
-      await this.cleanupTempFiles(tempFrames);
+      const outputPath = join(
+        this.outputDirPath,
+        `${this.getBaseName(filePath)}.webp`
+      );
 
-      // Create animated WEBP directly
-      await this.createAnimatedWebP(finalFramePaths, outputPath, 330);
-
-      // Clean up padded frames
-      await this.cleanupTempFiles(finalFramePaths);
+      await this.createAnimatedWebP2x(paddedFrames, outputPath, 330);
+      console.log(`✓ Processed ${filename} -> ${outputPath}`);
     } catch (error) {
-      // Clean up on error
-      await this.cleanupTempFiles(tempFrames);
-      await this.cleanupTempFiles(finalFramePaths);
+      console.error(
+        `✗ Error processing ${filename}:`,
+        error instanceof Error ? error.message : error
+      );
       throw error;
+    } finally {
+      await this.cleanupTempFiles(normalizedFrames);
+      await this.cleanupTempFiles(paddedFrames);
     }
   }
 
-  /**
-   * Process all sprites in the source directory
-   */
   async processAllSprites(): Promise<void> {
     try {
-      // Ensure output directory exists
       await this.ensureDirectoryExists(this.outputDirPath);
 
-      // Read all PNG files from upscaled/people directory
       const files = await fs.readdir(this.sourceDirPath);
       const pngFiles = files.filter((file) =>
         file.toLowerCase().endsWith(".png")
       );
 
+      if (pngFiles.length === 0) {
+        console.log("No PNG files found to process.");
+        return;
+      }
+
       console.log(`Found ${pngFiles.length} PNG files to process`);
 
       for (const filename of pngFiles) {
         try {
-          const inputPath = join(this.sourceDirPath, filename);
-          const baseName = filename.replace(/\.png$/i, "");
-
-          // Read image to get dimensions
-          const image = await Jimp.read(inputPath);
-          const width = image.width;
-          const height = image.height;
-
-          console.log(`Processing ${filename} (${width}x${height})`);
-
-          // Get processing rule for this sprite
-          const rule = this.getSpriteRule(filename, width, height);
-
-          // Process the sprite frames and create animated WEBP
-          const animatedWebPPath = join(this.outputDirPath, `${baseName}.webp`);
-          await this.processSpriteFrames(inputPath, animatedWebPPath, rule);
-
-          console.log(
-            `✓ Processed ${filename} -> ${this.outputDirPath}/${baseName}.webp`
-          );
+          await this.processSpriteFile(join(this.sourceDirPath, filename));
         } catch (error) {
           console.error(
             `✗ Error processing ${filename}:`,
@@ -302,14 +189,47 @@ export class CharacterSpriteProcessor extends SpriteProcessor {
 
       console.log("\nSprite frame extraction complete!");
     } catch (error) {
-      console.error("Error during sprite processing:", error);
+      console.error(
+        "Error during sprite processing:",
+        error instanceof Error ? error.message : error
+      );
       throw error;
     }
   }
-}
 
-// Export the main function for backward compatibility
-export async function processAllSprites(): Promise<void> {
-  const processor = new CharacterSpriteProcessor("temp", "temp");
-  await processor.processAllSprites();
+  async processFirstNSprites(limit: number): Promise<void> {
+    if (limit <= 0) {
+      return;
+    }
+
+    await this.ensureDirectoryExists(this.outputDirPath);
+
+    const files = await fs.readdir(this.sourceDirPath);
+    const pngFiles = files.filter((file) => file.toLowerCase().endsWith(".png"));
+
+    if (pngFiles.length === 0) {
+      console.log("No PNG files found to process.");
+      return;
+    }
+
+    console.log(
+      `Found ${pngFiles.length} PNG files to process (limiting to ${limit}).`
+    );
+
+    let processed = 0;
+    for (const filename of pngFiles) {
+      if (processed >= limit) break;
+      try {
+        await this.processSpriteFile(join(this.sourceDirPath, filename));
+      } catch (error) {
+        console.error(
+          `✗ Error processing ${filename}:`,
+          error instanceof Error ? error.message : error
+        );
+      }
+      processed++;
+    }
+
+    console.log("\nLimited sprite processing complete!");
+  }
 }

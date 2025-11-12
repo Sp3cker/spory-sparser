@@ -31,7 +31,7 @@ export abstract class SpriteProcessor {
   /**
    * Execute ImageMagick command with error handling
    */
-  async execImageMagick(command: string): Promise<void> {
+  async exec(command: string): Promise<void> {
     try {
       await execAsync(command);
     } catch (error) {
@@ -72,10 +72,46 @@ export abstract class SpriteProcessor {
 
       img2webpCmd += ` -o "${outputPath}"`;
 
-      await this.execImageMagick(img2webpCmd);
+      await this.exec(img2webpCmd);
     } catch (error) {
       console.error(`Error creating animated WEBP: ${error}`);
       throw error;
+    }
+  }
+
+  /**
+   * Create animated WEBP after upscaling frames 2x with point filter.
+   * This preserves pixel-art crispness and centralizes scaling.
+   */
+  async createAnimatedWebP2x(
+    framePaths: string[],
+    outputPath: string,
+    frameDuration: number
+  ): Promise<void> {
+    const scaledFrames: string[] = [];
+    try {
+      // Pre-scale all frames to 200% with nearest-neighbour (point) filter
+      for (const src of framePaths) {
+        const dst = this.generateTempPath("scaled", ".png");
+        const cmd = `magick "${src}" -filter point -resize 200% "${dst}"`;
+        await this.exec(cmd);
+        scaledFrames.push(dst);
+      }
+
+      // Build the img2webp command with lossless compression
+      let img2webpCmd = `img2webp -loop 0 -m 6 -lossless`;
+      for (const framePath of scaledFrames) {
+        img2webpCmd += ` -d ${frameDuration} "${framePath}"`;
+      }
+      img2webpCmd += ` -o "${outputPath}"`;
+
+      await this.exec(img2webpCmd);
+    } catch (error) {
+      console.error(`Error creating upscaled animated WEBP: ${error}`);
+      throw error;
+    } finally {
+      // Cleanup temp scaled frames regardless of success
+      await this.cleanupTempFiles(scaledFrames);
     }
   }
 
@@ -113,7 +149,7 @@ export abstract class SpriteProcessor {
     y: number = 0
   ): Promise<void> {
     const cropCmd = `magick "${inputPath}" -crop ${width}x${height}+${x}+${y} +repage "${outputPath}"`;
-    await this.execImageMagick(cropCmd);
+    await this.exec(cropCmd);
   }
 
   /**
@@ -128,7 +164,7 @@ export abstract class SpriteProcessor {
     offsetY: number = 0
   ): Promise<void> {
     const paddingCmd = `magick -size ${totalWidth}x${totalHeight} xc:transparent \\( "${inputPath}" \\) -geometry +${offsetX}+${offsetY} -composite "${outputPath}"`;
-    await this.execImageMagick(paddingCmd);
+    await this.exec(paddingCmd);
   }
 
   /**
