@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import { basename, join } from "path";
+
 import { SpriteProcessor, SpriteProcessingError } from "./SpriteProcessor.ts";
 
 const UPSCALE_FACTOR = 4;
@@ -33,6 +34,14 @@ export class ItemSpriteProcessor extends SpriteProcessor {
         `Failed to upscale item sprite ${basename(filePath)}`,
         error
       );
+    }
+
+    const webpPath = outputPath.replace(/\.png$/i, ".webp");
+    try {
+      const pngBuffer = await fs.readFile(outputPath);
+      await this.writeWebp(pngBuffer, webpPath);
+    } catch (error) {
+      throw error
     }
   }
 
@@ -81,4 +90,6 @@ export class ItemSpriteProcessor extends SpriteProcessor {
       }
     }
   }
+
+  
 }

@@ -223,7 +223,7 @@ export class SpriteDatasetPipeline {
             }
           }
 
-          if (this.isSquarePng(buffer)) {
+          if (["overworld", "speciesOverworld"].includes(task.name) && this.isSquarePng(buffer)) {
             console.log(
               `[${rule.name}] Skipping ${baseName} (square image detected)`
             );

@@ -197,7 +197,7 @@ export class OverworldTrainerSpriteProcessor extends PeopleSpriteProcessorBase {
       );
 
       try {
-        await this.createAnimatedWebP2x(paddedFrames, outputPath, 330);
+        await this.createAnimatedWebPScaled(paddedFrames, outputPath, 330, 2);
       } catch (error) {
         throw new SpriteProcessingError(
           "writingWebm",

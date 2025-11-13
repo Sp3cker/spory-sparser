@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import { exec } from "child_process";
+import { dirname } from "path";
 import { promisify } from "util";
 
 const execAsync = promisify(exec);
@@ -93,42 +94,6 @@ export abstract class SpriteProcessor {
     }
   }
 
-  /**
-   * Create animated WEBP after upscaling frames 2x with point filter.
-   * This preserves pixel-art crispness and centralizes scaling.
-   */
-  async createAnimatedWebP2x(
-    framePaths: string[],
-    outputPath: string,
-    frameDuration: number
-  ): Promise<void> {
-    const scaledFrames: string[] = [];
-    try {
-      // Pre-scale all frames to 200% with nearest-neighbour (point) filter
-      for (const src of framePaths) {
-        const dst = this.generateTempPath("scaled", ".png");
-        const cmd = `magick "${src}" -filter point -resize 200% "${dst}"`;
-        await this.exec(cmd);
-        scaledFrames.push(dst);
-      }
-
-      // Build the img2webp command with lossless compression
-      let img2webpCmd = `img2webp -loop 0 -m 6 -lossless`;
-      for (const framePath of scaledFrames) {
-        img2webpCmd += ` -d ${frameDuration} "${framePath}"`;
-      }
-      img2webpCmd += ` -o "${outputPath}"`;
-
-      await this.exec(img2webpCmd);
-    } catch (error) {
-      console.error(`Error creating upscaled animated WEBP: ${error}`);
-      throw error;
-    } finally {
-      // Cleanup temp scaled frames regardless of success
-      await this.cleanupTempFiles(scaledFrames);
-    }
-  }
-
   async createAnimatedWebPScaled(
     framePaths: string[],
     outputPath: string,
@@ -163,7 +128,35 @@ export abstract class SpriteProcessor {
       await this.cleanupTempFiles(scaledFrames);
     }
   }
+  // async createWebp(
+  //   inputPath: string,
+  //   outputPath: string,
+  //   scale: number
+  // ): Promise<void> {
+  //   const os = require("os");
+  //   const path = require("path");
+  //   const resizePercent = scale * 100;
 
+  //   const tempDir = os.tmpdir();
+  //   const tempFile = path.join(tempDir, path.baseName(inputPath));
+  //   const cmd = `magick "${inputPath}" -filter point -resize ${resizePercent}% "${tempFile}"`;
+  //   try {
+  //     await this.exec(cmd);
+  //   } catch (error) {
+  //     throw new SpriteProcessingError(
+  //       "resizing",
+  //       `Failed to create WEBP ${outputPath}`,
+  //       error
+  //     );
+  //   }
+  //   const cwebpCmd = `cwebp -q 100 -m 6 -near_lossless 100 -mt "${tempFile}" -o "${outputPath}"`;
+  //   await this.exec(cwebpCmd);
+  //   try {
+  //     await fs.unlink(tempFile);
+  //   } catch (error) {
+  //     // Ignore cleanup errors
+  //   }
+  // }
   /**
    * Generate unique temp file path
    */
@@ -182,6 +175,38 @@ export abstract class SpriteProcessor {
         await execAsync(`rm -f "${filePath}"`);
       } catch (error) {
         // Ignore cleanup errors
+      }
+    }
+  }
+
+  protected async writeWebp(input: Buffer, outputPath: string): Promise<void> {
+    await this.ensureDirectoryExists(dirname(outputPath));
+
+    const tempInput = this.generateTempPath("cwebp_input", ".png");
+    try {
+      await fs.writeFile(tempInput, input);
+    } catch (error) {
+      throw new SpriteProcessingError(
+        "writingWebm",
+        `Failed to prepare WEBP input for ${outputPath}`,
+        error
+      );
+    }
+
+    const cmd = `cwebp -quiet -q 100 -m 6 -hint picture -near_lossless 100 -mt "${tempInput}" -o "${outputPath}"`;
+    try {
+      await this.exec(cmd);
+    } catch (error) {
+      throw new SpriteProcessingError(
+        "writingWebm",
+        `Failed to write WEBP to ${outputPath}`,
+        error
+      );
+    } finally {
+      try {
+        await fs.unlink(tempInput);
+      } catch {
+        // ignore cleanup errors
       }
     }
   }
