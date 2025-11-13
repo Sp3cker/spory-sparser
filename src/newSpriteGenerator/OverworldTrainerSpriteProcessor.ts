@@ -5,14 +5,15 @@ import {
   type PeopleSpriteRule,
 } from "./PeopleSpriteProcessorBase.ts";
 import { SpriteProcessingError } from "./SpriteProcessor.ts";
-// width x height
-const UnsupportedDimensions = [
-  [192, 32],
-  [160, 32],
-  [224, 32],
-  [64, 64],
-  [864, 32]
-];
+const SupportedDimensions = new Set<string>([
+  "48x32",
+  "96x32",
+  "128x32",
+  "144x16",
+  "144x32",
+  "288x32",
+  "416x32",
+]);
 /**
  * Run this file/class in a CLI to process all character sprites
  */
@@ -36,6 +37,15 @@ export class OverworldTrainerSpriteProcessor extends PeopleSpriteProcessorBase {
     width: number,
     height: number
   ): PeopleSpriteRule {
+    if (height === 32 && width === 416) {
+      return {
+        width,
+        height,
+        frameWidth: 32,
+        frameCount: 13,
+        framesToExtract: [0, 3, 0, 4],
+      };
+    }
     // Handle 16px tall sprites by adding transparent padding
     if (height === 16) {
       if (width !== 144) {
@@ -66,7 +76,7 @@ export class OverworldTrainerSpriteProcessor extends PeopleSpriteProcessorBase {
       //     `Exception file ${filename} should be 288px wide, got ${width}px`
       //   );
       // }
-      console.log(width);
+
       if (width === 288) {
         return {
           width: 288,
@@ -122,14 +132,16 @@ export class OverworldTrainerSpriteProcessor extends PeopleSpriteProcessorBase {
     }
 
     throw new Error(
-      `Unsupported sprite dimensions for ${filename}: ${width}x${height}px. Supported widths: 48px, 96px, 144px, 288px (exception files only)`
+      `Unsupported sprite dimensions for ${filename}: ${width}x${height}px. Supported sizes: ${[
+        ...SupportedDimensions,
+      ].join(", ")}`
     );
   }
 
   protected async processSpriteFile(filePath: string): Promise<void> {
     const filename = basename(filePath);
     const { width, height } = await this.readImageDimensions(filePath);
-    if (UnsupportedDimensions.some(([w, h]) => w === width && h === height)) {
+    if (!SupportedDimensions.has(`${width}x${height}`)) {
       return;
     }
     const rule = this.getSpriteRule(filename, width, height);

@@ -5,25 +5,39 @@ import {
   SpriteDatasetPipeline,
   createOverworldRule,
   createTrainerRule,
-  createSpeciesOverworldRule,
+  // createSpeciesOverworldRule,
+  createItemSpriteRule,
   type SpritePipelineRule,
 } from "./SpriteDatasetPipeline.ts";
 import { config } from "../config/index.js";
 
-type RuleKey = "overworld" | "trainers" | "species";
+export type RuleKey = "overworld" | "trainers" | "items";
 
-interface CliOptions {
-  rules: RuleKey[];
-  help?: boolean;
-  list?: boolean;
-  runAll?: boolean;
-}
-
-const RULE_BUILDERS: Record<RuleKey, () => SpritePipelineRule> = {
+export const RULE_BUILDERS: Record<RuleKey, () => SpritePipelineRule> = {
   overworld: createOverworldRule,
   trainers: createTrainerRule,
-  species: createSpeciesOverworldRule,
+  // species: createSpeciesOverworldRule,
+  items: createItemSpriteRule,
 };
+
+export async function runRule(
+  key: RuleKey,
+  pipeline: SpriteDatasetPipeline = new SpriteDatasetPipeline(config)
+) {
+  const factory = RULE_BUILDERS[key];
+  if (!factory) {
+    throw new Error(`Unknown pipeline rule: ${key}`);
+  }
+  const rule = factory();
+  try {
+    return { rule, result: await pipeline.process(rule) };
+  } catch (error) {
+    if (error && typeof error === "object") {
+      Object.assign(error as Record<string, unknown>, { rule });
+    }
+    throw error;
+  }
+}
 
 function printHelp(scriptName: string): void {
   console.log(`Sprite Dataset Pipeline CLI
@@ -35,8 +49,10 @@ Runs all sprite dataset pipelines concurrently.
 `);
 }
 
-function parseArgs(argv: string[]): CliOptions {
-  const options: CliOptions = { rules: Object.keys(RULE_BUILDERS) as RuleKey[] };
+function parseArgs(argv: string[]): { rules: RuleKey[]; help?: boolean } {
+  const options: { rules: RuleKey[]; help?: boolean } = {
+    rules: Object.keys(RULE_BUILDERS) as RuleKey[],
+  };
 
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
@@ -57,7 +73,7 @@ async function main(): Promise<void> {
   const scriptPath = fileURLToPath(import.meta.url);
   const scriptName = path.basename(scriptPath);
 
-  let options: CliOptions;
+  let options: ReturnType<typeof parseArgs>;
   try {
     options = parseArgs(process.argv.slice(2));
   } catch (error) {
@@ -77,39 +93,30 @@ async function main(): Promise<void> {
   }
 
   const pipeline = new SpriteDatasetPipeline(config);
+  const settled = await Promise.allSettled(
+    options.rules.map((key) => runRule(key, pipeline))
+  );
 
-  const rulePromises = (Object.keys(RULE_BUILDERS) as RuleKey[]).map(async (key) => {
-    const rule = RULE_BUILDERS[key]();
-    try {
-      const result = await pipeline.process(rule);
-      return { rule, result };
-    } catch (error) {
-      throw { rule, error };
-    }
-  });
-
-  const results = await Promise.allSettled(rulePromises);
-
-  for (const entry of results) {
+  for (const entry of settled) {
     if (entry.status === "fulfilled") {
       const {
-        rule,
-        result: { generatedCount, paletteOutputDir, processedOutputDir },
-      } = entry.value;
+        value: {
+          rule,
+          result: { generatedCount, paletteOutputDir, processedOutputDir },
+        },
+      } = entry;
       console.log(
         `✓ ${rule.name}: generated ${generatedCount} sprite(s)\n  Palette output: ${paletteOutputDir}\n  Processed output: ${processedOutputDir}`
       );
-    } else {
-      const { rule, error } = entry.reason as {
-        rule: SpritePipelineRule;
-        error: unknown;
-      };
-      console.error(
-        `✗ ${rule.name} pipeline failed:`,
-        error instanceof Error ? error.message : error
-      );
-      process.exitCode = 1;
+      continue;
     }
+    const ruleName =
+      (entry.reason as { rule?: SpritePipelineRule }).rule?.name ?? "unknown";
+    console.error(
+      `✗ ${ruleName} pipeline failed:`,
+      entry.reason instanceof Error ? entry.reason.message : entry.reason
+    );
+    process.exitCode = 1;
   }
 }
 

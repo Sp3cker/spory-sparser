@@ -11,6 +11,7 @@ import { TrainerGraphicsSchema } from "../parseMaps/Trainers/joinTrainerGraphics
 import { OverworldTrainerSpriteProcessor } from "./OverworldTrainerSpriteProcessor.ts";
 import { OverworldSpeciesSpriteProcessor } from "./OverworldSpeciesSpriteProcessor.ts";
 import { TrainerSpriteProcessor } from "./TrainerSpriteProcessor.ts";
+import { ItemSpriteProcessor } from "./ItemSpriteProcessor.ts";
 import { SpriteProcessingError } from "./SpriteProcessor.ts";
 import { speciesEntrySchema } from "../validators/speciesData.ts";
 
@@ -356,6 +357,54 @@ export function createTrainerRule(): SpritePipelineRule {
   };
 }
 
+export function createItemSpriteRule(): SpritePipelineRule {
+  return {
+    name: "items",
+    jsonFile: "items.json",
+    paletteOutputSubDir: "items/raw",
+    processedOutputSubDir: "items/processed",
+    entryToTasks: (entryName, entryValue) => {
+      if (
+        !entryValue ||
+        typeof entryValue !== "object" ||
+        entryValue === null
+      ) {
+        return undefined;
+      }
+      const { iconPic, iconPalette } = entryValue as {
+        iconPic?: unknown;
+        iconPalette?: unknown;
+      };
+      if (typeof iconPic !== "string" || typeof iconPalette !== "string") {
+        return undefined;
+      }
+
+      const iconPicPath = iconPic.trim();
+      const iconPalettePath = iconPalette.trim();
+      if (!iconPicPath) {
+        console.warn(`[items] Skipping ${entryName}: missing icon resource`);
+        return undefined;
+      }
+
+      if (!iconPalettePath) {
+        console.warn(
+          `[items] Skipping ${entryName}: missing icon palette reference`
+        );
+        return undefined;
+      }
+
+      const spritePath = iconPicPath.replace(/(.*?)\.4bpp(\.smol)?$/i, "$1.png");
+      return {
+        name: entryName,
+        spritePath,
+        palettePath: iconPalettePath,
+      };
+    },
+    processorFactory: (sourceDir, outputDir) =>
+      new ItemSpriteProcessor(sourceDir, outputDir),
+  };
+}
+
 export function createSpeciesOverworldRule(): SpritePipelineRule {
   return {
     name: "speciesOverworld",
@@ -393,7 +442,7 @@ export function createSpeciesOverworldRule(): SpritePipelineRule {
             const width = image.bitmap.width;
             const height = image.bitmap.height;
 
-            let targetColor = image.getPixelColor(5, 5);
+            let targetColor = image.getPixelColor(0, 5);
             if (width <= 5 || height <= 5) {
               targetColor = image.getPixelColor(
                 Math.max(0, Math.min(5, width - 1)),
@@ -403,6 +452,8 @@ export function createSpeciesOverworldRule(): SpritePipelineRule {
 
             const { r, g, b, a } = intToRGBA(targetColor);
             const { data } = image.bitmap;
+            let maxX = -1;
+            let maxY = -1;
             for (let y = 0; y < height; y++) {
               for (let x = 0; x < width; x++) {
                 const idx = (y * width + x) * 4;
@@ -414,8 +465,63 @@ export function createSpeciesOverworldRule(): SpritePipelineRule {
                 ) {
                   data[idx + 3] = 0;
                 }
+                if (data[idx + 3] !== 0) {
+                  if (x > maxX) maxX = x;
+                  if (y > maxY) maxY = y;
+                }
               }
             }
+
+            if (maxX === -1 || maxY === -1) {
+              await (image as any).write(pngPath);
+              console.log(`[speciesOverworld] Post-process complete for ${entryName}`);
+              return;
+            }
+
+            const desiredOffsetX = 0;
+            const desiredOffsetY = 1;
+            const desiredBlur = 2;
+            const desiredShadowAlpha = 0.45;
+
+            const marginRight = width - 1 - maxX;
+            const marginBottom = height - 1 - maxY;
+            let blurRadius = Math.max(
+              0,
+              Math.min(desiredBlur, marginRight, marginBottom)
+            );
+            blurRadius = Math.floor(blurRadius);
+            const maxOffsetX = Math.max(0, marginRight - blurRadius);
+            const maxOffsetY = Math.max(0, marginBottom - blurRadius);
+            const offsetX = Math.min(desiredOffsetX, maxOffsetX);
+            const offsetY = Math.min(desiredOffsetY, maxOffsetY);
+
+            // if (blurRadius === 0 && offsetX === 0 && offsetY === 0) {
+            //   await (image as any).write(pngPath);
+            //   console.log(`[speciesOverworld] Post-process complete for ${entryName}`);
+            //   return;
+            // }
+
+            const sprite = image.clone();
+            const shadow = sprite.clone();
+            const shadowData = shadow.bitmap.data;
+            const targetAlpha = Math.round(255 * desiredShadowAlpha);
+            for (let i = 0; i < shadowData.length; i += 4) {
+              const alphaValue = shadowData[i + 3];
+              if (alphaValue === 0) {
+                continue;
+              }
+              shadowData[i] = 0;
+              shadowData[i + 1] = 0;
+              shadowData[i + 2] = 0;
+              shadowData[i + 3] = Math.min(alphaValue, targetAlpha);
+            }
+            if (blurRadius > 0) {
+              shadow.blur(blurRadius);
+            }
+
+            image.bitmap.data.fill(0);
+            image.composite(shadow, offsetX, offsetY);
+            image.composite(sprite, 0, 0);
 
             await (image as any).write(pngPath);
             console.log(`[speciesOverworld] Post-process complete for ${entryName}`);
