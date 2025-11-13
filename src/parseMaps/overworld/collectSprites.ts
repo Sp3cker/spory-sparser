@@ -2,7 +2,6 @@ import { existsSync, readFileSync } from "fs";
 import path, { resolve } from "path";
 import z from "zod";
 import { config } from "../../config/index.js";
-import { PaletteApplier } from "../../newSpriteGenerator/PaletteApplier/PaletteApplier.ts";
 // import { CharacterSpriteProcessor } from "../../newSpriteGenerator/CharacterSpriteProcessor.ts";
 
 /*
@@ -65,37 +64,36 @@ Turns into array of { name: string; sprites: string[]; palette: string }
     }
   );
 
-  const outFolder = "overworld";
-
-  const paletteApplier = new PaletteApplier({ config: config });
-
   const overworldGraphicPath = new Map<OverworldID, string>();
   for await (const graphic of validOverworldGraphics) {
-    const { name, sprites, palette } = graphic;
+    const { name, sprites } = graphic;
     if (sprites.length === 0) {
       console.warn(
         `Skipping overworld graphic ${name} due to no sprites defined.`
       );
       continue;
     }
-    try {
-      const buffer = paletteApplier.applyPaletteFromFiles(
-        sprites[0].replace(/(.*?)\.4bpp/, "$1.png"),
-        palette
-      );
-      const pngPath = await paletteApplier.writePng(
-        outFolder,
-        `${name}.png`,
-        buffer
-      );
-      overworldGraphicPath.set(name, pngPath);
-    } catch (error) {
-      throw new Error(
-        `Failed to process overworld sprite for ${name}: ${
-          (error as Error).message
-        }`
-      );
-    }
+    overworldGraphicPath.set(name, `overworld/animated/${name}.webp`);
+
+    // Below needs to run if you're not doign the sprite pipelines
+    // try {
+    //   const buffer = paletteApplier.applyPaletteFromFiles(
+    //     sprites[0].replace(/(.*?)\.4bpp/, "$1.png"),
+    //     palette
+    //   );
+    //   const pngPath = await paletteApplier.writePng(
+    //     outFolder,
+    //     `${name}.png`,
+    //     buffer
+    //   );
+    //   console.log(pngPath)
+    // } catch (error) {
+    //   throw new Error(
+    //     `Failed to process overworld sprite for ${name}: ${
+    //       (error as Error).message
+    //     }`
+    //   );
+    // }
   }
   return overworldGraphicPath;
   /* Uncomment this if you want to process animated sprites as well */

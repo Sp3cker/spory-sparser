@@ -6,7 +6,7 @@ import {
   IncWildMon,
 } from "../validators/levelIncData.ts";
 import { eggSpeciesMap } from "./eggMons.ts";
-import pokemonData from "../../gameData/speciesData.json" with { type: "json" };
+import pokemonData from "../../gameData/species.json" with { type: "json" };
 import { splitRawSection } from "./pory/splitRawSection.ts";
 import { parsePoryscriptFunctions } from "./pory/extractPoryScripts.ts";
 import { findStringLineNumber } from "../util/findStringLineNumber.ts";

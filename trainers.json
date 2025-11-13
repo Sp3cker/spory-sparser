@@ -1,1 +1,6816 @@
-{}
+{
+  "MAP_BEACHBOUNDROUTE": [
+    {
+      "battlePic": "trainers/TRAINER_KARU.png",
+      "id": "TRAINER_KARU",
+      "name": "Karu",
+      "level": "MAP_BEACHBOUND_ROUTE",
+      "party": [
+        {
+          "species": "Hoppip",
+          "nickname": null,
+          "gender": "Any",
+          "level": 11,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Fairy Wind",
+            "Absorb",
+            "Tackle",
+            "Tail Whip"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Taillow",
+          "nickname": null,
+          "gender": "Any",
+          "level": 10,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Growl",
+            "Peck",
+            "Focus Energy",
+            "Quick Attack"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_KIN.png",
+      "id": "TRAINER_KIN",
+      "name": "Kin",
+      "level": "MAP_BEACHBOUND_ROUTE",
+      "party": [
+        {
+          "species": "Meditite",
+          "nickname": null,
+          "gender": "Any",
+          "level": 10,
+          "item": "Focus Sash",
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            31,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Focus Punch"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Makuhita",
+          "nickname": null,
+          "gender": "Any",
+          "level": 10,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Focus Energy",
+            "Sand Attack",
+            "Arm Thrust",
+            "Fake Out"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_KOUTA.png",
+      "id": "TRAINER_KOUTA",
+      "name": "Kouta",
+      "level": "MAP_BEACHBOUND_ROUTE",
+      "party": [
+        {
+          "species": "Mareep",
+          "nickname": null,
+          "gender": "Any",
+          "level": 11,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            15,
+            0,
+            15
+          ],
+          "moves": [
+            "Tackle",
+            "Thunder Wave",
+            "Thunder Shock",
+            "Cotton Spore"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_MASATO_1.png",
+      "id": "TRAINER_MASATO_1",
+      "name": "Masato",
+      "level": "MAP_BEACHBOUND_ROUTE",
+      "party": [
+        {
+          "species": "Kricketot",
+          "nickname": null,
+          "gender": "Male",
+          "level": 11,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Bug Bite",
+            "Struggle Bug",
+            "Sing"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Kricketot",
+          "nickname": null,
+          "gender": "Male",
+          "level": 10,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Fury Cutter",
+            "Sing"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_MASATO_1.png",
+      "id": "TRAINER_MASATO_1",
+      "name": "Masato",
+      "level": "MAP_BEACHBOUND_ROUTE",
+      "party": [
+        {
+          "species": "Kricketot",
+          "nickname": null,
+          "gender": "Male",
+          "level": 11,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Bug Bite",
+            "Struggle Bug",
+            "Sing"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Kricketot",
+          "nickname": null,
+          "gender": "Male",
+          "level": 10,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Fury Cutter",
+            "Sing"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_GRUNT_BEACHBOUND_ROUTE_1.png",
+      "id": "TRAINER_GRUNT_BEACHBOUND_ROUTE_1",
+      "name": "Grunt",
+      "level": "MAP_BEACHBOUND_ROUTE",
+      "party": [
+        {
+          "species": "Zubat",
+          "nickname": null,
+          "gender": "Any",
+          "level": 10,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Astonish",
+            "Absorb",
+            "Supersonic"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Poochyena",
+          "nickname": null,
+          "gender": "Any",
+          "level": 10,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Bite",
+            "Roar",
+            "Tackle"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_CHII_TOWN": [
+    {
+      "battlePic": "trainers/TRAINER_MINORI.png",
+      "id": "TRAINER_MINORI",
+      "name": "Minori",
+      "level": "MAP_CHII_TOWN",
+      "party": [
+        {
+          "species": "Deerling Summer",
+          "nickname": "Snuggles",
+          "gender": "Any",
+          "level": 5,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Sand Attack",
+            "Growl",
+            "Tackle",
+            "Camouflage"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_MINORI.png",
+      "id": "TRAINER_MINORI",
+      "name": "Minori",
+      "level": "MAP_CHII_TOWN",
+      "party": [
+        {
+          "species": "Deerling Summer",
+          "nickname": "Snuggles",
+          "gender": "Any",
+          "level": 5,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Sand Attack",
+            "Growl",
+            "Tackle",
+            "Camouflage"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_CROBAT_HIDEOUT": [
+    {
+      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_1.png",
+      "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_1",
+      "name": "Grunt",
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "party": [
+        {
+          "species": "Zubat",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Astonish",
+            "Wing Attack",
+            "Screech"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Golbat",
+          "nickname": null,
+          "gender": "Any",
+          "level": 21,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Air Cutter",
+            "Supersonic",
+            "Bite"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_2.png",
+      "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_2",
+      "name": "Grunt",
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "party": [
+        {
+          "species": "Woobat",
+          "nickname": null,
+          "gender": "Female",
+          "level": 20,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Heart Stamp",
+            "Odor Sleuth",
+            "Attract",
+            "Gust"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Nickit",
+          "nickname": null,
+          "gender": "Any",
+          "level": 21,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Nasty Plot",
+            "Assurance",
+            "Quick Attack"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_3.png",
+      "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_3",
+      "name": "Grunt",
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "party": [
+        {
+          "species": "Mightyena",
+          "nickname": null,
+          "gender": "Any",
+          "level": 22,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Bite",
+            "Swagger",
+            "Howl"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Thievul",
+          "nickname": null,
+          "gender": "Any",
+          "level": 21,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Thief",
+            "Nasty Plot",
+            "Snarl"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_4.png",
+      "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_4",
+      "name": "Grunt",
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "party": [
+        {
+          "species": "Woobat",
+          "nickname": null,
+          "gender": "Any",
+          "level": 22,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Wing Attack",
+            "Assurance",
+            "Imprison"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Houndour",
+          "nickname": null,
+          "gender": "Any",
+          "level": 22,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Ember",
+            "Smog",
+            "Howl"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_5.png",
+      "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_5",
+      "name": "Grunt",
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "party": [
+        {
+          "species": "Golbat",
+          "nickname": null,
+          "gender": "Any",
+          "level": 21,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Mean Look",
+            "Air Cutter",
+            "Astonish"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_6.png",
+      "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_6",
+      "name": "Grunt",
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "party": [
+        {
+          "species": "Woobat",
+          "nickname": null,
+          "gender": "Male",
+          "level": 23,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Heart Stamp",
+            "Attract",
+            "Wing Attack"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Zubat",
+          "nickname": null,
+          "gender": "Any",
+          "level": 23,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Swift",
+            "Bite",
+            "Confuse Ray"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_7.png",
+      "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_7",
+      "name": "Grunt",
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "party": [
+        {
+          "species": "Houndour",
+          "nickname": null,
+          "gender": "Any",
+          "level": 23,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Beat Up",
+            "Odor Sleuth",
+            "Bite"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_GINKO_WOODS": [
+    {
+      "battlePic": "trainers/TRAINER_TOSHIKI.png",
+      "id": "TRAINER_TOSHIKI",
+      "name": "Toshiki",
+      "level": "MAP_GINKO_WOODS",
+      "party": [
+        {
+          "species": "Sewaddle Tokuan",
+          "nickname": null,
+          "gender": "Any",
+          "level": 4,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tackle",
+            "String Shot"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_TOSHIO_1.png",
+      "id": "TRAINER_TOSHIO_1",
+      "name": "Toshio",
+      "level": "MAP_GINKO_WOODS",
+      "party": [
+        {
+          "species": "Nacli",
+          "nickname": null,
+          "gender": "Female",
+          "level": 3,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tackle",
+            "Harden"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Kotora",
+          "nickname": null,
+          "gender": "Male",
+          "level": 4,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tackle",
+            "Tail Whip",
+            "Thunder Shock"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_TOSHIO_1.png",
+      "id": "TRAINER_TOSHIO_1",
+      "name": "Toshio",
+      "level": "MAP_GINKO_WOODS",
+      "party": [
+        {
+          "species": "Nacli",
+          "nickname": null,
+          "gender": "Female",
+          "level": 3,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tackle",
+            "Harden"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Kotora",
+          "nickname": null,
+          "gender": "Male",
+          "level": 4,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tackle",
+            "Tail Whip",
+            "Thunder Shock"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_EIJI.png",
+      "id": "TRAINER_EIJI",
+      "name": "Eiji",
+      "level": "MAP_GINKO_WOODS",
+      "party": [
+        {
+          "species": "Taillow",
+          "nickname": null,
+          "gender": "Any",
+          "level": 3,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Peck",
+            "Focus Energy"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Joltik",
+          "nickname": null,
+          "gender": "Any",
+          "level": 3,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Absorb",
+            "Fury Cutter"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Sewaddle Tokuan",
+          "nickname": null,
+          "gender": "Any",
+          "level": 3,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tackle",
+            "String Shot"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_HARVEST_SHRINE": [
+    {
+      "battlePic": "trainers/TRAINER_KOUGA.png",
+      "id": "TRAINER_KOUGA",
+      "name": "Kouga",
+      "level": "MAP_HARVEST_SHRINE",
+      "party": [
+        {
+          "species": "Bronzor",
+          "nickname": null,
+          "gender": "Any",
+          "level": 10,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Confusion",
+            "Hypnosis",
+            "Iron Defense"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_KURA_TOWN": [
+    {
+      "battlePic": "trainers/TRAINER_MATSU.png",
+      "id": "TRAINER_MATSU",
+      "name": "Matsu",
+      "level": "MAP_KURA_TOWN_DOJO",
+      "party": [
+        {
+          "species": "Fomantis",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Growth",
+            "Sunny Day",
+            "Razor Leaf"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Bonsly",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Fake Tears",
+            "Mimic",
+            "Rock Throw"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_KIKU.png",
+      "id": "TRAINER_KIKU",
+      "name": "Kiku",
+      "level": "MAP_KURA_TOWN_DOJO",
+      "party": [
+        {
+          "species": "Budew",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Stun Spore",
+            "Mega Drain",
+            "Leech Seed"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Cherubi",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Sunny Day",
+            "Magical Leaf"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_AYAME.png",
+      "id": "TRAINER_AYAME",
+      "name": "Ayame",
+      "level": "MAP_KURA_TOWN_DOJO",
+      "party": [
+        {
+          "species": "Nuzleaf",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Growth",
+            "Fake Out",
+            "Razor Leaf",
+            "Sunny Day"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Wooper",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Mud Sport",
+            "Water Gun",
+            "Slam"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_TSUBAKI.png",
+      "id": "TRAINER_TSUBAKI",
+      "name": "Tsubaki",
+      "level": "MAP_KURA_TOWN_DOJO",
+      "party": [
+        {
+          "species": "Cherrim",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Sunny Day",
+            "Magical Leaf",
+            "Morning Sun"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Skiploom",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": "Chlorophyll",
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Poison Powder",
+            "Synthesis",
+            "Tackle",
+            "Rain Dance"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_AJISAI.png",
+      "id": "TRAINER_AJISAI",
+      "name": "Ajisai",
+      "level": "MAP_KURA_TOWN_DOJO",
+      "party": [
+        {
+          "species": "Castform",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Rain Dance",
+            "Headbutt",
+            "Water Gun",
+            "Ember"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_SUMIRE.png",
+      "id": "TRAINER_SUMIRE",
+      "name": "Sumire",
+      "level": "MAP_KURA_TOWN_DOJO",
+      "party": [
+        {
+          "species": "Cherrim",
+          "nickname": null,
+          "gender": "Any",
+          "level": 19,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "moves": [
+            "Sunny Day",
+            "Magical Leaf",
+            "Swift"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_HANA_1.png",
+      "id": "TRAINER_HANA_1",
+      "name": "Hana",
+      "level": "MAP_KURA_TOWN_DOJO",
+      "party": [
+        {
+          "species": "Fomantis",
+          "nickname": null,
+          "gender": "Any",
+          "level": 19,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Fury Cutter",
+            "Razor Leaf",
+            "Synthesis",
+            "Sunny Day"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Squirtle",
+          "nickname": null,
+          "gender": "Any",
+          "level": 20,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Water Sport",
+            "Rain Dance",
+            "Bubble Beam",
+            "Bite"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Bonsly",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Mimic",
+            "Low Kick",
+            "Rock Tomb",
+            "Flail"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Grotle",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": "Sitrus Berry",
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            24,
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "moves": [
+            "Mega Drain",
+            "Leech Seed",
+            "Bite",
+            "Sunny Day"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_HANA_1.png",
+      "id": "TRAINER_HANA_1",
+      "name": "Hana",
+      "level": "MAP_KURA_TOWN_DOJO",
+      "party": [
+        {
+          "species": "Fomantis",
+          "nickname": null,
+          "gender": "Any",
+          "level": 19,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Fury Cutter",
+            "Razor Leaf",
+            "Synthesis",
+            "Sunny Day"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Squirtle",
+          "nickname": null,
+          "gender": "Any",
+          "level": 20,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Water Sport",
+            "Rain Dance",
+            "Bubble Beam",
+            "Bite"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Bonsly",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Mimic",
+            "Low Kick",
+            "Rock Tomb",
+            "Flail"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Grotle",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": "Sitrus Berry",
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            24,
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "moves": [
+            "Mega Drain",
+            "Leech Seed",
+            "Bite",
+            "Sunny Day"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_MAGURO_HARBOR": [
+    {
+      "battlePic": "trainers/TRAINER_KOISHI_1.png",
+      "id": "TRAINER_KOISHI_1",
+      "name": "Koishi",
+      "level": "MAP_MAGURO_HARBOR_DOJO",
+      "party": [
+        {
+          "species": "Surskit",
+          "nickname": null,
+          "gender": "Any",
+          "level": 14,
+          "item": "Oran Berry",
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Nature Power",
+            "String Shot",
+            "Pounce"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Barboach",
+          "nickname": null,
+          "gender": "Any",
+          "level": 13,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Mud Bomb",
+            "Nature Power",
+            "Flail"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Lombre",
+          "nickname": null,
+          "gender": "Any",
+          "level": 15,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Nature Power",
+            "Mega Drain",
+            "Fake Out"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_IZUMI.png",
+      "id": "TRAINER_IZUMI",
+      "name": "Izumi",
+      "level": "MAP_MAGURO_HARBOR_DOJO",
+      "party": [
+        {
+          "species": "Surskit",
+          "nickname": null,
+          "gender": "Any",
+          "level": 13,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Absorb",
+            "Sweet Scent",
+            "Rain Dance",
+            "Quick Attack"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Feebas",
+          "nickname": null,
+          "gender": "Any",
+          "level": 12,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Rain Dance",
+            "Water Gun",
+            "Flail"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Goldeen",
+          "nickname": null,
+          "gender": "Any",
+          "level": 12,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Nature Power",
+            "Peck",
+            "Fury Attack"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_REN.png",
+      "id": "TRAINER_REN",
+      "name": "Ren",
+      "level": "MAP_MAGURO_HARBOR_DOJO",
+      "party": [
+        {
+          "species": "Psyduck Tokuan",
+          "nickname": null,
+          "gender": "Any",
+          "level": 13,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Confusion",
+            "Disable",
+            "Bite"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_MIZU.png",
+      "id": "TRAINER_MIZU",
+      "name": "Mizu",
+      "level": "MAP_MAGURO_HARBOR_DOJO",
+      "party": [
+        {
+          "species": "Magikarp",
+          "nickname": null,
+          "gender": "Any",
+          "level": 12,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Bounce",
+            "Splash"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Surskit",
+          "nickname": null,
+          "gender": "Any",
+          "level": 12,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "String Shot",
+            "Quick Attack",
+            "Bubble"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_HARIKO_MAGURO.png",
+      "id": "TRAINER_HARIKO_MAGURO",
+      "name": "Hariko",
+      "level": "MAP_MAGURO_HARBOR_REFUGE",
+      "party": [
+        {
+          "species": "Slowpoke",
+          "nickname": "Bean",
+          "gender": "Male",
+          "level": 14,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "moves": [
+            "Protect",
+            "Water Pulse",
+            "Confusion",
+            "Tackle"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_ORCHARD_PATH": [
+    {
+      "battlePic": "trainers/TRAINER_JUNKO.png",
+      "id": "TRAINER_JUNKO",
+      "name": "Junko",
+      "level": "MAP_ORCHARD_PATH",
+      "party": [
+        {
+          "species": "Munchlax",
+          "nickname": null,
+          "gender": "Male",
+          "level": 23,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Stockpile",
+            "Swallow",
+            "Body Slam"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_MAMI.png",
+      "id": "TRAINER_MAMI",
+      "name": "Mami",
+      "level": "MAP_ORCHARD_PATH",
+      "party": [
+        {
+          "species": "Misdreavus",
+          "nickname": null,
+          "gender": "Any",
+          "level": 23,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Spite",
+            "Hex",
+            "Psywave"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Misdreavus",
+          "nickname": null,
+          "gender": "Any",
+          "level": 23,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Confuse Ray",
+            "Mean Look",
+            "Astonish",
+            "Hex"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_ROCK_SMASH_GUY.png",
+      "id": "TRAINER_ROCK_SMASH_GUY",
+      "name": "Smasher",
+      "level": "MAP_ORCHARD_PATH",
+      "party": [
+        {
+          "species": "Makuhita",
+          "nickname": null,
+          "gender": "Any",
+          "level": 10,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Rock Smash"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_SAKU_TOWN": [
+    {
+      "battlePic": "trainers/TRAINER_RIVAL_SAKU_SNIVY.png",
+      "id": "TRAINER_RIVAL_SAKU_SNIVY",
+      "name": "Natsuki",
+      "level": "MAP_SAKU_TOWN",
+      "party": [
+        {
+          "species": "Wooper",
+          "nickname": null,
+          "gender": "Any",
+          "level": 10,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "moves": [
+            "Water Gun",
+            "Mud Shot",
+            "Tail Whip",
+            "Slam"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Cyndaquil",
+          "nickname": null,
+          "gender": "Any",
+          "level": 12,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "moves": [
+            "Fire Spin",
+            "Defense Curl",
+            "Swift"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_RIVAL_SAKU_FROAKIE.png",
+      "id": "TRAINER_RIVAL_SAKU_FROAKIE",
+      "name": "Natsuki",
+      "level": "MAP_SAKU_TOWN",
+      "party": [
+        {
+          "species": "Growlithe",
+          "nickname": null,
+          "gender": "Any",
+          "level": 10,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "moves": [
+            "Bite",
+            "Roar",
+            "Ember"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Snivy",
+          "nickname": null,
+          "gender": "Any",
+          "level": 12,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "moves": [
+            "Absorb",
+            "Wrap",
+            "Growth",
+            "Vine Whip"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_RIVAL_SAKU_CYNDAQUIL.png",
+      "id": "TRAINER_RIVAL_SAKU_CYNDAQUIL",
+      "name": "Natsuki",
+      "level": "MAP_SAKU_TOWN",
+      "party": [
+        {
+          "species": "Shroomish",
+          "nickname": null,
+          "gender": "Any",
+          "level": 11,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "moves": [
+            "Leech Seed",
+            "Absorb",
+            "Stun Spore",
+            "Tackle"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Froakie",
+          "nickname": null,
+          "gender": "Any",
+          "level": 13,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "moves": [
+            "Bubble",
+            "Quick Attack",
+            "Lick"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_TAMAS_DAD.png",
+      "id": "TRAINER_TAMAS_DAD",
+      "name": "Kiyosumi",
+      "level": "MAP_SAKU_TOWN",
+      "party": [
+        {
+          "species": "Pinsir",
+          "nickname": null,
+          "gender": "Any",
+          "level": 15,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Revenge",
+            "Vital Throw",
+            "Rock Smash",
+            "Vise Grip"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_SILVER_TUNNEL": [
+    {
+      "battlePic": "trainers/TRAINER_KENTO.png",
+      "id": "TRAINER_KENTO",
+      "name": "Kento",
+      "level": "MAP_SILVER_TUNNEL_1F",
+      "party": [
+        {
+          "species": "Makuhita",
+          "nickname": null,
+          "gender": "Any",
+          "level": 15,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Focus Energy",
+            "Force Palm",
+            "Rock Smash"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_SHUYA.png",
+      "id": "TRAINER_SHUYA",
+      "name": "Shuya",
+      "level": "MAP_SILVER_TUNNEL_1F",
+      "party": [
+        {
+          "species": "Nacli",
+          "nickname": null,
+          "gender": "Any",
+          "level": 14,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Rock Throw",
+            "Mud Shot",
+            "Rock Polish"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Makuhita",
+          "nickname": null,
+          "gender": "Any",
+          "level": 15,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Rock Smash",
+            "Fake Out",
+            "Arm Thrust",
+            "Endure"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_YORU.png",
+      "id": "TRAINER_YORU",
+      "name": "Yoru",
+      "level": "MAP_SILVER_TUNNEL_1F",
+      "party": [
+        {
+          "species": "Shuppet",
+          "nickname": null,
+          "gender": "Any",
+          "level": 15,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Screech",
+            "Shadow Sneak",
+            "Spite"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Gastly",
+          "nickname": null,
+          "gender": "Any",
+          "level": 15,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Hypnosis",
+            "Night Shade",
+            "Mean Look",
+            "Curse"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_TAMA.png",
+      "id": "TRAINER_TAMA",
+      "name": "Tama",
+      "level": "MAP_SILVER_TUNNEL_2F",
+      "party": [
+        {
+          "species": "Carbink",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": "Stardust",
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Sharpen",
+            "Rock Throw",
+            "Harden"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Sableye",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": "Star Piece",
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Night Shade",
+            "Astonish",
+            "Fury Swipes"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_IKUTO.png",
+      "id": "TRAINER_IKUTO",
+      "name": "Ikuto",
+      "level": "MAP_SILVER_TUNNEL_2F",
+      "party": [
+        {
+          "species": "Aron",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Headbutt",
+            "Metal Claw",
+            "Rock Tomb"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Onix",
+          "nickname": null,
+          "gender": "Female",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Curse",
+            "Rock Throw",
+            "Stealth Rock",
+            "Bind"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_SILVERIDGE": [
+    {
+      "battlePic": "trainers/TRAINER_SHAMISEN.png",
+      "id": "TRAINER_SHAMISEN",
+      "name": "Kyoku",
+      "level": "MAP_SILVERIDGE_REFUGE",
+      "party": [
+        {
+          "species": "Kricketune",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Sing",
+            "Fury Cutter",
+            "Bide"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Growlithe",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Fire Fang",
+            "Odor Sleuth",
+            "Bite"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_SUNRISE_VILLAGE": [
+    {
+      "battlePic": "trainers/TRAINER_RIVAL_FIRST_BATTLE_FROAKIE.png",
+      "id": "TRAINER_RIVAL_FIRST_BATTLE_FROAKIE",
+      "name": "Natsuki",
+      "level": "MAP_SUNRISE_VILLAGE_ELDERS_HOUSE",
+      "party": [
+        {
+          "species": "Snivy",
+          "nickname": null,
+          "gender": "Any",
+          "level": 5,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tackle",
+            "Leer"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_RIVAL_FIRST_BATTLE_SNIVY.png",
+      "id": "TRAINER_RIVAL_FIRST_BATTLE_SNIVY",
+      "name": "Natsuki",
+      "level": "MAP_SUNRISE_VILLAGE_ELDERS_HOUSE",
+      "party": [
+        {
+          "species": "Cyndaquil",
+          "nickname": null,
+          "gender": "Any",
+          "level": 5,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tackle",
+            "Leer"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_RIVAL_FIRST_BATTLE_CYNDAQUIL.png",
+      "id": "TRAINER_RIVAL_FIRST_BATTLE_CYNDAQUIL",
+      "name": "Natsuki",
+      "level": "MAP_SUNRISE_VILLAGE_ELDERS_HOUSE",
+      "party": [
+        {
+          "species": "Froakie",
+          "nickname": null,
+          "gender": "Any",
+          "level": 5,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Pound",
+            "Growl"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_TRANQUILROUTE": [
+    {
+      "battlePic": "trainers/TRAINER_CHIKAO.png",
+      "id": "TRAINER_CHIKAO",
+      "name": "Chikao",
+      "level": "MAP_TRANQUIL_ROUTE",
+      "party": [
+        {
+          "species": "Deerling",
+          "nickname": null,
+          "gender": "Any",
+          "level": 6,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tail Whip",
+            "Double Kick",
+            "Absorb"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Kotora",
+          "nickname": null,
+          "gender": "Any",
+          "level": 5,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Baby Doll Eyes",
+            "Thunder Shock",
+            "Tackle"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Nacli",
+          "nickname": null,
+          "gender": "Any",
+          "level": 6,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Rock Throw",
+            "Harden",
+            "Tackle"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_KODOMO.png",
+      "id": "TRAINER_KODOMO",
+      "name": "Kodomo",
+      "level": "MAP_TRANQUIL_ROUTE",
+      "party": [
+        {
+          "species": "Hoothoot",
+          "nickname": null,
+          "gender": "Any",
+          "level": 6,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Growl",
+            "Peck",
+            "Focus Energy"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Hoothoot",
+          "nickname": null,
+          "gender": "Any",
+          "level": 7,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Growl",
+            "Peck",
+            "Tackle",
+            "Echoed Voice"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Kricketot",
+          "nickname": null,
+          "gender": "Any",
+          "level": 7,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tackle",
+            "Growl",
+            "Struggle Bug"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_TAKESHI.png",
+      "id": "TRAINER_TAKESHI",
+      "name": "Takeshi",
+      "level": "MAP_TRANQUIL_ROUTE",
+      "party": [
+        {
+          "species": "Nickit",
+          "nickname": null,
+          "gender": "Any",
+          "level": 7,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Quick Attack",
+            "Beat Up",
+            "Tail Whip"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Seedot",
+          "nickname": null,
+          "gender": "Any",
+          "level": 6,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tackle",
+            "Absorb",
+            "Harden",
+            "Astonish"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_HIINA.png",
+      "id": "TRAINER_HIINA",
+      "name": "Hiina",
+      "level": "MAP_TRANQUIL_ROUTE",
+      "party": [
+        {
+          "species": "Shellos",
+          "nickname": null,
+          "gender": "Any",
+          "level": 7,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Mud Sport",
+            "Harden",
+            "Mud Slap"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Ponyta",
+          "nickname": null,
+          "gender": "Any",
+          "level": 6,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tackle",
+            "Growl",
+            "Tail Whip",
+            "Ember"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_KENJI.png",
+      "id": "TRAINER_KENJI",
+      "name": "Kenji",
+      "level": "MAP_TRANQUIL_ROUTE",
+      "party": [
+        {
+          "species": "Barboach",
+          "nickname": null,
+          "gender": "Any",
+          "level": 7,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Water Gun",
+            "Water Sport"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Inkay",
+          "nickname": null,
+          "gender": "Any",
+          "level": 8,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [
+            "Tackle",
+            "Peck",
+            "Wrap"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_WHITESLATEROUTE": [
+    {
+      "battlePic": "trainers/TRAINER_ITSUMI.png",
+      "id": "TRAINER_ITSUMI",
+      "name": "Itsumi",
+      "level": "MAP_WHITESLATE_ROUTE",
+      "party": [
+        {
+          "species": "Nidorino",
+          "nickname": null,
+          "gender": "Any",
+          "level": 19,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Poison Sting",
+            "Fury Attack",
+            "Helping Hand"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Vulpix",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Baby Doll Eyes",
+            "Fire Spin",
+            "Feint Attack"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_RYOSUKE.png",
+      "id": "TRAINER_RYOSUKE",
+      "name": "Ryosuke",
+      "level": "MAP_WHITESLATE_ROUTE",
+      "party": [
+        {
+          "species": "Nidorina",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Helping Hand",
+            "Fury Swipes",
+            "Tail Whip"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Happiny",
+          "nickname": null,
+          "gender": "Any",
+          "level": 19,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Sweet Kiss",
+            "Double Slap",
+            "Refresh"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_RIKU.png",
+      "id": "TRAINER_RIKU",
+      "name": "Riku",
+      "level": "MAP_WHITESLATE_ROUTE",
+      "party": [
+        {
+          "species": "Poochyena",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Odor Sleuth",
+            "Howl",
+            "Bite"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Nickit",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Thief",
+            "Beat Up",
+            "Tail Whip"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Thievul",
+          "nickname": null,
+          "gender": "Any",
+          "level": 20,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Quick Attack",
+            "Hone Claws",
+            "Assurance"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_TOMOMI.png",
+      "id": "TRAINER_TOMOMI",
+      "name": "Tomomi",
+      "level": "MAP_WHITESLATE_ROUTE",
+      "party": [
+        {
+          "species": "Deerling Spring",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Sand Attack",
+            "Double Kick",
+            "Camouflage",
+            "Mega Drain"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Deerling Autumn",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Leech Seed",
+            "Feint Attack",
+            "Aromatherapy"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Stantler",
+          "nickname": null,
+          "gender": "Any",
+          "level": 19,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Stomp",
+            "Astonish",
+            "Sand Attack",
+            "Leer"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_YONO.png",
+      "id": "TRAINER_YONO",
+      "name": "Yono",
+      "level": "MAP_WHITESLATE_ROUTE",
+      "party": [
+        {
+          "species": "Poltchageist",
+          "nickname": null,
+          "gender": "Any",
+          "level": 20,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Life Dew",
+            "Astonish",
+            "Foul Play",
+            "Mega Drain"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Sudowoodo",
+          "nickname": null,
+          "gender": "Any",
+          "level": 20,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Low Kick",
+            "Mimic",
+            "Rock Throw"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_SUMI.png",
+      "id": "TRAINER_SUMI",
+      "name": "Sumi",
+      "level": "MAP_WHITESLATE_ROUTE",
+      "party": [
+        {
+          "species": "Gastly",
+          "nickname": null,
+          "gender": "Any",
+          "level": 21,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Mean Look",
+            "Night Shade",
+            "Curse",
+            "Hex"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Litwick",
+          "nickname": null,
+          "gender": "Any",
+          "level": 20,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Will O Wisp",
+            "Fire Spin",
+            "Smog"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_TOMIKO.png",
+      "id": "TRAINER_TOMIKO",
+      "name": "Tomiko",
+      "level": "MAP_WHITESLATE_ROUTE",
+      "party": [
+        {
+          "species": "Drowzee",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Poison Gas",
+            "Confusion",
+            "Disable"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Spinda",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Feint Attack",
+            "Psybeam",
+            "Copycat"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_UTARO.png",
+      "id": "TRAINER_UTARO",
+      "name": "Utaro",
+      "level": "MAP_WHITESLATE_ROUTE",
+      "party": [
+        {
+          "species": "Zangoose",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Pursuit",
+            "Fury Cutter",
+            "Leer"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Seviper",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Bite",
+            "Poison Tail",
+            "Wrap",
+            "Screech"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_UTARO.png",
+      "id": "TRAINER_UTARO",
+      "name": "Utaro",
+      "level": "MAP_WHITESLATE_ROUTE",
+      "party": [
+        {
+          "species": "Zangoose",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Pursuit",
+            "Fury Cutter",
+            "Leer"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Seviper",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Bite",
+            "Poison Tail",
+            "Wrap",
+            "Screech"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_WINDSWEPTROUTE": [
+    {
+      "battlePic": "trainers/TRAINER_MUSASHI_1.png",
+      "id": "TRAINER_MUSASHI_1",
+      "name": "Musashi",
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "party": [
+        {
+          "species": "Makuhita",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [],
+          "tags": []
+        },
+        {
+          "species": "Shroomish",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_ITAMAE.png",
+      "id": "TRAINER_ITAMAE",
+      "name": "Itamae",
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "party": [
+        {
+          "species": "Nacli",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [],
+          "tags": []
+        },
+        {
+          "species": "Dwebble",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_MAKOTO_1.png",
+      "id": "TRAINER_MAKOTO_1",
+      "name": "Makoto",
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "party": [
+        {
+          "species": "Cramorant",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [],
+          "tags": []
+        },
+        {
+          "species": "Krabby",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_ROKU.png",
+      "id": "TRAINER_ROKU",
+      "name": "Roku",
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "party": [
+        {
+          "species": "Diglett",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Dig",
+            "Astonish",
+            "Magnitude",
+            "Growl"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Sandshrew",
+          "nickname": null,
+          "gender": "Any",
+          "level": 17,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Poison Sting",
+            "Fury Swipes",
+            "Rollout",
+            "Defense Curl"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_MUSASHI_1.png",
+      "id": "TRAINER_MUSASHI_1",
+      "name": "Musashi",
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "party": [
+        {
+          "species": "Makuhita",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [],
+          "tags": []
+        },
+        {
+          "species": "Shroomish",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_MUSASHI_1.png",
+      "id": "TRAINER_MUSASHI_1",
+      "name": "Musashi",
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "party": [
+        {
+          "species": "Makuhita",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [],
+          "tags": []
+        },
+        {
+          "species": "Shroomish",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_MUSASHI_1.png",
+      "id": "TRAINER_MUSASHI_1",
+      "name": "Musashi",
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "party": [
+        {
+          "species": "Makuhita",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [],
+          "tags": []
+        },
+        {
+          "species": "Shroomish",
+          "nickname": null,
+          "gender": "Any",
+          "level": 16,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "moves": [],
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "MAP_YIFU_CITY": [
+    {
+      "battlePic": "trainers/TRAINER_AKARI.png",
+      "id": "TRAINER_AKARI",
+      "name": "Akari",
+      "level": "MAP_YIFU_CITY_DOJO",
+      "party": [
+        {
+          "species": "Bounsweet",
+          "nickname": null,
+          "gender": "Any",
+          "level": 24,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [],
+          "tags": []
+        },
+        {
+          "species": "Skiploom",
+          "nickname": null,
+          "gender": "Any",
+          "level": 25,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_KARIN.png",
+      "id": "TRAINER_KARIN",
+      "name": "Karin",
+      "level": "MAP_YIFU_CITY_DOJO",
+      "party": [
+        {
+          "species": "Steenee",
+          "nickname": null,
+          "gender": "Any",
+          "level": 25,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "moves": [
+            "Rapid Spin",
+            "Sweet Scent",
+            "Magical Leaf",
+            "Teeter Dance"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_NANAMI.png",
+      "id": "TRAINER_NANAMI",
+      "name": "Nanami",
+      "level": "MAP_YIFU_CITY_DOJO",
+      "party": [
+        {
+          "species": "Steenee",
+          "nickname": null,
+          "gender": "Any",
+          "level": 25,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "moves": [
+            "Play Nice",
+            "Magical Leaf",
+            "Rapid Spin"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Swadloon Tokuan",
+          "nickname": null,
+          "gender": "Any",
+          "level": 25,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "moves": [
+            "String Shot",
+            "Struggle Bug",
+            "Helping Hand",
+            "Electroweb"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_AKARI.png",
+      "id": "TRAINER_AKARI",
+      "name": "Akari",
+      "level": "MAP_YIFU_CITY_DOJO",
+      "party": [
+        {
+          "species": "Bounsweet",
+          "nickname": null,
+          "gender": "Any",
+          "level": 24,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [],
+          "tags": []
+        },
+        {
+          "species": "Skiploom",
+          "nickname": null,
+          "gender": "Any",
+          "level": 25,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_YUKA.png",
+      "id": "TRAINER_YUKA",
+      "name": "Yuka",
+      "level": "MAP_YIFU_CITY_DOJO",
+      "party": [
+        {
+          "species": "Bounsweet",
+          "nickname": null,
+          "gender": "Any",
+          "level": 22,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [],
+          "tags": []
+        },
+        {
+          "species": "Steenee",
+          "nickname": null,
+          "gender": "Any",
+          "level": 24,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_NANAMI.png",
+      "id": "TRAINER_NANAMI",
+      "name": "Nanami",
+      "level": "MAP_YIFU_CITY_DOJO",
+      "party": [
+        {
+          "species": "Steenee",
+          "nickname": null,
+          "gender": "Any",
+          "level": 25,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "moves": [
+            "Play Nice",
+            "Magical Leaf",
+            "Rapid Spin"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Swadloon Tokuan",
+          "nickname": null,
+          "gender": "Any",
+          "level": 25,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "moves": [
+            "String Shot",
+            "Struggle Bug",
+            "Helping Hand",
+            "Electroweb"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_KANAE.png",
+      "id": "TRAINER_KANAE",
+      "name": "Kanae",
+      "level": "MAP_YIFU_CITY_DOJO",
+      "party": [
+        {
+          "species": "Skiploom",
+          "nickname": null,
+          "gender": "Any",
+          "level": 26,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [
+            "Mega Drain",
+            "Aerial Ace",
+            "Stun Spore",
+            "Fairy Wind"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Kirlia",
+          "nickname": null,
+          "gender": "Any",
+          "level": 25,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [
+            "Lucky Chant",
+            "Magical Leaf",
+            "Confusion"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Oricorio Sensu",
+          "nickname": null,
+          "gender": "Any",
+          "level": 24,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [
+            "Baton Pass",
+            "Double Slap",
+            "Feather Dance"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_KARIN.png",
+      "id": "TRAINER_KARIN",
+      "name": "Karin",
+      "level": "MAP_YIFU_CITY_DOJO",
+      "party": [
+        {
+          "species": "Steenee",
+          "nickname": null,
+          "gender": "Any",
+          "level": 25,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "moves": [
+            "Rapid Spin",
+            "Sweet Scent",
+            "Magical Leaf",
+            "Teeter Dance"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_MIIKA.png",
+      "id": "TRAINER_MIIKA",
+      "name": "Miika",
+      "level": "MAP_YIFU_CITY_DOJO",
+      "party": [
+        {
+          "species": "Oricorio Sensu",
+          "nickname": null,
+          "gender": "Any",
+          "level": 24,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [
+            "Double Slap",
+            "Feather Dance",
+            "Helping Hand",
+            "Air Cutter"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Kirlia",
+          "nickname": null,
+          "gender": "Any",
+          "level": 25,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "moves": [
+            "Disarming Voice",
+            "Draining Kiss"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_YUTAKA_1.png",
+      "id": "TRAINER_YUTAKA_1",
+      "name": "Yutaka",
+      "level": "MAP_YIFU_CITY_DOJO",
+      "party": [
+        {
+          "species": "Oricorio Sensu",
+          "nickname": null,
+          "gender": "Any",
+          "level": 23,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            24,
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "moves": [
+            "Wing Attack",
+            "Feather Dance",
+            "Mirror Move",
+            "Twister"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Leavanny Tokuan",
+          "nickname": null,
+          "gender": "Any",
+          "level": 23,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            24,
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "moves": [
+            "String Shot",
+            "Shock Wave",
+            "X-Scissor",
+            "Swords Dance"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Kirlia",
+          "nickname": null,
+          "gender": "Any",
+          "level": 24,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            24,
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "moves": [
+            "Disarming Voice",
+            "Double Team",
+            "Heal Pulse",
+            "Confusion"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Tsareena",
+          "nickname": null,
+          "gender": "Any",
+          "level": 25,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            24,
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "moves": [
+            "Stomp",
+            "Teeter Dance",
+            "Sweet Scent",
+            "Magical Leaf"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_SACHIKO.png",
+      "id": "TRAINER_SACHIKO",
+      "name": "Sachiko",
+      "level": "MAP_YIFU_CITY_HOT_SPRINGS",
+      "party": [
+        {
+          "species": "Shuckle",
+          "nickname": null,
+          "gender": "Any",
+          "level": 19,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Sticky Web",
+            "Wrap",
+            "Struggle Bug"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Poltchageist",
+          "nickname": null,
+          "gender": "Any",
+          "level": 21,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Stun Spore",
+            "Withdraw",
+            "Mega Drain"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Braixen",
+          "nickname": null,
+          "gender": "Any",
+          "level": 20,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Howl",
+            "Psybeam",
+            "Flame Charge"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_FUTOSHI.png",
+      "id": "TRAINER_FUTOSHI",
+      "name": "Futoshi",
+      "level": "MAP_YIFU_CITY_HOT_SPRINGS",
+      "party": [
+        {
+          "species": "Slakoth",
+          "nickname": null,
+          "gender": "Any",
+          "level": 21,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Yawn",
+            "Feint Attack",
+            "Encore"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Barboach",
+          "nickname": null,
+          "gender": "Any",
+          "level": 21,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Magnitude",
+            "Amnesia",
+            "Water Gun"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_WAKAE.png",
+      "id": "TRAINER_WAKAE",
+      "name": "Wakae",
+      "level": "MAP_YIFU_CITY_HOT_SPRINGS",
+      "party": [
+        {
+          "species": "Torkoal",
+          "nickname": null,
+          "gender": "Any",
+          "level": 19,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Rapid Spin",
+            "Smokescreen",
+            "Flame Wheel",
+            "Curse"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Wailmer",
+          "nickname": null,
+          "gender": "Any",
+          "level": 18,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Rollout",
+            "Whirlpool",
+            "Mist"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Slowpoke",
+          "nickname": null,
+          "gender": "Any",
+          "level": 20,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Yawn",
+            "Disable",
+            "Headbutt",
+            "Growl"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_LIHUO.png",
+      "id": "TRAINER_LIHUO",
+      "name": "Lihuo",
+      "level": "MAP_YIFU_CITY_HOT_SPRINGS",
+      "party": [
+        {
+          "species": "Darumaka",
+          "nickname": null,
+          "gender": "Any",
+          "level": 20,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Incinerate",
+            "Rage",
+            "Facade"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Slugma",
+          "nickname": null,
+          "gender": "Any",
+          "level": 23,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Smog",
+            "Rock Throw",
+            "Incinerate"
+          ],
+          "tags": []
+        },
+        {
+          "species": "Slugma",
+          "nickname": null,
+          "gender": "Any",
+          "level": 23,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Harden",
+            "Clear Smog",
+            "Flame Burst"
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "battlePic": "trainers/TRAINER_YAMATO.png",
+      "id": "TRAINER_YAMATO",
+      "name": "Yamato",
+      "level": "MAP_YIFU_CITY_REFUGE_2F",
+      "party": [
+        {
+          "species": "Bayleef",
+          "nickname": null,
+          "gender": "Any",
+          "level": 20,
+          "item": null,
+          "ability": null,
+          "nature": null,
+          "ball": null,
+          "friendship": null,
+          "shiny": false,
+          "dynamaxLevel": null,
+          "gigantamaxFactor": false,
+          "teraType": null,
+          "evs": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "ivs": [
+            31,
+            31,
+            31,
+            31,
+            31,
+            31
+          ],
+          "moves": [
+            "Poison Powder",
+            "Magical Leaf",
+            "Growl"
+          ],
+          "tags": []
+        }
+      ]
+    }
+  ]
+}
