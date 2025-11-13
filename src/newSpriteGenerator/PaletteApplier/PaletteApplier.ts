@@ -30,7 +30,12 @@ export class PaletteApplier {
   @param folder The name of the folder inside outputDir to write the png
   @returns The path it came up with to your image.
   */
-  writePng: (folder: string, fileName: string, data: Buffer) => Promise<string>;
+  writePng: (
+    folder: string,
+    fileName: string,
+    data: Buffer,
+    options?: { overwrite?: boolean }
+  ) => Promise<string>;
 
   constructor(options: PaletteApplierOptions) {
     this.transparentIndex = options.transparentIndex ?? 0;

@@ -1,6 +1,6 @@
 import * as toml from "toml";
 import { z } from "zod";
-import { readFileSync, existsSync } from "fs";
+import { readFileSync, existsSync, mkdirSync } from "fs";
 import { resolve } from "path";
 import { ConfigSchema, type ConfigType } from "./configSchema.js";
 
@@ -79,6 +79,11 @@ export class Config {
    * @throws Error if any directory doesn't exist
    */
   private validateDirectoriesExist(): void {
+    // Ensure generated directory exists
+    const generatedDir = resolve(this.rootDir, "generated");
+    if (!existsSync(generatedDir)) {
+      mkdirSync(generatedDir, { recursive: true });
+    }
     const directories: Record<string, string> = {
       dataDir: this.dataDir,
       spritesRoot: this.sprites,

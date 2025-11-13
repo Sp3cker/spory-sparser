@@ -4,7 +4,13 @@ import {
   PeopleSpriteProcessorBase,
   type PeopleSpriteRule,
 } from "./PeopleSpriteProcessorBase.ts";
-
+import { SpriteProcessingError } from "./SpriteProcessor.ts";
+const UnsupportedDimensions = [
+  [192, 32],
+  [160, 32],
+  [224, 32],
+  [64, 64],
+];
 const EXCEPTION_FILES = [
   "candice.png",
   "cycling_triathlete_f.png",
@@ -104,15 +110,26 @@ export class TrainerSpriteProcessor extends PeopleSpriteProcessorBase {
   protected async processSpriteFile(filePath: string): Promise<void> {
     const filename = basename(filePath);
     const { width, height } = await this.readImageDimensions(filePath);
+    if (UnsupportedDimensions.some(([w, h]) => w === width && h === height)) {
+      return;
+    }
     const rule = this.getSpriteRule(filename, width, height);
 
-    console.log(`Processing ${filename} (${width}x${height})`);
+    let normalizedFrames: string[] = [];
 
-    const normalizedFrames = await this.extractNormalizedFrames(
-      filePath,
-      filename,
-      rule
-    );
+    try {
+      normalizedFrames = await this.extractNormalizedFrames(
+        filePath,
+        filename,
+        rule
+      );
+    } catch (error) {
+      throw new SpriteProcessingError(
+        "resizing",
+        `Failed to normalize frames for ${filename}`,
+        error
+      );
+    }
 
     try {
       const frameWidthWithPadding = 32;
@@ -138,15 +155,29 @@ export class TrainerSpriteProcessor extends PeopleSpriteProcessorBase {
       );
       compositeCmd += ` "${outputPng}"`;
 
-      await this.exec(compositeCmd);
+      try {
+        await this.exec(compositeCmd);
+      } catch (error) {
+        throw new SpriteProcessingError(
+          "resizing",
+          `Failed to composite frames for ${filename}`,
+          error
+        );
+      }
 
       if (this.options.convertToWebP) {
         const webpPath = outputPng.replace(/\.png$/i, ".webp");
         const convertCmd = `magick "${outputPng}" -define webp:lossless=true "${webpPath}"`;
-        await this.exec(convertCmd);
+        try {
+          await this.exec(convertCmd);
+        } catch (error) {
+          throw new SpriteProcessingError(
+            "writingWebm",
+            `Failed to convert ${filename} to WEBP`,
+            error
+          );
+        }
       }
-
-      console.log(`✓ Processed ${filename} -> ${outputPng}`);
     } catch (error) {
       console.error(
         `✗ Error processing ${filename}:`,
@@ -167,11 +198,8 @@ export class TrainerSpriteProcessor extends PeopleSpriteProcessorBase {
       );
 
       if (pngFiles.length === 0) {
-        console.log("No PNG files found to process.");
         return;
       }
-
-      console.log(`Found ${pngFiles.length} PNG files to process`);
 
       for (const filename of pngFiles) {
         try {
@@ -183,8 +211,6 @@ export class TrainerSpriteProcessor extends PeopleSpriteProcessorBase {
           );
         }
       }
-
-      console.log("\nTrainer sprite processing complete!");
     } catch (error) {
       console.error(
         "Error during trainer sprite processing:",

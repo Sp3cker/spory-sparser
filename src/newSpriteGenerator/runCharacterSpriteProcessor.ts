@@ -2,7 +2,7 @@
 import path from "path";
 import { fileURLToPath } from "url";
 import { promises as fs } from "fs";
-import { CharacterSpriteProcessor } from "./CharacterSpriteProcessor.ts";
+import { OverworldTrainerSpriteProcessor } from "./OverworldTrainerSpriteProcessor.ts";
 import {
   SpriteDatasetPipeline,
   createOverworldRule,
@@ -104,7 +104,7 @@ async function main(): Promise<void> {
   // Ensure output directory exists
   await fs.mkdir(outputDir, { recursive: true });
 
-  const processor = new CharacterSpriteProcessor(sourceDir, outputDir);
+  const processor = new OverworldTrainerSpriteProcessor(sourceDir, outputDir);
 
   try {
     // Process all sprites in the source directory

@@ -1,0 +1,8 @@
+Running species pipeline...
+[speciesOverworld] Validation failed for "Metapod"
+{ formErrors: [], fieldErrors: { icon: [ 'Required' ] } }
+[speciesOverworld] Preparing 1470 task(s)
+[speciesOverworld] Sample tasks: 1, 2, 3, 4, 5
+[speciesOverworld] Preparing 1 (task 1/1470)
+[speciesOverworld] Debug task 1: useSourceImage=true, hasTransform=false, hasPostProcess=true
+[speciesOverworld] Post-processing 1

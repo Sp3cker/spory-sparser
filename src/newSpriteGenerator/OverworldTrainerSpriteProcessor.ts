@@ -4,6 +4,15 @@ import {
   PeopleSpriteProcessorBase,
   type PeopleSpriteRule,
 } from "./PeopleSpriteProcessorBase.ts";
+import { SpriteProcessingError } from "./SpriteProcessor.ts";
+// width x height
+const UnsupportedDimensions = [
+  [192, 32],
+  [160, 32],
+  [224, 32],
+  [64, 64],
+  [864, 32]
+];
 /**
  * Run this file/class in a CLI to process all character sprites
  */
@@ -14,7 +23,7 @@ const EXCEPTION_FILES = [
   "cycling_triathlete_m.png",
 ];
 
-export class CharacterSpriteProcessor extends PeopleSpriteProcessorBase {
+export class OverworldTrainerSpriteProcessor extends PeopleSpriteProcessorBase {
   constructor(sourceDirPath: string, outputDirPath: string) {
     super(sourceDirPath, outputDirPath, EXCEPTION_FILES);
   }
@@ -40,66 +49,76 @@ export class CharacterSpriteProcessor extends PeopleSpriteProcessorBase {
         frameWidth: 16,
         frameCount: 9, // 144 / 16 = 9 frames
         framesToExtract: [3, 0, 4, 0], // 4th, 1st, 5th frames (0-indexed)
-        needsPadding: true, // Flag to indicate this sprite needs padding
+        // needsPadding: true, // Flag to indicate this sprite needs padding
       };
     }
 
     // Validate height - all other sprites should be 32px tall
-    if (height !== 32) {
-      throw new Error(
-        `Invalid sprite height for ${filename}: expected 32px or 16px, got ${height}px`
-      );
-    }
+    if (height === 32) {
+      // throw new Error(
+      //   `Invalid sprite height for ${filename}: expected 32px or 16px, got ${height}px`
+      // );
 
-    // Handle exception files (288px wide)
-    // if (EXCEPTION_FILES.includes(filename)) {
-    // if (width !== 288) {
-    //   throw new Error(
-    //     `Exception file ${filename} should be 288px wide, got ${width}px`
-    //   );
-    // }
-    if (width === 288) {
-      return {
-        width: 288,
-        height: 32,
-        frameWidth: 32,
-        frameCount: 9, // 288 / 32 = 9 frames
-        framesToExtract: [0, 3, 0, 4], // 1st, 4th, 5th frames (0-indexed)
-      };
-    }
+      // Handle exception files (288px wide)
+      // if (EXCEPTION_FILES.includes(filename)) {
+      // if (width !== 288) {
+      //   throw new Error(
+      //     `Exception file ${filename} should be 288px wide, got ${width}px`
+      //   );
+      // }
+      console.log(width);
+      if (width === 288) {
+        return {
+          width: 288,
+          height: 32,
+          frameWidth: 32,
+          frameCount: 9, // 288 / 32 = 9 frames
+          framesToExtract: [0, 3, 0, 4], // 1st, 4th, 5th frames (0-indexed)
+        };
+      }
 
-    // Handle 48px wide sprites
-    if (width === 48) {
-      return {
-        width: 48,
-        height: 32,
-        frameWidth: 16,
-        frameCount: 3, // 48 / 16 = 3 frames
-        framesToExtract: [0, 0, 0, 0], // Create 4 repeated frames from the 1st frame
-        repeatedFrameCount: 4, // Create 4 repeated frames
-      };
-    }
+      // Handle 48px wide sprites
+      if (width === 48) {
+        return {
+          width: 48,
+          height: 32,
+          frameWidth: 16,
+          frameCount: 3, // 48 / 16 = 3 frames
+          framesToExtract: [0, 0, 0, 0], // Create 4 repeated frames from the 1st frame
+          repeatedFrameCount: 4, // Create 4 repeated frames
+        };
+      }
 
-    // Handle 96px wide sprites (3 frames)
-    if (width === 96) {
-      return {
-        width: 96,
-        height: 32,
-        frameWidth: 32,
-        frameCount: 3, // 96 / 32 = 3 frames
-        framesToExtract: [0, 1, 2, 0], // 1st, 2nd, 3rd frames (0-indexed)
-      };
-    }
+      // Handle 96px wide sprites (3 frames)
+      if (width === 96) {
+        return {
+          width: 96,
+          height: 32,
+          frameWidth: 32,
+          frameCount: 3, // 96 / 32 = 3 frames
+          framesToExtract: [0, 1, 2, 0], // 1st, 2nd, 3rd frames (0-indexed)
+        };
+      }
 
-    // Handle 144px wide sprites. ORDER OF FRAMES IS SET HERE.
-    if (width === 144) {
-      return {
-        width: 144,
-        height: 32,
-        frameWidth: 16,
-        frameCount: 9, // 144 / 16 = 9 frames
-        framesToExtract: [3, 0, 4, 0], // 4th, 1st, 5th frames (0-indexed)
-      };
+      // Handle 144px wide sprites. ORDER OF FRAMES IS SET HERE.
+      if (width === 144) {
+        return {
+          width: 144,
+          height: 32,
+          frameWidth: 16,
+          frameCount: 9, // 144 / 16 = 9 frames
+          framesToExtract: [3, 0, 4, 0], // 4th, 1st, 5th frames (0-indexed)
+        };
+      }
+      if (width === 128) {
+        return {
+          width: 128,
+          height: 32,
+          frameWidth: 16,
+          frameCount: 8, // 128 / 16 = 8 frames
+          framesToExtract: [4, 0, 4, 0], // 4th, 1st, 5th frames (0-indexed)
+        };
+      }
     }
 
     throw new Error(
@@ -110,16 +129,27 @@ export class CharacterSpriteProcessor extends PeopleSpriteProcessorBase {
   protected async processSpriteFile(filePath: string): Promise<void> {
     const filename = basename(filePath);
     const { width, height } = await this.readImageDimensions(filePath);
+    if (UnsupportedDimensions.some(([w, h]) => w === width && h === height)) {
+      return;
+    }
     const rule = this.getSpriteRule(filename, width, height);
 
-    console.log(`Processing ${filename} (${width}x${height})`);
-
-    const normalizedFrames = await this.extractNormalizedFrames(
-      filePath,
-      filename,
-      rule
-    );
+    let normalizedFrames: string[] = [];
     const paddedFrames: string[] = [];
+
+    try {
+      normalizedFrames = await this.extractNormalizedFrames(
+        filePath,
+        filename,
+        rule
+      );
+    } catch (error) {
+      throw new SpriteProcessingError(
+        "resizing",
+        `Failed to normalize frames for ${filename}`,
+        error
+      );
+    }
 
     try {
       for (let i = 0; i < normalizedFrames.length; i++) {
@@ -129,14 +159,22 @@ export class CharacterSpriteProcessor extends PeopleSpriteProcessorBase {
           frameY = 9;
         }
 
-        await this.addPadding(
-          normalizedFrames[i],
-          paddedFramePath,
-          32,
-          40,
-          8,
-          frameY
-        );
+        try {
+          await this.addPadding(
+            normalizedFrames[i],
+            paddedFramePath,
+            32,
+            40,
+            8,
+            frameY
+          );
+        } catch (error) {
+          throw new SpriteProcessingError(
+            "resizing",
+            `Failed to pad frame ${i} for ${filename}`,
+            error
+          );
+        }
 
         paddedFrames.push(paddedFramePath);
       }
@@ -146,8 +184,15 @@ export class CharacterSpriteProcessor extends PeopleSpriteProcessorBase {
         `${this.getBaseName(filePath)}.webp`
       );
 
-      await this.createAnimatedWebP2x(paddedFrames, outputPath, 330);
-      console.log(`✓ Processed ${filename} -> ${outputPath}`);
+      try {
+        await this.createAnimatedWebP2x(paddedFrames, outputPath, 330);
+      } catch (error) {
+        throw new SpriteProcessingError(
+          "writingWebm",
+          `Failed to create WEBP for ${filename}`,
+          error
+        );
+      }
     } catch (error) {
       console.error(
         `✗ Error processing ${filename}:`,
@@ -170,11 +215,8 @@ export class CharacterSpriteProcessor extends PeopleSpriteProcessorBase {
       );
 
       if (pngFiles.length === 0) {
-        console.log("No PNG files found to process.");
         return;
       }
-
-      console.log(`Found ${pngFiles.length} PNG files to process`);
 
       for (const filename of pngFiles) {
         try {
@@ -186,8 +228,6 @@ export class CharacterSpriteProcessor extends PeopleSpriteProcessorBase {
           );
         }
       }
-
-      console.log("\nSprite frame extraction complete!");
     } catch (error) {
       console.error(
         "Error during sprite processing:",
@@ -205,7 +245,9 @@ export class CharacterSpriteProcessor extends PeopleSpriteProcessorBase {
     await this.ensureDirectoryExists(this.outputDirPath);
 
     const files = await fs.readdir(this.sourceDirPath);
-    const pngFiles = files.filter((file) => file.toLowerCase().endsWith(".png"));
+    const pngFiles = files.filter((file) =>
+      file.toLowerCase().endsWith(".png")
+    );
 
     if (pngFiles.length === 0) {
       console.log("No PNG files found to process.");

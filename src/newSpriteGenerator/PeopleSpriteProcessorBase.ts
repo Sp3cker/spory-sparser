@@ -4,7 +4,7 @@ import { Jimp } from "jimp";
 import { SpriteProcessor, type ProcessingRule } from "./SpriteProcessor.js";
 
 export interface PeopleSpriteRule extends ProcessingRule {
-  needsPadding?: boolean;
+  // needsPadding?: boolean;
 }
 
 export abstract class PeopleSpriteProcessorBase extends SpriteProcessor {

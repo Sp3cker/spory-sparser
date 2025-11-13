@@ -5,19 +5,25 @@ import path from "path";
 
 const writePng =
   (config: Config) =>
-  async (folder: string, filePath: string, data: Buffer) => {
+  async (
+    folder: string,
+    filePath: string,
+    data: Buffer,
+    options: { overwrite?: boolean } = {}
+  ) => {
+    const { overwrite = false } = options;
     const outPath = path.resolve(config.outputDir, folder, filePath);
     const dir = path.dirname(outPath);
-    
+
     const relativePath = path.join(folder, filePath);
 
-    // Check if file already exists
-    try {
-      await access(outPath, constants.F_OK);
-      // File exists, skip writing
-      return relativePath;
-    } catch {
-      // File doesn't exist, proceed with writing
+    if (!overwrite) {
+      try {
+        await access(outPath, constants.F_OK);
+        return relativePath;
+      } catch {
+        // File missing; continue to write
+      }
     }
 
     // Create directory if it doesn't exist

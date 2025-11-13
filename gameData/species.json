@@ -1,45 +1,5 @@
 {
-    "0": {
-        "speciesId": 0,
-        "speciesName": "MissingNo.",
-        "unknownName": "??????????",
-        "types": [],
-        "stats": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        "abilities": [
-            0,
-            0,
-            0
-        ],
-        "levelUpMoves": [
-            [
-                1,
-                1
-            ]
-        ],
-        "tmMoves": [],
-        "eggMoves": null,
-        "dexId": 0,
-        "evolutions": null,
-        "forms": null,
-        "formId": 0,
-        "nameKey": "MissingNo.",
-        "baseForm": 0,
-        "isLegendary": false,
-        "isMythic": false,
-        "isUltraBeast": false,
-        "frontPic": "graphics/pokemon/question_mark/circled/anim_front.4bpp.smol",
-        "backPic": "graphics/pokemon/question_mark/circled/back.4bpp.smol",
-        "palette": "graphics/pokemon/question_mark/circled/normal.gbapal",
-        "shinyPalette": "graphics/pokemon/question_mark/circled/shiny.gbapal",
-        "icon": "graphics/pokemon/question_mark/icon.4bpp"
-    },
+
     "1": {
         "speciesId": 1,
         "speciesName": "Bulbasaur",

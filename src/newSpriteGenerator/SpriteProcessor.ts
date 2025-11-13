@@ -14,6 +14,20 @@ export interface ProcessingRule {
   needsPadding?: boolean;
 }
 
+export type SpriteProcessingStage = "resizing" | "writingWebm";
+
+export class SpriteProcessingError extends Error {
+  public readonly stage: SpriteProcessingStage;
+  public readonly cause?: unknown;
+
+  constructor(stage: SpriteProcessingStage, message: string, cause?: unknown) {
+    super(message);
+    this.name = "SpriteProcessingError";
+    this.stage = stage;
+    this.cause = cause;
+  }
+}
+
 export abstract class SpriteProcessor {
   protected tempDir = "/tmp";
 
@@ -111,6 +125,41 @@ export abstract class SpriteProcessor {
       throw error;
     } finally {
       // Cleanup temp scaled frames regardless of success
+      await this.cleanupTempFiles(scaledFrames);
+    }
+  }
+
+  async createAnimatedWebPScaled(
+    framePaths: string[],
+    outputPath: string,
+    frameDuration: number,
+    scaleFactor: number
+  ): Promise<void> {
+    if (scaleFactor <= 0) {
+      throw new Error("scaleFactor must be greater than zero");
+    }
+
+    const scaledFrames: string[] = [];
+    try {
+      for (const src of framePaths) {
+        const dst = this.generateTempPath("scaled", ".png");
+        const percent = scaleFactor * 100;
+        const cmd = `magick "${src}" -filter point -resize ${percent}% "${dst}"`;
+        await this.exec(cmd);
+        scaledFrames.push(dst);
+      }
+
+      let img2webpCmd = `img2webp -loop 0 -m 6 -lossless`;
+      for (const framePath of scaledFrames) {
+        img2webpCmd += ` -d ${frameDuration} "${framePath}"`;
+      }
+      img2webpCmd += ` -o "${outputPath}"`;
+
+      await this.exec(img2webpCmd);
+    } catch (error) {
+      console.error(`Error creating scaled animated WEBP: ${error}`);
+      throw error;
+    } finally {
       await this.cleanupTempFiles(scaledFrames);
     }
   }

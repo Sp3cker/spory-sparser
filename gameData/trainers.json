@@ -1,18 +1,5 @@
  [
-  {
-    "id": "TRAINER_NONE",
-    "name": null,
-    "trainerClass": "Pkmn Trainer 1",
-    "pic": "Hiker",
-    "gender": "Male",
-    "encounterMusic": "Male",
-    "battleType": "Singles",
-    "aiFlags": [],
-    "items": [],
-    "mugshot": null,
-    "difficulty": "Normal",
-    "party": []
-  },
+
   {
     "id": "TRAINER_SAWYER_1",
     "name": "SAWYER",
