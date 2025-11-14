@@ -1,6 +1,5 @@
-import path from "path";
 import { getLevelLabel } from "./helpers.ts";
-import { generateSpriteFromScript } from "./parseMaps/generateSpriteFromScript.ts";
+
 import { TrainerStruct } from "./validators/trainerRecord.ts";
 import { IncTrainer } from "./validators/levelIncData.ts";
 import { MapEventPlace } from "./validators/mapEvent.ts";
@@ -8,13 +7,15 @@ import { logger } from "./util/logger.ts";
 
 const mergeTrainers = (
   trainerFromInc: IncTrainer,
-  trainersFlat: Record<string, TrainerStruct>,
+  trainersFlat: TrainerStruct[],
   thisLevelsId: string,
   thisLevelsMapJson: MapEventPlace
 ) => {
   // We match up trainers using their name in the .inc file to their var name in the .h file
   // `trainersFlat` is data from the header file
-  const trainerFromHeaderFile = trainersFlat[trainerFromInc.id];
+  const trainerFromHeaderFile = trainersFlat.find(
+    (t) => t.id === trainerFromInc.id
+  );
 
   if (!trainerFromHeaderFile) {
     // There is a mismatch between header and inc files
@@ -59,11 +60,11 @@ const mergeTrainers = (
   let sprite = trainerFromMapJson?.graphics_id;
   // console.log(sprite, ref.script, coord);
   if (!sprite) {
-    const mapsBasePath = path.join(process.cwd(), "maps");
+    // const mapsBasePath = path.join(process.cwd(), "maps");
     // The code for grabing the `graphics_id` doesn't work
     // for trainers that don't walk up to you when they see you
     // So any gym leader or optional trainer...
-    sprite = generateSpriteFromScript(trainerFromInc.script, mapsBasePath);
+    // sprite = generateSpriteFromScript(trainerFromInc.script, mapsBasePath);
 
     // If generateSpriteFromScript returns undefined (image doesn't exist),
     // use the trainer's battlePic as fallback

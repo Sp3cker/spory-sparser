@@ -17,6 +17,8 @@ const EXCEPTION_FILES = [
   "cycling_triathlete_m.png",
 ];
 
+const UPSCALE_FACTOR = 4;
+
 export interface TrainerProcessorOptions {
   convertToWebP?: boolean;
 }
@@ -161,6 +163,18 @@ export class TrainerSpriteProcessor extends PeopleSpriteProcessorBase {
         throw new SpriteProcessingError(
           "resizing",
           `Failed to composite frames for ${filename}`,
+          error
+        );
+      }
+
+      const resizePercent = UPSCALE_FACTOR * 100;
+      const upscaleCmd = `magick "${outputPng}" -filter point -resize ${resizePercent}% "${outputPng}"`;
+      try {
+        await this.exec(upscaleCmd);
+      } catch (error) {
+        throw new SpriteProcessingError(
+          "resizing",
+          `Failed to upscale ${filename}`,
           error
         );
       }

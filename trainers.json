@@ -1,9 +1,14 @@
 {
   "MAP_BEACHBOUNDROUTE": [
     {
-      "battlePic": "trainers/TRAINER_KARU.png",
+      "battlePic": "trainers/processed/TRAINER_KARU.webp",
       "id": "TRAINER_KARU",
       "name": "Karu",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_LASS.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_BEACHBOUND_ROUTE",
       "party": [
         {
@@ -85,9 +90,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_KIN.png",
+      "battlePic": "trainers/processed/TRAINER_KIN.webp",
       "id": "TRAINER_KIN",
       "name": "Kin",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_BATTLE_GIRL.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_BEACHBOUND_ROUTE",
       "party": [
         {
@@ -166,9 +176,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_KOUTA.png",
+      "battlePic": "trainers/processed/TRAINER_KOUTA.webp",
       "id": "TRAINER_KOUTA",
       "name": "Kouta",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_YOUNGSTER.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_BEACHBOUND_ROUTE",
       "party": [
         {
@@ -212,9 +227,15 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_MASATO_1.png",
+      "battlePic": "trainers/processed/TRAINER_MASATO_1.webp",
       "id": "TRAINER_MASATO_1",
       "name": "Masato",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_BUG_CATCHER.webp",
+      "aiFlags": [
+        "Check Bad Move",
+        "Prefer Status Moves"
+      ],
+      "items": [],
       "level": "MAP_BEACHBOUND_ROUTE",
       "party": [
         {
@@ -293,90 +314,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_MASATO_1.png",
-      "id": "TRAINER_MASATO_1",
-      "name": "Masato",
-      "level": "MAP_BEACHBOUND_ROUTE",
-      "party": [
-        {
-          "species": "Kricketot",
-          "nickname": null,
-          "gender": "Male",
-          "level": 11,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "moves": [
-            "Bug Bite",
-            "Struggle Bug",
-            "Sing"
-          ],
-          "tags": []
-        },
-        {
-          "species": "Kricketot",
-          "nickname": null,
-          "gender": "Male",
-          "level": 10,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "moves": [
-            "Fury Cutter",
-            "Sing"
-          ],
-          "tags": []
-        }
-      ]
-    },
-    {
-      "battlePic": "trainers/TRAINER_GRUNT_BEACHBOUND_ROUTE_1.png",
+      "battlePic": "trainers/processed/TRAINER_GRUNT_BEACHBOUND_ROUTE_1.webp",
       "id": "TRAINER_GRUNT_BEACHBOUND_ROUTE_1",
       "name": "Grunt",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_BEACHBOUND_ROUTE",
       "party": [
         {
@@ -458,55 +402,13 @@
   ],
   "MAP_CHII_TOWN": [
     {
-      "battlePic": "trainers/TRAINER_MINORI.png",
+      "battlePic": "trainers/processed/TRAINER_MINORI.webp",
       "id": "TRAINER_MINORI",
       "name": "Minori",
-      "level": "MAP_CHII_TOWN",
-      "party": [
-        {
-          "species": "Deerling Summer",
-          "nickname": "Snuggles",
-          "gender": "Any",
-          "level": 5,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            31,
-            31,
-            31,
-            31,
-            31,
-            31
-          ],
-          "moves": [
-            "Sand Attack",
-            "Growl",
-            "Tackle",
-            "Camouflage"
-          ],
-          "tags": []
-        }
-      ]
-    },
-    {
-      "battlePic": "trainers/TRAINER_MINORI.png",
-      "id": "TRAINER_MINORI",
-      "name": "Minori",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_CHII_TOWN",
       "party": [
         {
@@ -552,9 +454,14 @@
   ],
   "MAP_CROBAT_HIDEOUT": [
     {
-      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_1.png",
+      "battlePic": "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_1.webp",
       "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_1",
       "name": "Grunt",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_F.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_CROBAT_HIDEOUT_1F",
       "party": [
         {
@@ -634,9 +541,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_2.png",
+      "battlePic": "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_2.webp",
       "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_2",
       "name": "Grunt",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_CROBAT_HIDEOUT_1F",
       "party": [
         {
@@ -717,9 +629,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_3.png",
+      "battlePic": "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_3.webp",
       "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_3",
       "name": "Grunt",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_CROBAT_HIDEOUT_1F",
       "party": [
         {
@@ -799,9 +716,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_4.png",
+      "battlePic": "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_4.webp",
       "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_4",
       "name": "Grunt",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_F.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_CROBAT_HIDEOUT_1F",
       "party": [
         {
@@ -881,9 +803,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_5.png",
+      "battlePic": "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_5.webp",
       "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_5",
       "name": "Grunt",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_CROBAT_HIDEOUT_1F",
       "party": [
         {
@@ -926,9 +853,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_6.png",
+      "battlePic": "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_6.webp",
       "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_6",
       "name": "Grunt",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_CROBAT_HIDEOUT_1F",
       "party": [
         {
@@ -1008,9 +940,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_GRUNT_CROBAT_HIDEOUT_7.png",
+      "battlePic": "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_7.webp",
       "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_7",
       "name": "Grunt",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_CROBAT_HIDEOUT_1F",
       "party": [
         {
@@ -1055,9 +991,14 @@
   ],
   "MAP_GINKO_WOODS": [
     {
-      "battlePic": "trainers/TRAINER_TOSHIKI.png",
+      "battlePic": "trainers/processed/TRAINER_TOSHIKI.webp",
       "id": "TRAINER_TOSHIKI",
       "name": "Toshiki",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_BUG_CATCHER.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_GINKO_WOODS",
       "party": [
         {
@@ -1099,9 +1040,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_TOSHIO_1.png",
+      "battlePic": "trainers/processed/TRAINER_TOSHIO_1.webp",
       "id": "TRAINER_TOSHIO_1",
       "name": "Toshio",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_YOUNGSTER.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_GINKO_WOODS",
       "party": [
         {
@@ -1180,90 +1126,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_TOSHIO_1.png",
-      "id": "TRAINER_TOSHIO_1",
-      "name": "Toshio",
-      "level": "MAP_GINKO_WOODS",
-      "party": [
-        {
-          "species": "Nacli",
-          "nickname": null,
-          "gender": "Female",
-          "level": 3,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "moves": [
-            "Tackle",
-            "Harden"
-          ],
-          "tags": []
-        },
-        {
-          "species": "Kotora",
-          "nickname": null,
-          "gender": "Male",
-          "level": 4,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "moves": [
-            "Tackle",
-            "Tail Whip",
-            "Thunder Shock"
-          ],
-          "tags": []
-        }
-      ]
-    },
-    {
-      "battlePic": "trainers/TRAINER_EIJI.png",
+      "battlePic": "trainers/processed/TRAINER_EIJI.webp",
       "id": "TRAINER_EIJI",
       "name": "Eiji",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_BUG_CATCHER.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_GINKO_WOODS",
       "party": [
         {
@@ -1379,9 +1249,14 @@
   ],
   "MAP_HARVEST_SHRINE": [
     {
-      "battlePic": "trainers/TRAINER_KOUGA.png",
+      "battlePic": "trainers/processed/TRAINER_KOUGA.webp",
       "id": "TRAINER_KOUGA",
       "name": "Kouga",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_MONK.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_HARVEST_SHRINE",
       "party": [
         {
@@ -1426,9 +1301,13 @@
   ],
   "MAP_KURA_TOWN": [
     {
-      "battlePic": "trainers/TRAINER_MATSU.png",
+      "battlePic": "trainers/processed/TRAINER_MATSU.webp",
       "id": "TRAINER_MATSU",
       "name": "Matsu",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_KURA_TOWN_DOJO",
       "party": [
         {
@@ -1508,9 +1387,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_KIKU.png",
+      "battlePic": "trainers/processed/TRAINER_KIKU.webp",
       "id": "TRAINER_KIKU",
       "name": "Kiku",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_KURA_TOWN_DOJO",
       "party": [
         {
@@ -1589,9 +1472,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_AYAME.png",
+      "battlePic": "trainers/processed/TRAINER_AYAME.webp",
       "id": "TRAINER_AYAME",
       "name": "Ayame",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_KURA_TOWN_DOJO",
       "party": [
         {
@@ -1672,9 +1559,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_TSUBAKI.png",
+      "battlePic": "trainers/processed/TRAINER_TSUBAKI.webp",
       "id": "TRAINER_TSUBAKI",
       "name": "Tsubaki",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_KURA_TOWN_DOJO",
       "party": [
         {
@@ -1755,9 +1646,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_AJISAI.png",
+      "battlePic": "trainers/processed/TRAINER_AJISAI.webp",
       "id": "TRAINER_AJISAI",
       "name": "Ajisai",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_KURA_TOWN_DOJO",
       "party": [
         {
@@ -1801,9 +1696,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_SUMIRE.png",
+      "battlePic": "trainers/processed/TRAINER_SUMIRE.webp",
       "id": "TRAINER_SUMIRE",
       "name": "Sumire",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_KURA_TOWN_DOJO",
       "party": [
         {
@@ -1846,169 +1745,16 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_HANA_1.png",
+      "battlePic": "trainers/processed/TRAINER_HANA_1.webp",
       "id": "TRAINER_HANA_1",
       "name": "Hana",
-      "level": "MAP_KURA_TOWN_DOJO",
-      "party": [
-        {
-          "species": "Fomantis",
-          "nickname": null,
-          "gender": "Any",
-          "level": 19,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            15,
-            15,
-            15,
-            15,
-            15,
-            15
-          ],
-          "moves": [
-            "Fury Cutter",
-            "Razor Leaf",
-            "Synthesis",
-            "Sunny Day"
-          ],
-          "tags": []
-        },
-        {
-          "species": "Squirtle",
-          "nickname": null,
-          "gender": "Any",
-          "level": 20,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            15,
-            15,
-            15,
-            15,
-            15,
-            15
-          ],
-          "moves": [
-            "Water Sport",
-            "Rain Dance",
-            "Bubble Beam",
-            "Bite"
-          ],
-          "tags": []
-        },
-        {
-          "species": "Bonsly",
-          "nickname": null,
-          "gender": "Any",
-          "level": 18,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            15,
-            15,
-            15,
-            15,
-            15,
-            15
-          ],
-          "moves": [
-            "Mimic",
-            "Low Kick",
-            "Rock Tomb",
-            "Flail"
-          ],
-          "tags": []
-        },
-        {
-          "species": "Grotle",
-          "nickname": null,
-          "gender": "Any",
-          "level": 18,
-          "item": "Sitrus Berry",
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            24,
-            24,
-            24,
-            24,
-            24,
-            24
-          ],
-          "moves": [
-            "Mega Drain",
-            "Leech Seed",
-            "Bite",
-            "Sunny Day"
-          ],
-          "tags": []
-        }
-      ]
-    },
-    {
-      "battlePic": "trainers/TRAINER_HANA_1.png",
-      "id": "TRAINER_HANA_1",
-      "name": "Hana",
+      "aiFlags": [
+        "Smartish Trainer",
+        "Ace Pokemon"
+      ],
+      "items": [
+        "Supergiri"
+      ],
       "level": "MAP_KURA_TOWN_DOJO",
       "party": [
         {
@@ -2168,9 +1914,15 @@
   ],
   "MAP_MAGURO_HARBOR": [
     {
-      "battlePic": "trainers/TRAINER_KOISHI_1.png",
+      "battlePic": "trainers/processed/TRAINER_KOISHI_1.webp",
       "id": "TRAINER_KOISHI_1",
       "name": "Koishi",
+      "aiFlags": [
+        "Smartish Trainer"
+      ],
+      "items": [
+        "Supergiri"
+      ],
       "level": "MAP_MAGURO_HARBOR_DOJO",
       "party": [
         {
@@ -2287,9 +2039,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_IZUMI.png",
+      "battlePic": "trainers/processed/TRAINER_IZUMI.webp",
       "id": "TRAINER_IZUMI",
       "name": "Izumi",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_MAGURO_HARBOR_DOJO",
       "party": [
         {
@@ -2407,9 +2163,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_REN.png",
+      "battlePic": "trainers/processed/TRAINER_REN.webp",
       "id": "TRAINER_REN",
       "name": "Ren",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_MAGURO_HARBOR_DOJO",
       "party": [
         {
@@ -2452,9 +2212,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_MIZU.png",
+      "battlePic": "trainers/processed/TRAINER_MIZU.webp",
       "id": "TRAINER_MIZU",
       "name": "Mizu",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_MAGURO_HARBOR_DOJO",
       "party": [
         {
@@ -2533,9 +2297,15 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_HARIKO_MAGURO.png",
+      "battlePic": "trainers/processed/TRAINER_HARIKO_MAGURO.webp",
       "id": "TRAINER_HARIKO_MAGURO",
       "name": "Hariko",
+      "aiFlags": [
+        "Smartish Trainer"
+      ],
+      "items": [
+        "Uumegiri"
+      ],
       "level": "MAP_MAGURO_HARBOR_REFUGE",
       "party": [
         {
@@ -2581,9 +2351,14 @@
   ],
   "MAP_ORCHARD_PATH": [
     {
-      "battlePic": "trainers/TRAINER_JUNKO.png",
+      "battlePic": "trainers/processed/TRAINER_JUNKO.webp",
       "id": "TRAINER_JUNKO",
       "name": "Junko",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_LASS.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_ORCHARD_PATH",
       "party": [
         {
@@ -2626,9 +2401,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_MAMI.png",
+      "battlePic": "trainers/processed/TRAINER_MAMI.webp",
       "id": "TRAINER_MAMI",
       "name": "Mami",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_HEX_MANIAC.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_ORCHARD_PATH",
       "party": [
         {
@@ -2709,9 +2489,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_ROCK_SMASH_GUY.png",
+      "battlePic": "trainers/processed/TRAINER_ROCK_SMASH_GUY.webp",
       "id": "TRAINER_ROCK_SMASH_GUY",
       "name": "Smasher",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_ORCHARD_PATH",
       "party": [
         {
@@ -2754,9 +2538,13 @@
   ],
   "MAP_SAKU_TOWN": [
     {
-      "battlePic": "trainers/TRAINER_RIVAL_SAKU_SNIVY.png",
+      "battlePic": "trainers/processed/TRAINER_RIVAL_SAKU_SNIVY.webp",
       "id": "TRAINER_RIVAL_SAKU_SNIVY",
       "name": "Natsuki",
+      "aiFlags": [
+        "Smartish Trainer"
+      ],
+      "items": [],
       "level": "MAP_SAKU_TOWN",
       "party": [
         {
@@ -2837,9 +2625,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_RIVAL_SAKU_FROAKIE.png",
+      "battlePic": "trainers/processed/TRAINER_RIVAL_SAKU_FROAKIE.webp",
       "id": "TRAINER_RIVAL_SAKU_FROAKIE",
       "name": "Natsuki",
+      "aiFlags": [
+        "Smart Trainer"
+      ],
+      "items": [],
       "level": "MAP_SAKU_TOWN",
       "party": [
         {
@@ -2920,9 +2712,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_RIVAL_SAKU_CYNDAQUIL.png",
+      "battlePic": "trainers/processed/TRAINER_RIVAL_SAKU_CYNDAQUIL.webp",
       "id": "TRAINER_RIVAL_SAKU_CYNDAQUIL",
       "name": "Natsuki",
+      "aiFlags": [
+        "Smartish Trainer"
+      ],
+      "items": [],
       "level": "MAP_SAKU_TOWN",
       "party": [
         {
@@ -3003,9 +2799,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_TAMAS_DAD.png",
+      "battlePic": "trainers/processed/TRAINER_TAMAS_DAD.webp",
       "id": "TRAINER_TAMAS_DAD",
       "name": "Kiyosumi",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_SAKU_TOWN",
       "party": [
         {
@@ -3051,9 +2851,14 @@
   ],
   "MAP_SILVER_TUNNEL": [
     {
-      "battlePic": "trainers/TRAINER_KENTO.png",
+      "battlePic": "trainers/processed/TRAINER_KENTO.webp",
       "id": "TRAINER_KENTO",
       "name": "Kento",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_MINER.webp",
+      "aiFlags": [
+        "Smartish Trainer"
+      ],
+      "items": [],
       "level": "MAP_SILVER_TUNNEL_1F",
       "party": [
         {
@@ -3096,9 +2901,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_SHUYA.png",
+      "battlePic": "trainers/processed/TRAINER_SHUYA.webp",
       "id": "TRAINER_SHUYA",
       "name": "Shuya",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_MINER.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_SILVER_TUNNEL_1F",
       "party": [
         {
@@ -3179,9 +2989,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_YORU.png",
+      "battlePic": "trainers/processed/TRAINER_YORU.webp",
       "id": "TRAINER_YORU",
       "name": "Yoru",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_HEX_MANIAC.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_SILVER_TUNNEL_1F",
       "party": [
         {
@@ -3262,9 +3077,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_TAMA.png",
+      "battlePic": "trainers/processed/TRAINER_TAMA.webp",
       "id": "TRAINER_TAMA",
       "name": "Tama",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_SILVER_TUNNEL_2F",
       "party": [
         {
@@ -3344,9 +3163,15 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_IKUTO.png",
+      "battlePic": "trainers/processed/TRAINER_IKUTO.webp",
       "id": "TRAINER_IKUTO",
       "name": "Ikuto",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [
+        "Uumegiri"
+      ],
       "level": "MAP_SILVER_TUNNEL_2F",
       "party": [
         {
@@ -3429,9 +3254,14 @@
   ],
   "MAP_SILVERIDGE": [
     {
-      "battlePic": "trainers/TRAINER_SHAMISEN.png",
+      "battlePic": "trainers/processed/TRAINER_SHAMISEN.webp",
       "id": "TRAINER_SHAMISEN",
       "name": "Kyoku",
+      "aiFlags": [
+        "Check Bad Move",
+        "Prefer Status Moves"
+      ],
+      "items": [],
       "level": "MAP_SILVERIDGE_REFUGE",
       "party": [
         {
@@ -3513,9 +3343,13 @@
   ],
   "MAP_SUNRISE_VILLAGE": [
     {
-      "battlePic": "trainers/TRAINER_RIVAL_FIRST_BATTLE_FROAKIE.png",
+      "battlePic": "trainers/processed/TRAINER_RIVAL_FIRST_BATTLE_FROAKIE.webp",
       "id": "TRAINER_RIVAL_FIRST_BATTLE_FROAKIE",
       "name": "Natsuki",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_SUNRISE_VILLAGE_ELDERS_HOUSE",
       "party": [
         {
@@ -3557,9 +3391,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_RIVAL_FIRST_BATTLE_SNIVY.png",
+      "battlePic": "trainers/processed/TRAINER_RIVAL_FIRST_BATTLE_SNIVY.webp",
       "id": "TRAINER_RIVAL_FIRST_BATTLE_SNIVY",
       "name": "Natsuki",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_SUNRISE_VILLAGE_ELDERS_HOUSE",
       "party": [
         {
@@ -3601,9 +3439,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_RIVAL_FIRST_BATTLE_CYNDAQUIL.png",
+      "battlePic": "trainers/processed/TRAINER_RIVAL_FIRST_BATTLE_CYNDAQUIL.webp",
       "id": "TRAINER_RIVAL_FIRST_BATTLE_CYNDAQUIL",
       "name": "Natsuki",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_SUNRISE_VILLAGE_ELDERS_HOUSE",
       "party": [
         {
@@ -3647,9 +3489,14 @@
   ],
   "MAP_TRANQUILROUTE": [
     {
-      "battlePic": "trainers/TRAINER_CHIKAO.png",
+      "battlePic": "trainers/processed/TRAINER_CHIKAO.webp",
       "id": "TRAINER_CHIKAO",
       "name": "Chikao",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_SCHOOL_KID_M.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_TRANQUIL_ROUTE",
       "party": [
         {
@@ -3766,9 +3613,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_KODOMO.png",
+      "battlePic": "trainers/processed/TRAINER_KODOMO.webp",
       "id": "TRAINER_KODOMO",
       "name": "Kodomo",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_YOUNGSTER.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_TRANQUIL_ROUTE",
       "party": [
         {
@@ -3886,9 +3738,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_TAKESHI.png",
+      "battlePic": "trainers/processed/TRAINER_TAKESHI.webp",
       "id": "TRAINER_TAKESHI",
       "name": "Takeshi",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_NINJA_BOY.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_TRANQUIL_ROUTE",
       "party": [
         {
@@ -3969,9 +3826,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_HIINA.png",
+      "battlePic": "trainers/processed/TRAINER_HIINA.webp",
       "id": "TRAINER_HIINA",
       "name": "Hiina",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_MASQUERAIN_WOMAN.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_TRANQUIL_ROUTE",
       "party": [
         {
@@ -4052,9 +3914,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_KENJI.png",
+      "battlePic": "trainers/processed/TRAINER_KENJI.webp",
       "id": "TRAINER_KENJI",
       "name": "Kenji",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_ARTIST.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_TRANQUIL_ROUTE",
       "party": [
         {
@@ -4135,9 +4002,14 @@
   ],
   "MAP_WHITESLATEROUTE": [
     {
-      "battlePic": "trainers/TRAINER_ITSUMI.png",
+      "battlePic": "trainers/processed/TRAINER_ITSUMI.webp",
       "id": "TRAINER_ITSUMI",
       "name": "Itsumi",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_BREEDER_F.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_WHITESLATE_ROUTE",
       "party": [
         {
@@ -4217,9 +4089,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_RYOSUKE.png",
+      "battlePic": "trainers/processed/TRAINER_RYOSUKE.webp",
       "id": "TRAINER_RYOSUKE",
       "name": "Ryosuke",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_BREEDER_M.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_WHITESLATE_ROUTE",
       "party": [
         {
@@ -4299,9 +4176,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_RIKU.png",
+      "battlePic": "trainers/processed/TRAINER_RIKU.webp",
       "id": "TRAINER_RIKU",
       "name": "Riku",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_NINJA_BOY.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_WHITESLATE_ROUTE",
       "party": [
         {
@@ -4418,9 +4300,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_TOMOMI.png",
+      "battlePic": "trainers/processed/TRAINER_TOMOMI.webp",
       "id": "TRAINER_TOMOMI",
       "name": "Tomomi",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_BEAUTY.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_WHITESLATE_ROUTE",
       "party": [
         {
@@ -4539,9 +4426,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_YONO.png",
+      "battlePic": "trainers/processed/TRAINER_YONO.webp",
       "id": "TRAINER_YONO",
       "name": "Yono",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_OLD_WOMAN.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_WHITESLATE_ROUTE",
       "party": [
         {
@@ -4622,9 +4514,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_SUMI.png",
+      "battlePic": "trainers/processed/TRAINER_SUMI.webp",
       "id": "TRAINER_SUMI",
       "name": "Sumi",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_HEX_MANIAC.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_WHITESLATE_ROUTE",
       "party": [
         {
@@ -4705,9 +4602,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_TOMIKO.png",
+      "battlePic": "trainers/processed/TRAINER_TOMIKO.webp",
       "id": "TRAINER_TOMIKO",
       "name": "Tomiko",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_LASS.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_WHITESLATE_ROUTE",
       "party": [
         {
@@ -4787,92 +4689,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_UTARO.png",
+      "battlePic": "trainers/processed/TRAINER_UTARO.webp",
       "id": "TRAINER_UTARO",
       "name": "Utaro",
-      "level": "MAP_WHITESLATE_ROUTE",
-      "party": [
-        {
-          "species": "Zangoose",
-          "nickname": null,
-          "gender": "Any",
-          "level": 17,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            31,
-            31,
-            31,
-            31,
-            31,
-            31
-          ],
-          "moves": [
-            "Pursuit",
-            "Fury Cutter",
-            "Leer"
-          ],
-          "tags": []
-        },
-        {
-          "species": "Seviper",
-          "nickname": null,
-          "gender": "Any",
-          "level": 17,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            31,
-            31,
-            31,
-            31,
-            31,
-            31
-          ],
-          "moves": [
-            "Bite",
-            "Poison Tail",
-            "Wrap",
-            "Screech"
-          ],
-          "tags": []
-        }
-      ]
-    },
-    {
-      "battlePic": "trainers/TRAINER_UTARO.png",
-      "id": "TRAINER_UTARO",
-      "name": "Utaro",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_AROMA_LADY.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_WHITESLATE_ROUTE",
       "party": [
         {
@@ -4955,9 +4779,14 @@
   ],
   "MAP_WINDSWEPTROUTE": [
     {
-      "battlePic": "trainers/TRAINER_MUSASHI_1.png",
+      "battlePic": "trainers/processed/TRAINER_MUSASHI_1.webp",
       "id": "TRAINER_MUSASHI_1",
       "name": "Musashi",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_TWIN_F.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_WINDSWEPT_ROUTE",
       "party": [
         {
@@ -5029,9 +4858,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_ITAMAE.png",
+      "battlePic": "trainers/processed/TRAINER_ITAMAE.webp",
       "id": "TRAINER_ITAMAE",
       "name": "Itamae",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_COOK.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_WINDSWEPT_ROUTE",
       "party": [
         {
@@ -5103,9 +4937,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_MAKOTO_1.png",
+      "battlePic": "trainers/processed/TRAINER_MAKOTO_1.webp",
       "id": "TRAINER_MAKOTO_1",
       "name": "Makoto",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_FISHERMAN.webp",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_WINDSWEPT_ROUTE",
       "party": [
         {
@@ -5177,9 +5016,14 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_ROKU.png",
+      "battlePic": "trainers/processed/TRAINER_ROKU.webp",
       "id": "TRAINER_ROKU",
       "name": "Roku",
+      "sprite": "overworld/animated/OBJ_EVENT_GFX_MINER.webp",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_WINDSWEPT_ROUTE",
       "party": [
         {
@@ -5259,235 +5103,17 @@
           "tags": []
         }
       ]
-    },
-    {
-      "battlePic": "trainers/TRAINER_MUSASHI_1.png",
-      "id": "TRAINER_MUSASHI_1",
-      "name": "Musashi",
-      "level": "MAP_WINDSWEPT_ROUTE",
-      "party": [
-        {
-          "species": "Makuhita",
-          "nickname": null,
-          "gender": "Any",
-          "level": 16,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "moves": [],
-          "tags": []
-        },
-        {
-          "species": "Shroomish",
-          "nickname": null,
-          "gender": "Any",
-          "level": 16,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "moves": [],
-          "tags": []
-        }
-      ]
-    },
-    {
-      "battlePic": "trainers/TRAINER_MUSASHI_1.png",
-      "id": "TRAINER_MUSASHI_1",
-      "name": "Musashi",
-      "level": "MAP_WINDSWEPT_ROUTE",
-      "party": [
-        {
-          "species": "Makuhita",
-          "nickname": null,
-          "gender": "Any",
-          "level": 16,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "moves": [],
-          "tags": []
-        },
-        {
-          "species": "Shroomish",
-          "nickname": null,
-          "gender": "Any",
-          "level": 16,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "moves": [],
-          "tags": []
-        }
-      ]
-    },
-    {
-      "battlePic": "trainers/TRAINER_MUSASHI_1.png",
-      "id": "TRAINER_MUSASHI_1",
-      "name": "Musashi",
-      "level": "MAP_WINDSWEPT_ROUTE",
-      "party": [
-        {
-          "species": "Makuhita",
-          "nickname": null,
-          "gender": "Any",
-          "level": 16,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "moves": [],
-          "tags": []
-        },
-        {
-          "species": "Shroomish",
-          "nickname": null,
-          "gender": "Any",
-          "level": 16,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "moves": [],
-          "tags": []
-        }
-      ]
     }
   ],
   "MAP_YIFU_CITY": [
     {
-      "battlePic": "trainers/TRAINER_AKARI.png",
+      "battlePic": "trainers/processed/TRAINER_AKARI.webp",
       "id": "TRAINER_AKARI",
       "name": "Akari",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_YIFU_CITY_DOJO",
       "party": [
         {
@@ -5559,9 +5185,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_KARIN.png",
+      "battlePic": "trainers/processed/TRAINER_KARIN.webp",
       "id": "TRAINER_KARIN",
       "name": "Karin",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_YIFU_CITY_DOJO",
       "party": [
         {
@@ -5605,9 +5235,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_NANAMI.png",
+      "battlePic": "trainers/processed/TRAINER_NANAMI.webp",
       "id": "TRAINER_NANAMI",
       "name": "Nanami",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_YIFU_CITY_DOJO",
       "party": [
         {
@@ -5688,83 +5322,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_AKARI.png",
-      "id": "TRAINER_AKARI",
-      "name": "Akari",
-      "level": "MAP_YIFU_CITY_DOJO",
-      "party": [
-        {
-          "species": "Bounsweet",
-          "nickname": null,
-          "gender": "Any",
-          "level": 24,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
-          ],
-          "moves": [],
-          "tags": []
-        },
-        {
-          "species": "Skiploom",
-          "nickname": null,
-          "gender": "Any",
-          "level": 25,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
-          ],
-          "moves": [],
-          "tags": []
-        }
-      ]
-    },
-    {
-      "battlePic": "trainers/TRAINER_YUKA.png",
+      "battlePic": "trainers/processed/TRAINER_YUKA.webp",
       "id": "TRAINER_YUKA",
       "name": "Yuka",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_YIFU_CITY_DOJO",
       "party": [
         {
@@ -5836,92 +5400,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_NANAMI.png",
-      "id": "TRAINER_NANAMI",
-      "name": "Nanami",
-      "level": "MAP_YIFU_CITY_DOJO",
-      "party": [
-        {
-          "species": "Steenee",
-          "nickname": null,
-          "gender": "Any",
-          "level": 25,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            18,
-            18,
-            18,
-            18,
-            18,
-            18
-          ],
-          "moves": [
-            "Play Nice",
-            "Magical Leaf",
-            "Rapid Spin"
-          ],
-          "tags": []
-        },
-        {
-          "species": "Swadloon Tokuan",
-          "nickname": null,
-          "gender": "Any",
-          "level": 25,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            18,
-            18,
-            18,
-            18,
-            18,
-            18
-          ],
-          "moves": [
-            "String Shot",
-            "Struggle Bug",
-            "Helping Hand",
-            "Electroweb"
-          ],
-          "tags": []
-        }
-      ]
-    },
-    {
-      "battlePic": "trainers/TRAINER_KANAE.png",
+      "battlePic": "trainers/processed/TRAINER_KANAE.webp",
       "id": "TRAINER_KANAE",
       "name": "Kanae",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_YIFU_CITY_DOJO",
       "party": [
         {
@@ -6039,55 +5524,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_KARIN.png",
-      "id": "TRAINER_KARIN",
-      "name": "Karin",
-      "level": "MAP_YIFU_CITY_DOJO",
-      "party": [
-        {
-          "species": "Steenee",
-          "nickname": null,
-          "gender": "Any",
-          "level": 25,
-          "item": null,
-          "ability": null,
-          "nature": null,
-          "ball": null,
-          "friendship": null,
-          "shiny": false,
-          "dynamaxLevel": null,
-          "gigantamaxFactor": false,
-          "teraType": null,
-          "evs": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "ivs": [
-            18,
-            18,
-            18,
-            18,
-            18,
-            18
-          ],
-          "moves": [
-            "Rapid Spin",
-            "Sweet Scent",
-            "Magical Leaf",
-            "Teeter Dance"
-          ],
-          "tags": []
-        }
-      ]
-    },
-    {
-      "battlePic": "trainers/TRAINER_MIIKA.png",
+      "battlePic": "trainers/processed/TRAINER_MIIKA.webp",
       "id": "TRAINER_MIIKA",
       "name": "Miika",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_YIFU_CITY_DOJO",
       "party": [
         {
@@ -6167,9 +5610,15 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_YUTAKA_1.png",
+      "battlePic": "trainers/processed/TRAINER_YUTAKA_1.webp",
       "id": "TRAINER_YUTAKA_1",
       "name": "Yutaka",
+      "aiFlags": [
+        "Smartish Trainer"
+      ],
+      "items": [
+        "Supergiri"
+      ],
       "level": "MAP_YIFU_CITY_DOJO",
       "party": [
         {
@@ -6327,9 +5776,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_SACHIKO.png",
+      "battlePic": "trainers/processed/TRAINER_SACHIKO.webp",
       "id": "TRAINER_SACHIKO",
       "name": "Sachiko",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_YIFU_CITY_HOT_SPRINGS",
       "party": [
         {
@@ -6446,9 +5899,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_FUTOSHI.png",
+      "battlePic": "trainers/processed/TRAINER_FUTOSHI.webp",
       "id": "TRAINER_FUTOSHI",
       "name": "Futoshi",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_YIFU_CITY_HOT_SPRINGS",
       "party": [
         {
@@ -6528,9 +5985,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_WAKAE.png",
+      "battlePic": "trainers/processed/TRAINER_WAKAE.webp",
       "id": "TRAINER_WAKAE",
       "name": "Wakae",
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "items": [],
       "level": "MAP_YIFU_CITY_HOT_SPRINGS",
       "party": [
         {
@@ -6649,9 +6110,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_LIHUO.png",
+      "battlePic": "trainers/processed/TRAINER_LIHUO.webp",
       "id": "TRAINER_LIHUO",
       "name": "Lihuo",
+      "aiFlags": [
+        "Smartish Trainer"
+      ],
+      "items": [],
       "level": "MAP_YIFU_CITY_HOT_SPRINGS",
       "party": [
         {
@@ -6768,9 +6233,13 @@
       ]
     },
     {
-      "battlePic": "trainers/TRAINER_YAMATO.png",
+      "battlePic": "trainers/processed/TRAINER_YAMATO.webp",
       "id": "TRAINER_YAMATO",
       "name": "Yamato",
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "items": [],
       "level": "MAP_YIFU_CITY_REFUGE_2F",
       "party": [
         {

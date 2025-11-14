@@ -81,15 +81,15 @@ function extractMapData(mapObj: any) {
     for (const obj of mapObj.object_events) {
       if (obj.trainer_type && obj.trainer_type !== "TRAINER_TYPE_NONE") {
         const overworldId = spritePaths.get(obj.graphics_id);
-        if (!overworldId) {
+        if (overworldId === undefined) {
           console.warn(
-            `No sprite found for trainer with graphics_id: ${obj.graphics_id}`
+            `parseMapEvents: No sprite found for trainer with graphics_id: ${obj.graphics_id}`
           );
         }
         trainers.push({
           coords: [obj.x, obj.y],
           script: obj.script,
-          graphics_id: spritePaths.get(obj.graphics_id),
+          graphics_id: overworldId,
         });
       }
 
@@ -166,4 +166,4 @@ export default async (mapsDir: string): Promise<MapEventPlace[]> => {
   }
 
   return Object.values(baseMapToLevels);
-}
+};

@@ -41,7 +41,13 @@ export class ItemSpriteProcessor extends SpriteProcessor {
       const pngBuffer = await fs.readFile(outputPath);
       await this.writeWebp(pngBuffer, webpPath);
     } catch (error) {
-      throw error
+      throw error;
+    } finally {
+      try {
+        await fs.unlink(outputPath);
+      } catch {
+        // Ignore cleanup errors so a lingering PNG doesn't fail the pipeline
+      }
     }
   }
 

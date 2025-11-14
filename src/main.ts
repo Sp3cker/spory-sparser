@@ -21,6 +21,7 @@ import { IncScriptEvent } from "./parseMaps/incParser.ts";
 interface Trainer {
   id: string;
   battlePic: string;
+  sprite?: string;
   aiFlags: [string];
   name: string;
   items: string[];
@@ -81,6 +82,11 @@ const mergeDataByLevelsID = async ({
         if (pickupTrainer) {
           //@ts-ignore
           arr[index]["sprite"] = pickupTrainer.graphics_id;
+        } else {
+          console.error(
+            "Trainer in poryscript not corresponding to any trainer in pickup data: " +
+              tr.script
+          );
         }
       });
       // const coordMap = new Map<
@@ -195,6 +201,26 @@ const mergeDataByLevelsID = async ({
     return acc;
   }, {});
 
+  const dedupeTrainersByIdAndLevel = (trainers: Trainer[]): Trainer[] => {
+    const seen = new Map<string, Trainer>();
+    for (const trainer of trainers) {
+      const key = `${trainer.id}|${trainer.level}`;
+      const existing = seen.get(key);
+      if (!existing) {
+        seen.set(key, trainer);
+        continue;
+      }
+      const merged: Trainer = {
+        ...existing,
+        ...trainer,
+        sprite: trainer.sprite ?? existing.sprite,
+        battlePic: trainer.battlePic ?? existing.battlePic,
+      };
+      seen.set(key, merged);
+    }
+    return Array.from(seen.values());
+  };
+
   const groupedTrainers = await readFile(
     path.join(config.dataDir, "trainers.json"),
     "utf8"
@@ -233,6 +259,11 @@ const mergeDataByLevelsID = async ({
               battlePic: incTrainer.battlePicPath,
               id: trainerJsonData.id,
               name: trainerJsonData.name,
+              sprite: pickupData.trainers?.find(
+                (t) => t.script === incTrainer.script
+              )?.graphics_id,
+              aiFlags: trainerJsonData.aiFlags,
+              items: trainerJsonData.items,
               // script: incTrainer.script,
               level: thisLevelsId,
               party: trainerData.party,
@@ -245,8 +276,12 @@ const mergeDataByLevelsID = async ({
         .filter(Boolean) as Trainer[];
       /* Now that we have the trainers on this Map, we create the object that will be 
 `trainers.json` */
-      if (thisMapsTrainersForAllLevels.length > 0) {
-        groupedTrainers[mapName] = thisMapsTrainersForAllLevels;
+      const dedupedTrainers = dedupeTrainersByIdAndLevel(
+        thisMapsTrainersForAllLevels
+      );
+
+      if (dedupedTrainers.length > 0) {
+        groupedTrainers[mapName] = dedupedTrainers;
       }
     }
     return groupedTrainers;
