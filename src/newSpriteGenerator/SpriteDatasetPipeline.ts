@@ -1,10 +1,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 import { Jimp, intToRGBA } from "jimp";
-import {
-  PaletteApplier,
-  type PaletteEntry,
-} from "./PaletteApplier/PaletteApplier.ts";
+import { PaletteApplier } from "./PaletteApplier/PaletteApplier.ts";
 import { config, type Config } from "../config/index.js";
 import { ObjectEventGraphicSchema } from "../parseMaps/overworld/collectSprites.ts";
 import { TrainerGraphicsSchema } from "../parseMaps/Trainers/joinTrainerGraphics.ts";
@@ -20,7 +17,6 @@ export interface PaletteTask {
   spritePath: string;
   palettePath: string;
   outputFileName?: string;
-  transformPalette?: (palette: PaletteEntry[]) => PaletteEntry[];
   postProcess?: (pngPath: string) => Promise<void>;
   useSourceImage?: boolean;
 }
@@ -59,6 +55,7 @@ export class SpriteDatasetPipeline {
   }
 
   async process(rule: SpritePipelineRule): Promise<PipelineResult> {
+    /* These are for good logging */
     type PipelineStage =
       | "beforePaletteApplication"
       | "afterPaletteBeforeResizing"
@@ -114,14 +111,16 @@ export class SpriteDatasetPipeline {
           .filter((file) => /\.(png|webp)$/i.test(file))
           .map((file) => path.parse(file).name)
       );
-
-      console.log(`[${rule.name}] Preparing ${tasks.length} task(s)`);
-      console.log(
-        `[${rule.name}] Sample tasks: ${tasks
-          .slice(0, 5)
-          .map((t) => t.name)
-          .join(", ")}`
+      console.info(
+        `${rule.name} Skipping ${processedBaseNames.size} already processed entries`
       );
+      // console.log(`[${rule.name}] Preparing ${tasks.length} task(s)`);
+      // console.log(
+      //   `[${rule.name}] Sample tasks: ${tasks
+      //     .slice(0, 5)
+      //     .map((t) => t.name)
+      //     .join(", ")}`
+      // );
 
       const generatedPaths: string[] = [];
       let processedCount = 0;
@@ -130,25 +129,11 @@ export class SpriteDatasetPipeline {
         taskIndex++;
         const baseName = task.outputFileName ?? task.name;
         try {
-          console.log(
-            `[${rule.name}] Preparing ${baseName} (task ${taskIndex}/${tasks.length})`
-          );
+          // console.log(
+          //   `[${rule.name}] Preparing ${baseName} (task ${taskIndex}/${tasks.length})`
+          // );
           const useSourceImage = task.useSourceImage === true;
-          const hasTransform =
-            !useSourceImage && typeof task.transformPalette === "function";
-          const hasPostProcess = typeof task.postProcess === "function";
-          const requiresAdditionalProcessing = hasTransform || hasPostProcess;
-
-          if (taskIndex <= 5) {
-            console.log(
-              `[${rule.name}] Debug task ${taskIndex}: useSourceImage=${useSourceImage}, hasTransform=${hasTransform}, hasPostProcess=${hasPostProcess}`
-            );
-          }
-
-          if (
-            processedBaseNames.has(baseName) &&
-            !requiresAdditionalProcessing
-          ) {
+          if (processedBaseNames.has(baseName)) {
             continue;
           }
 
@@ -168,30 +153,8 @@ export class SpriteDatasetPipeline {
                 { overwrite: true }
               );
             } catch (error) {
-              console.error(
-                `[${rule.name}] Failed copying source image for ${baseName}:`,
-                error instanceof Error ? error.message : error
-              );
-              continue;
+              throw error;
             }
-          } else if (hasTransform) {
-            const basePalette = this.paletteApplier.readPalette(
-              task.palettePath
-            );
-            const adjustedPalette = task.transformPalette!(
-              basePalette.map((entry) => ({ ...entry }))
-            );
-            const pngBuffer = await fs.readFile(task.spritePath);
-            buffer = this.paletteApplier.applyPalette(
-              pngBuffer,
-              adjustedPalette
-            );
-            await this.paletteApplier.writePng(
-              rule.paletteOutputSubDir,
-              fileName,
-              buffer,
-              { overwrite: true }
-            );
           } else {
             try {
               buffer = await fs.readFile(absolutePath);
@@ -204,13 +167,13 @@ export class SpriteDatasetPipeline {
                 rule.paletteOutputSubDir,
                 fileName,
                 buffer,
-                { overwrite: hasPostProcess }
+                { overwrite: true }
               );
             }
           }
 
-          if (hasPostProcess && task.postProcess) {
-            console.log(`[${rule.name}] Post-processing ${baseName}`);
+          if (task.postProcess) {
+            // console.log(`[${rule.name}] Post-processing ${baseName}`);
             try {
               await task.postProcess(absolutePath);
               buffer = await fs.readFile(absolutePath);
@@ -223,7 +186,10 @@ export class SpriteDatasetPipeline {
             }
           }
 
-          if (["overworld", "speciesOverworld"].includes(task.name) && this.isSquarePng(buffer)) {
+          if (
+            ["overworld", "speciesOverworld"].includes(task.name) &&
+            this.isSquarePng(buffer)
+          ) {
             console.log(
               `[${rule.name}] Skipping ${baseName} (square image detected)`
             );
@@ -231,10 +197,10 @@ export class SpriteDatasetPipeline {
           }
 
           generatedPaths.push(absolutePath);
-          console.log(
-            `[${rule.name}] Added ${baseName} to generated list (size=${generatedPaths.length})`
-          );
-          console.log(`[${rule.name}] Ready to process ${baseName}`);
+          // console.log(
+          //   `[${rule.name}] Added ${baseName} to generated list (size=${generatedPaths.length})`
+          // );
+          // console.log(`[${rule.name}] Ready to process ${baseName}`);
         } catch (taskError) {
           console.error(
             `[${rule.name}] Fatal error processing ${baseName}:`,
@@ -247,7 +213,7 @@ export class SpriteDatasetPipeline {
       console.log(
         `[${rule.name}] Generated ${generatedPaths.length} sprite input(s) after iterating ${taskIndex} task(s)`
       );
-
+      console.log(generatedPaths[9]);
       const processor = rule.processorFactory(sourceDir, outputDir);
       stage = "afterPaletteBeforeResizing";
       const processedCountResult = await processor.processSpriteFiles(
@@ -393,7 +359,10 @@ export function createItemSpriteRule(): SpritePipelineRule {
         return undefined;
       }
 
-      const spritePath = iconPicPath.replace(/(.*?)\.4bpp(\.smol)?$/i, "$1.png");
+      const spritePath = iconPicPath.replace(
+        /(.*?)\.4bpp(\.smol)?$/i,
+        "$1.png"
+      );
       return {
         name: entryName,
         spritePath,
@@ -474,7 +443,9 @@ export function createSpeciesOverworldRule(): SpritePipelineRule {
 
             if (maxX === -1 || maxY === -1) {
               await (image as any).write(pngPath);
-              console.log(`[speciesOverworld] Post-process complete for ${entryName}`);
+              console.log(
+                `[speciesOverworld] Post-process complete for ${entryName}`
+              );
               return;
             }
 
@@ -524,7 +495,9 @@ export function createSpeciesOverworldRule(): SpritePipelineRule {
             image.composite(sprite, 0, 0);
 
             await (image as any).write(pngPath);
-            console.log(`[speciesOverworld] Post-process complete for ${entryName}`);
+            console.log(
+              `[speciesOverworld] Post-process complete for ${entryName}`
+            );
           } catch (error) {
             throw new SpriteProcessingError(
               "writingWebm",

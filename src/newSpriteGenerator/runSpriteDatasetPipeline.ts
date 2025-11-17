@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-import { fileURLToPath } from "url";
-import path from "path";
 import {
   SpriteDatasetPipeline,
   createOverworldRule,
@@ -9,7 +7,7 @@ import {
   createItemSpriteRule,
   type SpritePipelineRule,
 } from "./SpriteDatasetPipeline.ts";
-import { config } from "../config/index.js";
+import { config as CONFIG } from "../config/index.js";
 
 export type RuleKey = "overworld" | "trainers" | "items";
 
@@ -22,77 +20,47 @@ export const RULE_BUILDERS: Record<RuleKey, () => SpritePipelineRule> = {
 
 export async function runRule(
   key: RuleKey,
-  pipeline: SpriteDatasetPipeline = new SpriteDatasetPipeline(config)
+  pipeline: SpriteDatasetPipeline
 ) {
-  const factory = RULE_BUILDERS[key];
+  const factory = RULE_BUILDERS[key]();
   if (!factory) {
     throw new Error(`Unknown pipeline rule: ${key}`);
   }
-  const rule = factory();
+
   try {
-    return { rule, result: await pipeline.process(rule) };
+    return { rule: factory, result: await pipeline.process(factory) };
   } catch (error) {
-    if (error && typeof error === "object") {
-      Object.assign(error as Record<string, unknown>, { rule });
-    }
+
     throw error;
   }
 }
 
-function printHelp(scriptName: string): void {
-  console.log(`Sprite Dataset Pipeline CLI
+// function parseArgs(argv: string[]): { rules: RuleKey[]; help?: boolean } {
+//   const options: { rules: RuleKey[]; help?: boolean } = {
+//     rules: Object.keys(RULE_BUILDERS) as RuleKey[],
+//   };
 
-Usage:
-  ${scriptName} [--help]
+//   for (let i = 0; i < argv.length; i++) {
+//     const arg = argv[i];
+//     switch (arg) {
+//       case "--help":
+//       case "-h":
+//         options.help = true;
+//         break;
+//       default:
+//         throw new Error(`Unknown argument: ${arg}`);
+//     }
+//   }
 
-Runs all sprite dataset pipelines concurrently.
-`);
-}
+//   return options;
+// }
 
-function parseArgs(argv: string[]): { rules: RuleKey[]; help?: boolean } {
+async function main(): Promise<void> {
   const options: { rules: RuleKey[]; help?: boolean } = {
     rules: Object.keys(RULE_BUILDERS) as RuleKey[],
   };
 
-  for (let i = 0; i < argv.length; i++) {
-    const arg = argv[i];
-    switch (arg) {
-      case "--help":
-      case "-h":
-        options.help = true;
-        break;
-      default:
-        throw new Error(`Unknown argument: ${arg}`);
-    }
-  }
-
-  return options;
-}
-
-async function main(): Promise<void> {
-  const scriptPath = fileURLToPath(import.meta.url);
-  const scriptName = path.basename(scriptPath);
-
-  let options: ReturnType<typeof parseArgs>;
-  try {
-    options = parseArgs(process.argv.slice(2));
-  } catch (error) {
-    if (error instanceof Error) {
-      console.error(error.message);
-    } else {
-      console.error(error);
-    }
-    printHelp(scriptName);
-    process.exitCode = 1;
-    return;
-  }
-
-  if (options.help) {
-    printHelp(scriptName);
-    return;
-  }
-
-  const pipeline = new SpriteDatasetPipeline(config);
+  const pipeline = new SpriteDatasetPipeline(CONFIG);
   const settled = await Promise.allSettled(
     options.rules.map((key) => runRule(key, pipeline))
   );

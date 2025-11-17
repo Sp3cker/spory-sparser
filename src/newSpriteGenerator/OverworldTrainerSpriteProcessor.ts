@@ -5,6 +5,7 @@ import {
   type PeopleSpriteRule,
 } from "./PeopleSpriteProcessorBase.ts";
 import { SpriteProcessingError } from "./SpriteProcessor.ts";
+/* These sprite dimensions can be sliced into a walking animation */
 const SupportedDimensions = new Set<string>([
   "48x32",
   "96x32",
@@ -14,19 +15,10 @@ const SupportedDimensions = new Set<string>([
   "288x32",
   "416x32",
 ]);
-/**
- * Run this file/class in a CLI to process all character sprites
- */
-// Exception files that are 288px wide with 32px frames
-const EXCEPTION_FILES = [
-  "candice.png",
-  "cycling_triathlete_f.png",
-  "cycling_triathlete_m.png",
-];
 
 export class OverworldTrainerSpriteProcessor extends PeopleSpriteProcessorBase {
   constructor(sourceDirPath: string, outputDirPath: string) {
-    super(sourceDirPath, outputDirPath, EXCEPTION_FILES);
+    super(sourceDirPath, outputDirPath);
   }
 
   /**
@@ -152,7 +144,7 @@ export class OverworldTrainerSpriteProcessor extends PeopleSpriteProcessorBase {
     try {
       normalizedFrames = await this.extractNormalizedFrames(
         filePath,
-        filename,
+
         rule
       );
     } catch (error) {
@@ -249,41 +241,4 @@ export class OverworldTrainerSpriteProcessor extends PeopleSpriteProcessorBase {
     }
   }
 
-  async processFirstNSprites(limit: number): Promise<void> {
-    if (limit <= 0) {
-      return;
-    }
-
-    await this.ensureDirectoryExists(this.outputDirPath);
-
-    const files = await fs.readdir(this.sourceDirPath);
-    const pngFiles = files.filter((file) =>
-      file.toLowerCase().endsWith(".png")
-    );
-
-    if (pngFiles.length === 0) {
-      console.log("No PNG files found to process.");
-      return;
-    }
-
-    console.log(
-      `Found ${pngFiles.length} PNG files to process (limiting to ${limit}).`
-    );
-
-    let processed = 0;
-    for (const filename of pngFiles) {
-      if (processed >= limit) break;
-      try {
-        await this.processSpriteFile(join(this.sourceDirPath, filename));
-      } catch (error) {
-        console.error(
-          `✗ Error processing ${filename}:`,
-          error instanceof Error ? error.message : error
-        );
-      }
-      processed++;
-    }
-
-    console.log("\nLimited sprite processing complete!");
-  }
 }

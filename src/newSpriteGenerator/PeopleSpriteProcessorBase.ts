@@ -8,25 +8,18 @@ export interface PeopleSpriteRule extends ProcessingRule {
 }
 
 export abstract class PeopleSpriteProcessorBase extends SpriteProcessor {
-  protected exceptionFiles: Set<string>;
-
   constructor(
     protected sourceDirPath: string,
-    protected outputDirPath: string,
-    exceptionFiles: string[] = []
+    protected outputDirPath: string
   ) {
     super();
-    this.exceptionFiles = new Set(exceptionFiles.map((file) => file.toLowerCase()));
   }
 
   /**
    * Determine if a sprite should be center-cropped from 32px to 16px.
    */
-  protected shouldCenterCrop(filename: string, rule: PeopleSpriteRule): boolean {
-    return (
-      rule.frameWidth === 32 ||
-      this.exceptionFiles.has(filename.toLowerCase())
-    );
+  protected shouldCenterCrop(rule: PeopleSpriteRule): boolean {
+    return rule.frameWidth === 32;
   }
 
   /**
@@ -34,7 +27,6 @@ export abstract class PeopleSpriteProcessorBase extends SpriteProcessor {
    */
   protected async extractNormalizedFrames(
     inputPath: string,
-    filename: string,
     rule: PeopleSpriteRule
   ): Promise<string[]> {
     const normalizedFrames: string[] = [];
@@ -63,12 +55,10 @@ export abstract class PeopleSpriteProcessorBase extends SpriteProcessor {
             0,
             8
           );
-          await this.exec(
-            `mv "${paddedFramePath}" "${tempFramePath}"`
-          );
+          await this.exec(`mv "${paddedFramePath}" "${tempFramePath}"`);
         }
 
-        if (this.shouldCenterCrop(filename, rule)) {
+        if (this.shouldCenterCrop(rule)) {
           const cropStartX = (rule.frameWidth - 16) / 2;
           const tempCroppedPath = this.generateTempPath(`cropped_${i}`);
           const effectiveHeight = rule.needsPadding ? 32 : rule.height;
@@ -80,9 +70,7 @@ export abstract class PeopleSpriteProcessorBase extends SpriteProcessor {
             cropStartX,
             0
           );
-          await this.exec(
-            `mv "${tempCroppedPath}" "${tempFramePath}"`
-          );
+          await this.exec(`mv "${tempCroppedPath}" "${tempFramePath}"`);
         }
 
         const finalFrameWidth = rule.frameWidth === 32 ? 16 : rule.frameWidth;
@@ -131,16 +119,28 @@ export abstract class PeopleSpriteProcessorBase extends SpriteProcessor {
    * Process every PNG inside the configured source directory.
    */
   async processAllSprites(): Promise<void> {
+    await this.ensureDirectoryExists(this.outputDirPath);
     const files = await fs.readdir(this.sourceDirPath);
     const pngFiles = files.filter((file) =>
       file.toLowerCase().endsWith(".png")
     );
 
-    const absolutePaths = pngFiles.map((file) =>
-      join(this.sourceDirPath, file)
-    );
+    if (pngFiles.length === 0) {
+      throw "No PNG files found in source directory";
+      return;
+    }
 
-    await this.processSpriteFiles(absolutePaths);
+    console.log(`Found ${pngFiles.length} PNG files to process.`);
+    for (const filename of pngFiles) {
+      try {
+        await this.processSpriteFile(join(this.sourceDirPath, filename));
+      } catch (error) {
+        console.error(
+          `✗ Error processing ${filename}:`,
+          error instanceof Error ? error.message : error
+        );
+      }
+    }
   }
 
   protected async readImageDimensions(filePath: string): Promise<{
@@ -154,7 +154,7 @@ export abstract class PeopleSpriteProcessorBase extends SpriteProcessor {
   protected abstract getSpriteRule(
     filename: string,
     width: number,
-    height: number
+  height: number
   ): PeopleSpriteRule;
 
   protected abstract processSpriteFile(filePath: string): Promise<void>;

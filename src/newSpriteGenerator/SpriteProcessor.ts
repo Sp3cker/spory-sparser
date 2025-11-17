@@ -68,32 +68,6 @@ export abstract class SpriteProcessor {
     }
   }
 
-  /**
-   * Create animated WEBP from frame paths
-   */
-  async createAnimatedWebP(
-    framePaths: string[],
-    outputPath: string,
-    frameDuration: number
-  ): Promise<void> {
-    try {
-      // Build the img2webp command with lossless compression
-      let img2webpCmd = `img2webp -loop 0 -m 6 -lossless`;
-
-      // Add each frame with duration
-      for (const framePath of framePaths) {
-        img2webpCmd += ` -d ${frameDuration} "${framePath}"`;
-      }
-
-      img2webpCmd += ` -o "${outputPath}"`;
-
-      await this.exec(img2webpCmd);
-    } catch (error) {
-      console.error(`Error creating animated WEBP: ${error}`);
-      throw error;
-    }
-  }
-
   async createAnimatedWebPScaled(
     framePaths: string[],
     outputPath: string,
@@ -128,35 +102,36 @@ export abstract class SpriteProcessor {
       await this.cleanupTempFiles(scaledFrames);
     }
   }
-  // async createWebp(
-  //   inputPath: string,
-  //   outputPath: string,
-  //   scale: number
-  // ): Promise<void> {
-  //   const os = require("os");
-  //   const path = require("path");
-  //   const resizePercent = scale * 100;
+  async createWebp(
+    inputPath: string,
+    outputPath: string,
+    // scale: number
+  ): Promise<void> {
+    // const os = require("os");
+    // const path = require("path");
+    // const resizePercent = scale * 100;
 
-  //   const tempDir = os.tmpdir();
-  //   const tempFile = path.join(tempDir, path.baseName(inputPath));
-  //   const cmd = `magick "${inputPath}" -filter point -resize ${resizePercent}% "${tempFile}"`;
-  //   try {
-  //     await this.exec(cmd);
-  //   } catch (error) {
-  //     throw new SpriteProcessingError(
-  //       "resizing",
-  //       `Failed to create WEBP ${outputPath}`,
-  //       error
-  //     );
-  //   }
-  //   const cwebpCmd = `cwebp -q 100 -m 6 -near_lossless 100 -mt "${tempFile}" -o "${outputPath}"`;
-  //   await this.exec(cwebpCmd);
-  //   try {
-  //     await fs.unlink(tempFile);
-  //   } catch (error) {
-  //     // Ignore cleanup errors
-  //   }
-  // }
+    // const tempDir = os.tmpdir();
+    // const tempFile = path.join(tempDir, path.baseName(inputPath));
+    // const scaleCmd = `magick "${inputPath}" -filter point -resize ${resizePercent}% "${tempFile}"`;
+    try {
+      // await this.exec(scaleCmd);
+      const cwebpCmd = `cwebp -q 100 -m 6 -near_lossless 100 -mt "${inputPath}" -o "${outputPath}"`;
+      console.log(cwebpCmd)
+      await this.exec(cwebpCmd);
+    } catch (error) {
+      throw new SpriteProcessingError(
+        "resizing",
+        `Failed to create WEBP ${outputPath}`,
+        error
+      );
+    }
+    try {
+      // await fs.unlink(tempFile);
+    } catch (error) {
+      // Ignore cleanup errors
+    }
+  }
   /**
    * Generate unique temp file path
    */
