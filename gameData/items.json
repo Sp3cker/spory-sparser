@@ -5238,6 +5238,503 @@
         "iconPalette": "graphics/items/icon_palettes/enigma_berry.gbapal"
     },
     {
+        "id": 582,
+        "constantName": "ITEM_TM01",
+        "name": "TM01 - Focus Punch",
+        "price": 3000,
+        "description": "Teaches the move Focus Punch."
+    },
+    {
+        "id": 583,
+        "constantName": "ITEM_TM02",
+        "name": "TM02 - Dragon Claw",
+        "price": 3000,
+        "description": "Teaches the move Dragon Claw."
+    },
+    {
+        "id": 584,
+        "constantName": "ITEM_TM03",
+        "name": "TM03 - Water Pulse",
+        "price": 3000,
+        "description": "Teaches the move Water Pulse."
+    },
+    {
+        "id": 585,
+        "constantName": "ITEM_TM04",
+        "name": "TM04 - Calm Mind",
+        "price": 3000,
+        "description": "Teaches the move Calm Mind."
+    },
+    {
+        "id": 586,
+        "constantName": "ITEM_TM05",
+        "name": "TM05 - Roar",
+        "price": 3000,
+        "description": "Teaches the move Roar."
+    },
+    {
+        "id": 587,
+        "constantName": "ITEM_TM06",
+        "name": "TM06 - Toxic",
+        "price": 3000,
+        "description": "Teaches the move Toxic."
+    },
+    {
+        "id": 588,
+        "constantName": "ITEM_TM07",
+        "name": "TM07 - Hail",
+        "price": 3000,
+        "description": "Teaches the move Hail."
+    },
+    {
+        "id": 589,
+        "constantName": "ITEM_TM08",
+        "name": "TM08 - Bulk Up",
+        "price": 3000,
+        "description": "Teaches the move Bulk Up."
+    },
+    {
+        "id": 590,
+        "constantName": "ITEM_TM09",
+        "name": "TM09 - Bullet Seed",
+        "price": 3000,
+        "description": "Teaches the move Bullet Seed."
+    },
+    {
+        "id": 591,
+        "constantName": "ITEM_TM10",
+        "name": "TM10 - Hidden Power",
+        "price": 3000,
+        "description": "Teaches the move Hidden Power."
+    },
+    {
+        "id": 592,
+        "constantName": "ITEM_TM11",
+        "name": "TM11 - Sunny Day",
+        "price": 3000,
+        "description": "Teaches the move Sunny Day."
+    },
+    {
+        "id": 593,
+        "constantName": "ITEM_TM12",
+        "name": "TM12 - Taunt",
+        "price": 3000,
+        "description": "Teaches the move Taunt."
+    },
+    {
+        "id": 594,
+        "constantName": "ITEM_TM13",
+        "name": "TM13 - Ice Beam",
+        "price": 3000,
+        "description": "Teaches the move Ice Beam."
+    },
+    {
+        "id": 595,
+        "constantName": "ITEM_TM14",
+        "name": "TM14 - Blizzard",
+        "price": 3000,
+        "description": "Teaches the move Blizzard."
+    },
+    {
+        "id": 596,
+        "constantName": "ITEM_TM15",
+        "name": "TM15 - Hyper Beam",
+        "price": 3000,
+        "description": "Teaches the move Hyper Beam."
+    },
+    {
+        "id": 597,
+        "constantName": "ITEM_TM16",
+        "name": "TM16 - Light Screen",
+        "price": 3000,
+        "description": "Teaches the move Light Screen."
+    },
+    {
+        "id": 598,
+        "constantName": "ITEM_TM17",
+        "name": "TM17 - Protect",
+        "price": 3000,
+        "description": "Teaches the move Protect."
+    },
+    {
+        "id": 599,
+        "constantName": "ITEM_TM18",
+        "name": "TM18 - Rain Dance",
+        "price": 3000,
+        "description": "Teaches the move Rain Dance."
+    },
+    {
+        "id": 600,
+        "constantName": "ITEM_TM19",
+        "name": "TM19 - Giga Drain",
+        "price": 3000,
+        "description": "Teaches the move Giga Drain."
+    },
+    {
+        "id": 601,
+        "constantName": "ITEM_TM20",
+        "name": "TM20 - Safeguard",
+        "price": 3000,
+        "description": "Teaches the move Safeguard."
+    },
+    {
+        "id": 602,
+        "constantName": "ITEM_TM21",
+        "name": "TM21 - Frustration",
+        "price": 3000,
+        "description": "Teaches the move Frustration."
+    },
+    {
+        "id": 603,
+        "constantName": "ITEM_TM22",
+        "name": "TM22 - Solar Beam",
+        "price": 3000,
+        "description": "Teaches the move Solar Beam."
+    },
+    {
+        "id": 604,
+        "constantName": "ITEM_TM23",
+        "name": "TM23 - Iron Tail",
+        "price": 3000,
+        "description": "Teaches the move Iron Tail."
+    },
+    {
+        "id": 605,
+        "constantName": "ITEM_TM24",
+        "name": "TM24 - Thunderbolt",
+        "price": 3000,
+        "description": "Teaches the move Thunderbolt."
+    },
+    {
+        "id": 606,
+        "constantName": "ITEM_TM25",
+        "name": "TM25 - Thunder",
+        "price": 3000,
+        "description": "Teaches the move Thunder."
+    },
+    {
+        "id": 607,
+        "constantName": "ITEM_TM26",
+        "name": "TM26 - Earthquake",
+        "price": 3000,
+        "description": "Teaches the move Earthquake."
+    },
+    {
+        "id": 608,
+        "constantName": "ITEM_TM27",
+        "name": "TM27 - Return",
+        "price": 3000,
+        "description": "Teaches the move Return."
+    },
+    {
+        "id": 609,
+        "constantName": "ITEM_TM28",
+        "name": "TM28 - Dig",
+        "price": 3000,
+        "description": "Teaches the move Dig."
+    },
+    {
+        "id": 610,
+        "constantName": "ITEM_TM29",
+        "name": "TM29 - Psychic",
+        "price": 3000,
+        "description": "Teaches the move Psychic."
+    },
+    {
+        "id": 611,
+        "constantName": "ITEM_TM30",
+        "name": "TM30 - Shadow Ball",
+        "price": 3000,
+        "description": "Teaches the move Shadow Ball."
+    },
+    {
+        "id": 612,
+        "constantName": "ITEM_TM31",
+        "name": "TM31 - Brick Break",
+        "price": 3000,
+        "description": "Teaches the move Brick Break."
+    },
+    {
+        "id": 613,
+        "constantName": "ITEM_TM32",
+        "name": "TM32 - Double Team",
+        "price": 3000,
+        "description": "Teaches the move Double Team."
+    },
+    {
+        "id": 614,
+        "constantName": "ITEM_TM33",
+        "name": "TM33 - Reflect",
+        "price": 3000,
+        "description": "Teaches the move Reflect."
+    },
+    {
+        "id": 615,
+        "constantName": "ITEM_TM34",
+        "name": "TM34 - Shock Wave",
+        "price": 3000,
+        "description": "Teaches the move Shock Wave."
+    },
+    {
+        "id": 616,
+        "constantName": "ITEM_TM35",
+        "name": "TM35 - Flamethrower",
+        "price": 3000,
+        "description": "Teaches the move Flamethrower."
+    },
+    {
+        "id": 617,
+        "constantName": "ITEM_TM36",
+        "name": "TM36 - Sludge Bomb",
+        "price": 3000,
+        "description": "Teaches the move Sludge Bomb."
+    },
+    {
+        "id": 618,
+        "constantName": "ITEM_TM37",
+        "name": "TM37 - Sandstorm",
+        "price": 3000,
+        "description": "Teaches the move Sandstorm."
+    },
+    {
+        "id": 619,
+        "constantName": "ITEM_TM38",
+        "name": "TM38 - Fire Blast",
+        "price": 3000,
+        "description": "Teaches the move Fire Blast."
+    },
+    {
+        "id": 620,
+        "constantName": "ITEM_TM39",
+        "name": "TM39 - Rock Tomb",
+        "price": 3000,
+        "description": "Teaches the move Rock Tomb."
+    },
+    {
+        "id": 621,
+        "constantName": "ITEM_TM40",
+        "name": "TM40 - Aerial Ace",
+        "price": 3000,
+        "description": "Teaches the move Aerial Ace."
+    },
+    {
+        "id": 622,
+        "constantName": "ITEM_TM41",
+        "name": "TM41 - Torment",
+        "price": 3000,
+        "description": "Teaches the move Torment."
+    },
+    {
+        "id": 623,
+        "constantName": "ITEM_TM42",
+        "name": "TM42 - Facade",
+        "price": 3000,
+        "description": "Teaches the move Facade."
+    },
+    {
+        "id": 624,
+        "constantName": "ITEM_TM43",
+        "name": "TM43 - Secret Power",
+        "price": 3000,
+        "description": "Teaches the move Secret Power."
+    },
+    {
+        "id": 625,
+        "constantName": "ITEM_TM44",
+        "name": "TM44 - Rest",
+        "price": 3000,
+        "description": "Teaches the move Rest."
+    },
+    {
+        "id": 626,
+        "constantName": "ITEM_TM45",
+        "name": "TM45 - Attract",
+        "price": 3000,
+        "description": "Teaches the move Attract."
+    },
+    {
+        "id": 627,
+        "constantName": "ITEM_TM46",
+        "name": "TM46 - Thief",
+        "price": 3000,
+        "description": "Teaches the move Thief."
+    },
+    {
+        "id": 628,
+        "constantName": "ITEM_TM47",
+        "name": "TM47 - Steel Wing",
+        "price": 3000,
+        "description": "Teaches the move Steel Wing."
+    },
+    {
+        "id": 629,
+        "constantName": "ITEM_TM48",
+        "name": "TM48 - Skill Swap",
+        "price": 3000,
+        "description": "Teaches the move Skill Swap."
+    },
+    {
+        "id": 630,
+        "constantName": "ITEM_TM49",
+        "name": "TM49 - Snatch",
+        "price": 3000,
+        "description": "Teaches the move Snatch."
+    },
+    {
+        "id": 631,
+        "constantName": "ITEM_TM50",
+        "name": "TM50 - Overheat",
+        "price": 3000,
+        "description": "Teaches the move Overheat."
+    },
+    {
+        "id": 632,
+        "constantName": "ITEM_TM51",
+        "name": "TM51 - Weather Ball",
+        "price": 3000,
+        "description": "Teaches the move Weather Ball."
+    },
+    {
+        "id": 633,
+        "constantName": "ITEM_TM52",
+        "name": "TM52 - Acrobatics",
+        "price": 3000,
+        "description": "Teaches the move Acrobatics."
+    },
+    {
+        "id": 634,
+        "constantName": "ITEM_TM53",
+        "name": "TM53 - Nature Power",
+        "price": 3000,
+        "description": "Teaches the move Nature Power."
+    },
+    {
+        "id": 635,
+        "constantName": "ITEM_TM54",
+        "name": "TM54 - X-Scissor",
+        "price": 3000,
+        "description": "Teaches the move X-Scissor."
+    },
+    {
+        "id": 636,
+        "constantName": "ITEM_TM55",
+        "name": "TM55 - Ancient Power",
+        "price": 3000,
+        "description": "Teaches the move Ancient Power."
+    },
+    {
+        "id": 637,
+        "constantName": "ITEM_TM56",
+        "name": "TM56 - Rock Blast",
+        "price": 3000,
+        "description": "Teaches the move Rock Blast."
+    },
+    {
+        "id": 638,
+        "constantName": "ITEM_TM57",
+        "name": "TM57 - Cut",
+        "price": 3000,
+        "description": "Teaches the move Cut."
+    },
+    {
+        "id": 639,
+        "constantName": "ITEM_TM58",
+        "name": "TM58 - Fly",
+        "price": 3000,
+        "description": "Teaches the move Fly."
+    },
+    {
+        "id": 640,
+        "constantName": "ITEM_TM59",
+        "name": "TM59 - Surf",
+        "price": 3000,
+        "description": "Teaches the move Surf."
+    },
+    {
+        "id": 641,
+        "constantName": "ITEM_TM60",
+        "name": "TM60 - Strength",
+        "price": 3000,
+        "description": "Teaches the move Strength."
+    },
+    {
+        "id": 642,
+        "constantName": "ITEM_TM61",
+        "name": "TM61 - Flash",
+        "price": 3000,
+        "description": "Teaches the move Flash."
+    },
+    {
+        "id": 643,
+        "constantName": "ITEM_TM62",
+        "name": "TM62 - Rock Smash",
+        "price": 3000,
+        "description": "Teaches the move Rock Smash."
+    },
+    {
+        "id": 644,
+        "constantName": "ITEM_TM63",
+        "name": "TM63 - Waterfall",
+        "price": 3000,
+        "description": "Teaches the move Waterfall."
+    },
+    {
+        "id": 645,
+        "constantName": "ITEM_TM64",
+        "name": "TM64 - Dive",
+        "price": 3000,
+        "description": "Teaches the move Dive."
+    },
+    {
+        "id": 646,
+        "constantName": "ITEM_TM65",
+        "name": "TM65 - Nick",
+        "price": 3000,
+        "description": "Teaches the move Nick."
+    },
+    {
+        "id": 647,
+        "constantName": "ITEM_TM66",
+        "name": "TM66 - Pebble Crush",
+        "price": 3000,
+        "description": "Teaches the move Pebble Crush."
+    },
+    {
+        "id": 648,
+        "constantName": "ITEM_TM67",
+        "name": "TM67 - Push",
+        "price": 3000,
+        "description": "Teaches the move Push."
+    },
+    {
+        "id": 649,
+        "constantName": "ITEM_TM68",
+        "name": "TM68 - Water Flail",
+        "price": 3000,
+        "description": "Teaches the move Water Flail."
+    },
+    {
+        "id": 650,
+        "constantName": "ITEM_TM69",
+        "name": "TM69 - Sink",
+        "price": 3000,
+        "description": "Teaches the move Sink."
+    },
+    {
+        "id": 651,
+        "constantName": "ITEM_TM70",
+        "name": "TM70 - Splash",
+        "price": 3000,
+        "description": "Teaches the move Splash."
+    },
+    {
+        "id": 652,
+        "constantName": "ITEM_TM71",
+        "name": "TM71 - Psybeam",
+        "price": 3000,
+        "description": "Teaches the move Psybeam."
+    },
+    {
         "id": 653,
         "constantName": "ITEM_TM72",
         "name": "TM72",

@@ -1,0 +1,6022 @@
+[
+    {
+        "id": 0,
+        "constantName": "ITEM_LIST_END",
+        "name": "gQuestionMarksItemName",
+        "price": 0,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 1,
+        "constantName": "ITEM_POKE_BALL",
+        "name": "Poké Ball",
+        "price": 200,
+        "description": "A tool used for catching wild Pokémon."
+    },
+    {
+        "id": 2,
+        "constantName": "ITEM_GREAT_BALL",
+        "name": "Great Ball",
+        "price": 600,
+        "description": "A good Ball with a higher catch rate than a Poké Ball."
+    },
+    {
+        "id": 3,
+        "constantName": "ITEM_ULTRA_BALL",
+        "name": "Ultra Ball",
+        "price": 800,
+        "description": "A better Ball with a higher catch rate than a Great Ball."
+    },
+    {
+        "id": 4,
+        "constantName": "ITEM_MASTER_BALL",
+        "name": "Master Ball",
+        "price": 0,
+        "description": "The best Ball that catches a Pokémon without fail."
+    },
+    {
+        "id": 5,
+        "constantName": "ITEM_PREMIER_BALL",
+        "name": "Premier Ball",
+        "price": 20,
+        "description": "A rare Ball made in commemoration of some event."
+    },
+    {
+        "id": 6,
+        "constantName": "ITEM_HEAL_BALL",
+        "name": "Heal Ball",
+        "price": 300,
+        "description": "A remedial Ball that restores caught Pokémon."
+    },
+    {
+        "id": 7,
+        "constantName": "ITEM_NET_BALL",
+        "name": "Net Ball",
+        "price": 1000,
+        "description": "A Ball that works well on Water- and Bug-type Pokémon."
+    },
+    {
+        "id": 8,
+        "constantName": "ITEM_NEST_BALL",
+        "name": "Nest Ball",
+        "price": 1000,
+        "description": "A Ball that works better on weaker Pokémon."
+    },
+    {
+        "id": 9,
+        "constantName": "ITEM_DIVE_BALL",
+        "name": "Dive Ball",
+        "price": 1000,
+        "description": "A Ball that works better on Pokémon on the ocean floor."
+    },
+    {
+        "id": 10,
+        "constantName": "ITEM_DUSK_BALL",
+        "name": "Dusk Ball",
+        "price": 1000,
+        "description": "Works well if used in a dark place."
+    },
+    {
+        "id": 11,
+        "constantName": "ITEM_TIMER_BALL",
+        "name": "Timer Ball",
+        "price": 1000,
+        "description": "A Ball that gains power in battles taking many turns."
+    },
+    {
+        "id": 12,
+        "constantName": "ITEM_QUICK_BALL",
+        "name": "Quick Ball",
+        "price": 1000,
+        "description": "Works well if used on the first turn."
+    },
+    {
+        "id": 13,
+        "constantName": "ITEM_REPEAT_BALL",
+        "name": "Repeat Ball",
+        "price": 1000,
+        "description": "A Ball that works better on Pokémon caught before."
+    },
+    {
+        "id": 14,
+        "constantName": "ITEM_LUXURY_BALL",
+        "name": "Luxury Ball",
+        "price": 3000,
+        "description": "A cozy Ball that makes Pokémon more friendly."
+    },
+    {
+        "id": 15,
+        "constantName": "ITEM_LEVEL_BALL",
+        "name": "Level Ball",
+        "price": 0,
+        "description": "A Ball that works well on lower level Pokémon."
+    },
+    {
+        "id": 16,
+        "constantName": "ITEM_LURE_BALL",
+        "name": "Lure Ball",
+        "price": 0,
+        "description": "A Ball that works well on fished up Pokémon."
+    },
+    {
+        "id": 17,
+        "constantName": "ITEM_MOON_BALL",
+        "name": "Moon Ball",
+        "price": 0,
+        "description": "A Ball that works well on Moon Stone users."
+    },
+    {
+        "id": 18,
+        "constantName": "ITEM_FRIEND_BALL",
+        "name": "Friend Ball",
+        "price": 0,
+        "description": "A Ball that makes a Pokémon friendly when caught."
+    },
+    {
+        "id": 19,
+        "constantName": "ITEM_LOVE_BALL",
+        "name": "Love Ball",
+        "price": 0,
+        "description": "Works well on Pokémon of the opposite gender."
+    },
+    {
+        "id": 20,
+        "constantName": "ITEM_FAST_BALL",
+        "name": "Fast Ball",
+        "price": 0,
+        "description": "Works well on very fast Pokémon."
+    },
+    {
+        "id": 21,
+        "constantName": "ITEM_HEAVY_BALL",
+        "name": "Heavy Ball",
+        "price": 0,
+        "description": "Works well on very heavy Pokémon."
+    },
+    {
+        "id": 22,
+        "constantName": "ITEM_DREAM_BALL",
+        "name": "Dream Ball",
+        "price": 0,
+        "description": "A Ball that works well on sleeping Pokémon."
+    },
+    {
+        "id": 23,
+        "constantName": "ITEM_SAFARI_BALL",
+        "name": "Safari Ball",
+        "price": 0,
+        "description": "A special Ball that is used only in the Safari Zone."
+    },
+    {
+        "id": 24,
+        "constantName": "ITEM_SPORT_BALL",
+        "name": "Sport Ball",
+        "price": 0,
+        "description": "A special Ball used in the Bug- Catching Contest."
+    },
+    {
+        "id": 25,
+        "constantName": "ITEM_PARK_BALL",
+        "name": "Park Ball",
+        "price": 0,
+        "description": "A special Ball for the Pal Park."
+    },
+    {
+        "id": 26,
+        "constantName": "ITEM_LIGHT_POKE_BALL",
+        "name": "Light Ball",
+        "price": 0,
+        "description": "Works well on very light Pokémon."
+    },
+    {
+        "id": 27,
+        "constantName": "ITEM_CHERISH_BALL",
+        "name": "Cherish Ball",
+        "price": 0,
+        "description": "A rare Ball made in commemoration of some event."
+    },
+    {
+        "id": 28,
+        "constantName": "ITEM_POTION",
+        "name": "Potion",
+        "price": 200,
+        "description": "Restores the HP of a Pokémon by 20 points."
+    },
+    {
+        "id": 29,
+        "constantName": "ITEM_SUPER_POTION",
+        "name": "Super Potion",
+        "price": 700,
+        "description": "Restores the HP of a Pokémon by 60 points."
+    },
+    {
+        "id": 30,
+        "constantName": "ITEM_HYPER_POTION",
+        "name": "Hyper Potion",
+        "price": 1200,
+        "description": "Restores the HP of a Pokémon by 120 points."
+    },
+    {
+        "id": 31,
+        "constantName": "ITEM_MAX_POTION",
+        "name": "Max Potion",
+        "price": 2500,
+        "description": "Fully restores the HP of a Pokémon."
+    },
+    {
+        "id": 32,
+        "constantName": "ITEM_FULL_RESTORE",
+        "name": "Full Restore",
+        "price": 3000,
+        "description": "Fully restores the HP and status of a Pokémon."
+    },
+    {
+        "id": 33,
+        "constantName": "ITEM_REVIVE",
+        "name": "Revive",
+        "price": 2000,
+        "description": "Revives a fainted Pokémon with half its HP."
+    },
+    {
+        "id": 34,
+        "constantName": "ITEM_MAX_REVIVE",
+        "name": "Max Revive",
+        "price": 4000,
+        "description": "sMaxReviveDesc"
+    },
+    {
+        "id": 35,
+        "constantName": "ITEM_FRESH_WATER",
+        "name": "Fresh Water",
+        "price": 200,
+        "description": "A mineral water that restores HP by 30 points."
+    },
+    {
+        "id": 36,
+        "constantName": "ITEM_SODA_POP",
+        "name": "Soda Pop",
+        "price": 300,
+        "description": "A fizzy soda drink that restores HP by 50 points."
+    },
+    {
+        "id": 37,
+        "constantName": "ITEM_LEMONADE",
+        "name": "Lemonade",
+        "price": 400,
+        "description": "A very sweet drink that restores HP by 70 points."
+    },
+    {
+        "id": 38,
+        "constantName": "ITEM_MOOMOO_MILK",
+        "name": "Moomoo Milk",
+        "price": 600,
+        "description": "A nutritious milk that restores HP by 100 points."
+    },
+    {
+        "id": 39,
+        "constantName": "ITEM_ENERGY_POWDER",
+        "name": "Energy Powder",
+        "price": 500,
+        "description": "A bitter powder that restores HP by 60 points."
+    },
+    {
+        "id": 40,
+        "constantName": "ITEM_ENERGY_ROOT",
+        "name": "Energy Root",
+        "price": 1200,
+        "description": "A bitter root that restores HP by 120 points."
+    },
+    {
+        "id": 41,
+        "constantName": "ITEM_HEAL_POWDER",
+        "name": "Heal Powder",
+        "price": 300,
+        "description": "A bitter powder that heals all status problems."
+    },
+    {
+        "id": 42,
+        "constantName": "ITEM_REVIVAL_HERB",
+        "name": "Revival Herb",
+        "price": 1500,
+        "description": "A bitter herb. Revives a Pokémon outside of battle."
+    },
+    {
+        "id": 43,
+        "constantName": "ITEM_ANTIDOTE",
+        "name": "Antidote",
+        "price": 50,
+        "description": "Out of battle, heals a poisoned Pokémon."
+    },
+    {
+        "id": 44,
+        "constantName": "ITEM_PARALYZE_HEAL",
+        "name": "Paralyze Heal",
+        "price": 50,
+        "description": "Out of battle, heals a paralyzed Pokémon."
+    },
+    {
+        "id": 45,
+        "constantName": "ITEM_BURN_HEAL",
+        "name": "Burn Heal",
+        "price": 50,
+        "description": "Out of battle, heals a Pokémon of a burn."
+    },
+    {
+        "id": 46,
+        "constantName": "ITEM_ICE_HEAL",
+        "name": "Ice Heal",
+        "price": 50,
+        "description": "Out of battle, defrosts a frozen Pokémon."
+    },
+    {
+        "id": 47,
+        "constantName": "ITEM_AWAKENING",
+        "name": "Awakening",
+        "price": 50,
+        "description": "Out of battle, awakens a sleeping Pokémon."
+    },
+    {
+        "id": 48,
+        "constantName": "ITEM_FULL_HEAL",
+        "name": "Full Heal",
+        "price": 150,
+        "description": "sFullHealDesc"
+    },
+    {
+        "id": 49,
+        "constantName": "ITEM_ETHER",
+        "name": "Ether",
+        "price": 1200,
+        "description": "Restores the PP of a selected move by 10."
+    },
+    {
+        "id": 50,
+        "constantName": "ITEM_MAX_ETHER",
+        "name": "Max Ether",
+        "price": 2000,
+        "description": "Fully restores the PP of a selected move."
+    },
+    {
+        "id": 51,
+        "constantName": "ITEM_ELIXIR",
+        "name": "Elixir",
+        "price": 3000,
+        "description": "Restores the PP of all moves by 10."
+    },
+    {
+        "id": 52,
+        "constantName": "ITEM_MAX_ELIXIR",
+        "name": "Max Elixir",
+        "price": 4500,
+        "description": "Fully restores the PP of a Pokémon's moves."
+    },
+    {
+        "id": 53,
+        "constantName": "ITEM_BERRY_JUICE",
+        "name": "Berry Juice",
+        "price": 100,
+        "description": "A 100% pure juice that restores HP by 20 points."
+    },
+    {
+        "id": 54,
+        "constantName": "ITEM_SACRED_ASH",
+        "name": "Sacred Ash",
+        "price": 50000,
+        "description": "Fully revives and restores all fainted Pokémon."
+    },
+    {
+        "id": 55,
+        "constantName": "ITEM_SWEET_HEART",
+        "name": "Sweet Heart",
+        "price": 3000,
+        "description": "A sweet chocolate that restores HP by 20 points."
+    },
+    {
+        "id": 56,
+        "constantName": "ITEM_MAX_HONEY",
+        "name": "Max Honey",
+        "price": 8000,
+        "description": "sMaxReviveDesc"
+    },
+    {
+        "id": 57,
+        "constantName": "ITEM_PEWTER_CRUNCHIES",
+        "name": "Pewter Crunchies",
+        "price": 250,
+        "description": "sFullHealDesc"
+    },
+    {
+        "id": 58,
+        "constantName": "ITEM_RAGE_CANDY_BAR",
+        "name": "Rage Candy Bar",
+        "price": 350,
+        "description": "sFullHealDesc"
+    },
+    {
+        "id": 59,
+        "constantName": "ITEM_LAVA_COOKIE",
+        "name": "Lava Cookie",
+        "price": 350,
+        "description": "A local specialty that heals all status problems."
+    },
+    {
+        "id": 60,
+        "constantName": "ITEM_OLD_GATEAU",
+        "name": "Old Gateau",
+        "price": 350,
+        "description": "sFullHealDesc"
+    },
+    {
+        "id": 61,
+        "constantName": "ITEM_CASTELIACONE",
+        "name": "Casteliacone",
+        "price": 350,
+        "description": "sFullHealDesc"
+    },
+    {
+        "id": 62,
+        "constantName": "ITEM_LUMIOSE_GALETTE",
+        "name": "Lumiose Galette",
+        "price": 350,
+        "description": "sFullHealDesc"
+    },
+    {
+        "id": 63,
+        "constantName": "ITEM_SHALOUR_SABLE",
+        "name": "Shalour Sable",
+        "price": 350,
+        "description": "sFullHealDesc"
+    },
+    {
+        "id": 64,
+        "constantName": "ITEM_BIG_MALASADA",
+        "name": "Big Malasada",
+        "price": 350,
+        "description": "sFullHealDesc"
+    },
+    {
+        "id": 65,
+        "constantName": "ITEM_HP_UP",
+        "name": "HP Up",
+        "price": 10000,
+        "description": "Raises the base HP of one Pokémon."
+    },
+    {
+        "id": 66,
+        "constantName": "ITEM_PROTEIN",
+        "name": "Protein",
+        "price": 10000,
+        "description": "Raises the base Attack stat of one Pokémon."
+    },
+    {
+        "id": 67,
+        "constantName": "ITEM_IRON",
+        "name": "Iron",
+        "price": 10000,
+        "description": "Raises the base Defense stat of one Pokémon."
+    },
+    {
+        "id": 68,
+        "constantName": "ITEM_CALCIUM",
+        "name": "Calcium",
+        "price": 10000,
+        "description": "Raises the base Sp. Atk stat of one Pokémon."
+    },
+    {
+        "id": 69,
+        "constantName": "ITEM_ZINC",
+        "name": "Zinc",
+        "price": 10000,
+        "description": "Raises the base Sp. Def stat of one Pokémon."
+    },
+    {
+        "id": 70,
+        "constantName": "ITEM_CARBOS",
+        "name": "Carbos",
+        "price": 10000,
+        "description": "Raises the base Speed stat of one Pokémon."
+    },
+    {
+        "id": 71,
+        "constantName": "ITEM_PP_UP",
+        "name": "PP Up",
+        "price": 1,
+        "description": "Raises the maximum PP of a selected move."
+    },
+    {
+        "id": 72,
+        "constantName": "ITEM_PP_MAX",
+        "name": "PP Max",
+        "price": 10000,
+        "description": "Raises the PP of a move to its maximum points."
+    },
+    {
+        "id": 73,
+        "constantName": "ITEM_HEALTH_FEATHER",
+        "name": "Health Feather",
+        "price": 300,
+        "description": "sHealthFeatherDesc"
+    },
+    {
+        "id": 74,
+        "constantName": "ITEM_MUSCLE_FEATHER",
+        "name": "Muscle Feather",
+        "price": 300,
+        "description": "sMuscleFeatherDesc"
+    },
+    {
+        "id": 75,
+        "constantName": "ITEM_RESIST_FEATHER",
+        "name": "Resist Feather",
+        "price": 300,
+        "description": "sResistFeatherDesc"
+    },
+    {
+        "id": 76,
+        "constantName": "ITEM_GENIUS_FEATHER",
+        "name": "Genius Feather",
+        "price": 300,
+        "description": "sGeniusFeatherDesc"
+    },
+    {
+        "id": 77,
+        "constantName": "ITEM_CLEVER_FEATHER",
+        "name": "Clever Feather",
+        "price": 300,
+        "description": "sCleverFeatherDesc"
+    },
+    {
+        "id": 78,
+        "constantName": "ITEM_SWIFT_FEATHER",
+        "name": "Swift Feather",
+        "price": 300,
+        "description": "sSwiftFeatherDesc"
+    },
+    {
+        "id": 79,
+        "constantName": "ITEM_ABILITY_CAPSULE",
+        "name": "Ability Capsule",
+        "price": 1000,
+        "description": "Switches a Poké- mon's ability."
+    },
+    {
+        "id": 80,
+        "constantName": "ITEM_ABILITY_PATCH",
+        "name": "Ability Patch",
+        "price": 250000,
+        "description": "Turns the ability of a Pokémon into a rare ability."
+    },
+    {
+        "id": 81,
+        "constantName": "ITEM_LONELY_MINT",
+        "name": "Lonely Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Attack, but reduces Defense."
+    },
+    {
+        "id": 82,
+        "constantName": "ITEM_ADAMANT_MINT",
+        "name": "Adamant Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Attack, but reduces Sp. Atk."
+    },
+    {
+        "id": 83,
+        "constantName": "ITEM_NAUGHTY_MINT",
+        "name": "Naughty Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Attack, but reduces Sp. Def."
+    },
+    {
+        "id": 84,
+        "constantName": "ITEM_BRAVE_MINT",
+        "name": "Brave Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Attack, but reduces Speed."
+    },
+    {
+        "id": 85,
+        "constantName": "ITEM_BOLD_MINT",
+        "name": "Bold Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Defense, but reduces Attack."
+    },
+    {
+        "id": 86,
+        "constantName": "ITEM_IMPISH_MINT",
+        "name": "Impish Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Defense, but reduces Sp. Atk."
+    },
+    {
+        "id": 87,
+        "constantName": "ITEM_LAX_MINT",
+        "name": "Lax Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Defense, but reduces Sp. Def."
+    },
+    {
+        "id": 88,
+        "constantName": "ITEM_RELAXED_MINT",
+        "name": "Relaxed Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Defense, but reduces Speed."
+    },
+    {
+        "id": 89,
+        "constantName": "ITEM_MODEST_MINT",
+        "name": "Modest Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Sp. Atk, but reduces Attack."
+    },
+    {
+        "id": 90,
+        "constantName": "ITEM_MILD_MINT",
+        "name": "Mild Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Sp. Atk, but reduces Defense."
+    },
+    {
+        "id": 91,
+        "constantName": "ITEM_RASH_MINT",
+        "name": "Rash Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Sp. Atk, but reduces Sp. Def."
+    },
+    {
+        "id": 92,
+        "constantName": "ITEM_QUIET_MINT",
+        "name": "Quiet Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Sp. Atk, but reduces Speed."
+    },
+    {
+        "id": 93,
+        "constantName": "ITEM_CALM_MINT",
+        "name": "Calm Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Sp. Def, but reduces Attack."
+    },
+    {
+        "id": 94,
+        "constantName": "ITEM_GENTLE_MINT",
+        "name": "Gentle Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Sp. Def, but reduces Defense."
+    },
+    {
+        "id": 95,
+        "constantName": "ITEM_CAREFUL_MINT",
+        "name": "Careful Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Sp. Def, but reduces Sp. Atk."
+    },
+    {
+        "id": 96,
+        "constantName": "ITEM_SASSY_MINT",
+        "name": "Sassy Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Sp. Def, but reduces Speed."
+    },
+    {
+        "id": 97,
+        "constantName": "ITEM_TIMID_MINT",
+        "name": "Timid Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Speed, but reduces Attack."
+    },
+    {
+        "id": 98,
+        "constantName": "ITEM_HASTY_MINT",
+        "name": "Hasty Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Speed, but reduces Defense."
+    },
+    {
+        "id": 99,
+        "constantName": "ITEM_JOLLY_MINT",
+        "name": "Jolly Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Speed, but reduces Sp. Atk."
+    },
+    {
+        "id": 100,
+        "constantName": "ITEM_NAIVE_MINT",
+        "name": "Naive Mint",
+        "price": 20000,
+        "description": "Can be smelled. It ups Speed, but reduces Sp. Def."
+    },
+    {
+        "id": 101,
+        "constantName": "ITEM_SERIOUS_MINT",
+        "name": "Serious Mint",
+        "price": 20000,
+        "description": "Can be smelled. It makes each stat grow equally."
+    },
+    {
+        "id": 102,
+        "constantName": "ITEM_RARE_CANDY",
+        "name": "Rare Candy",
+        "price": 10000,
+        "description": "Raises the level of a Pokémon by one."
+    },
+    {
+        "id": 103,
+        "constantName": "ITEM_EXP_CANDY_XS",
+        "name": "Exp. Candy XS",
+        "price": 20,
+        "description": "Gives a very small amount of Exp. to a single Pokémon."
+    },
+    {
+        "id": 104,
+        "constantName": "ITEM_EXP_CANDY_S",
+        "name": "Exp. Candy S",
+        "price": 240,
+        "description": "Gives a small amount of Exp. to a single Pokémon."
+    },
+    {
+        "id": 105,
+        "constantName": "ITEM_EXP_CANDY_M",
+        "name": "Exp. Candy M",
+        "price": 1000,
+        "description": "Gives a moderate amount of Exp. to a single Pokémon."
+    },
+    {
+        "id": 106,
+        "constantName": "ITEM_EXP_CANDY_L",
+        "name": "Exp. Candy L",
+        "price": 3000,
+        "description": "Gives a large amount of Exp. to a single Pokémon."
+    },
+    {
+        "id": 107,
+        "constantName": "ITEM_EXP_CANDY_XL",
+        "name": "Exp. Candy XL",
+        "price": 10000,
+        "description": "Gives a very large amount of Exp. to a single Pokémon."
+    },
+    {
+        "id": 108,
+        "constantName": "ITEM_DYNAMAX_CANDY",
+        "name": "Dynamax Candy",
+        "price": 0,
+        "description": "Raises the Dynamax Level of a single Pokémon by one."
+    },
+    {
+        "id": 109,
+        "constantName": "ITEM_BLUE_FLUTE",
+        "name": "Blue Flute",
+        "price": 20,
+        "description": "A glass flute that awakens sleeping Pokémon."
+    },
+    {
+        "id": 110,
+        "constantName": "ITEM_YELLOW_FLUTE",
+        "name": "Yellow Flute",
+        "price": 20,
+        "description": "A glass flute that snaps Pokémon out of confusion."
+    },
+    {
+        "id": 111,
+        "constantName": "ITEM_RED_FLUTE",
+        "name": "Red Flute",
+        "price": 20,
+        "description": "A glass flute that snaps Pokémon out of attraction."
+    },
+    {
+        "id": 112,
+        "constantName": "ITEM_BLACK_FLUTE",
+        "name": "Black Flute",
+        "price": 20,
+        "description": "A glass flute that keeps away wild Pokémon."
+    },
+    {
+        "id": 113,
+        "constantName": "ITEM_WHITE_FLUTE",
+        "name": "White Flute",
+        "price": 20,
+        "description": "A glass flute that lures wild Pokémon."
+    },
+    {
+        "id": 114,
+        "constantName": "ITEM_REPEL",
+        "name": "Repel",
+        "price": 400,
+        "description": "Repels weak wild Pokémon for 100 steps."
+    },
+    {
+        "id": 115,
+        "constantName": "ITEM_SUPER_REPEL",
+        "name": "Super Repel",
+        "price": 700,
+        "description": "Repels weak wild Pokémon for 200 steps."
+    },
+    {
+        "id": 116,
+        "constantName": "ITEM_MAX_REPEL",
+        "name": "Max Repel",
+        "price": 900,
+        "description": "Repels weak wild Pokémon for 250 steps."
+    },
+    {
+        "id": 117,
+        "constantName": "ITEM_LURE",
+        "name": "Lure",
+        "price": 400,
+        "description": "Makes Pokémon more likely to appear for 100 steps."
+    },
+    {
+        "id": 118,
+        "constantName": "ITEM_SUPER_LURE",
+        "name": "Super Lure",
+        "price": 700,
+        "description": "Makes Pokémon more likely to appear for 200 steps."
+    },
+    {
+        "id": 119,
+        "constantName": "ITEM_MAX_LURE",
+        "name": "Max Lure",
+        "price": 900,
+        "description": "Makes Pokémon more likely to appear for 250 steps."
+    },
+    {
+        "id": 120,
+        "constantName": "ITEM_ESCAPE_ROPE",
+        "name": "Escape Rope",
+        "price": 550,
+        "description": "Use to escape instantly from a cave or a dungeon."
+    },
+    {
+        "id": 121,
+        "constantName": "ITEM_X_ATTACK",
+        "name": "X Attack",
+        "price": 1000,
+        "description": "Sharply raises stat Attack during one battle."
+    },
+    {
+        "id": 122,
+        "constantName": "ITEM_X_DEFENSE",
+        "name": "X Defense",
+        "price": 2000,
+        "description": "Sharply raises stat Defense during one battle."
+    },
+    {
+        "id": 123,
+        "constantName": "ITEM_X_SP_ATK",
+        "name": "X Sp. Atk",
+        "price": 1000,
+        "description": "Sharply raises stat Sp. Atk during one battle."
+    },
+    {
+        "id": 124,
+        "constantName": "ITEM_X_SP_DEF",
+        "name": "X Sp. Def",
+        "price": 2000,
+        "description": "Sharply raises stat Sp. Def during one battle."
+    },
+    {
+        "id": 125,
+        "constantName": "ITEM_X_SPEED",
+        "name": "X Speed",
+        "price": 1000,
+        "description": "Sharply raises stat Speed during one battle."
+    },
+    {
+        "id": 126,
+        "constantName": "ITEM_X_ACCURACY",
+        "name": "X Accuracy",
+        "price": 1000,
+        "description": "Sharply raises move accuracy during one battle."
+    },
+    {
+        "id": 127,
+        "constantName": "ITEM_DIRE_HIT",
+        "name": "Dire Hit",
+        "price": 1000,
+        "description": "Raises the critical-hit ratio during one battle."
+    },
+    {
+        "id": 128,
+        "constantName": "ITEM_GUARD_SPEC",
+        "name": "Guard Spec.",
+        "price": 1500,
+        "description": "Prevents stat reduction when used in battle."
+    },
+    {
+        "id": 129,
+        "constantName": "ITEM_POKE_DOLL",
+        "name": "Poké Doll",
+        "price": 1000,
+        "description": "sPokeDollDesc"
+    },
+    {
+        "id": 130,
+        "constantName": "ITEM_FLUFFY_TAIL",
+        "name": "Fluffy Tail",
+        "price": 100,
+        "description": "sPokeDollDesc"
+    },
+    {
+        "id": 131,
+        "constantName": "ITEM_POKE_TOY",
+        "name": "Poké Toy",
+        "price": 100,
+        "description": "sPokeDollDesc"
+    },
+    {
+        "id": 132,
+        "constantName": "ITEM_MAX_MUSHROOMS",
+        "name": "Max Mushrooms",
+        "price": 8000,
+        "description": "Raises every stat during one battle by one stage."
+    },
+    {
+        "id": 133,
+        "constantName": "ITEM_BOTTLE_CAP",
+        "name": "Bottle Cap",
+        "price": 20000,
+        "description": "A beautiful bottle cap that gives off a silver gleam."
+    },
+    {
+        "id": 134,
+        "constantName": "ITEM_GOLD_BOTTLE_CAP",
+        "name": "Gold Bottle Cap",
+        "price": 60000,
+        "description": "A beautiful bottle cap that gives off a golden gleam."
+    },
+    {
+        "id": 135,
+        "constantName": "ITEM_NUGGET",
+        "name": "Nugget",
+        "price": 20000,
+        "description": "A nugget of pure gold. Can be sold at a high price."
+    },
+    {
+        "id": 136,
+        "constantName": "ITEM_BIG_NUGGET",
+        "name": "Big Nugget",
+        "price": 80000,
+        "description": "A big nugget made of gold, sellable at a high price."
+    },
+    {
+        "id": 137,
+        "constantName": "ITEM_TINY_MUSHROOM",
+        "name": "Tiny Mushroom",
+        "price": 1000,
+        "description": "A plain mushroom that would sell at a cheap price."
+    },
+    {
+        "id": 138,
+        "constantName": "ITEM_BIG_MUSHROOM",
+        "name": "Big Mushroom",
+        "price": 10000,
+        "description": "sBigMushroomDesc"
+    },
+    {
+        "id": 139,
+        "constantName": "ITEM_BALM_MUSHROOM",
+        "name": "Balm Mushroom",
+        "price": 30000,
+        "description": "sBigMushroomDesc"
+    },
+    {
+        "id": 140,
+        "constantName": "ITEM_PEARL",
+        "name": "Pearl",
+        "price": 4000,
+        "description": "A pretty pearl that would sell at a cheap price."
+    },
+    {
+        "id": 141,
+        "constantName": "ITEM_BIG_PEARL",
+        "name": "Big Pearl",
+        "price": 16000,
+        "description": "A lovely large pearl that would sell at a high price."
+    },
+    {
+        "id": 142,
+        "constantName": "ITEM_PEARL_STRING",
+        "name": "Pearl String",
+        "price": 30000,
+        "description": "Very large pearls that would sell at a high price."
+    },
+    {
+        "id": 143,
+        "constantName": "ITEM_STARDUST",
+        "name": "Stardust",
+        "price": 6000,
+        "description": "Beautiful red sand. Can be sold at a high price."
+    },
+    {
+        "id": 144,
+        "constantName": "ITEM_STAR_PIECE",
+        "name": "Star Piece",
+        "price": 24000,
+        "description": "A red gem shard. It would sell for a very high price."
+    },
+    {
+        "id": 145,
+        "constantName": "ITEM_COMET_SHARD",
+        "name": "Comet Shard",
+        "price": 0,
+        "description": "A comet's shard. It would sell for a high price."
+    },
+    {
+        "id": 146,
+        "constantName": "ITEM_SHOAL_SALT",
+        "name": "Shoal Salt",
+        "price": 20,
+        "description": "Salt obtained from deep inside the Shoal Cave."
+    },
+    {
+        "id": 147,
+        "constantName": "ITEM_SHOAL_SHELL",
+        "name": "Shoal Shell",
+        "price": 20,
+        "description": "A seashell found deep inside the Shoal Cave."
+    },
+    {
+        "id": 148,
+        "constantName": "ITEM_RED_SHARD",
+        "name": "Red Shard",
+        "price": 1000,
+        "description": "sShardsDesc"
+    },
+    {
+        "id": 149,
+        "constantName": "ITEM_BLUE_SHARD",
+        "name": "Blue Shard",
+        "price": 1000,
+        "description": "sShardsDesc"
+    },
+    {
+        "id": 150,
+        "constantName": "ITEM_YELLOW_SHARD",
+        "name": "Yellow Shard",
+        "price": 1000,
+        "description": "sShardsDesc"
+    },
+    {
+        "id": 151,
+        "constantName": "ITEM_GREEN_SHARD",
+        "name": "Green Shard",
+        "price": 1000,
+        "description": "sShardsDesc"
+    },
+    {
+        "id": 152,
+        "constantName": "ITEM_HEART_SCALE",
+        "name": "Heart Scale",
+        "price": 100,
+        "description": "A lovely scale. It is coveted by collectors."
+    },
+    {
+        "id": 153,
+        "constantName": "ITEM_HONEY",
+        "name": "Honey",
+        "price": 100,
+        "description": "Sweet honey that attracts wild Pokémon when used."
+    },
+    {
+        "id": 154,
+        "constantName": "ITEM_RARE_BONE",
+        "name": "Rare Bone",
+        "price": 10000,
+        "description": "A very rare bone. It can be sold at a high price."
+    },
+    {
+        "id": 155,
+        "constantName": "ITEM_ODD_KEYSTONE",
+        "name": "Odd Keystone",
+        "price": 2100,
+        "description": "Voices can be heard from this odd stone occasionally."
+    },
+    {
+        "id": 156,
+        "constantName": "ITEM_PRETTY_FEATHER",
+        "name": "Pretty Feather",
+        "price": 2000,
+        "description": "A beautiful yet plain feather that does nothing."
+    },
+    {
+        "id": 157,
+        "constantName": "ITEM_RELIC_COPPER",
+        "name": "Relic Copper",
+        "price": 0,
+        "description": "A copper coin used long ago. It sells at a high price."
+    },
+    {
+        "id": 158,
+        "constantName": "ITEM_RELIC_SILVER",
+        "name": "Relic Silver",
+        "price": 0,
+        "description": "A silver coin used long ago. It sells at a high price."
+    },
+    {
+        "id": 159,
+        "constantName": "ITEM_RELIC_GOLD",
+        "name": "Relic Gold",
+        "price": 0,
+        "description": "A gold coin used long ago. It sells at a high price."
+    },
+    {
+        "id": 160,
+        "constantName": "ITEM_RELIC_VASE",
+        "name": "Relic Vase",
+        "price": 0,
+        "description": "A vase made long ago. It sells at a high price."
+    },
+    {
+        "id": 161,
+        "constantName": "ITEM_RELIC_BAND",
+        "name": "Relic Band",
+        "price": 0,
+        "description": "An old bracelet. It sells at a high price."
+    },
+    {
+        "id": 162,
+        "constantName": "ITEM_RELIC_STATUE",
+        "name": "Relic Statue",
+        "price": 0,
+        "description": "An old statue. It sells at a high price."
+    },
+    {
+        "id": 163,
+        "constantName": "ITEM_RELIC_CROWN",
+        "name": "Relic Crown",
+        "price": 0,
+        "description": "An old crown. It sells at a high price."
+    },
+    {
+        "id": 164,
+        "constantName": "ITEM_STRANGE_SOUVENIR",
+        "name": "Strange Souvenir",
+        "price": 3000,
+        "description": "An ornament that depicts a Pokémon from Alola."
+    },
+    {
+        "id": 165,
+        "constantName": "ITEM_HELIX_FOSSIL",
+        "name": "Helix Fossil",
+        "price": 7000,
+        "description": "A piece of an ancient marine Pokémon's seashell."
+    },
+    {
+        "id": 166,
+        "constantName": "ITEM_DOME_FOSSIL",
+        "name": "Dome Fossil",
+        "price": 7000,
+        "description": "A piece of an ancient marine Pokémon's shell."
+    },
+    {
+        "id": 167,
+        "constantName": "ITEM_OLD_AMBER",
+        "name": "Old Amber",
+        "price": 1000,
+        "description": "A stone containing the genes of an ancient Pokémon."
+    },
+    {
+        "id": 168,
+        "constantName": "ITEM_ROOT_FOSSIL",
+        "name": "Root Fossil",
+        "price": 7000,
+        "description": "sRootFossilDesc"
+    },
+    {
+        "id": 169,
+        "constantName": "ITEM_CLAW_FOSSIL",
+        "name": "Claw Fossil",
+        "price": 7000,
+        "description": "sRootFossilDesc"
+    },
+    {
+        "id": 170,
+        "constantName": "ITEM_ARMOR_FOSSIL",
+        "name": "Armor Fossil",
+        "price": 7000,
+        "description": "A piece of a prehistoric Poké- mon's head."
+    },
+    {
+        "id": 171,
+        "constantName": "ITEM_SKULL_FOSSIL",
+        "name": "Skull Fossil",
+        "price": 7000,
+        "description": "A piece of a prehistoric Poké- mon's collar."
+    },
+    {
+        "id": 172,
+        "constantName": "ITEM_COVER_FOSSIL",
+        "name": "Cover Fossil",
+        "price": 7000,
+        "description": "A piece of a prehistoric Poké- mon's back."
+    },
+    {
+        "id": 173,
+        "constantName": "ITEM_PLUME_FOSSIL",
+        "name": "Plume Fossil",
+        "price": 7000,
+        "description": "A piece of a prehistoric Poké- mon's wing."
+    },
+    {
+        "id": 174,
+        "constantName": "ITEM_JAW_FOSSIL",
+        "name": "Jaw Fossil",
+        "price": 7000,
+        "description": "A piece of a prehistoric Poké- mon's large jaw."
+    },
+    {
+        "id": 175,
+        "constantName": "ITEM_SAIL_FOSSIL",
+        "name": "Sail Fossil",
+        "price": 7000,
+        "description": "A piece of a prehistoric Poké- mon's skin sail."
+    },
+    {
+        "id": 176,
+        "constantName": "ITEM_FOSSILIZED_BIRD",
+        "name": "Fossilized Bird",
+        "price": 5000,
+        "description": "A fossil of an ancient, sky- soaring Pokémon."
+    },
+    {
+        "id": 177,
+        "constantName": "ITEM_FOSSILIZED_FISH",
+        "name": "Fossilized Fish",
+        "price": 5000,
+        "description": "sFossilizedFishDesc"
+    },
+    {
+        "id": 178,
+        "constantName": "ITEM_FOSSILIZED_DRAKE",
+        "name": "Fossilized Drake",
+        "price": 5000,
+        "description": "A fossil of an ancient, land- roaming Pokémon."
+    },
+    {
+        "id": 179,
+        "constantName": "ITEM_FOSSILIZED_DINO",
+        "name": "Fossilized Dino",
+        "price": 5000,
+        "description": "sFossilizedFishDesc"
+    },
+    {
+        "id": 180,
+        "constantName": "ITEM_GROWTH_MULCH",
+        "name": "Growth Mulch",
+        "price": 200,
+        "description": "sGenericMulchDesc"
+    },
+    {
+        "id": 181,
+        "constantName": "ITEM_DAMP_MULCH",
+        "name": "Damp Mulch",
+        "price": 200,
+        "description": "sGenericMulchDesc"
+    },
+    {
+        "id": 182,
+        "constantName": "ITEM_STABLE_MULCH",
+        "name": "Stable Mulch",
+        "price": 200,
+        "description": "sGenericMulchDesc"
+    },
+    {
+        "id": 183,
+        "constantName": "ITEM_GOOEY_MULCH",
+        "name": "Gooey Mulch",
+        "price": 200,
+        "description": "sGenericMulchDesc"
+    },
+    {
+        "id": 184,
+        "constantName": "ITEM_RICH_MULCH",
+        "name": "Rich Mulch",
+        "price": 200,
+        "description": "sGenericMulchDesc"
+    },
+    {
+        "id": 185,
+        "constantName": "ITEM_SURPRISE_MULCH",
+        "name": "Surprise Mulch",
+        "price": 200,
+        "description": "sGenericMulchDesc"
+    },
+    {
+        "id": 186,
+        "constantName": "ITEM_BOOST_MULCH",
+        "name": "Boost Mulch",
+        "price": 200,
+        "description": "sGenericMulchDesc"
+    },
+    {
+        "id": 187,
+        "constantName": "ITEM_AMAZE_MULCH",
+        "name": "Amaze Mulch",
+        "price": 200,
+        "description": "sGenericMulchDesc"
+    },
+    {
+        "id": 188,
+        "constantName": "ITEM_RED_APRICORN",
+        "name": "Red Apricorn",
+        "price": 0,
+        "description": "A red apricorn. It assails your nostrils."
+    },
+    {
+        "id": 189,
+        "constantName": "ITEM_BLUE_APRICORN",
+        "name": "Blue Apricorn",
+        "price": 0,
+        "description": "A blue apricorn. It smells a bit like grass."
+    },
+    {
+        "id": 190,
+        "constantName": "ITEM_YELLOW_APRICORN",
+        "name": "Yellow Apricorn",
+        "price": 0,
+        "description": "A yellow apricorn. It has an invigor- ating scent."
+    },
+    {
+        "id": 191,
+        "constantName": "ITEM_GREEN_APRICORN",
+        "name": "Green Apricorn",
+        "price": 0,
+        "description": "A green apricorn. It has a strange, aromatic scent."
+    },
+    {
+        "id": 192,
+        "constantName": "ITEM_PINK_APRICORN",
+        "name": "Pink Apricorn",
+        "price": 0,
+        "description": "A pink apricorn. It has a nice, sweet scent."
+    },
+    {
+        "id": 193,
+        "constantName": "ITEM_WHITE_APRICORN",
+        "name": "White Apricorn",
+        "price": 0,
+        "description": "A white apricorn. It doesn't smell like anything."
+    },
+    {
+        "id": 194,
+        "constantName": "ITEM_BLACK_APRICORN",
+        "name": "Black Apricorn",
+        "price": 0,
+        "description": "A black apricorn. It has an inde- scribable scent."
+    },
+    {
+        "id": 195,
+        "constantName": "ITEM_WISHING_PIECE",
+        "name": "Wishing Piece",
+        "price": 20,
+        "description": "Throw into a {PKMN} Den to attract Dynamax Pokémon."
+    },
+    {
+        "id": 196,
+        "constantName": "ITEM_GALARICA_TWIG",
+        "name": "Galarica Twig",
+        "price": 40,
+        "description": "A twig from a tree in Galar called Galarica."
+    },
+    {
+        "id": 197,
+        "constantName": "ITEM_ARMORITE_ORE",
+        "name": "Armorite Ore",
+        "price": 20,
+        "description": "A rare ore. Can be found in the Isle of Armor at Galar."
+    },
+    {
+        "id": 198,
+        "constantName": "ITEM_DYNITE_ORE",
+        "name": "Dynite Ore",
+        "price": 20,
+        "description": "A mysterious ore. It can be found in Galar's Max Lair."
+    },
+    {
+        "id": 199,
+        "constantName": "ITEM_ORANGE_MAIL",
+        "name": "Orange Mail",
+        "price": 50,
+        "description": "A Zigzagoon-print Mail to be held by a Pokémon."
+    },
+    {
+        "id": 200,
+        "constantName": "ITEM_HARBOR_MAIL",
+        "name": "Harbor Mail",
+        "price": 50,
+        "description": "A Wingull-print Mail to be held by a Pokémon."
+    },
+    {
+        "id": 201,
+        "constantName": "ITEM_GLITTER_MAIL",
+        "name": "Glitter Mail",
+        "price": 50,
+        "description": "A Pikachu-print Mail to be held by a Pokémon."
+    },
+    {
+        "id": 202,
+        "constantName": "ITEM_MECH_MAIL",
+        "name": "Mech Mail",
+        "price": 50,
+        "description": "A Magnemite-print Mail to be held by a Pokémon."
+    },
+    {
+        "id": 203,
+        "constantName": "ITEM_WOOD_MAIL",
+        "name": "Wood Mail",
+        "price": 50,
+        "description": "A Slakoth-print Mail to be held by a Pokémon."
+    },
+    {
+        "id": 204,
+        "constantName": "ITEM_WAVE_MAIL",
+        "name": "Wave Mail",
+        "price": 50,
+        "description": "A Wailmer-print Mail to be held by a Pokémon."
+    },
+    {
+        "id": 205,
+        "constantName": "ITEM_BEAD_MAIL",
+        "name": "Bead Mail",
+        "price": 50,
+        "description": "sBeadMailDesc"
+    },
+    {
+        "id": 206,
+        "constantName": "ITEM_SHADOW_MAIL",
+        "name": "Shadow Mail",
+        "price": 50,
+        "description": "A Duskull-print Mail to be held by a Pokémon."
+    },
+    {
+        "id": 207,
+        "constantName": "ITEM_TROPIC_MAIL",
+        "name": "Tropic Mail",
+        "price": 50,
+        "description": "A Bellossom-print Mail to be held by a Pokémon."
+    },
+    {
+        "id": 208,
+        "constantName": "ITEM_DREAM_MAIL",
+        "name": "Dream Mail",
+        "price": 50,
+        "description": "sBeadMailDesc"
+    },
+    {
+        "id": 209,
+        "constantName": "ITEM_FAB_MAIL",
+        "name": "Fab Mail",
+        "price": 50,
+        "description": "A gorgeous-print Mail to be held by a Pokémon."
+    },
+    {
+        "id": 210,
+        "constantName": "ITEM_RETRO_MAIL",
+        "name": "Retro Mail",
+        "price": 50,
+        "description": "Mail featuring the drawings of three Pokémon."
+    },
+    {
+        "id": 211,
+        "constantName": "ITEM_FIRE_STONE",
+        "name": "Fire Stone",
+        "price": 3000,
+        "description": "sEvolutionStoneDesc"
+    },
+    {
+        "id": 212,
+        "constantName": "ITEM_WATER_STONE",
+        "name": "Water Stone",
+        "price": 3000,
+        "description": "sEvolutionStoneDesc"
+    },
+    {
+        "id": 213,
+        "constantName": "ITEM_THUNDER_STONE",
+        "name": "Thunder Stone",
+        "price": 3000,
+        "description": "sEvolutionStoneDesc"
+    },
+    {
+        "id": 214,
+        "constantName": "ITEM_LEAF_STONE",
+        "name": "Leaf Stone",
+        "price": 3000,
+        "description": "sEvolutionStoneDesc"
+    },
+    {
+        "id": 215,
+        "constantName": "ITEM_ICE_STONE",
+        "name": "Ice Stone",
+        "price": 3000,
+        "description": "sEvolutionStoneDesc"
+    },
+    {
+        "id": 216,
+        "constantName": "ITEM_SUN_STONE",
+        "name": "Sun Stone",
+        "price": 3000,
+        "description": "sEvolutionStoneDesc"
+    },
+    {
+        "id": 217,
+        "constantName": "ITEM_MOON_STONE",
+        "name": "Moon Stone",
+        "price": 3000,
+        "description": "sEvolutionStoneDesc"
+    },
+    {
+        "id": 218,
+        "constantName": "ITEM_SHINY_STONE",
+        "name": "Shiny Stone",
+        "price": 3000,
+        "description": "sEvolutionStoneDesc"
+    },
+    {
+        "id": 219,
+        "constantName": "ITEM_DUSK_STONE",
+        "name": "Dusk Stone",
+        "price": 3000,
+        "description": "sEvolutionStoneDesc"
+    },
+    {
+        "id": 220,
+        "constantName": "ITEM_DAWN_STONE",
+        "name": "Dawn Stone",
+        "price": 3000,
+        "description": "sEvolutionStoneDesc"
+    },
+    {
+        "id": 221,
+        "constantName": "ITEM_SWEET_APPLE",
+        "name": "Sweet Apple",
+        "price": 2200,
+        "description": "A very sweet apple that makes certain Pokémon evolve."
+    },
+    {
+        "id": 222,
+        "constantName": "ITEM_TART_APPLE",
+        "name": "Tart Apple",
+        "price": 2200,
+        "description": "A very tart apple that makes certain Pokémon evolve."
+    },
+    {
+        "id": 223,
+        "constantName": "ITEM_CRACKED_POT",
+        "name": "Cracked Pot",
+        "price": 1600,
+        "description": "A cracked teapot that makes certain Pokémon evolve."
+    },
+    {
+        "id": 224,
+        "constantName": "ITEM_CHIPPED_POT",
+        "name": "Chipped Pot",
+        "price": 38000,
+        "description": "A chipped teapot that makes certain Pokémon evolve."
+    },
+    {
+        "id": 225,
+        "constantName": "ITEM_GALARICA_CUFF",
+        "name": "Galarica Cuff",
+        "price": 3000,
+        "description": "A cuff from Galar that makes certain Pokémon evolve."
+    },
+    {
+        "id": 226,
+        "constantName": "ITEM_GALARICA_WREATH",
+        "name": "Galarica Wreath",
+        "price": 3000,
+        "description": "A wreath made in Galar. Makes some Pokémon evolve."
+    },
+    {
+        "id": 227,
+        "constantName": "ITEM_DRAGON_SCALE",
+        "name": "Dragon Scale",
+        "price": 4000,
+        "description": "A strange scale held by Dragon- type Pokémon."
+    },
+    {
+        "id": 228,
+        "constantName": "ITEM_UPGRADE",
+        "name": "Upgrade",
+        "price": 4000,
+        "description": "A peculiar box made by Silph Co."
+    },
+    {
+        "id": 229,
+        "constantName": "ITEM_PROTECTOR",
+        "name": "Protector",
+        "price": 4000,
+        "description": "Loved by a certain Pokémon. It's stiff and heavy."
+    },
+    {
+        "id": 230,
+        "constantName": "ITEM_ELECTIRIZER",
+        "name": "Electirizer",
+        "price": 4000,
+        "description": "Loved by a certain Pokémon. It's full of electric energy."
+    },
+    {
+        "id": 231,
+        "constantName": "ITEM_MAGMARIZER",
+        "name": "Magmarizer",
+        "price": 4000,
+        "description": "Loved by a certain Pokémon. It's full of magma energy."
+    },
+    {
+        "id": 232,
+        "constantName": "ITEM_DUBIOUS_DISC",
+        "name": "Dubious Disc",
+        "price": 4000,
+        "description": "A clear device overflowing with dubious data."
+    },
+    {
+        "id": 233,
+        "constantName": "ITEM_REAPER_CLOTH",
+        "name": "Reaper Cloth",
+        "price": 4000,
+        "description": "Loved by a certain Pokémon. Imbued with spirit energy."
+    },
+    {
+        "id": 234,
+        "constantName": "ITEM_PRISM_SCALE",
+        "name": "Prism Scale",
+        "price": 3000,
+        "description": "A mysterious scale that evolves a certain Pokémon."
+    },
+    {
+        "id": 235,
+        "constantName": "ITEM_WHIPPED_DREAM",
+        "name": "Whipped Dream",
+        "price": 4000,
+        "description": "A soft and sweet treat loved by a certain Pokémon."
+    },
+    {
+        "id": 236,
+        "constantName": "ITEM_SACHET",
+        "name": "Sachet",
+        "price": 4000,
+        "description": "A sachet of strong perfumes, loved by a certain Pokémon."
+    },
+    {
+        "id": 237,
+        "constantName": "ITEM_OVAL_STONE",
+        "name": "Oval Stone",
+        "price": 2000,
+        "description": "Peculiar stone that evolves a certain Pokémon."
+    },
+    {
+        "id": 238,
+        "constantName": "ITEM_STRAWBERRY_SWEET",
+        "name": "Strawberry Sweet",
+        "price": 1000,
+        "description": "Strawberry-shaped sweet loved by Milcery."
+    },
+    {
+        "id": 239,
+        "constantName": "ITEM_LOVE_SWEET",
+        "name": "Love Sweet",
+        "price": 1000,
+        "description": "A heart-shaped sweet loved by Milcery."
+    },
+    {
+        "id": 240,
+        "constantName": "ITEM_BERRY_SWEET",
+        "name": "Berry Sweet",
+        "price": 1000,
+        "description": "A berry-shaped sweet loved by Milcery."
+    },
+    {
+        "id": 241,
+        "constantName": "ITEM_CLOVER_SWEET",
+        "name": "Clover Sweet",
+        "price": 1000,
+        "description": "A clover-shaped sweet loved by Milcery."
+    },
+    {
+        "id": 242,
+        "constantName": "ITEM_FLOWER_SWEET",
+        "name": "Flower Sweet",
+        "price": 1000,
+        "description": "A flower-shaped sweet loved by Milcery."
+    },
+    {
+        "id": 243,
+        "constantName": "ITEM_STAR_SWEET",
+        "name": "Star Sweet",
+        "price": 1000,
+        "description": "A star-shaped sweet loved by Milcery."
+    },
+    {
+        "id": 244,
+        "constantName": "ITEM_RIBBON_SWEET",
+        "name": "Ribbon Sweet",
+        "price": 1000,
+        "description": "A ribbon-shaped sweet loved by Milcery."
+    },
+    {
+        "id": 245,
+        "constantName": "ITEM_EVERSTONE",
+        "name": "Everstone",
+        "price": 3000,
+        "description": "A wondrous hold item that prevents evolution."
+    },
+    {
+        "id": 246,
+        "constantName": "ITEM_RED_NECTAR",
+        "name": "Red Nectar",
+        "price": 300,
+        "description": "sNectarDesc"
+    },
+    {
+        "id": 247,
+        "constantName": "ITEM_YELLOW_NECTAR",
+        "name": "Yellow Nectar",
+        "price": 300,
+        "description": "sNectarDesc"
+    },
+    {
+        "id": 248,
+        "constantName": "ITEM_PINK_NECTAR",
+        "name": "Pink Nectar",
+        "price": 300,
+        "description": "sNectarDesc"
+    },
+    {
+        "id": 249,
+        "constantName": "ITEM_PURPLE_NECTAR",
+        "name": "Purple Nectar",
+        "price": 300,
+        "description": "sNectarDesc"
+    },
+    {
+        "id": 250,
+        "constantName": "ITEM_FLAME_PLATE",
+        "name": "Flame Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Fire-type moves."
+    },
+    {
+        "id": 251,
+        "constantName": "ITEM_SPLASH_PLATE",
+        "name": "Splash Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Water-type moves."
+    },
+    {
+        "id": 252,
+        "constantName": "ITEM_ZAP_PLATE",
+        "name": "Zap Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Elec- tric-type moves."
+    },
+    {
+        "id": 253,
+        "constantName": "ITEM_MEADOW_PLATE",
+        "name": "Meadow Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Grass-type moves."
+    },
+    {
+        "id": 254,
+        "constantName": "ITEM_ICICLE_PLATE",
+        "name": "Icicle Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Ice-type moves."
+    },
+    {
+        "id": 255,
+        "constantName": "ITEM_FIST_PLATE",
+        "name": "Fist Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Fight- ing-type moves."
+    },
+    {
+        "id": 256,
+        "constantName": "ITEM_TOXIC_PLATE",
+        "name": "Toxic Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Poison-type moves."
+    },
+    {
+        "id": 257,
+        "constantName": "ITEM_EARTH_PLATE",
+        "name": "Earth Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Ground-type moves."
+    },
+    {
+        "id": 258,
+        "constantName": "ITEM_SKY_PLATE",
+        "name": "Sky Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Flying-type moves."
+    },
+    {
+        "id": 259,
+        "constantName": "ITEM_MIND_PLATE",
+        "name": "Mind Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Psy chic-type moves."
+    },
+    {
+        "id": 260,
+        "constantName": "ITEM_INSECT_PLATE",
+        "name": "Insect Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Bug-type moves."
+    },
+    {
+        "id": 261,
+        "constantName": "ITEM_STONE_PLATE",
+        "name": "Stone Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Rock-type moves."
+    },
+    {
+        "id": 262,
+        "constantName": "ITEM_SPOOKY_PLATE",
+        "name": "Spooky Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Ghost-type moves."
+    },
+    {
+        "id": 263,
+        "constantName": "ITEM_DRACO_PLATE",
+        "name": "Draco Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Dragon-type moves."
+    },
+    {
+        "id": 264,
+        "constantName": "ITEM_DREAD_PLATE",
+        "name": "Dread Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Dark-type moves."
+    },
+    {
+        "id": 265,
+        "constantName": "ITEM_IRON_PLATE",
+        "name": "Iron Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Steel-type moves."
+    },
+    {
+        "id": 266,
+        "constantName": "ITEM_PIXIE_PLATE",
+        "name": "Pixie Plate",
+        "price": 1000,
+        "description": "A tablet that ups the power of Fairy-type moves."
+    },
+    {
+        "id": 267,
+        "constantName": "ITEM_DOUSE_DRIVE",
+        "name": "Douse Drive",
+        "price": 0,
+        "description": "Changes Genesect's Techno Blast to Water-type."
+    },
+    {
+        "id": 268,
+        "constantName": "ITEM_SHOCK_DRIVE",
+        "name": "Shock Drive",
+        "price": 0,
+        "description": "Changes Genesect's Techno Blast to Electric-type."
+    },
+    {
+        "id": 269,
+        "constantName": "ITEM_BURN_DRIVE",
+        "name": "Burn Drive",
+        "price": 0,
+        "description": "Changes Genesect's Techno Blast to Fire-type."
+    },
+    {
+        "id": 270,
+        "constantName": "ITEM_CHILL_DRIVE",
+        "name": "Chill Drive",
+        "price": 0,
+        "description": "Changes Genesect's Techno Blast to Ice-type."
+    },
+    {
+        "id": 271,
+        "constantName": "ITEM_FIRE_MEMORY",
+        "name": "Fire Memory",
+        "price": 1000,
+        "description": "A disc with Fire type data. It swaps Silvally's type."
+    },
+    {
+        "id": 272,
+        "constantName": "ITEM_WATER_MEMORY",
+        "name": "Water Memory",
+        "price": 1000,
+        "description": "A disc with Water type data. It swaps Silvally's type."
+    },
+    {
+        "id": 273,
+        "constantName": "ITEM_ELECTRIC_MEMORY",
+        "name": "Electric Memory",
+        "price": 1000,
+        "description": "A disc with Electric type data. It swaps Silvally's type."
+    },
+    {
+        "id": 274,
+        "constantName": "ITEM_GRASS_MEMORY",
+        "name": "Grass Memory",
+        "price": 1000,
+        "description": "A disc with Grass type data. It swaps Silvally's type."
+    },
+    {
+        "id": 275,
+        "constantName": "ITEM_ICE_MEMORY",
+        "name": "Ice Memory",
+        "price": 1000,
+        "description": "A disc with Ice type data. It swaps Silvally's type."
+    },
+    {
+        "id": 276,
+        "constantName": "ITEM_FIGHTING_MEMORY",
+        "name": "Fighting Memory",
+        "price": 1000,
+        "description": "Disc with Fighting type data. It swaps Silvally's type."
+    },
+    {
+        "id": 277,
+        "constantName": "ITEM_POISON_MEMORY",
+        "name": "Poison Memory",
+        "price": 1000,
+        "description": "A disc with Poison type data. It swaps Silvally's type."
+    },
+    {
+        "id": 278,
+        "constantName": "ITEM_GROUND_MEMORY",
+        "name": "Ground Memory",
+        "price": 1000,
+        "description": "A disc with Ground type data. It swaps Silvally's type."
+    },
+    {
+        "id": 279,
+        "constantName": "ITEM_FLYING_MEMORY",
+        "name": "Flying Memory",
+        "price": 1000,
+        "description": "A disc with Flying type data. It swaps Silvally's type."
+    },
+    {
+        "id": 280,
+        "constantName": "ITEM_PSYCHIC_MEMORY",
+        "name": "Psychic Memory",
+        "price": 1000,
+        "description": "A disc with Psychic type data. It swaps Silvally's type."
+    },
+    {
+        "id": 281,
+        "constantName": "ITEM_BUG_MEMORY",
+        "name": "Bug Memory",
+        "price": 1000,
+        "description": "A disc with Bug type data. It swaps Silvally's type."
+    },
+    {
+        "id": 282,
+        "constantName": "ITEM_ROCK_MEMORY",
+        "name": "Rock Memory",
+        "price": 1000,
+        "description": "A disc with Rock type data. It swaps Silvally's type."
+    },
+    {
+        "id": 283,
+        "constantName": "ITEM_GHOST_MEMORY",
+        "name": "Ghost Memory",
+        "price": 1000,
+        "description": "A disc with Ghost type data. It swaps Silvally's type."
+    },
+    {
+        "id": 284,
+        "constantName": "ITEM_DRAGON_MEMORY",
+        "name": "Dragon Memory",
+        "price": 1000,
+        "description": "A disc with Dragon type data. It swaps Silvally's type."
+    },
+    {
+        "id": 285,
+        "constantName": "ITEM_DARK_MEMORY",
+        "name": "Dark Memory",
+        "price": 1000,
+        "description": "A disc with Dark type data. It swaps Silvally's type."
+    },
+    {
+        "id": 286,
+        "constantName": "ITEM_STEEL_MEMORY",
+        "name": "Steel Memory",
+        "price": 1000,
+        "description": "A disc with Steel type data. It swaps Silvally's type."
+    },
+    {
+        "id": 287,
+        "constantName": "ITEM_FAIRY_MEMORY",
+        "name": "Fairy Memory",
+        "price": 1000,
+        "description": "A disc with Fairy type data. It swaps Silvally's type."
+    },
+    {
+        "id": 288,
+        "constantName": "ITEM_RUSTED_SWORD",
+        "name": "Rusted Sword",
+        "price": 0,
+        "description": "A rusty sword. A hero used it to halt a disaster."
+    },
+    {
+        "id": 289,
+        "constantName": "ITEM_RUSTED_SHIELD",
+        "name": "Rusted Shield",
+        "price": 0,
+        "description": "A rusty shield. A hero used it to halt a disaster."
+    },
+    {
+        "id": 290,
+        "constantName": "ITEM_RED_ORB",
+        "name": "Red Orb",
+        "price": 0,
+        "description": "A red, glowing orb said to contain an ancient power."
+    },
+    {
+        "id": 291,
+        "constantName": "ITEM_BLUE_ORB",
+        "name": "Blue Orb",
+        "price": 0,
+        "description": "A blue, glowing orb said to contain an ancient power."
+    },
+    {
+        "id": 292,
+        "constantName": "ITEM_VENUSAURITE",
+        "name": "Venusaurite",
+        "price": 0,
+        "description": "This stone enables Venusaur to Mega Evolve in battle."
+    },
+    {
+        "id": 293,
+        "constantName": "ITEM_CHARIZARDITE_X",
+        "name": "Charizardite X",
+        "price": 0,
+        "description": "sCharizarditeDesc"
+    },
+    {
+        "id": 294,
+        "constantName": "ITEM_CHARIZARDITE_Y",
+        "name": "Charizardite Y",
+        "price": 0,
+        "description": "sCharizarditeDesc"
+    },
+    {
+        "id": 295,
+        "constantName": "ITEM_BLASTOISINITE",
+        "name": "Blastoisinite",
+        "price": 0,
+        "description": "This stone enables Blastoise to Mega Evolve in battle."
+    },
+    {
+        "id": 296,
+        "constantName": "ITEM_BEEDRILLITE",
+        "name": "Beedrillite",
+        "price": 0,
+        "description": "This stone enables Beedrill to Mega Evolve in battle."
+    },
+    {
+        "id": 297,
+        "constantName": "ITEM_PIDGEOTITE",
+        "name": "Pidgeotite",
+        "price": 0,
+        "description": "This stone enables Pidgeot to Mega Evolve in battle."
+    },
+    {
+        "id": 298,
+        "constantName": "ITEM_ALAKAZITE",
+        "name": "Alakazite",
+        "price": 0,
+        "description": "This stone enables Alakazam to Mega Evolve in battle."
+    },
+    {
+        "id": 299,
+        "constantName": "ITEM_SLOWBRONITE",
+        "name": "Slowbronite",
+        "price": 0,
+        "description": "This stone enables Slowbro to Mega Evolve in battle."
+    },
+    {
+        "id": 300,
+        "constantName": "ITEM_GENGARITE",
+        "name": "Gengarite",
+        "price": 0,
+        "description": "This stone enables Gengar to Mega Evolve in battle."
+    },
+    {
+        "id": 301,
+        "constantName": "ITEM_KANGASKHANITE",
+        "name": "Kangaskhanite",
+        "price": 0,
+        "description": "This stone enables Kangaskhan to Mega Evolve in battle."
+    },
+    {
+        "id": 302,
+        "constantName": "ITEM_PINSIRITE",
+        "name": "Pinsirite",
+        "price": 0,
+        "description": "This stone enables Pinsir to Mega Evolve in battle."
+    },
+    {
+        "id": 303,
+        "constantName": "ITEM_GYARADOSITE",
+        "name": "Gyaradosite",
+        "price": 0,
+        "description": "This stone enables Gyarados to Mega Evolve in battle."
+    },
+    {
+        "id": 304,
+        "constantName": "ITEM_AERODACTYLITE",
+        "name": "Aerodactylite",
+        "price": 0,
+        "description": "This stone enables Aerodactyl to Mega Evolve in battle."
+    },
+    {
+        "id": 305,
+        "constantName": "ITEM_MEWTWONITE_X",
+        "name": "Mewtwonite X",
+        "price": 0,
+        "description": "sMewtwoniteDesc"
+    },
+    {
+        "id": 306,
+        "constantName": "ITEM_MEWTWONITE_Y",
+        "name": "Mewtwonite Y",
+        "price": 0,
+        "description": "sMewtwoniteDesc"
+    },
+    {
+        "id": 307,
+        "constantName": "ITEM_AMPHAROSITE",
+        "name": "Ampharosite",
+        "price": 0,
+        "description": "This stone enables Ampharos to Mega Evolve in battle."
+    },
+    {
+        "id": 308,
+        "constantName": "ITEM_STEELIXITE",
+        "name": "Steelixite",
+        "price": 0,
+        "description": "This stone enables Steelix to Mega Evolve in battle."
+    },
+    {
+        "id": 309,
+        "constantName": "ITEM_SCIZORITE",
+        "name": "Scizorite",
+        "price": 0,
+        "description": "This stone enables Scizor to Mega Evolve in battle."
+    },
+    {
+        "id": 310,
+        "constantName": "ITEM_HERACRONITE",
+        "name": "Heracronite",
+        "price": 0,
+        "description": "This stone enables Heracross to Mega Evolve in battle."
+    },
+    {
+        "id": 311,
+        "constantName": "ITEM_HOUNDOOMINITE",
+        "name": "Houndoominite",
+        "price": 0,
+        "description": "This stone enables Houndoom to Mega Evolve in battle."
+    },
+    {
+        "id": 312,
+        "constantName": "ITEM_TYRANITARITE",
+        "name": "Tyranitarite",
+        "price": 0,
+        "description": "This stone enables Tyranitar to Mega Evolve in battle."
+    },
+    {
+        "id": 313,
+        "constantName": "ITEM_SCEPTILITE",
+        "name": "Sceptilite",
+        "price": 0,
+        "description": "This stone enables Sceptile to Mega Evolve in battle."
+    },
+    {
+        "id": 314,
+        "constantName": "ITEM_BLAZIKENITE",
+        "name": "Blazikenite",
+        "price": 0,
+        "description": "This stone enables Blaziken to Mega Evolve in battle."
+    },
+    {
+        "id": 315,
+        "constantName": "ITEM_SWAMPERTITE",
+        "name": "Swampertite",
+        "price": 0,
+        "description": "This stone enables Swampert to Mega Evolve in battle."
+    },
+    {
+        "id": 316,
+        "constantName": "ITEM_GARDEVOIRITE",
+        "name": "Gardevoirite",
+        "price": 0,
+        "description": "This stone enables Gardevoir to Mega Evolve in battle."
+    },
+    {
+        "id": 317,
+        "constantName": "ITEM_SABLENITE",
+        "name": "Sablenite",
+        "price": 0,
+        "description": "This stone enables Sableye to Mega Evolve in battle."
+    },
+    {
+        "id": 318,
+        "constantName": "ITEM_MAWILITE",
+        "name": "Mawilite",
+        "price": 0,
+        "description": "This stone enables Mawile to Mega Evolve in battle."
+    },
+    {
+        "id": 319,
+        "constantName": "ITEM_AGGRONITE",
+        "name": "Aggronite",
+        "price": 0,
+        "description": "This stone enables Aggron to Mega Evolve in battle."
+    },
+    {
+        "id": 320,
+        "constantName": "ITEM_MEDICHAMITE",
+        "name": "Medichamite",
+        "price": 0,
+        "description": "This stone enables Medicham to Mega Evolve in battle."
+    },
+    {
+        "id": 321,
+        "constantName": "ITEM_MANECTITE",
+        "name": "Manectite",
+        "price": 0,
+        "description": "This stone enables Manectric to Mega Evolve in battle."
+    },
+    {
+        "id": 322,
+        "constantName": "ITEM_SHARPEDONITE",
+        "name": "Sharpedonite",
+        "price": 0,
+        "description": "This stone enables Sharpedo to Mega Evolve in battle."
+    },
+    {
+        "id": 323,
+        "constantName": "ITEM_CAMERUPTITE",
+        "name": "Cameruptite",
+        "price": 0,
+        "description": "This stone enables Camerupt to Mega Evolve in battle."
+    },
+    {
+        "id": 324,
+        "constantName": "ITEM_ALTARIANITE",
+        "name": "Altarianite",
+        "price": 0,
+        "description": "This stone enables Altaria to Mega Evolve in battle."
+    },
+    {
+        "id": 325,
+        "constantName": "ITEM_BANETTITE",
+        "name": "Banettite",
+        "price": 0,
+        "description": "This stone enables Banette to Mega Evolve in battle."
+    },
+    {
+        "id": 326,
+        "constantName": "ITEM_ABSOLITE",
+        "name": "Absolite",
+        "price": 0,
+        "description": "This stone enables Absol to Mega Evolve in battle."
+    },
+    {
+        "id": 327,
+        "constantName": "ITEM_GLALITITE",
+        "name": "Glalitite",
+        "price": 0,
+        "description": "This stone enables Glalie to Mega Evolve in battle."
+    },
+    {
+        "id": 328,
+        "constantName": "ITEM_SALAMENCITE",
+        "name": "Salamencite",
+        "price": 0,
+        "description": "This stone enables Salamence to Mega Evolve in battle."
+    },
+    {
+        "id": 329,
+        "constantName": "ITEM_METAGROSSITE",
+        "name": "Metagrossite",
+        "price": 0,
+        "description": "This stone enables Metagross to Mega Evolve in battle."
+    },
+    {
+        "id": 330,
+        "constantName": "ITEM_LATIASITE",
+        "name": "Latiasite",
+        "price": 0,
+        "description": "This stone enables Latias to Mega Evolve in battle."
+    },
+    {
+        "id": 331,
+        "constantName": "ITEM_LATIOSITE",
+        "name": "Latiosite",
+        "price": 0,
+        "description": "This stone enables Latios to Mega Evolve in battle."
+    },
+    {
+        "id": 332,
+        "constantName": "ITEM_LOPUNNITE",
+        "name": "Lopunnite",
+        "price": 0,
+        "description": "This stone enables Lopunny to Mega Evolve in battle."
+    },
+    {
+        "id": 333,
+        "constantName": "ITEM_GARCHOMPITE",
+        "name": "Garchompite",
+        "price": 0,
+        "description": "This stone enables Garchomp to Mega Evolve in battle."
+    },
+    {
+        "id": 334,
+        "constantName": "ITEM_LUCARIONITE",
+        "name": "Lucarionite",
+        "price": 0,
+        "description": "This stone enables Lucario to Mega Evolve in battle."
+    },
+    {
+        "id": 335,
+        "constantName": "ITEM_ABOMASITE",
+        "name": "Abomasite",
+        "price": 0,
+        "description": "This stone enables Abomasnow to Mega Evolve in battle."
+    },
+    {
+        "id": 336,
+        "constantName": "ITEM_GALLADITE",
+        "name": "Galladite",
+        "price": 0,
+        "description": "This stone enables Gallade to Mega Evolve in battle."
+    },
+    {
+        "id": 337,
+        "constantName": "ITEM_AUDINITE",
+        "name": "Audinite",
+        "price": 0,
+        "description": "This stone enables Audino to Mega Evolve in battle."
+    },
+    {
+        "id": 338,
+        "constantName": "ITEM_DIANCITE",
+        "name": "Diancite",
+        "price": 0,
+        "description": "This stone enables Diancie to Mega Evolve in battle."
+    },
+    {
+        "id": 339,
+        "constantName": "ITEM_NORMAL_GEM",
+        "name": "Normal Gem",
+        "price": 15000,
+        "description": "Increases the power of Normal Type moves."
+    },
+    {
+        "id": 340,
+        "constantName": "ITEM_FIRE_GEM",
+        "name": "Fire Gem",
+        "price": 15000,
+        "description": "Increases the power of Fire Type moves."
+    },
+    {
+        "id": 341,
+        "constantName": "ITEM_WATER_GEM",
+        "name": "Water Gem",
+        "price": 15000,
+        "description": "Increases the power of Water Type moves."
+    },
+    {
+        "id": 342,
+        "constantName": "ITEM_ELECTRIC_GEM",
+        "name": "Electric Gem",
+        "price": 15000,
+        "description": "Increases the power of Electric Type moves."
+    },
+    {
+        "id": 343,
+        "constantName": "ITEM_GRASS_GEM",
+        "name": "Grass Gem",
+        "price": 15000,
+        "description": "Increases the power of Grass Type moves."
+    },
+    {
+        "id": 344,
+        "constantName": "ITEM_ICE_GEM",
+        "name": "Ice Gem",
+        "price": 15000,
+        "description": "Increases the power of Ice Type moves."
+    },
+    {
+        "id": 345,
+        "constantName": "ITEM_FIGHTING_GEM",
+        "name": "Fighting Gem",
+        "price": 15000,
+        "description": "Increases the power of Fighting Type moves."
+    },
+    {
+        "id": 346,
+        "constantName": "ITEM_POISON_GEM",
+        "name": "Poison Gem",
+        "price": 15000,
+        "description": "Increases the power of Poison Type moves."
+    },
+    {
+        "id": 347,
+        "constantName": "ITEM_GROUND_GEM",
+        "name": "Ground Gem",
+        "price": 15000,
+        "description": "Increases the power of Ground Type moves."
+    },
+    {
+        "id": 348,
+        "constantName": "ITEM_FLYING_GEM",
+        "name": "Flying Gem",
+        "price": 15000,
+        "description": "Increases the power of Flying Type moves."
+    },
+    {
+        "id": 349,
+        "constantName": "ITEM_PSYCHIC_GEM",
+        "name": "Psychic Gem",
+        "price": 15000,
+        "description": "Increases the power of Psychic Type moves."
+    },
+    {
+        "id": 350,
+        "constantName": "ITEM_BUG_GEM",
+        "name": "Bug Gem",
+        "price": 15000,
+        "description": "Increases the power of Bug Type moves."
+    },
+    {
+        "id": 351,
+        "constantName": "ITEM_ROCK_GEM",
+        "name": "Rock Gem",
+        "price": 15000,
+        "description": "Increases the power of Rock Type moves."
+    },
+    {
+        "id": 352,
+        "constantName": "ITEM_GHOST_GEM",
+        "name": "Ghost Gem",
+        "price": 15000,
+        "description": "Increases the power of Ghost Type moves."
+    },
+    {
+        "id": 353,
+        "constantName": "ITEM_DRAGON_GEM",
+        "name": "Dragon Gem",
+        "price": 15000,
+        "description": "Increases the power of Dragon Type moves."
+    },
+    {
+        "id": 354,
+        "constantName": "ITEM_DARK_GEM",
+        "name": "Dark Gem",
+        "price": 15000,
+        "description": "Increases the power of Dark Type moves."
+    },
+    {
+        "id": 355,
+        "constantName": "ITEM_STEEL_GEM",
+        "name": "Steel Gem",
+        "price": 15000,
+        "description": "Increases the power of Steel Type moves."
+    },
+    {
+        "id": 356,
+        "constantName": "ITEM_FAIRY_GEM",
+        "name": "Fairy Gem",
+        "price": 15000,
+        "description": "Increases the power of Fairy Type moves."
+    },
+    {
+        "id": 357,
+        "constantName": "ITEM_NORMALIUM_Z",
+        "name": "Normalium Z",
+        "price": 0,
+        "description": "Upgrade Normal- type moves into Z-Moves."
+    },
+    {
+        "id": 358,
+        "constantName": "ITEM_FIRIUM_Z",
+        "name": "Firium Z",
+        "price": 0,
+        "description": "Upgrade Fire- type moves into Z-Moves."
+    },
+    {
+        "id": 359,
+        "constantName": "ITEM_WATERIUM_Z",
+        "name": "Waterium Z",
+        "price": 0,
+        "description": "Upgrade Water- type moves into Z-Moves."
+    },
+    {
+        "id": 360,
+        "constantName": "ITEM_ELECTRIUM_Z",
+        "name": "Electrium Z",
+        "price": 0,
+        "description": "Upgrade Electric- type moves into Z-Moves."
+    },
+    {
+        "id": 361,
+        "constantName": "ITEM_GRASSIUM_Z",
+        "name": "Grassium Z",
+        "price": 0,
+        "description": "Upgrade Grass- type moves into Z-Moves."
+    },
+    {
+        "id": 362,
+        "constantName": "ITEM_ICIUM_Z",
+        "name": "Icium Z",
+        "price": 0,
+        "description": "Upgrade Ice- type moves into Z-Moves."
+    },
+    {
+        "id": 363,
+        "constantName": "ITEM_FIGHTINIUM_Z",
+        "name": "Fightinium Z",
+        "price": 0,
+        "description": "Upgrade Fighting- type moves into Z-Moves."
+    },
+    {
+        "id": 364,
+        "constantName": "ITEM_POISONIUM_Z",
+        "name": "Poisonium Z",
+        "price": 0,
+        "description": "Upgrade Poison- type moves into Z-Moves."
+    },
+    {
+        "id": 365,
+        "constantName": "ITEM_GROUNDIUM_Z",
+        "name": "Groundium Z",
+        "price": 0,
+        "description": "Upgrade Ground- type moves into Z-Moves."
+    },
+    {
+        "id": 366,
+        "constantName": "ITEM_FLYINIUM_Z",
+        "name": "Flyinium Z",
+        "price": 0,
+        "description": "Upgrade Flying- type moves into Z-Moves."
+    },
+    {
+        "id": 367,
+        "constantName": "ITEM_PSYCHIUM_Z",
+        "name": "Psychium Z",
+        "price": 0,
+        "description": "Upgrade Psychic- type moves into Z-Moves."
+    },
+    {
+        "id": 368,
+        "constantName": "ITEM_BUGINIUM_Z",
+        "name": "Buginium Z",
+        "price": 0,
+        "description": "Upgrade Bug- type moves into Z-Moves."
+    },
+    {
+        "id": 369,
+        "constantName": "ITEM_ROCKIUM_Z",
+        "name": "Rockium Z",
+        "price": 0,
+        "description": "Upgrade Rock- type moves into Z-Moves."
+    },
+    {
+        "id": 370,
+        "constantName": "ITEM_GHOSTIUM_Z",
+        "name": "Ghostium Z",
+        "price": 0,
+        "description": "Upgrade Ghost- type moves into Z-Moves."
+    },
+    {
+        "id": 371,
+        "constantName": "ITEM_DRAGONIUM_Z",
+        "name": "Dragonium Z",
+        "price": 0,
+        "description": "Upgrade Dragon- type moves into Z-Moves."
+    },
+    {
+        "id": 372,
+        "constantName": "ITEM_DARKINIUM_Z",
+        "name": "Darkinium Z",
+        "price": 0,
+        "description": "Upgrade Dark- type moves into Z-Moves."
+    },
+    {
+        "id": 373,
+        "constantName": "ITEM_STEELIUM_Z",
+        "name": "Steelium Z",
+        "price": 0,
+        "description": "Upgrade Steel- type moves into Z-Moves."
+    },
+    {
+        "id": 374,
+        "constantName": "ITEM_FAIRIUM_Z",
+        "name": "Fairium Z",
+        "price": 0,
+        "description": "Upgrade Fairy- type moves into Z-Moves."
+    },
+    {
+        "id": 375,
+        "constantName": "ITEM_PIKANIUM_Z",
+        "name": "Pikanium Z",
+        "price": 0,
+        "description": "Upgrade Pikachu's Volt Tackle into a Z-Move."
+    },
+    {
+        "id": 376,
+        "constantName": "ITEM_EEVIUM_Z",
+        "name": "Eevium Z",
+        "price": 0,
+        "description": "Upgrade Eevee's Last Resort into a Z-Move."
+    },
+    {
+        "id": 377,
+        "constantName": "ITEM_SNORLIUM_Z",
+        "name": "Snorlium Z",
+        "price": 0,
+        "description": "Upgrade Snorlax's Giga Impact into a Z-Move."
+    },
+    {
+        "id": 378,
+        "constantName": "ITEM_MEWNIUM_Z",
+        "name": "Mewnium Z",
+        "price": 0,
+        "description": "Upgrade Mew's Psychic into a Z-Move."
+    },
+    {
+        "id": 379,
+        "constantName": "ITEM_DECIDIUM_Z",
+        "name": "Decidium Z",
+        "price": 0,
+        "description": "Upgrade Decidu- eye's Spirit Sha- ckle into a Z-Move."
+    },
+    {
+        "id": 380,
+        "constantName": "ITEM_INCINIUM_Z",
+        "name": "Incinium Z",
+        "price": 0,
+        "description": "Upgrade Incine- roar's Darkest La- riat into a Z-Move."
+    },
+    {
+        "id": 381,
+        "constantName": "ITEM_PRIMARIUM_Z",
+        "name": "Primarium Z",
+        "price": 0,
+        "description": "Upgrade Primarina's Sparkling Aria into a Z-Move."
+    },
+    {
+        "id": 382,
+        "constantName": "ITEM_LYCANIUM_Z",
+        "name": "Lycanium Z",
+        "price": 0,
+        "description": "Upgrade Lycanroc's Stone Edge into a Z-Move."
+    },
+    {
+        "id": 383,
+        "constantName": "ITEM_MIMIKIUM_Z",
+        "name": "Mimikium Z",
+        "price": 0,
+        "description": "Upgrade Mimikyu's Play Rough into a Z-Move."
+    },
+    {
+        "id": 384,
+        "constantName": "ITEM_KOMMONIUM_Z",
+        "name": "Kommonium Z",
+        "price": 0,
+        "description": "Upgrade Kommo-o's Clanging Scales into a Z-Move."
+    },
+    {
+        "id": 385,
+        "constantName": "ITEM_TAPUNIUM_Z",
+        "name": "Tapunium Z",
+        "price": 0,
+        "description": "Upgrade the tapus' Nature's Madness into a Z-Move."
+    },
+    {
+        "id": 386,
+        "constantName": "ITEM_SOLGANIUM_Z",
+        "name": "Solganium Z",
+        "price": 0,
+        "description": "Upgrade Solgaleo's Sunsteel Strike into a Z-Move."
+    },
+    {
+        "id": 387,
+        "constantName": "ITEM_LUNALIUM_Z",
+        "name": "Lunalium Z",
+        "price": 0,
+        "description": "Upgrade Lunala's Moongeist Beam into a Z-Move."
+    },
+    {
+        "id": 388,
+        "constantName": "ITEM_MARSHADIUM_Z",
+        "name": "Marshadium Z",
+        "price": 0,
+        "description": "Upgrade Marsha- dow's Spectral Thi- ef into a Z-Move."
+    },
+    {
+        "id": 389,
+        "constantName": "ITEM_ALORAICHIUM_Z",
+        "name": "Aloraichium Z",
+        "price": 0,
+        "description": "Upgrade Alolan Raichu's Thunder- bolt into a Z-Move."
+    },
+    {
+        "id": 390,
+        "constantName": "ITEM_PIKASHUNIUM_Z",
+        "name": "Pikashunium Z",
+        "price": 0,
+        "description": "Upgrade Pikachu w/ a cap's Thunderbolt into a Z-Move."
+    },
+    {
+        "id": 391,
+        "constantName": "ITEM_ULTRANECROZIUM_Z",
+        "name": "Ultranecrozium Z",
+        "price": 0,
+        "description": "A crystal to turn fused Necrozma into a new form."
+    },
+    {
+        "id": 392,
+        "constantName": "ITEM_LIGHT_BALL",
+        "name": "Light Ball",
+        "price": 1000,
+        "description": "A hold item that raises the Atk and Sp. Atk of Pikachu."
+    },
+    {
+        "id": 393,
+        "constantName": "ITEM_LEEK",
+        "name": "Leek",
+        "price": 1000,
+        "description": "A hold item that raises Farfetch'd's critical-hit ratio."
+    },
+    {
+        "id": 394,
+        "constantName": "ITEM_THICK_CLUB",
+        "name": "Thick Club",
+        "price": 1000,
+        "description": "A hold item that  raises Cubone or Marowak's Attack."
+    },
+    {
+        "id": 395,
+        "constantName": "ITEM_LUCKY_PUNCH",
+        "name": "Lucky Punch",
+        "price": 1000,
+        "description": "A hold item that raises Chansey's critical-hit rate."
+    },
+    {
+        "id": 396,
+        "constantName": "ITEM_METAL_POWDER",
+        "name": "Metal Powder",
+        "price": 1000,
+        "description": "A hold item that raises Ditto's Defense."
+    },
+    {
+        "id": 397,
+        "constantName": "ITEM_QUICK_POWDER",
+        "name": "Quick Powder",
+        "price": 1000,
+        "description": "A hold item that raises the Speed of Ditto."
+    },
+    {
+        "id": 398,
+        "constantName": "ITEM_DEEP_SEA_SCALE",
+        "name": "Deep Sea Scale",
+        "price": 2000,
+        "description": "A hold item that raises the Sp. Def of Clamperl."
+    },
+    {
+        "id": 399,
+        "constantName": "ITEM_DEEP_SEA_TOOTH",
+        "name": "Deep Sea Tooth",
+        "price": 2000,
+        "description": "A hold item that raises the Sp. Atk of Clamperl."
+    },
+    {
+        "id": 400,
+        "constantName": "ITEM_SOUL_DEW",
+        "name": "Soul Dew",
+        "price": 0,
+        "description": "Powers up Latios' & Latias' Psychic and Dragon-type moves."
+    },
+    {
+        "id": 401,
+        "constantName": "ITEM_ADAMANT_ORB",
+        "name": "Adamant Orb",
+        "price": 0,
+        "description": "Powers up Dialga's Dragon and Steel- type moves."
+    },
+    {
+        "id": 402,
+        "constantName": "ITEM_LUSTROUS_ORB",
+        "name": "Lustrous Orb",
+        "price": 0,
+        "description": "Powers up Palkia's Dragon and Water- type moves."
+    },
+    {
+        "id": 403,
+        "constantName": "ITEM_GRISEOUS_ORB",
+        "name": "Griseous Orb",
+        "price": 0,
+        "description": "Boosts Giratina's Dragon and Ghost- type moves."
+    },
+    {
+        "id": 404,
+        "constantName": "ITEM_SEA_INCENSE",
+        "name": "Sea Incense",
+        "price": 2000,
+        "description": "sSeaIncenseDesc"
+    },
+    {
+        "id": 405,
+        "constantName": "ITEM_LAX_INCENSE",
+        "name": "Lax Incense",
+        "price": 5000,
+        "description": "A hold item that slightly lowers the foe's accuracy."
+    },
+    {
+        "id": 406,
+        "constantName": "ITEM_ODD_INCENSE",
+        "name": "Odd Incense",
+        "price": 2000,
+        "description": "sOddIncenseDesc"
+    },
+    {
+        "id": 407,
+        "constantName": "ITEM_ROCK_INCENSE",
+        "name": "Rock Incense",
+        "price": 2000,
+        "description": "sRockIncenseDesc"
+    },
+    {
+        "id": 408,
+        "constantName": "ITEM_FULL_INCENSE",
+        "name": "Full Incense",
+        "price": 5000,
+        "description": "sFullIncenseDesc"
+    },
+    {
+        "id": 409,
+        "constantName": "ITEM_WAVE_INCENSE",
+        "name": "Wave Incense",
+        "price": 2000,
+        "description": "sSeaIncenseDesc"
+    },
+    {
+        "id": 410,
+        "constantName": "ITEM_ROSE_INCENSE",
+        "name": "Rose Incense",
+        "price": 2000,
+        "description": "sRoseIncenseDesc"
+    },
+    {
+        "id": 411,
+        "constantName": "ITEM_LUCK_INCENSE",
+        "name": "Luck Incense",
+        "price": 11000,
+        "description": "sLuckIncenseDesc"
+    },
+    {
+        "id": 412,
+        "constantName": "ITEM_PURE_INCENSE",
+        "name": "Pure Incense",
+        "price": 6000,
+        "description": "sPureIncenseDesc"
+    },
+    {
+        "id": 413,
+        "constantName": "ITEM_RED_SCARF",
+        "name": "Red Scarf",
+        "price": 100,
+        "description": "A hold item that raises Cool in Contests."
+    },
+    {
+        "id": 414,
+        "constantName": "ITEM_BLUE_SCARF",
+        "name": "Blue Scarf",
+        "price": 100,
+        "description": "A hold item that raises Beauty in Contests."
+    },
+    {
+        "id": 415,
+        "constantName": "ITEM_PINK_SCARF",
+        "name": "Pink Scarf",
+        "price": 100,
+        "description": "A hold item that raises Cute in Contests."
+    },
+    {
+        "id": 416,
+        "constantName": "ITEM_GREEN_SCARF",
+        "name": "Green Scarf",
+        "price": 100,
+        "description": "A hold item that raises Smart in Contests."
+    },
+    {
+        "id": 417,
+        "constantName": "ITEM_YELLOW_SCARF",
+        "name": "Yellow Scarf",
+        "price": 100,
+        "description": "A hold item that raises Tough in Contests."
+    },
+    {
+        "id": 418,
+        "constantName": "ITEM_MACHO_BRACE",
+        "name": "Macho Brace",
+        "price": 3000,
+        "description": "A hold item that promotes growth, but reduces Speed."
+    },
+    {
+        "id": 419,
+        "constantName": "ITEM_POWER_WEIGHT",
+        "name": "Power Weight",
+        "price": 10000,
+        "description": "A hold item that promotes HP gain, but reduces Speed."
+    },
+    {
+        "id": 420,
+        "constantName": "ITEM_POWER_BRACER",
+        "name": "Power Bracer",
+        "price": 10000,
+        "description": "A hold item that promotes Atk gain, but reduces Speed."
+    },
+    {
+        "id": 421,
+        "constantName": "ITEM_POWER_BELT",
+        "name": "Power Belt",
+        "price": 10000,
+        "description": "A hold item that promotes Def gain, but reduces Speed."
+    },
+    {
+        "id": 422,
+        "constantName": "ITEM_POWER_LENS",
+        "name": "Power Lens",
+        "price": 10000,
+        "description": "Hold item that pro- motes Sp. Atk gain, but reduces Speed."
+    },
+    {
+        "id": 423,
+        "constantName": "ITEM_POWER_BAND",
+        "name": "Power Band",
+        "price": 10000,
+        "description": "Hold item that pro- motes Sp. Def gain, but reduces Speed."
+    },
+    {
+        "id": 424,
+        "constantName": "ITEM_POWER_ANKLET",
+        "name": "Power Anklet",
+        "price": 10000,
+        "description": "A hold item that promotes Spd gain, but reduces Speed."
+    },
+    {
+        "id": 425,
+        "constantName": "ITEM_SILK_SCARF",
+        "name": "Silk Scarf",
+        "price": 3000,
+        "description": "A hold item that raises the power of Normal-type moves."
+    },
+    {
+        "id": 426,
+        "constantName": "ITEM_CHARCOAL",
+        "name": "Charcoal",
+        "price": 3000,
+        "description": "A hold item that raises the power of Fire-type moves."
+    },
+    {
+        "id": 427,
+        "constantName": "ITEM_MYSTIC_WATER",
+        "name": "Mystic Water",
+        "price": 3000,
+        "description": "A hold item that raises the power of Water-type moves."
+    },
+    {
+        "id": 428,
+        "constantName": "ITEM_MAGNET",
+        "name": "Magnet",
+        "price": 3000,
+        "description": "A hold item that boosts Electric- type moves."
+    },
+    {
+        "id": 429,
+        "constantName": "ITEM_MIRACLE_SEED",
+        "name": "Miracle Seed",
+        "price": 3000,
+        "description": "sRoseIncenseDesc"
+    },
+    {
+        "id": 430,
+        "constantName": "ITEM_NEVER_MELT_ICE",
+        "name": "Never-Melt Ice",
+        "price": 3000,
+        "description": "A hold item that raises the power of Ice-type moves."
+    },
+    {
+        "id": 431,
+        "constantName": "ITEM_BLACK_BELT",
+        "name": "Black Belt",
+        "price": 3000,
+        "description": "A hold item that boosts Fighting- type moves."
+    },
+    {
+        "id": 432,
+        "constantName": "ITEM_POISON_BARB",
+        "name": "Poison Barb",
+        "price": 3000,
+        "description": "A hold item that raises the power of Poison-type moves."
+    },
+    {
+        "id": 433,
+        "constantName": "ITEM_SOFT_SAND",
+        "name": "Soft Sand",
+        "price": 3000,
+        "description": "A hold item that raises the power of Ground-type moves."
+    },
+    {
+        "id": 434,
+        "constantName": "ITEM_SHARP_BEAK",
+        "name": "Sharp Beak",
+        "price": 3000,
+        "description": "A hold item that raises the power of Flying-type moves."
+    },
+    {
+        "id": 435,
+        "constantName": "ITEM_TWISTED_SPOON",
+        "name": "Twisted Spoon",
+        "price": 3000,
+        "description": "sOddIncenseDesc"
+    },
+    {
+        "id": 436,
+        "constantName": "ITEM_SILVER_POWDER",
+        "name": "Silver Powder",
+        "price": 3000,
+        "description": "A hold item that raises the power of Bug-type moves."
+    },
+    {
+        "id": 437,
+        "constantName": "ITEM_HARD_STONE",
+        "name": "Hard Stone",
+        "price": 3000,
+        "description": "sRockIncenseDesc"
+    },
+    {
+        "id": 438,
+        "constantName": "ITEM_SPELL_TAG",
+        "name": "Spell Tag",
+        "price": 3000,
+        "description": "A hold item that raises the power of Ghost-type moves."
+    },
+    {
+        "id": 439,
+        "constantName": "ITEM_DRAGON_FANG",
+        "name": "Dragon Fang",
+        "price": 3000,
+        "description": "A hold item that raises the power of Dragon-type moves."
+    },
+    {
+        "id": 440,
+        "constantName": "ITEM_BLACK_GLASSES",
+        "name": "Black Glasses",
+        "price": 3000,
+        "description": "A hold item that raises the power of Dark-type moves."
+    },
+    {
+        "id": 441,
+        "constantName": "ITEM_METAL_COAT",
+        "name": "Metal Coat",
+        "price": 3000,
+        "description": "A hold item that raises the power of Steel-type moves."
+    },
+    {
+        "id": 442,
+        "constantName": "ITEM_CHOICE_BAND",
+        "name": "Choice Band",
+        "price": 100000,
+        "description": "Boosts Attack, but allows the use of only one move."
+    },
+    {
+        "id": 443,
+        "constantName": "ITEM_CHOICE_SPECS",
+        "name": "Choice Specs",
+        "price": 100000,
+        "description": "Boosts Sp. Atk, but allows the use of only one move."
+    },
+    {
+        "id": 444,
+        "constantName": "ITEM_CHOICE_SCARF",
+        "name": "Choice Scarf",
+        "price": 100000,
+        "description": "Boosts Speed, but allows the use of only one move."
+    },
+    {
+        "id": 445,
+        "constantName": "ITEM_FLAME_ORB",
+        "name": "Flame Orb",
+        "price": 15000,
+        "description": "A bizarre orb that inflicts a burn on holder in battle."
+    },
+    {
+        "id": 446,
+        "constantName": "ITEM_TOXIC_ORB",
+        "name": "Toxic Orb",
+        "price": 15000,
+        "description": "A bizarre orb that badly poisons the holder in battle."
+    },
+    {
+        "id": 447,
+        "constantName": "ITEM_DAMP_ROCK",
+        "name": "Damp Rock",
+        "price": 8000,
+        "description": "Extends the length of Rain Dance if used by the holder."
+    },
+    {
+        "id": 448,
+        "constantName": "ITEM_HEAT_ROCK",
+        "name": "Heat Rock",
+        "price": 8000,
+        "description": "Extends the length of Sunny Day if used by the holder."
+    },
+    {
+        "id": 449,
+        "constantName": "ITEM_SMOOTH_ROCK",
+        "name": "Smooth Rock",
+        "price": 8000,
+        "description": "Extends the length of Sandstorm if used by the holder."
+    },
+    {
+        "id": 450,
+        "constantName": "ITEM_ICY_ROCK",
+        "name": "Icy Rock",
+        "price": 8000,
+        "description": "Extends the length of cold weathers used by the holder."
+    },
+    {
+        "id": 451,
+        "constantName": "ITEM_ELECTRIC_SEED",
+        "name": "Electric Seed",
+        "price": 20000,
+        "description": "Boosts Defense on Electric Terrain, but only one time."
+    },
+    {
+        "id": 452,
+        "constantName": "ITEM_PSYCHIC_SEED",
+        "name": "Psychic Seed",
+        "price": 20000,
+        "description": "Boosts Sp. Def. on Psychic Terrain, but only one time."
+    },
+    {
+        "id": 453,
+        "constantName": "ITEM_MISTY_SEED",
+        "name": "Misty Seed",
+        "price": 20000,
+        "description": "Boosts Sp. Def. on Misty Terrain, but only one time."
+    },
+    {
+        "id": 454,
+        "constantName": "ITEM_GRASSY_SEED",
+        "name": "Grassy Seed",
+        "price": 20000,
+        "description": "Boosts Defense on Grassy Terrain, but only one time."
+    },
+    {
+        "id": 455,
+        "constantName": "ITEM_ABSORB_BULB",
+        "name": "Absorb Bulb",
+        "price": 5000,
+        "description": "Raises Sp. Atk if the holder is hit by a Water-type move."
+    },
+    {
+        "id": 456,
+        "constantName": "ITEM_CELL_BATTERY",
+        "name": "Cell Battery",
+        "price": 5000,
+        "description": "Raises Attack if the holder is hit by an Electric move."
+    },
+    {
+        "id": 457,
+        "constantName": "ITEM_LUMINOUS_MOSS",
+        "name": "Luminous Moss",
+        "price": 5000,
+        "description": "Raises Sp. Def if the holder is hit by a Water-type move."
+    },
+    {
+        "id": 458,
+        "constantName": "ITEM_SNOWBALL",
+        "name": "Snowball",
+        "price": 5000,
+        "description": "Raises Atk if its holder is hit by an Ice-type move."
+    },
+    {
+        "id": 459,
+        "constantName": "ITEM_BRIGHT_POWDER",
+        "name": "Bright Powder",
+        "price": 30000,
+        "description": "A hold item that casts a glare to reduce accuracy."
+    },
+    {
+        "id": 460,
+        "constantName": "ITEM_WHITE_HERB",
+        "name": "White Herb",
+        "price": 20000,
+        "description": "A hold item that restores any lowered stat."
+    },
+    {
+        "id": 461,
+        "constantName": "ITEM_EXP_SHARE",
+        "name": "Wise Mirror",
+        "price": 3000,
+        "description": "A hold item that gets Exp. points from battles."
+    },
+    {
+        "id": 462,
+        "constantName": "ITEM_QUICK_CLAW",
+        "name": "Quick Claw",
+        "price": 8000,
+        "description": "A hold item that occasionally allows the first strike."
+    },
+    {
+        "id": 463,
+        "constantName": "ITEM_SOOTHE_BELL",
+        "name": "Soothe Bell",
+        "price": 5000,
+        "description": "A hold item that calms spirits and fosters friendship."
+    },
+    {
+        "id": 464,
+        "constantName": "ITEM_MENTAL_HERB",
+        "name": "Mental Herb",
+        "price": 10000,
+        "description": "Snaps Pokémon out of move-binding effects."
+    },
+    {
+        "id": 465,
+        "constantName": "ITEM_KINGS_ROCK",
+        "name": "King's Rock",
+        "price": 10000,
+        "description": "sKingsRockDesc"
+    },
+    {
+        "id": 466,
+        "constantName": "ITEM_AMULET_COIN",
+        "name": "Amulet Coin",
+        "price": 30000,
+        "description": "sLuckIncenseDesc"
+    },
+    {
+        "id": 467,
+        "constantName": "ITEM_CLEANSE_TAG",
+        "name": "Cleanse Tag",
+        "price": 5000,
+        "description": "sPureIncenseDesc"
+    },
+    {
+        "id": 468,
+        "constantName": "ITEM_SMOKE_BALL",
+        "name": "Smoke Ball",
+        "price": 15000,
+        "description": "A hold item that assures fleeing from wild Pokémon."
+    },
+    {
+        "id": 469,
+        "constantName": "ITEM_FOCUS_BAND",
+        "name": "Focus Band",
+        "price": 10000,
+        "description": "A hold item that occasionally prevents fainting."
+    },
+    {
+        "id": 470,
+        "constantName": "ITEM_LUCKY_EGG",
+        "name": "Lucky Egg",
+        "price": 10000,
+        "description": "A hold item that boosts Exp. points earned in battle."
+    },
+    {
+        "id": 471,
+        "constantName": "ITEM_SCOPE_LENS",
+        "name": "Scope Lens",
+        "price": 15000,
+        "description": "A hold item that improves the critical-hit rate."
+    },
+    {
+        "id": 472,
+        "constantName": "ITEM_LEFTOVERS",
+        "name": "Leftovers",
+        "price": 20000,
+        "description": "A hold item that gradually restores HP in battle."
+    },
+    {
+        "id": 473,
+        "constantName": "ITEM_SHELL_BELL",
+        "name": "Shell Bell",
+        "price": 20000,
+        "description": "A hold item that restores HP upon striking the foe."
+    },
+    {
+        "id": 474,
+        "constantName": "ITEM_WIDE_LENS",
+        "name": "Wide Lens",
+        "price": 20000,
+        "description": "A magnifying lens that boosts the accuracy of moves."
+    },
+    {
+        "id": 475,
+        "constantName": "ITEM_MUSCLE_BAND",
+        "name": "Muscle Band",
+        "price": 8000,
+        "description": "A headband that boosts the power of physical moves."
+    },
+    {
+        "id": 476,
+        "constantName": "ITEM_WISE_GLASSES",
+        "name": "Wise Glasses",
+        "price": 8000,
+        "description": "A pair of glasses that ups the power of special moves."
+    },
+    {
+        "id": 477,
+        "constantName": "ITEM_EXPERT_BELT",
+        "name": "Expert Belt",
+        "price": 30000,
+        "description": "A belt that boosts the power of super effective moves."
+    },
+    {
+        "id": 478,
+        "constantName": "ITEM_LIGHT_CLAY",
+        "name": "Light Clay",
+        "price": 20000,
+        "description": "Extends the length of barrier moves used by the holder."
+    },
+    {
+        "id": 479,
+        "constantName": "ITEM_LIFE_ORB",
+        "name": "Life Orb",
+        "price": 50000,
+        "description": "Boosts move power but holder loses HP with each attack."
+    },
+    {
+        "id": 480,
+        "constantName": "ITEM_POWER_HERB",
+        "name": "Power Herb",
+        "price": 30000,
+        "description": "Allows immediate use of a move that charges first."
+    },
+    {
+        "id": 481,
+        "constantName": "ITEM_FOCUS_SASH",
+        "name": "Focus Sash",
+        "price": 50000,
+        "description": "If the holder has full HP, it endures KO hits with 1 HP."
+    },
+    {
+        "id": 482,
+        "constantName": "ITEM_ZOOM_LENS",
+        "name": "Zoom Lens",
+        "price": 10000,
+        "description": "If the holder moves after the foe, it'll boost accuracy."
+    },
+    {
+        "id": 483,
+        "constantName": "ITEM_METRONOME",
+        "name": "Metronome",
+        "price": 15000,
+        "description": "A held item that boosts a move used consecutively."
+    },
+    {
+        "id": 484,
+        "constantName": "ITEM_IRON_BALL",
+        "name": "Iron Ball",
+        "price": 20000,
+        "description": "Cuts Speed and becomes vulnerable to Ground moves."
+    },
+    {
+        "id": 485,
+        "constantName": "ITEM_LAGGING_TAIL",
+        "name": "Lagging Tail",
+        "price": 20000,
+        "description": "sFullIncenseDesc"
+    },
+    {
+        "id": 486,
+        "constantName": "ITEM_DESTINY_KNOT",
+        "name": "Destiny Knot",
+        "price": 20000,
+        "description": "If the holder falls in love, the foe does too."
+    },
+    {
+        "id": 487,
+        "constantName": "ITEM_BLACK_SLUDGE",
+        "name": "Black Sludge",
+        "price": 10000,
+        "description": "Restores HP for Poison-types. Damages all others."
+    },
+    {
+        "id": 488,
+        "constantName": "ITEM_GRIP_CLAW",
+        "name": "Grip Claw",
+        "price": 10000,
+        "description": "A held item that extends binding moves like Wrap."
+    },
+    {
+        "id": 489,
+        "constantName": "ITEM_STICKY_BARB",
+        "name": "Sticky Barb",
+        "price": 10000,
+        "description": "Damages the holder each turn. May latch on to foes."
+    },
+    {
+        "id": 490,
+        "constantName": "ITEM_SHED_SHELL",
+        "name": "Shed Shell",
+        "price": 20000,
+        "description": "Allows the holder to switch out without fail."
+    },
+    {
+        "id": 491,
+        "constantName": "ITEM_BIG_ROOT",
+        "name": "Big Root",
+        "price": 10000,
+        "description": "A held item that ups the power of HP-stealing moves."
+    },
+    {
+        "id": 492,
+        "constantName": "ITEM_RAZOR_CLAW",
+        "name": "Razor Claw",
+        "price": 15000,
+        "description": "A hooked claw that ups the holder's critical-hit ratio."
+    },
+    {
+        "id": 493,
+        "constantName": "ITEM_RAZOR_FANG",
+        "name": "Razor Fang",
+        "price": 15000,
+        "description": "sKingsRockDesc"
+    },
+    {
+        "id": 494,
+        "constantName": "ITEM_EVIOLITE",
+        "name": "Eviolite",
+        "price": 50000,
+        "description": "Raises the Def and Sp. Def of Pokémon that can evolve."
+    },
+    {
+        "id": 495,
+        "constantName": "ITEM_FLOAT_STONE",
+        "name": "Float Stone",
+        "price": 10000,
+        "description": "It's so light that when held, it halves a Pokémon's weight."
+    },
+    {
+        "id": 496,
+        "constantName": "ITEM_ROCKY_HELMET",
+        "name": "Rocky Helmet",
+        "price": 50000,
+        "description": "Hurts the foe if they touch its holder."
+    },
+    {
+        "id": 497,
+        "constantName": "ITEM_AIR_BALLOON",
+        "name": "Air Balloon",
+        "price": 15000,
+        "description": "Makes the holder float but bursts if hit by an attack."
+    },
+    {
+        "id": 498,
+        "constantName": "ITEM_RED_CARD",
+        "name": "Red Card",
+        "price": 3000,
+        "description": "Switches out the foe if they hit the holder."
+    },
+    {
+        "id": 499,
+        "constantName": "ITEM_RING_TARGET",
+        "name": "Ring Target",
+        "price": 10000,
+        "description": "Moves that usually have no effect will hit the holder."
+    },
+    {
+        "id": 500,
+        "constantName": "ITEM_BINDING_BAND",
+        "name": "Binding Band",
+        "price": 20000,
+        "description": "Increases the power of binding moves when held."
+    },
+    {
+        "id": 501,
+        "constantName": "ITEM_EJECT_BUTTON",
+        "name": "Eject Button",
+        "price": 30000,
+        "description": "Switches out the user if they're hit by the foe."
+    },
+    {
+        "id": 502,
+        "constantName": "ITEM_WEAKNESS_POLICY",
+        "name": "Weakness Policy",
+        "price": 50000,
+        "description": "If hit by a super- effective move, ups Atk and Sp. Atk."
+    },
+    {
+        "id": 503,
+        "constantName": "ITEM_ASSAULT_VEST",
+        "name": "Assault Vest",
+        "price": 50000,
+        "description": "Raises Sp. Def but prevents the use of status moves."
+    },
+    {
+        "id": 504,
+        "constantName": "ITEM_SAFETY_GOGGLES",
+        "name": "Safety Goggles",
+        "price": 20000,
+        "description": "Protect from weather damage and powder moves."
+    },
+    {
+        "id": 505,
+        "constantName": "ITEM_ADRENALINE_ORB",
+        "name": "Adrenaline Orb",
+        "price": 5000,
+        "description": "This orb boosts Speed if the holder is intimidated."
+    },
+    {
+        "id": 506,
+        "constantName": "ITEM_TERRAIN_EXTENDER",
+        "name": "Terrain Extender",
+        "price": 15000,
+        "description": "Extends the length of the active battle terrain."
+    },
+    {
+        "id": 507,
+        "constantName": "ITEM_PROTECTIVE_PADS",
+        "name": "Protective Pads",
+        "price": 15000,
+        "description": "Guard the holder from contact move effects."
+    },
+    {
+        "id": 508,
+        "constantName": "ITEM_THROAT_SPRAY",
+        "name": "Throat Spray",
+        "price": 20000,
+        "description": "Raises Sp. Atk. if the holder uses a sound-based move."
+    },
+    {
+        "id": 509,
+        "constantName": "ITEM_EJECT_PACK",
+        "name": "Eject Pack",
+        "price": 30000,
+        "description": "Forces the user to switch if its stats are lowered."
+    },
+    {
+        "id": 510,
+        "constantName": "ITEM_HEAVY_DUTY_BOOTS",
+        "name": "Heavy-Duty Boots",
+        "price": 20000,
+        "description": "Boots that prevent effects of traps set in the field."
+    },
+    {
+        "id": 511,
+        "constantName": "ITEM_BLUNDER_POLICY",
+        "name": "Blunder Policy",
+        "price": 30000,
+        "description": "Raises Speed if the user misses due to Accuracy."
+    },
+    {
+        "id": 512,
+        "constantName": "ITEM_ROOM_SERVICE",
+        "name": "Room Service",
+        "price": 20000,
+        "description": "Lowers Speed if Trick Room is active."
+    },
+    {
+        "id": 513,
+        "constantName": "ITEM_UTILITY_UMBRELLA",
+        "name": "Utility Umbrella",
+        "price": 15000,
+        "description": "An umbrella that protects from weather effects."
+    },
+    {
+        "id": 514,
+        "constantName": "ITEM_CHERI_BERRY",
+        "name": "Cheri Berry",
+        "price": 80,
+        "description": "A hold item that heals paralysis in battle."
+    },
+    {
+        "id": 515,
+        "constantName": "ITEM_CHESTO_BERRY",
+        "name": "Chesto Berry",
+        "price": 80,
+        "description": "A hold item that awakens Pokémon in battle."
+    },
+    {
+        "id": 516,
+        "constantName": "ITEM_PECHA_BERRY",
+        "name": "Pecha Berry",
+        "price": 80,
+        "description": "A hold item that heals poisoning in battle."
+    },
+    {
+        "id": 517,
+        "constantName": "ITEM_RAWST_BERRY",
+        "name": "Rawst Berry",
+        "price": 80,
+        "description": "A hold item that heals a burn in battle."
+    },
+    {
+        "id": 518,
+        "constantName": "ITEM_ASPEAR_BERRY",
+        "name": "Aspear Berry",
+        "price": 80,
+        "description": "A hold item that defrosts Pokémon in battle."
+    },
+    {
+        "id": 519,
+        "constantName": "ITEM_LEPPA_BERRY",
+        "name": "Leppa Berry",
+        "price": 80,
+        "description": "A hold item that restores 10 PP in battle."
+    },
+    {
+        "id": 520,
+        "constantName": "ITEM_ORAN_BERRY",
+        "name": "Oran Berry",
+        "price": 80,
+        "description": "A hold item that restores 10 HP in battle."
+    },
+    {
+        "id": 521,
+        "constantName": "ITEM_PERSIM_BERRY",
+        "name": "Persim Berry",
+        "price": 80,
+        "description": "A hold item that heals confusion in battle."
+    },
+    {
+        "id": 522,
+        "constantName": "ITEM_LUM_BERRY",
+        "name": "Lum Berry",
+        "price": 80,
+        "description": "A hold item that heals any status problem in battle."
+    },
+    {
+        "id": 523,
+        "constantName": "ITEM_SITRUS_BERRY",
+        "name": "Sitrus Berry",
+        "price": 80,
+        "description": "A hold item that restores the user's HP a little."
+    },
+    {
+        "id": 524,
+        "constantName": "ITEM_FIGY_BERRY",
+        "name": "Figy Berry",
+        "price": 80,
+        "description": "sFigyBerryDesc"
+    },
+    {
+        "id": 525,
+        "constantName": "ITEM_WIKI_BERRY",
+        "name": "Wiki Berry",
+        "price": 80,
+        "description": "sFigyBerryDesc"
+    },
+    {
+        "id": 526,
+        "constantName": "ITEM_MAGO_BERRY",
+        "name": "Mago Berry",
+        "price": 80,
+        "description": "sFigyBerryDesc"
+    },
+    {
+        "id": 527,
+        "constantName": "ITEM_AGUAV_BERRY",
+        "name": "Aguav Berry",
+        "price": 80,
+        "description": "sFigyBerryDesc"
+    },
+    {
+        "id": 528,
+        "constantName": "ITEM_IAPAPA_BERRY",
+        "name": "Iapapa Berry",
+        "price": 80,
+        "description": "sFigyBerryDesc"
+    },
+    {
+        "id": 529,
+        "constantName": "ITEM_RAZZ_BERRY",
+        "name": "Razz Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Razz."
+    },
+    {
+        "id": 530,
+        "constantName": "ITEM_BLUK_BERRY",
+        "name": "Bluk Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Bluk."
+    },
+    {
+        "id": 531,
+        "constantName": "ITEM_NANAB_BERRY",
+        "name": "Nanab Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Nanab."
+    },
+    {
+        "id": 532,
+        "constantName": "ITEM_WEPEAR_BERRY",
+        "name": "Wepear Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Wepear."
+    },
+    {
+        "id": 533,
+        "constantName": "ITEM_PINAP_BERRY",
+        "name": "Pinap Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Pinap."
+    },
+    {
+        "id": 534,
+        "constantName": "ITEM_POMEG_BERRY",
+        "name": "Pomeg Berry",
+        "price": 80,
+        "description": "Makes a Pokémon friendly but lowers base HP."
+    },
+    {
+        "id": 535,
+        "constantName": "ITEM_KELPSY_BERRY",
+        "name": "Kelpsy Berry",
+        "price": 80,
+        "description": "Makes a Pokémon friendly but lowers base Attack."
+    },
+    {
+        "id": 536,
+        "constantName": "ITEM_QUALOT_BERRY",
+        "name": "Qualot Berry",
+        "price": 80,
+        "description": "Makes a Pokémon friendly but lowers base Defense."
+    },
+    {
+        "id": 537,
+        "constantName": "ITEM_HONDEW_BERRY",
+        "name": "Hondew Berry",
+        "price": 80,
+        "description": "Makes a Pokémon friendly but lowers base Sp. Atk."
+    },
+    {
+        "id": 538,
+        "constantName": "ITEM_GREPA_BERRY",
+        "name": "Grepa Berry",
+        "price": 80,
+        "description": "Makes a Pokémon friendly but lowers base Sp. Def."
+    },
+    {
+        "id": 539,
+        "constantName": "ITEM_TAMATO_BERRY",
+        "name": "Tamato Berry",
+        "price": 80,
+        "description": "Makes a Pokémon friendly but lowers base Speed."
+    },
+    {
+        "id": 540,
+        "constantName": "ITEM_CORNN_BERRY",
+        "name": "Cornn Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Cornn."
+    },
+    {
+        "id": 541,
+        "constantName": "ITEM_MAGOST_BERRY",
+        "name": "Magost Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Magost."
+    },
+    {
+        "id": 542,
+        "constantName": "ITEM_RABUTA_BERRY",
+        "name": "Rabuta Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Rabuta."
+    },
+    {
+        "id": 543,
+        "constantName": "ITEM_NOMEL_BERRY",
+        "name": "Nomel Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Nomel."
+    },
+    {
+        "id": 544,
+        "constantName": "ITEM_SPELON_BERRY",
+        "name": "Spelon Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Spelon."
+    },
+    {
+        "id": 545,
+        "constantName": "ITEM_PAMTRE_BERRY",
+        "name": "Pamtre Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Pamtre."
+    },
+    {
+        "id": 546,
+        "constantName": "ITEM_WATMEL_BERRY",
+        "name": "Watmel Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Watmel."
+    },
+    {
+        "id": 547,
+        "constantName": "ITEM_DURIN_BERRY",
+        "name": "Durin Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Durin."
+    },
+    {
+        "id": 548,
+        "constantName": "ITEM_BELUE_BERRY",
+        "name": "Belue Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow Belue."
+    },
+    {
+        "id": 549,
+        "constantName": "ITEM_CHILAN_BERRY",
+        "name": "Chilan Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Normal move."
+    },
+    {
+        "id": 550,
+        "constantName": "ITEM_OCCA_BERRY",
+        "name": "Occa Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Fire move if weak to it."
+    },
+    {
+        "id": 551,
+        "constantName": "ITEM_PASSHO_BERRY",
+        "name": "Passho Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Water move if weak to it."
+    },
+    {
+        "id": 552,
+        "constantName": "ITEM_WACAN_BERRY",
+        "name": "Wacan Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Electric move if weak to it."
+    },
+    {
+        "id": 553,
+        "constantName": "ITEM_RINDO_BERRY",
+        "name": "Rindo Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Grass move if weak to it."
+    },
+    {
+        "id": 554,
+        "constantName": "ITEM_YACHE_BERRY",
+        "name": "Yache Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Ice move if weak to it."
+    },
+    {
+        "id": 555,
+        "constantName": "ITEM_CHOPLE_BERRY",
+        "name": "Chople Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Fighting move if weak to it."
+    },
+    {
+        "id": 556,
+        "constantName": "ITEM_KEBIA_BERRY",
+        "name": "Kebia Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Poison move if weak to it."
+    },
+    {
+        "id": 557,
+        "constantName": "ITEM_SHUCA_BERRY",
+        "name": "Shuca Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Ground move if weak to it."
+    },
+    {
+        "id": 558,
+        "constantName": "ITEM_COBA_BERRY",
+        "name": "Coba Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Flying move if weak to it."
+    },
+    {
+        "id": 559,
+        "constantName": "ITEM_PAYAPA_BERRY",
+        "name": "Payapa Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Psychic move if weak to it."
+    },
+    {
+        "id": 560,
+        "constantName": "ITEM_TANGA_BERRY",
+        "name": "Tanga Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Bug move if weak to it."
+    },
+    {
+        "id": 561,
+        "constantName": "ITEM_CHARTI_BERRY",
+        "name": "Charti Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Rock move if weak to it."
+    },
+    {
+        "id": 562,
+        "constantName": "ITEM_KASIB_BERRY",
+        "name": "Kasib Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Ghost move if weak to it."
+    },
+    {
+        "id": 563,
+        "constantName": "ITEM_HABAN_BERRY",
+        "name": "Haban Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Dragon move if weak to it."
+    },
+    {
+        "id": 564,
+        "constantName": "ITEM_COLBUR_BERRY",
+        "name": "Colbur Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Dark move if weak to it."
+    },
+    {
+        "id": 565,
+        "constantName": "ITEM_BABIRI_BERRY",
+        "name": "Babiri Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Steel move if weak to it."
+    },
+    {
+        "id": 566,
+        "constantName": "ITEM_ROSELI_BERRY",
+        "name": "Roseli Berry",
+        "price": 80,
+        "description": "A hold item that weakens a Fairy move if weak to it."
+    },
+    {
+        "id": 567,
+        "constantName": "ITEM_LIECHI_BERRY",
+        "name": "Liechi Berry",
+        "price": 80,
+        "description": "A hold item that raises Attack in a pinch."
+    },
+    {
+        "id": 568,
+        "constantName": "ITEM_GANLON_BERRY",
+        "name": "Ganlon Berry",
+        "price": 80,
+        "description": "A hold item that raises Defense in a pinch."
+    },
+    {
+        "id": 569,
+        "constantName": "ITEM_SALAC_BERRY",
+        "name": "Salac Berry",
+        "price": 80,
+        "description": "A hold item that raises Speed in a pinch."
+    },
+    {
+        "id": 570,
+        "constantName": "ITEM_PETAYA_BERRY",
+        "name": "Petaya Berry",
+        "price": 80,
+        "description": "A hold item that raises Sp. Atk in a pinch."
+    },
+    {
+        "id": 571,
+        "constantName": "ITEM_APICOT_BERRY",
+        "name": "Apicot Berry",
+        "price": 80,
+        "description": "A hold item that raises Sp. Def in a pinch."
+    },
+    {
+        "id": 572,
+        "constantName": "ITEM_LANSAT_BERRY",
+        "name": "Lansat Berry",
+        "price": 80,
+        "description": "A hold item that ups the critical- hit rate in a pinch."
+    },
+    {
+        "id": 573,
+        "constantName": "ITEM_STARF_BERRY",
+        "name": "Starf Berry",
+        "price": 80,
+        "description": "A hold item that sharply boosts a stat in a pinch."
+    },
+    {
+        "id": 574,
+        "constantName": "ITEM_ENIGMA_BERRY",
+        "name": "Enigma Berry",
+        "price": 80,
+        "description": "A hold item that heals from super effective moves."
+    },
+    {
+        "id": 575,
+        "constantName": "ITEM_MICLE_BERRY",
+        "name": "Micle Berry",
+        "price": 80,
+        "description": "When held, it ups the Accuracy of a move in a pinch."
+    },
+    {
+        "id": 576,
+        "constantName": "ITEM_CUSTAP_BERRY",
+        "name": "Custap Berry",
+        "price": 80,
+        "description": "It allows a Pokémon in a pinch to move first just once."
+    },
+    {
+        "id": 577,
+        "constantName": "ITEM_JABOCA_BERRY",
+        "name": "Jaboca Berry",
+        "price": 80,
+        "description": "If hit by a physical move, it will hurt the attacker a bit."
+    },
+    {
+        "id": 578,
+        "constantName": "ITEM_ROWAP_BERRY",
+        "name": "Rowap Berry",
+        "price": 80,
+        "description": "If hit by a special move, it will hurt the attacker a bit."
+    },
+    {
+        "id": 579,
+        "constantName": "ITEM_KEE_BERRY",
+        "name": "Kee Berry",
+        "price": 80,
+        "description": "If hit by a physical move, it raises the Defense a bit."
+    },
+    {
+        "id": 580,
+        "constantName": "ITEM_MARANGA_BERRY",
+        "name": "Maranga Berry",
+        "price": 80,
+        "description": "If hit by a special move, it raises the Sp. Def. a bit."
+    },
+    {
+        "id": 581,
+        "constantName": "ITEM_ENIGMA_BERRY_E_READER",
+        "name": "Enigma Berry",
+        "price": 80,
+        "description": "{POKEBLOCK} ingredient. Plant in loamy soil to grow a mystery."
+    },
+    {
+        "id": 582,
+        "constantName": "ITEM_TM01",
+        "name": "TM01 - Focus Punch",
+        "price": 3000,
+        "description": "Teaches the move Focus Punch."
+    },
+    {
+        "id": 583,
+        "constantName": "ITEM_TM02",
+        "name": "TM02 - Dragon Claw",
+        "price": 3000,
+        "description": "Teaches the move Dragon Claw."
+    },
+    {
+        "id": 584,
+        "constantName": "ITEM_TM03",
+        "name": "TM03 - Water Pulse",
+        "price": 3000,
+        "description": "Teaches the move Water Pulse."
+    },
+    {
+        "id": 585,
+        "constantName": "ITEM_TM04",
+        "name": "TM04 - Calm Mind",
+        "price": 3000,
+        "description": "Teaches the move Calm Mind."
+    },
+    {
+        "id": 586,
+        "constantName": "ITEM_TM05",
+        "name": "TM05 - Roar",
+        "price": 3000,
+        "description": "Teaches the move Roar."
+    },
+    {
+        "id": 587,
+        "constantName": "ITEM_TM06",
+        "name": "TM06 - Toxic",
+        "price": 3000,
+        "description": "Teaches the move Toxic."
+    },
+    {
+        "id": 588,
+        "constantName": "ITEM_TM07",
+        "name": "TM07 - Hail",
+        "price": 3000,
+        "description": "Teaches the move Hail."
+    },
+    {
+        "id": 589,
+        "constantName": "ITEM_TM08",
+        "name": "TM08 - Bulk Up",
+        "price": 3000,
+        "description": "Teaches the move Bulk Up."
+    },
+    {
+        "id": 590,
+        "constantName": "ITEM_TM09",
+        "name": "TM09 - Bullet Seed",
+        "price": 3000,
+        "description": "Teaches the move Bullet Seed."
+    },
+    {
+        "id": 591,
+        "constantName": "ITEM_TM10",
+        "name": "TM10 - Hidden Power",
+        "price": 3000,
+        "description": "Teaches the move Hidden Power."
+    },
+    {
+        "id": 592,
+        "constantName": "ITEM_TM11",
+        "name": "TM11 - Sunny Day",
+        "price": 3000,
+        "description": "Teaches the move Sunny Day."
+    },
+    {
+        "id": 593,
+        "constantName": "ITEM_TM12",
+        "name": "TM12 - Taunt",
+        "price": 3000,
+        "description": "Teaches the move Taunt."
+    },
+    {
+        "id": 594,
+        "constantName": "ITEM_TM13",
+        "name": "TM13 - Ice Beam",
+        "price": 3000,
+        "description": "Teaches the move Ice Beam."
+    },
+    {
+        "id": 595,
+        "constantName": "ITEM_TM14",
+        "name": "TM14 - Blizzard",
+        "price": 3000,
+        "description": "Teaches the move Blizzard."
+    },
+    {
+        "id": 596,
+        "constantName": "ITEM_TM15",
+        "name": "TM15 - Hyper Beam",
+        "price": 3000,
+        "description": "Teaches the move Hyper Beam."
+    },
+    {
+        "id": 597,
+        "constantName": "ITEM_TM16",
+        "name": "TM16 - Light Screen",
+        "price": 3000,
+        "description": "Teaches the move Light Screen."
+    },
+    {
+        "id": 598,
+        "constantName": "ITEM_TM17",
+        "name": "TM17 - Protect",
+        "price": 3000,
+        "description": "Teaches the move Protect."
+    },
+    {
+        "id": 599,
+        "constantName": "ITEM_TM18",
+        "name": "TM18 - Rain Dance",
+        "price": 3000,
+        "description": "Teaches the move Rain Dance."
+    },
+    {
+        "id": 600,
+        "constantName": "ITEM_TM19",
+        "name": "TM19 - Giga Drain",
+        "price": 3000,
+        "description": "Teaches the move Giga Drain."
+    },
+    {
+        "id": 601,
+        "constantName": "ITEM_TM20",
+        "name": "TM20 - Safeguard",
+        "price": 3000,
+        "description": "Teaches the move Safeguard."
+    },
+    {
+        "id": 602,
+        "constantName": "ITEM_TM21",
+        "name": "TM21 - Frustration",
+        "price": 3000,
+        "description": "Teaches the move Frustration."
+    },
+    {
+        "id": 603,
+        "constantName": "ITEM_TM22",
+        "name": "TM22 - Solar Beam",
+        "price": 3000,
+        "description": "Teaches the move Solar Beam."
+    },
+    {
+        "id": 604,
+        "constantName": "ITEM_TM23",
+        "name": "TM23 - Iron Tail",
+        "price": 3000,
+        "description": "Teaches the move Iron Tail."
+    },
+    {
+        "id": 605,
+        "constantName": "ITEM_TM24",
+        "name": "TM24 - Thunderbolt",
+        "price": 3000,
+        "description": "Teaches the move Thunderbolt."
+    },
+    {
+        "id": 606,
+        "constantName": "ITEM_TM25",
+        "name": "TM25 - Thunder",
+        "price": 3000,
+        "description": "Teaches the move Thunder."
+    },
+    {
+        "id": 607,
+        "constantName": "ITEM_TM26",
+        "name": "TM26 - Earthquake",
+        "price": 3000,
+        "description": "Teaches the move Earthquake."
+    },
+    {
+        "id": 608,
+        "constantName": "ITEM_TM27",
+        "name": "TM27 - Return",
+        "price": 3000,
+        "description": "Teaches the move Return."
+    },
+    {
+        "id": 609,
+        "constantName": "ITEM_TM28",
+        "name": "TM28 - Dig",
+        "price": 3000,
+        "description": "Teaches the move Dig."
+    },
+    {
+        "id": 610,
+        "constantName": "ITEM_TM29",
+        "name": "TM29 - Psychic",
+        "price": 3000,
+        "description": "Teaches the move Psychic."
+    },
+    {
+        "id": 611,
+        "constantName": "ITEM_TM30",
+        "name": "TM30 - Shadow Ball",
+        "price": 3000,
+        "description": "Teaches the move Shadow Ball."
+    },
+    {
+        "id": 612,
+        "constantName": "ITEM_TM31",
+        "name": "TM31 - Brick Break",
+        "price": 3000,
+        "description": "Teaches the move Brick Break."
+    },
+    {
+        "id": 613,
+        "constantName": "ITEM_TM32",
+        "name": "TM32 - Double Team",
+        "price": 3000,
+        "description": "Teaches the move Double Team."
+    },
+    {
+        "id": 614,
+        "constantName": "ITEM_TM33",
+        "name": "TM33 - Reflect",
+        "price": 3000,
+        "description": "Teaches the move Reflect."
+    },
+    {
+        "id": 615,
+        "constantName": "ITEM_TM34",
+        "name": "TM34 - Shock Wave",
+        "price": 3000,
+        "description": "Teaches the move Shock Wave."
+    },
+    {
+        "id": 616,
+        "constantName": "ITEM_TM35",
+        "name": "TM35 - Flamethrower",
+        "price": 3000,
+        "description": "Teaches the move Flamethrower."
+    },
+    {
+        "id": 617,
+        "constantName": "ITEM_TM36",
+        "name": "TM36 - Sludge Bomb",
+        "price": 3000,
+        "description": "Teaches the move Sludge Bomb."
+    },
+    {
+        "id": 618,
+        "constantName": "ITEM_TM37",
+        "name": "TM37 - Sandstorm",
+        "price": 3000,
+        "description": "Teaches the move Sandstorm."
+    },
+    {
+        "id": 619,
+        "constantName": "ITEM_TM38",
+        "name": "TM38 - Fire Blast",
+        "price": 3000,
+        "description": "Teaches the move Fire Blast."
+    },
+    {
+        "id": 620,
+        "constantName": "ITEM_TM39",
+        "name": "TM39 - Rock Tomb",
+        "price": 3000,
+        "description": "Teaches the move Rock Tomb."
+    },
+    {
+        "id": 621,
+        "constantName": "ITEM_TM40",
+        "name": "TM40 - Aerial Ace",
+        "price": 3000,
+        "description": "Teaches the move Aerial Ace."
+    },
+    {
+        "id": 622,
+        "constantName": "ITEM_TM41",
+        "name": "TM41 - Torment",
+        "price": 3000,
+        "description": "Teaches the move Torment."
+    },
+    {
+        "id": 623,
+        "constantName": "ITEM_TM42",
+        "name": "TM42 - Facade",
+        "price": 3000,
+        "description": "Teaches the move Facade."
+    },
+    {
+        "id": 624,
+        "constantName": "ITEM_TM43",
+        "name": "TM43 - Secret Power",
+        "price": 3000,
+        "description": "Teaches the move Secret Power."
+    },
+    {
+        "id": 625,
+        "constantName": "ITEM_TM44",
+        "name": "TM44 - Rest",
+        "price": 3000,
+        "description": "Teaches the move Rest."
+    },
+    {
+        "id": 626,
+        "constantName": "ITEM_TM45",
+        "name": "TM45 - Attract",
+        "price": 3000,
+        "description": "Teaches the move Attract."
+    },
+    {
+        "id": 627,
+        "constantName": "ITEM_TM46",
+        "name": "TM46 - Thief",
+        "price": 3000,
+        "description": "Teaches the move Thief."
+    },
+    {
+        "id": 628,
+        "constantName": "ITEM_TM47",
+        "name": "TM47 - Steel Wing",
+        "price": 3000,
+        "description": "Teaches the move Steel Wing."
+    },
+    {
+        "id": 629,
+        "constantName": "ITEM_TM48",
+        "name": "TM48 - Skill Swap",
+        "price": 3000,
+        "description": "Teaches the move Skill Swap."
+    },
+    {
+        "id": 630,
+        "constantName": "ITEM_TM49",
+        "name": "TM49 - Snatch",
+        "price": 3000,
+        "description": "Teaches the move Snatch."
+    },
+    {
+        "id": 631,
+        "constantName": "ITEM_TM50",
+        "name": "TM50 - Overheat",
+        "price": 3000,
+        "description": "Teaches the move Overheat."
+    },
+    {
+        "id": 632,
+        "constantName": "ITEM_TM51",
+        "name": "TM51 - Weather Ball",
+        "price": 3000,
+        "description": "Teaches the move Weather Ball."
+    },
+    {
+        "id": 633,
+        "constantName": "ITEM_TM52",
+        "name": "TM52 - Acrobatics",
+        "price": 3000,
+        "description": "Teaches the move Acrobatics."
+    },
+    {
+        "id": 634,
+        "constantName": "ITEM_TM53",
+        "name": "TM53 - Nature Power",
+        "price": 3000,
+        "description": "Teaches the move Nature Power."
+    },
+    {
+        "id": 635,
+        "constantName": "ITEM_TM54",
+        "name": "TM54 - X-Scissor",
+        "price": 3000,
+        "description": "Teaches the move X-Scissor."
+    },
+    {
+        "id": 636,
+        "constantName": "ITEM_TM55",
+        "name": "TM55 - Ancient Power",
+        "price": 3000,
+        "description": "Teaches the move Ancient Power."
+    },
+    {
+        "id": 637,
+        "constantName": "ITEM_TM56",
+        "name": "TM56 - Rock Blast",
+        "price": 3000,
+        "description": "Teaches the move Rock Blast."
+    },
+    {
+        "id": 638,
+        "constantName": "ITEM_TM57",
+        "name": "TM57 - Cut",
+        "price": 3000,
+        "description": "Teaches the move Cut."
+    },
+    {
+        "id": 639,
+        "constantName": "ITEM_TM58",
+        "name": "TM58 - Fly",
+        "price": 3000,
+        "description": "Teaches the move Fly."
+    },
+    {
+        "id": 640,
+        "constantName": "ITEM_TM59",
+        "name": "TM59 - Surf",
+        "price": 3000,
+        "description": "Teaches the move Surf."
+    },
+    {
+        "id": 641,
+        "constantName": "ITEM_TM60",
+        "name": "TM60 - Strength",
+        "price": 3000,
+        "description": "Teaches the move Strength."
+    },
+    {
+        "id": 642,
+        "constantName": "ITEM_TM61",
+        "name": "TM61 - Flash",
+        "price": 3000,
+        "description": "Teaches the move Flash."
+    },
+    {
+        "id": 643,
+        "constantName": "ITEM_TM62",
+        "name": "TM62 - Rock Smash",
+        "price": 3000,
+        "description": "Teaches the move Rock Smash."
+    },
+    {
+        "id": 644,
+        "constantName": "ITEM_TM63",
+        "name": "TM63 - Waterfall",
+        "price": 3000,
+        "description": "Teaches the move Waterfall."
+    },
+    {
+        "id": 645,
+        "constantName": "ITEM_TM64",
+        "name": "TM64 - Dive",
+        "price": 3000,
+        "description": "Teaches the move Dive."
+    },
+    {
+        "id": 646,
+        "constantName": "ITEM_TM65",
+        "name": "TM65 - Nick",
+        "price": 3000,
+        "description": "Teaches the move Nick."
+    },
+    {
+        "id": 647,
+        "constantName": "ITEM_TM66",
+        "name": "TM66 - Pebble Crush",
+        "price": 3000,
+        "description": "Teaches the move Pebble Crush."
+    },
+    {
+        "id": 648,
+        "constantName": "ITEM_TM67",
+        "name": "TM67 - Push",
+        "price": 3000,
+        "description": "Teaches the move Push."
+    },
+    {
+        "id": 649,
+        "constantName": "ITEM_TM68",
+        "name": "TM68 - Water Flail",
+        "price": 3000,
+        "description": "Teaches the move Water Flail."
+    },
+    {
+        "id": 650,
+        "constantName": "ITEM_TM69",
+        "name": "TM69 - Sink",
+        "price": 3000,
+        "description": "Teaches the move Sink."
+    },
+    {
+        "id": 651,
+        "constantName": "ITEM_TM70",
+        "name": "TM70 - Splash",
+        "price": 3000,
+        "description": "Teaches the move Splash."
+    },
+    {
+        "id": 652,
+        "constantName": "ITEM_TM71",
+        "name": "TM71 - Psybeam",
+        "price": 3000,
+        "description": "Teaches the move Psybeam."
+    },
+    {
+        "id": 653,
+        "constantName": "ITEM_TM72",
+        "name": "TM72",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 654,
+        "constantName": "ITEM_TM73",
+        "name": "TM73",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 655,
+        "constantName": "ITEM_TM74",
+        "name": "TM74",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 656,
+        "constantName": "ITEM_TM75",
+        "name": "TM75",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 657,
+        "constantName": "ITEM_TM76",
+        "name": "TM76",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 658,
+        "constantName": "ITEM_TM77",
+        "name": "TM77",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 659,
+        "constantName": "ITEM_TM78",
+        "name": "TM78",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 660,
+        "constantName": "ITEM_TM79",
+        "name": "TM79",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 661,
+        "constantName": "ITEM_TM80",
+        "name": "TM80",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 662,
+        "constantName": "ITEM_TM81",
+        "name": "TM81",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 663,
+        "constantName": "ITEM_TM82",
+        "name": "TM82",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 664,
+        "constantName": "ITEM_TM83",
+        "name": "TM83",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 665,
+        "constantName": "ITEM_TM84",
+        "name": "TM84",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 666,
+        "constantName": "ITEM_TM85",
+        "name": "TM85",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 667,
+        "constantName": "ITEM_TM86",
+        "name": "TM86",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 668,
+        "constantName": "ITEM_TM87",
+        "name": "TM87",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 669,
+        "constantName": "ITEM_TM88",
+        "name": "TM88",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 670,
+        "constantName": "ITEM_TM89",
+        "name": "TM89",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 671,
+        "constantName": "ITEM_TM90",
+        "name": "TM90",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 672,
+        "constantName": "ITEM_TM91",
+        "name": "TM91",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 673,
+        "constantName": "ITEM_TM92",
+        "name": "TM92",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 674,
+        "constantName": "ITEM_TM93",
+        "name": "TM93",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 675,
+        "constantName": "ITEM_TM94",
+        "name": "TM94",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 676,
+        "constantName": "ITEM_TM95",
+        "name": "TM95",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 677,
+        "constantName": "ITEM_TM96",
+        "name": "TM96",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 678,
+        "constantName": "ITEM_TM97",
+        "name": "TM97",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 679,
+        "constantName": "ITEM_TM98",
+        "name": "TM98",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 680,
+        "constantName": "ITEM_TM99",
+        "name": "TM99",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 681,
+        "constantName": "ITEM_TM100",
+        "name": "TM100",
+        "price": 3000,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 682,
+        "constantName": "ITEM_HM01",
+        "name": "HM01",
+        "price": 0,
+        "description": "Attacks the foe with sharp blades or claws."
+    },
+    {
+        "id": 683,
+        "constantName": "ITEM_HM02",
+        "name": "HM02",
+        "price": 0,
+        "description": "Flies up on the first turn, then attacks next turn."
+    },
+    {
+        "id": 684,
+        "constantName": "ITEM_HM03",
+        "name": "HM03",
+        "price": 0,
+        "description": "Creates a huge wave, then crashes it down on the foe."
+    },
+    {
+        "id": 685,
+        "constantName": "ITEM_HM04",
+        "name": "HM04",
+        "price": 0,
+        "description": "Builds enormous power, then slams the foe."
+    },
+    {
+        "id": 686,
+        "constantName": "ITEM_HM05",
+        "name": "HM05",
+        "price": 0,
+        "description": "Looses a powerful blast of light that reduces accuracy."
+    },
+    {
+        "id": 687,
+        "constantName": "ITEM_HM06",
+        "name": "HM06",
+        "price": 0,
+        "description": "A rock-crushingly tough attack that may lower Defense."
+    },
+    {
+        "id": 688,
+        "constantName": "ITEM_HM07",
+        "name": "HM07",
+        "price": 0,
+        "description": "Attacks the foe with enough power to climb waterfalls."
+    },
+    {
+        "id": 689,
+        "constantName": "ITEM_HM08",
+        "name": "HM08",
+        "price": 0,
+        "description": "Dives underwater the 1st turn, then attacks next turn."
+    },
+    {
+        "id": 690,
+        "constantName": "ITEM_OVAL_CHARM",
+        "name": "Oval Charm",
+        "price": 0,
+        "description": "Raises the chance of finding eggs at the daycare."
+    },
+    {
+        "id": 691,
+        "constantName": "ITEM_SHINY_CHARM",
+        "name": "Shiny Charm",
+        "price": 0,
+        "description": "A charm that will raise the chance of Shiny Pokémon."
+    },
+    {
+        "id": 692,
+        "constantName": "ITEM_CATCHING_CHARM",
+        "name": "Catching Charm",
+        "price": 0,
+        "description": "A charm that raises the chance of Critical Captures."
+    },
+    {
+        "id": 693,
+        "constantName": "ITEM_EXP_CHARM",
+        "name": "Exp. Charm",
+        "price": 0,
+        "description": "A charm that raises the amount of Exp. earned in battle."
+    },
+    {
+        "id": 694,
+        "constantName": "ITEM_ROTOM_CATALOG",
+        "name": "Rotom Catalog",
+        "price": 0,
+        "description": "A catalog full of devices liked by Rotom."
+    },
+    {
+        "id": 695,
+        "constantName": "ITEM_GRACIDEA",
+        "name": "Gracidea",
+        "price": 0,
+        "description": "Bouquets made with it are offered as a token of gratitude."
+    },
+    {
+        "id": 696,
+        "constantName": "ITEM_REVEAL_GLASS",
+        "name": "Reveal Glass",
+        "price": 0,
+        "description": "This glass returns a Pokémon back to its original form."
+    },
+    {
+        "id": 697,
+        "constantName": "ITEM_DNA_SPLICERS",
+        "name": "DNA Splicers",
+        "price": 0,
+        "description": "Splicer that fuses Kyurem and a certain Pokémon."
+    },
+    {
+        "id": 698,
+        "constantName": "ITEM_ZYGARDE_CUBE",
+        "name": "Zygarde Cube",
+        "price": 0,
+        "description": "An item to store Zygarde Cores and Cells."
+    },
+    {
+        "id": 699,
+        "constantName": "ITEM_PRISON_BOTTLE",
+        "name": "Prison Bottle",
+        "price": 0,
+        "description": "A bottle used to seal a certain Pokémon long ago."
+    },
+    {
+        "id": 700,
+        "constantName": "ITEM_N_SOLARIZER",
+        "name": "N-Solarizer",
+        "price": 0,
+        "description": "A device to fuse and split Necrozma using a Solgaleo."
+    },
+    {
+        "id": 701,
+        "constantName": "ITEM_N_LUNARIZER",
+        "name": "N-Lunarizer",
+        "price": 0,
+        "description": "A device to fuse and split Necrozma using a Lunala."
+    },
+    {
+        "id": 702,
+        "constantName": "ITEM_REINS_OF_UNITY",
+        "name": "Reins of Unity",
+        "price": 0,
+        "description": "Reins that unite Calyrex with its beloved steed."
+    },
+    {
+        "id": 703,
+        "constantName": "ITEM_MEGA_RING",
+        "name": "Mega Ring",
+        "price": 0,
+        "description": "Enables {PKMN} holding their Mega Stone to Mega Evolve."
+    },
+    {
+        "id": 704,
+        "constantName": "ITEM_Z_POWER_RING",
+        "name": "Z-Power Ring",
+        "price": 0,
+        "description": "A strange ring that enables Z-Move usage."
+    },
+    {
+        "id": 705,
+        "constantName": "ITEM_DYNAMAX_BAND",
+        "name": "Dynamax Band",
+        "price": 0,
+        "description": "A band carrying a Wishing Star that allows Dynamaxing."
+    },
+    {
+        "id": 706,
+        "constantName": "ITEM_BICYCLE",
+        "name": "Bicycle",
+        "price": 0,
+        "description": "A folding bicycle that is faster than the Running Shoes."
+    },
+    {
+        "id": 707,
+        "constantName": "ITEM_MACH_BIKE",
+        "name": "Mach Bike",
+        "price": 0,
+        "description": "A folding bicycle that doubles your speed or better."
+    },
+    {
+        "id": 708,
+        "constantName": "ITEM_ACRO_BIKE",
+        "name": "Acro Bike",
+        "price": 0,
+        "description": "A folding bicycle capable of jumps and wheelies."
+    },
+    {
+        "id": 709,
+        "constantName": "ITEM_OLD_ROD",
+        "name": "Old Rod",
+        "price": 0,
+        "description": "Use by any body of water to fish for wild Pokémon."
+    },
+    {
+        "id": 710,
+        "constantName": "ITEM_GOOD_ROD",
+        "name": "Good Rod",
+        "price": 0,
+        "description": "A decent fishing rod for catching wild Pokémon."
+    },
+    {
+        "id": 711,
+        "constantName": "ITEM_SUPER_ROD",
+        "name": "Super Rod",
+        "price": 0,
+        "description": "The best fishing rod for catching wild Pokémon."
+    },
+    {
+        "id": 712,
+        "constantName": "ITEM_DOWSING_MACHINE",
+        "name": "Dowsing Machine",
+        "price": 0,
+        "description": "A device that signals an invisible item by sound."
+    },
+    {
+        "id": 713,
+        "constantName": "ITEM_TOWN_MAP",
+        "name": "Toku Map",
+        "price": 0,
+        "description": "Can be viewed anytime. Shows your present location."
+    },
+    {
+        "id": 714,
+        "constantName": "ITEM_VS_SEEKER",
+        "name": "Vs. Seeker",
+        "price": 0,
+        "description": "A rechargeable unit that flags battle- ready Trainers."
+    },
+    {
+        "id": 715,
+        "constantName": "ITEM_TM_CASE",
+        "name": "TM Case",
+        "price": 0,
+        "description": "A convenient case that holds TMs and HMs."
+    },
+    {
+        "id": 716,
+        "constantName": "ITEM_BERRY_POUCH",
+        "name": "Berry Pouch",
+        "price": 0,
+        "description": "A convenient container that holds Berries."
+    },
+    {
+        "id": 717,
+        "constantName": "ITEM_POKEMON_BOX_LINK",
+        "name": "{PKMN} Box Link",
+        "price": 0,
+        "description": "This device grants access to the {PKMN} Storage System."
+    },
+    {
+        "id": 718,
+        "constantName": "ITEM_COIN_CASE",
+        "name": "Coin Case",
+        "price": 0,
+        "description": "A case that holds up to 9,999 Coins."
+    },
+    {
+        "id": 719,
+        "constantName": "ITEM_POWDER_JAR",
+        "name": "Powder Jar",
+        "price": 0,
+        "description": "Stores Berry Powder made using a Berry Crusher."
+    },
+    {
+        "id": 720,
+        "constantName": "ITEM_WAILMER_PAIL",
+        "name": "Wailmer Pail",
+        "price": 0,
+        "description": "A tool used for watering Berries and plants."
+    },
+    {
+        "id": 721,
+        "constantName": "ITEM_POKE_RADAR",
+        "name": "Poké Radar",
+        "price": 0,
+        "description": "A tool used to search out Pokémon hiding in grass."
+    },
+    {
+        "id": 722,
+        "constantName": "ITEM_POKEBLOCK_CASE",
+        "name": "{POKEBLOCK} Case",
+        "price": 0,
+        "description": "A case for holding {POKEBLOCK}s made with a Berry Blender."
+    },
+    {
+        "id": 723,
+        "constantName": "ITEM_SOOT_SACK",
+        "name": "Soot Sack",
+        "price": 0,
+        "description": "A sack used to gather and hold volcanic ash."
+    },
+    {
+        "id": 724,
+        "constantName": "ITEM_POKE_FLUTE",
+        "name": "Poké Flute",
+        "price": 0,
+        "description": "A sweet-sounding flute that awakens Pokémon."
+    },
+    {
+        "id": 725,
+        "constantName": "ITEM_FAME_CHECKER",
+        "name": "Fame Checker",
+        "price": 0,
+        "description": "Stores information on famous people for instant recall."
+    },
+    {
+        "id": 726,
+        "constantName": "ITEM_TEACHY_TV",
+        "name": "Teachy TV",
+        "price": 0,
+        "description": "A TV set tuned to an advice program for Trainers."
+    },
+    {
+        "id": 727,
+        "constantName": "ITEM_SS_TICKET",
+        "name": "S.S. Ticket",
+        "price": 0,
+        "description": "The ticket required for sailing on a ferry."
+    },
+    {
+        "id": 728,
+        "constantName": "ITEM_EON_TICKET",
+        "name": "Eon Ticket",
+        "price": 0,
+        "description": "The ticket for a ferry to a distant southern island."
+    },
+    {
+        "id": 729,
+        "constantName": "ITEM_MYSTIC_TICKET",
+        "name": "Mystic Ticket",
+        "price": 0,
+        "description": "A ticket required to board the ship to Navel Rock."
+    },
+    {
+        "id": 730,
+        "constantName": "ITEM_AURORA_TICKET",
+        "name": "Aurora Ticket",
+        "price": 0,
+        "description": "A ticket required to board the ship to Birth Island."
+    },
+    {
+        "id": 731,
+        "constantName": "ITEM_OLD_SEA_MAP",
+        "name": "Old Sea Map",
+        "price": 0,
+        "description": "A faded sea chart that shows the way to a certain island."
+    },
+    {
+        "id": 732,
+        "constantName": "ITEM_LETTER",
+        "name": "Letter",
+        "price": 0,
+        "description": "A letter to the Elder of Silveridge."
+    },
+    {
+        "id": 733,
+        "constantName": "ITEM_DEVON_PARTS",
+        "name": "Devon Parts",
+        "price": 0,
+        "description": "A package that contains Devon's machine parts."
+    },
+    {
+        "id": 734,
+        "constantName": "ITEM_GO_GOGGLES",
+        "name": "Go-Goggles",
+        "price": 0,
+        "description": "Nifty goggles that protect eyes from desert sandstorms."
+    },
+    {
+        "id": 735,
+        "constantName": "ITEM_DEVON_SCOPE",
+        "name": "Devon Scope",
+        "price": 0,
+        "description": "A device by Devon that signals any unseeable Pokémon."
+    },
+    {
+        "id": 736,
+        "constantName": "ITEM_BASEMENT_KEY",
+        "name": "Basement Key",
+        "price": 0,
+        "description": "The key for New Mauville beneath Mauville City."
+    },
+    {
+        "id": 737,
+        "constantName": "ITEM_SCANNER",
+        "name": "Scanner",
+        "price": 0,
+        "description": "A device found inside the Abandoned Ship."
+    },
+    {
+        "id": 738,
+        "constantName": "ITEM_STORAGE_KEY",
+        "name": "Storage Key",
+        "price": 0,
+        "description": "The key to the storage inside the Abandoned Ship."
+    },
+    {
+        "id": 739,
+        "constantName": "ITEM_KEY_TO_ROOM_1",
+        "name": "Key to Room 1",
+        "price": 0,
+        "description": "sKeyToRoomDesc"
+    },
+    {
+        "id": 740,
+        "constantName": "ITEM_KEY_TO_ROOM_2",
+        "name": "Key to Room 2",
+        "price": 0,
+        "description": "sKeyToRoomDesc"
+    },
+    {
+        "id": 741,
+        "constantName": "ITEM_KEY_TO_ROOM_4",
+        "name": "Key to Room 4",
+        "price": 0,
+        "description": "sKeyToRoomDesc"
+    },
+    {
+        "id": 742,
+        "constantName": "ITEM_KEY_TO_ROOM_6",
+        "name": "Key to Room 6",
+        "price": 0,
+        "description": "sKeyToRoomDesc"
+    },
+    {
+        "id": 743,
+        "constantName": "ITEM_METEORITE",
+        "name": "Meteorite",
+        "price": 0,
+        "description": "A meteorite found at Meteor Falls."
+    },
+    {
+        "id": 744,
+        "constantName": "ITEM_MAGMA_EMBLEM",
+        "name": "Magma Emblem",
+        "price": 0,
+        "description": "A medal-like item in the same shape as Team Magma's mark."
+    },
+    {
+        "id": 745,
+        "constantName": "ITEM_CONTEST_PASS",
+        "name": "Contest Pass",
+        "price": 0,
+        "description": "The pass required for entering Pokémon Contests."
+    },
+    {
+        "id": 746,
+        "constantName": "ITEM_PARCEL",
+        "name": "Parcel",
+        "price": 0,
+        "description": "A parcel for Prof. Oak from a Pokémon Mart's clerk."
+    },
+    {
+        "id": 747,
+        "constantName": "ITEM_SECRET_KEY",
+        "name": "Secret Key",
+        "price": 0,
+        "description": "The key to the Cinnabar Island Gym's entrance."
+    },
+    {
+        "id": 748,
+        "constantName": "ITEM_BIKE_VOUCHER",
+        "name": "Bike Voucher",
+        "price": 0,
+        "description": "A voucher for obtaining a bicycle from the Bike Shop."
+    },
+    {
+        "id": 749,
+        "constantName": "ITEM_GOLD_TEETH",
+        "name": "Gold Teeth",
+        "price": 0,
+        "description": "Gold dentures lost by the Safari Zone's Warden."
+    },
+    {
+        "id": 750,
+        "constantName": "ITEM_CARD_KEY",
+        "name": "Card Key",
+        "price": 0,
+        "description": "A card-type door key used in Silph Co's office."
+    },
+    {
+        "id": 751,
+        "constantName": "ITEM_LIFT_KEY",
+        "name": "Lift Key",
+        "price": 0,
+        "description": "An elevator key used in Team Rocket's Hideout."
+    },
+    {
+        "id": 752,
+        "constantName": "ITEM_SILPH_SCOPE",
+        "name": "Silph Scope",
+        "price": 0,
+        "description": "Silph Co's scope makes unseeable POKéMON visible."
+    },
+    {
+        "id": 753,
+        "constantName": "ITEM_TRI_PASS",
+        "name": "Tri-Pass",
+        "price": 0,
+        "description": "A pass for ferries between One, Two, and Three Island."
+    },
+    {
+        "id": 754,
+        "constantName": "ITEM_ASHIIS_SCARF",
+        "name": "Ashii's Scarf",
+        "price": 0,
+        "description": "A soft silk scarf, proof of a girl's love."
+    },
+    {
+        "id": 755,
+        "constantName": "ITEM_TEA",
+        "name": "Tea",
+        "price": 0,
+        "description": "A thirst-quenching tea prepared by an old lady."
+    },
+    {
+        "id": 756,
+        "constantName": "ITEM_RUBY",
+        "name": "Ruby",
+        "price": 0,
+        "description": "An exquisite, red- glowing gem that symbolizes passion."
+    },
+    {
+        "id": 757,
+        "constantName": "ITEM_SAPPHIRE",
+        "name": "Sapphire",
+        "price": 0,
+        "description": "A brilliant blue gem that symbolizes honesty."
+    },
+    {
+        "id": 758,
+        "constantName": "ITEM_ABILITY_SHIELD",
+        "name": "Ability Shield",
+        "price": 20000,
+        "description": "Ability changes are prevented for this items's holder."
+    },
+    {
+        "id": 759,
+        "constantName": "ITEM_CLEAR_AMULET",
+        "name": "Clear Amulet",
+        "price": 30000,
+        "description": "Stat lowering is prevented for this items's holder."
+    },
+    {
+        "id": 760,
+        "constantName": "ITEM_PUNCHING_GLOVE",
+        "name": "Punching Glove",
+        "price": 15000,
+        "description": "Powers up punching moves and removes their contact."
+    },
+    {
+        "id": 761,
+        "constantName": "ITEM_COVERT_CLOAK",
+        "name": "Covert Cloak",
+        "price": 20000,
+        "description": "Protects holder from additional effects of moves."
+    },
+    {
+        "id": 762,
+        "constantName": "ITEM_LOADED_DICE",
+        "name": "Loaded Dice",
+        "price": 20000,
+        "description": "Rolls high numbers. Multihit strikes hit more times."
+    },
+    {
+        "id": 763,
+        "constantName": "ITEM_AUSPICIOUS_ARMOR",
+        "name": "Auspicious Armor",
+        "price": 3000,
+        "description": "Armor inhabited by auspicious wishes. Causes evolution."
+    },
+    {
+        "id": 764,
+        "constantName": "ITEM_BOOSTER_ENERGY",
+        "name": "Booster Energy",
+        "price": 0,
+        "description": "Encapsuled energy ups Pokémon with certain Abilities."
+    },
+    {
+        "id": 765,
+        "constantName": "ITEM_BIG_BAMBOO_SHOOT",
+        "name": "Big Bamboo Shoot",
+        "price": 3000,
+        "description": "A large and rare bamboo shoot. Best sold to gourmands."
+    },
+    {
+        "id": 766,
+        "constantName": "ITEM_GIMMIGHOUL_COIN",
+        "name": "Gimmighoul Coin",
+        "price": 400,
+        "description": "Gimmighoul hoard and treasure these curious coins."
+    },
+    {
+        "id": 767,
+        "constantName": "ITEM_LEADERS_CREST",
+        "name": "Leader's Crest",
+        "price": 3000,
+        "description": "A shard of an old blade of some sort. Held by Bisharp."
+    },
+    {
+        "id": 768,
+        "constantName": "ITEM_MALICIOUS_ARMOR",
+        "name": "Malicious Armor",
+        "price": 3000,
+        "description": "Armor inhabited by malicious will. Causes evolution."
+    },
+    {
+        "id": 769,
+        "constantName": "ITEM_MIRROR_HERB",
+        "name": "Mirror Herb",
+        "price": 30000,
+        "description": "Mirrors an enemy's stat increases but only once."
+    },
+    {
+        "id": 770,
+        "constantName": "ITEM_SCROLL_OF_DARKNESS",
+        "name": "Scroll of Darkness",
+        "price": 0,
+        "description": "A peculiar scroll with secrets of the dark path."
+    },
+    {
+        "id": 771,
+        "constantName": "ITEM_SCROLL_OF_WATERS",
+        "name": "Scroll of Waters",
+        "price": 0,
+        "description": "A peculiar scroll with secrets of the water path."
+    },
+    {
+        "id": 772,
+        "constantName": "ITEM_TERA_ORB",
+        "name": "Tera Orb",
+        "price": 0,
+        "description": "Energy charges can be used to cause Terastallization."
+    },
+    {
+        "id": 773,
+        "constantName": "ITEM_TINY_BAMBOO_SHOOT",
+        "name": "Tiny Bamboo Shoot",
+        "price": 750,
+        "description": "A small and rare bamboo shoot. Best sold to gourmands."
+    },
+    {
+        "id": 774,
+        "constantName": "ITEM_BUG_TERA_SHARD",
+        "name": "Bug Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 775,
+        "constantName": "ITEM_DARK_TERA_SHARD",
+        "name": "Dark Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 776,
+        "constantName": "ITEM_DRAGON_TERA_SHARD",
+        "name": "Dragon Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 777,
+        "constantName": "ITEM_ELECTRIC_TERA_SHARD",
+        "name": "Electric Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 778,
+        "constantName": "ITEM_FAIRY_TERA_SHARD",
+        "name": "Fairy Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 779,
+        "constantName": "ITEM_FIGHTING_TERA_SHARD",
+        "name": "Fighting Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 780,
+        "constantName": "ITEM_FIRE_TERA_SHARD",
+        "name": "Fire Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 781,
+        "constantName": "ITEM_FLYING_TERA_SHARD",
+        "name": "Flying Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 782,
+        "constantName": "ITEM_GHOST_TERA_SHARD",
+        "name": "Ghost Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 783,
+        "constantName": "ITEM_GRASS_TERA_SHARD",
+        "name": "Grass Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 784,
+        "constantName": "ITEM_GROUND_TERA_SHARD",
+        "name": "Ground Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 785,
+        "constantName": "ITEM_ICE_TERA_SHARD",
+        "name": "Ice Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 786,
+        "constantName": "ITEM_NORMAL_TERA_SHARD",
+        "name": "Normal Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 787,
+        "constantName": "ITEM_POISON_TERA_SHARD",
+        "name": "Poison Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 788,
+        "constantName": "ITEM_PSYCHIC_TERA_SHARD",
+        "name": "Psychic Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 789,
+        "constantName": "ITEM_ROCK_TERA_SHARD",
+        "name": "Rock Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 790,
+        "constantName": "ITEM_STEEL_TERA_SHARD",
+        "name": "Steel Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 791,
+        "constantName": "ITEM_WATER_TERA_SHARD",
+        "name": "Water Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 792,
+        "constantName": "ITEM_ADAMANT_CRYSTAL",
+        "name": "Adamant Crystal",
+        "price": 0,
+        "description": "A large, glowing gem that lets Dialga change form."
+    },
+    {
+        "id": 793,
+        "constantName": "ITEM_GRISEOUS_CORE",
+        "name": "Griseous Core",
+        "price": 0,
+        "description": "A large, glowing gem that lets Giratina change form."
+    },
+    {
+        "id": 794,
+        "constantName": "ITEM_LUSTROUS_GLOBE",
+        "name": "Lustrous Globe",
+        "price": 0,
+        "description": "A large, glowing gem that lets Palkia change form."
+    },
+    {
+        "id": 795,
+        "constantName": "ITEM_BLACK_AUGURITE",
+        "name": "Black Augurite",
+        "price": 8000,
+        "description": "A black stone that makes some Pokémon evolve."
+    },
+    {
+        "id": 796,
+        "constantName": "ITEM_LINKING_CORD",
+        "name": "Linking Cord",
+        "price": 8000,
+        "description": "A mysterious string that makes some Pokémon evolve."
+    },
+    {
+        "id": 797,
+        "constantName": "ITEM_PEAT_BLOCK",
+        "name": "Peat Block",
+        "price": 10000,
+        "description": "A block of material that makes some Pokémon evolve."
+    },
+    {
+        "id": 798,
+        "constantName": "ITEM_BERSERK_GENE",
+        "name": "Berserk Gene",
+        "price": 20,
+        "description": "Sharply boosts Attack, but causes lasting confusion."
+    },
+    {
+        "id": 799,
+        "constantName": "ITEM_FAIRY_FEATHER",
+        "name": "Fairy Feather",
+        "price": 1000,
+        "description": "A hold item that raises the power of Fairy-type moves."
+    },
+    {
+        "id": 800,
+        "constantName": "ITEM_SYRUPY_APPLE",
+        "name": "Syrupy Apple",
+        "price": 2200,
+        "description": "A very syrupy apple that makes certain Pokémon evolve."
+    },
+    {
+        "id": 801,
+        "constantName": "ITEM_UNREMARKABLE_TEACUP",
+        "name": "Unremarkable Teacup",
+        "price": 1600,
+        "description": "A cracked teacup that makes certain Pokémon evolve."
+    },
+    {
+        "id": 802,
+        "constantName": "ITEM_MASTERPIECE_TEACUP",
+        "name": "Masterpiece Teacup",
+        "price": 38000,
+        "description": "A chipped teacup that makes certain Pokémon evolve."
+    },
+    {
+        "id": 803,
+        "constantName": "ITEM_CORNERSTONE_MASK",
+        "name": "Cornerstone Mask",
+        "price": 0,
+        "description": "Allows Ogerpon to wield the Rock- type in battle."
+    },
+    {
+        "id": 804,
+        "constantName": "ITEM_WELLSPRING_MASK",
+        "name": "Wellspring Mask",
+        "price": 0,
+        "description": "Allows Ogerpon to wield the Water- type in battle."
+    },
+    {
+        "id": 805,
+        "constantName": "ITEM_HEARTHFLAME_MASK",
+        "name": "Hearthflame Mask",
+        "price": 0,
+        "description": "Allows Ogerpon to wield the Fire- type in battle."
+    },
+    {
+        "id": 806,
+        "constantName": "ITEM_HEALTH_MOCHI",
+        "name": "Health Mochi",
+        "price": 500,
+        "description": "sHealthFeatherDesc"
+    },
+    {
+        "id": 807,
+        "constantName": "ITEM_MUSCLE_MOCHI",
+        "name": "Muscle Mochi",
+        "price": 500,
+        "description": "sMuscleFeatherDesc"
+    },
+    {
+        "id": 808,
+        "constantName": "ITEM_RESIST_MOCHI",
+        "name": "Resist Mochi",
+        "price": 500,
+        "description": "sResistFeatherDesc"
+    },
+    {
+        "id": 809,
+        "constantName": "ITEM_GENIUS_MOCHI",
+        "name": "Genius Mochi",
+        "price": 500,
+        "description": "sGeniusFeatherDesc"
+    },
+    {
+        "id": 810,
+        "constantName": "ITEM_CLEVER_MOCHI",
+        "name": "Clever Mochi",
+        "price": 500,
+        "description": "sCleverFeatherDesc"
+    },
+    {
+        "id": 811,
+        "constantName": "ITEM_SWIFT_MOCHI",
+        "name": "Swift Mochi",
+        "price": 500,
+        "description": "sSwiftFeatherDesc"
+    },
+    {
+        "id": 812,
+        "constantName": "ITEM_FRESH_START_MOCHI",
+        "name": "Fresh Start Mochi",
+        "price": 300,
+        "description": "An item that resets all base points of a Pokémon."
+    },
+    {
+        "id": 813,
+        "constantName": "ITEM_GLIMMERING_CHARM",
+        "name": "Glimmering Charm",
+        "price": 0,
+        "description": "A charm that will raise the shards from Tera Raids."
+    },
+    {
+        "id": 814,
+        "constantName": "ITEM_METAL_ALLOY",
+        "name": "Metal Alloy",
+        "price": 6000,
+        "description": "A peculiar metal that makes certain Pokémon evolve."
+    },
+    {
+        "id": 815,
+        "constantName": "ITEM_STELLAR_TERA_SHARD",
+        "name": "Stellar Tera Shard",
+        "price": 0,
+        "description": "sTeraShardDesc"
+    },
+    {
+        "id": 816,
+        "constantName": "ITEM_JUBILIFE_MUFFIN",
+        "name": "Jubilife Muffin",
+        "price": 250,
+        "description": "sFullHealDesc"
+    },
+    {
+        "id": 817,
+        "constantName": "ITEM_REMEDY",
+        "name": "Remedy",
+        "price": 150,
+        "description": "A bitter powder that restores HP by 20 points."
+    },
+    {
+        "id": 818,
+        "constantName": "ITEM_FINE_REMEDY",
+        "name": "Fine Remedy",
+        "price": 150,
+        "description": "A bitter powder that restores HP by 60 points."
+    },
+    {
+        "id": 819,
+        "constantName": "ITEM_SUPERB_REMEDY",
+        "name": "Superb Remedy",
+        "price": 750,
+        "description": "A bitter powder that restores HP by 120 points."
+    },
+    {
+        "id": 820,
+        "constantName": "ITEM_AUX_EVASION",
+        "name": "Aux Evasion",
+        "price": 800,
+        "description": "Sharply raises evasiveness during one battle."
+    },
+    {
+        "id": 821,
+        "constantName": "ITEM_AUX_GUARD",
+        "name": "Aux Guard",
+        "price": 400,
+        "description": "Sharply raises defenses during one battle."
+    },
+    {
+        "id": 822,
+        "constantName": "ITEM_AUX_POWER",
+        "name": "Aux Power",
+        "price": 400,
+        "description": "Sharply raises offenses during one battle."
+    },
+    {
+        "id": 823,
+        "constantName": "ITEM_AUX_POWERGUARD",
+        "name": "Aux Powerguard",
+        "price": 1200,
+        "description": "Sharply raises offense & defense during one battle."
+    },
+    {
+        "id": 824,
+        "constantName": "ITEM_CHOICE_DUMPLING",
+        "name": "Choice Dumpling",
+        "price": 1200,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 825,
+        "constantName": "ITEM_SWAP_SNACK",
+        "name": "Swap Snack",
+        "price": 1200,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 826,
+        "constantName": "ITEM_TWICE_SPICED_RADISH",
+        "name": "Twice-Spiced Radish",
+        "price": 1600,
+        "description": "sQuestionMarksDesc"
+    },
+    {
+        "id": 827,
+        "constantName": "ITEM_POKESHI_DOLL",
+        "name": "Pokéshi Doll",
+        "price": 2000,
+        "description": "A wooden toy resembling a Poké-. mon. Can be sold."
+    },
+    {
+        "id": 828,
+        "constantName": "ITEM_STRANGE_BALL",
+        "name": "Strange Ball",
+        "price": 0,
+        "description": "An unusual Ball warped through space and time."
+    },
+    {
+        "id": 829,
+        "constantName": "ITEM_FISHCAKE",
+        "name": "Fishcake",
+        "price": 500,
+        "description": "A fish-shaped cake. Heals all status problems."
+    },
+    {
+        "id": 830,
+        "constantName": "ITEM_REFUGE_ROOM_KEY",
+        "name": "Room Key",
+        "price": 0,
+        "description": "A key to a room at the Yifu City refuge."
+    },
+    {
+        "id": 831,
+        "constantName": "ITEM_ENTEI_STATUETTE",
+        "name": "Entei Statuette",
+        "price": 0,
+        "description": "A statuette made from volcanic rock. It depicts Entei."
+    },
+    {
+        "id": 832,
+        "constantName": "ITEM_UUMEGIRI",
+        "name": "Uumegiri",
+        "price": 500,
+        "description": "Gives 20 HP back to a Pokémon."
+    },
+    {
+        "id": 833,
+        "constantName": "ITEM_SUPERGIRI",
+        "name": "Supergiri",
+        "price": 800,
+        "description": "Gives 60 HP back to a Pokémon."
+    },
+    {
+        "id": 834,
+        "constantName": "ITEM_HYPERGIRI",
+        "name": "Hypergiri",
+        "price": 1500,
+        "description": "Gives 120 HP back to a Pokémon."
+    },
+    {
+        "id": 835,
+        "constantName": "ITEM_MAXGIRI",
+        "name": "Maxgiri",
+        "price": 2500,
+        "description": "Fully restores the HP of a Pokémon."
+    },
+    {
+        "id": 836,
+        "constantName": "ITEM_SACREDGIRI",
+        "name": "Sacredgiri",
+        "price": 3500,
+        "description": "heals a Pokémon completely."
+    },
+    {
+        "id": 837,
+        "constantName": "ITEM_OINTMENT",
+        "name": "Ointment",
+        "price": 100,
+        "description": "Out of battle, gives 20 HP back to a Pokémon."
+    },
+    {
+        "id": 838,
+        "constantName": "ITEM_SUPER_OINTMENT",
+        "name": "Super Ointment",
+        "price": 500,
+        "description": "Out of battle, gives 60 HP back to a Pokémon."
+    },
+    {
+        "id": 839,
+        "constantName": "ITEM_HYPER_OINTMENT",
+        "name": "Hyper Ointment",
+        "price": 800,
+        "description": "Out of battle, gives 120 HP back to a Pokémon."
+    },
+    {
+        "id": 840,
+        "constantName": "ITEM_MAX_OINTMENT",
+        "name": "Max Ointment",
+        "price": 1500,
+        "description": "Out of battle, gives all HP back to a Pokémon."
+    },
+    {
+        "id": 841,
+        "constantName": "ITEM_SACRED_OINTMENT",
+        "name": "Sacred Ointment",
+        "price": 2000,
+        "description": "Out of battle, heals a Pokémon completely."
+    },
+    {
+        "id": 842,
+        "constantName": "ITEM_SLOWPOKE_TAIL",
+        "name": "Slowpoke Tail",
+        "price": 9800,
+        "description": "A very tasty tail of something."
+    },
+    {
+        "id": 843,
+        "constantName": "ITEM_ULTRA_BALL_KNOCKOFF",
+        "name": "Ultro Ball",
+        "price": 400,
+        "description": "A better Ball with a higher catch rate than a Grate Ball."
+    },
+    {
+        "id": 844,
+        "constantName": "ITEM_ESCAPE_ROPE_KNOCKOFF",
+        "name": "Excape Rope",
+        "price": 550,
+        "description": "Escape from a cave or dungeon. Gently used."
+    },
+    {
+        "id": 845,
+        "constantName": "ITEM_STOLEN_MONS",
+        "name": "Stolen Pokémon",
+        "price": 0,
+        "description": "The Pokémon stolen by the Crobat Shadows!"
+    },
+    {
+        "id": 846,
+        "constantName": "ITEM_REVIVAL_POWDER",
+        "name": "Revival Powder",
+        "price": 500,
+        "description": "A bitter powder. Revives a Pokémon outside of battle."
+    },
+    {
+        "id": 847,
+        "constantName": "ITEM_REVIVAL_BALM",
+        "name": "Revival Balm",
+        "price": 800,
+        "description": "A bitter herb. Revives a Pokémon outside of battle."
+    },
+    {
+        "id": 848,
+        "constantName": "ITEM_SECRET_CUT",
+        "name": "Secret of Blade",
+        "price": 0,
+        "description": "A secret technique to cut small trees and grass."
+    },
+    {
+        "id": 849,
+        "constantName": "ITEM_SECRET_SMASH",
+        "name": "Secret Of Smash",
+        "price": 0,
+        "description": "A secret technique to smash rocks."
+    },
+    {
+        "id": 850,
+        "constantName": "ITEM_SECRET_STRENGTH",
+        "name": "Secret Of Strength",
+        "price": 0,
+        "description": "A secret technique to push boulders."
+    },
+    {
+        "id": 851,
+        "constantName": "ITEM_SECRET_SURF",
+        "name": "Secret Of Foam",
+        "price": 0,
+        "description": "A secret technique to cross bodies of water."
+    },
+    {
+        "id": 852,
+        "constantName": "ITEM_SECRET_DIVE",
+        "name": "Secret Of Depths",
+        "price": 0,
+        "description": "A secret technique to dive in deep waters."
+    },
+    {
+        "id": 853,
+        "constantName": "ITEM_SECRET_WATERFALL",
+        "name": "Secret Of Currents",
+        "price": 0,
+        "description": "A secret technique to ride waterfalls."
+    },
+    {
+        "id": 854,
+        "constantName": "ITEM_SECRET_FLY",
+        "name": "Secret Of Flight",
+        "price": 0,
+        "description": "A secret technique to fly with your Pokémon."
+    },
+    {
+        "id": 855,
+        "constantName": "ITEM_SECRET_CLIMB",
+        "name": "Secret Of Heights",
+        "price": 0,
+        "description": "A secret technique to climb cliffsides."
+    },
+    {
+        "id": 856,
+        "constantName": "ITEM_SECRET_FLASH",
+        "name": "Secret Of Light",
+        "price": 0,
+        "description": "A secret technique to light up dark caves."
+    },
+    {
+        "id": 857,
+        "constantName": "ITEM_SPECIAL_MEDICINE",
+        "name": "Superb Elixir",
+        "price": 0,
+        "description": "Medicine made by Kura's healer."
+    },
+    {
+        "id": 858,
+        "constantName": "ITEM_SHINY_VIAL",
+        "name": "Shiny Vial",
+        "price": 1000,
+        "description": "Increases shiny encounters for a while. "
+    },
+    {
+        "id": 859,
+        "constantName": "ITEM_BEAST_BALL",
+        "name": "Beast Ball",
+        "price": 0,
+        "description": "A Ball designed to catch Ultra Beasts."
+    }
+]
