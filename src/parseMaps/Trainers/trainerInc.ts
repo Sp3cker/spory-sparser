@@ -1,17 +1,20 @@
-import { IncTrainer, IncTrainerSchema } from "../../validators/levelIncData.ts";
+import { IncBattle, IncBattleSchema } from "../../validators/levelIncData.ts";
 import joinTrainerGraphics from "./joinTrainerGraphics.ts";
 import { config } from "../../config/index.js";
+import type { BattleType } from "../../validators/battleRecord.ts";
+
 const trainerPics = await joinTrainerGraphics(config);
+
 /**
- * Extract trainer battle references from .inc script content.
- * Returns array of { script, trainerId }.
+ * Extract battle references from .inc script content.
+ * Returns array of battles with their type and trainer IDs.
  */
-export function parseTrainerBattles(incFileData: string): IncTrainer[] {
-  const refs: IncTrainer[] = [];
+export function parseTrainerBattles(incFileData: string): IncBattle[] {
+  const refs: IncBattle[] = [];
   const lines = incFileData.split(/\n/);
 
   let currentLabel: string | null = null;
-  let pendingTrainerBattle: { type: string; isRematch: boolean } | null = null;
+  let pendingTrainerBattle: { battleType: BattleType; isRematch: boolean } | null = null;
 
   for (const raw of lines) {
     const line = raw.trim();
@@ -26,47 +29,59 @@ export function parseTrainerBattles(incFileData: string): IncTrainer[] {
 
     // Check if line starts a trainerbattle command
     const battleMatch = line.match(
-      /^trainerbattle_(?:single|no_intro|two_trainers|double|rematch)\s*\(/i
+      /^trainerbattle_(single|no_intro|two_trainers|double|rematch|no_intro_no_whiteout)\s*\(/i
     );
-    
-    if (battleMatch) {
-      const isRematch = line.includes("trainerbattle_rematch");
-      
-      // Try to get trainer ID from same line: trainerbattle_single(TRAINER_ID
-      const sameLineMatch = line.match(/\((\w+)/);
-      
-      if (sameLineMatch) {
-        const trainerId = sameLineMatch[1];
-        const battlePicPath = trainerPics.get(trainerId);
 
-        const trainerRef = IncTrainerSchema.parse({
+    if (battleMatch) {
+      const command = battleMatch[1].toLowerCase();
+      const isRematch = command === "rematch";
+      const battleType: BattleType = (command === "double" || command === "two_trainers") ? "double" : "single";
+
+      // Try to get trainer ID(s) from same line
+      const sameLineMatch = line.match(/\((\w+)(?:\s*,\s*(\w+))?/);
+
+      if (sameLineMatch) {
+        const trainerIds = [sameLineMatch[1]];
+        if (sameLineMatch[2]) {
+          trainerIds.push(sameLineMatch[2]);
+        }
+
+        const battlePicPaths = trainerIds.map(id => trainerPics.get(id) || "");
+
+        const battleRef = IncBattleSchema.parse({
           script: currentLabel!,
-          id: trainerId,
-          rematch: isRematch,
-          battlePicPath: battlePicPath,
+          battleType,
+          trainerIds,
+          battlePicPaths,
+          rematch: isRematch || undefined,
         });
 
-        refs.push(trainerRef);
+        refs.push(battleRef);
       } else {
         // Trainer ID is on next line(s), mark pending
-        pendingTrainerBattle = { type: battleMatch[0], isRematch };
+        pendingTrainerBattle = { battleType, isRematch };
       }
     } else if (pendingTrainerBattle) {
-      // Look for trainer ID on continuation line
-      const trainerMatch = line.match(/^\s*(\w+)/);
-      
-      if (trainerMatch) {
-        const trainerId = trainerMatch[1];
-        const battlePicPath = trainerPics.get(trainerId);
+      // Look for trainer ID(s) on continuation line
+      const trainerMatch = line.match(/^\s*(\w+)(?:\s*,\s*(\w+))?/);
 
-        const trainerRef = IncTrainerSchema.parse({
+      if (trainerMatch) {
+        const trainerIds = [trainerMatch[1]];
+        if (trainerMatch[2]) {
+          trainerIds.push(trainerMatch[2]);
+        }
+
+        const battlePicPaths = trainerIds.map(id => trainerPics.get(id) || "");
+
+        const battleRef = IncBattleSchema.parse({
           script: currentLabel!,
-          id: trainerId,
-          rematch: pendingTrainerBattle.isRematch,
-          battlePicPath: battlePicPath,
+          battleType: pendingTrainerBattle.battleType,
+          trainerIds,
+          battlePicPaths,
+          rematch: pendingTrainerBattle.isRematch || undefined,
         });
 
-        refs.push(trainerRef);
+        refs.push(battleRef);
         pendingTrainerBattle = null;
       }
     }
@@ -83,58 +98,70 @@ export function parseTrainerBattles(incFileData: string): IncTrainer[] {
 export function parseTrainerBattlesSCRIPT(
   scriptName: string,
   scriptContent: string
-): IncTrainer[] {
-  const refs: IncTrainer[] = [];
+): IncBattle[] {
+  const refs: IncBattle[] = [];
   const lines = scriptContent.split(/\n/);
-  
-  let pendingTrainerBattle: { type: string; isRematch: boolean } | null = null;
+
+  let pendingTrainerBattle: { battleType: BattleType; isRematch: boolean } | null = null;
 
   for (const raw of lines) {
     const line = raw.trim();
 
     // Check if line starts a trainerbattle command
     const battleMatch = line.match(
-      /^trainerbattle_(?:single|no_intro|two_trainers|double|rematch|no_intro_no_whiteout)\s*\(/i
+      /^trainerbattle_(single|no_intro|two_trainers|double|rematch|no_intro_no_whiteout)\s*\(/i
     );
-    
-    if (battleMatch) {
-      const isRematch = line.includes("trainerbattle_rematch");
-      
-      // Try to get trainer ID from same line: trainerbattle_single(TRAINER_ID
-      const sameLineMatch = line.match(/\((\w+)/);
-      
-      if (sameLineMatch) {
-        const trainerId = sameLineMatch[1];
-        const battlePicPath = trainerPics.get(trainerId);
 
-        const trainerRef = IncTrainerSchema.parse({
+    if (battleMatch) {
+      const command = battleMatch[1].toLowerCase();
+      const isRematch = command === "rematch";
+      const battleType: BattleType = (command === "double" || command === "two_trainers") ? "double" : "single";
+
+      // Try to get trainer ID(s) from same line
+      const sameLineMatch = line.match(/\((\w+)(?:\s*,\s*(\w+))?/);
+
+      if (sameLineMatch) {
+        const trainerIds = [sameLineMatch[1]];
+        if (sameLineMatch[2]) {
+          trainerIds.push(sameLineMatch[2]);
+        }
+
+        const battlePicPaths = trainerIds.map(id => trainerPics.get(id) || "");
+
+        const battleRef = IncBattleSchema.parse({
           script: scriptName!,
-          id: trainerId,
-          rematch: isRematch,
-          battlePicPath: battlePicPath,
+          battleType,
+          trainerIds,
+          battlePicPaths,
+          rematch: isRematch || undefined,
         });
 
-        refs.push(trainerRef);
+        refs.push(battleRef);
       } else {
         // Trainer ID is on next line(s), mark pending
-        pendingTrainerBattle = { type: battleMatch[0], isRematch };
+        pendingTrainerBattle = { battleType, isRematch };
       }
     } else if (pendingTrainerBattle) {
-      // Look for trainer ID on continuation line
-      const trainerMatch = line.match(/^\s*(\w+)/);
-      
-      if (trainerMatch) {
-        const trainerId = trainerMatch[1];
-        const battlePicPath = trainerPics.get(trainerId);
+      // Look for trainer ID(s) on continuation line
+      const trainerMatch = line.match(/^\s*(\w+)(?:\s*,\s*(\w+))?/);
 
-        const trainerRef = IncTrainerSchema.parse({
+      if (trainerMatch) {
+        const trainerIds = [trainerMatch[1]];
+        if (trainerMatch[2]) {
+          trainerIds.push(trainerMatch[2]);
+        }
+
+        const battlePicPaths = trainerIds.map(id => trainerPics.get(id) || "");
+
+        const battleRef = IncBattleSchema.parse({
           script: scriptName!,
-          id: trainerId,
-          rematch: pendingTrainerBattle.isRematch,
-          battlePicPath: battlePicPath,
+          battleType: pendingTrainerBattle.battleType,
+          trainerIds,
+          battlePicPaths,
+          rematch: pendingTrainerBattle.isRematch || undefined,
         });
 
-        refs.push(trainerRef);
+        refs.push(battleRef);
         pendingTrainerBattle = null;
       }
     }

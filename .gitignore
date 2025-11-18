@@ -10,3 +10,4 @@ log/output.log
 graphics/*
 _generated/*
 generated/*
+log/*

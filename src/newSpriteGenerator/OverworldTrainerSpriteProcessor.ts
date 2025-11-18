@@ -158,9 +158,9 @@ export class OverworldTrainerSpriteProcessor extends PeopleSpriteProcessorBase {
     try {
       for (let i = 0; i < normalizedFrames.length; i++) {
         const paddedFramePath = this.generateTempPath(`padded_final_${i}`);
-        let frameY = 8;
+        let frameY = 6;
         if (rule.width === 144 && rule.framesToExtract[i] === 0) {
-          frameY = 9;
+          frameY = 7;
         }
 
         try {

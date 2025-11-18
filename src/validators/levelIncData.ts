@@ -1,4 +1,6 @@
 import { z } from "zod";
+import { BattleTypeSchema } from "./battleRecord.ts";
+
 export const WildMonSchema = z.object({
   script: z.string(),
   species: z.string(),
@@ -14,9 +16,21 @@ export const IncTrainerSchema = z.object({
   rematch: z.boolean().optional(),
   battlePicPath: z.string(),
 });
+
+/**
+This is a battle trigger we find in an .inc/.pory file.
+Represents a battle event with one or more trainers.
+ */
+export const IncBattleSchema = z.object({
+  script: z.string(),
+  battleType: BattleTypeSchema,
+  trainerIds: z.array(z.string()).min(1),
+  battlePicPaths: z.array(z.string()).min(1),
+  rematch: z.boolean().optional(),
+});
 /** Item given to player in .inc file */
 export const IncItemEntrySchema = z.object({
-  name: z.string(),
+  constantName: z.string(),
   quantity: z.number(),
 });
 /** Pokemon species given to player
@@ -50,6 +64,7 @@ export const MartSchema = z.object({
 export const IncDataSchema = z.object({
   scriptedGives: z.array(IncScriptedEventSchema),
   trainerRefs: z.array(IncTrainerSchema),
+  battleRefs: z.array(IncBattleSchema).optional(),
   marts: z.array(MartSchema).optional(),
 });
 
@@ -60,6 +75,7 @@ export const LevelIncDataSchema = IncDataSchema.extend({
 });
 
 export type IncTrainer = z.infer<typeof IncTrainerSchema>;
+export type IncBattle = z.infer<typeof IncBattleSchema>;
 export type IncTrainerAndEventData = z.infer<typeof IncDataSchema>;
 export type LevelIncData = z.infer<typeof LevelIncDataSchema>;
 

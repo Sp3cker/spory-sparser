@@ -8,6 +8,7 @@ import {
   IncDataSchema,
   IncScriptEvent,
   IncTrainer,
+  IncBattle,
   IncWildMon,
 } from "../validators/levelIncData.js";
 import { baseMapisizeMiscScripts } from "./baseMapisizeMiscScripts.ts";
@@ -20,18 +21,18 @@ import { parsePoryscriptMarts } from "./pory/parseMarts.ts";
  */
 const processIncFile = async (incFileContent: string) => {
   try {
-    const { scriptedGiveEvents, trainerRefs } =
+    const { scriptedGiveEvents, battleRefs } =
       parseScriptedEvents(incFileContent);
-    // Trainers should be put into `parseScriptedEvents...`
-    // const trainerBattles = parseTrainerBattles(incFileContent);
 
     IncDataSchema.parse({
       scriptedGives: scriptedGiveEvents,
-      trainerRefs: trainerRefs,
+      trainerRefs: [],
+      battleRefs: battleRefs,
     });
     return {
       scriptedGives: scriptedGiveEvents,
-      trainerRefs: trainerRefs,
+      trainerRefs: [],
+      battleRefs: battleRefs,
     };
   } catch (error) {
     throw new Error(
@@ -48,6 +49,7 @@ async function processMiscScriptsDirectory(miscScriptsPath: string) {
     {
       scriptedGives: IncScriptEvent[];
       trainerRefs: IncTrainer[];
+      battleRefs: IncBattle[];
       wildMons: IncWildMon[];
     }
   >();
@@ -60,8 +62,8 @@ async function processMiscScriptsDirectory(miscScriptsPath: string) {
   for (const incFilePath of incfilesInMiscDir) {
     try {
       const content = readFileSync(incFilePath, "utf8");
-      const { scriptedGives, trainerRefs } = await processIncFile(content);
-      baseMapisizeMiscScripts(scriptedGives, trainerRefs, miscScriptDict);
+      const { scriptedGives, trainerRefs, battleRefs } = await processIncFile(content);
+      baseMapisizeMiscScripts(scriptedGives, trainerRefs, battleRefs, miscScriptDict);
     } catch (e) {
       console.error(`Failed to process misc script file ${incFilePath}:`, e);
     }
@@ -120,11 +122,15 @@ export default async (
     // If miscScriptsPath is provided, include it in the search
     //@ts-ignore
     const miscScripts = await processMiscScriptsDirectory(miscScriptsPath);
-    for (const [baseMap, { scriptedGives, trainerRefs }] of miscScripts) {
+    for (const [baseMap, { scriptedGives, trainerRefs, battleRefs }] of miscScripts) {
       const index = mapLevels.findIndex((level) => level.baseMap === baseMap);
       if (index !== -1) {
         mapLevels[index].scriptedGives.push(...scriptedGives);
         mapLevels[index].trainerRefs.push(...trainerRefs);
+        if (battleRefs) {
+          mapLevels[index].battleRefs = mapLevels[index].battleRefs || [];
+          mapLevels[index].battleRefs!.push(...battleRefs);
+        }
       } else {
         mapLevels.push({
           baseMap,
@@ -132,6 +138,7 @@ export default async (
           thisLevelsId: "MAP_MISC",
           scriptedGives,
           trainerRefs,
+          battleRefs,
           marts: [],
         });
       }

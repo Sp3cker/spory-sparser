@@ -12,6 +12,9 @@ import { logger } from "./util/logger.ts";
 
 import { config } from "./config/index.js";
 import { IncScriptEvent } from "./parseMaps/incParser.ts";
+import type { Battle, BattleParty, TrainerMetadata } from "./validators/battleRecord.ts";
+import type { IncBattle } from "./validators/levelIncData.ts";
+import { BattleSchema } from "./validators/battleRecord.ts";
 
 // import mergeTrainers from "./mergeTrainerData.ts";
 
@@ -40,6 +43,7 @@ interface MergedData {
   image: string;
   // trainers?: Trainer[];
   trainerRefs: TrainerStruct[];
+  battleRefs?: IncBattle[];
 }
 
 type GroupedData = Record<string, MergedData[]>;
@@ -142,6 +146,7 @@ const mergeDataByLevelsID = async ({
         scriptedGives: mapEntry.scriptedGives || [],
         image: pickupEntry.imageName,
         trainerRefs: mapEntry.trainerRefs,
+        battleRefs: mapEntry.battleRefs,
       };
 
       // Filter out places that don't have any meaningful content
@@ -151,12 +156,15 @@ const mergeDataByLevelsID = async ({
         result.pickupItems && result.pickupItems.length > 0;
       const hasTrainerRefs =
         result.trainerRefs && result.trainerRefs.length > 0;
+      const hasBattleRefs =
+        result.battleRefs && result.battleRefs.length > 0;
 
       const hasScriptedGives = result.scriptedGives.length > 0;
       if (
         !hasShopItems &&
         !hasPickupItems &&
         !hasTrainerRefs &&
+        !hasBattleRefs &&
         !hasEncountersThereforNeeded &&
         !hasScriptedGives
       ) {
@@ -184,6 +192,9 @@ const mergeDataByLevelsID = async ({
       }
       if (cleaned.trainerRefs && cleaned.trainerRefs.length === 0) {
         delete cleaned.trainerRefs;
+      }
+      if (cleaned.battleRefs && cleaned.battleRefs.length === 0) {
+        delete cleaned.battleRefs;
       }
       return cleaned;
     })
@@ -215,6 +226,24 @@ const mergeDataByLevelsID = async ({
         ...trainer,
         sprite: trainer.sprite ?? existing.sprite,
         battlePic: trainer.battlePic ?? existing.battlePic,
+      };
+      seen.set(key, merged);
+    }
+    return Array.from(seen.values());
+  };
+
+  const dedupeBattlesByIdAndLevel = (battles: Battle[]): Battle[] => {
+    const seen = new Map<string, Battle>();
+    for (const battle of battles) {
+      const key = `${battle.id}|${battle.level}`;
+      const existing = seen.get(key);
+      if (!existing) {
+        seen.set(key, battle);
+        continue;
+      }
+      const merged: Battle = {
+        ...existing,
+        ...battle,
       };
       seen.set(key, merged);
     }
@@ -287,6 +316,98 @@ const mergeDataByLevelsID = async ({
     return groupedTrainers;
   });
 
+  // Assemble battles from battleRefs
+  const groupedBattles = await readFile(
+    path.join(config.dataDir, "trainers.json"),
+    "utf8"
+  ).then((data) => {
+    const trainers = JSON.parse(data);
+    const groupedBattles: Record<string, Battle[]> = {};
+
+    for (const [mapName, levelData] of Object.entries(groupedData)) {
+      const thisMapsBattlesForAllLevels = levelData
+        .flatMap(({ battleRefs, thisLevelsId }) => {
+          if (!battleRefs || battleRefs.length === 0) return [];
+
+          return battleRefs.map((incBattle: IncBattle) => {
+            const parties: BattleParty[] = [];
+
+            // Create a party for each trainer in the battle
+            for (let i = 0; i < incBattle.trainerIds.length; i++) {
+              const trainerId = incBattle.trainerIds[i];
+              const battlePicPath = incBattle.battlePicPaths[i];
+
+              // Get trainer data from trainers.json
+              const trainerJsonData = trainers.find(
+                (tr: any) => tr.id === trainerId
+              );
+
+              if (!trainerJsonData) {
+                logger.warn(
+                  `Trainer ID ${trainerId} from map ${mapName} not found in trainers.json`
+                );
+                continue;
+              }
+
+              // Get overworld sprite from pickup data
+              const pickupData = pickupItemsAndTrainers.find(
+                (level) => level.baseMap === mapName
+              );
+
+              const sprite = pickupData?.trainers?.find(
+                (t) => t.script === incBattle.script
+              )?.graphics_id;
+
+              const trainerMetadata: TrainerMetadata = {
+                id: trainerJsonData.id,
+                name: trainerJsonData.name,
+                battlePic: battlePicPath,
+                sprite: sprite,
+                aiFlags: trainerJsonData.aiFlags,
+                items: trainerJsonData.items,
+              };
+
+              const party: BattleParty = {
+                trainer: trainerMetadata,
+                pokemon: trainerJsonData.party,
+              };
+
+              parties.push(party);
+            }
+
+            if (parties.length === 0) {
+              return null;
+            }
+
+            const battle: Battle = {
+              id: incBattle.script,
+              battleType: incBattle.battleType,
+              parties: parties,
+              level: thisLevelsId,
+            };
+
+            try {
+              BattleSchema.parse(battle);
+            } catch (error) {
+              logger.warn(`Battle validation failed for ${incBattle.script}:`, error);
+            }
+            return battle;
+          });
+        })
+        .filter(Boolean) as Battle[];
+
+      const dedupedBattles = dedupeBattlesByIdAndLevel(
+        thisMapsBattlesForAllLevels
+      );
+
+      if (dedupedBattles.length > 0) {
+        groupedBattles[mapName] = dedupedBattles;
+      }
+    }
+
+    return groupedBattles;
+  });
+
   /** Here we match up trainers from the .inc/.pory file
    * with trainers from the header/party file.
    * Their overworld sprite graphic is already on the pickup entry.
@@ -345,6 +466,7 @@ const mergeDataByLevelsID = async ({
   return {
     groupedData: groupedDataForOutput,
     groupedTrainers,
+    groupedBattles,
   };
 };
 
@@ -397,7 +519,7 @@ const mergeDataByLevelsID = async ({
     const mapEvents = await parseMapEvents(config.mapsDir);
 
     // Merge all data in memory
-    const { groupedData, groupedTrainers } = await mergeDataByLevelsID({
+    const { groupedData, groupedTrainers, groupedBattles } = await mergeDataByLevelsID({
       mapsData: scriptedGives,
       pickupItemsAndTrainers: mapEvents,
 
@@ -406,8 +528,9 @@ const mergeDataByLevelsID = async ({
 
     await writeFile("levels.json", prettyPrint(groupedData));
     await writeFile("trainers.json", prettyPrint(groupedTrainers));
+    await writeFile("battles.json", prettyPrint(groupedBattles));
 
-    logger.info("Merged data written to levels.json and trainers.json");
+    logger.info("Merged data written to levels.json, trainers.json, and battles.json");
     logger.info("Validating...");
   } catch (error) {
     throw error;

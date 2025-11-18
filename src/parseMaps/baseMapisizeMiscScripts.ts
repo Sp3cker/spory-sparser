@@ -1,18 +1,22 @@
 import {
   IncScriptEvent,
   IncTrainer,
+  IncBattle,
   IncScriptedEventSchema,
   IncTrainerSchema,
+  IncBattleSchema,
 } from "../validators/levelIncData.ts";
 
 export const baseMapisizeMiscScripts = (
   scriptedGives: IncScriptEvent[],
   trainerRefs: IncTrainer[],
+  battleRefs: IncBattle[],
   miscScriptDict: Map<
     string,
     {
       scriptedGives: IncScriptEvent[];
       trainerRefs: IncTrainer[];
+      battleRefs: IncBattle[];
     }
   >
 ) => {
@@ -37,24 +41,26 @@ export const baseMapisizeMiscScripts = (
     return `MAP_${maybeBaseMap}`;
   };
 
-  ["scriptedGives", "trainerRefs"].forEach((key) => {
-    if (key !== "scriptedGives" && key !== "trainerRefs") {
+  ["scriptedGives", "trainerRefs", "battleRefs"].forEach((key) => {
+    if (key !== "scriptedGives" && key !== "trainerRefs" && key !== "battleRefs") {
       return;
     }
 
-    const items = key === "scriptedGives" ? scriptedGives : trainerRefs;
+    const items = key === "scriptedGives" ? scriptedGives : key === "trainerRefs" ? trainerRefs : battleRefs;
 
     items.map((scriptOrRef) => {
       const maybeBaseMap = toBaseMap(
         key === "scriptedGives"
           ? (scriptOrRef as IncScriptEvent).scriptName
-          : (scriptOrRef as IncTrainer).script
+          : (scriptOrRef as IncTrainer | IncBattle).script
       );
 
       if (key === "scriptedGives") {
         IncScriptedEventSchema.parse(scriptOrRef);
       } else if (key === "trainerRefs") {
         IncTrainerSchema.parse(scriptOrRef);
+      } else if (key === "battleRefs") {
+        IncBattleSchema.parse(scriptOrRef);
       }
 
       if (miscScriptDict.has(maybeBaseMap)) {
@@ -66,6 +72,7 @@ export const baseMapisizeMiscScripts = (
         miscScriptDict.set(maybeBaseMap, {
           scriptedGives: [],
           trainerRefs: [],
+          battleRefs: [],
         });
         miscScriptDict.get(maybeBaseMap)![key].push(
           //@ts-ignore

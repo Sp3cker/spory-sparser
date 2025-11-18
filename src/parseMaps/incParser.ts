@@ -384,7 +384,7 @@ export function parseScriptedEvents(content: string) {
 
   const results: IncScriptEvent[] = [];
 
-  const trainerRefs = scriptBlocks.flatMap(script => {
+  const battleRefs = scriptBlocks.flatMap(script => {
     return parseTrainerBattlesSCRIPT(script.name, script.content);
   })
   for (const block of filteredScripts) {
@@ -530,5 +530,5 @@ export function parseScriptedEvents(content: string) {
     script.items = consolidatedItems;
   }
 
-  return {scriptedGiveEvents, trainerRefs};
+  return {scriptedGiveEvents, battleRefs};
 }
