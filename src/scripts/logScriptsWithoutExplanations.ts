@@ -12,7 +12,7 @@ interface ScriptBlockWithLineNumber {
 
 interface ScriptEventWithLocation {
   scriptName: string;
-  items: { name: string; quantity: number; }[];
+  items: { id: number; quantity: number; }[];
   pokemon: { species: string; level: number; isRandom?: boolean; }[];
   wildMon: { species: string; level: number; script: string; }[];
   explanation: string;
@@ -220,7 +220,7 @@ async function logScriptsWithoutExplanations() {
       
       if (script.items.length > 0) {
         const itemsList = script.items.map(item => 
-          `${item.name}${item.quantity > 1 ? ` (x${item.quantity})` : ''}`
+          `${item.id}${item.quantity > 1 ? ` (x${item.quantity})` : ''}`
         ).join(', ');
         console.log(`    Items: ${itemsList}`);
       }

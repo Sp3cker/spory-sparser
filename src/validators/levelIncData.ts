@@ -30,7 +30,7 @@ export const IncBattleSchema = z.object({
 });
 /** Item given to player in .inc file */
 export const IncItemEntrySchema = z.object({
-  constantName: z.string(),
+  id: z.number(),
   quantity: z.number(),
 });
 /** Pokemon species given to player

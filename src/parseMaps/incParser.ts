@@ -7,11 +7,11 @@ import {
 } from "../validators/levelIncData.ts";
 import { eggSpeciesMap } from "./eggMons.ts";
 import pokemonData from "../../gameData/species.json" with { type: "json" };
+import itemsData from "../../gameData/items.json" with { type: "json" };
 import { splitRawSection } from "./pory/splitRawSection.ts";
 import { parsePoryscriptFunctions } from "./pory/extractPoryScripts.ts";
 import { findStringLineNumber } from "../util/findStringLineNumber.ts";
 import { parseTrainerBattlesSCRIPT } from "./Trainers/trainerInc.ts";
-// import { config } from "../configReader.ts"; // Used to get path to maps to make dir when errors
 
 const normalizeName = (str: string): string => {
   return str
@@ -39,7 +39,22 @@ const fromNameToId = (speciesConst: string) => {
   }
   return species.speciesId;
 };
+const ITEMS_DATA_JSON = Array.from(itemsData);
+const fromItemNameToId = (itemConst: string) => {
 
+  const item = ITEMS_DATA_JSON.find(
+    (i) =>{ 
+
+      return i.constantName.trim() === itemConst.trim()
+    }
+  )
+  if (!item) {
+    throw new Error(
+      `[IncParser} Item not found for constant: ${itemConst}. Check your itemsData.json`,
+    );
+  }
+  return item.id;
+};
 export class IncScriptEvent {
   public scriptName: string;
   public items: IncItemEntry[] = [];
@@ -83,28 +98,30 @@ export class IncScriptEvent {
       this.parseGiveEggLine(trimmed);
       this.parseWildMonLine(trimmed);
     }
-    this.filterVariables(); // Filter out VAR_ entries after parsing
+    // this.filterVariables(); // Filter out VAR_ entries after parsing
   }
 
   private parseGiveItemLine(line: string): void {
     // Match: giveitem ITEM_NAME or giveitemfast ITEM_NAME
     // Match: giveitem ITEM_NAME, quantity or giveitemfast ITEM_NAME, quantity
     const giveItemMatch = line.match(
-      // /^\s*(giveitemfast|giveitem)\s+(\w+)(?:\s*,\s*(\d+))?/,
       /^\s*(giveitemfast|giveitem)\s*\(?\s*(\w+)\s*,?\s*(\d+)?\s*\)?/,
     );
     if (giveItemMatch) {
-      const itemName = giveItemMatch[2];
+      if (giveItemMatch[2].includes("VAR_") || giveItemMatch[2] === "VAR_0x8006") {
+        return;
+      }
+      const itemName = fromItemNameToId(giveItemMatch[2]);
       const quantity = giveItemMatch[3] ? parseInt(giveItemMatch[3], 10) : 1;
       const existingIndex = this.items.findIndex(
-        (item) => item.name === itemName,
+        (item) => item.id === itemName,
       );
       if (existingIndex !== -1) {
         this.items[existingIndex].quantity += quantity;
         return;
       }
       this.items.push({
-        name: itemName,
+        id: itemName,
         quantity: quantity,
       });
     }
@@ -156,9 +173,9 @@ export class IncScriptEvent {
     );
 
     if (dynMultiItemMatch) {
-      const itemName = dynMultiItemMatch[1];
+      const itemName = fromItemNameToId(dynMultiItemMatch[1]);
       this.items.push({
-        name: itemName,
+        id: itemName,
         quantity: 1,
       });
     } else if (dynMultiSpeciesMatch) {
@@ -247,14 +264,14 @@ export class IncScriptEvent {
    * Filter out variables (VAR_*) from items and pokemon arrays
    * VAR_xxx is used to hold your selection I think...
    */
-  private filterVariables(): void {
-    const varPattern = /^VAR_/i;
+  // private filterVariables(): void {
+  //   const varPattern = /^VAR_/i;
 
-    this.items = this.items.filter((item) => !varPattern.test(item.name));
-    this.pokemon = this.pokemon.filter(
-      (pokemon) => !varPattern.test(pokemon.species),
-    );
-  }
+  //   this.items = this.items.filter((item) => !varPattern.test(item.id));
+  //   this.pokemon = this.pokemon.filter(
+  //     (pokemon) => !varPattern.test(pokemon.species),
+  //   );
+  // }
   explanationWithNoEvents(): boolean {
     const notNothing =
       this.items.length > 0 ||
@@ -392,7 +409,7 @@ export function parseScriptedEvents(content: string) {
     event.parseFromContent(block.content);
     IncScriptedEventSchema.parse(event); // Validate the event structure
     if (event.scriptName.includes("BerryGentleman")) {
-      event.items = [{ name: "ITEM_NONE", quantity: 1 }];
+      event.items = [{ id: 0, quantity: 1 }];
     }
 
     // Just keeps things cleaner ya know
@@ -456,7 +473,7 @@ export function parseScriptedEvents(content: string) {
         // Merge items with quantity consolidation
         for (const newItem of script.items) {
           const existingItemIndex = existingScript.items.findIndex(
-            (item) => item.name === newItem.name,
+            (item) => item.id === newItem.id,
           );
           if (existingItemIndex !== -1) {
             existingScript.items[existingItemIndex].quantity +=
@@ -519,7 +536,7 @@ export function parseScriptedEvents(content: string) {
     const consolidatedItems: IncItemEntry[] = [];
     for (const item of script.items) {
       const existingIndex = consolidatedItems.findIndex(
-        (i) => i.name === item.name,
+        (i) => i.id === item.id,
       );
       if (existingIndex !== -1) {
         consolidatedItems[existingIndex].quantity += item.quantity;
