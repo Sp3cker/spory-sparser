@@ -457,6 +457,40 @@
       ]
     }
   ],
+  "MAP_HARVEST_SHRINE": [
+    {
+      "thisLevelsId": "MAP_HARVEST_SHRINE",
+      "baseMap": "MAP_HARVEST_SHRINE",
+      "levelLabel": "",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "id": 599,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Speak to the monk during a rainstorm",
+          "scriptName": "HarvestShrine_EventScript_MonkRain"
+        }
+      ],
+      "image": "HarvestShrine",
+      "battleRefs": [
+        {
+          "script": "HarvestShrine_EventScript_Kouga",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_KOUGA"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_KOUGA.webp"
+          ]
+        }
+      ]
+    }
+  ],
   "MAP_INCENSE_SHOP": [
     {
       "thisLevelsId": "MAP_INCENSE_SHOP",
@@ -518,6 +552,56 @@
     }
   ],
   "MAP_KURA_TOWN": [
+    {
+      "thisLevelsId": "MAP_KURA_TOWN",
+      "baseMap": "MAP_KURA_TOWN",
+      "levelLabel": "",
+      "pickupItems": [
+        {
+          "coords": [
+            9,
+            20
+          ],
+          "item": "ITEM_REVIVAL_HERB",
+          "type": "hidden_item"
+        },
+        {
+          "coords": [
+            26,
+            14
+          ],
+          "item": "ITEM_SITRUS_BERRY",
+          "type": "hidden_item"
+        }
+      ],
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "id": 425,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Ask the grey-looking girl about her scarf",
+          "scriptName": "KuraTown_EventScript_SilkScarf"
+        },
+        {
+          "items": [
+            {
+              "id": 652,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Ask the man about his Abra",
+          "scriptName": "KuraTown_EventScript_TeachingScrolls"
+        }
+      ],
+      "image": "KuraTown"
+    },
     {
       "thisLevelsId": "MAP_KURA_TOWN_DOJO",
       "baseMap": "MAP_KURA_TOWN",
@@ -614,7 +698,7 @@
         {
           "items": [
             {
-              "id": 857,
+              "id": 883,
               "quantity": 1
             }
           ],
@@ -654,7 +738,7 @@
         {
           "items": [
             {
-              "id": 829,
+              "id": 855,
               "quantity": 1
             }
           ],
@@ -666,7 +750,7 @@
         {
           "items": [
             {
-              "id": 829,
+              "id": 855,
               "quantity": 1
             }
           ],
@@ -691,6 +775,68 @@
       "image": "MaguroHarbor"
     },
     {
+      "thisLevelsId": "MAP_MAGURO_HARBOR_DOJO",
+      "baseMap": "MAP_MAGURO_HARBOR",
+      "levelLabel": "Dojo",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "id": 634,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Defeat Koishi",
+          "scriptName": "MaguroHarbor_Dojo_EventScript_KoishiDefeated"
+        }
+      ],
+      "image": "MaguroHarbor_Dojo",
+      "battleRefs": [
+        {
+          "script": "MaguroHarbor_Dojo_EventScript_Koishi",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_KOISHI_1"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_KOISHI_1.webp"
+          ]
+        },
+        {
+          "script": "MaguroHarbor_Dojo_EventScript_Izumi",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_IZUMI"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_IZUMI.webp"
+          ]
+        },
+        {
+          "script": "MaguroHarbor_Dojo_EventScript_Ren",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_REN"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_REN.webp"
+          ]
+        },
+        {
+          "script": "MaguroHarbor_Dojo_EventScript_Mizu",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_MIZU"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_MIZU.webp"
+          ]
+        }
+      ]
+    },
+    {
       "thisLevelsId": "MAP_MAGURO_HARBOR_REFUGE",
       "baseMap": "MAP_MAGURO_HARBOR",
       "levelLabel": "Refuge",
@@ -698,7 +844,7 @@
         {
           "items": [
             {
-              "id": 832,
+              "id": 858,
               "quantity": 4
             }
           ],
@@ -718,6 +864,64 @@
           ],
           "battlePicPaths": [
             "trainers/processed/TRAINER_HARIKO_MAGURO.webp"
+          ]
+        }
+      ]
+    }
+  ],
+  "MAP_ORCHARD_PATH": [
+    {
+      "thisLevelsId": "MAP_ORCHARD_PATH",
+      "baseMap": "MAP_ORCHARD_PATH",
+      "levelLabel": "",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "id": 875,
+              "quantity": 1
+            },
+            {
+              "id": 647,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Speak to the Rock Smasher",
+          "scriptName": "OrchardPath_EventScript_RockSmashRegular"
+        }
+      ],
+      "image": "OrchardPath",
+      "battleRefs": [
+        {
+          "script": "OrchardPath_EventScript_Junko",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_JUNKO"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_JUNKO.webp"
+          ]
+        },
+        {
+          "script": "OrchardPath_EventScript_Mami",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_MAMI"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_MAMI.webp"
+          ]
+        },
+        {
+          "script": "OrchardPath_EventScript_RockSmashBrokeMyRocks",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_ROCK_SMASH_GUY"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_ROCK_SMASH_GUY.webp"
           ]
         }
       ]
@@ -826,6 +1030,50 @@
           ]
         }
       ]
+    },
+    {
+      "thisLevelsId": "MAP_SAKU_TOWN_BONSAI_SHOP",
+      "baseMap": "MAP_SAKU_TOWN",
+      "levelLabel": "Bonsaishop",
+      "shopItems": [
+        {
+          "label": "MAP_SAKU_TOWN",
+          "mart": "BonsaiShop",
+          "items": [],
+          "scriptname": "BonsaiShop"
+        }
+      ],
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "id": 633,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Achieve Berry Mastery & speak to the little girl",
+          "scriptName": "SakuTown_BonsaiShop_EventScript_LittleSister"
+        },
+        {
+          "items": [
+            {
+              "id": 520,
+              "quantity": 3
+            },
+            {
+              "id": 720,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Bonsai Shop, if you didn't meet the assistant on Tranquil route",
+          "scriptName": "SakuTown_BonsaiShop_EventScript_Assistant"
+        }
+      ],
+      "image": "SakuTown_BonsaiShop"
     },
     {
       "thisLevelsId": "MAP_SAKU_TOWN_HOUSE2",
@@ -1085,7 +1333,7 @@
         {
           "items": [
             {
-              "id": 833,
+              "id": 859,
               "quantity": 2
             }
           ],
@@ -1182,7 +1430,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Escape Sunrise Village",
           "scriptName": "SunriseVillage_Event_BigSisMap_GiveMap"
         }
       ],
@@ -1276,7 +1524,7 @@
         {
           "items": [
             {
-              "id": 837,
+              "id": 863,
               "quantity": 5
             },
             {
@@ -1306,7 +1554,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "(spence, past u here, filter this one out)",
           "scriptName": "SunriseVillage_PlayersHouse_LR_EventScript_BigSis"
         }
       ],
@@ -1424,6 +1672,226 @@
           ],
           "battlePicPaths": [
             "trainers/processed/TRAINER_KENJI.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "thisLevelsId": "MAP_TRANQUIL_ROUTE_CUT_HOUSE",
+      "baseMap": "MAP_TRANQUILROUTE",
+      "levelLabel": "Cuthouse",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "id": 305,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Play \"Whomst is that Pokémon!\" with the 14 yr old.",
+          "scriptName": "TranquilRoute_CutHouse_EventScript_RandomCryGuy"
+        },
+        {
+          "items": [
+            {
+              "id": 874,
+              "quantity": 1
+            },
+            {
+              "id": 646,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "TranquilRoute_CutHouse_EventScript_CutMaster"
+        }
+      ],
+      "image": "TranquilRoute_CutHouse"
+    }
+  ],
+  "MAP_WHITESLATEROUTE": [
+    {
+      "thisLevelsId": "MAP_WHITESLATE_ROUTE",
+      "baseMap": "MAP_WHITESLATEROUTE",
+      "levelLabel": "",
+      "pickupItems": [
+        {
+          "coords": [
+            33,
+            88
+          ],
+          "item": "ITEM_TM_ROCK_TOMB",
+          "type": "object_event"
+        },
+        {
+          "coords": [
+            10,
+            63
+          ],
+          "item": "ITEM_CARBOS",
+          "type": "object_event"
+        },
+        {
+          "coords": [
+            26,
+            40
+          ],
+          "item": "ITEM_NONE",
+          "type": "hidden_item"
+        },
+        {
+          "coords": [
+            36,
+            63
+          ],
+          "item": "ITEM_LEFTOVERS",
+          "type": "hidden_item"
+        },
+        {
+          "coords": [
+            8,
+            53
+          ],
+          "item": "ITEM_ZINC",
+          "type": "hidden_item"
+        },
+        {
+          "coords": [
+            12,
+            48
+          ],
+          "item": "ITEM_LUM_BERRY",
+          "type": "hidden_item"
+        },
+        {
+          "coords": [
+            30,
+            73
+          ],
+          "item": "ITEM_MAX_ETHER",
+          "type": "hidden_item"
+        }
+      ],
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "id": 53,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "WhiteslateRoute_EventScript_Shuckle"
+        },
+        {
+          "items": [
+            {
+              "id": 624,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "WhiteslateRoute_Trigger_SecretBase"
+        }
+      ],
+      "image": "WhiteslateRoute",
+      "battleRefs": [
+        {
+          "script": "WhiteslateRoute_EventScript_Itsumi",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_ITSUMI"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_ITSUMI.webp"
+          ]
+        },
+        {
+          "script": "WhiteslateRoute_EventScript_Ryosuke",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_RYOSUKE"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_RYOSUKE.webp"
+          ]
+        },
+        {
+          "script": "WhiteslateRoute_EventScript_Riku",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_RIKU"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_RIKU.webp"
+          ]
+        },
+        {
+          "script": "WhiteslateRoute_EventScript_Tomomi",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_TOMOMI"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_TOMOMI.webp"
+          ]
+        },
+        {
+          "script": "WhiteslateRoute_EventScript_Yono",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_YONO"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_YONO.webp"
+          ]
+        },
+        {
+          "script": "WhiteslateRoute_EventScript_Sumi",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_SUMI"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_SUMI.webp"
+          ]
+        },
+        {
+          "script": "WhiteslateRoute_EventScript_Tomiko",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_TOMIKO"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_TOMIKO.webp"
+          ]
+        },
+        {
+          "script": "WhiteslateRoute_EventScript_Utaro",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_UTARO"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_UTARO.webp"
+          ]
+        },
+        {
+          "script": "WhiteslateRoute_EventScript_Asagao",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_UTARO"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_UTARO.webp"
           ]
         }
       ]
@@ -1550,6 +2018,85 @@
   ],
   "MAP_YIFU_CITY": [
     {
+      "thisLevelsId": "MAP_YIFU_CITY",
+      "baseMap": "MAP_YIFU_CITY",
+      "levelLabel": "",
+      "pickupItems": [
+        {
+          "coords": [
+            24,
+            41
+          ],
+          "item": "ITEM_POKE_DOLL",
+          "type": "hidden_item"
+        },
+        {
+          "coords": [
+            64,
+            45
+          ],
+          "item": "ITEM_ESCAPE_ROPE",
+          "type": "hidden_item"
+        },
+        {
+          "coords": [
+            33,
+            62
+          ],
+          "item": "ITEM_RARE_CANDY",
+          "type": "hidden_item"
+        },
+        {
+          "coords": [
+            1,
+            62
+          ],
+          "item": "ITEM_DUSK_BALL",
+          "type": "hidden_item"
+        }
+      ],
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "id": 585,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "YifuCity_EventScript_RobberyVictim"
+        },
+        {
+          "items": [],
+          "pokemon": [
+            {
+              "species": "SPECIES_CATERPIE",
+              "level": 5,
+              "id": 10
+            }
+          ],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "YifuCity_ShinySellerChoice"
+        },
+        {
+          "items": [
+            {
+              "id": 6,
+              "quantity": 2
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "",
+          "scriptName": "YifuCity_EventScript_Nurse"
+        }
+      ],
+      "image": "YifuCity"
+    },
+    {
       "thisLevelsId": "MAP_YIFU_CITY_CROBAT_SHOP",
       "baseMap": "MAP_YIFU_CITY",
       "levelLabel": "Crobatshop",
@@ -1590,6 +2137,128 @@
         }
       ],
       "image": "YifuCity_CrobatShop"
+    },
+    {
+      "thisLevelsId": "MAP_YIFU_CITY_DOJO",
+      "baseMap": "MAP_YIFU_CITY",
+      "levelLabel": "Dojo",
+      "scriptedGives": [
+        {
+          "items": [
+            {
+              "id": 635,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Defeat Yukata",
+          "scriptName": "YifuCity_Dojo_EventScript_YutakaDefeated"
+        }
+      ],
+      "image": "YifuCity_Dojo",
+      "battleRefs": [
+        {
+          "script": "YifuCity_Dojo_EventScript_Dance1",
+          "battleType": "double",
+          "trainerIds": [
+            "TRAINER_AKARI"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_AKARI.webp"
+          ]
+        },
+        {
+          "script": "YifuCity_Dojo_EventScript_Dance2",
+          "battleType": "double",
+          "trainerIds": [
+            "TRAINER_KARIN"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_KARIN.webp"
+          ]
+        },
+        {
+          "script": "YifuCity_Dojo_EventScript_Dance3",
+          "battleType": "double",
+          "trainerIds": [
+            "TRAINER_NANAMI"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_NANAMI.webp"
+          ]
+        },
+        {
+          "script": "YifuCity_Dojo_EventScript_Akari",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_AKARI"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_AKARI.webp"
+          ]
+        },
+        {
+          "script": "YifuCity_Dojo_EventScript_Yuka",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_YUKA"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_YUKA.webp"
+          ]
+        },
+        {
+          "script": "YifuCity_Dojo_EventScript_Nanami",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_NANAMI"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_NANAMI.webp"
+          ]
+        },
+        {
+          "script": "YifuCity_Dojo_EventScript_Kanae",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_KANAE"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_KANAE.webp"
+          ]
+        },
+        {
+          "script": "YifuCity_Dojo_EventScript_Karin",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_KARIN"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_KARIN.webp"
+          ]
+        },
+        {
+          "script": "YifuCity_Dojo_EventScript_Miika",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_MIIKA"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_MIIKA.webp"
+          ]
+        },
+        {
+          "script": "YifuCity_Dojo_EventScript_Yutaka",
+          "battleType": "single",
+          "trainerIds": [
+            "TRAINER_YUTAKA_1"
+          ],
+          "battlePicPaths": [
+            "trainers/processed/TRAINER_YUTAKA_1.webp"
+          ]
+        }
+      ]
     },
     {
       "thisLevelsId": "MAP_YIFU_CITY_HOT_SPRINGS",
@@ -1679,7 +2348,7 @@
         {
           "items": [
             {
-              "id": 833,
+              "id": 859,
               "quantity": 3
             }
           ],

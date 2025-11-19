@@ -5239,642 +5239,500 @@
     },
     {
         "id": 582,
-        "constantName": "ITEM_TM_FOCUS_PUNCH",
-        "name": "TM01",
+        "constantName": "ITEM_TM01",
+        "name": "TM01 - Focus Punch",
         "price": 3000,
-        "description": "Powerful, but makes the user flinch if hit by the foe.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Focus Punch."
     },
     {
         "id": 583,
-        "constantName": "ITEM_TM_DRAGON_CLAW",
-        "name": "TM02",
+        "constantName": "ITEM_TM02",
+        "name": "TM02 - Dragon Claw",
         "price": 3000,
-        "description": "Hooks and slashes the foe with long, sharp claws.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Dragon Claw."
     },
     {
         "id": 584,
-        "constantName": "ITEM_TM_WATER_PULSE",
-        "name": "TM03",
+        "constantName": "ITEM_TM03",
+        "name": "TM03 - Water Pulse",
         "price": 3000,
-        "description": "Generates an ultrasonic wave that may confuse.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Water Pulse."
     },
     {
         "id": 585,
-        "constantName": "ITEM_TM_CALM_MIND",
-        "name": "TM04",
+        "constantName": "ITEM_TM04",
+        "name": "TM04 - Calm Mind",
         "price": 3000,
-        "description": "Raises Sp. Atk and Sp. Def by focusing the mind.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Calm Mind."
     },
     {
         "id": 586,
-        "constantName": "ITEM_TM_ROAR",
-        "name": "TM05",
-        "price": 1000,
-        "description": "A savage roar that makes the foe flee  to end the battle.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM05",
+        "name": "TM05 - Roar",
+        "price": 3000,
+        "description": "Teaches the move Roar."
     },
     {
         "id": 587,
-        "constantName": "ITEM_TM_TOXIC",
-        "name": "TM06",
+        "constantName": "ITEM_TM06",
+        "name": "TM06 - Toxic",
         "price": 3000,
-        "description": "Poisons the foe with a toxin that gradually worsens.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Toxic."
     },
     {
         "id": 588,
-        "constantName": "ITEM_TM_HAIL",
-        "name": "TM07",
+        "constantName": "ITEM_TM07",
+        "name": "TM07 - Hail",
         "price": 3000,
-        "description": "Creates a hailstorm that damages all types except Ice.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Hail."
     },
     {
         "id": 589,
-        "constantName": "ITEM_TM_BULK_UP",
-        "name": "TM08",
+        "constantName": "ITEM_TM08",
+        "name": "TM08 - Bulk Up",
         "price": 3000,
-        "description": "Bulks up the body to boost both Attack & Defense.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Bulk Up."
     },
     {
         "id": 590,
-        "constantName": "ITEM_TM_BULLET_SEED",
-        "name": "TM09",
+        "constantName": "ITEM_TM09",
+        "name": "TM09 - Bullet Seed",
         "price": 3000,
-        "description": "Shoots 2 to 5 seeds in a row to strike the foe.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Bullet Seed."
     },
     {
         "id": 591,
-        "constantName": "ITEM_TM_HIDDEN_POWER",
-        "name": "TM10",
+        "constantName": "ITEM_TM10",
+        "name": "TM10 - Hidden Power",
         "price": 3000,
-        "description": "The attack power varies among different Pokémon.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Hidden Power."
     },
     {
         "id": 592,
-        "constantName": "ITEM_TM_SUNNY_DAY",
-        "name": "TM11",
-        "price": 2000,
-        "description": "Raises the power of Fire-type moves for 5 turns.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM11",
+        "name": "TM11 - Sunny Day",
+        "price": 3000,
+        "description": "Teaches the move Sunny Day."
     },
     {
         "id": 593,
-        "constantName": "ITEM_TM_TAUNT",
-        "name": "TM12",
+        "constantName": "ITEM_TM12",
+        "name": "TM12 - Taunt",
         "price": 3000,
-        "description": "Enrages the foe so it can only use attack moves.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Taunt."
     },
     {
         "id": 594,
-        "constantName": "ITEM_TM_ICE_BEAM",
-        "name": "TM13",
+        "constantName": "ITEM_TM13",
+        "name": "TM13 - Ice Beam",
         "price": 3000,
-        "description": "Fires an icy cold beam that may freeze the foe.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Ice Beam."
     },
     {
         "id": 595,
-        "constantName": "ITEM_TM_BLIZZARD",
-        "name": "TM14",
-        "price": 5500,
-        "description": "A brutal snow-and- wind attack that may freeze the foe.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM14",
+        "name": "TM14 - Blizzard",
+        "price": 3000,
+        "description": "Teaches the move Blizzard."
     },
     {
         "id": 596,
-        "constantName": "ITEM_TM_HYPER_BEAM",
-        "name": "TM15",
-        "price": 7500,
-        "description": "Powerful, but needs recharging the next turn.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM15",
+        "name": "TM15 - Hyper Beam",
+        "price": 3000,
+        "description": "Teaches the move Hyper Beam."
     },
     {
         "id": 597,
-        "constantName": "ITEM_TM_LIGHT_SCREEN",
-        "name": "TM16",
+        "constantName": "ITEM_TM16",
+        "name": "TM16 - Light Screen",
         "price": 3000,
-        "description": "Creates a wall of light that lowers Sp. Atk damage.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Light Screen."
     },
     {
         "id": 598,
-        "constantName": "ITEM_TM_PROTECT",
-        "name": "TM17",
+        "constantName": "ITEM_TM17",
+        "name": "TM17 - Protect",
         "price": 3000,
-        "description": "Negates all damage, but may fail if used in succession.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Protect."
     },
     {
         "id": 599,
-        "constantName": "ITEM_TM_RAIN_DANCE",
-        "name": "TM18",
-        "price": 2000,
-        "description": "Raises the power of Water-type moves for 5 turns.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM18",
+        "name": "TM18 - Rain Dance",
+        "price": 3000,
+        "description": "Teaches the move Rain Dance."
     },
     {
         "id": 600,
-        "constantName": "ITEM_TM_GIGA_DRAIN",
-        "name": "TM19",
+        "constantName": "ITEM_TM19",
+        "name": "TM19 - Giga Drain",
         "price": 3000,
-        "description": "Recovers half the HP of the damage  this move inflicts.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Giga Drain."
     },
     {
         "id": 601,
-        "constantName": "ITEM_TM_SAFEGUARD",
-        "name": "TM20",
+        "constantName": "ITEM_TM20",
+        "name": "TM20 - Safeguard",
         "price": 3000,
-        "description": "Prevents status abnormality with a mystical power.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Safeguard."
     },
     {
         "id": 602,
-        "constantName": "ITEM_TM_FRUSTRATION",
-        "name": "TM21",
-        "price": 1000,
-        "description": "The less the user likes you, the more powerful this move.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM21",
+        "name": "TM21 - Frustration",
+        "price": 3000,
+        "description": "Teaches the move Frustration."
     },
     {
         "id": 603,
-        "constantName": "ITEM_TM_SOLAR_BEAM",
-        "name": "TM22",
+        "constantName": "ITEM_TM22",
+        "name": "TM22 - Solar Beam",
         "price": 3000,
-        "description": "Absorbs sunlight in the 1st turn, then attacks next turn.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Solar Beam."
     },
     {
         "id": 604,
-        "constantName": "ITEM_TM_IRON_TAIL",
-        "name": "TM23",
+        "constantName": "ITEM_TM23",
+        "name": "TM23 - Iron Tail",
         "price": 3000,
-        "description": "Slams the foe with a hard tail. It may lower Defense.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Iron Tail."
     },
     {
         "id": 605,
-        "constantName": "ITEM_TM_THUNDERBOLT",
-        "name": "TM24",
+        "constantName": "ITEM_TM24",
+        "name": "TM24 - Thunderbolt",
         "price": 3000,
-        "description": "A powerful electric attack that may cause paralysis.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Thunderbolt."
     },
     {
         "id": 606,
-        "constantName": "ITEM_TM_THUNDER",
-        "name": "TM25",
-        "price": 5500,
-        "description": "Strikes the foe with a thunderbolt. It may paralyze.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM25",
+        "name": "TM25 - Thunder",
+        "price": 3000,
+        "description": "Teaches the move Thunder."
     },
     {
         "id": 607,
-        "constantName": "ITEM_TM_EARTHQUAKE",
-        "name": "TM26",
+        "constantName": "ITEM_TM26",
+        "name": "TM26 - Earthquake",
         "price": 3000,
-        "description": "Causes a quake that has no effect on flying foes.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Earthquake."
     },
     {
         "id": 608,
-        "constantName": "ITEM_TM_RETURN",
-        "name": "TM27",
-        "price": 1000,
-        "description": "The more the user likes you, the more powerful this move.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM27",
+        "name": "TM27 - Return",
+        "price": 3000,
+        "description": "Teaches the move Return."
     },
     {
         "id": 609,
-        "constantName": "ITEM_TM_DIG",
-        "name": "TM28",
-        "price": 2000,
-        "description": "Digs underground the 1st turn, then strikes next turn.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM28",
+        "name": "TM28 - Dig",
+        "price": 3000,
+        "description": "Teaches the move Dig."
     },
     {
         "id": 610,
-        "constantName": "ITEM_TM_PSYCHIC",
-        "name": "TM29",
-        "price": 2000,
-        "description": "A powerful psychic attack that may lower Sp. Def.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM29",
+        "name": "TM29 - Psychic",
+        "price": 3000,
+        "description": "Teaches the move Psychic."
     },
     {
         "id": 611,
-        "constantName": "ITEM_TM_SHADOW_BALL",
-        "name": "TM30",
+        "constantName": "ITEM_TM30",
+        "name": "TM30 - Shadow Ball",
         "price": 3000,
-        "description": "Hurls a dark lump at the foe. It may lower Sp. Def.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Shadow Ball."
     },
     {
         "id": 612,
-        "constantName": "ITEM_TM_BRICK_BREAK",
-        "name": "TM31",
+        "constantName": "ITEM_TM31",
+        "name": "TM31 - Brick Break",
         "price": 3000,
-        "description": "Destroys barriers like Light Screen and causes damage.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Brick Break."
     },
     {
         "id": 613,
-        "constantName": "ITEM_TM_DOUBLE_TEAM",
-        "name": "TM32",
-        "price": 2000,
-        "description": "Creates illusory copies to enhance elusiveness.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM32",
+        "name": "TM32 - Double Team",
+        "price": 3000,
+        "description": "Teaches the move Double Team."
     },
     {
         "id": 614,
-        "constantName": "ITEM_TM_REFLECT",
-        "name": "TM33",
+        "constantName": "ITEM_TM33",
+        "name": "TM33 - Reflect",
         "price": 3000,
-        "description": "Creates a wall of light that weakens physical attacks.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Reflect."
     },
     {
         "id": 615,
-        "constantName": "ITEM_TM_SHOCK_WAVE",
-        "name": "TM34",
+        "constantName": "ITEM_TM34",
+        "name": "TM34 - Shock Wave",
         "price": 3000,
-        "description": "Zaps the foe with a jolt of electricity that never misses.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Shock Wave."
     },
     {
         "id": 616,
-        "constantName": "ITEM_TM_FLAMETHROWER",
-        "name": "TM35",
+        "constantName": "ITEM_TM35",
+        "name": "TM35 - Flamethrower",
         "price": 3000,
-        "description": "Looses a stream of fire that may burn the foe.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Flamethrower."
     },
     {
         "id": 617,
-        "constantName": "ITEM_TM_SLUDGE_BOMB",
-        "name": "TM36",
-        "price": 1000,
-        "description": "Hurls sludge at the foe. It may poison the foe.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM36",
+        "name": "TM36 - Sludge Bomb",
+        "price": 3000,
+        "description": "Teaches the move Sludge Bomb."
     },
     {
         "id": 618,
-        "constantName": "ITEM_TM_SANDSTORM",
-        "name": "TM37",
-        "price": 2000,
-        "description": "Causes a sandstorm that hits the foe over several turns.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM37",
+        "name": "TM37 - Sandstorm",
+        "price": 3000,
+        "description": "Teaches the move Sandstorm."
     },
     {
         "id": 619,
-        "constantName": "ITEM_TM_FIRE_BLAST",
-        "name": "TM38",
-        "price": 5500,
-        "description": "A powerful fire attack that may burn the foe.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM38",
+        "name": "TM38 - Fire Blast",
+        "price": 3000,
+        "description": "Teaches the move Fire Blast."
     },
     {
         "id": 620,
-        "constantName": "ITEM_TM_ROCK_TOMB",
-        "name": "TM39",
+        "constantName": "ITEM_TM39",
+        "name": "TM39 - Rock Tomb",
         "price": 3000,
-        "description": "Stops the foe from moving with rocks. Lowers Speed.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Rock Tomb."
     },
     {
         "id": 621,
-        "constantName": "ITEM_TM_AERIAL_ACE",
-        "name": "TM40",
-        "price": 1500,
-        "description": "An extremely fast attack that can't be avoided.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM40",
+        "name": "TM40 - Aerial Ace",
+        "price": 3000,
+        "description": "Teaches the move Aerial Ace."
     },
     {
         "id": 622,
-        "constantName": "ITEM_TM_TORMENT",
-        "name": "TM41",
+        "constantName": "ITEM_TM41",
+        "name": "TM41 - Torment",
         "price": 3000,
-        "description": "Prevents the foe from using the same move in a row.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Torment."
     },
     {
         "id": 623,
-        "constantName": "ITEM_TM_FACADE",
-        "name": "TM42",
+        "constantName": "ITEM_TM42",
+        "name": "TM42 - Facade",
         "price": 3000,
-        "description": "Raises Attack when poisoned, burned, or paralyzed.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Facade."
     },
     {
         "id": 624,
-        "constantName": "ITEM_TM_SECRET_POWER",
-        "name": "TM43",
+        "constantName": "ITEM_TM43",
+        "name": "TM43 - Secret Power",
         "price": 3000,
-        "description": "Adds an effect to attack depending on the location.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Secret Power."
     },
     {
         "id": 625,
-        "constantName": "ITEM_TM_REST",
-        "name": "TM44",
+        "constantName": "ITEM_TM44",
+        "name": "TM44 - Rest",
         "price": 3000,
-        "description": "The user sleeps for 2 turns to restore health and status.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Rest."
     },
     {
         "id": 626,
-        "constantName": "ITEM_TM_ATTRACT",
-        "name": "TM45",
+        "constantName": "ITEM_TM45",
+        "name": "TM45 - Attract",
         "price": 3000,
-        "description": "Makes it tough to attack a foe of the opposite gender.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Attract."
     },
     {
         "id": 627,
-        "constantName": "ITEM_TM_THIEF",
-        "name": "TM46",
+        "constantName": "ITEM_TM46",
+        "name": "TM46 - Thief",
         "price": 3000,
-        "description": "While attacking, it may steal the foe's held item.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Thief."
     },
     {
         "id": 628,
-        "constantName": "ITEM_TM_STEEL_WING",
-        "name": "TM47",
+        "constantName": "ITEM_TM47",
+        "name": "TM47 - Steel Wing",
         "price": 3000,
-        "description": "Spreads hard- edged wings and slams into the foe.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Steel Wing."
     },
     {
         "id": 629,
-        "constantName": "ITEM_TM_SKILL_SWAP",
-        "name": "TM48",
+        "constantName": "ITEM_TM48",
+        "name": "TM48 - Skill Swap",
         "price": 3000,
-        "description": "Switches abilities with the foe on the turn this is used.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Skill Swap."
     },
     {
         "id": 630,
-        "constantName": "ITEM_TM_SNATCH",
-        "name": "TM49",
+        "constantName": "ITEM_TM49",
+        "name": "TM49 - Snatch",
         "price": 3000,
-        "description": "Steals the effects of the move the foe is trying to use.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Snatch."
     },
     {
         "id": 631,
-        "constantName": "ITEM_TM_OVERHEAT",
-        "name": "TM50",
+        "constantName": "ITEM_TM50",
+        "name": "TM50 - Overheat",
         "price": 3000,
-        "description": "Enables full-power attack, but sharply lowers Sp. Atk.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Overheat."
     },
     {
         "id": 632,
-        "constantName": "ITEM_TM_WEATHER_BALL",
-        "name": "TM51",
+        "constantName": "ITEM_TM51",
+        "name": "TM51 - Weather Ball",
         "price": 3000,
-        "description": "The move's type and power change with the weather.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Weather Ball."
     },
     {
         "id": 633,
-        "constantName": "ITEM_TM_ACROBATICS",
-        "name": "TM52",
+        "constantName": "ITEM_TM52",
+        "name": "TM52 - Acrobatics",
         "price": 3000,
-        "description": "Does more damage when the user is not holding an item.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Acrobatics."
     },
     {
         "id": 634,
-        "constantName": "ITEM_TM_NATURE_POWER",
-        "name": "TM53",
+        "constantName": "ITEM_TM53",
+        "name": "TM53 - Nature Power",
         "price": 3000,
-        "description": "The type of attack varies depending on the location.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Nature Power."
     },
     {
         "id": 635,
-        "constantName": "ITEM_TM_X_SCISSOR",
-        "name": "TM54",
+        "constantName": "ITEM_TM54",
+        "name": "TM54 - X-Scissor",
         "price": 3000,
-        "description": "Slashes the foe with crossed scythes or claws.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move X-Scissor."
     },
     {
         "id": 636,
-        "constantName": "ITEM_TM_ANCIENT_POWER",
-        "name": "TM55",
+        "constantName": "ITEM_TM55",
+        "name": "TM55 - Ancient Power",
         "price": 3000,
-        "description": "Throws rocks at the foe. May raise all stats.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Ancient Power."
     },
     {
         "id": 637,
-        "constantName": "ITEM_TM_ROCK_BLAST",
-        "name": "TM56",
+        "constantName": "ITEM_TM56",
+        "name": "TM56 - Rock Blast",
         "price": 3000,
-        "description": "Hurls rocks at the foe 2 to 5 times in a row.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Rock Blast."
     },
     {
         "id": 638,
-        "constantName": "ITEM_TM_CUT",
-        "name": "TM57",
-        "price": 0,
-        "description": "Attacks the foe with sharp blades or claws.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM57",
+        "name": "TM57 - Cut",
+        "price": 3000,
+        "description": "Teaches the move Cut."
     },
     {
         "id": 639,
-        "constantName": "ITEM_TM_FLY",
-        "name": "TM58",
-        "price": 0,
-        "description": "Flies up on the first turn, then attacks next turn.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM58",
+        "name": "TM58 - Fly",
+        "price": 3000,
+        "description": "Teaches the move Fly."
     },
     {
         "id": 640,
-        "constantName": "ITEM_TM_SURF",
-        "name": "TM59",
-        "price": 0,
-        "description": "Creates a huge wave, then crashes it down on the foe.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM59",
+        "name": "TM59 - Surf",
+        "price": 3000,
+        "description": "Teaches the move Surf."
     },
     {
         "id": 641,
-        "constantName": "ITEM_TM_STRENGTH",
-        "name": "TM60",
-        "price": 0,
-        "description": "Builds enormous power, then slams the foe.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM60",
+        "name": "TM60 - Strength",
+        "price": 3000,
+        "description": "Teaches the move Strength."
     },
     {
         "id": 642,
-        "constantName": "ITEM_TM_FLASH",
-        "name": "TM61",
-        "price": 0,
-        "description": "Looses a powerful blast of light that reduces accuracy.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM61",
+        "name": "TM61 - Flash",
+        "price": 3000,
+        "description": "Teaches the move Flash."
     },
     {
         "id": 643,
-        "constantName": "ITEM_TM_ROCK_SMASH",
-        "name": "TM62",
-        "price": 0,
-        "description": "A rock-crushingly tough attack that may lower Defense.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM62",
+        "name": "TM62 - Rock Smash",
+        "price": 3000,
+        "description": "Teaches the move Rock Smash."
     },
     {
         "id": 644,
-        "constantName": "ITEM_TM_WATERFALL",
-        "name": "TM63",
-        "price": 0,
-        "description": "Attacks the foe with enough power to climb waterfalls.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM63",
+        "name": "TM63 - Waterfall",
+        "price": 3000,
+        "description": "Teaches the move Waterfall."
     },
     {
         "id": 645,
-        "constantName": "ITEM_TM_DIVE",
-        "name": "TM64",
-        "price": 0,
-        "description": "Dives underwater the 1st turn, then attacks next turn.",
-        "iconPic": "",
-        "iconPalette": ""
+        "constantName": "ITEM_TM64",
+        "name": "TM64 - Dive",
+        "price": 3000,
+        "description": "Teaches the move Dive."
     },
     {
         "id": 646,
-        "constantName": "ITEM_TM_NICK",
-        "name": "TM65",
+        "constantName": "ITEM_TM65",
+        "name": "TM65 - Nick",
         "price": 3000,
-        "description": "Gently nicks the foe. Has no effect.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Nick."
     },
     {
         "id": 647,
-        "constantName": "ITEM_TM_PEBBLE_CRUSH",
-        "name": "TM66",
+        "constantName": "ITEM_TM66",
+        "name": "TM66 - Pebble Crush",
         "price": 3000,
-        "description": "Gently crushes a pebble. Has no effect.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Pebble Crush."
     },
     {
         "id": 648,
-        "constantName": "ITEM_TM_PUSH",
-        "name": "TM67",
+        "constantName": "ITEM_TM67",
+        "name": "TM67 - Push",
         "price": 3000,
-        "description": "Gently pushes the foe. Has no effect.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Push."
     },
     {
         "id": 649,
-        "constantName": "ITEM_TM_WATER_FAIL",
-        "name": "TM68",
+        "constantName": "ITEM_TM68",
+        "name": "TM68 - Water Flail",
         "price": 3000,
-        "description": "Flails up a current. Has no effect.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Water Flail."
     },
     {
         "id": 650,
-        "constantName": "ITEM_TM_SINK",
-        "name": "TM69",
+        "constantName": "ITEM_TM69",
+        "name": "TM69 - Sink",
         "price": 3000,
-        "description": "Lifelessly sinks in water. Has no effect.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Sink."
     },
     {
         "id": 651,
-        "constantName": "ITEM_TM_SPLASH",
-        "name": "TM70",
+        "constantName": "ITEM_TM70",
+        "name": "TM70 - Splash",
         "price": 3000,
-        "description": "Splashes around. Has no effect.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Splash."
     },
     {
         "id": 652,
-        "constantName": "ITEM_TM_PSYBEAM",
-        "name": "TM71",
+        "constantName": "ITEM_TM71",
+        "name": "TM71 - Psybeam",
         "price": 3000,
-        "description": "Fires an odd ray. May confuse the foe.",
-        "iconPic": "",
-        "iconPalette": ""
+        "description": "Teaches the move Psybeam."
     },
     {
         "id": 653,
@@ -6418,12 +6276,12 @@
     },
     {
         "id": 713,
-        "constantName": "ITEM_TOKU_MAP",
+        "constantName": "ITEM_TOWN_MAP",
         "name": "Toku Map",
         "price": 0,
         "description": "Can be viewed anytime. Shows your present location.",
-        "iconPic": "graphics/items/icons/toku_map.4bpp.smol",
-        "iconPalette": "graphics/items/icons/toku_map.gbapal"
+        "iconPic": "graphics/items/icons/town_map.4bpp.smol",
+        "iconPalette": "graphics/items/icons/town_map.gbapal"
     },
     {
         "id": 714,
@@ -7447,7 +7305,7 @@
         "constantName": "ITEM_POKESHI_DOLL",
         "name": "Pokéshi Doll",
         "price": 2000,
-        "description": "A wooden toy resembling a Poké- mon. Can be sold.",
+        "description": "A wooden toy resembling a Poké-. mon. Can be sold.",
         "iconPic": "graphics/items/icons/pokeshi_doll.4bpp.smol",
         "iconPalette": "graphics/items/icon_palettes/pokeshi_doll.gbapal"
     },
@@ -7462,240 +7320,6 @@
     },
     {
         "id": 829,
-        "constantName": "ITEM_CLEFABLITE",
-        "name": "Clefablite",
-        "price": 0,
-        "description": "This stone enables Clefable to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 830,
-        "constantName": "ITEM_VICTREEBELITE",
-        "name": "Victreebelite",
-        "price": 0,
-        "description": "This stone enables Victreebel to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 831,
-        "constantName": "ITEM_STARMINITE",
-        "name": "Starminite",
-        "price": 0,
-        "description": "This stone enables Starmie to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 832,
-        "constantName": "ITEM_DRAGONINITE",
-        "name": "Dragoninite",
-        "price": 0,
-        "description": "This stone enables Dragonite to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 833,
-        "constantName": "ITEM_MEGANIUMITE",
-        "name": "Meganiumite",
-        "price": 0,
-        "description": "This stone enables Meganium to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 834,
-        "constantName": "ITEM_FERALIGITE",
-        "name": "Feraligite",
-        "price": 0,
-        "description": "This stone enables Feraligatr to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 835,
-        "constantName": "ITEM_SKARMORITE",
-        "name": "Skarmorite",
-        "price": 0,
-        "description": "This stone enables Skarmory to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 836,
-        "constantName": "ITEM_FROSLASSITE",
-        "name": "Froslassite",
-        "price": 0,
-        "description": "This stone enables Froslass to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 837,
-        "constantName": "ITEM_EMBOARITE",
-        "name": "Emboarite",
-        "price": 0,
-        "description": "This stone enables Emboar to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 838,
-        "constantName": "ITEM_EXCADRITE",
-        "name": "Excadrite",
-        "price": 0,
-        "description": "This stone enables Excadrill to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 839,
-        "constantName": "ITEM_SCOLIPITE",
-        "name": "Scolipite",
-        "price": 0,
-        "description": "This stone enables Scolipede to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 840,
-        "constantName": "ITEM_SCRAFTINITE",
-        "name": "Scraftinite",
-        "price": 0,
-        "description": "This stone enables Scrafty to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 841,
-        "constantName": "ITEM_EELEKTROSSITE",
-        "name": "Eelektrossite",
-        "price": 0,
-        "description": "This stone enables Eelektross to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 842,
-        "constantName": "ITEM_CHANDELURITE",
-        "name": "Chandelurite",
-        "price": 0,
-        "description": "This stone enables Chandelure to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 843,
-        "constantName": "ITEM_CHESNAUGHTITE",
-        "name": "Chesnaughtite",
-        "price": 0,
-        "description": "This stone enables Chesnaught to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 844,
-        "constantName": "ITEM_DELPHOXITE",
-        "name": "Delphoxite",
-        "price": 0,
-        "description": "This stone enables Delphox to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 845,
-        "constantName": "ITEM_GRENINJITE",
-        "name": "Greninjite",
-        "price": 0,
-        "description": "This stone enables Greninja to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 846,
-        "constantName": "ITEM_PYROARITE",
-        "name": "Pyroarite",
-        "price": 0,
-        "description": "This stone enables Pyroar to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 847,
-        "constantName": "ITEM_FLOETTITE",
-        "name": "Floettite",
-        "price": 0,
-        "description": "This stone enables Floette to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 848,
-        "constantName": "ITEM_MALAMARITE",
-        "name": "Malamarite",
-        "price": 0,
-        "description": "This stone enables Malamar to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 849,
-        "constantName": "ITEM_BARBARACITE",
-        "name": "Barbaracite",
-        "price": 0,
-        "description": "This stone enables Barbaracle to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 850,
-        "constantName": "ITEM_DRAGALGITE",
-        "name": "Dragalgite",
-        "price": 0,
-        "description": "This stone enables Dragalge to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 851,
-        "constantName": "ITEM_HAWLUCHANITE",
-        "name": "Hawluchanite",
-        "price": 0,
-        "description": "This stone enables Hawlucha to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 852,
-        "constantName": "ITEM_ZYGARDITE",
-        "name": "Zygardite",
-        "price": 0,
-        "description": "This stone enables Zygarde to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 853,
-        "constantName": "ITEM_DRAMPANITE",
-        "name": "Drampanite",
-        "price": 0,
-        "description": "This stone enables Drampa to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 854,
-        "constantName": "ITEM_FALINKSITE",
-        "name": "Falinksite",
-        "price": 0,
-        "description": "This stone enables Falinks to Mega Evolve in battle.",
-        "iconPic": "graphics/items/icons/question_mark.4bpp.smol",
-        "iconPalette": "graphics/items/icon_palettes/question_mark.gbapal"
-    },
-    {
-        "id": 855,
         "constantName": "ITEM_FISHCAKE",
         "name": "Fishcake",
         "price": 500,
@@ -7704,7 +7328,7 @@
         "iconPalette": "graphics/items/icons/fishcake.gbapal"
     },
     {
-        "id": 856,
+        "id": 830,
         "constantName": "ITEM_REFUGE_ROOM_KEY",
         "name": "Room Key",
         "price": 0,
@@ -7713,7 +7337,7 @@
         "iconPalette": "graphics/items/icon_palettes/old_key.gbapal"
     },
     {
-        "id": 857,
+        "id": 831,
         "constantName": "ITEM_ENTEI_STATUETTE",
         "name": "Entei Statuette",
         "price": 0,
@@ -7722,7 +7346,7 @@
         "iconPalette": "graphics/items/icons/entei_statuette.gbapal"
     },
     {
-        "id": 858,
+        "id": 832,
         "constantName": "ITEM_UUMEGIRI",
         "name": "Uumegiri",
         "price": 500,
@@ -7731,7 +7355,7 @@
         "iconPalette": "graphics/items/icons/uumegiri.gbapal"
     },
     {
-        "id": 859,
+        "id": 833,
         "constantName": "ITEM_SUPERGIRI",
         "name": "Supergiri",
         "price": 800,
@@ -7740,7 +7364,7 @@
         "iconPalette": "graphics/items/icons/supergiri.gbapal"
     },
     {
-        "id": 860,
+        "id": 834,
         "constantName": "ITEM_HYPERGIRI",
         "name": "Hypergiri",
         "price": 1500,
@@ -7749,7 +7373,7 @@
         "iconPalette": "graphics/items/icons/hypergiri.gbapal"
     },
     {
-        "id": 861,
+        "id": 835,
         "constantName": "ITEM_MAXGIRI",
         "name": "Maxgiri",
         "price": 2500,
@@ -7758,7 +7382,7 @@
         "iconPalette": "graphics/items/icons/maxgiri.gbapal"
     },
     {
-        "id": 862,
+        "id": 836,
         "constantName": "ITEM_SACREDGIRI",
         "name": "Sacredgiri",
         "price": 3500,
@@ -7767,7 +7391,7 @@
         "iconPalette": "graphics/items/icons/sacredgiri.gbapal"
     },
     {
-        "id": 863,
+        "id": 837,
         "constantName": "ITEM_OINTMENT",
         "name": "Ointment",
         "price": 100,
@@ -7776,7 +7400,7 @@
         "iconPalette": "graphics/items/icons/ointment.gbapal"
     },
     {
-        "id": 864,
+        "id": 838,
         "constantName": "ITEM_SUPER_OINTMENT",
         "name": "Super Ointment",
         "price": 500,
@@ -7785,7 +7409,7 @@
         "iconPalette": "graphics/items/icon_palettes/super_ointment.gbapal"
     },
     {
-        "id": 865,
+        "id": 839,
         "constantName": "ITEM_HYPER_OINTMENT",
         "name": "Hyper Ointment",
         "price": 800,
@@ -7794,7 +7418,7 @@
         "iconPalette": "graphics/items/icon_palettes/hyper_ointment.gbapal"
     },
     {
-        "id": 866,
+        "id": 840,
         "constantName": "ITEM_MAX_OINTMENT",
         "name": "Max Ointment",
         "price": 1500,
@@ -7803,7 +7427,7 @@
         "iconPalette": "graphics/items/icon_palettes/max_ointment.gbapal"
     },
     {
-        "id": 867,
+        "id": 841,
         "constantName": "ITEM_SACRED_OINTMENT",
         "name": "Sacred Ointment",
         "price": 2000,
@@ -7812,7 +7436,7 @@
         "iconPalette": "graphics/items/icon_palettes/sacred_ointment.gbapal"
     },
     {
-        "id": 868,
+        "id": 842,
         "constantName": "ITEM_SLOWPOKE_TAIL",
         "name": "Slowpoke Tail",
         "price": 9800,
@@ -7821,7 +7445,7 @@
         "iconPalette": "graphics/items/icons/slowpoke_tail.gbapal"
     },
     {
-        "id": 869,
+        "id": 843,
         "constantName": "ITEM_ULTRA_BALL_KNOCKOFF",
         "name": "Ultro Ball",
         "price": 400,
@@ -7830,7 +7454,7 @@
         "iconPalette": "graphics/items/icons/ultra_ball_knockoff.gbapal"
     },
     {
-        "id": 870,
+        "id": 844,
         "constantName": "ITEM_ESCAPE_ROPE_KNOCKOFF",
         "name": "Excape Rope",
         "price": 550,
@@ -7839,7 +7463,7 @@
         "iconPalette": "graphics/items/icons/escape_rope.gbapal"
     },
     {
-        "id": 871,
+        "id": 845,
         "constantName": "ITEM_STOLEN_MONS",
         "name": "Stolen Pokémon",
         "price": 0,
@@ -7848,7 +7472,7 @@
         "iconPalette": "graphics/items/icon_palettes/parcel.gbapal"
     },
     {
-        "id": 872,
+        "id": 846,
         "constantName": "ITEM_REVIVAL_POWDER",
         "name": "Revival Powder",
         "price": 500,
@@ -7857,7 +7481,7 @@
         "iconPalette": "graphics/items/icons/revival_powder.gbapal"
     },
     {
-        "id": 873,
+        "id": 847,
         "constantName": "ITEM_REVIVAL_BALM",
         "name": "Revival Balm",
         "price": 800,
@@ -7866,7 +7490,7 @@
         "iconPalette": "graphics/items/icons/revival_herb.gbapal"
     },
     {
-        "id": 874,
+        "id": 848,
         "constantName": "ITEM_SECRET_CUT",
         "name": "Secret of Blade",
         "price": 0,
@@ -7875,7 +7499,7 @@
         "iconPalette": "graphics/items/icons/secrets/secret_cut.gbapal"
     },
     {
-        "id": 875,
+        "id": 849,
         "constantName": "ITEM_SECRET_SMASH",
         "name": "Secret Of Smash",
         "price": 0,
@@ -7884,7 +7508,7 @@
         "iconPalette": "graphics/items/icons/secrets/secret_smash.gbapal"
     },
     {
-        "id": 876,
+        "id": 850,
         "constantName": "ITEM_SECRET_STRENGTH",
         "name": "Secret Of Strength",
         "price": 0,
@@ -7893,7 +7517,7 @@
         "iconPalette": "graphics/items/icons/secrets/secret_strength.gbapal"
     },
     {
-        "id": 877,
+        "id": 851,
         "constantName": "ITEM_SECRET_SURF",
         "name": "Secret Of Foam",
         "price": 0,
@@ -7902,7 +7526,7 @@
         "iconPalette": "graphics/items/icons/secrets/secret_surf.gbapal"
     },
     {
-        "id": 878,
+        "id": 852,
         "constantName": "ITEM_SECRET_DIVE",
         "name": "Secret Of Depths",
         "price": 0,
@@ -7911,7 +7535,7 @@
         "iconPalette": "graphics/items/icons/secrets/secret_dive.gbapal"
     },
     {
-        "id": 879,
+        "id": 853,
         "constantName": "ITEM_SECRET_WATERFALL",
         "name": "Secret Of Currents",
         "price": 0,
@@ -7920,7 +7544,7 @@
         "iconPalette": "graphics/items/icons/secrets/secret_waterfall.gbapal"
     },
     {
-        "id": 880,
+        "id": 854,
         "constantName": "ITEM_SECRET_FLY",
         "name": "Secret Of Flight",
         "price": 0,
@@ -7929,7 +7553,7 @@
         "iconPalette": "graphics/items/icons/secrets/secret_fly.gbapal"
     },
     {
-        "id": 881,
+        "id": 855,
         "constantName": "ITEM_SECRET_CLIMB",
         "name": "Secret Of Heights",
         "price": 0,
@@ -7938,7 +7562,7 @@
         "iconPalette": "graphics/items/icons/secrets/secret_climb.gbapal"
     },
     {
-        "id": 882,
+        "id": 856,
         "constantName": "ITEM_SECRET_FLASH",
         "name": "Secret Of Light",
         "price": 0,
@@ -7947,7 +7571,7 @@
         "iconPalette": "graphics/items/icons/secrets/secret_flash.gbapal"
     },
     {
-        "id": 883,
+        "id": 857,
         "constantName": "ITEM_SPECIAL_MEDICINE",
         "name": "Superb Elixir",
         "price": 0,
@@ -7956,7 +7580,7 @@
         "iconPalette": "graphics/items/icons/special_medicine.gbapal"
     },
     {
-        "id": 884,
+        "id": 858,
         "constantName": "ITEM_SHINY_VIAL",
         "name": "Shiny Vial",
         "price": 1000,
@@ -7965,7 +7589,7 @@
         "iconPalette": "graphics/items/icons/shiny_vial.gbapal"
     },
     {
-        "id": 885,
+        "id": 859,
         "constantName": "ITEM_BEAST_BALL",
         "name": "Beast Ball",
         "price": 0,

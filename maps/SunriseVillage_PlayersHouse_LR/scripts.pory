@@ -54,6 +54,7 @@ script SunriseVillage_PlayersHouse_LR_EventScript_BigSisSaysHi {
 }
 
 script SunriseVillage_PlayersHouse_LR_EventScript_BigSis {
+	@explanation (spence, past u here, filter this one out)
 	lock
 	faceplayer
 	setspeaker(SP_NAME_BIG_SIS)
@@ -85,7 +86,7 @@ script SunriseVillage_PlayersHouse_LR_EventScript_BigSis {
 		))
 		closemessage
 
-		giveitem(ITEM_TOWN_MAP)
+		giveitem(ITEM_TOKU_MAP)
 
 		special(GetPlayerBrotherSisterString)
 		setspeaker(SP_NAME_BIG_SIS)
