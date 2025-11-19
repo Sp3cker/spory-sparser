@@ -1,14 +1,43 @@
 import path, { basename, extname } from "path";
 import { config } from "../config/index.ts";
+import { promises as fs } from "fs";
 import { readFile, copyFile } from "fs/promises";
+import { exec } from "child_process";
+import { promisify } from "util";
 import {
   PaletteApplier,
   PaletteEntry,
 } from "./PaletteApplier/PaletteApplier.ts";
 
+const execAsync = promisify(exec);
+
+async function writeWebp(input: Buffer, outputPath: string): Promise<void> {
+  const timestamp = Date.now();
+  const random = Math.random().toString(36).substring(7);
+  const tempInput = `/tmp/cwebp_input_${timestamp}_${random}.png`;
+
+  try {
+    await fs.writeFile(tempInput, input);
+  } catch (error) {
+    throw new Error(`Failed to prepare WEBP input for ${outputPath}: ${error}`);
+  }
+
+  const cmd = `cwebp -quiet -q 100 -m 6 -hint picture -near_lossless 100 -mt "${tempInput}" -o "${outputPath}"`;
+  try {
+    await execAsync(cmd);
+  } catch (error) {
+    throw new Error(`Failed to write WEBP to ${outputPath}: ${error}`);
+  } finally {
+    try {
+      await fs.unlink(tempInput);
+    } catch {
+      // ignore cleanup errors
+    }
+  }
+}
+
 (async () => {
   const applier = new PaletteApplier({ config });
-
   const teachables = await readFile(
     path.resolve(config.dataDir, "teachables.json"),
     "utf-8"
@@ -47,6 +76,15 @@ import {
       paletizedImage,
       { overwrite: true }
     );
+    
+    // Convert PNG to WebP
+    const webpPath = path.resolve(
+      config.outputDir,
+      "items/icons/tms_applied",
+      basename(imgPath).replace(/\.png$/i, ".webp")
+    );
+    await writeWebp(paletizedImage, webpPath);
+    
     paletizedSpritePaths.push(newpath);
   }
 
@@ -58,10 +96,7 @@ import {
   const tmIdsAndTypes: { id: number; iconType: string }[] = teachables.map(
     (t: any) => ({
       id: t.itemId,
-      iconType: basename(
-        t.iconType.toLowerCase(),
-        extname(t.iconType)
-      ),
+      iconType: basename(t.iconType.toLowerCase(), extname(t.iconType)),
     })
   );
   for (const tm of tmIdsAndTypes) {
@@ -79,11 +114,31 @@ import {
 
     const destinationPath = path.resolve(
       config.outputDir,
-      "items/icons/scrolls",
+      "items/processed",
       `${tm.id}.png`
     );
 
-    await copyFile(path.resolve(config.outputDir,thisTmsSpritePath), destinationPath);
+    await copyFile(
+      path.resolve(config.outputDir, thisTmsSpritePath),
+      destinationPath
+    );
+
+    // Also copy the WebP version
+    const webpSource = thisTmsSpritePath.replace(/\.png$/i, ".webp");
+    const webpDest = path.resolve(
+      config.outputDir,
+      "items/processed",
+      `${tm.id}.webp`
+    );
+    
+    try {
+      await copyFile(
+        path.resolve(config.outputDir, webpSource),
+        webpDest
+      );
+    } catch (error) {
+      console.warn(`Failed to copy WebP for TM ${tm.id}: ${error}`);
+    }
   }
   return pathsToTmSprites;
 })();
