@@ -5240,7 +5240,7 @@
     {
         "id": 582,
         "constantName": "ITEM_TM_FOCUS_PUNCH",
-        "name": "TM01",
+        "name": "Focus Punch Scroll",
         "price": 3000,
         "description": "Powerful, but makes the user flinch if hit by the foe.",
         "iconPic": "",
@@ -5249,7 +5249,7 @@
     {
         "id": 583,
         "constantName": "ITEM_TM_DRAGON_CLAW",
-        "name": "TM02",
+        "name": "Dragon Claw Scroll",
         "price": 3000,
         "description": "Hooks and slashes the foe with long, sharp claws.",
         "iconPic": "",
@@ -5258,7 +5258,7 @@
     {
         "id": 584,
         "constantName": "ITEM_TM_WATER_PULSE",
-        "name": "TM03",
+        "name": "Water Pulse Scroll",
         "price": 3000,
         "description": "Generates an ultrasonic wave that may confuse.",
         "iconPic": "",
@@ -5267,7 +5267,7 @@
     {
         "id": 585,
         "constantName": "ITEM_TM_CALM_MIND",
-        "name": "TM04",
+        "name": "Calm Mind Scroll",
         "price": 3000,
         "description": "Raises Sp. Atk and Sp. Def by focusing the mind.",
         "iconPic": "",
@@ -5276,7 +5276,7 @@
     {
         "id": 586,
         "constantName": "ITEM_TM_ROAR",
-        "name": "TM05",
+        "name": "Roar Scroll",
         "price": 1000,
         "description": "A savage roar that makes the foe flee  to end the battle.",
         "iconPic": "",
@@ -5285,7 +5285,7 @@
     {
         "id": 587,
         "constantName": "ITEM_TM_TOXIC",
-        "name": "TM06",
+        "name": "Toxic Scroll",
         "price": 3000,
         "description": "Poisons the foe with a toxin that gradually worsens.",
         "iconPic": "",
@@ -5294,7 +5294,7 @@
     {
         "id": 588,
         "constantName": "ITEM_TM_HAIL",
-        "name": "TM07",
+        "name": "Hail Scroll",
         "price": 3000,
         "description": "Creates a hailstorm that damages all types except Ice.",
         "iconPic": "",
@@ -5303,7 +5303,7 @@
     {
         "id": 589,
         "constantName": "ITEM_TM_BULK_UP",
-        "name": "TM08",
+        "name": "Bulk Up Scroll",
         "price": 3000,
         "description": "Bulks up the body to boost both Attack & Defense.",
         "iconPic": "",
@@ -5312,7 +5312,7 @@
     {
         "id": 590,
         "constantName": "ITEM_TM_BULLET_SEED",
-        "name": "TM09",
+        "name": "Bullet Seed Scroll",
         "price": 3000,
         "description": "Shoots 2 to 5 seeds in a row to strike the foe.",
         "iconPic": "",
@@ -5321,7 +5321,7 @@
     {
         "id": 591,
         "constantName": "ITEM_TM_HIDDEN_POWER",
-        "name": "TM10",
+        "name": "Hidden Power Scroll",
         "price": 3000,
         "description": "The attack power varies among different Pokémon.",
         "iconPic": "",
@@ -5330,7 +5330,7 @@
     {
         "id": 592,
         "constantName": "ITEM_TM_SUNNY_DAY",
-        "name": "TM11",
+        "name": "Sunny Day Scroll",
         "price": 2000,
         "description": "Raises the power of Fire-type moves for 5 turns.",
         "iconPic": "",
@@ -5339,7 +5339,7 @@
     {
         "id": 593,
         "constantName": "ITEM_TM_TAUNT",
-        "name": "TM12",
+        "name": "Taunt Scroll",
         "price": 3000,
         "description": "Enrages the foe so it can only use attack moves.",
         "iconPic": "",
@@ -5348,7 +5348,7 @@
     {
         "id": 594,
         "constantName": "ITEM_TM_ICE_BEAM",
-        "name": "TM13",
+        "name": "Ice Beam Scroll",
         "price": 3000,
         "description": "Fires an icy cold beam that may freeze the foe.",
         "iconPic": "",
@@ -5357,7 +5357,7 @@
     {
         "id": 595,
         "constantName": "ITEM_TM_BLIZZARD",
-        "name": "TM14",
+        "name": "Blizzard Scroll",
         "price": 5500,
         "description": "A brutal snow-and- wind attack that may freeze the foe.",
         "iconPic": "",
@@ -5366,7 +5366,7 @@
     {
         "id": 596,
         "constantName": "ITEM_TM_HYPER_BEAM",
-        "name": "TM15",
+        "name": "Hyper Beam Scroll",
         "price": 7500,
         "description": "Powerful, but needs recharging the next turn.",
         "iconPic": "",
@@ -5375,7 +5375,7 @@
     {
         "id": 597,
         "constantName": "ITEM_TM_LIGHT_SCREEN",
-        "name": "TM16",
+        "name": "Light Screen Scroll",
         "price": 3000,
         "description": "Creates a wall of light that lowers Sp. Atk damage.",
         "iconPic": "",
@@ -5384,7 +5384,7 @@
     {
         "id": 598,
         "constantName": "ITEM_TM_PROTECT",
-        "name": "TM17",
+        "name": "Protect Scroll",
         "price": 3000,
         "description": "Negates all damage, but may fail if used in succession.",
         "iconPic": "",
@@ -5393,7 +5393,7 @@
     {
         "id": 599,
         "constantName": "ITEM_TM_RAIN_DANCE",
-        "name": "TM18",
+        "name": "Rain Dance Scroll",
         "price": 2000,
         "description": "Raises the power of Water-type moves for 5 turns.",
         "iconPic": "",
@@ -5402,7 +5402,7 @@
     {
         "id": 600,
         "constantName": "ITEM_TM_GIGA_DRAIN",
-        "name": "TM19",
+        "name": "Giga Drain Scroll",
         "price": 3000,
         "description": "Recovers half the HP of the damage  this move inflicts.",
         "iconPic": "",
@@ -5411,7 +5411,7 @@
     {
         "id": 601,
         "constantName": "ITEM_TM_SAFEGUARD",
-        "name": "TM20",
+        "name": "Safeguard Scroll",
         "price": 3000,
         "description": "Prevents status abnormality with a mystical power.",
         "iconPic": "",
@@ -5420,7 +5420,7 @@
     {
         "id": 602,
         "constantName": "ITEM_TM_FRUSTRATION",
-        "name": "TM21",
+        "name": "Frustration Scroll",
         "price": 1000,
         "description": "The less the user likes you, the more powerful this move.",
         "iconPic": "",
@@ -5429,7 +5429,7 @@
     {
         "id": 603,
         "constantName": "ITEM_TM_SOLAR_BEAM",
-        "name": "TM22",
+        "name": "Solar Beam Scroll",
         "price": 3000,
         "description": "Absorbs sunlight in the 1st turn, then attacks next turn.",
         "iconPic": "",
@@ -5438,7 +5438,7 @@
     {
         "id": 604,
         "constantName": "ITEM_TM_IRON_TAIL",
-        "name": "TM23",
+        "name": "Iron Tail Scroll",
         "price": 3000,
         "description": "Slams the foe with a hard tail. It may lower Defense.",
         "iconPic": "",
@@ -5447,7 +5447,7 @@
     {
         "id": 605,
         "constantName": "ITEM_TM_THUNDERBOLT",
-        "name": "TM24",
+        "name": "Thunderbolt Scroll",
         "price": 3000,
         "description": "A powerful electric attack that may cause paralysis.",
         "iconPic": "",
@@ -5456,7 +5456,7 @@
     {
         "id": 606,
         "constantName": "ITEM_TM_THUNDER",
-        "name": "TM25",
+        "name": "Thunder Scroll",
         "price": 5500,
         "description": "Strikes the foe with a thunderbolt. It may paralyze.",
         "iconPic": "",
@@ -5465,7 +5465,7 @@
     {
         "id": 607,
         "constantName": "ITEM_TM_EARTHQUAKE",
-        "name": "TM26",
+        "name": "Earthquake Scroll",
         "price": 3000,
         "description": "Causes a quake that has no effect on flying foes.",
         "iconPic": "",
@@ -5474,7 +5474,7 @@
     {
         "id": 608,
         "constantName": "ITEM_TM_RETURN",
-        "name": "TM27",
+        "name": "Return Scroll",
         "price": 1000,
         "description": "The more the user likes you, the more powerful this move.",
         "iconPic": "",
@@ -5483,7 +5483,7 @@
     {
         "id": 609,
         "constantName": "ITEM_TM_DIG",
-        "name": "TM28",
+        "name": "Dig Scroll",
         "price": 2000,
         "description": "Digs underground the 1st turn, then strikes next turn.",
         "iconPic": "",
@@ -5492,7 +5492,7 @@
     {
         "id": 610,
         "constantName": "ITEM_TM_PSYCHIC",
-        "name": "TM29",
+        "name": "Psychic Scroll",
         "price": 2000,
         "description": "A powerful psychic attack that may lower Sp. Def.",
         "iconPic": "",
@@ -5501,7 +5501,7 @@
     {
         "id": 611,
         "constantName": "ITEM_TM_SHADOW_BALL",
-        "name": "TM30",
+        "name": "Shadow Ball Scroll",
         "price": 3000,
         "description": "Hurls a dark lump at the foe. It may lower Sp. Def.",
         "iconPic": "",
@@ -5510,7 +5510,7 @@
     {
         "id": 612,
         "constantName": "ITEM_TM_BRICK_BREAK",
-        "name": "TM31",
+        "name": "Brick Break Scroll",
         "price": 3000,
         "description": "Destroys barriers like Light Screen and causes damage.",
         "iconPic": "",
@@ -5519,7 +5519,7 @@
     {
         "id": 613,
         "constantName": "ITEM_TM_DOUBLE_TEAM",
-        "name": "TM32",
+        "name": "Double Team Scroll",
         "price": 2000,
         "description": "Creates illusory copies to enhance elusiveness.",
         "iconPic": "",
@@ -5528,7 +5528,7 @@
     {
         "id": 614,
         "constantName": "ITEM_TM_REFLECT",
-        "name": "TM33",
+        "name": "Reflect Scroll",
         "price": 3000,
         "description": "Creates a wall of light that weakens physical attacks.",
         "iconPic": "",
@@ -5537,7 +5537,7 @@
     {
         "id": 615,
         "constantName": "ITEM_TM_SHOCK_WAVE",
-        "name": "TM34",
+        "name": "Shock Wave Scroll",
         "price": 3000,
         "description": "Zaps the foe with a jolt of electricity that never misses.",
         "iconPic": "",
@@ -5546,7 +5546,7 @@
     {
         "id": 616,
         "constantName": "ITEM_TM_FLAMETHROWER",
-        "name": "TM35",
+        "name": "Flamethrower Scroll",
         "price": 3000,
         "description": "Looses a stream of fire that may burn the foe.",
         "iconPic": "",
@@ -5555,7 +5555,7 @@
     {
         "id": 617,
         "constantName": "ITEM_TM_SLUDGE_BOMB",
-        "name": "TM36",
+        "name": "Sludge Bomb Scroll",
         "price": 1000,
         "description": "Hurls sludge at the foe. It may poison the foe.",
         "iconPic": "",
@@ -5564,7 +5564,7 @@
     {
         "id": 618,
         "constantName": "ITEM_TM_SANDSTORM",
-        "name": "TM37",
+        "name": "Sandstorm Scroll",
         "price": 2000,
         "description": "Causes a sandstorm that hits the foe over several turns.",
         "iconPic": "",
@@ -5573,7 +5573,7 @@
     {
         "id": 619,
         "constantName": "ITEM_TM_FIRE_BLAST",
-        "name": "TM38",
+        "name": "Fire Blast Scroll",
         "price": 5500,
         "description": "A powerful fire attack that may burn the foe.",
         "iconPic": "",
@@ -5582,7 +5582,7 @@
     {
         "id": 620,
         "constantName": "ITEM_TM_ROCK_TOMB",
-        "name": "TM39",
+        "name": "Rock Tomb Scroll",
         "price": 3000,
         "description": "Stops the foe from moving with rocks. Lowers Speed.",
         "iconPic": "",
@@ -5591,7 +5591,7 @@
     {
         "id": 621,
         "constantName": "ITEM_TM_AERIAL_ACE",
-        "name": "TM40",
+        "name": "Aerial Ace Scroll",
         "price": 1500,
         "description": "An extremely fast attack that can't be avoided.",
         "iconPic": "",
@@ -5600,7 +5600,7 @@
     {
         "id": 622,
         "constantName": "ITEM_TM_TORMENT",
-        "name": "TM41",
+        "name": "Torment Scroll",
         "price": 3000,
         "description": "Prevents the foe from using the same move in a row.",
         "iconPic": "",
@@ -5609,7 +5609,7 @@
     {
         "id": 623,
         "constantName": "ITEM_TM_FACADE",
-        "name": "TM42",
+        "name": "Facade Scroll",
         "price": 3000,
         "description": "Raises Attack when poisoned, burned, or paralyzed.",
         "iconPic": "",
@@ -5618,7 +5618,7 @@
     {
         "id": 624,
         "constantName": "ITEM_TM_SECRET_POWER",
-        "name": "TM43",
+        "name": "Secret Power Scroll",
         "price": 3000,
         "description": "Adds an effect to attack depending on the location.",
         "iconPic": "",
@@ -5627,7 +5627,7 @@
     {
         "id": 625,
         "constantName": "ITEM_TM_REST",
-        "name": "TM44",
+        "name": "Rest Scroll",
         "price": 3000,
         "description": "The user sleeps for 2 turns to restore health and status.",
         "iconPic": "",
@@ -5636,7 +5636,7 @@
     {
         "id": 626,
         "constantName": "ITEM_TM_ATTRACT",
-        "name": "TM45",
+        "name": "Attract Scroll",
         "price": 3000,
         "description": "Makes it tough to attack a foe of the opposite gender.",
         "iconPic": "",
@@ -5645,7 +5645,7 @@
     {
         "id": 627,
         "constantName": "ITEM_TM_THIEF",
-        "name": "TM46",
+        "name": "Thief Scroll",
         "price": 3000,
         "description": "While attacking, it may steal the foe's held item.",
         "iconPic": "",
@@ -5654,7 +5654,7 @@
     {
         "id": 628,
         "constantName": "ITEM_TM_STEEL_WING",
-        "name": "TM47",
+        "name": "Steel Wing Scroll",
         "price": 3000,
         "description": "Spreads hard- edged wings and slams into the foe.",
         "iconPic": "",
@@ -5663,7 +5663,7 @@
     {
         "id": 629,
         "constantName": "ITEM_TM_SKILL_SWAP",
-        "name": "TM48",
+        "name": "Skill Swap Scroll",
         "price": 3000,
         "description": "Switches abilities with the foe on the turn this is used.",
         "iconPic": "",
@@ -5672,7 +5672,7 @@
     {
         "id": 630,
         "constantName": "ITEM_TM_SNATCH",
-        "name": "TM49",
+        "name": "Snatch Scroll",
         "price": 3000,
         "description": "Steals the effects of the move the foe is trying to use.",
         "iconPic": "",
@@ -5681,7 +5681,7 @@
     {
         "id": 631,
         "constantName": "ITEM_TM_OVERHEAT",
-        "name": "TM50",
+        "name": "Overheat Scroll",
         "price": 3000,
         "description": "Enables full-power attack, but sharply lowers Sp. Atk.",
         "iconPic": "",
@@ -5690,7 +5690,7 @@
     {
         "id": 632,
         "constantName": "ITEM_TM_WEATHER_BALL",
-        "name": "TM51",
+        "name": "Weather Ball Scroll",
         "price": 3000,
         "description": "The move's type and power change with the weather.",
         "iconPic": "",
@@ -5699,7 +5699,7 @@
     {
         "id": 633,
         "constantName": "ITEM_TM_ACROBATICS",
-        "name": "TM52",
+        "name": "Acrobatics Scroll",
         "price": 3000,
         "description": "Does more damage when the user is not holding an item.",
         "iconPic": "",
@@ -5708,7 +5708,7 @@
     {
         "id": 634,
         "constantName": "ITEM_TM_NATURE_POWER",
-        "name": "TM53",
+        "name": "Nature Power Scroll",
         "price": 3000,
         "description": "The type of attack varies depending on the location.",
         "iconPic": "",
@@ -5717,7 +5717,7 @@
     {
         "id": 635,
         "constantName": "ITEM_TM_X_SCISSOR",
-        "name": "TM54",
+        "name": "X Scissor Scroll",
         "price": 3000,
         "description": "Slashes the foe with crossed scythes or claws.",
         "iconPic": "",
@@ -5726,7 +5726,7 @@
     {
         "id": 636,
         "constantName": "ITEM_TM_ANCIENT_POWER",
-        "name": "TM55",
+        "name": "Ancient Power Scroll",
         "price": 3000,
         "description": "Throws rocks at the foe. May raise all stats.",
         "iconPic": "",
@@ -5735,7 +5735,7 @@
     {
         "id": 637,
         "constantName": "ITEM_TM_ROCK_BLAST",
-        "name": "TM56",
+        "name": "Rock Blast Scroll",
         "price": 3000,
         "description": "Hurls rocks at the foe 2 to 5 times in a row.",
         "iconPic": "",
@@ -5744,7 +5744,7 @@
     {
         "id": 638,
         "constantName": "ITEM_TM_CUT",
-        "name": "TM57",
+        "name": "Cut Scroll",
         "price": 0,
         "description": "Attacks the foe with sharp blades or claws.",
         "iconPic": "",
@@ -5753,7 +5753,7 @@
     {
         "id": 639,
         "constantName": "ITEM_TM_FLY",
-        "name": "TM58",
+        "name": "Fly Scroll",
         "price": 0,
         "description": "Flies up on the first turn, then attacks next turn.",
         "iconPic": "",
@@ -5762,7 +5762,7 @@
     {
         "id": 640,
         "constantName": "ITEM_TM_SURF",
-        "name": "TM59",
+        "name": "Surf Scroll",
         "price": 0,
         "description": "Creates a huge wave, then crashes it down on the foe.",
         "iconPic": "",
@@ -5771,7 +5771,7 @@
     {
         "id": 641,
         "constantName": "ITEM_TM_STRENGTH",
-        "name": "TM60",
+        "name": "Strength Scroll",
         "price": 0,
         "description": "Builds enormous power, then slams the foe.",
         "iconPic": "",
@@ -5780,7 +5780,7 @@
     {
         "id": 642,
         "constantName": "ITEM_TM_FLASH",
-        "name": "TM61",
+        "name": "Flash Scroll",
         "price": 0,
         "description": "Looses a powerful blast of light that reduces accuracy.",
         "iconPic": "",
@@ -5789,7 +5789,7 @@
     {
         "id": 643,
         "constantName": "ITEM_TM_ROCK_SMASH",
-        "name": "TM62",
+        "name": "Rock Smash Scroll",
         "price": 0,
         "description": "A rock-crushingly tough attack that may lower Defense.",
         "iconPic": "",
@@ -5798,7 +5798,7 @@
     {
         "id": 644,
         "constantName": "ITEM_TM_WATERFALL",
-        "name": "TM63",
+        "name": "Waterfall Scroll",
         "price": 0,
         "description": "Attacks the foe with enough power to climb waterfalls.",
         "iconPic": "",
@@ -5807,7 +5807,7 @@
     {
         "id": 645,
         "constantName": "ITEM_TM_DIVE",
-        "name": "TM64",
+        "name": "Dive Scroll",
         "price": 0,
         "description": "Dives underwater the 1st turn, then attacks next turn.",
         "iconPic": "",
@@ -5816,7 +5816,7 @@
     {
         "id": 646,
         "constantName": "ITEM_TM_NICK",
-        "name": "TM65",
+        "name": "Nick Scroll",
         "price": 3000,
         "description": "Gently nicks the foe. Has no effect.",
         "iconPic": "",
@@ -5825,7 +5825,7 @@
     {
         "id": 647,
         "constantName": "ITEM_TM_PEBBLE_CRUSH",
-        "name": "TM66",
+        "name": "Pebble Crush Scroll",
         "price": 3000,
         "description": "Gently crushes a pebble. Has no effect.",
         "iconPic": "",
@@ -5834,7 +5834,7 @@
     {
         "id": 648,
         "constantName": "ITEM_TM_PUSH",
-        "name": "TM67",
+        "name": "Push Scroll",
         "price": 3000,
         "description": "Gently pushes the foe. Has no effect.",
         "iconPic": "",
@@ -5843,7 +5843,7 @@
     {
         "id": 649,
         "constantName": "ITEM_TM_WATER_FAIL",
-        "name": "TM68",
+        "name": "Water Fail Scroll",
         "price": 3000,
         "description": "Flails up a current. Has no effect.",
         "iconPic": "",
@@ -5852,7 +5852,7 @@
     {
         "id": 650,
         "constantName": "ITEM_TM_SINK",
-        "name": "TM69",
+        "name": "Sink Scroll",
         "price": 3000,
         "description": "Lifelessly sinks in water. Has no effect.",
         "iconPic": "",
@@ -5861,7 +5861,7 @@
     {
         "id": 651,
         "constantName": "ITEM_TM_SPLASH",
-        "name": "TM70",
+        "name": "Splash Scroll",
         "price": 3000,
         "description": "Splashes around. Has no effect.",
         "iconPic": "",
@@ -5870,7 +5870,7 @@
     {
         "id": 652,
         "constantName": "ITEM_TM_PSYBEAM",
-        "name": "TM71",
+        "name": "Psybeam Scroll",
         "price": 3000,
         "description": "Fires an odd ray. May confuse the foe.",
         "iconPic": "",
@@ -5879,7 +5879,7 @@
     {
         "id": 653,
         "constantName": "ITEM_TM72",
-        "name": "TM72",
+        "name": "Item Tm72 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5888,7 +5888,7 @@
     {
         "id": 654,
         "constantName": "ITEM_TM73",
-        "name": "TM73",
+        "name": "Item Tm73 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5897,7 +5897,7 @@
     {
         "id": 655,
         "constantName": "ITEM_TM74",
-        "name": "TM74",
+        "name": "Item Tm74 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5906,7 +5906,7 @@
     {
         "id": 656,
         "constantName": "ITEM_TM75",
-        "name": "TM75",
+        "name": "Item Tm75 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5915,7 +5915,7 @@
     {
         "id": 657,
         "constantName": "ITEM_TM76",
-        "name": "TM76",
+        "name": "Item Tm76 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5924,7 +5924,7 @@
     {
         "id": 658,
         "constantName": "ITEM_TM77",
-        "name": "TM77",
+        "name": "Item Tm77 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5933,7 +5933,7 @@
     {
         "id": 659,
         "constantName": "ITEM_TM78",
-        "name": "TM78",
+        "name": "Item Tm78 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5942,7 +5942,7 @@
     {
         "id": 660,
         "constantName": "ITEM_TM79",
-        "name": "TM79",
+        "name": "Item Tm79 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5951,7 +5951,7 @@
     {
         "id": 661,
         "constantName": "ITEM_TM80",
-        "name": "TM80",
+        "name": "Item Tm80 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5960,7 +5960,7 @@
     {
         "id": 662,
         "constantName": "ITEM_TM81",
-        "name": "TM81",
+        "name": "Item Tm81 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5969,7 +5969,7 @@
     {
         "id": 663,
         "constantName": "ITEM_TM82",
-        "name": "TM82",
+        "name": "Item Tm82 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5978,7 +5978,7 @@
     {
         "id": 664,
         "constantName": "ITEM_TM83",
-        "name": "TM83",
+        "name": "Item Tm83 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5987,7 +5987,7 @@
     {
         "id": 665,
         "constantName": "ITEM_TM84",
-        "name": "TM84",
+        "name": "Item Tm84 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -5996,7 +5996,7 @@
     {
         "id": 666,
         "constantName": "ITEM_TM85",
-        "name": "TM85",
+        "name": "Item Tm85 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6005,7 +6005,7 @@
     {
         "id": 667,
         "constantName": "ITEM_TM86",
-        "name": "TM86",
+        "name": "Item Tm86 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6014,7 +6014,7 @@
     {
         "id": 668,
         "constantName": "ITEM_TM87",
-        "name": "TM87",
+        "name": "Item Tm87 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6023,7 +6023,7 @@
     {
         "id": 669,
         "constantName": "ITEM_TM88",
-        "name": "TM88",
+        "name": "Item Tm88 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6032,7 +6032,7 @@
     {
         "id": 670,
         "constantName": "ITEM_TM89",
-        "name": "TM89",
+        "name": "Item Tm89 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6041,7 +6041,7 @@
     {
         "id": 671,
         "constantName": "ITEM_TM90",
-        "name": "TM90",
+        "name": "Item Tm90 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6050,7 +6050,7 @@
     {
         "id": 672,
         "constantName": "ITEM_TM91",
-        "name": "TM91",
+        "name": "Item Tm91 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6059,7 +6059,7 @@
     {
         "id": 673,
         "constantName": "ITEM_TM92",
-        "name": "TM92",
+        "name": "Item Tm92 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6068,7 +6068,7 @@
     {
         "id": 674,
         "constantName": "ITEM_TM93",
-        "name": "TM93",
+        "name": "Item Tm93 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6077,7 +6077,7 @@
     {
         "id": 675,
         "constantName": "ITEM_TM94",
-        "name": "TM94",
+        "name": "Item Tm94 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6086,7 +6086,7 @@
     {
         "id": 676,
         "constantName": "ITEM_TM95",
-        "name": "TM95",
+        "name": "Item Tm95 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6095,7 +6095,7 @@
     {
         "id": 677,
         "constantName": "ITEM_TM96",
-        "name": "TM96",
+        "name": "Item Tm96 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6104,7 +6104,7 @@
     {
         "id": 678,
         "constantName": "ITEM_TM97",
-        "name": "TM97",
+        "name": "Item Tm97 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6113,7 +6113,7 @@
     {
         "id": 679,
         "constantName": "ITEM_TM98",
-        "name": "TM98",
+        "name": "Item Tm98 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6122,7 +6122,7 @@
     {
         "id": 680,
         "constantName": "ITEM_TM99",
-        "name": "TM99",
+        "name": "Item Tm99 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",
@@ -6131,7 +6131,7 @@
     {
         "id": 681,
         "constantName": "ITEM_TM100",
-        "name": "TM100",
+        "name": "Item Tm100 Scroll",
         "price": 3000,
         "description": "sQuestionMarksDesc",
         "iconPic": "",

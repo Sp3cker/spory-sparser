@@ -16,6 +16,7 @@
     "applyPalettes": "node build/newSpriteGenerator/applyGraphicPalettes.js",
     "trainers": "tsx src/util/findNonTrainerTrainers.ts",
     "missing-exp": "npx tsx src/scripts/logScriptsWithoutExplanations.ts",
+    "rename-tms": "tsx utils/renameTMs.ts",
     "test": "ava"
   },
   "devDependencies": {
