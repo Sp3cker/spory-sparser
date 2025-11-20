@@ -27,6 +27,7 @@ export const IncBattleSchema = z.object({
   trainerIds: z.array(z.string()).min(1),
   battlePicPaths: z.array(z.string()).min(1),
   rematch: z.boolean().optional(),
+  mugshotConstant: z.string().optional(),
 });
 /** Item given to player in .inc file */
 export const IncItemEntrySchema = z.object({

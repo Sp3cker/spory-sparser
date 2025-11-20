@@ -68,7 +68,7 @@ export default async (config: Config) => {
   for (const trainerGraphic of validTrainerGraphics) {
     const relativeWebpPath = path.join(
       "trainers",
-      "processed",
+      "raw",
       `${trainerGraphic.name}.webp`
     );
     const absoluteWebpPath = path.resolve(config.outputDir, relativeWebpPath);

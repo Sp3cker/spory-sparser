@@ -85,8 +85,9 @@
             "TRAINER_KARU"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_KARU.webp"
-          ]
+            "trainers/raw/TRAINER_KARU.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_LASS"
         },
         {
           "script": "BeachboundRoute_EventScript_Kin",
@@ -95,8 +96,9 @@
             "TRAINER_KIN"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_KIN.webp"
-          ]
+            "trainers/raw/TRAINER_KIN.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_BATTLE_GIRL"
         },
         {
           "script": "BeachboundRoute_EventScript_Kouta",
@@ -105,8 +107,9 @@
             "TRAINER_KOUTA"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_KOUTA.webp"
-          ]
+            "trainers/raw/TRAINER_KOUTA.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_YOUNGSTER"
         },
         {
           "script": "BeachboundRoute_EventScript_Masato",
@@ -115,18 +118,17 @@
             "TRAINER_MASATO_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MASATO_1.webp"
-          ]
+            ""
+          ],
+          "mugshotConstant": "MUGSHOT_BUG_CATCHER"
         },
         {
           "script": "BeachboundRoute_EventScript_Masato",
           "battleType": "single",
           "trainerIds": [
-            "TRAINER_MASATO_1",
-            "format"
+            "TRAINER_MASATO_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MASATO_1.webp",
             ""
           ],
           "rematch": true
@@ -135,10 +137,12 @@
           "script": "BeachboundRoute_EventScript_Mugging",
           "battleType": "double",
           "trainerIds": [
-            "TRAINER_GRUNT_BEACHBOUND_ROUTE_1"
+            "TRAINER_GRUNT_BEACHBOUND_ROUTE_1",
+            "TRAINER_GRUNT_BEACHBOUND_ROUTE_2"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_GRUNT_BEACHBOUND_ROUTE_1.webp"
+            "",
+            ""
           ]
         }
       ]
@@ -177,20 +181,24 @@
           "script": "ChiiTown_EventScript_BattlingGirl",
           "battleType": "double",
           "trainerIds": [
-            "TRAINER_MINORI"
+            "TRAINER_MINORI",
+            "TRAINER_KAITO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MINORI.webp"
+            "trainers/raw/TRAINER_MINORI.webp",
+            "trainers/raw/TRAINER_KAITO.webp"
           ]
         },
         {
           "script": "ChiiTown_EventScript_BattlingBoy",
           "battleType": "double",
           "trainerIds": [
-            "TRAINER_MINORI"
+            "TRAINER_MINORI",
+            "TRAINER_KAITO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MINORI.webp"
+            "trainers/raw/TRAINER_MINORI.webp",
+            "trainers/raw/TRAINER_KAITO.webp"
           ]
         }
       ]
@@ -288,8 +296,9 @@
             "TRAINER_GRUNT_CROBAT_HIDEOUT_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_1.webp"
-          ]
+            ""
+          ],
+          "mugshotConstant": "MUGSHOT_ZUBAT"
         },
         {
           "script": "CrobatHideout_1F_EventScript_GruntPaintingPokeballs",
@@ -298,8 +307,9 @@
             "TRAINER_GRUNT_CROBAT_HIDEOUT_2"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_2.webp"
-          ]
+            ""
+          ],
+          "mugshotConstant": "MUGSHOT_ZUBAT"
         },
         {
           "script": "CrobatHideout_1F_EventScript_GruntLaundryRoom",
@@ -308,8 +318,9 @@
             "TRAINER_GRUNT_CROBAT_HIDEOUT_3"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_3.webp"
-          ]
+            ""
+          ],
+          "mugshotConstant": "MUGSHOT_ZUBAT"
         },
         {
           "script": "CrobatHideout_1F_EventScript_GruntDoubleGirl",
@@ -318,8 +329,9 @@
             "TRAINER_GRUNT_CROBAT_HIDEOUT_4"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_4.webp"
-          ]
+            ""
+          ],
+          "mugshotConstant": "MUGSHOT_ZUBAT"
         },
         {
           "script": "CrobatHideout_1F_EventScript_GruntDoubleGuy",
@@ -328,8 +340,9 @@
             "TRAINER_GRUNT_CROBAT_HIDEOUT_5"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_5.webp"
-          ]
+            ""
+          ],
+          "mugshotConstant": "MUGSHOT_ZUBAT"
         },
         {
           "script": "CrobatHideout_1F_EventScript_GruntNearReunionRoom",
@@ -338,17 +351,20 @@
             "TRAINER_GRUNT_CROBAT_HIDEOUT_6"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_6.webp"
-          ]
+            ""
+          ],
+          "mugshotConstant": "MUGSHOT_ZUBAT"
         },
         {
           "script": "CrobatHideout_1F_BattleSamuraiBackToBack",
           "battleType": "double",
           "trainerIds": [
-            "TRAINER_GRUNT_CROBAT_HIDEOUT_7"
+            "TRAINER_GRUNT_CROBAT_HIDEOUT_7",
+            "TRAINER_GRUNT_CROBAT_HIDEOUT_8"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_GRUNT_CROBAT_HIDEOUT_7.webp"
+            "",
+            ""
           ]
         }
       ]
@@ -418,8 +434,9 @@
             "TRAINER_TOSHIKI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_TOSHIKI.webp"
-          ]
+            "trainers/raw/TRAINER_TOSHIKI.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_BUG_CATCHER"
         },
         {
           "script": "GinkoWoods_EventScript_Toshio",
@@ -428,18 +445,17 @@
             "TRAINER_TOSHIO_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_TOSHIO_1.webp"
-          ]
+            ""
+          ],
+          "mugshotConstant": "MUGSHOT_YOUNGSTER"
         },
         {
           "script": "GinkoWoods_EventScript_Toshio",
           "battleType": "single",
           "trainerIds": [
-            "TRAINER_TOSHIO_1",
-            "format"
+            "TRAINER_TOSHIO_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_TOSHIO_1.webp",
             ""
           ],
           "rematch": true
@@ -451,8 +467,9 @@
             "TRAINER_EIJI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_EIJI.webp"
-          ]
+            "trainers/raw/TRAINER_EIJI.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_BUG_CATCHER"
         }
       ]
     }
@@ -485,8 +502,9 @@
             "TRAINER_KOUGA"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_KOUGA.webp"
-          ]
+            "trainers/raw/TRAINER_KOUGA.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_MONK"
         }
       ]
     }
@@ -615,8 +633,9 @@
             "TRAINER_MATSU"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MATSU.webp"
-          ]
+            "trainers/raw/TRAINER_MATSU.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_SAKURA_OLD_MAN"
         },
         {
           "script": "KuraTown_Dojo_EventScript_Kiku",
@@ -625,8 +644,9 @@
             "TRAINER_KIKU"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_KIKU.webp"
-          ]
+            "trainers/raw/TRAINER_KIKU.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_AROMA_LADY"
         },
         {
           "script": "KuraTown_Dojo_EventScript_Laura",
@@ -635,8 +655,9 @@
             "TRAINER_AYAME"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_AYAME.webp"
-          ]
+            "trainers/raw/TRAINER_AYAME.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_GARDENER"
         },
         {
           "script": "KuraTown_Dojo_EventScript_Brenden",
@@ -645,8 +666,9 @@
             "TRAINER_TSUBAKI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_TSUBAKI.webp"
-          ]
+            "trainers/raw/TRAINER_TSUBAKI.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_LASS"
         },
         {
           "script": "KuraTown_Dojo_EventScript_Cristian",
@@ -655,8 +677,9 @@
             "TRAINER_AJISAI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_AJISAI.webp"
-          ]
+            "trainers/raw/TRAINER_AJISAI.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_SAKURA_OLD_WOMAN"
         },
         {
           "script": "KuraTown_Dojo_EventScript_Lilith",
@@ -665,8 +688,9 @@
             "TRAINER_SUMIRE"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_SUMIRE.webp"
-          ]
+            "trainers/raw/TRAINER_SUMIRE.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_GARDENER"
         },
         {
           "script": "KuraTown_Dojo_EventScript_Hana",
@@ -675,8 +699,9 @@
             "TRAINER_HANA_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_HANA_1.webp"
-          ]
+            ""
+          ],
+          "mugshotConstant": "MUGSHOT_HANA"
         },
         {
           "script": "KuraTown_Dojo_EventScript_Hana",
@@ -685,8 +710,9 @@
             "TRAINER_HANA_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_HANA_1.webp"
-          ]
+            ""
+          ],
+          "mugshotConstant": "MUGSHOT_HANA"
         }
       ]
     },
@@ -801,8 +827,9 @@
             "TRAINER_KOISHI_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_KOISHI_1.webp"
-          ]
+            ""
+          ],
+          "mugshotConstant": "MUGSHOT_KOISHI"
         },
         {
           "script": "MaguroHarbor_Dojo_EventScript_Izumi",
@@ -811,8 +838,9 @@
             "TRAINER_IZUMI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_IZUMI.webp"
-          ]
+            "trainers/raw/TRAINER_IZUMI.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_MASQUERAIN_GIRL"
         },
         {
           "script": "MaguroHarbor_Dojo_EventScript_Ren",
@@ -821,7 +849,7 @@
             "TRAINER_REN"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_REN.webp"
+            "trainers/raw/TRAINER_REN.webp"
           ]
         },
         {
@@ -831,8 +859,9 @@
             "TRAINER_MIZU"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MIZU.webp"
-          ]
+            "trainers/raw/TRAINER_MIZU.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_HOT_SPRING_F"
         }
       ]
     },
@@ -863,7 +892,7 @@
             "TRAINER_HARIKO_MAGURO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_HARIKO_MAGURO.webp"
+            "trainers/raw/TRAINER_HARIKO_MAGURO.webp"
           ]
         }
       ]
@@ -901,8 +930,9 @@
             "TRAINER_JUNKO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_JUNKO.webp"
-          ]
+            "trainers/raw/TRAINER_JUNKO.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_LASS"
         },
         {
           "script": "OrchardPath_EventScript_Mami",
@@ -911,8 +941,9 @@
             "TRAINER_MAMI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MAMI.webp"
-          ]
+            "trainers/raw/TRAINER_MAMI.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_HEX_MANIAC"
         },
         {
           "script": "OrchardPath_EventScript_RockSmashBrokeMyRocks",
@@ -921,7 +952,7 @@
             "TRAINER_ROCK_SMASH_GUY"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_ROCK_SMASH_GUY.webp"
+            "trainers/raw/TRAINER_ROCK_SMASH_GUY.webp"
           ]
         }
       ]
@@ -987,36 +1018,30 @@
           "script": "SakuTown_EventScript_RivalAtSakuWall",
           "battleType": "single",
           "trainerIds": [
-            "TRAINER_RIVAL_SAKU_SNIVY",
-            "SakuTown_Text_RivalDefeat"
+            "TRAINER_RIVAL_SAKU_SNIVY"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_RIVAL_SAKU_SNIVY.webp",
-            ""
+            "trainers/raw/TRAINER_RIVAL_SAKU_SNIVY.webp"
           ]
         },
         {
           "script": "SakuTown_EventScript_RivalAtSakuWall",
           "battleType": "single",
           "trainerIds": [
-            "TRAINER_RIVAL_SAKU_FROAKIE",
-            "SakuTown_Text_RivalDefeat"
+            "TRAINER_RIVAL_SAKU_FROAKIE"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_RIVAL_SAKU_FROAKIE.webp",
-            ""
+            "trainers/raw/TRAINER_RIVAL_SAKU_FROAKIE.webp"
           ]
         },
         {
           "script": "SakuTown_EventScript_RivalAtSakuWall",
           "battleType": "single",
           "trainerIds": [
-            "TRAINER_RIVAL_SAKU_CYNDAQUIL",
-            "SakuTown_Text_RivalDefeat"
+            "TRAINER_RIVAL_SAKU_CYNDAQUIL"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_RIVAL_SAKU_CYNDAQUIL.webp",
-            ""
+            "trainers/raw/TRAINER_RIVAL_SAKU_CYNDAQUIL.webp"
           ]
         },
         {
@@ -1026,7 +1051,7 @@
             "TRAINER_TAMAS_DAD"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_TAMAS_DAD.webp"
+            "trainers/raw/TRAINER_TAMAS_DAD.webp"
           ]
         }
       ]
@@ -1152,8 +1177,9 @@
             "TRAINER_KENTO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_KENTO.webp"
-          ]
+            "trainers/raw/TRAINER_KENTO.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_MINER"
         },
         {
           "script": "SilverTunnel_1F_EventScript_Shuya",
@@ -1162,8 +1188,9 @@
             "TRAINER_SHUYA"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_SHUYA.webp"
-          ]
+            "trainers/raw/TRAINER_SHUYA.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_MINER"
         },
         {
           "script": "SilverTunnel_1F_EventScript_Yoru",
@@ -1172,8 +1199,9 @@
             "TRAINER_YORU"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_YORU.webp"
-          ]
+            "trainers/raw/TRAINER_YORU.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_HEX_MANIAC"
         }
       ]
     },
@@ -1224,8 +1252,9 @@
             "TRAINER_TAMA"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_TAMA.webp"
-          ]
+            "trainers/raw/TRAINER_TAMA.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_GEM_MANIAC"
         },
         {
           "script": "SilverTunnel_2F_EventScript_Kansaku",
@@ -1234,8 +1263,9 @@
             "TRAINER_IKUTO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_IKUTO.webp"
-          ]
+            "trainers/raw/TRAINER_IKUTO.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_MINER"
         }
       ]
     }
@@ -1349,12 +1379,10 @@
           "script": "Silveridge_Refuge_EventScript_Shamisen",
           "battleType": "single",
           "trainerIds": [
-            "TRAINER_SHAMISEN",
-            "format"
+            "TRAINER_SHAMISEN"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_SHAMISEN.webp",
-            ""
+            "trainers/raw/TRAINER_SHAMISEN.webp"
           ]
         }
       ]
@@ -1482,36 +1510,30 @@
           "script": "SunriseVillage_EldersHouse_EventScript_RivalBattle",
           "battleType": "single",
           "trainerIds": [
-            "TRAINER_RIVAL_FIRST_BATTLE_FROAKIE",
-            "format"
+            "TRAINER_RIVAL_FIRST_BATTLE_FROAKIE"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_RIVAL_FIRST_BATTLE_FROAKIE.webp",
-            ""
+            "trainers/raw/TRAINER_RIVAL_FIRST_BATTLE_FROAKIE.webp"
           ]
         },
         {
           "script": "SunriseVillage_EldersHouse_EventScript_RivalBattle",
           "battleType": "single",
           "trainerIds": [
-            "TRAINER_RIVAL_FIRST_BATTLE_SNIVY",
-            "format"
+            "TRAINER_RIVAL_FIRST_BATTLE_SNIVY"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_RIVAL_FIRST_BATTLE_SNIVY.webp",
-            ""
+            "trainers/raw/TRAINER_RIVAL_FIRST_BATTLE_SNIVY.webp"
           ]
         },
         {
           "script": "SunriseVillage_EldersHouse_EventScript_RivalBattle",
           "battleType": "single",
           "trainerIds": [
-            "TRAINER_RIVAL_FIRST_BATTLE_CYNDAQUIL",
-            "format"
+            "TRAINER_RIVAL_FIRST_BATTLE_CYNDAQUIL"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_RIVAL_FIRST_BATTLE_CYNDAQUIL.webp",
-            ""
+            "trainers/raw/TRAINER_RIVAL_FIRST_BATTLE_CYNDAQUIL.webp"
           ]
         }
       ]
@@ -1631,8 +1653,9 @@
             "TRAINER_CHIKAO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_CHIKAO.webp"
-          ]
+            "trainers/raw/TRAINER_CHIKAO.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_SCHOOL_KID_M"
         },
         {
           "script": "TranquilRoute_EventScript_Kodomo",
@@ -1641,8 +1664,9 @@
             "TRAINER_KODOMO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_KODOMO.webp"
-          ]
+            "trainers/raw/TRAINER_KODOMO.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_YOUNGSTER"
         },
         {
           "script": "TranquilRoute_EventScript_Takeshi",
@@ -1651,8 +1675,9 @@
             "TRAINER_TAKESHI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_TAKESHI.webp"
-          ]
+            "trainers/raw/TRAINER_TAKESHI.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_NINJA_BOY"
         },
         {
           "script": "TranquilRoute_EventScript_Hana",
@@ -1661,8 +1686,9 @@
             "TRAINER_HIINA"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_HIINA.webp"
-          ]
+            "trainers/raw/TRAINER_HIINA.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_MASQUERAIN_GIRL"
         },
         {
           "script": "TranquilRoute_EventScript_Kenji",
@@ -1671,8 +1697,9 @@
             "TRAINER_KENJI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_KENJI.webp"
-          ]
+            "trainers/raw/TRAINER_KENJI.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_ARTIST"
         }
       ]
     },
@@ -1811,8 +1838,9 @@
             "TRAINER_ITSUMI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_ITSUMI.webp"
-          ]
+            "trainers/raw/TRAINER_ITSUMI.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_BREEDER_F"
         },
         {
           "script": "WhiteslateRoute_EventScript_Ryosuke",
@@ -1821,8 +1849,9 @@
             "TRAINER_RYOSUKE"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_RYOSUKE.webp"
-          ]
+            "trainers/raw/TRAINER_RYOSUKE.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_BREEDER_M"
         },
         {
           "script": "WhiteslateRoute_EventScript_Riku",
@@ -1831,8 +1860,9 @@
             "TRAINER_RIKU"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_RIKU.webp"
-          ]
+            "trainers/raw/TRAINER_RIKU.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_NINJA_BOY"
         },
         {
           "script": "WhiteslateRoute_EventScript_Tomomi",
@@ -1841,7 +1871,7 @@
             "TRAINER_TOMOMI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_TOMOMI.webp"
+            "trainers/raw/TRAINER_TOMOMI.webp"
           ]
         },
         {
@@ -1851,7 +1881,7 @@
             "TRAINER_YONO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_YONO.webp"
+            "trainers/raw/TRAINER_YONO.webp"
           ]
         },
         {
@@ -1861,8 +1891,9 @@
             "TRAINER_SUMI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_SUMI.webp"
-          ]
+            "trainers/raw/TRAINER_SUMI.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_HEX_MANIAC"
         },
         {
           "script": "WhiteslateRoute_EventScript_Tomiko",
@@ -1871,8 +1902,9 @@
             "TRAINER_TOMIKO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_TOMIKO.webp"
-          ]
+            "trainers/raw/TRAINER_TOMIKO.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_LASS"
         },
         {
           "script": "WhiteslateRoute_EventScript_Utaro",
@@ -1881,8 +1913,9 @@
             "TRAINER_UTARO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_UTARO.webp"
-          ]
+            "trainers/raw/TRAINER_UTARO.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_YOUNGSTER"
         },
         {
           "script": "WhiteslateRoute_EventScript_Asagao",
@@ -1891,8 +1924,9 @@
             "TRAINER_UTARO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_UTARO.webp"
-          ]
+            "trainers/raw/TRAINER_UTARO.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_AROMA_LADY"
         }
       ]
     }
@@ -1921,8 +1955,9 @@
             "TRAINER_MUSASHI_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MUSASHI_1.webp"
-          ]
+            ""
+          ],
+          "mugshotConstant": "MUGSHOT_BATTLE_GUY"
         },
         {
           "script": "WindsweptRoute_EventScript_Itamae",
@@ -1931,8 +1966,9 @@
             "TRAINER_ITAMAE"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_ITAMAE.webp"
-          ]
+            "trainers/raw/TRAINER_ITAMAE.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_COOK"
         },
         {
           "script": "WindsweptRoute_EventScript_Trainer3",
@@ -1941,7 +1977,7 @@
             "TRAINER_MAKOTO_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MAKOTO_1.webp"
+            ""
           ]
         },
         {
@@ -1951,7 +1987,7 @@
             "TRAINER_ROKU"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_ROKU.webp"
+            "trainers/raw/TRAINER_ROKU.webp"
           ]
         },
         {
@@ -1961,7 +1997,7 @@
             "TRAINER_MUSASHI_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MUSASHI_1.webp"
+            ""
           ]
         },
         {
@@ -1971,7 +2007,7 @@
             "TRAINER_MUSASHI_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MUSASHI_1.webp"
+            ""
           ]
         },
         {
@@ -1981,7 +2017,7 @@
             "TRAINER_MUSASHI_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MUSASHI_1.webp"
+            ""
           ]
         }
       ]
@@ -2162,30 +2198,36 @@
           "script": "YifuCity_Dojo_EventScript_Dance1",
           "battleType": "double",
           "trainerIds": [
-            "TRAINER_AKARI"
+            "TRAINER_AKARI",
+            "TRAINER_YUKA"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_AKARI.webp"
+            "trainers/raw/TRAINER_AKARI.webp",
+            "trainers/raw/TRAINER_YUKA.webp"
           ]
         },
         {
           "script": "YifuCity_Dojo_EventScript_Dance2",
           "battleType": "double",
           "trainerIds": [
-            "TRAINER_KARIN"
+            "TRAINER_KARIN",
+            "TRAINER_MIIKA"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_KARIN.webp"
+            "trainers/raw/TRAINER_KARIN.webp",
+            "trainers/raw/TRAINER_MIIKA.webp"
           ]
         },
         {
           "script": "YifuCity_Dojo_EventScript_Dance3",
           "battleType": "double",
           "trainerIds": [
-            "TRAINER_NANAMI"
+            "TRAINER_NANAMI",
+            "TRAINER_KANAE"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_NANAMI.webp"
+            "trainers/raw/TRAINER_NANAMI.webp",
+            "trainers/raw/TRAINER_KANAE.webp"
           ]
         },
         {
@@ -2195,7 +2237,7 @@
             "TRAINER_AKARI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_AKARI.webp"
+            "trainers/raw/TRAINER_AKARI.webp"
           ]
         },
         {
@@ -2205,7 +2247,7 @@
             "TRAINER_YUKA"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_YUKA.webp"
+            "trainers/raw/TRAINER_YUKA.webp"
           ]
         },
         {
@@ -2215,7 +2257,7 @@
             "TRAINER_NANAMI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_NANAMI.webp"
+            "trainers/raw/TRAINER_NANAMI.webp"
           ]
         },
         {
@@ -2225,7 +2267,7 @@
             "TRAINER_KANAE"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_KANAE.webp"
+            "trainers/raw/TRAINER_KANAE.webp"
           ]
         },
         {
@@ -2235,7 +2277,7 @@
             "TRAINER_KARIN"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_KARIN.webp"
+            "trainers/raw/TRAINER_KARIN.webp"
           ]
         },
         {
@@ -2245,7 +2287,7 @@
             "TRAINER_MIIKA"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_MIIKA.webp"
+            "trainers/raw/TRAINER_MIIKA.webp"
           ]
         },
         {
@@ -2255,7 +2297,7 @@
             "TRAINER_YUTAKA_1"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_YUTAKA_1.webp"
+            ""
           ]
         }
       ]
@@ -2273,8 +2315,9 @@
             "TRAINER_SACHIKO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_SACHIKO.webp"
-          ]
+            "trainers/raw/TRAINER_SACHIKO.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_UUME_OLD_WOMAN"
         },
         {
           "script": "YifuCity_HotSprings_EventScript_HotSpringM",
@@ -2283,8 +2326,9 @@
             "TRAINER_FUTOSHI"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_FUTOSHI.webp"
-          ]
+            "trainers/raw/TRAINER_FUTOSHI.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_HOT_SPRING_M"
         },
         {
           "script": "YifuCity_HotSprings_EventScript_HotSpringF",
@@ -2293,8 +2337,9 @@
             "TRAINER_WAKAE"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_WAKAE.webp"
-          ]
+            "trainers/raw/TRAINER_WAKAE.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_HOT_SPRING_F"
         },
         {
           "script": "YifuCity_HotSprings_EventScript_Firebringer",
@@ -2303,7 +2348,7 @@
             "TRAINER_LIHUO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_LIHUO.webp"
+            "trainers/raw/TRAINER_LIHUO.webp"
           ]
         }
       ]
@@ -2391,8 +2436,9 @@
             "TRAINER_YAMATO"
           ],
           "battlePicPaths": [
-            "trainers/processed/TRAINER_YAMATO.webp"
-          ]
+            "trainers/raw/TRAINER_YAMATO.webp"
+          ],
+          "mugshotConstant": "MUGSHOT_UUME_OLD_MAN"
         }
       ]
     }

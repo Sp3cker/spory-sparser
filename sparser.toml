@@ -8,3 +8,14 @@ output = "/generated"
 [scriptNamesToLevels]
 PLAYERSHOUSE = "LITTLEROOT_TOWN"
 CONTESTHALL = "LILYCOVE_CITY"
+
+# Names of battles that are against the rival
+[battles]
+rivalBattles = [
+    "TRAINER_RIVAL_SAKU_SNIVY",
+    "TRAINER_RIVAL_SAKU_FROAKIE",
+    "TRAINER_RIVAL_SAKU_CYNDAQUIL",
+    "TRAINER_RIVAL_FIRST_BATTLE_FROAKIE",
+    "TRAINER_RIVAL_FIRST_BATTLE_SNIVY",
+    "TRAINER_RIVAL_FIRST_BATTLE_CYNDAQUIL"
+]
