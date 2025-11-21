@@ -1,9 +1,48 @@
 import { IncBattle, IncBattleSchema } from "../../validators/levelIncData.ts";
 import joinTrainerGraphics from "./joinTrainerGraphics.ts";
+import {
+  loadMugshotDirectories,
+  matchMugshotsToOverworld,
+} from "./mugshots.ts";
 import { config } from "../../config/index.js";
 import type { BattleType } from "../../validators/battleRecord.ts";
+import { getMugshotOverrideForTrainer } from "./mugshotOverrides.ts";
 
 const trainerPics = await joinTrainerGraphics(config);
+const mugshotDirectories = await loadMugshotDirectories(config);
+const mugshotOverworldMatches = await matchMugshotsToOverworld(
+  config,
+  mugshotDirectories
+);
+
+const toArray = (value?: string | string[]) => {
+  if (!value) return [];
+  return Array.isArray(value) ? value : [value];
+};
+
+const resolveMugshotOverworldId = (
+  trainerIds: string[],
+  battleType: BattleType,
+  inferredValue?: string | string[]
+): string | string[] | undefined => {
+  const inferred = toArray(inferredValue);
+  const overrides = trainerIds.map((trainerId) =>
+    getMugshotOverrideForTrainer(trainerId)
+  );
+
+  if (battleType === "double") {
+    const fallback = inferred[0];
+    const resolved = trainerIds.map((_, index) => {
+      const override = overrides[index];
+      if (override) return override;
+      return inferred[index] ?? fallback;
+    });
+    const defined = resolved.filter(Boolean) as string[];
+    return defined.length ? defined : undefined;
+  }
+
+  return overrides[0] ?? inferred[0];
+};
 
 /**
  * Extract battle references from .inc script content.
@@ -139,6 +178,19 @@ export function parseTrainerBattlesSCRIPT(
     }
 
     const battlePicPaths = trainerIds.map((id) => trainerPics.get(id) || "");
+    const mugshotConstant = extractMugshotConstant(callText);
+    const mugshotDirectoryInfo = mugshotConstant
+      ? mugshotDirectories.get(mugshotConstant)
+      : undefined;
+    const mugshotOverworldInfo = mugshotConstant
+      ? mugshotOverworldMatches.get(mugshotConstant)
+      : undefined;
+
+    const mugshotOverworldId = resolveMugshotOverworldId(
+      trainerIds,
+      pendingTrainerBattle.battleType,
+      mugshotOverworldInfo?.overworldId
+    );
 
     const battleRef = IncBattleSchema.parse({
       script: scriptName!,
@@ -146,7 +198,11 @@ export function parseTrainerBattlesSCRIPT(
       trainerIds,
       battlePicPaths,
       rematch: pendingTrainerBattle.isRematch || undefined,
-      mugshotConstant: extractMugshotConstant(callText),
+      mugshotConstant,
+      mugshotRelativeDirectory: mugshotDirectoryInfo?.relativeDirectory,
+      mugshotOverworldId,
+      mugshotOverworldSprite: mugshotOverworldInfo?.overworldSpritePath,
+      mugshotOverworldConfidence: mugshotOverworldInfo?.confidence,
     });
 
     refs.push(battleRef);

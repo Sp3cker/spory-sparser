@@ -9,7 +9,6 @@
             "id": "TRAINER_KARU",
             "name": "Karu",
             "battlePic": "trainers/raw/TRAINER_KARU.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_LASS.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -95,7 +94,9 @@
           ]
         }
       ],
-      "level": "MAP_BEACHBOUND_ROUTE"
+      "level": "MAP_BEACHBOUND_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_LASS",
+      "canRematch": false
     },
     {
       "id": "BeachboundRoute_EventScript_Kin",
@@ -106,7 +107,6 @@
             "id": "TRAINER_KIN",
             "name": "Kin",
             "battlePic": "trainers/raw/TRAINER_KIN.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_BATTLE_GIRL.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -189,7 +189,9 @@
           ]
         }
       ],
-      "level": "MAP_BEACHBOUND_ROUTE"
+      "level": "MAP_BEACHBOUND_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_SUNRISE_LITTLE_GIRL",
+      "canRematch": false
     },
     {
       "id": "BeachboundRoute_EventScript_Kouta",
@@ -200,7 +202,6 @@
             "id": "TRAINER_KOUTA",
             "name": "Kouta",
             "battlePic": "trainers/raw/TRAINER_KOUTA.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_YOUNGSTER.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -248,7 +249,9 @@
           ]
         }
       ],
-      "level": "MAP_BEACHBOUND_ROUTE"
+      "level": "MAP_BEACHBOUND_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_YOUNGSTER",
+      "canRematch": false
     },
     {
       "id": "BeachboundRoute_EventScript_Masato",
@@ -258,8 +261,7 @@
           "trainer": {
             "id": "TRAINER_MASATO_1",
             "name": "Masato",
-            "battlePic": "",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_BUG_CATCHER.webp",
+            "battlePic": "trainers/raw/TRAINER_MASATO_1.webp",
             "aiFlags": [
               "Check Bad Move",
               "Prefer Status Moves"
@@ -343,7 +345,9 @@
           ]
         }
       ],
-      "level": "MAP_BEACHBOUND_ROUTE"
+      "level": "MAP_BEACHBOUND_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "canRematch": true
     },
     {
       "id": "BeachboundRoute_EventScript_Mugging",
@@ -353,7 +357,7 @@
           "trainer": {
             "id": "TRAINER_GRUNT_BEACHBOUND_ROUTE_1",
             "name": "Grunt",
-            "battlePic": "",
+            "battlePic": "trainers/raw/TRAINER_GRUNT_BEACHBOUND_ROUTE_1.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -440,7 +444,7 @@
           "trainer": {
             "id": "TRAINER_GRUNT_BEACHBOUND_ROUTE_2",
             "name": "Grunt",
-            "battlePic": "",
+            "battlePic": "trainers/raw/TRAINER_GRUNT_BEACHBOUND_ROUTE_2.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -524,7 +528,8 @@
           ]
         }
       ],
-      "level": "MAP_BEACHBOUND_ROUTE"
+      "level": "MAP_BEACHBOUND_ROUTE",
+      "canRematch": false
     }
   ],
   "MAP_CHII_TOWN": [
@@ -633,7 +638,8 @@
           ]
         }
       ],
-      "level": "MAP_CHII_TOWN"
+      "level": "MAP_CHII_TOWN",
+      "canRematch": false
     },
     {
       "id": "ChiiTown_EventScript_BattlingBoy",
@@ -740,7 +746,8 @@
           ]
         }
       ],
-      "level": "MAP_CHII_TOWN"
+      "level": "MAP_CHII_TOWN",
+      "canRematch": false
     }
   ],
   "MAP_CROBAT_HIDEOUT": [
@@ -752,8 +759,7 @@
           "trainer": {
             "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_1",
             "name": "Grunt",
-            "battlePic": "",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_F.webp",
+            "battlePic": "trainers/raw/TRAINER_GRUNT_CROBAT_HIDEOUT_1.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -837,7 +843,9 @@
           ]
         }
       ],
-      "level": "MAP_CROBAT_HIDEOUT_1F"
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M",
+      "canRematch": false
     },
     {
       "id": "CrobatHideout_1F_EventScript_GruntPaintingPokeballs",
@@ -847,8 +855,7 @@
           "trainer": {
             "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_2",
             "name": "Grunt",
-            "battlePic": "",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M.webp",
+            "battlePic": "trainers/raw/TRAINER_GRUNT_CROBAT_HIDEOUT_2.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -933,7 +940,9 @@
           ]
         }
       ],
-      "level": "MAP_CROBAT_HIDEOUT_1F"
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M",
+      "canRematch": false
     },
     {
       "id": "CrobatHideout_1F_EventScript_GruntLaundryRoom",
@@ -943,8 +952,7 @@
           "trainer": {
             "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_3",
             "name": "Grunt",
-            "battlePic": "",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M.webp",
+            "battlePic": "trainers/raw/TRAINER_GRUNT_CROBAT_HIDEOUT_3.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -1028,7 +1036,9 @@
           ]
         }
       ],
-      "level": "MAP_CROBAT_HIDEOUT_1F"
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M",
+      "canRematch": false
     },
     {
       "id": "CrobatHideout_1F_EventScript_GruntDoubleGirl",
@@ -1038,8 +1048,7 @@
           "trainer": {
             "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_4",
             "name": "Grunt",
-            "battlePic": "",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_F.webp",
+            "battlePic": "trainers/raw/TRAINER_GRUNT_CROBAT_HIDEOUT_4.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -1123,7 +1132,9 @@
           ]
         }
       ],
-      "level": "MAP_CROBAT_HIDEOUT_1F"
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M",
+      "canRematch": false
     },
     {
       "id": "CrobatHideout_1F_EventScript_GruntDoubleGuy",
@@ -1133,8 +1144,7 @@
           "trainer": {
             "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_5",
             "name": "Grunt",
-            "battlePic": "",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M.webp",
+            "battlePic": "trainers/raw/TRAINER_GRUNT_CROBAT_HIDEOUT_5.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -1181,7 +1191,9 @@
           ]
         }
       ],
-      "level": "MAP_CROBAT_HIDEOUT_1F"
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M",
+      "canRematch": false
     },
     {
       "id": "CrobatHideout_1F_EventScript_GruntNearReunionRoom",
@@ -1191,8 +1203,7 @@
           "trainer": {
             "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_6",
             "name": "Grunt",
-            "battlePic": "",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M.webp",
+            "battlePic": "trainers/raw/TRAINER_GRUNT_CROBAT_HIDEOUT_6.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -1276,7 +1287,9 @@
           ]
         }
       ],
-      "level": "MAP_CROBAT_HIDEOUT_1F"
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_CROBAT_SHADOWS_GRUNT_M",
+      "canRematch": false
     },
     {
       "id": "CrobatHideout_1F_BattleSamuraiBackToBack",
@@ -1286,7 +1299,7 @@
           "trainer": {
             "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_7",
             "name": "Grunt",
-            "battlePic": "",
+            "battlePic": "trainers/raw/TRAINER_GRUNT_CROBAT_HIDEOUT_7.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -1336,7 +1349,7 @@
           "trainer": {
             "id": "TRAINER_GRUNT_CROBAT_HIDEOUT_8",
             "name": "Grunt",
-            "battlePic": "",
+            "battlePic": "trainers/raw/TRAINER_GRUNT_CROBAT_HIDEOUT_8.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -1383,7 +1396,8 @@
           ]
         }
       ],
-      "level": "MAP_CROBAT_HIDEOUT_1F"
+      "level": "MAP_CROBAT_HIDEOUT_1F",
+      "canRematch": false
     }
   ],
   "MAP_GINKO_WOODS": [
@@ -1396,7 +1410,6 @@
             "id": "TRAINER_TOSHIKI",
             "name": "Toshiki",
             "battlePic": "trainers/raw/TRAINER_TOSHIKI.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_BUG_CATCHER.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -1442,7 +1455,9 @@
           ]
         }
       ],
-      "level": "MAP_GINKO_WOODS"
+      "level": "MAP_GINKO_WOODS",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "canRematch": false
     },
     {
       "id": "GinkoWoods_EventScript_Toshio",
@@ -1452,8 +1467,7 @@
           "trainer": {
             "id": "TRAINER_TOSHIO_1",
             "name": "Toshio",
-            "battlePic": "",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_YOUNGSTER.webp",
+            "battlePic": "trainers/raw/TRAINER_TOSHIO_1.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -1536,7 +1550,9 @@
           ]
         }
       ],
-      "level": "MAP_GINKO_WOODS"
+      "level": "MAP_GINKO_WOODS",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_YOUNGSTER",
+      "canRematch": true
     },
     {
       "id": "GinkoWoods_EventScript_Eiji",
@@ -1547,7 +1563,6 @@
             "id": "TRAINER_EIJI",
             "name": "Eiji",
             "battlePic": "trainers/raw/TRAINER_EIJI.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_BUG_CATCHER.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -1665,7 +1680,9 @@
           ]
         }
       ],
-      "level": "MAP_GINKO_WOODS"
+      "level": "MAP_GINKO_WOODS",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "canRematch": false
     }
   ],
   "MAP_HARVEST_SHRINE": [
@@ -1678,7 +1695,6 @@
             "id": "TRAINER_KOUGA",
             "name": "Kouga",
             "battlePic": "trainers/raw/TRAINER_KOUGA.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_MONK.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -1725,7 +1741,9 @@
           ]
         }
       ],
-      "level": "MAP_HARVEST_SHRINE"
+      "level": "MAP_HARVEST_SHRINE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_MONK",
+      "canRematch": false
     }
   ],
   "MAP_KURA_TOWN": [
@@ -1821,7 +1839,9 @@
           ]
         }
       ],
-      "level": "MAP_KURA_TOWN_DOJO"
+      "level": "MAP_KURA_TOWN_DOJO",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_SAKURA_OLD_MAN",
+      "canRematch": false
     },
     {
       "id": "KuraTown_Dojo_EventScript_Kiku",
@@ -1914,7 +1934,9 @@
           ]
         }
       ],
-      "level": "MAP_KURA_TOWN_DOJO"
+      "level": "MAP_KURA_TOWN_DOJO",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_AROMA_LADY",
+      "canRematch": false
     },
     {
       "id": "KuraTown_Dojo_EventScript_Laura",
@@ -2009,7 +2031,9 @@
           ]
         }
       ],
-      "level": "MAP_KURA_TOWN_DOJO"
+      "level": "MAP_KURA_TOWN_DOJO",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_GARDENER",
+      "canRematch": false
     },
     {
       "id": "KuraTown_Dojo_EventScript_Brenden",
@@ -2104,7 +2128,9 @@
           ]
         }
       ],
-      "level": "MAP_KURA_TOWN_DOJO"
+      "level": "MAP_KURA_TOWN_DOJO",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_LASS",
+      "canRematch": false
     },
     {
       "id": "KuraTown_Dojo_EventScript_Cristian",
@@ -2162,7 +2188,9 @@
           ]
         }
       ],
-      "level": "MAP_KURA_TOWN_DOJO"
+      "level": "MAP_KURA_TOWN_DOJO",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_SAKURA_OLD_WOMAN",
+      "canRematch": false
     },
     {
       "id": "KuraTown_Dojo_EventScript_Lilith",
@@ -2219,7 +2247,9 @@
           ]
         }
       ],
-      "level": "MAP_KURA_TOWN_DOJO"
+      "level": "MAP_KURA_TOWN_DOJO",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_GARDENER",
+      "canRematch": false
     },
     {
       "id": "KuraTown_Dojo_EventScript_Hana",
@@ -2229,7 +2259,7 @@
           "trainer": {
             "id": "TRAINER_HANA_1",
             "name": "Hana",
-            "battlePic": "",
+            "battlePic": "trainers/raw/TRAINER_HANA_1.webp",
             "aiFlags": [
               "Smartish Trainer",
               "Ace Pokemon"
@@ -2394,7 +2424,9 @@
           ]
         }
       ],
-      "level": "MAP_KURA_TOWN_DOJO"
+      "level": "MAP_KURA_TOWN_DOJO",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_HANA",
+      "canRematch": false
     }
   ],
   "MAP_MAGURO_HARBOR": [
@@ -2406,7 +2438,7 @@
           "trainer": {
             "id": "TRAINER_KOISHI_1",
             "name": "Koishi",
-            "battlePic": "",
+            "battlePic": "trainers/raw/TRAINER_KOISHI_1.webp",
             "aiFlags": [
               "Smartish Trainer"
             ],
@@ -2529,7 +2561,9 @@
           ]
         }
       ],
-      "level": "MAP_MAGURO_HARBOR_DOJO"
+      "level": "MAP_MAGURO_HARBOR_DOJO",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_KOISHI",
+      "canRematch": false
     },
     {
       "id": "MaguroHarbor_Dojo_EventScript_Izumi",
@@ -2661,7 +2695,9 @@
           ]
         }
       ],
-      "level": "MAP_MAGURO_HARBOR_DOJO"
+      "level": "MAP_MAGURO_HARBOR_DOJO",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_SUNRISE_LITTLE_GIRL",
+      "canRematch": false
     },
     {
       "id": "MaguroHarbor_Dojo_EventScript_Ren",
@@ -2718,7 +2754,8 @@
           ]
         }
       ],
-      "level": "MAP_MAGURO_HARBOR_DOJO"
+      "level": "MAP_MAGURO_HARBOR_DOJO",
+      "canRematch": false
     },
     {
       "id": "MaguroHarbor_Dojo_EventScript_Mizu",
@@ -2811,7 +2848,9 @@
           ]
         }
       ],
-      "level": "MAP_MAGURO_HARBOR_DOJO"
+      "level": "MAP_MAGURO_HARBOR_DOJO",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN",
+      "canRematch": false
     },
     {
       "id": "MaguroHarbor_Refuge_BattleHariko",
@@ -2871,7 +2910,8 @@
           ]
         }
       ],
-      "level": "MAP_MAGURO_HARBOR_REFUGE"
+      "level": "MAP_MAGURO_HARBOR_REFUGE",
+      "canRematch": false
     }
   ],
   "MAP_ORCHARD_PATH": [
@@ -2884,7 +2924,6 @@
             "id": "TRAINER_JUNKO",
             "name": "Junko",
             "battlePic": "trainers/raw/TRAINER_JUNKO.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_LASS.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -2931,7 +2970,9 @@
           ]
         }
       ],
-      "level": "MAP_ORCHARD_PATH"
+      "level": "MAP_ORCHARD_PATH",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_LASS",
+      "canRematch": false
     },
     {
       "id": "OrchardPath_EventScript_Mami",
@@ -2942,7 +2983,6 @@
             "id": "TRAINER_MAMI",
             "name": "Mami",
             "battlePic": "trainers/raw/TRAINER_MAMI.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_HEX_MANIAC.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -3027,7 +3067,9 @@
           ]
         }
       ],
-      "level": "MAP_ORCHARD_PATH"
+      "level": "MAP_ORCHARD_PATH",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "canRematch": false
     },
     {
       "id": "OrchardPath_EventScript_RockSmashBrokeMyRocks",
@@ -3082,7 +3124,8 @@
           ]
         }
       ],
-      "level": "MAP_ORCHARD_PATH"
+      "level": "MAP_ORCHARD_PATH",
+      "canRematch": false
     }
   ],
   "MAP_SAKU_TOWN": [
@@ -3179,7 +3222,8 @@
           ]
         }
       ],
-      "level": "MAP_SAKU_TOWN"
+      "level": "MAP_SAKU_TOWN",
+      "canRematch": false
     },
     {
       "id": "SakuTown_EventScript_TamaArgument",
@@ -3237,7 +3281,8 @@
           ]
         }
       ],
-      "level": "MAP_SAKU_TOWN"
+      "level": "MAP_SAKU_TOWN",
+      "canRematch": false
     }
   ],
   "MAP_SILVER_TUNNEL": [
@@ -3250,7 +3295,6 @@
             "id": "TRAINER_KENTO",
             "name": "Kento",
             "battlePic": "trainers/raw/TRAINER_KENTO.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_MINER.webp",
             "aiFlags": [
               "Smartish Trainer"
             ],
@@ -3297,7 +3341,9 @@
           ]
         }
       ],
-      "level": "MAP_SILVER_TUNNEL_1F"
+      "level": "MAP_SILVER_TUNNEL_1F",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_MINER",
+      "canRematch": false
     },
     {
       "id": "SilverTunnel_1F_EventScript_Shuya",
@@ -3308,7 +3354,6 @@
             "id": "TRAINER_SHUYA",
             "name": "Shuya",
             "battlePic": "trainers/raw/TRAINER_SHUYA.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_MINER.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -3393,7 +3438,9 @@
           ]
         }
       ],
-      "level": "MAP_SILVER_TUNNEL_1F"
+      "level": "MAP_SILVER_TUNNEL_1F",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_MINER",
+      "canRematch": false
     },
     {
       "id": "SilverTunnel_1F_EventScript_Yoru",
@@ -3404,7 +3451,6 @@
             "id": "TRAINER_YORU",
             "name": "Yoru",
             "battlePic": "trainers/raw/TRAINER_YORU.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_HEX_MANIAC.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -3489,7 +3535,9 @@
           ]
         }
       ],
-      "level": "MAP_SILVER_TUNNEL_1F"
+      "level": "MAP_SILVER_TUNNEL_1F",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "canRematch": false
     },
     {
       "id": "SilverTunnel_2F_EventScript_Tama",
@@ -3583,7 +3631,11 @@
           ]
         }
       ],
-      "level": "MAP_SILVER_TUNNEL_2F"
+      "level": "MAP_SILVER_TUNNEL_2F",
+      "mugshotOverworldId": [
+        "OBJ_EVENT_GFX_GEM_MANIAC"
+      ],
+      "canRematch": false
     },
     {
       "id": "SilverTunnel_2F_EventScript_Kansaku",
@@ -3680,7 +3732,9 @@
           ]
         }
       ],
-      "level": "MAP_SILVER_TUNNEL_2F"
+      "level": "MAP_SILVER_TUNNEL_2F",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_MINER",
+      "canRematch": false
     }
   ],
   "MAP_SILVERIDGE": [
@@ -3777,7 +3831,8 @@
           ]
         }
       ],
-      "level": "MAP_SILVERIDGE_REFUGE"
+      "level": "MAP_SILVERIDGE_REFUGE",
+      "canRematch": false
     }
   ],
   "MAP_SUNRISE_VILLAGE": [
@@ -3835,7 +3890,8 @@
           ]
         }
       ],
-      "level": "MAP_SUNRISE_VILLAGE_ELDERS_HOUSE"
+      "level": "MAP_SUNRISE_VILLAGE_ELDERS_HOUSE",
+      "canRematch": false
     }
   ],
   "MAP_TRANQUILROUTE": [
@@ -3848,7 +3904,6 @@
             "id": "TRAINER_CHIKAO",
             "name": "Chikao",
             "battlePic": "trainers/raw/TRAINER_CHIKAO.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_SCHOOL_KID_M.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -3969,7 +4024,9 @@
           ]
         }
       ],
-      "level": "MAP_TRANQUIL_ROUTE"
+      "level": "MAP_TRANQUIL_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_SCHOOL_KID_M",
+      "canRematch": false
     },
     {
       "id": "TranquilRoute_EventScript_Kodomo",
@@ -3980,7 +4037,6 @@
             "id": "TRAINER_KODOMO",
             "name": "Kodomo",
             "battlePic": "trainers/raw/TRAINER_KODOMO.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_YOUNGSTER.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -4102,7 +4158,9 @@
           ]
         }
       ],
-      "level": "MAP_TRANQUIL_ROUTE"
+      "level": "MAP_TRANQUIL_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_YOUNGSTER",
+      "canRematch": false
     },
     {
       "id": "TranquilRoute_EventScript_Takeshi",
@@ -4113,7 +4171,6 @@
             "id": "TRAINER_TAKESHI",
             "name": "Takeshi",
             "battlePic": "trainers/raw/TRAINER_TAKESHI.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_NINJA_BOY.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -4198,7 +4255,9 @@
           ]
         }
       ],
-      "level": "MAP_TRANQUIL_ROUTE"
+      "level": "MAP_TRANQUIL_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_NINJA_BOY",
+      "canRematch": false
     },
     {
       "id": "TranquilRoute_EventScript_Hana",
@@ -4209,7 +4268,6 @@
             "id": "TRAINER_HIINA",
             "name": "Hiina",
             "battlePic": "trainers/raw/TRAINER_HIINA.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_MASQUERAIN_WOMAN.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -4294,7 +4352,9 @@
           ]
         }
       ],
-      "level": "MAP_TRANQUIL_ROUTE"
+      "level": "MAP_TRANQUIL_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_SUNRISE_LITTLE_GIRL",
+      "canRematch": false
     },
     {
       "id": "TranquilRoute_EventScript_Kenji",
@@ -4305,7 +4365,6 @@
             "id": "TRAINER_KENJI",
             "name": "Kenji",
             "battlePic": "trainers/raw/TRAINER_KENJI.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_ARTIST.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -4388,7 +4447,9 @@
           ]
         }
       ],
-      "level": "MAP_TRANQUIL_ROUTE"
+      "level": "MAP_TRANQUIL_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_ARTIST",
+      "canRematch": false
     }
   ],
   "MAP_WHITESLATEROUTE": [
@@ -4401,7 +4462,6 @@
             "id": "TRAINER_ITSUMI",
             "name": "Itsumi",
             "battlePic": "trainers/raw/TRAINER_ITSUMI.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_BREEDER_F.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -4485,7 +4545,9 @@
           ]
         }
       ],
-      "level": "MAP_WHITESLATE_ROUTE"
+      "level": "MAP_WHITESLATE_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_BREEDER_F",
+      "canRematch": false
     },
     {
       "id": "WhiteslateRoute_EventScript_Ryosuke",
@@ -4496,7 +4558,6 @@
             "id": "TRAINER_RYOSUKE",
             "name": "Ryosuke",
             "battlePic": "trainers/raw/TRAINER_RYOSUKE.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_BREEDER_M.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -4580,7 +4641,9 @@
           ]
         }
       ],
-      "level": "MAP_WHITESLATE_ROUTE"
+      "level": "MAP_WHITESLATE_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_BREEDER_M",
+      "canRematch": false
     },
     {
       "id": "WhiteslateRoute_EventScript_Riku",
@@ -4591,7 +4654,6 @@
             "id": "TRAINER_RIKU",
             "name": "Riku",
             "battlePic": "trainers/raw/TRAINER_RIKU.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_NINJA_BOY.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -4712,7 +4774,9 @@
           ]
         }
       ],
-      "level": "MAP_WHITESLATE_ROUTE"
+      "level": "MAP_WHITESLATE_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_NINJA_BOY",
+      "canRematch": false
     },
     {
       "id": "WhiteslateRoute_EventScript_Tomomi",
@@ -4723,7 +4787,6 @@
             "id": "TRAINER_TOMOMI",
             "name": "Tomomi",
             "battlePic": "trainers/raw/TRAINER_TOMOMI.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_BEAUTY.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -4846,7 +4909,8 @@
           ]
         }
       ],
-      "level": "MAP_WHITESLATE_ROUTE"
+      "level": "MAP_WHITESLATE_ROUTE",
+      "canRematch": false
     },
     {
       "id": "WhiteslateRoute_EventScript_Yono",
@@ -4857,7 +4921,6 @@
             "id": "TRAINER_YONO",
             "name": "Yono",
             "battlePic": "trainers/raw/TRAINER_YONO.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_OLD_WOMAN.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -4942,7 +5005,8 @@
           ]
         }
       ],
-      "level": "MAP_WHITESLATE_ROUTE"
+      "level": "MAP_WHITESLATE_ROUTE",
+      "canRematch": false
     },
     {
       "id": "WhiteslateRoute_EventScript_Sumi",
@@ -4953,7 +5017,6 @@
             "id": "TRAINER_SUMI",
             "name": "Sumi",
             "battlePic": "trainers/raw/TRAINER_SUMI.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_HEX_MANIAC.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -5038,7 +5101,9 @@
           ]
         }
       ],
-      "level": "MAP_WHITESLATE_ROUTE"
+      "level": "MAP_WHITESLATE_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "canRematch": false
     },
     {
       "id": "WhiteslateRoute_EventScript_Tomiko",
@@ -5049,7 +5114,6 @@
             "id": "TRAINER_TOMIKO",
             "name": "Tomiko",
             "battlePic": "trainers/raw/TRAINER_TOMIKO.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_LASS.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -5133,7 +5197,9 @@
           ]
         }
       ],
-      "level": "MAP_WHITESLATE_ROUTE"
+      "level": "MAP_WHITESLATE_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_LASS",
+      "canRematch": false
     },
     {
       "id": "WhiteslateRoute_EventScript_Utaro",
@@ -5144,7 +5210,6 @@
             "id": "TRAINER_UTARO",
             "name": "Utaro",
             "battlePic": "trainers/raw/TRAINER_UTARO.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_YOUNGSTER.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -5229,7 +5294,9 @@
           ]
         }
       ],
-      "level": "MAP_WHITESLATE_ROUTE"
+      "level": "MAP_WHITESLATE_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_YOUNGSTER",
+      "canRematch": false
     },
     {
       "id": "WhiteslateRoute_EventScript_Asagao",
@@ -5240,7 +5307,6 @@
             "id": "TRAINER_UTARO",
             "name": "Utaro",
             "battlePic": "trainers/raw/TRAINER_UTARO.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_AROMA_LADY.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -5325,7 +5391,9 @@
           ]
         }
       ],
-      "level": "MAP_WHITESLATE_ROUTE"
+      "level": "MAP_WHITESLATE_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_AROMA_LADY",
+      "canRematch": false
     }
   ],
   "MAP_WINDSWEPTROUTE": [
@@ -5337,8 +5405,7 @@
           "trainer": {
             "id": "TRAINER_MUSASHI_1",
             "name": "Musashi",
-            "battlePic": "",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_BATTLE_GIRL.webp",
+            "battlePic": "trainers/raw/TRAINER_MUSASHI_1.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -5414,7 +5481,9 @@
           ]
         }
       ],
-      "level": "MAP_WINDSWEPT_ROUTE"
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_SUNRISE_FAT_GUY",
+      "canRematch": false
     },
     {
       "id": "WindsweptRoute_EventScript_Itamae",
@@ -5425,7 +5494,6 @@
             "id": "TRAINER_ITAMAE",
             "name": "Itamae",
             "battlePic": "trainers/raw/TRAINER_ITAMAE.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_COOK.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -5501,7 +5569,9 @@
           ]
         }
       ],
-      "level": "MAP_WINDSWEPT_ROUTE"
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_COOK",
+      "canRematch": false
     },
     {
       "id": "WindsweptRoute_EventScript_Trainer3",
@@ -5511,8 +5581,7 @@
           "trainer": {
             "id": "TRAINER_MAKOTO_1",
             "name": "Makoto",
-            "battlePic": "",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_FISHERMAN.webp",
+            "battlePic": "trainers/raw/TRAINER_MAKOTO_1.webp",
             "aiFlags": [
               "Check Bad Move"
             ],
@@ -5588,7 +5657,8 @@
           ]
         }
       ],
-      "level": "MAP_WINDSWEPT_ROUTE"
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "canRematch": false
     },
     {
       "id": "WindsweptRoute_EventScript_Roku",
@@ -5599,7 +5669,6 @@
             "id": "TRAINER_ROKU",
             "name": "Roku",
             "battlePic": "trainers/raw/TRAINER_ROKU.webp",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_MINER.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -5685,7 +5754,8 @@
           ]
         }
       ],
-      "level": "MAP_WINDSWEPT_ROUTE"
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "canRematch": false
     },
     {
       "id": "WindsweptRoute_EventScript_Trainer4",
@@ -5695,8 +5765,7 @@
           "trainer": {
             "id": "TRAINER_MUSASHI_1",
             "name": "Musashi",
-            "battlePic": "",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_TWIN_M.webp",
+            "battlePic": "trainers/raw/TRAINER_MUSASHI_1.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -5772,7 +5841,8 @@
           ]
         }
       ],
-      "level": "MAP_WINDSWEPT_ROUTE"
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "canRematch": false
     },
     {
       "id": "WindsweptRoute_EventScript_Trainer5",
@@ -5782,8 +5852,7 @@
           "trainer": {
             "id": "TRAINER_MUSASHI_1",
             "name": "Musashi",
-            "battlePic": "",
-            "sprite": "overworld/animated/OBJ_EVENT_GFX_TWIN_F.webp",
+            "battlePic": "trainers/raw/TRAINER_MUSASHI_1.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -5859,7 +5928,8 @@
           ]
         }
       ],
-      "level": "MAP_WINDSWEPT_ROUTE"
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "canRematch": false
     },
     {
       "id": "WindsweptRoute_EventScript_Trainer6",
@@ -5869,7 +5939,7 @@
           "trainer": {
             "id": "TRAINER_MUSASHI_1",
             "name": "Musashi",
-            "battlePic": "",
+            "battlePic": "trainers/raw/TRAINER_MUSASHI_1.webp",
             "aiFlags": [
               "Basic Trainer"
             ],
@@ -5945,7 +6015,8 @@
           ]
         }
       ],
-      "level": "MAP_WINDSWEPT_ROUTE"
+      "level": "MAP_WINDSWEPT_ROUTE",
+      "canRematch": false
     }
   ],
   "MAP_YIFU_CITY": [
@@ -6112,7 +6183,8 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_DOJO"
+      "level": "MAP_YIFU_CITY_DOJO",
+      "canRematch": false
     },
     {
       "id": "YifuCity_Dojo_EventScript_Dance2",
@@ -6257,7 +6329,8 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_DOJO"
+      "level": "MAP_YIFU_CITY_DOJO",
+      "canRematch": false
     },
     {
       "id": "YifuCity_Dojo_EventScript_Dance3",
@@ -6477,7 +6550,8 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_DOJO"
+      "level": "MAP_YIFU_CITY_DOJO",
+      "canRematch": false
     },
     {
       "id": "YifuCity_Dojo_EventScript_Akari",
@@ -6563,7 +6637,8 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_DOJO"
+      "level": "MAP_YIFU_CITY_DOJO",
+      "canRematch": false
     },
     {
       "id": "YifuCity_Dojo_EventScript_Yuka",
@@ -6649,7 +6724,8 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_DOJO"
+      "level": "MAP_YIFU_CITY_DOJO",
+      "canRematch": false
     },
     {
       "id": "YifuCity_Dojo_EventScript_Nanami",
@@ -6744,7 +6820,8 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_DOJO"
+      "level": "MAP_YIFU_CITY_DOJO",
+      "canRematch": false
     },
     {
       "id": "YifuCity_Dojo_EventScript_Kanae",
@@ -6876,7 +6953,8 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_DOJO"
+      "level": "MAP_YIFU_CITY_DOJO",
+      "canRematch": false
     },
     {
       "id": "YifuCity_Dojo_EventScript_Karin",
@@ -6934,7 +7012,8 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_DOJO"
+      "level": "MAP_YIFU_CITY_DOJO",
+      "canRematch": false
     },
     {
       "id": "YifuCity_Dojo_EventScript_Miika",
@@ -7028,7 +7107,8 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_DOJO"
+      "level": "MAP_YIFU_CITY_DOJO",
+      "canRematch": false
     },
     {
       "id": "YifuCity_Dojo_EventScript_Yutaka",
@@ -7038,7 +7118,7 @@
           "trainer": {
             "id": "TRAINER_YUTAKA_1",
             "name": "Yutaka",
-            "battlePic": "",
+            "battlePic": "trainers/raw/TRAINER_YUTAKA_1.webp",
             "aiFlags": [
               "Smartish Trainer"
             ],
@@ -7202,7 +7282,8 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_DOJO"
+      "level": "MAP_YIFU_CITY_DOJO",
+      "canRematch": false
     },
     {
       "id": "YifuCity_HotSprings_EventScript_OldWoman",
@@ -7333,7 +7414,9 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_HOT_SPRINGS"
+      "level": "MAP_YIFU_CITY_HOT_SPRINGS",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_UUME_OLD_WOMAN",
+      "canRematch": false
     },
     {
       "id": "YifuCity_HotSprings_EventScript_HotSpringM",
@@ -7427,7 +7510,9 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_HOT_SPRINGS"
+      "level": "MAP_YIFU_CITY_HOT_SPRINGS",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN",
+      "canRematch": false
     },
     {
       "id": "YifuCity_HotSprings_EventScript_HotSpringF",
@@ -7560,7 +7645,9 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_HOT_SPRINGS"
+      "level": "MAP_YIFU_CITY_HOT_SPRINGS",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN",
+      "canRematch": false
     },
     {
       "id": "YifuCity_HotSprings_EventScript_Firebringer",
@@ -7691,7 +7778,8 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_HOT_SPRINGS"
+      "level": "MAP_YIFU_CITY_HOT_SPRINGS",
+      "canRematch": false
     },
     {
       "id": "YifuCity_Refuge_2F_EventScript_SameRoom",
@@ -7748,7 +7836,9 @@
           ]
         }
       ],
-      "level": "MAP_YIFU_CITY_REFUGE_2F"
+      "level": "MAP_YIFU_CITY_REFUGE_2F",
+      "mugshotOverworldId": "OBJ_EVENT_GFX_UUME_OLD_MAN",
+      "canRematch": false
     }
   ]
 }

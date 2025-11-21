@@ -15,6 +15,7 @@ export const IncTrainerSchema = z.object({
   script: z.string(),
   rematch: z.boolean().optional(),
   battlePicPath: z.string(),
+  mugshotOverworldId: z.string().optional(),
 });
 
 /**
@@ -27,7 +28,11 @@ export const IncBattleSchema = z.object({
   trainerIds: z.array(z.string()).min(1),
   battlePicPaths: z.array(z.string()).min(1),
   rematch: z.boolean().optional(),
-  mugshotConstant: z.string().optional(),
+  // mugshotConstant: z.string().optional(),
+  // mugshotRelativeDirectory: z.string().optional(),
+  mugshotOverworldId: z.union([z.string(), z.array(z.string())]).optional(),
+  // mugshotOverworldSprite: z.string().or(z.null()),
+  // mugshotOverworldConfidence: z.number().optional(),
 });
 /** Item given to player in .inc file */
 export const IncItemEntrySchema = z.object({

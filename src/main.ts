@@ -12,7 +12,12 @@ import { logger } from "./util/logger.ts";
 
 import { config } from "./config/index.js";
 import { IncScriptEvent } from "./parseMaps/incParser.ts";
-import type { Battle, BattleParty, TrainerMetadata } from "./validators/battleRecord.ts";
+import type {
+  Battle,
+  BattleParty,
+  BattleType,
+  TrainerMetadata,
+} from "./validators/battleRecord.ts";
 import type { IncBattle } from "./validators/levelIncData.ts";
 import { BattleSchema } from "./validators/battleRecord.ts";
 
@@ -24,7 +29,6 @@ import { BattleSchema } from "./validators/battleRecord.ts";
 interface Trainer {
   id: string;
   battlePic: string;
-  sprite?: string;
   aiFlags: [string];
   name: string;
   items: string[];
@@ -42,11 +46,22 @@ interface MergedData {
   scriptedGives: IncScriptEvent[];
   image: string;
   // trainers?: Trainer[];
-  trainerRefs: TrainerStruct[];
+  trainerRefs: (TrainerStruct & {
+    sprite?: string;
+    mugshotOverworldId?: string;
+  })[];
   battleRefs?: IncBattle[];
 }
 
 type GroupedData = Record<string, MergedData[]>;
+interface BattleSummary {
+  script: string;
+  battleType: BattleType;
+  trainerIds: string[];
+  trainerNames: string[];
+  mugshotOverworldId?: string | string[];
+  canRematch: boolean;
+}
 
 // Insert a new helper type that omits trainers when preparing grouped output
 
@@ -55,7 +70,6 @@ interface MergeDataParams {
   pickupItemsAndTrainers: MapEventPlace[];
   /** Data from `trainers_flat */
   // trainersFlat: Record<string, TrainerStruct>;
-  encountersMap: Map<string, any>;
 }
 
 const prettyPrint = (data: any): string => JSON.stringify(data, null, 2);
@@ -63,35 +77,40 @@ const prettyPrint = (data: any): string => JSON.stringify(data, null, 2);
 const mergeDataByLevelsID = async ({
   mapsData,
   pickupItemsAndTrainers,
-  encountersMap,
 }: MergeDataParams) => {
+  const trainerData = await readFile(
+    path.join(config.dataDir, "trainers.json"),
+    "utf8"
+  ).then(JSON.parse);
+  const trainerIdToName = new Map<string, string>(
+    trainerData.map((entry: any) => [entry.id, entry.name])
+  );
+
   const mergedData: MergedData[] = mapsData
     .map((mapEntry) => {
       const { thisLevelsId } = mapEntry;
-      const hasEncountersThereforNeeded = encountersMap.has(thisLevelsId);
 
       // Things found in `map.json`
       const pickupEntry = pickupItemsAndTrainers.find(
         (pickup) => pickup.thisLevelsId === thisLevelsId
       );
 
-      if (!mapEntry || !pickupEntry) {
+      if (!mapEntry || !pickupEntry || !pickupEntry.trainers) {
         logger.warn(`Missing data for thisLevelsId: ${thisLevelsId}`);
         return null; // Return null to be filtered out later
       }
-      mapEntry.trainerRefs.forEach((tr, index, arr) => {
-        const pickupTrainer = pickupEntry.trainers?.find(
-          (pt) => pt.script === tr.script
+      const pickupTrainers = pickupEntry.trainers!;
+
+      const decoratedTrainerRefs = mapEntry.trainerRefs.map((trainerRef) => {
+        const pickupTrainer = pickupTrainers.find(
+          (pt) => pt.script === trainerRef.script
         );
-        if (pickupTrainer) {
-          //@ts-ignore
-          arr[index]["sprite"] = pickupTrainer.graphics_id;
-        } else {
-          console.error(
-            "Trainer in poryscript not corresponding to any trainer in pickup data: " +
-              tr.script
-          );
-        }
+
+        return {
+          ...trainerRef,
+          sprite: pickupTrainer?.graphics_id,
+          name: trainerIdToName.get(trainerRef.id),
+        };
       });
       // const coordMap = new Map<
       //   string,
@@ -145,7 +164,7 @@ const mergeDataByLevelsID = async ({
         pickupItems: pickupEntry.pickupItems || [],
         scriptedGives: mapEntry.scriptedGives || [],
         image: pickupEntry.imageName,
-        trainerRefs: mapEntry.trainerRefs,
+        trainerRefs: decoratedTrainerRefs,
         battleRefs: mapEntry.battleRefs,
       };
 
@@ -156,8 +175,7 @@ const mergeDataByLevelsID = async ({
         result.pickupItems && result.pickupItems.length > 0;
       const hasTrainerRefs =
         result.trainerRefs && result.trainerRefs.length > 0;
-      const hasBattleRefs =
-        result.battleRefs && result.battleRefs.length > 0;
+      const hasBattleRefs = result.battleRefs && result.battleRefs.length > 0;
 
       const hasScriptedGives = result.scriptedGives.length > 0;
       if (
@@ -165,7 +183,6 @@ const mergeDataByLevelsID = async ({
         !hasPickupItems &&
         !hasTrainerRefs &&
         !hasBattleRefs &&
-        !hasEncountersThereforNeeded &&
         !hasScriptedGives
       ) {
         return null; // Skip empty locations (no shops, items, trainers, or encounters)
@@ -190,9 +207,9 @@ const mergeDataByLevelsID = async ({
       if (cleaned.trainers && cleaned.trainers.length === 0) {
         delete cleaned.trainers;
       }
-      if (cleaned.trainerRefs && cleaned.trainerRefs.length === 0) {
-        delete cleaned.trainerRefs;
-      }
+      // if (cleaned.trainerRefs && cleaned.trainerRefs.length === 0) {
+      //   delete cleaned.trainerRefs;
+      // }
       if (cleaned.battleRefs && cleaned.battleRefs.length === 0) {
         delete cleaned.battleRefs;
       }
@@ -224,7 +241,6 @@ const mergeDataByLevelsID = async ({
       const merged: Trainer = {
         ...existing,
         ...trainer,
-        sprite: trainer.sprite ?? existing.sprite,
         battlePic: trainer.battlePic ?? existing.battlePic,
       };
       seen.set(key, merged);
@@ -244,6 +260,9 @@ const mergeDataByLevelsID = async ({
       const merged: Battle = {
         ...existing,
         ...battle,
+        mugshotOverworldId:
+          battle.mugshotOverworldId ?? existing.mugshotOverworldId,
+        canRematch: Boolean(existing.canRematch || battle.canRematch),
       };
       seen.set(key, merged);
     }
@@ -257,8 +276,6 @@ const mergeDataByLevelsID = async ({
     const trainers = JSON.parse(data);
     const groupedTrainers: Record<string, Trainer[]> = {};
     for (const [mapName, levelData] of Object.entries(groupedData)) {
-      debugger;
-
       const thisMapsTrainersForAllLevels = levelData
         .flatMap(({ trainerRefs, thisLevelsId }) => {
           if (!trainerRefs) return [];
@@ -288,9 +305,7 @@ const mergeDataByLevelsID = async ({
               battlePic: incTrainer.battlePicPath,
               id: trainerJsonData.id,
               name: trainerJsonData.name,
-              sprite: pickupData.trainers?.find(
-                (t) => t.script === incTrainer.script
-              )?.graphics_id,
+
               aiFlags: trainerJsonData.aiFlags,
               items: trainerJsonData.items,
               // script: incTrainer.script,
@@ -350,19 +365,12 @@ const mergeDataByLevelsID = async ({
               }
 
               // Get overworld sprite from pickup data
-              const pickupData = pickupItemsAndTrainers.find(
-                (level) => level.baseMap === mapName
-              );
-
-              const sprite = pickupData?.trainers?.find(
-                (t) => t.script === incBattle.script
-              )?.graphics_id;
 
               const trainerMetadata: TrainerMetadata = {
                 id: trainerJsonData.id,
                 name: trainerJsonData.name,
                 battlePic: battlePicPath,
-                sprite: sprite,
+
                 aiFlags: trainerJsonData.aiFlags,
                 items: trainerJsonData.items,
               };
@@ -384,12 +392,21 @@ const mergeDataByLevelsID = async ({
               battleType: incBattle.battleType,
               parties: parties,
               level: thisLevelsId,
+              mugshotOverworldId: incBattle.mugshotOverworldId,
+              canRematch: Boolean(incBattle.rematch),
+              // mugshotConstant: incBattle.mugshotConstant,
+              // mugshotRelativeDirectory: incBattle.mugshotRelativeDirectory,
+              // mugshotOverworldSprite: incBattle.mugshotOverworldSprite,
+              // mugshotOverworldConfidence: incBattle.mugshotOverworldConfidence,
             };
 
             try {
               BattleSchema.parse(battle);
             } catch (error) {
-              logger.warn(`Battle validation failed for ${incBattle.script}:`, error);
+              logger.warn(
+                `Battle validation failed for ${incBattle.script}:`,
+                error
+              );
             }
             return battle;
           });
@@ -457,10 +474,52 @@ const mergeDataByLevelsID = async ({
   // This will be `levels.json`
   const groupedDataForOutput: Record<string, any> = {};
   for (const [base, levels] of Object.entries(groupedData)) {
-    groupedDataForOutput[base] = levels.map(
-      // ({÷ trainers: _t, ...rest }) => rest,
-      ({ ...rest }) => rest
-    );
+    groupedDataForOutput[base] = levels.map((levelEntry) => {
+      const { battleRefs, trainerRefs, ...rest } = levelEntry;
+      debugger;
+      // const trainerSummaries =
+      //   trainerRefs?.map(({ script, name, sprite }) => ({
+      //     script,
+      //     name,
+      //     sprite,
+      //   })) ?? [];
+
+      const battleSummaryMap =
+        battleRefs?.reduce((acc, battleRef) => {
+          const summary = acc.get(battleRef.script);
+          const trainerNames = battleRef.trainerIds.map(
+            (trainerId) => trainerIdToName.get(trainerId) ?? trainerId
+          );
+
+          if (summary) {
+            summary.canRematch =
+              summary.canRematch || Boolean(battleRef.rematch);
+            if (!summary.mugshotOverworldId && battleRef.mugshotOverworldId) {
+              summary.mugshotOverworldId = battleRef.mugshotOverworldId;
+            }
+            return acc;
+          }
+
+          acc.set(battleRef.script, {
+            script: battleRef.script,
+            battleType: battleRef.battleType,
+            trainerIds: battleRef.trainerIds,
+            trainerNames,
+            mugshotOverworldId: battleRef.mugshotOverworldId,
+            canRematch: Boolean(battleRef.rematch),
+          });
+
+          return acc;
+        }, new Map<string, BattleSummary>()) ?? new Map<string, BattleSummary>();
+
+      const battleSummaries = Array.from(battleSummaryMap.values());
+
+      return {
+        ...rest,
+
+        ...(battleSummaries.length > 0 ? { battleRefs: battleSummaries } : {}),
+      };
+    });
   }
 
   return {
@@ -472,42 +531,7 @@ const mergeDataByLevelsID = async ({
 
 (async () => {
   try {
-    // const rootDir = process.cwd();
-    // const directoryPath = path.join(rootDir, "maps");
-
-    // if (!directoryPath) {
-    //   console.error("Usage: ts-node main.ts <directory-path>");
-    //   process.exit(1);
-    // }
-
-    const encountersData = JSON.parse(
-      await readFile(path.join(config.dataDir, "wild_encounters.json"), "utf8")
-    )["wild_encounter_groups"][0]["encounters"];
-    const encountersMap = new Map<string, any>(
-      encountersData.map((enc: any) => [enc.map, enc])
-    );
-    // --- Trainer & party extraction ----------------------------------
-    // const trainerParties = await readFile(
-    //   path.join(config.dataDir, "trainer_parties.json"),
-    //   "utf8"
-    // ).then(JSON.parse);
-    // new scriptedGive format already has the path to the battle pic
-    // const trainersFlat: Record<string, TrainerStruct> = extractTrainers(
-    //   config.dataDir,
-    //   trainerParties,
-    //   config.dataDir,
-    //   config.outputDir
-    // );
-    // console.log(trainersFlat)
-    // Ensure output directory exists
     mkdirSync(path.join(config.outputDir), { recursive: true });
-
-    // await writeFile(
-    //   path.join(config.outputDir, "trainers_flat.json"),
-    //   prettyPrint(trainersFlat),
-    // );
-
-    // Find and log mart sections
 
     // Find and log give items by level
     const scriptedGives = await findGiveItemsByLevel(
@@ -519,18 +543,19 @@ const mergeDataByLevelsID = async ({
     const mapEvents = await parseMapEvents(config.mapsDir);
 
     // Merge all data in memory
-    const { groupedData, groupedTrainers, groupedBattles } = await mergeDataByLevelsID({
-      mapsData: scriptedGives,
-      pickupItemsAndTrainers: mapEvents,
-
-      encountersMap,
-    });
+    const { groupedData, groupedTrainers, groupedBattles } =
+      await mergeDataByLevelsID({
+        mapsData: scriptedGives,
+        pickupItemsAndTrainers: mapEvents,
+      });
 
     await writeFile("levels.json", prettyPrint(groupedData));
     await writeFile("trainers.json", prettyPrint(groupedTrainers));
     await writeFile("battles.json", prettyPrint(groupedBattles));
 
-    logger.info("Merged data written to levels.json, trainers.json, and battles.json");
+    logger.info(
+      "Merged data written to levels.json, trainers.json, and battles.json"
+    );
     logger.info("Validating...");
   } catch (error) {
     throw error;

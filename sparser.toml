@@ -19,3 +19,5 @@ rivalBattles = [
     "TRAINER_RIVAL_FIRST_BATTLE_SNIVY",
     "TRAINER_RIVAL_FIRST_BATTLE_CYNDAQUIL"
 ]
+#Scripts that have trainerbattles that can be skipped
+skip = []

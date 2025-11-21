@@ -25,6 +25,12 @@ export const BattleSchema = z.object({
   battleType: BattleTypeSchema,
   parties: z.array(BattlePartySchema).min(1),
   level: z.string().optional(),
+  mugshotConstant: z.string().optional(),
+  mugshotRelativeDirectory: z.string().optional(),
+  mugshotOverworldId: z.union([z.string(), z.array(z.string())]).optional(),
+  mugshotOverworldSprite: z.string().optional(),
+  mugshotOverworldConfidence: z.number().optional(),
+  canRematch: z.boolean().optional(),
 });
 
 export type BattleType = z.infer<typeof BattleTypeSchema>;
