@@ -84,6 +84,7 @@ script SunriseVillage_PlayersHouse_Bedroom_Event_BigSisCalling {
 }
 
 script SunriseVillage_PlayersHouse_Bedroom_Stuff {
+	@explanation Open your lunchbox in your room
 	msgbox(format(
 		"It's the medicine and Pokéballs your sister got for you!"
 	), MSGBOX_SIGN)

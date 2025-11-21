@@ -246,6 +246,7 @@ script SunriseVillage_EldersHouse_Event_Pokeball_Starter_Froakie {
 }
 
 script SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter {
+	@explanation Choose a starter
 	if (flag(FLAG_RECEIVED_STARTER)) {
 		msgbox(format(
 			"You already got a Pokémon.\nBetter leave this one here."

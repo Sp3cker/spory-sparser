@@ -13,6 +13,7 @@ export class Config {
   public readonly mapsDir: string;
   public readonly outputDir: string;
   public readonly miscScriptsDir?: string;
+  public readonly mapsConfig: ConfigType["maps"];
 
   public readonly trainerPalettesDir: string;
   public readonly trainerFrontPicsDir: string;
@@ -43,6 +44,7 @@ export class Config {
       this.mapsDir = this.resolveDir(dirs.maps);
       this.outputDir = this.resolveDir(dirs.output);
       this.miscScriptsDir = dirs.miscScripts ? this.resolveDir(dirs.miscScripts) : undefined;
+      this.mapsConfig = validatedConfig.maps;
 
       const trainerSpritesDir = resolve(this.sprites, "trainers");
       this.trainerFrontPicsDir = resolve(trainerSpritesDir, "front_pics");

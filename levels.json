@@ -1,8 +1,8 @@
 {
-  "MAP_BEACHBOUNDROUTE": [
+  "MAP_BEACHBOUND_ROUTE": [
     {
       "thisLevelsId": "MAP_BEACHBOUND_ROUTE",
-      "baseMap": "MAP_BEACHBOUNDROUTE",
+      "baseMap": "MAP_BEACHBOUND_ROUTE",
       "levelLabel": "",
       "pickupItems": [
         {
@@ -10,7 +10,7 @@
             16,
             6
           ],
-          "item": "ITEM_HP_UP",
+          "item": 65,
           "type": "object_event"
         },
         {
@@ -18,48 +18,8 @@
             33,
             27
           ],
-          "item": "ITEM_ETHER",
+          "item": 49,
           "type": "object_event"
-        },
-        {
-          "coords": [
-            23,
-            23
-          ],
-          "item": "ITEM_SUPER_OINTMENT",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            67,
-            5
-          ],
-          "item": "ITEM_SUPER_OINTMENT",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            45,
-            14
-          ],
-          "item": "ITEM_ANTIDOTE",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            19,
-            4
-          ],
-          "item": "ITEM_RARE_CANDY",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            19,
-            20
-          ],
-          "item": "ITEM_HEART_SCALE",
-          "type": "hidden_item"
         }
       ],
       "scriptedGives": [
@@ -150,23 +110,21 @@
       "shopItems": [
         {
           "label": "MAP_CHII_TOWN",
-          "mart": "",
-          "items": [],
-          "scriptname": "ChiiTown_MartDecors"
+          "mart": "ChiiTown_MartDecors",
+          "items": []
         },
         {
           "label": "MAP_CHII_TOWN",
-          "mart": "",
+          "mart": "ChiiTown_Mart",
           "items": [
-            "ITEM_POKE_BALL",
-            "ITEM_OINTMENT",
-            "ITEM_REVIVAL_POWDER",
-            "ITEM_PARALYZE_HEAL",
-            "ITEM_ANTIDOTE",
-            "ITEM_AWAKENING",
-            "ITEM_BURN_HEAL"
-          ],
-          "scriptname": "ChiiTown_Mart"
+            1,
+            863,
+            872,
+            44,
+            43,
+            47,
+            45
+          ]
         }
       ],
       "image": "ChiiTown",
@@ -231,7 +189,7 @@
             57,
             8
           ],
-          "item": "ITEM_STOLEN_MONS",
+          "item": 871,
           "type": "object_event"
         },
         {
@@ -239,7 +197,7 @@
             48,
             5
           ],
-          "item": "ITEM_TM_WATER_PULSE",
+          "item": 584,
           "type": "object_event"
         },
         {
@@ -247,7 +205,7 @@
             57,
             9
           ],
-          "item": "ITEM_NUGGET",
+          "item": 135,
           "type": "object_event"
         },
         {
@@ -255,7 +213,7 @@
             56,
             9
           ],
-          "item": "ITEM_RARE_CANDY",
+          "item": 102,
           "type": "object_event"
         },
         {
@@ -263,24 +221,8 @@
             56,
             8
           ],
-          "item": "ITEM_PEARL",
+          "item": 140,
           "type": "object_event"
-        },
-        {
-          "coords": [
-            28,
-            9
-          ],
-          "item": "ITEM_SUPERGIRI",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            18,
-            2
-          ],
-          "item": "ITEM_ULTRA_BALL_KNOCKOFF",
-          "type": "hidden_item"
         }
       ],
       "image": "CrobatHideout_1F",
@@ -384,7 +326,7 @@
             32,
             12
           ],
-          "item": "ITEM_OINTMENT",
+          "item": 863,
           "type": "object_event"
         },
         {
@@ -392,7 +334,7 @@
             27,
             40
           ],
-          "item": "ITEM_PARALYZE_HEAL",
+          "item": 44,
           "type": "object_event"
         },
         {
@@ -400,32 +342,8 @@
             50,
             11
           ],
-          "item": "ITEM_GREAT_BALL",
+          "item": 2,
           "type": "object_event"
-        },
-        {
-          "coords": [
-            18,
-            24
-          ],
-          "item": "ITEM_POKE_BALL",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            50,
-            45
-          ],
-          "item": "ITEM_TINY_MUSHROOM",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            34,
-            10
-          ],
-          "item": "ITEM_TINY_MUSHROOM",
-          "type": "hidden_item"
         }
       ],
       "image": "GinkoWoods",
@@ -513,53 +431,49 @@
       "shopItems": [
         {
           "label": "MAP_INCENSE_SHOP",
-          "mart": "",
+          "mart": "IncenseShop_Mart_1",
           "items": [
-            "ITEM_ROSE_INCENSE",
-            "ITEM_SEA_INCENSE",
-            "ITEM_ROCK_INCENSE"
-          ],
-          "scriptname": "IncenseShop_Mart_1"
+            410,
+            404,
+            407
+          ]
         },
         {
           "label": "MAP_INCENSE_SHOP",
-          "mart": "",
+          "mart": "IncenseShop_Mart_2",
           "items": [
-            "ITEM_ROSE_INCENSE",
-            "ITEM_SEA_INCENSE",
-            "ITEM_ROCK_INCENSE",
-            "ITEM_PURE_INCENSE",
-            "ITEM_LUCK_INCENSE"
-          ],
-          "scriptname": "IncenseShop_Mart_2"
+            410,
+            404,
+            407,
+            412,
+            411
+          ]
         },
         {
           "label": "MAP_INCENSE_SHOP",
-          "mart": "",
+          "mart": "IncenseShop_Mart_3",
           "items": [
-            "ITEM_ROSE_INCENSE",
-            "ITEM_SEA_INCENSE",
-            "ITEM_ROCK_INCENSE",
-            "ITEM_PURE_INCENSE",
-            "ITEM_LUCK_INCENSE",
-            "ITEM_ODD_INCENSE"
-          ],
-          "scriptname": "IncenseShop_Mart_3"
+            410,
+            404,
+            407,
+            412,
+            411,
+            406
+          ]
         },
         {
           "label": "MAP_INCENSE_SHOP",
-          "mart": "",
+          "mart": "IncenseShop_Mart_4",
           "items": [
-            "ITEM_ROSE_INCENSE",
-            "ITEM_SEA_INCENSE",
-            "ITEM_ROCK_INCENSE",
-            "ITEM_PURE_INCENSE",
-            "ITEM_LUCK_INCENSE",
-            "ITEM_ODD_INCENSE",
-            "ITEM_LAX_INCENSE",
-            "ITEM_FULL_INCENSE"
-          ],
-          "scriptname": "IncenseShop_Mart_4"
+            410,
+            404,
+            407,
+            412,
+            411,
+            406,
+            405,
+            408
+          ]
         }
       ],
       "image": "IncenseShop"
@@ -570,24 +484,6 @@
       "thisLevelsId": "MAP_KURA_TOWN",
       "baseMap": "MAP_KURA_TOWN",
       "levelLabel": "",
-      "pickupItems": [
-        {
-          "coords": [
-            9,
-            20
-          ],
-          "item": "ITEM_REVIVAL_HERB",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            26,
-            14
-          ],
-          "item": "ITEM_SITRUS_BERRY",
-          "type": "hidden_item"
-        }
-      ],
       "scriptedGives": [
         {
           "items": [
@@ -737,19 +633,18 @@
       "shopItems": [
         {
           "label": "MAP_MAGURO_HARBOR",
-          "mart": "",
+          "mart": "MaguroHarbor_Mart",
           "items": [
-            "ITEM_POKE_BALL",
-            "ITEM_OINTMENT",
-            "ITEM_SUPER_OINTMENT",
-            "ITEM_REVIVAL_POWDER",
-            "ITEM_PARALYZE_HEAL",
-            "ITEM_ANTIDOTE",
-            "ITEM_AWAKENING",
-            "ITEM_BURN_HEAL",
-            "ITEM_ESCAPE_ROPE"
-          ],
-          "scriptname": "MaguroHarbor_Mart"
+            1,
+            863,
+            864,
+            872,
+            44,
+            43,
+            47,
+            45,
+            120
+          ]
         }
       ],
       "scriptedGives": [
@@ -966,18 +861,17 @@
       "shopItems": [
         {
           "label": "MAP_SAKU_TOWN",
-          "mart": "",
+          "mart": "SakuTown_Mart",
           "items": [
-            "ITEM_POKE_BALL",
-            "ITEM_OINTMENT",
-            "ITEM_REVIVAL_POWDER",
-            "ITEM_PARALYZE_HEAL",
-            "ITEM_ANTIDOTE",
-            "ITEM_AWAKENING",
-            "ITEM_BURN_HEAL",
-            "ITEM_ESCAPE_ROPE"
-          ],
-          "scriptname": "SakuTown_Mart"
+            1,
+            863,
+            872,
+            44,
+            43,
+            47,
+            45,
+            120
+          ]
         }
       ],
       "pickupItems": [
@@ -986,16 +880,8 @@
             39,
             3
           ],
-          "item": "ITEM_STARDUST",
+          "item": 143,
           "type": "object_event"
-        },
-        {
-          "coords": [
-            18,
-            36
-          ],
-          "item": "ITEM_CHERI_BERRY",
-          "type": "hidden_item"
         }
       ],
       "scriptedGives": [
@@ -1046,8 +932,7 @@
         {
           "label": "MAP_SAKU_TOWN",
           "mart": "BonsaiShop",
-          "items": [],
-          "scriptname": "BonsaiShop"
+          "items": []
         }
       ],
       "scriptedGives": [
@@ -1122,7 +1007,7 @@
             14,
             17
           ],
-          "item": "ITEM_PROTEIN",
+          "item": 66,
           "type": "object_event"
         },
         {
@@ -1130,24 +1015,8 @@
             28,
             11
           ],
-          "item": "ITEM_MAX_ETHER",
+          "item": 50,
           "type": "object_event"
-        },
-        {
-          "coords": [
-            19,
-            1
-          ],
-          "item": "ITEM_HYPER_OINTMENT",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            6,
-            11
-          ],
-          "item": "ITEM_SUPER_OINTMENT",
-          "type": "hidden_item"
         }
       ],
       "image": "SilverTunnel_1F",
@@ -1200,32 +1069,8 @@
             7,
             17
           ],
-          "item": "ITEM_SOFT_SAND",
+          "item": 433,
           "type": "object_event"
-        },
-        {
-          "coords": [
-            24,
-            5
-          ],
-          "item": "ITEM_MOON_STONE",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            32,
-            23
-          ],
-          "item": "ITEM_FRESH_WATER",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            17,
-            19
-          ],
-          "item": "ITEM_STAR_PIECE",
-          "type": "hidden_item"
         }
       ],
       "image": "SilverTunnel_2F",
@@ -1267,17 +1112,16 @@
       "shopItems": [
         {
           "label": "MAP_SILVERIDGE",
-          "mart": "",
+          "mart": "Silveridge_Mart",
           "items": [
-            "ITEM_POKE_BALL",
-            "ITEM_OINTMENT",
-            "ITEM_REVIVAL_POWDER",
-            "ITEM_PARALYZE_HEAL",
-            "ITEM_ANTIDOTE",
-            "ITEM_AWAKENING",
-            "ITEM_BURN_HEAL"
-          ],
-          "scriptname": "Silveridge_Mart"
+            1,
+            863,
+            872,
+            44,
+            43,
+            47,
+            45
+          ]
         }
       ],
       "pickupItems": [
@@ -1286,7 +1130,7 @@
             39,
             6
           ],
-          "item": "ITEM_HARD_STONE",
+          "item": 437,
           "type": "object_event"
         }
       ],
@@ -1346,7 +1190,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Inside the Pokémon Refuge, speak to The Firebringer",
           "scriptName": "Silveridge_Refuge_EventScript_Firebringer"
         },
         {
@@ -1358,7 +1202,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Defeat the clown lady inside the Pokemon Refuge",
           "scriptName": "Silveridge_Refuge_EventScript_Shamisen"
         }
       ],
@@ -1386,25 +1230,32 @@
       "shopItems": [
         {
           "label": "MAP_SOULKEEP",
-          "mart": "",
+          "mart": "Soulkeep_Mart",
           "items": [
-            "ITEM_POKE_BALL",
-            "ITEM_GREAT_BALL",
-            "ITEM_OINTMENT",
-            "ITEM_SUPER_OINTMENT",
-            "ITEM_REVIVAL_POWDER",
-            "ITEM_REVIVAL_BALM",
-            "ITEM_PARALYZE_HEAL",
-            "ITEM_ANTIDOTE",
-            "ITEM_AWAKENING",
-            "ITEM_BURN_HEAL",
-            "ITEM_ICE_HEAL",
-            "ITEM_ESCAPE_ROPE"
-          ],
-          "scriptname": "Soulkeep_Mart"
+            1,
+            2,
+            863,
+            864,
+            872,
+            873,
+            44,
+            43,
+            47,
+            45,
+            46,
+            120
+          ]
         }
       ],
       "image": "Soulkeep"
+    }
+  ],
+  "MAP_SOULKEEP_GRAVEYARD": [
+    {
+      "thisLevelsId": "MAP_SOULKEEP_GRAVEYARD",
+      "baseMap": "MAP_SOULKEEP_GRAVEYARD",
+      "levelLabel": "",
+      "image": "SoulkeepGraveyard"
     }
   ],
   "MAP_SUNRISE_CAVE": [
@@ -1418,7 +1269,7 @@
             5,
             13
           ],
-          "item": "ITEM_HEART_SCALE",
+          "item": 152,
           "type": "object_event"
         }
       ],
@@ -1445,6 +1296,12 @@
         }
       ],
       "image": "SunriseVillage"
+    },
+    {
+      "thisLevelsId": "MAP_SUNRISE_VILLAGE_BEACH",
+      "baseMap": "MAP_SUNRISE_VILLAGE",
+      "levelLabel": "Beach",
+      "image": "SunriseVillage_Beach"
     },
     {
       "thisLevelsId": "MAP_SUNRISE_VILLAGE_ELDERS_HOUSE",
@@ -1476,7 +1333,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Choose a starter",
           "scriptName": "SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter"
         }
       ],
@@ -1513,7 +1370,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Open your lunchbox in your room",
           "scriptName": "SunriseVillage_PlayersHouse_Bedroom_Stuff"
         }
       ],
@@ -1540,10 +1397,10 @@
       "image": "SunriseVillage_PlayersHouse_LR"
     }
   ],
-  "MAP_TRANQUILROUTE": [
+  "MAP_TRANQUIL_ROUTE": [
     {
       "thisLevelsId": "MAP_TRANQUIL_ROUTE",
-      "baseMap": "MAP_TRANQUILROUTE",
+      "baseMap": "MAP_TRANQUIL_ROUTE",
       "levelLabel": "",
       "pickupItems": [
         {
@@ -1551,24 +1408,8 @@
             35,
             7
           ],
-          "item": "ITEM_GREAT_BALL",
+          "item": 2,
           "type": "object_event"
-        },
-        {
-          "coords": [
-            47,
-            68
-          ],
-          "item": "ITEM_RARE_CANDY",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            23,
-            8
-          ],
-          "item": "ITEM_REVIVAL_HERB",
-          "type": "hidden_item"
         }
       ],
       "scriptedGives": [
@@ -1581,7 +1422,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Mow the Cut Master's lawn",
           "scriptName": "TranquilRoute_EventScript_GrassCutscene"
         },
         {
@@ -1597,7 +1438,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Learn how to tend a berry garden",
           "scriptName": "TranquilRoute_EventScript_BerryWoman"
         }
       ],
@@ -1667,21 +1508,9 @@
     },
     {
       "thisLevelsId": "MAP_TRANQUIL_ROUTE_CUT_HOUSE",
-      "baseMap": "MAP_TRANQUILROUTE",
+      "baseMap": "MAP_TRANQUIL_ROUTE",
       "levelLabel": "Cuthouse",
       "scriptedGives": [
-        {
-          "items": [
-            {
-              "id": 305,
-              "quantity": 1
-            }
-          ],
-          "pokemon": [],
-          "wildMon": [],
-          "explanation": "Play \"Whomst is that Pokémon!\" with the 14 yr old.",
-          "scriptName": "TranquilRoute_CutHouse_EventScript_RandomCryGuy"
-        },
         {
           "items": [
             {
@@ -1695,17 +1524,29 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Speak to the Cut Master",
           "scriptName": "TranquilRoute_CutHouse_EventScript_CutMaster"
+        },
+        {
+          "items": [
+            {
+              "id": 305,
+              "quantity": 1
+            }
+          ],
+          "pokemon": [],
+          "wildMon": [],
+          "explanation": "Play \"Whomst is that Pokémon!\" with the 14 yr old.",
+          "scriptName": "TranquilRoute_CutHouse_EventScript_RandomCryGuy"
         }
       ],
       "image": "TranquilRoute_CutHouse"
     }
   ],
-  "MAP_WHITESLATEROUTE": [
+  "MAP_WHITESLATE_ROUTE": [
     {
       "thisLevelsId": "MAP_WHITESLATE_ROUTE",
-      "baseMap": "MAP_WHITESLATEROUTE",
+      "baseMap": "MAP_WHITESLATE_ROUTE",
       "levelLabel": "",
       "pickupItems": [
         {
@@ -1713,7 +1554,7 @@
             33,
             88
           ],
-          "item": "ITEM_TM_ROCK_TOMB",
+          "item": 620,
           "type": "object_event"
         },
         {
@@ -1721,48 +1562,8 @@
             10,
             63
           ],
-          "item": "ITEM_CARBOS",
+          "item": 70,
           "type": "object_event"
-        },
-        {
-          "coords": [
-            26,
-            40
-          ],
-          "item": "ITEM_NONE",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            36,
-            63
-          ],
-          "item": "ITEM_LEFTOVERS",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            8,
-            53
-          ],
-          "item": "ITEM_ZINC",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            12,
-            48
-          ],
-          "item": "ITEM_LUM_BERRY",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            30,
-            73
-          ],
-          "item": "ITEM_MAX_ETHER",
-          "type": "hidden_item"
         }
       ],
       "scriptedGives": [
@@ -1775,7 +1576,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Fuckle with the Shuckle",
           "scriptName": "WhiteslateRoute_EventScript_Shuckle"
         },
         {
@@ -1787,7 +1588,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Catch the hat-man terraforming",
           "scriptName": "WhiteslateRoute_Trigger_SecretBase"
         }
       ],
@@ -1902,10 +1703,10 @@
       ]
     }
   ],
-  "MAP_WINDSWEPTROUTE": [
+  "MAP_WINDSWEPT_ROUTE": [
     {
       "thisLevelsId": "MAP_WINDSWEPT_ROUTE",
-      "baseMap": "MAP_WINDSWEPTROUTE",
+      "baseMap": "MAP_WINDSWEPT_ROUTE",
       "levelLabel": "",
       "pickupItems": [
         {
@@ -1913,7 +1714,7 @@
             33,
             32
           ],
-          "item": "ITEM_ULTRA_BALL",
+          "item": 3,
           "type": "object_event"
         }
       ],
@@ -2009,22 +1810,21 @@
       "shopItems": [
         {
           "label": "MAP_WINDY_CAPE_2",
-          "mart": "",
+          "mart": "WindyCape_Mart",
           "items": [
-            "ITEM_POKE_BALL",
-            "ITEM_GREAT_BALL",
-            "ITEM_OINTMENT",
-            "ITEM_SUPER_OINTMENT",
-            "ITEM_REVIVAL_POWDER",
-            "ITEM_REVIVAL_BALM",
-            "ITEM_PARALYZE_HEAL",
-            "ITEM_ANTIDOTE",
-            "ITEM_AWAKENING",
-            "ITEM_BURN_HEAL",
-            "ITEM_ICE_HEAL",
-            "ITEM_ESCAPE_ROPE"
-          ],
-          "scriptname": "WindyCape_Mart"
+            1,
+            2,
+            863,
+            864,
+            872,
+            873,
+            44,
+            43,
+            47,
+            45,
+            46,
+            120
+          ]
         }
       ],
       "image": "WindyCape2"
@@ -2035,40 +1835,6 @@
       "thisLevelsId": "MAP_YIFU_CITY",
       "baseMap": "MAP_YIFU_CITY",
       "levelLabel": "",
-      "pickupItems": [
-        {
-          "coords": [
-            24,
-            41
-          ],
-          "item": "ITEM_POKE_DOLL",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            64,
-            45
-          ],
-          "item": "ITEM_ESCAPE_ROPE",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            33,
-            62
-          ],
-          "item": "ITEM_RARE_CANDY",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            1,
-            62
-          ],
-          "item": "ITEM_DUSK_BALL",
-          "type": "hidden_item"
-        }
-      ],
       "scriptedGives": [
         {
           "items": [
@@ -2079,7 +1845,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Return the stolen pokemon",
           "scriptName": "YifuCity_EventScript_RobberyVictim"
         },
         {
@@ -2092,7 +1858,7 @@
             }
           ],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Purchasable from the Shiny Seller, western-part of Yifu City",
           "scriptName": "YifuCity_ShinySellerChoice"
         },
         {
@@ -2104,7 +1870,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "learn canonical Pokémon lore from the nurse in the Refuge",
           "scriptName": "YifuCity_EventScript_Nurse"
         }
       ],
@@ -2117,37 +1883,34 @@
       "shopItems": [
         {
           "label": "MAP_YIFU_CITY",
-          "mart": "CrobatShop",
+          "mart": "Crobat_Mart",
           "items": [
-            "ITEM_OINTMENT",
-            "ITEM_SUPER_OINTMENT",
-            "ITEM_REVIVAL_POWDER",
-            "ITEM_REVIVAL_BALM",
-            "ITEM_ULTRA_BALL_KNOCKOFF",
-            "ITEM_ESCAPE_ROPE_KNOCKOFF",
-            "ITEM_SLOWPOKE_TAIL"
-          ],
-          "scriptname": "Crobat_Mart"
+            863,
+            864,
+            872,
+            873,
+            869,
+            870,
+            868
+          ]
         },
         {
           "label": "MAP_YIFU_CITY",
-          "mart": "CrobatShop",
+          "mart": "Legit_Mart",
           "items": [
-            "ITEM_OINTMENT",
-            "ITEM_SUPER_OINTMENT",
-            "ITEM_REVIVAL_POWDER",
-            "ITEM_REVIVAL_BALM",
-            "ITEM_POKE_BALL",
-            "ITEM_GREAT_BALL",
-            "ITEM_ESCAPE_ROPE"
-          ],
-          "scriptname": "Legit_Mart"
+            863,
+            864,
+            872,
+            873,
+            1,
+            2,
+            120
+          ]
         },
         {
           "label": "MAP_YIFU_CITY",
-          "mart": "CrobatShop",
-          "items": [],
-          "scriptname": "Legit_Mart_TM"
+          "mart": "Legit_Mart_TM",
+          "items": []
         }
       ],
       "image": "YifuCity_CrobatShop"
@@ -2359,7 +2122,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Speak to the cosplayer inside the house, south of the Refuge",
           "scriptName": "YifuCity_House2_Model"
         },
         {
@@ -2371,7 +2134,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Speak to the cosplayer's Tarountula",
           "scriptName": "YifuCity_House2_Tarountula"
         }
       ],
@@ -2391,7 +2154,7 @@
           ],
           "pokemon": [],
           "wildMon": [],
-          "explanation": "",
+          "explanation": "Tell the shamisen the truth...",
           "scriptName": "YifuCity_Refuge_EventScript_RouteShamisen"
         }
       ],
@@ -2401,24 +2164,6 @@
       "thisLevelsId": "MAP_YIFU_CITY_REFUGE_2F",
       "baseMap": "MAP_YIFU_CITY",
       "levelLabel": "Refuge 2F",
-      "pickupItems": [
-        {
-          "coords": [
-            30,
-            7
-          ],
-          "item": "ITEM_LAVA_COOKIE",
-          "type": "hidden_item"
-        },
-        {
-          "coords": [
-            22,
-            7
-          ],
-          "item": "ITEM_SITRUS_BERRY",
-          "type": "hidden_item"
-        }
-      ],
       "image": "YifuCity_Refuge_2F",
       "battleRefs": [
         {

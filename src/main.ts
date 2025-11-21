@@ -5,7 +5,6 @@ import { writeFile, readFile } from "fs/promises";
 import findGiveItemsByLevel, { LevelIncData } from "./parseMaps/index.ts";
 import parseMapEvents from "./parseMaps/overworld/parseMapEvents.ts";
 // import { extractTrainers } from "./parseMaps/Trainers/extractTrainersFromHeaderFile.ts";
-//
 
 import { MapEventPlace, Mart, TrainerStruct } from "./validators/index.ts";
 import { logger } from "./util/logger.ts";
@@ -78,6 +77,14 @@ const mergeDataByLevelsID = async ({
   mapsData,
   pickupItemsAndTrainers,
 }: MergeDataParams) => {
+  const encountersData = JSON.parse(
+    await readFile(path.join(config.dataDir, "wild_encounters.json"), "utf8")
+  )["wild_encounter_groups"][0]["encounters"];
+  
+  //@ts-ignore
+  const encountersMap = new Map<string, any>(
+    encountersData.map((enc: any) => [enc.map, enc])
+  );
   const trainerData = await readFile(
     path.join(config.dataDir, "trainers.json"),
     "utf8"
@@ -89,6 +96,7 @@ const mergeDataByLevelsID = async ({
   const mergedData: MergedData[] = mapsData
     .map((mapEntry) => {
       const { thisLevelsId } = mapEntry;
+      const hasEncountersThereforNeeded = encountersMap.has(thisLevelsId);
 
       // Things found in `map.json`
       const pickupEntry = pickupItemsAndTrainers.find(
@@ -179,6 +187,7 @@ const mergeDataByLevelsID = async ({
 
       const hasScriptedGives = result.scriptedGives.length > 0;
       if (
+        hasEncountersThereforNeeded === false &&
         !hasShopItems &&
         !hasPickupItems &&
         !hasTrainerRefs &&
@@ -392,7 +401,7 @@ const mergeDataByLevelsID = async ({
               battleType: incBattle.battleType,
               parties: parties,
               level: thisLevelsId,
-              mugshotOverworldId: incBattle.mugshotOverworldId,
+              mugshotOverworldId: incBattle.sprite,
               canRematch: Boolean(incBattle.rematch),
               // mugshotConstant: incBattle.mugshotConstant,
               // mugshotRelativeDirectory: incBattle.mugshotRelativeDirectory,
@@ -494,8 +503,8 @@ const mergeDataByLevelsID = async ({
           if (summary) {
             summary.canRematch =
               summary.canRematch || Boolean(battleRef.rematch);
-            if (!summary.mugshotOverworldId && battleRef.mugshotOverworldId) {
-              summary.mugshotOverworldId = battleRef.mugshotOverworldId;
+            if (!summary.mugshotOverworldId && battleRef.sprite) {
+              summary.mugshotOverworldId = battleRef.sprite;
             }
             return acc;
           }
@@ -505,12 +514,13 @@ const mergeDataByLevelsID = async ({
             battleType: battleRef.battleType,
             trainerIds: battleRef.trainerIds,
             trainerNames,
-            mugshotOverworldId: battleRef.mugshotOverworldId,
+            mugshotOverworldId: battleRef.sprite,
             canRematch: Boolean(battleRef.rematch),
           });
 
           return acc;
-        }, new Map<string, BattleSummary>()) ?? new Map<string, BattleSummary>();
+        }, new Map<string, BattleSummary>()) ??
+        new Map<string, BattleSummary>();
 
       const battleSummaries = Array.from(battleSummaryMap.values());
 

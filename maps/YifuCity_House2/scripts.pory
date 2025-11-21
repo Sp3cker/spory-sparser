@@ -36,6 +36,7 @@ script YifuCity_House2_Seamstress {
 }
 
 script YifuCity_House2_Model {
+	@explanation Speak to the cosplayer inside the house, south of the Refuge
 	lock
 	faceplayer
 	
@@ -62,6 +63,7 @@ script YifuCity_House2_Model {
 }
 
 script YifuCity_House2_Tarountula {
+	@explanation Speak to the cosplayer's Tarountula
 	lock
 	faceplayer
 	setseenmon(SPECIES_TAROUNTULA)

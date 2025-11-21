@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-
+import { config } from "./config/index.ts";
 /** Makes the level ID pretty */
 export function getLevelLabel(folderName: string): string {
   const firstUnderscore = folderName.indexOf("_");
@@ -231,10 +231,12 @@ export async function getBasemapID(folderOrMapJson: string): Promise<string> {
   // We treat "Routes" special here
   // because we want to keep the number in the name
   // e.g. "Route 119" -> "Route_119"
-  const treatAsRoute = dontSplit.some((part) =>
-    beforeUnderscore.includes(part)
+  const hasRouteLabel = dontSplit.some((routeLabel) =>
+    beforeUnderscore.includes(routeLabel)
   );
-  if (treatAsRoute === false) {
+  if (hasRouteLabel && config.mapsConfig.hasNumberedRoutes) {
+    result = beforeUnderscore;
+  } else {
     // Dont _under_score route names
     result = beforeUnderscore.charAt(0);
     for (let i = 1; i < beforeUnderscore.length; i++) {
@@ -246,8 +248,6 @@ export async function getBasemapID(folderOrMapJson: string): Promise<string> {
         result += beforeUnderscore.charAt(i);
       }
     }
-  } else {
-    result = beforeUnderscore;
   }
 
   // Convert to uppercase and prepend MAP_

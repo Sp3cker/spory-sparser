@@ -8,7 +8,7 @@ export const MapEventTrainerSchema = z.object({
 
 export const MapEventPickupSchema = z.object({
   coords: z.tuple([z.number(), z.number()]),
-  item: z.string(),
+  item: z.number(),
   type: z.union([z.literal("object_event"), z.literal("hidden_item")]),
 });
 

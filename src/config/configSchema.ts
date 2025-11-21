@@ -11,8 +11,15 @@ export const DirectoriesSchema = z.object({
     .optional(),
 });
 
+export const MapsSchema = z
+  .object({
+    hasNumberedRoutes: z.boolean(),
+  })
+  .default({ hasNumberedRoutes: true });
+
 export const ConfigSchema = z.object({
   directories: DirectoriesSchema,
+  maps: MapsSchema,
 });
 
 export type ConfigType = z.infer<typeof ConfigSchema>;

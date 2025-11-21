@@ -228,6 +228,7 @@ script YifuCity_EventScript_SamuraiTalkToRobberyVictim {
 }
 
 script YifuCity_EventScript_RobberyVictim {
+	@explanation Return the stolen pokemon
 	lock
 	
 	setspeaker(SP_NAME_WOMAN)
@@ -339,6 +340,7 @@ script YifuCity_EventScript_ShinySeller {
 }
 
 script YifuCity_ShinySellerChoice {
+	@explanation Purchasable from the Shiny Seller, western-part of Yifu City 
 	showmoneybox(18, 0)
 
 	dynmultichoice(
@@ -1821,6 +1823,7 @@ script(local) HarikoTurnsToNatsuki {
 }
 
 script YifuCity_EventScript_Nurse {
+	@explanation learn canonical Pokémon lore from the nurse in the Refuge
 	lock
 	faceplayer
 

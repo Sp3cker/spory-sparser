@@ -1,4 +1,5 @@
 import fs from "fs/promises";
+import { readFileSync } from "fs";
 import * as path from "path";
 import { getLevelLabel, getBasemapID } from "../../helpers.ts";
 import {
@@ -6,6 +7,15 @@ import {
   MapEventPlace,
 } from "../../validators/mapEvent.ts";
 import collectSprites from "./collectSprites.ts";
+import { config } from "../../config/index.ts";
+const ITEMS_DATA = JSON.parse(
+  readFileSync(path.join(config.dataDir, "items.json"), "utf-8")
+) as { constantName: string; id: number }[];
+const ITEMS: Map<string, number> = ITEMS_DATA.reduce(
+  (acc, i: { constantName: string; id: number }) =>
+    acc.set(i.constantName, i.id),
+  new Map()
+);
 const spritePaths = await collectSprites();
 /**
  * Coords is their xy on the Porymap map.
@@ -19,7 +29,7 @@ export type MapEventTrainer = {
 };
 export type MapEventPickup = {
   coords: [number, number];
-  item: string; // item id 'ITEM_ABILITY_CAPSULE'
+  item: number; // item id 'ITEM_ABILITY_CAPSULE'
   type: "object_event" | "hidden_item"; // whether the item is in a pokeball on not
 };
 
@@ -92,17 +102,28 @@ function extractMapData(mapObj: any) {
           graphics_id: overworldId,
         });
       }
-
+      if (
+        typeof obj.trainer_sight_or_berry_tree_id !== 'string'  &&
+        obj.trainer_sight_or_berry_tree_id !== "0"
+      ) {
+        continue;
+      }
       // Find pickup items
       if (
         obj.graphics_id &&
         obj.graphics_id.includes("ITEM_BALL") &&
-        obj.trainer_type === "TRAINER_TYPE_NONE" &&
-        obj.trainer_sight_or_berry_tree_id !== "0"
+        obj.trainer_type === "TRAINER_TYPE_NONE"
       ) {
+        const itemId = ITEMS.get(obj.trainer_sight_or_berry_tree_id);
+        if (itemId === undefined) {
+          // console.warn(
+          //   `parseMapEvents: No item found for object_event with graphics_id: ${obj.graphics_id} and trainer_sight_or_berry_tree_id: ${obj.trainer_sight_or_berry_tree_id}`
+          // );
+          continue;
+        }
         pickupitems.push({
           coords: [obj.x, obj.y],
-          item: obj.trainer_sight_or_berry_tree_id,
+          item: itemId,
           type: "object_event",
         });
       }
@@ -111,6 +132,13 @@ function extractMapData(mapObj: any) {
   if (Array.isArray(mapObj.bg_events)) {
     for (const obj of mapObj.bg_events) {
       if (obj.type === "hidden_item" && obj.item) {
+        const itemId = ITEMS.get(obj.trainer_sight_or_berry_tree_id);
+        if (itemId === undefined) {
+          // console.warn(
+          //   `parseMapEvents: No item found for object_event with trainer_sight_or_berry_tree_id: ${obj.trainer_sight_or_berry_tree_id} and trainer_sight_or_berry_tree_id: ${obj.trainer_sight_or_berry_tree_id}`
+          // );
+          continue;
+        }
         pickupitems.push({
           coords: [obj.x, obj.y],
           item: obj.item,

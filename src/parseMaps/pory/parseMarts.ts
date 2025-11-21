@@ -1,14 +1,9 @@
 import * as fs from "fs";
 import * as path from "path";
 import { getBasemapID, getLevelLabel, getMapJsonId } from "../../helpers.ts";
+import { Mart } from "../../validators/levelIncData.ts";
+import { config } from "../../config/index.ts";
 // const items = JSON.parse(fs.readFileSync("./items.json").toString());
-
-export interface Mart {
-  label: string;
-  mart: string;
-  items: string[];
-  scriptname: string;
-}
 
 export interface MartEntry {
   levelLabel: string;
@@ -16,6 +11,41 @@ export interface MartEntry {
   baseMap: string;
   thisLevelsId: string;
   marts: Mart[];
+}
+
+type ItemRecord = { constantName: string; id: number };
+
+function loadItemIdMap(): Map<string, number> {
+  const itemsPath = path.join(config.dataDir, "items.json");
+  try {
+    const itemsData = JSON.parse(
+      fs.readFileSync(itemsPath, "utf8")
+    ) as ItemRecord[];
+    return new Map(
+      itemsData.map((record) => [record.constantName, record.id] as const)
+    );
+  } catch (error) {
+    throw new Error(
+      `parseMarts: Failed to load item data from ${itemsPath}: ${error}`
+    );
+  }
+}
+
+const ITEM_NAME_TO_ID = loadItemIdMap();
+
+function itemConstantsToIds(constants: string[], martIdentifier: string): number[] {
+  const ids: number[] = [];
+  for (const constant of constants) {
+    const id = ITEM_NAME_TO_ID.get(constant);
+    if (id === undefined) {
+      console.warn(
+        `parseMarts: Unknown item constant "${constant}" in mart "${martIdentifier}".`
+      );
+      continue;
+    }
+    ids.push(id);
+  }
+  return ids;
 }
 
 function parseMapName(folderName: string): { map: string; qualifier: string } {
@@ -132,20 +162,20 @@ export function parsePoryscriptMarts(
           const body = poryContent.slice(braceStart + 1, i);
 
           // Parse items from the body - one item per line
-          const items = body
+          const itemConstants = body
             .split("\n")
             .map((line) => line.trim())
             .filter((line) => line.startsWith("ITEM_"));
 
           // Get map metadata
           const { map, qualifier } = parseMapName(path.basename(folderPath));
+          const martIdentifier = martName || qualifier || map;
+          const itemIds = itemConstantsToIds(itemConstants, martIdentifier);
 
           marts.push({
             label: map,
-            mart: qualifier,
-            items: items,
-
-            scriptname: martName,
+            mart: martIdentifier,
+            items: itemIds,
           });
 
           break;
@@ -184,7 +214,6 @@ export function findMartSections(filePath: string): Mart[] {
 
       let j = i + 1;
       const items: string[] = [];
-      let scriptname = ""; // Initialize scriptname variable
       while (j < lines.length && lines[j].trim().startsWith(".2byte")) {
         items.push(lines[j].trim().split(" ")[1]);
         j++;
@@ -197,34 +226,36 @@ export function findMartSections(filePath: string): Mart[] {
         j + 1 < lines.length &&
         lines[j + 1].trim() === "end"
       ) {
-        scriptname = lines[i].trim(); // Store the matching line in scriptname
-        if (
+        const scriptLabel = lines[i].trim().replace(/:$/, "");
+        const martIdentifier = scriptLabel || qualifier || map;
+        const sanitizedItems = itemConstantsToIds(
+          items.slice(0, -1),
+          martIdentifier
+        );
+        const isDewfordMinimart =
           map === "MAP_DEWFORD_TOWN" &&
-          scriptname.toLowerCase().includes("minimart")
-        ) {
+          scriptLabel.toLowerCase().includes("minimart");
+
+        if (isDewfordMinimart) {
           const existingSection = sections.find(
             (section) =>
               section.label === map &&
-              section.scriptname.toLowerCase().includes("minimart")
+              section.mart.toLowerCase().includes("minimart")
           );
           if (existingSection) {
-            existingSection.items.push(...items.slice(0, -1));
+            existingSection.items.push(...sanitizedItems);
           } else {
             sections.push({
               label: map,
-              mart: qualifier,
-              items: items.slice(0, -1),
-
-              scriptname,
+              mart: martIdentifier,
+              items: sanitizedItems,
             });
           }
         } else {
           sections.push({
             label: map,
-            mart: qualifier,
-            items: items.slice(0, -1),
-
-            scriptname,
+            mart: martIdentifier,
+            items: sanitizedItems,
           });
         }
         i = j + 2;

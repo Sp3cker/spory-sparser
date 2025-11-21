@@ -23,6 +23,7 @@ script Silveridge_Refuge_EventScript_ImWorried {
 }
 
 script Silveridge_Refuge_EventScript_Firebringer {
+	@explanation Inside the Pokémon Refuge, speak to The Firebringer
 	lock
 	faceplayer
 	if (flag(FLAG_RECEIVED_CHARCOAL)) {
@@ -121,6 +122,7 @@ script Silveridge_Refuge_EventScript_Pasture {
 }
 
 script Silveridge_Refuge_EventScript_Shamisen {
+	@explanation Defeat the clown lady inside the Pokemon Refuge
 	lock
 	faceplayer
 

@@ -1,5 +1,5 @@
 {
-  "MAP_BEACHBOUNDROUTE": [
+  "MAP_BEACHBOUND_ROUTE": [
     {
       "id": "BeachboundRoute_EventScript_Karu",
       "battleType": "single",
@@ -3894,7 +3894,7 @@
       "canRematch": false
     }
   ],
-  "MAP_TRANQUILROUTE": [
+  "MAP_TRANQUIL_ROUTE": [
     {
       "id": "TranquilRoute_EventScript_Chikao",
       "battleType": "single",
@@ -4452,7 +4452,7 @@
       "canRematch": false
     }
   ],
-  "MAP_WHITESLATEROUTE": [
+  "MAP_WHITESLATE_ROUTE": [
     {
       "id": "WhiteslateRoute_EventScript_Itsumi",
       "battleType": "single",
@@ -5396,7 +5396,7 @@
       "canRematch": false
     }
   ],
-  "MAP_WINDSWEPTROUTE": [
+  "MAP_WINDSWEPT_ROUTE": [
     {
       "id": "WindsweptRoute_EventScript_Trainer1",
       "battleType": "single",

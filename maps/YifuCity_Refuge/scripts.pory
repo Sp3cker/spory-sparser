@@ -487,6 +487,7 @@ script YifuCity_Refuge_EventScript_RouteShamisensPokemon {
 }
 
 script YifuCity_Refuge_EventScript_RouteShamisen {
+	@explanation Tell the shamisen the truth...
 	lock
 	faceplayer
 	getroutechallengestate(ROUTE_CHALLENGE_WHITESLATE_YIFU)

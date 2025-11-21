@@ -45,6 +45,7 @@ script TranquilRoute_EventScript_SpawnBirds {
 
 // Cut grass cutscene
 script TranquilRoute_EventScript_GrassCutscene {
+	@explanation Mow the Cut Master's lawn
 	lock
 	// They walk to the center of the garden
 	applymovement(LOCALID_CUT_MASTER, moves(walk_left * 5, walk_up * 3, face_up))
@@ -331,6 +332,7 @@ script TranquilRoute_EventScript_Shellos {
 }
 
 script TranquilRoute_EventScript_BerryWoman {
+	@explanation Learn how to tend a berry garden
 	lock
 	if (flag(FLAG_RECEIVED_WAILMER_PAIL)) {
 		faceplayer

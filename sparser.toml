@@ -21,3 +21,5 @@ rivalBattles = [
 ]
 #Scripts that have trainerbattles that can be skipped
 skip = []
+[maps]
+hasNumberedRoutes = false

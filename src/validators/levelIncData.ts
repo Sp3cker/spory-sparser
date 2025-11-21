@@ -30,7 +30,7 @@ export const IncBattleSchema = z.object({
   rematch: z.boolean().optional(),
   // mugshotConstant: z.string().optional(),
   // mugshotRelativeDirectory: z.string().optional(),
-  mugshotOverworldId: z.union([z.string(), z.array(z.string())]).optional(),
+  sprite: z.union([z.string(), z.array(z.string())]).optional(),
   // mugshotOverworldSprite: z.string().or(z.null()),
   // mugshotOverworldConfidence: z.number().optional(),
 });
@@ -64,8 +64,19 @@ export const IncScriptedEventSchema = z.object({
   wildMon: z.array(WildMonSchema).optional(),
 });
 export const MartSchema = z.object({
+  /**
+   * `label` is the map identifier (e.g. MAP_CHII_TOWN) this shop belongs to.
+   * Multiple marts can share the same `label` when a map has more than one shop.
+   */
   label: z.string(),
-  items: z.array(z.string()),
+  /**
+   * `mart` is the unique script identifier for the shop (e.g. ChiiTown_Mart or
+   * IncenseShop_Mart_2). This is guaranteed to be non-empty so callers can
+   * distinguish marts that share a label.
+   */
+  mart: z.string(),
+  /** Numeric item IDs parsed from the game's items.json */
+  items: z.array(z.number()),
 });
 export const IncDataSchema = z.object({
   scriptedGives: z.array(IncScriptedEventSchema),

@@ -50,6 +50,7 @@ movement TranquilRoute_CutHouse_Movement_CutMasterSurprise {
 }
 
 script TranquilRoute_CutHouse_EventScript_CutMaster {
+	@explanation Speak to the Cut Master
 	lock
 	faceplayer
 
