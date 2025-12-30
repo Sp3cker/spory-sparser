@@ -33,6 +33,6 @@
     "skipLibCheck": true, // Skip type checking of declaration files
     "forceConsistentCasingInFileNames": true // Enforce consistent file name casing
   },
-  "include": ["src/**/*", "src/h-files/**.ts"], // Include all files in src/
+  "include": ["src/**/*", "src/h-files/**.ts", "gameData"], // Include all files in src/
   "exclude": ["node_modules", "build", "src/rando/index.ts"] // Exclude node_modules and build/
 }

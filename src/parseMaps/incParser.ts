@@ -6,8 +6,7 @@ import {
   IncWildMon,
 } from "../validators/levelIncData.ts";
 import { eggSpeciesMap } from "./eggMons.ts";
-import pokemonData from "../../gameData/species.json" with { type: "json" };
-import itemsData from "../../gameData/items.json" with { type: "json" };
+import { itemsData, pokemonData } from "../gameData.ts";
 import { splitRawSection } from "./pory/splitRawSection.ts";
 import { parsePoryscriptFunctions } from "./pory/extractPoryScripts.ts";
 import { findStringLineNumber } from "../util/findStringLineNumber.ts";
@@ -30,27 +29,23 @@ const fromNameToId = (speciesConst: string) => {
     (p) =>
       normalizeName(p.nameKey) ===
         speciesConst.replace(/^SPECIES_/, "").toLowerCase() ||
-      p.speciesName === speciesConst,
+      p.speciesName === speciesConst
   );
   if (!species) {
     throw new Error(
-      `Species not found for constant: ${speciesConst}. Check your speciesData.json`,
+      `Species not found for constant: ${speciesConst}. Check your speciesData.json`
     );
   }
   return species.speciesId;
 };
 const ITEMS_DATA_JSON = Array.from(itemsData);
 const fromItemNameToId = (itemConst: string) => {
-
-  const item = ITEMS_DATA_JSON.find(
-    (i) =>{ 
-
-      return i.constantName.trim() === itemConst.trim()
-    }
-  )
+  const item = ITEMS_DATA_JSON.find((i) => {
+    return i.constantName.trim() === itemConst.trim();
+  });
   if (!item) {
     throw new Error(
-      `[IncParser} Item not found for constant: ${itemConst}. Check your itemsData.json`,
+      `[IncParser} Item not found for constant: ${itemConst}. Check your itemsData.json`
     );
   }
   return item.id;
@@ -105,16 +100,19 @@ export class IncScriptEvent {
     // Match: giveitem ITEM_NAME or giveitemfast ITEM_NAME
     // Match: giveitem ITEM_NAME, quantity or giveitemfast ITEM_NAME, quantity
     const giveItemMatch = line.match(
-      /^\s*(giveitemfast|giveitem)\s*\(?\s*(\w+)\s*,?\s*(\d+)?\s*\)?/,
+      /^\s*(giveitemfast|giveitem)\s*\(?\s*(\w+)\s*,?\s*(\d+)?\s*\)?/
     );
     if (giveItemMatch) {
-      if (giveItemMatch[2].includes("VAR_") || giveItemMatch[2] === "VAR_0x8006") {
+      if (
+        giveItemMatch[2].includes("VAR_") ||
+        giveItemMatch[2] === "VAR_0x8006"
+      ) {
         return;
       }
       const itemName = fromItemNameToId(giveItemMatch[2]);
       const quantity = giveItemMatch[3] ? parseInt(giveItemMatch[3], 10) : 1;
       const existingIndex = this.items.findIndex(
-        (item) => item.id === itemName,
+        (item) => item.id === itemName
       );
       if (existingIndex !== -1) {
         this.items[existingIndex].quantity += quantity;
@@ -131,9 +129,7 @@ export class IncScriptEvent {
     // Match: givemon SPECIES_NAME, level
     // Match: givemonrandom SPECIES_NAME, level, isRandom
     const giveMonMatch = line.match(
-
-      /^\s*(givemon(?:random)?)\s*\(?\s*(\w+)\s*,?\s*(\d+)?\s*\)?/,
-
+      /^\s*(givemon(?:random)?)\s*\(?\s*(\w+)\s*,?\s*(\d+)?\s*\)?/
     );
 
     if (giveMonMatch) {
@@ -149,7 +145,7 @@ export class IncScriptEvent {
       // of bag size logic and stuff
       const alreadyExists = this.pokemon.some(
         (p) =>
-          p.species === species && p.level === level && p.isRandom === isRandom,
+          p.species === species && p.level === level && p.isRandom === isRandom
       );
       if (!alreadyExists) {
         this.pokemon.push({
@@ -166,10 +162,10 @@ export class IncScriptEvent {
     // Match: dynmultipush text, ITEM_NAME
     // Match: dynmultipush text, SPECIES_NAME
     const dynMultiItemMatch = line.match(
-      /^[\s]*dynmultipush\s+[^,]+,\s*(ITEM_\w+)/i,
+      /^[\s]*dynmultipush\s+[^,]+,\s*(ITEM_\w+)/i
     );
     const dynMultiSpeciesMatch = line.match(
-      /^[\s]*dynmultipush\s+[^,]+,\s*(SPECIES_\w+)/i,
+      /^[\s]*dynmultipush\s+[^,]+,\s*(SPECIES_\w+)/i
     );
 
     if (dynMultiItemMatch) {
@@ -184,7 +180,7 @@ export class IncScriptEvent {
         return;
       }
       const alreadyExists = this.pokemon.some(
-        (p) => p.species === species && p.level === 1 && p.isRandom === false,
+        (p) => p.species === species && p.level === 1 && p.isRandom === false
       );
       const id = fromNameToId(species);
       if (!alreadyExists) {
@@ -215,12 +211,12 @@ export class IncScriptEvent {
               level: 0,
               id: fromNameToId(eggSpecies),
             });
-          },
+          }
         );
         return;
       }
       const alreadyExists = this.pokemon.some(
-        (p) => p.species === species && p.level === 0 && p.isRandom === false,
+        (p) => p.species === species && p.level === 0 && p.isRandom === false
       );
       if (!alreadyExists) {
         this.pokemon.push({
@@ -281,10 +277,10 @@ export class IncScriptEvent {
     if (notNothing === false && this.explanation.length > 0) {
       const scriptLineNumber = findStringLineNumber(
         this.rawContent,
-        this.scriptName,
+        this.scriptName
       );
       console.error(
-        `[incParser] Unused explanation with no events: "${this.scriptName}:${scriptLineNumber}"`,
+        `[incParser] Unused explanation with no events: "${this.scriptName}:${scriptLineNumber}"`
       );
     }
     return notNothing;
@@ -293,10 +289,10 @@ export class IncScriptEvent {
     if (this.explanation.length === 0 && this.hasContent()) {
       const scriptLineNumber = findStringLineNumber(
         this.rawContent,
-        this.scriptName,
+        this.scriptName
       );
       console.error(
-        `[incParser] Missing explanation: "${this.scriptName}:${scriptLineNumber}"`,
+        `[incParser] Missing explanation: "${this.scriptName}:${scriptLineNumber}"`
       );
     }
   }
@@ -314,7 +310,7 @@ export class IncScriptEvent {
  */
 function extractIncScriptBlocks(
   content: string,
-  delimiters: [RegExp, string],
+  delimiters: [RegExp, string]
 ): Array<{ name: string; content: string }> {
   const lines = content.split("\n");
   const sections: Array<{ name: string; content: string }> = [];
@@ -395,15 +391,15 @@ export function parseScriptedEvents(content: string) {
         return false;
       }
       return true;
-    },
+    }
   );
   // console.log(`[incParser] Found ${sections.length} script sections`);
 
   const results: IncScriptEvent[] = [];
 
-  const battleRefs = scriptBlocks.flatMap(script => {
+  const battleRefs = scriptBlocks.flatMap((script) => {
     return parseTrainerBattlesSCRIPT(script.name, script.content);
-  })
+  });
   for (const block of filteredScripts) {
     const event = new IncScriptEvent(block.name);
     event.parseFromContent(block.content);
@@ -430,7 +426,7 @@ export function parseScriptedEvents(content: string) {
       ) {
         console.warn(
           `[incParser] variable species: ${pokemon.species} in script ${script.scriptName}
-          Review and add to "unneededLabels" in removeSimilarLocations.ts`,
+          Review and add to "unneededLabels" in removeSimilarLocations.ts`
         );
       }
     }
@@ -473,7 +469,7 @@ export function parseScriptedEvents(content: string) {
         // Merge items with quantity consolidation
         for (const newItem of script.items) {
           const existingItemIndex = existingScript.items.findIndex(
-            (item) => item.id === newItem.id,
+            (item) => item.id === newItem.id
           );
           if (existingItemIndex !== -1) {
             existingScript.items[existingItemIndex].quantity +=
@@ -489,7 +485,7 @@ export function parseScriptedEvents(content: string) {
             (p) =>
               p.species === newPokemon.species &&
               p.level === newPokemon.level &&
-              p.isRandom === newPokemon.isRandom,
+              p.isRandom === newPokemon.isRandom
           );
           if (!alreadyExists) {
             existingScript.pokemon.push(newPokemon);
@@ -502,7 +498,7 @@ export function parseScriptedEvents(content: string) {
             (w) =>
               w.species === newWildMon.species &&
               w.level === newWildMon.level &&
-              w.script === newWildMon.script,
+              w.script === newWildMon.script
           );
           if (!alreadyExists) {
             existingScript.wildMon.push(newWildMon);
@@ -518,7 +514,7 @@ export function parseScriptedEvents(content: string) {
         // We'll use a workaround for file path, but line number is not directly available.
         // This will log the file path and a best-effort line number (hardcoded to this line).
         console.warn(
-          `[incParser] Script "${script.scriptName}" has no explanation.`,
+          `[incParser] Script "${script.scriptName}" has no explanation.`
         );
       }
       // Keep scripts without an explanation as they are
@@ -536,7 +532,7 @@ export function parseScriptedEvents(content: string) {
     const consolidatedItems: IncItemEntry[] = [];
     for (const item of script.items) {
       const existingIndex = consolidatedItems.findIndex(
-        (i) => i.id === item.id,
+        (i) => i.id === item.id
       );
       if (existingIndex !== -1) {
         consolidatedItems[existingIndex].quantity += item.quantity;
@@ -547,5 +543,5 @@ export function parseScriptedEvents(content: string) {
     script.items = consolidatedItems;
   }
 
-  return {scriptedGiveEvents, battleRefs};
+  return { scriptedGiveEvents, battleRefs };
 }
